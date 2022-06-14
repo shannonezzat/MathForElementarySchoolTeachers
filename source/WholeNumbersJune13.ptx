@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<pretext>
-    <article xml:id="test">
+
+    <chapter xml:id="test">
         <title>Sample Chapter: Whole Numbers</title>
 
         <section xml:id="sec-Equality">
@@ -1706,5 +1706,4 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
 
 
 
-   </article>
-</pretext>
+   </chapter>
