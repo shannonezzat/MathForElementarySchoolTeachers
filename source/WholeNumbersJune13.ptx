@@ -1,0 +1,1710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext>
+    <article xml:id="test">
+        <title>Sample Chapter: Whole Numbers</title>
+
+        <section xml:id="sec-Equality">
+    <title>Equality</title>
+    <subsection xml:id="subsec-IntroToEquality">
+        <title>Intro To Equality</title>
+        <p>
+        In our mathematical career we have used the equals symbol "=" countless times. In this section, we talk about what it actually means and its implications. We'll focus on equality of numbers, but know that equality is a concept that is used in many different concepts in mathematics;m for example, two sets can be equal, or two polygons can be equal.
+    </p>
+    <definition xml:id="def-Equality">
+        <statement>
+            <p>
+                We say that two numbers <m>a</m> and <m>b</m> are <term>equal</term>, and write <m>a=b</m>, if and only if they are the same quantity. Note that they may be expressed in different ways. 
+            </p>
+                    </statement>
+    </definition>
+     <example>
+        <p>
+            INCLUDE EXAMPLES OF EQUALITY HERE! LEAD TOWARDS SUBSTITUTION
+        </p>
+    </example>
+
+    <p>
+        INCLUDE SECTION ON BALANCE MODEL
+    </p>
+    <p>
+        There are a few properties of equality that are important and intuitive, but for completeness we write them down here:
+    </p>
+
+   
+    <assemblage xml:id="assemblage-PropertiesOfEquality">
+        <title>Properties of Equality</title>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Reflexivity: for all numbers <m>a</m>, <m>a = a</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Symmetry: if <m>a = b</m> then <m>b = a</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Transitivity: if <m>a = b</m> and <m>b=c</m> then <m>a = c</m>
+                    </p>
+                </li>
+               
+            </ol>
+        </p>
+    </assemblage>
+    <assemblage xml:id="assemblage-EquivalenceRelation">
+        <title>Notes for Additional Understanding</title>
+        <p>
+            Note that the three properties above are used to define another, more general, concept in mathematics called an <term>equivalence relation</term>. Informally, this is a type of relation, but it calls objects equaivalent if they behave the same way in only ways that you are interested in working with. For more information, see any discrete mathematics textbook.
+        </p>
+    </assemblage>
+
+    </subsection>
+    <subsection xml:id="subsec-MorePropertiesOfEquality">
+        <title>More Properties Of Equality</title>
+        <p>
+            The most important property of equality when doing mathematics is that you can always <m>substitute</m> one expression for another equal to it. In fact, this is how many algebraic equations are solved, and arithmetic expressions simplified. We regularly do this whenever we simplify an arithmetic expression, but many of us do not realize we are doing a substitution when we do it! For example, if we are calculating the expression <m>4 \times 7 - 3</m>, we know that <m>4 \times 7 = 28</m>. Since these two quantities equal each other, we can substitute <m>28</m> any time we see the expression <m>4 \times 7</m>. Doing this, we get <m>28-3</m>, and we know that <m>28-3=25.</m> So, putting it all together we have that <m>4 \times 7 -3 = 25</m>. We can view this idea using the balance model descibed above: 
+        </p>
+        <p>
+            INCLUDE PIC OF BALANCE MODEL
+        </p>
+        <p>
+            We use this idea when solving equations as well. Suppose we know that <m>x=9</m> and we're asked to calculate <m>3x-16</m>. Since <m>x</m> and <m>9</m> are indeed equal we can substitude a <m>9</m> where ever we see the variable <m>x</m>. Doing so we obtain <m>3(9)-16</m>. Similarly to above we can simplify this to <m>27-16=11</m>. And thus <m>3x-16=11</m> when <m>x=9</m>. Again, we can use a balance model to show this process:
+        </p>
+         <p>
+            INCLUDE PIC OF BALANCE MODEL
+        </p>
+        <p>
+            Another important property to equality is that two expressions remain equal when we do the same arithmetic operations to them. For example, if we know <m>a=b</m> we can subtract 5 from both of these and the resulting expressions equal: <m>a-5=b-5</m>. </p>INSERT BALANCE PIC HERE<p> Or, we could divide both sides by 2, and then <m>a \div 2 = b \div 2</m>. </p>INSERT BALANCE PIC HERE<p> This is an incredibly powerful idea that allows us to solve equations for a unknown quantities.
+        </p>
+        <p>
+            Together, the next section will talk about how the above properties of equality allow us to solve equations using two methods. 
+        </p>
+
+       
+        <p>
+            HOW TO USE SUBSTITUTION AND ELIMINATION (not in detail, but a little bit?)
+        </p>
+    </subsection>
+    </section>
+<section xml:id="sec-ProblemSolving">
+    <title>Problem Solving</title>
+    <p>
+        Solving one equation.
+    </p>
+    <p>
+        Solving a system of linear equations (using substitution and elimination) - Focus on 2x2 examples, but note that elimination is good for larger systems (that's why it's good to know it!)
+    </p>
+    <p>
+        Substitution - solve one equation for one variable, and then substitute that in to the other equation.
+    </p>
+    <p>
+        Elimination - idea: if <m>A = B</m> and <m>C = D</m> we can subtract <m>C</m> from both sides of <m>A=B</m> to get <m>A-C = B-C</m>. But since <m>C=D</m> we can say <m>A-C = B-D</m>. Thus we can do arithmetic with "sides" of an equation. + and - are most useful.
+    </p>
+    <p>
+        How many solutions? One, none, infinitely many? How to tell.
+    </p>
+    <p>
+        What if the equation is more complicated? Ideas? Trial and error/factoring/etc.
+    </p>
+    <p>
+        Using technology. 
+    </p>
+    <p>
+        The "work" in solving a problem is setting it up correctly (usually in the language of algebra, but other ways too)
+    </p>
+    <p>
+        
+    </p>
+    <p>
+        Some problem solving strategies and techniques. Try to find something "better" than Polya. Include some problems to solve, of course, and try to include problems of a similar difficulty throughout. Discussion on patterns (with reference to if-then statements). INCLUDE EXPLORATION, TRANSLATING INTO ALGEBRA, SHOWING MULTIPLE METHODS.
+    </p>
+    <p>
+        Translating. Focus on testing with simple examples, defining your variables. Using equality to substitute. Exploration to find formula for situation.
+    </p>
+    <p>
+        Open ended problems: going from examples to conjecture to "proof". HIGHLIGHT MANY WAYS OF PROVING!
+    </p>
+</section>
+            <section xml:id="sec-2_1NumberSystemsAndPlaceValue">
+                <title>NumberSystemsAndPlaceValue</title>
+                    <objectives permid="dEf" xml:id="objectives-structures">
+
+                                   
+                    </objectives>
+                    
+  <title>Whole Numbers</title>
+
+  <p>
+    Place value is a very important concept that allows us to write down very large (and very small) numbers in a small amount of space. If we didn't have the concept of place value, we would simply use the number of "ticks" we wanted to write down to represent that number. For example, if we wanted to write down "twenty" we would do something like the following:
+  </p>
+  <p>
+     INSERT PIC OF TWENTY TICKS 
+  </p>
+  <p>
+     And if we want to represent the number "one hundred and twelve" we would write:
+     
+  </p>
+  <p>
+      INSERT PIC OF 112 TICKS
+  </p>
+  <p>
+      You can see how difficult it would be to write down and understand large numbers, or to easily do operations with them, like addition, subtraction, multiplication, and division.
+  </p>
+  <p>
+      The idea of place value is incredibly powerful. It allows us to represent quantities with something more compact and useful than "a bunch of ticks". For example, the number ten is (usually) represented by 10, which is really a 1 followed by a 0. In this chapter, we'll talk about the concept of place value, what we need in order to be able to express any number using the idea of place value (called a numeration system), and how we can use the ideas of place value to easily add, subtract, multiply, and divide whole numbers. 
+  </p>
+
+
+</section>
+<section xml:id="sec-NumberSystems">
+    <title>Number Systems</title>
+    <subsection>
+    <title>Introduction to Number Systems</title>
+    
+    
+    <p>
+        Consider the following objects:
+    </p>
+    <p>
+        INSERT PICTURE OF FIVE THINGS
+    </p>
+    <p>
+        In order to work with the idea of quantities, we want some symbol to represent this number of quantities, and other numbers of quantities too. In the Western world (and much of the rest of the world too) we've chosen the symbol "5" to represent these quantities. Note that it doesn't mean these particular five things, but simply the idea of having that many of anything.
+    </p>
+    <definition xml:id="def-Numeral">
+        <statement>
+            <p>
+                A <term>numeral</term> is a representation of a quantity of some type.
+            </p>
+        </statement>
+    </definition>
+    <p>
+        Note the difference between a numeral and a number: a number is the actual amount, whereas a numeral is some symbol that represents this amount.
+    </p>
+    <p>
+        Numerals, however important as they are to being able to work with and understand quantities, isn't enough. Just imagine if we had a completely unique symbol for every whole number there is, and there are infinitely many so this is impossible anyway. So, we use the idea of place to represent any number we like using a finite (and usually small) amount of symbols. 
+    </p>
+    <p>
+        Think about why we write the number "eleven" with the numerals 11. What does this actually mean? We have two 1's, but they're playing different roles solely due to their location in the numeral. The leftmost 1 means "one ten" and the rightmost 1 means "one one". So, really, we read that number as "one ten and one one," whose number happens to have the name "eleven".
+    </p>
+    <p>
+       For a number system using place value to indicate a number, we need to have a few necessary things:
+       <ol>
+           <li>
+               <p> 
+                   A symbol for indicating zero and a symbol for indicating one
+               </p>
+           </li>
+           <li>
+               <p>
+                   A set  <m>D</m> of unique numeral symbols, <term>digits</term> for representing consecutive numbers (beginning with zero and one) without the concept of place value.
+               </p>
+           </li>
+           
+       </ol> 
+
+    </p>
+<p>
+    Note that <m>|D|</m> is called the <term>base</term> of our number system. For example, our base ten number system has the digits <m>\{0,1,2,3,4,5,6,7,8,9\}</m> and any number larger than nine we can represent using the place of digits.
+</p>
+<p>
+    Note that in base <m>b</m>, <m>|D| = b</m> and <m>D = \{0,1,2, \ldots, b-1, b\}.</m> So, for example, in base <m>7</m> the digit set is <m>D=\{0,1,2,3,4,5,6\}</m>. Note that these are all the possible remainders when dividing whole numbers by 7.
+</p>
+<p>
+    How does place value work? Let's see what happens as we count up from one to twelve:
+</p>
+<p>
+    INSERT PIC OF TICKS AND DIGITS
+</p>
+<p>
+    The idea is that once we reach nine ticks, we "run out" of digits to express any larger numbers with their own symbol. So, we group ten of these together to make one "ten" and we express this as a digit to the left of the ones place.
+</p>
+<p>
+    Similarly, let's count from ninety-seven to one hundred-three:
+</p>
+<p>
+    INSERT PIC OF THIS COUNTING
+</p>
+<p>
+    You can see once we add an additional tick (or one) to ninety-nine, we then have ten ones. So we regroup those ones to one ten. Now this gives us ten tens, and since we have ten of those, we need to regroup them into a new place, called the hundreds place.
+</p>
+<p>
+    ADD SECTION ABOUT BASE BLOCKS AND WHAT HAPPENS AFTER <m>b^3</m> (talk about dimensions, and how you can view a thousand cube as your new "one" and go from there. This is (maybe) why we group places in groups of 3.)
+</p>
+<p>
+    PICTURE OR CARRIES ABOVE
+</p>
+<p>
+    ADD SECTION ON DIGITS IN BASE B
+</p>
+<p>
+    A good question is "is there anything special about regrouping in units of ten ?" or in the language of number systems "why do we use base ten?" The answer to this is no! We can indeed have a base of any counting number we like (say in base <m>b</m>) and then regoup once we have <m>b</m> of any place. 
+</p>
+<p>
+    Let's try writing "thirteen" in a few different bases so that you get a feel for what is happening:
+</p>
+<p>
+    INSERT PIC OF THIRTEEN BASE TEN, EIGHT, FIVE, TWELVE, AND TWO
+</p>
+<p>
+    We can write these as the following numerals (note that the base is written as a subscript so that you know what base each number is in. We'll keep this practice up when needed.)
+    <me>
+        13_{ten} \ 15_{eight} \ 23_{five} \ 11_{tweleve} \ 111_{two}
+    </me>
+    
+</p>
+
+<p>
+    We'll explore different bases as this chapter progresses. To have a solid understanding of place value, you should be able to understand numbers written in any base, and be able to work with other bases when doing arithmetic.
+</p>
+<p>
+    Note that in our examples, we group ones into "long" pieces, then we group "longs" into squares, then we group squares into cubes In base ten the longs are tens, the squares are hundreds, and the cubes are thousands. Note that the cube just looks like a "big" one, and thus is why we repeat tens, hundreds, thousands, when we do place value (REWORD THIS!)
+</p>
+<p>
+    As our number system is base ten, we almost have too much "muscle memory" to be able to think about how place value works, and how our algorithms for doing arithmetic work. So we'll frequently change to other bases for this chapter.
+</p>
+</subsection>
+<subsection xml:id="subsec-ConvertingFromBaseTen">
+    <title>Converting From Base Ten</title>
+    
+
+<p>
+    Let's think about how to change from one base to another. 
+</p>
+    
+<example>
+    
+<p> Let's start in base ten. Suppose we wanted to write the base ten number 25 in base four. We can start by thinking to breaking up all of the base ten groupings into single ones:
+    </p>
+<p>
+    INSERT PIC HERE
+</p>
+<p>
+    Then, we can make as many groups of four ones (longs) as possible (we'll regroup those later):
+</p>
+<p>
+    There! We've made six longs, and we have 1 one left over. Now we have more than four longs so let's regroup four of them into one sixteen (square):
+</p>
+<p>
+    INSERT PIC HERE
+</p>
+<p>
+    Now, we have 1 square, 2 longs, and 1 one. So we can write this number as <m>121_{four}</m>.
+</p>
+</example> 
+<p>
+    Let's do one more example: </p>
+
+    <example>
+        <p>Let's write the number 77 in base five. First, we make as many groups of five as we can:</p>
+        <p>
+            INSERT PIC HERE
+        </p>
+        <p>
+            We have divided the 77 ones into 15 groups of five (longs) with 2 remaining. 
+        </p>
+        <p>
+            Now we group our 15 longss into groups of five, giving us groups of twenty-five, or squares:
+        </p>
+        <p>
+            Now we have 3 squares, and 2 ones. Can we write this as <m>32_{five}</m>? No! Be careful here. We are missing a place; we have no fives, so we need to indicate that with the digit 0: so we should write <m>302_{five}</m>. Note that <m>32_{five}</m> is 3 fives and 2 ones, which is 17. This is why that 0 digit is important!
+        </p>
+        
+    </example>
+    <p>
+        Let's analyze the examples above to come up with a procedure to convert any base ten number into a different base.
+    </p>
+    <ol>
+        <li>
+            <p>
+                Divide our base into the number of ones. The remainder is our ones digit.
+            </p>
+            
+            
+        </li>
+        <li>
+            <p>
+                
+                Take the quotient of the step above and divide our base into that. The remainder is the next digit to the left.
+            
+            </p>
+        </li>
+        <li>
+            <p>
+                Repeat the previous step until we have a quotient of 0. Then you have your number in the desired base.
+            </p>
+        </li>
+    </ol>
+    <p>
+        Let's view the previous example in terms of division:
+    </p>
+    <p>
+        INSERT PIC OF DIVISION AND BLOCKS HERE
+    </p>
+   <exercise>
+      <p> Convert the following numbers from base ten to the indicated base:</p>
+       <ol>
+           <li>
+               <p>
+                   45 (to base seven)
+               </p>
+           </li>
+           <li>
+               <p>
+                   465 (to base three)
+               </p>
+           </li>
+           <li>
+               <p>
+                   1377 (to base five)
+               </p>
+           </li>
+           <li>
+               <p>
+                   54054 (to base nine)
+               </p>
+           </li>
+       </ol>
+       <solution>
+           <p>
+               DO SOLUTIONS FOR THESE
+           </p>
+       </solution>
+   </exercise>
+  </subsection>
+  <subsection xml:id="subsec-ConvertingToBaseTen">
+      <title>Converting To Base Ten</title>
+      <p>
+          How can we convert in the other direction? If we have a number in, for example, base six, how can we determine which number it is base ten? Let's look at an example:
+      </p>
+      <example>
+          <p>
+              Let's look at <m>2514_{six}</m>. What does this mean? Reading from right to left, we have 4 ones, 1 long, 5 squares, and 2 cubes. Longs are 6 ones, squares are <m>6 \times 6= 6^2 = 36</m> ones, and cubes are <m>6 \times 6 \times 6 = =6^3 = 216</m> ones. We can now add all of the ones and group in our usual base ten:
+              <me>
+                  2 \times 6^3 + 5 \times 6^2 + 1 \times 6 + 4 \times 1 = 622
+              </me>
+              INSERT PICTURE HERE
+          </p>
+      </example>
+      <p>
+          Let's do one more example:
+
+      </p>
+      <example>
+          <p>Let's look at <m>10010101_{two}</m>. Here we have 1 one, 0 longs of size <m>2^1</m>, 1 square of size <m>2^2</m>, and similarly 0 <m>2^3</m>, 1 <m>2^4</m>, 0 <m>2^5</m>, 0 <m>2^6</m>, and 1 <m>2^7</m>. So we have:
+          <me>1 \times 2^7 + 0 \times 2^6 + 0 \times 2^5 + 1 \times 2^4 + 0 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \times 1</me>
+          <me>
+              = 128 + 0 + 0 + 16 + 0+ 4 + 0 + 1 = 149
+          </me>
+          INSERT PICTURE HERE
+          </p>
+      </example>
+      <p>
+          Just like before, let's determine a method for converting from any base to base ten:
+          <ol>
+              <li>
+                  <p>
+                      1. Multiply the digits in the place value spot by the value of the place. 
+                  </p>
+              </li>
+              <li>
+                  <p>
+                      Sum these together.
+                  </p>
+              </li>
+          </ol>
+          <p>
+              INCLUDE PIC HERE
+          </p>
+      </p>
+      </subsection>
+      <subsection xml:id="subsec-BaseTwelve">
+          <title>Base Twelve</title>
+          <p>
+              So far, we've only dealt with bases of ten or less. But there's nothing stopping us from dealing with bases larger than ten. The only thing is that we, so far, only have digits for numbers from 0 to 9. If we're not allowed to regroup until we have twelve things (ones, longs, etc) we need new digits to represent the numbers "ten" and "eleven". There aren't any really standard choices for these digits, but let's choose "A" to mean "ten" and "B" to mean "eleven".
+          </p>
+          <p>
+             To get a feel for base twelve, let's count in base twelve, starting at one, and going to fifteen. 
+          </p>
+          <p>
+              INSERT PIC HERE
+          </p>
+          <p>
+              It might take a while to wrap your head around not regrouping when you have ten things, but in base twelve we do not.
+          </p>
+          <example>
+              <p>
+                  Let's convert a base ten number to base twelve to get a feel for it. Let's start with 155 and use our algorithm above.
+                  <me>
+                      155 = 12 \times 12 + 11
+                      </me>
+                      <me>
+                      12 = 1 \times 12 + 0
+                      </me>
+                      <me>
+                      1 = 0 \times 12 + 1
+                  </me>
+                  So 155 in base twelve is <m>10B_{twelve}</m>. Note that since we have eleven ones remaining, we write that in base twelve as <m>B</m>.
+                  
+              </p>
+              <p>
+                  INCLUDE PIC HERE OF BASE TEN AND TWELVE BLOCKS
+              </p>
+          </example>
+          <example>
+             <p> Now let's convert a base twleve number to base ten. Let's try <m>13A09_{twelve}</m>. Using the algorithm above:
+              <me>
+                  13A09_{twleve} = 1 \times 12^4 + 3 \times 12^3+ 10 \times 12^2 + 0 \times 12^1 + 9 \times 1
+                  
+              </me>
+              <me>
+                  = 1 \times 20736 + 3 \times 1728 + 10 \times 144 + 0 \times 12 + 9 \times 1 = 27369
+              </me>
+              </p>
+              <p>
+                  INCLUDE PIC HERE OF BASE TEN AND TWELVE BLOCKS
+              </p>
+              
+          </example>
+      </subsection>
+      <subsection xml:id="subsec-HistoricalNumberSystems">
+          <title>Historical Number Systems</title>
+          <p>
+              INCLUDE SECTION HERE! 
+          </p>
+      </subsection>
+  
+   
+</section>
+<section xml:id="sec-ArithmeticOperations">
+    <title>Arithmetic Operations</title>
+    <introduction>
+        <p>
+            In this section, we will talk about the four main operations of arithmetic of whole numbers; addition, subtraction, multiplication, and division. The idea is that we will start with the idea of addition, and "build" the others from that. Indeed, mathematicians like to start with as little as possible, and making as many results and ideas out of this starting place as we can.
+        </p>
+        <p>
+            Once we talk about these operations, we can then talk about some nice properties that (some of) these operations have, which allows us to rearrange and regroup numbers so we can easily perform operations. Then, we'll talk about common (and uncommon!) rules, called algorithms, that we use to do arithmetic. We'll learn the steps in the algorithms, and why these algorithms work!
+        </p>
+        <p>
+            A reminder; we use the notation <m>\mathbb{N}_0</m> to mean the set of whole numbers <m>\{0, 1, 2, 3, \ldots \}</m>.
+        </p>
+    </introduction>
+    <subsection xml:id="subsec-Addition">
+        <title>Addition</title>
+        <p>
+            Addition is an operation that we usually have an intuitive grasp of. There are two common ways of viewing addtion (called addition models); the "set model," where we combine two sets (with non-overlapping elements) into one set, and the "number line model", where we start at one number on the umber line, and add additional spaces according to the number we're adding to the first one. 
+        </p>
+        <p>
+            INSERT PIC OF 7+4=11 in both models.
+        </p>
+        <p>
+            As addition is quite intuitive, we'll take the ability to add numbers as a given (in math we call this an <term>axiom</term>). 
+                
+        </p>
+        <definition xml:id="def-Addition">
+            <statement>
+                <p>
+                    Let <m>a,b \in \mathbb{N}_0</m>. We say <m>c \in \mathbb{N}_0</m> is the <term>sum</term> of the <term>addends</term> <m>a</m> and <m>b</m> and we write <m>a+b=c</m>.  
+                </p>
+            </statement>
+        </definition>
+        <p>
+            Be careful when adding numbers representing objects; if you have different objects you cannot simply add the two numbers. 
+        </p>
+        <example>
+            <p>
+                Of course 3 apples + 4 apples = 7 apples, but if we are adding different objects we cannot add the numbers representing them; if we have 3 apples and 4 oranges, we cannot say we have 7 since we're treating apples and oranges as different objects. EXPAND ON THIS IDEA MORE
+           </p>
+        </example>
+        <assemblage xml:id="assemblage-SetAddition">
+            <title>Notes for Additional Understanding</title>
+            <p>
+               Though we're taking addition to be our "axiom" that we are using to define all other operations, mathematicians usually build up the ideas of whole numbers and addition from sets themselves. This approach, while more fundamental, is a bit beyond the scope of what teachers need to understand. 
+            </p>
+        </assemblage>
+    </subsection>
+    <subsection xml:id="subsec-Subtraction">
+        <title>Inequality and Subtraction </title>
+        <p>
+            Before we talk about subtraction, let's talk about how to compare numbers; that is, how to tell if one number is larger than another. We want to "build" all ideas from addition, so let's see if we can come up with a way of describing this using only addition and whole numbers.
+        </p>
+        
+        
+            <exercise>
+            <ol>
+            <li>
+                <p>
+                    Draw some sort of diagram showing that 7 is greater than 4.
+                </p>
+            </li>
+                <li>
+                    <p>
+                        Using only addition and other whole numbers, try to explain why 7 is greater than 4. Referring to the diagram you made above may help.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Do the same thing to show that 15 is greater than 3.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Can we generalize this? If <m>a,b \in  \mathbb{N}_0</m>, how do we know if <m>a > b</m>? Try and write this as a conditional statement: "If <m>a > b</m> then ..."
+                    </p>
+                </li>
+            </ol>
+            <solution>
+                <p>
+                    You probably drew a diagram that shows either the set model of addtion or the number line model: something like the following:
+                </p>
+                <p>
+                    INSERT DIAGRAM HERE
+                </p>
+            </solution>
+            <solution>
+                <p>
+                    The key to this is realizing I can add a (non-zero) counting number to 4 to get 7. In our case it is 3. So we can say that <m>7 > 4</m> since we found the number 3 such that <m>7=4+3</m>.
+                </p>
+            </solution>
+            <solution>
+                <p>
+                    We can apply the exact same logic to this problem; the only thing different are the numbers! So we can say <m>15 > 3</m> since there is a number (12) where <m>15 = 3 + 12</m>. You could draw the following diagrams too:
+                </p>
+                <p>
+                    INSERT DIAGRAMS HERE
+                </p>
+            </solution>
+            <solution>
+                <p>
+                    The key thing to realize is that all that matters is the *existence* of a number, say <m>c</m>, such that <m>a=b+c</m>. Thus we can write this as a conditional statement:
+                </p>
+                <p>
+                    If <m>a > b</m> then there is a <m>c \ in \mathbb{N}</m> such that <m>a=b+c</m>.
+                </p>
+            </solution>
+                
+            </exercise>
+            <exercise>
+                <p>
+                    In the previous exercise, we developed a definition for "greater than". Modify this definition to define
+                    <ol>
+                        <li>
+                            <p>
+                                "greater than or equal to"
+                            </p>
+                            
+                        </li>
+                        <li>
+                            <p>
+                                "less than"
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                "less than or equal to"
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <solution>
+                    <p>
+                        SOLUTION HERE!!
+                    </p>
+                </solution>
+            </exercise>
+            <p>
+                Now that we have the idea of comparing numbers, we can develop a definiton of subtraction of whole numbers. Before looking at the definition, see if you can take the "greater than or equal to" definition and modify it to a definition for subtraction.
+            </p>
+            <definition xml:id="def-subtraction">
+                <statement>
+                    <p>
+                        Let <m>a,b \in \mathbb{N}_0</m> where <m>a \geq b</m>. Then we define the subtraction <m>a-b</m> to be the unique <m>c \in \mathbb{N}_0</m> such that <m>a=b+c</m>.  
+                    </p>
+                </statement>
+            </definition>
+            <p>
+                Note that this <m>c</m> is the same number <m>c</m> in the definition for "greater than or equal to". And we wanted the set to include zero since we want to be able to subtract 0, or have an answer of 0. We will get into subtraction with negative answers when we talk about integers in a later section.
+            </p>
+            <example>
+                <p>
+                    Let's let <m>a=7</m> and <m>b=2</m>. Since <m>7>2</m> we can talk about <m>7-2</m> using our defintion. We know <m>7-2=5</m> since <m>5</m> is the unique number such that <m>7=2+5</m>. So in the definiton above, we have that <m>c=5</m> We can view this subtraction via the following diagram.
+                </p>
+                <p>
+                    INSERT PIC OF NUMBER LINE MODEL
+                </p>
+                <p>
+                    It's important to note that we cannot talk about the problem <m>2-7</m> using our definition above, since <m>2 \not\geq 7</m>. We will have to modify our definition later, once we introduce negative numbers.
+                </p>
+            </example>
+            <example>
+                Now let's let <m>a=14</m> and <m>b=0</m>. Then <m>14-0=14</m> since <m>14=0+14</m>. So in the definition above <m>c=14</m>.
+            </example>
+            <p>
+    INCLUDE SECTION ON a-b=c IFF a-c=b, EITHER HERE OR IN PROPERTIES OF ARITHMETIC SECTION
+</p>
+    </subsection>
+    <subsection xml:id="subsec-Multiplication">
+        <title>Multiplication</title>
+        <introduction>
+             <p>
+            There are many ways to think about multiplication, but one of the most common is to think of it as repeated addition. That way, we can define multiplication in a way that uses a concept that we have already talked about, namely addition. 
+        </p>
+        <definition xml:id="def-Multiplication">
+            <statement>
+                <p>
+                    Let <m>a,b \in \mathbb{N}_0</m>. We define <m>a \times b</m> to be <m>a</m> copies of <m>b</m> added together. In the case where either <m>a=0</m> or <m>b=0</m> we define <m>a \times b</m> to be <m>0</m>.
+                </p>
+            </statement>
+            <p>
+                We can view this repeated addition in the following diagram.
+            </p> 
+            <p>
+                INSERT DIAGRAM OF <m>a \times b</m> USING A NUMBER LINE ADDITION MODEL
+            </p>
+
+        </definition>
+
+        <p>
+            Another way of viewing the multiplication <m>a \times b</m> is as an area or array. Really, this idea is very similar to the number line model, except each group of <m>b</m> is directily below the first group. Later, we will see that this model is an excellent one for thinking about multiplication of fractions and decimals too.
+        </p>
+        <p>
+            INSERT PICTURE OF <m>a \times b</m> using an area model.
+        </p>
+        </introduction>
+       
+        <subsubsection xml:id="subsubsec-Exponents">
+            <title>Exponents</title>
+            <p>
+                MOVE SECTION TO AFTER PROPERTIES OF ARITHMETIC Just like how multiplication is a nice way of writing repeated addition, it's very useful to be able to have the idea of repeated multiplication. To write  <m>a \times a \times a \times  \ldots \times a</m>, where <m>a</m> is multiplied by itself <m>b</m> times, we write <m>a^b</m>, where we call <m>a</m> the <term>base</term> and <m>b</m> the <term>exponent.</term>.
+            </p>
+            <example>
+                <p>
+                    We can write <m>4 \times 4 \times 4</m> as <m>4^3</m> since <m>4</m> is multiplied by itself <m>3</m> times.
+                </p>
+                
+            </example>
+            <p>
+                It's clear that for any whole number <m>a</m> we have <m>0^a=0</m>. Also, for any whole number <m>a</m> we say <m>a^1 = a</m> and if <m>a \neq 0</m> we say <m>a^0=1</m>. Note that we leave <m>0^0</m> undefined; as this causes a lot of trouble if we try and give this meaning. We will see why later. 
+            </p>
+            <p>
+                Let's try and come up with some rules for multiplying exponents. What if we wanted to multiply <m>3^2 \times 3^4? </m>. We could write
+                <me>
+                    \quad 3^2 \times 3^4
+                    = (3 \times 3) \times (3 \times 3 \times 3 \times 3).
+                    = (3 \times 3 \times 3 \times 3 \times 3 \times 3)
+                    = 3^6
+                </me>
+                
+            </p>
+            
+        </subsubsection>
+    </subsection>
+    <subsection xml:id="subsec-Division">
+        <title>Division with Remainders</title>
+        <subsubsection xml:id="subsubsec-IntroductionToDivision">
+            <title>Introduction To Division</title>
+            
+        
+       <p> Now that we have the idea of multiplication as repeated addition, we can view its inverse operation, division, as repeated subtraction.</p>
+
+       <p>
+           First, an example to see what we mean:
+       </p>
+       <example>
+           <p>
+               Let's say we wanted to do the division problem <m>21 \div 5.</m> We can view this as counting the number of times we can subtract 5 from 21 until we're unable to anymore (without going in to negative numbers). We know
+               <me>
+                   21-5=16
+                   16-5=11
+                   11-5=6
+                   6-5=1
+               </me>
+               and since 1 is less than 5 we cannot subtract 5 from 1 using our definition of subtraction. We were able to subtract 5 four times from 21, so we say that <m>21 \div 5 = 4 \ R \ 1</m> since there is 1 remaning at the end of this repeated subtraction. Let's look at this in general:
+               
+           </p>
+           <p>
+               INCLUDE DIAGRAM OF REPEATED SUBTRACTION
+           </p>
+       </example>
+
+       <definition xml:id="def-Division">
+           <statement>
+               <p>
+                   Let <m>a,b, q, r\in \mathbb{N}_0</m> with <m>b \neq 0</m>. Then we say that <m>a \div b = q \ R \ r</m> if and only if there are unique numbers <m>q</m> and <m>r</m>  where <m>a = q \times b+r</m> and <m>0 \leq r \leq (b-1)</m>. 
+               </p>
+           </statement>
+       </definition>
+       <p>
+           We call <m>a</m> the <term>dividend</term>, <m>b</m> the <term>divisor</term>, <m>q</m> the <term>quotient</term>, and <m>r</m> the remainder. As <m>b \neq 0</m> is part of this defintion, we say the expression <m>a \div 0</m> is <term>undefined</term>; that is, the concept of division isn't defined when <m>b = 0</m>.</p> 
+           <p>Note just like us defining subtraction in terms of something we already knew, we defined divison in terms of multiplication and addition. So we're on solid footing here; if we ever forget what division means, we just look up this definition which is in terms of multiplication and addition, which, if we forget, we can look up the definition of those too. This seems like it's overkill for such simple concepts (and it is in a way) but this is how mathematicians think about concepts so it's good practice to do this for easy and intuitive ideas like arithmetic. 
+       </p>
+       <p>
+           We can also view the division <m>a \div b</m> as the number of groups of size <m>b</m> you can make out of <m>a</m> objects. Let's look at <m>43 \div 4</m>.
+       </p>
+       <p>
+           INSERT PIC OF DIVISION BY GROUPING
+       </p>
+       <assemblage xml:id="assemblage-DivUnique">
+           <title>Notes for Additional Understanding</title>
+           <p>
+               It's intuitive that every division problem <m>a \div b</m> has one answer, that is one quotient <m>q</m> and remainder <m>r</m> that make the equation <m>a=qb+r</m> true. However, this is something that really needs to be proved before we can say it for sure. We will revisit this in the section where we talk about divisibility of numbers.
+           </p>
+       </assemblage>
+       </subsubsection>
+       <subsubsection xml:id="subsubsec-DivisionByZero">
+           <title>Division By Zero</title>
+           <p>
+               MOVE TO PROPERTIES OF ARITHMETIC SECTION Why did we have the condition that our divisor <m>b \neq 0</m>? That is, why can't we divide by <m>0</m>? Let's see if we can show why that's the case. 
+           </p>
+           <example>
+               <p>
+                   Let <m>a \in \mathbb{N}_0</m> and <m>b=0</m>, so <m>a</m> is some whole number. For now, let's assume that there is no condition on the size of the remainder <m>r</m>. If <m>a \div 0</m> does make sense, this means there is some unique quotient <m>q</m> and remainder <m>r</m> such that <m>a=q \times 0 + r</m>. Thus <m>a=r </m>, but <m>q</m> can be any number and this will still hold. Since we require that quotients are unique, this does not make sense.
+               </p>
+           </example>
+           <example>
+               <p>
+                   We need to be careful when doing arithmetic; if we divide by zero by mistake, we can make any expression equal any other expression. Let's view the following example to show this.
+               </p>
+           </example>
+       </subsubsection>
+
+    </subsection>
+</section>
+<section xml:id="sec-PropertiesOfArithmeticOperations">
+    <title>Properties Of Arithmetic Operations</title>
+    <subsection xml:id="subsubsec-OrderOfOperations">
+        <title>Order Of Operations</title>
+        <p>
+            A quick reminder about the order of operations that occur in an expression. These have been universally agreed upon over time, so we should make sure we're comfortable with this. 
+            <ol>
+                <li>
+                    <p>
+                        Perform operations inside of brackets (using the ordering we are listing) in the order they occur, left to right.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Perform exponential and root operations in the order they occur, left to right.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Perform divisions and multiplications in the order they occur, left to right.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Perform addition and subtraction in the order they occur, left to right.
+                    </p>
+                </li>
+            </ol>
+            
+            You have probabily heard the expression BEDMAS as a reminder of the order. More precisely, it should read BE(DM)(AS), as we think of division and multiplication, and addition and subtraction, as pairs of the same operations (as each member of the pair is the inverse operation of the other member.)
+        </p>
+
+        <example>
+            <p>
+                Be careful when you see expressions like <m>3+4(5-2)</m>. It is a very common error to add the <m>3+4</m> first, which is incorrect as it does not follow our oder of operations. OF course, we should have <me>
+                    3+4(5-2) = 3+4(3) = 3+12 = 15.
+                </me>
+                
+            </p>
+        </example>
+
+    </subsection>
+    <subsection xml:id="subsec-PropertiesOfArithmetic">
+        <title>Properties Of Arithmetic</title>
+        
+    
+    <p>
+        There are some important properties of arithmetic operations that are worth pointing out and discussing. We use them regularly, and we will rely on them especially in the coming section on algorithms for arithmetic. Let's use the symbol <m>\square </m> to mean any one of our arithmetic operations. Note that we can think of all of our operations *combining* two numbers to make another number.
+    </p>
+    <definition xml:id="def-Closure">
+        <statement>
+            <p>
+                Closure - We say a set <m>S</m> is <term>closed under the operation </term> <m>\square</m> exactly when it's the case that if <m>a.b \in S</m> then <m>(a \square b) \in S</m>.
+            </p>
+        </statement>
+        <example>
+            <p>
+                Since addition of two whole numbers gives us another whole number, we have that the set <m>\mathbb{N}_0</m> is closed under <m>+</m>. Similarly, <m>\mathbb{N}_0</m> is closed under <m>\times</m> as well. However, <m>\mathbb{N}_0</m> is *not* closed under subtraction, since (as a counterexample to the if-then statement in the definition of closure) <m>2-4 = (-2)</m>. We know that <m>2,4 \in \mathbb{N}_0</m> (so the if part of the definition is true) but <m>(-2) \notin \mathbb{N}_0</m> (so the then part of the definition is false). 
+            </p>
+        </example>
+    </definition>
+    <definition xml:id="def-Commutativity">
+        <statement>
+            <p>
+                We say an operation <m>\square</m> is <term>commutative</term> exactly when it's the case that when  <m>a \square b=c</m> then <m>b \square a=c</m>; that is, <m>a \square b = b \square a</m>  (order of performing the operation doesn't matter).
+            </p>
+        </statement>
+        <example>
+            <p>
+                In <m>\mathbb{N}</m>, addition and multiplication are commutative. For example, <m>4+11 = 11+4</m> and <m>3 \times 7 = 7 \times 3</m>. We can view these pictorally:
+            </p>
+            <p>
+                INSERT PIC OF THE ABOVE
+            </p>
+            <p>
+                Let's move to the set  <m>\mathbb{Z}</m> so that subtraction is closed and our subtractions make sense. Subtraction is *not* a commutative operation since, as a counterexample, <m>3-2=1</m> but <m>2-3=(-1)</m>. Similarly, division in the set <m>\mathbb{Q}</m> is not commutative.
+            </p>
+        </example>
+    </definition>
+    <definition xml:id="def-Associativity">
+        <statement>
+            <p>
+               We say an operation <m>\square</m> is <term>associative</term> exactly when it's the case that when  <m>(a \square b) \square c =d</m> then <m>a (\square b \square c) =d</m>; that is, <m>(a \square b) \square c = a a\square (b \square c)</m>  (grouping performing the operation doesn't matter). 
+            </p>
+        </statement>
+        <example>
+            <p>
+                In <m>\mathbb{N}</m>, addition and multiplication are associative. For example, <m>(4 \times 3) \times 2 = 4 \times (3 \times 2)</m> and <m>(3 + 7)=4 = 3+ (7 +4)</m>. We can view these pictorally:
+            </p>
+            <p>
+                INSERT PIC OF THE ABOVE
+            </p>
+            <p>
+                Now in <m>\mathbb{N},</m> subtraction is *not* associative. As a counterexample, we have <m>(6-4)-1 = 2-1 =1</m> but <m>6-(4-1) = 6-3 = 3</m>.
+            </p>
+        </example>
+            </definition>
+            <exercise>
+               <p> PUT SOME EXERCISES ABOUT THESE HERE!! </p>
+            </exercise>
+            <p>
+                Now we talk about properties specific to addition/subtraction and multiplication/division.
+            </p>
+            <definition xml:id="def-AIdentity">
+                <statement>
+                    <p>
+                       We call 0 the <term>additive identity</term> since <m>a+0=a</m> for any number <m>a</m>.
+                    </p>
+                </statement>
+            </definition>
+            <definition xml:id="def-MIdentity">
+                <statement>
+                    <p>
+                       We call 1 the <term>multiplicative identity</term> since <m>a \times 1 = a</m> for any number <m>a</m>. 
+                    </p>
+                </statement>
+            </definition>
+            <p>
+                Using the idea of identities, we can talk about inverse elements for each pair of related operations. In laster sections when we discuss integers and rational numbers, we will talk about how we can turn every sutraction problem into an addtion problem, and (almost) every division problem into a multiplication problem. In this sense, we can think of subtraction as being the "same" operation as addition, and division being the "same" operation as multiplication.  </p>
+
+            <definition xml:id="def-AdditiveInverse">
+                <statement>
+                    <p>
+                        Let <m>a</m> be a number. Then <m>b</m> is the <term>additive inverse</term> or <term>negative</term> of <m>a</m> if and only if <m>a+b=0</m>. 
+                    </p>
+                   
+                </statement>
+                 <example>
+                        <p>In the set of integers, <m>(-2)</m> is the negative of <m>2</m> since <m>(-2)+2=0</m>. This also means that <m>2</m> is the negative of <m>(-2)</m>.</p>
+                    </example>
+                    <example>
+                        <p>However, <m>2</m> has no negaive in the set of whole numbers, since there is no <m>b \in \mathbb{N}_0</m> such that <m>2+b=0</m>. So depending on the set you are working with, negatives may or may not exist.</p>
+                    </example>
+            </definition>
+            <definition xml:id="def-MultiplicativeInverse">
+                <statement>
+                    <p>
+                        Let <m>a</m> be a number. Then <m>b</m> is the <term>multiplicative inverse</term> of <term>reciprocal</term> of <m>a</m> if and only if <m>a \times b = 1</m>.
+                    </p>
+                </statement>
+                <example>
+                   <p> In the set of rational numbers, or fractions, <m>\frac{1}{5}</m> is the reciprocal of <m>5</m> since <m>\frac{1}{5} \times 5 = 1</m>. This also means that <m>5</m> is the reciprocal of <m>\frac{1}{5}</m>.</p>
+                </example>
+                <example>
+                   <p> Note that in any set, <m>0</m> does not have a reciprocal, since there is no number <m>b</m> such that <m>0 \times b = 1</m> since we know that <m>0 \times b = 0</m> for any choice of <m>b</m> (of course, we know this fact is true, but we will carefully show *why* it is true later in this section.) </p>
+                </example>
+            </definition>
+            
+            <p>
+                The last property we will discuss invloves how multiplication and addition "play" together. 
+            </p>
+            <definition xml:id="def-Distributivity">
+                <statement>
+                    <p>
+                        Let <m>a,b,c</m> be numbers. Then we call the property that <m>a \times (b+c) = a\times b + a\times c</m> the <term>distributive property</term>.
+                    </p>
+                </statement>
+                <example>
+                    <p>
+                       The easiest way to view why distributivity holds is via a picture using the array model of multiplication. Consider a chocolate bar with <m>6</m> horizontal blocks and <m>8</m> vertical blocks. In total, the chocolate bar has <m>6 \times 8 = 48</m> blocks: 
+                    </p>
+                    <p>
+                        INSERT PIC HERE
+                    </p>
+                    <p>
+                       Now, let's "break" this chocolate bar between the 3rd and 4th vertical block thus giving us 3 blocks in the first section and 5 in the second (of course, we still have the same amount of chocolate). So we can view this now as <m>6 \times (3+5)=48</m>. But we could calculate the number of blocks separately in each of the two sections, and then add them together. Obviously we would still have the same amount of chocolate. So there are <m>6 \times 3+ 6 \times 5 = 18 + 30 = 48</m> blocks of chocolate.
+                    </p>
+                    <p>
+                        INSERT PIC HERE
+                    </p>
+                    <p>
+                        This idea represents the idea behind distributivity. Note that distrivutivity is *very* important when we start discussing methods for multiplying in a later section.
+                    </p>
+                </example>
+            </definition>
+            <p>
+                Note that we can extend the idea in the previous example to any number of "cuts" in our chocolate bar. We could show this more formally, but the following examples should give an idea of how this works
+            </p>
+            <example>
+                <p>
+                    Let's look at <m>8 \times 9</m>. We can break <m>8</m> into <m>6+2</m>, and <m>9</m> into <m>5+4</m>. Thus we can view <m>8 \times 9</m> as <m>(6+2) \times (5+4)</m>. Viewed as a chocolate bar as in the previous example:
+                </p>
+                <p>
+                    INSERT PIC HERE SHOWING
+                </p>
+                <p>
+                    We can now multiply the constituent parts and the add them together to obtain the final answer. Note that we multiply each number in the first bracket by each number in the second. So <me>8 \times 9 = (6+2) \times (5+4)</me> <me> = 6 \times 5 + 6 \times 4 + 2 \times 5 + 2 \times 4</me> <me> = 30 + 24 + 10 + 8 = 72 </me>.
+                </p>
+            </example>
+            <example>
+                There is nothing special about the numbers in the previous example. In fact, we can do this for any numbers. In fact, if <m>a,b,c,d </m> are numbers then <m>(a+b)(c+d) = ac + ad +bc +bd</m>. 
+                <p>
+                    INSERT PIC OF THE ABOVE
+                </p>
+            </example>
+            <example>
+                <p>Let's use the same idea to multiply <m>237 \times 841</m>. We can split each number in terms of its place values: <m>(200+30+7) \times (800 \times 40 \times 1)</m>. Using the same idea as the previous examples we can view this as
+                    <me>
+                        200 \times 800 + 200 \times 40 + 200 \times 1
+                    </me>
+                    <me>
+                        + 30 \times 800 + 30 \times 40 + 30 \times 1
+                    </me>
+                    <me>
+                        + 7 \times 800 + 7 \times 40 + 7 \times 1
+                    </me>
+                    <me>
+                        = 160000 + 8000 + 200
+                    </me>
+                    <me>
+                        +24000 + 1200 + 30
+                    </me>
+                    <me>
+                        +5600 + 280 + 7
+                    </me>
+                    <me>
+                        =199317
+                    </me>
+                    
+                                </p>   
+
+             <p>
+                 INSERT PIC OF ABOVE
+             </p>                   
+                
+            </example>
+
+            <assemblage xml:id="assemblage-Properties">
+                <title>Notes For Additional Understanding</title>
+                <p>
+                   It is just beyond the scope of this textbook, but we could show that the above properties *must* hold for addition and multiplication using a proving technique called <term>mathematical induction</term> for many of these. We will eventually prove that <m>a \times  0 = 0</m> for all numbers <m>a</m> which is usually called the <term>property of multiplication by zero</term>. 
+                </p>
+            </assemblage>
+    <p>
+        We can use these properties to carefully show some results about arithmetic. We will do one, and leave the others as an exercise for you.
+    </p>
+    
+    
+    </subsection>
+    <subsection xml:id="subsec-ConsequencesofProperties">
+        <title>Consequences of Properties</title>
+        <subsubsection xml:id="subsubsec-RelatedSubtractionandDivisionProblems">
+            <title>Related Subtraction and Division Problems</title>
+            
+        
+        
+    
+    <p>
+        SECTION ON Build up if <m>a-b=c</m> then <m>a-c=b</m> and if <m>a\div b=c</m> then <m>a \div c = b</m>.
+    </p>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-MultiplicationandDivisionByZero">
+        <title>Multiplication By Zero</title>
+        
+    
+    <p>
+        Does it have to be the case that multiplication by zero always gives and answer of zero, or is that something we just decided because it works (more specifically, do we need to make an axoim covering multiplication by zero)? In fact, it's somthing that *must* follow from previous properties we've discussed. An important result that can be proved from axioms or previous results is called a <term>theorem</term>. Let's write this as a theorem, and then prove it. We have to be careful here, since we may be tempted to simplify <m>a \times 0 = 0</m>, but we need to put ourselves in the mindset of the first person ever to think about this; we have no idea what it could equal, so we need to solve for it using some properties that we know.
+    </p>
+    <example>
+        
+        <theorem xml:id="thm-atimeszero">
+            <statement>
+                <p>
+                    If <m>a</m> is a number then <m>a \times 0 = 0</m>
+                </p>
+            </statement>
+            <proof>
+                <p>
+            Let <m>a</m> be a number and let's consider <m>a \times 0</m>, which is our unknown expression; this is what we need to solve for. Remember, we *cannot* simplify this. The key to this is trying to come up with a way of finding something equal to <m>a \times 0</m> and then using some algebra to solve for our unknown expression. 
+        </p>
+        <p>
+            One way of doing this is remembering the multiplicitave identity and additive indentity properties. Let's be very precise here, and make sure we label all of the properties we are using. By the multiplicative identity property we know <me> a \times 1 = a</me> and by the additive identity property we know <me> 1+0 = 1 </me>. Using substitution of equal expressions we can write <me>a \times (1+0) = 1 </me>. Now using distributivity we can say that <me> a \times 1 + a\times 0 = a</me>. Again, by multiplicitive identity we can simplify this to <me>a + a\times 0 = a </me>. Finally ,by arithmetic of equal expressions we can subtract <m>a</m> from both sides to have <m>a \times 0 = 0</m>.           
+        </p>
+       
+        
+            </proof>
+        </theorem>
+
+         <p>
+            Keep in mind what this is saying; if we want 1 to be the multiplicitave identity, 0 to be the additive identity, and the properties of equality and distributivity to hold, it *must* be the case that <m>a \times 0 = 0</m>. So this is a consequence of these properties; if we want to live in a mathematical world where these properties hold, then multiplying by zero *must* give you an answer of zero.
+        </p>
+        
+
+    </example>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-RelatedSubtractionAndDivisionProblems">
+        <title>Related Subtraction And Division Problems</title>
+        <p>
+            It's quite intuitive to understand that since, for example, <m>7-4=3</m>, we immediately know the related subtraction problem <m>7-3 = 4</m>. And, in general, if <m>a-b=c</m> we know that <m>a-c=b</m>. 
+        </p>
+        <p>
+            INSERT PIC OF THESE USING EITHER NUMBERLINE OR OBJECTS
+        </p>
+        <p>
+            The picture above is basically a proof of this fact, but let's show that this always holds in general for every subtraction problem using our careful definition of subtraction.
+        </p>
+        <theorem xml:id="thm-SubtractionRelated">
+            <statement>
+                <p>
+                    For whole numbers <m>a,b,c</m> if <m>a-b=c</m> then <m>a-c=b</m>.
+                </p>
+            </statement>
+            <proof>
+                <p>
+                    Assume that the if-part is true; that is <m>a-b=c</m>. By the definition of subtraction, we know that this means that <m>a=b+c</m>. Now, by using commutativity of addition we can write this as <m>a = c+b</m>, which, by the definition of subtraction, is the same as the subtraction problem <m>a-c=b</m>.
+                </p>
+            </proof>
+        </theorem>
+        <p>
+            We can do a similar argument for division when there is no remainder, that is <m>r=0</m> in the equation <m>a \div b = q Rr</m>. This, of course, means that <m>b</m> divides evenly into <m>a</m> with nothing remaining. Let's first look at the example <m>84 \div 7 =12</m> and <m>84 \div 12 =7</m> pictorally;
+        </p>
+        <p>
+            INSERT PIC OF THE ABOVE EXAMPLE
+        </p>
+        <theorem xml:id="thm-DivisionRelated">
+            <statement>
+                <p>
+                    For whole numbers <m>a,b,c</m> with <m>b,c \neq 0</m> if <m>a \div b=c</m> then <m>a \div c=b</m>.
+                </p>
+            </statement>
+            <proof>
+                <p>
+                    This is left as an exercise for you. Try and draw a general picture in the same style of the subtraction picture, and then try to show this algebraically using the definition of division (with a remainder of zero)
+                </p>
+            </proof>
+        </theorem>
+        <assemblage xml:id="assemblage-DivisionNote">
+            <title>Notes for Additional Understanding</title>
+            <p>
+                If we have a remainder that isn't zero, things get a little more complicated. For example, look at the division equation <m>64 \div 40 = 1R24</m>, but since our remainder is quite large (notably it's bigger than our quotient) the related problem <m>64 \div 1</m> obviously does not equal <m>24</m>. 
+            </p>
+            <p>
+                As a challenge problem, see if you can come up with a general result when <m>a \div b = qRr</m> relating to <m>a \div q</m>. 
+            </p>
+        </assemblage>
+        
+        
+    </subsubsection>
+    
+    </subsection>
+</section>
+<section xml:id="sec-AlgorithmsforArithmetic">
+    <title>Algorithms for Arithmetic</title>
+    <introduction>
+    <p>
+        In this section, we will talk about the ways we do arithmetic in practice. If you think about it, the methods we use to do arithmetic are a series of steps (a good analogy is a recipe) that we follow to obtain an answer. In mathematics we care about these enough to give them their own name: 
+
+    </p>
+    <definition xml:id="def-Algorithm">
+        <statement>
+            <p>
+                An <term>algorithm</term> is a (finite) series of well-defined steps that will always solve a certain class of problems if correctly followed. 
+            </p>
+        </statement>
+    </definition>
+    <p>
+        There are countless algorithms for solving arithmetic problems for whole numbers (which we can use to solve arithmetic problems in larger sets of numbers, like integers, rational numbers, or real numnbers). We will discuss a few of the most common algorithms that are used, discuss the pros and cons of each, and also discuss some non-algorithmic and ad-hoc methods that are widely used, especially when it comes to mental arithmetic.
+
+        <p>
+            Most, if not all, of the following algorithms use the fact that we write numbers in a place-value system to break the computation into easier parts that we can put together at the end.</p>
+    </p>
+        
+        <p>
+            Is there a "best" algorithm for each arithmetic operation? Depending on what you care about (speed, efficiency, ease of understanding, consistency in all cases), a different algorithm can be "better" than others. Regarding understanding, the most understandable algorithm may differ from student to student, and from teacher to teacher. So it is a very hard (and in some cases impossible) task to exclusively recommend one algorithm over another.
+        </p>
+        <p>
+            It is important to study multiple algorithms for many reasons. Forst of all, understanding the details of an algorithm allows a teacher to explain how and why an algorithm works, as opposed to simply relying on some authoritative explanation like "follow these steps because they are the ones that work". Also, this understanding allows teachers to be able to find student's conceptual errors in arithmetic. Not only can they find mistakes, they can, along with discussions with the students, also determine the conceptual reasons behind these mistakes. Knowing the underpinnings of multiple algorithms allows a teacher to have many algorithmic tools in their toolbox. They can use their professional judgement for what is the most appropriate algorithm to use and/or teach depending on the needs of their students. Also, studying multiple algorithms allows teachers the opportunity to understand arithmetic through many lenses, thus increasing their overall understanding of the operations themselves.
+        </p>
+        <p>
+            Note that we will also learn how to use these algorithms to do arithmetic in other bases, as discussined in INSERT SECTION REFERENCE. Even though it may be unlikely that you will need to teach students how to do arithmetic in other bases, this will allow us to turn off our "muscle memory" of doing arithmetic in base ten, as we are so comfortable with many of these algorithms that it is incredibly difficult to this muscle memory off to think deeply about the algorithmeic underpinnings. As an added bonus, we will get to experience, in a small way, the struggles that your future students will have when learning about performing arithmetic for the first time. 
+        </p>
+    </introduction>
+    <subsection xml:id="subsec-AdditionAlgorithms">
+        <title>Addition Algorithms</title>
+        <subsubsection xml:id="subsubsec-TheStandardAdditionAlgorithm">
+            <title>The Standard Addition Algorithm</title>
+            <p>
+                NOTE ON ADDITION "FACTS" OF SINGLE DIGIT SUMS
+            </p>
+            <p>
+                NOTE ON USING MANIPULATIVES/PICTURES AS "TRAINING WHEELS"
+            </p>
+            
+            <p>
+                The vast majority of students who learn arithmetic in North America lean to add using the following algorithm. As it's so common, it usually gets named the <term>standard addition algorithm</term>. In short, starting from the smallest place value to the largest (that is, from right to left) we add the place values of our numbers separately, and regroup (or "carry") any groups of the next largest place value (so the place value directly to the left) as we go. 
+            </p>
+            <p>
+                We can write this algorithmically (as a series of steps) as follows:
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        Write one number below the other so that each place value is in its own column. Now begin at the rightmost column.
+                    </p>
+                    </li>
+                    <li>
+                    <p>
+                        Add the digits together (including any regroupings). If the sum is 10 or larger, write a 1 above the column to the left (this signifies that we regrouped 10 of the current place value to one of the place value to the left.)
+                    </p>
+                    </li>
+                    <li>
+                    <p>
+                        If there are no non-zero digits in any column to the left, you are done. Otherwise move to the next column to the left and go to Step 2.
+                    </p>
+                </li>
+            </ol>
+            <example>
+                
+            
+            <p>
+                Let's add <m>447+629</m> slowly and carefully using this algorithm and visualize it using blocks.
+            </p>
+            <p>
+                First, let's view the two numbers in terms of blocks:
+            </p>
+
+            <p>
+                INSERT PIC OF THESE TWO NUMBERS AND THE STANDARD ALGORITHM TO THE SIDE
+            </p>
+            <p>
+                First we add the ones place. Note tha we have <m>7+9 = 16</m> ones. We can regroup ten (10) of those to make one of the next place value, that is, one ten. We write that regrouping as a 1 above, and we are still left with 6 ones, so we can write that down:
+            </p>
+            <p>
+                INSERT PIC OF GROUPING AND THE STEPS IN THE ALGORITHM. NOTE THAT THE CARRY IS THE REGROUPED ONES
+            </p>
+           <p> We now move on to the next place; the tens. We have <m>4+2+1</m> tens (the additional 1 being the regrouping from the last step). So we have 7 tens. Note that as we're working in our usual base ten, we do not have enough tens to regroup, so we simply write that we have 7 tens. </p>
+
+           <p>
+               Now let's move on to the next place; the hundreds. We have <m>4+6-10</m> hundreds. We can group all ten of those (with 0 left over after regrouping) to make one of the next place value, that is, one thousand. As this is the final place that our numbers contain, we don't need to mark a regrouping and simply write down that we have 1 thousand and 0 hundreds. 
+           </p>
+           <p>
+               INSERT PIC OF THIS SIMILAR TO LAST TWO
+           </p>
+           <p>
+               Thus we finally have that <m>447+629=1076</m>.
+           </p>
+
+           <p>
+               If we think about this carefully, the addition algorithm above relies on the properties of associativity and commutativity in addition to place value. We are using these propertie when we add each place value separately and regroup any "carries" with the place value to the left. Let's write out what the standard addition algorithm is doing in the example above in a little more detail. 
+           </p>
+           <me>
+               447+629 = (400+40+7) + (600+20+9) \text{ explanded place value representation}
+           </me>
+           <me>
+               = (400+600) + (40+20) + (7+9) \text{ associativity and commutativity}
+           </me>
+            <me>
+               = (400 +600) + (40 + 20) + (16) \text{ addition}
+           </me>
+           <me>
+               = (400 +600) + (40 + 20) + (10+6) \text{ expanded place value representation}
+           </me>
+           <me>
+               = (400 + 600) + (40 + 20 +10) +6 \text{ associativity and commutativity}
+           </me>
+           <me>
+               = (400+600) +70 + 6 \text{ addition}
+           </me>
+           <me>
+               = (1200) + 70 +6 \text{ addition}
+           </me>
+           <me>
+               = 1000 + 200 + 70 + 6 \text{ expanded place value representation}
+           </me>
+           <me>
+                = 1270 \text{ addition}
+           </me>
+
+           </example>
+            <p>
+                We won't go into as much detail with all algorithms in this section, but note that underpinning all of the algorithms are the arithmetic properties from SECTION REFERENCE
+            </p>
+           
+           
+           
+           
+           
+           
+           <p>
+               Note that the pictoral/block representation becomes difficult after thousands (as we run out of dimensions, as discussed above) but the idea behind the algorithm still applies for numbers with any place values.
+           </p>
+           <exercise>
+               <p>
+                   Add the following numbers using the standard algorithm. Draw blocks as we did above and make sure to note the place values of any regroupings/carries you do:
+               </p>
+               <ol>
+                   <li>
+                       <p>
+                           <m>45+58</m>
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           <m>208+737</m>
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           <m>9997+839</m>
+                       </p>
+                   </li>
+               </ol>
+           </exercise>
+           <p>
+               Of course, there is nothing special about base ten; we can add numbers in any base we wish! Let's look at two examples in other bases. Note that we will not have the "addition facts" of adding single digits in other bases memorized, so we have to be careful when adding. If needed we can do a little side calculation, or draw a diagram to help us.
+           </p>
+           <p>
+               Also, so we don't get confused with the language of tens/hundreds/thousands/etc, we refer to the place value to the left of the ones the "longs" place, the next one to the left the "squares" place, and the next one to the left of that the "cubes" place.
+           </p>
+           <example>
+               <p>
+                   Using the standard addition algorithm, let's add <m>435_{seven}+43_{seven}.</m> The algorithm remains the same, except now we regroup whenever we have seven of one place. 
+               </p>
+
+               <p>
+                   INSERT BLOCK PIC OF NUMBERS
+               </p>
+
+               <p>
+                   We start by adding the ones. We have <m>5_{seven}+3_{seven} = 11_{seven}</m> as we regroup seven of the eight ones to get 1 long (made up of seven ones) and 1 one. We write down the one remaining:
+               </p>
+               <p>
+                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+               </p>
+               <p>
+                   Now we move on to add the longs place. We have <m>3_{seven}+3_{seven}+3_{seven}=10_{seven}</m>. Thus we regroup seven longs to make one square, adn we have no longs left over. We write this down in our working:
+               </p>
+               <p>
+                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+               </p>
+              <p> Finally we add the squares place. We have <m>4_{seven}+1_{seven}=5_{seven}</m> squares, nothing that the bottom addend has no squares. Thus we write this down:  </p>
+
+              
+                  <p>
+                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+               </p>
+              <p>
+                  Thus we have that <m>435_{seven}+43_{seven} = 501_{seven}</m> and we have finished.
+              </p>
+           </example>
+           <p> Let's now work in base twelve. Remember we *do not* regroup when we have ten or eleven of one place, and we use the symbols <m>A</m> and <m>B</m> to denote these quantities, respectively. </p>
+           
+           <example>
+              <p>
+                  Let's find the sum <m>6A3_{twelve}+90B_{twelve}</m>. First of all, it will be helpful to view these as blocks:
+              </p>
+              <p>
+                  INSERT BLOCK PIC OF NUMBERS
+              </p>
+              <p>
+                  Let's start with the ones place. We have <m>3_{twelve}+B_{twelve} = 12_{twelve} </m> ones (think three + eleven ones is fourteen ones), where we regrouped twelve ones to make 1 long (containing twelve ones) with 2 ones remaining. We "carry" our one long, and write down our 2 ones:
+              </p>
+              <p>
+                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+               </p>
+               <p>
+                   Now we add our longs place. We have <m>A_{twelve}+0_{twelve}+1_{twelve} = B_{twelve}</m> longs. Since eleven longs is not enough to regroup in base twelve, we simply write this down.
+               </p>
+               <p>
+                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+               </p>
+               <p>
+                   Now we add our squares place. We have <m>6_{twelve}+9_{twelve} = 13_{twelve}</m> squares, where twelve squares are regrouped to make one of the next place value (cubes) and we have 3 squares remaining. (Do this calculation on the side to make sure that you understand it). Since we are "out" of places in our numbers we simply write this down in our algorithm:
+               </p>
+               <p>
+                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+               </p>
+               <p>
+                   We have just calculated that <m>6A3_{twelve}+90B_{twelve} = 13B2_{twelve}</m> and we are finished.
+               </p>
+           </example>
+           <exercise>
+               <p>
+                   Add the following using pictures/blocks as a guide if needed. If you do, try to make sure you understand how the blocks correspond to steps in the algorithm:
+                   <ol>
+                       <li>
+                           <p>
+                               <m>45_{eight} + 71_{eight}</m>
+                           </p>
+                       </li>
+                       <li>
+                           <p>
+                               <m>210_{three}+221_{three}</m>
+                           </p>
+                       </li>
+                       <li>
+                           <p>
+                               <m>54A_{twelve}+BA7_{twelve}</m>
+                           </p>
+                       </li>
+                   </ol>
+               </p>
+               <p>
+                   For these, do not draw pictures. Add them using only the standard addition algorithm:
+                   <ol>
+                       <li>
+                           <p>
+                               <m>552_{six}+25_{six}</m>
+                           </p>
+                       </li>
+                       <li>
+                           <p>
+                               <m>101101_{two}+110111_{two}</m> (remember you only need two of a place to regroup, and the digit set base two is <m>D=\{0,1\}</m>).
+                           </p>
+                       </li>
+                       <li>
+                           <p>
+                               <m>4A095_{twelve}+3BB78_{twelve}</m>
+                           </p>
+                       </li>
+                       <li>
+                           <p>
+                               <m>422_{five}+344_{five}+43_{five}+141_{five}</m> (you may have to regroup more that one grouping in some places)
+                           </p>
+                       </li>
+                   </ol>
+               </p>
+           </exercise>
+        </subsubsection>
+        <subsubsection xml:id="subsubsec-DUMMY">
+            <title>Partial Sums</title>
+            
+        <p>
+            In the standard algorithm, we added our regrouping to the next place value as we went. Instead, we could add each place value separately without dealing with the regroupsing and then the regroupings to each place value as our final step. This is called the <term>partial sum algorithm</term>, as you are finding the sums of each place value (these are the partial sums) and then adding these together to obtain the final answer. Let's take a look at an example, and in fact let's look at the same problem that we did previously with the standard addition algorithm:
+        </p>
+<example>
+    <p>
+            Let's add <m>447+629</m> slowly and carefully using partial sums and visualize it using blocks.
+        </p>
+
+        First we add our ones and find that we have <m>7+9=16</m> ones, noticing that we can regroup 10 ones into a long. 
+        <p>
+            INSERT PIC OF CALCULATION HERE
+        </p>
+        
+        Then, we add the tens and hundreds separately: <m>40+20=60</m> and then <m> 400+600=1000</m>. We add this to our calculation above to obtain the final answer:
+
+        <p>
+            INSERT PIC OF UPDATED CALCULATION
+        </p>
+</example>
+        
+
+        <p>
+            We note that this is not *that* different to the standard addition algorithm, as the "carries" are added at the end rather than as we go.
+        </p>
+        </subsubsection>
+        <subsubsection xml:id="subsubsec-SameChangeAddition">
+            <title>Same Change Algorithm</title>
+            
+        
+        <p>
+            Let's now discuss the <term>same change</term> algorithm. To help us illustate the idea (any why it's useful to know) we start with an example. Let's add <m>998+314</m> in our heads. Try doing this now.
+        </p>
+
+        <p>
+            I'm sure that most people reading this book did not mentally perform the standard algorithm for this calculation. In fact, I can imagine that many people noticed that 998 was 2 smaller than 1000, so they added 2 to 1000 and, to "balance" out, they subtracted 2 from 314. Then adding <m>1000+312</m> is very easy in your head. In fact, you can use this idea to add any two numbers. </p>
+
+        <p>
+            In general, we are using the fact that if <m>a,b, \in \mathbb{N}_0</m> we know that <m>a+b = (a+c)+(b-c)</m> since we can use associativity and commutativity to rearrange the RHS to <m>a+b+(c-c) = a+b+0 = a+b</m>. In fact, since this holds for *any* whole numbers <m>a,b,c</m> we can indeed use this idea to judiciously choose the <m>c</m> in the calculation to make our computation easier. 
+        </p>
+        <p>
+            In the first example we chose <m>c=2</m> so that our addition step in each place value was as easy as possible; adding 0 in fact does nothing. Thus, we turned our calculation into <m>(998+2)+(314-2) = 1000+312 = 1312.</m>
+        </p>
+        <p>
+            Note that this idea doesn't necessarily make the calculation easier and other than a few cases like the above, where one number is "close" to a round number, it's not very useful. However, we bring this up because there is a related algorithm for subtraction that is very useful!
+        </p>
+        </subsubsection>
+        <subsubsection xml:id="subsubsec-LatticeMethodAddition">
+            <title>Lattice Algorithm </title>
+            
+        
+        <p>
+            Another common method is the lattice algorithm. This is very similar to the partial sums algorithm except regroupings are displayed slightly differently. In this algorithm, each place value has a box divided into two diagonally; one section for the place value itself, and one for the next larger place value for the regroupings. This regrouping section looks connected to the diagonal section of the box to the left which contains the same place value. Like partial sums, each place value is then added separately to obtain the final sum. Again, let's look at our usual example:
+        </p>
+        <example>
+            <p>
+                Let's add <m>447+629</m>. We align our two numbers as usual, and then draw a box for each place value split into two sections by a diagonal line, and just for teaching purposes, we will indicate the place value of each section of each box.
+            </p>
+            <p>
+                INSERT PIC OF THIS
+            </p>
+            <p>
+                We now add each place value separately. Starting with the ones place we add <m>7+9=16</m> ones, which we regroup into <m>1</m> ten and <m>6</m> ones. We write this in the leftmost box.
+            </p>
+            <p>
+                INSERT PIC OF THIS
+            </p>
+            <p>
+                We continue with the other two places similarly. Note that we do not need to regroup any tens, so we leave the hundreds section of that box blank (or we can put a <m>0</m> there). Thus are final partial sum should look like this:
+            </p>
+            <p>
+                INSERT PIC OF THIS
+            </p>
+            <p>
+                Finally, we add the box sections diagonally to obtain our final sum of <m>1066</m>.
+            </p>
+        </example>
+        <p>
+            STILL TO DO Estimation and Rounding (SECTION EARLIER??)
+        </p>
+        <p>
+            STILL TO DO (MAYBE) Algorithms for adding up lots of small numbers.
+        </p>
+        <exercise>
+            <p>
+                Think about the following questions about the algorithms above:
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        For which algorithms is direction important? Do you need to add right-to-left, or can you add any place values in any order?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Which algorithms are easiest to explain using blocks? Which are most difficult?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Which algorithms are the quickest? Are they the quickest in all cases?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Which algorithms take up the least amount of space on your paper? Which take up the most?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        For each algorithm, determine a situation where that algorithm is the best to use. The situation could be adding particular numbers efficiently, or needing to teach addition in the classroom, or some other situation!
+                    </p>
+                </li>
+            </ol>
+        </exercise>
+       
+        </subsubsection>
+
+    </subsection>
+    <subsection xml:id="subsec-SubtractionAlgorithms">
+        <title>Subtraction Algorithms</title>
+        <introduction>
+            <p>
+                In the previous subsection we talked about different algorithms for adding. In some sense, all of the algorithms we talked about were the same, or at least very similar. It turns out that common subtraction algorithms actually differ from each other quite a bit.
+            </p>
+            <p>
+                First, we'll talk about the "standard" algorithm that you most likely learned when doing subtraction, and explain why it works the way it does. Then we'll discuss some more (once very common) algorithms for subtraction that rely on the property that addition is the opposite operation of subtraction. Finally, we will study a partial difference algorithm, much like the partial sum algorithm above.
+            </p>
+
+            <p>
+                We'll need some notation to easily talk about subtraction. In the subtraction problem <m>a-b=c</m> we will call <m>a</m> and <m>b</m> the <term>top number</term> and <term>botto, number</term>, respectively, and we call <m>c</m> the <term>difference</term>.  Note that some (mostly antiquated) sources call the top number the subtrahend and the bottom number the minuend. We will avoid this archaic language, as it's rarely seen or used.
+            </p>
+        
+        
+        <p>
+            Standard Algorithm - Include Block Diagrams For All (reference: An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Textbooks and Cyphering Books
+ An Investigation of Subtraction Algorithms from the 18th and 19th Centuriesup
+An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Definitions and Algorithms 
+Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
+</p>
+</introduction>
+        <subsubsection xml:id="subsubsec-StandardSubtractionAlgorithm">
+            <title>Standard Subtraction Algorithm</title>
+            <p>
+                The idea behind the standard subtraction algorithm is that you subtract place-by-place from right to left, that is smallest to largest place value, and if you are unable to subtract that particular place, "ungrouping" or "borrowing"  one of the places to the left and including those to the right.
+            </p>
+            
+
+            
+            <p>
+                Like the standard addition algorithm, let's list the steps for this algorithm too. Note that this is quite complicated compared to addition.
+            </p>
+
+            <ol>
+                <li>
+                    <p>
+                        Write one number below the other so that each place value is in its own column. Now begin at the rightmost column.
+                    </p>
+                </li>   
+                <li>
+                <ol>
+                    <li>
+                        <p>
+                           If the top digit (or digit plus regrouping) is larger than or equal to the bottom digit, subtract and put the difference below in the same column. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                         If the top digit is smaller than the bottom digit, determine the first digit in the top number to the left of the current place that is non-zero. Decrease that place by 1, (if there are any) change the 0 digits between that digit and our current place to 9s (or whatever the largest digit in your base is, if you are subtracting in a non-ten base), and add 10 to the current top digit.
+                        </p>
+                   
+                    </li>
+                </ol>
+                </li>
+                <li>
+                    <p>
+                        If there are no non-zero digits in any column to the left, you are done. Otherwise move to the next column to the left and go to Step 2. 
+                    </p>
+                </li>
+            </ol>
+
+            <p>
+                To make sure we understand what is happening, we will do an example along with pictoral blocks showing our subtraction.
+            </p>
+            <example>
+                <p>
+                    Let's subtract <m>4052-2457</m>. We first write the numbers aligned vertically, and view each number in terms of place value blocks:
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+                <p>
+                    Now let's subtract the rightmost place. Note that the top 2 is smaller than the bottom digit, so we must borrow. The the place directly to the left has a non-zero top digit, so we regroup 1 of this place (tens) to make 10 of our current place (ones) and thus decrease the digit in that place by 1. Now we have <m>2+10=12</m> ones and we do the subtraction <m>12-7=5</m>.
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+                <p>
+                    Now we move to the next place to the left; the tens place. Note that the top digit is now a 4, so it is smaller than the bottom digit 5. So again, we must borrow.
+                </p>
+                <p>
+                    We have a zero immediately to the left of the (what was a 5 but is now a) 4, so we move to the left one more time (to the thousands place) since there is a non-zer digit in the top number there. We borrow one thousand, thus decreasing the thousands digit by 1, and ungroup that into 9 hundreds and 10 tens. In our calculation, this means changing the zero in the hundreds place in the top number to a 9, and the 4 in the tens place to a 14. 
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+                <p>
+                    Now we have 14 tens and we do the subtraction in the tens column <m>14-5=9</m> . Similarly, the top number in the hundreds and thousands place is smaller so we do those subtractions as well: <m>9-4=5</m> and <m>3-2 = 1</m> respectively.
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+                <p>
+                    As we have no non-zero digits to the left of the thousands place, we are finished and we know <m>4052-2457=1595.</m>
+                </p>
+            </example>
+
+            <p>
+                We can perform the same algorithm in other bases too (remember, there is nothing special about base ten!). Let's try a calculation in base four:
+            </p>
+
+            <example>
+                <p>
+                    Let's calculate <m>2201_{four} - 1332_{four}</m> and since we are still getting used to arithmetic in other bases, let's draw some base four blocks to represent our calculation.
+                </p>
+                <p>
+                    INSERT PIC OF THE STANDARD SETUP AND BLOCKS REPRESENTING THE SITUATION
+                </p>
+                <p>
+                    We start from the ones digit on the right. Since the top digit is smaller than the bottom digit, we must borrow. The first non-zero digit to the left is the 2 (in the squares, or sixteens, place). We ungroup <m>1_{four}</m> sixteen (square) to <m>3_{four}</m> fours (longs) and <m>10_{four}</m> ones (remember that <m>10_{four}</m> represents the number "four"). We can see this since <m>16 = 3 \times 4 + 4 \times 1</m>, similar to our situation in the previous example in base ten. Thus we decrease the squares digit in the top number by 1 and replace the 0 in the longs place by a 3, and thus we have <m>11_{four}</m> ones (which, in base four, is five ones).
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+                <p>
+                    Now, we can do the subtraction in the ones place <m>11_{four} - 2_{four} = 3_{four} </m>, since we can see that <m>2_{four}+3_{four} = 11_{four}</m>. We can subtract the longs digit as well: <m>3_{four} - 3_{four} = 0 _{four}</m>. We write these down in our calculation.
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+                <p>
+                    Now, in the squares place, the digit 1 in the top number is smaller than the 3 in the bottom number, so we need to borrow again. We ungroup <m>1_{four}</m> cube (or sixty-four) to <m>10_{four}</m> squares, decreasing our 2 cubes to 1 cube.  
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+                <p>
+                    Thus we now have <m>10_{four}+1_{four} = 11_{four}</m> squares and can now do our subtraction <m>11_{four}-3_{four} = 2_{four}</m>. We can also do the subtraction in the cubes place: <m>1_{four}-1_{four} = 0_{four}</m>. We now have our final difference: <m>2201_{four} - 1332_{four} = 203_{four}.</m>. 
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+
+            </example>
+
+
+
+                    
+        
+        <p>
+            Partial Differences 
+        </p>
+        <p>
+            Same Change
+        </p>
+        <p>
+            Oldtimers Algorithm
+        </p>
+        <p>
+            Austrian Algorithm
+        </p>
+        <p>
+           Discussion of pros-cons of each and relationships
+        </p>
+        </subsubsection>
+    </subsection>
+    <subsection xml:id="subsec-MultiplicationAlgorithms">
+        <title>Multiplication Algorithms</title>
+        <p>
+            First, discuss multiplinying by single digits and by powers of "base" (used in basically every algorithm)
+        </p>
+        <p>
+            Partial Products (Use blocks and other bases. Show area model and then distributivity algebraically)
+        </p>
+        <p>
+            Standard Algorithm (show area model and comparison to partial products)
+        </p>
+        <p>
+            Lattice Method
+        </p>
+        <p>
+            Discussion of pros-cons and relationships
+        </p>
+    </subsection>
+    <subsection xml:id="subsec-DivisionAlgorithms">
+        <title>Division Algorithms</title>
+        <p>
+            Partial Quotients
+        </p>
+        <p>
+            Standard Algorithm (make sure to talk about regrouping of quotient at the end)
+        </p>
+        <p>
+           Discussion of pros-cons and relationships 
+        </p>
+    </subsection>
+</section>
+
+
+
+
+   </article>
+</pretext>
