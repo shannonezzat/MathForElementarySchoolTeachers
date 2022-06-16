@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-14T15:45:42-03:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Number Systems</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="My Great Book">
+<meta property="book:author" content="Me">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">My Great Book:</span> <span class="subtitle">An example to be modified</span></a></h1>
+<p class="byline">Me</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-2_1NumberSystemsAndPlaceValue.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="WholeNumbersJune13.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-ArithmeticOperations.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-2_1NumberSystemsAndPlaceValue.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="WholeNumbersJune13.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-ArithmeticOperations.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="preface.html" data-scroll="preface" class="internal">Preface</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-first.html" data-scroll="ch-first" class="internal"><span class="codenumber">1</span> <span class="title">My First Chapter</span></a><ul>
+<li><a href="sec_firstch-intro.html" data-scroll="sec_firstch-intro" class="internal">Introduction to First Chapter</a></li>
+<li><a href="sec_firstch-examples.html" data-scroll="sec_firstch-examples" class="internal">Examples</a></li>
+<li><a href="ex_firstch.html" data-scroll="ex_firstch" class="internal">My Exercises</a></li>
+</ul>
+</li>
+<li class="link"><a href="ch-empty.html" data-scroll="ch-empty" class="internal"><span class="codenumber">2</span> <span class="title">(No title)</span></a></li>
+<li class="link">
+<a href="WholeNumbersJune13.html" data-scroll="WholeNumbersJune13" class="internal"><span class="codenumber">3</span> <span class="title">Sample Chapter: Whole Numbers</span></a><ul>
+<li><a href="sec-Equality.html" data-scroll="sec-Equality" class="internal">Equality</a></li>
+<li><a href="sec-ProblemSolving.html" data-scroll="sec-ProblemSolving" class="internal">Problem Solving</a></li>
+<li><a href="sec-2_1NumberSystemsAndPlaceValue.html" data-scroll="sec-2_1NumberSystemsAndPlaceValue" class="internal">NumberSystemsAndPlaceValueWhole Numbers</a></li>
+<li><a href="sec-NumberSystems.html" data-scroll="sec-NumberSystems" class="active">Number Systems</a></li>
+<li><a href="sec-ArithmeticOperations.html" data-scroll="sec-ArithmeticOperations" class="internal">Arithmetic Operations</a></li>
+<li><a href="sec-PropertiesOfArithmeticOperations.html" data-scroll="sec-PropertiesOfArithmeticOperations" class="internal">Properties Of Arithmetic Operations</a></li>
+<li><a href="sec-AlgorithmsforArithmetic.html" data-scroll="sec-AlgorithmsforArithmetic" class="internal">Algorithms for Arithmetic</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch_pretext-features.html" data-scroll="ch_pretext-features" class="internal"><span class="codenumber">4</span> <span class="title">Examples of PreTeXt features</span></a><ul>
+<li><a href="sec_ptxfeat-blocks.html" data-scroll="sec_ptxfeat-blocks" class="internal">Environments and Blocks</a></li>
+<li><a href="section-2-2.html" data-scroll="section-2-2" class="internal">Another section</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
+<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-NumberSystems"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Number Systems</span>
+</h2>
+<section class="subsection" id="subsection-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.1</span> <span class="title">Introduction to Number Systems</span>
+</h3>
+<p id="p-66">Consider the following objects:</p>
+<p id="p-67">INSERT PICTURE OF FIVE THINGS</p>
+<p id="p-68">In order to work with the idea of quantities, we want some symbol to represent this number of quantities, and other numbers of quantities too. In the Western world (and much of the rest of the world too) we've chosen the symbol "5" to represent these quantities. Note that it doesn't mean these particular five things, but simply the idea of having that many of anything.</p>
+<article class="definition definition-like" id="def-Numeral"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
+</h4>
+<p id="p-69">A <dfn class="terminology">numeral</dfn> is a representation of a quantity of some type.</p></article><p id="p-70">Note the difference between a numeral and a number: a number is the actual amount, whereas a numeral is some symbol that represents this amount.</p>
+<p id="p-71">Numerals, however important as they are to being able to work with and understand quantities, isn't enough. Just imagine if we had a completely unique symbol for every whole number there is, and there are infinitely many so this is impossible anyway. So, we use the idea of place to represent any number we like using a finite (and usually small) amount of symbols.</p>
+<p id="p-72">Think about why we write the number "eleven" with the numerals 11. What does this actually mean? We have two 1's, but they're playing different roles solely due to their location in the numeral. The leftmost 1 means "one ten" and the rightmost 1 means "one one". So, really, we read that number as "one ten and one one," whose number happens to have the name "eleven".</p>
+<p id="p-73">For a number system using place value to indicate a number, we need to have a few necessary things:</p>
+<ol class="decimal">
+<li id="li-4"><p id="p-74">A symbol for indicating zero and a symbol for indicating one</p></li>
+<li id="li-5"><p id="p-75">A set  <span class="process-math">\(D\)</span> of unique numeral symbols, <dfn class="terminology">digits</dfn> for representing consecutive numbers (beginning with zero and one) without the concept of place value.</p></li>
+</ol>
+<p id="p-76">Note that <span class="process-math">\(|D|\)</span> is called the <dfn class="terminology">base</dfn> of our number system. For example, our base ten number system has the digits <span class="process-math">\(\{0,1,2,3,4,5,6,7,8,9\}\)</span> and any number larger than nine we can represent using the place of digits.</p>
+<p id="p-77">Note that in base <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(|D| = b\)</span> and <span class="process-math">\(D = \{0,1,2, \ldots, b-1, b\}.\)</span> So, for example, in base <span class="process-math">\(7\)</span> the digit set is <span class="process-math">\(D=\{0,1,2,3,4,5,6\}\text{.}\)</span> Note that these are all the possible remainders when dividing whole numbers by 7.</p>
+<p id="p-78">How does place value work? Let's see what happens as we count up from one to twelve:</p>
+<p id="p-79">INSERT PIC OF TICKS AND DIGITS</p>
+<p id="p-80">The idea is that once we reach nine ticks, we "run out" of digits to express any larger numbers with their own symbol. So, we group ten of these together to make one "ten" and we express this as a digit to the left of the ones place.</p>
+<p id="p-81">Similarly, let's count from ninety-seven to one hundred-three:</p>
+<p id="p-82">INSERT PIC OF THIS COUNTING</p>
+<p id="p-83">You can see once we add an additional tick (or one) to ninety-nine, we then have ten ones. So we regroup those ones to one ten. Now this gives us ten tens, and since we have ten of those, we need to regroup them into a new place, called the hundreds place.</p>
+<p id="p-84">ADD SECTION ABOUT BASE BLOCKS AND WHAT HAPPENS AFTER <span class="process-math">\(b^3\)</span> (talk about dimensions, and how you can view a thousand cube as your new "one" and go from there. This is (maybe) why we group places in groups of 3.)</p>
+<p id="p-85">PICTURE OR CARRIES ABOVE</p>
+<p id="p-86">ADD SECTION ON DIGITS IN BASE B</p>
+<p id="p-87">A good question is "is there anything special about regrouping in units of ten ?" or in the language of number systems "why do we use base ten?" The answer to this is no! We can indeed have a base of any counting number we like (say in base <span class="process-math">\(b\)</span>) and then regoup once we have <span class="process-math">\(b\)</span> of any place.</p>
+<p id="p-88">Let's try writing "thirteen" in a few different bases so that you get a feel for what is happening:</p>
+<p id="p-89">INSERT PIC OF THIRTEEN BASE TEN, EIGHT, FIVE, TWELVE, AND TWO</p>
+<p id="p-90">We can write these as the following numerals (note that the base is written as a subscript so that you know what base each number is in. We'll keep this practice up when needed.)</p>
+<div class="displaymath process-math">
+\begin{equation*}
+13_{ten} \ 15_{eight} \ 23_{five} \ 11_{tweleve} \ 111_{two}
+\end{equation*}
+</div>
+<p id="p-91">We'll explore different bases as this chapter progresses. To have a solid understanding of place value, you should be able to understand numbers written in any base, and be able to work with other bases when doing arithmetic.</p>
+<p id="p-92">Note that in our examples, we group ones into "long" pieces, then we group "longs" into squares, then we group squares into cubes In base ten the longs are tens, the squares are hundreds, and the cubes are thousands. Note that the cube just looks like a "big" one, and thus is why we repeat tens, hundreds, thousands, when we do place value (REWORD THIS!)</p>
+<p id="p-93">As our number system is base ten, we almost have too much "muscle memory" to be able to think about how place value works, and how our algorithms for doing arithmetic work. So we'll frequently change to other bases for this chapter.</p></section><section class="subsection" id="subsec-ConvertingFromBaseTen"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.2</span> <span class="title">Converting From Base Ten</span>
+</h3>
+<p id="p-94">Let's think about how to change from one base to another.</p>
+<article class="example example-like" id="example-4"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-4"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-4"><article class="example example-like"><p id="p-95">Let's start in base ten. Suppose we wanted to write the base ten number 25 in base four. We can start by thinking to breaking up all of the base ten groupings into single ones:</p>
+<p id="p-96">INSERT PIC HERE</p>
+<p id="p-97">Then, we can make as many groups of four ones (longs) as possible (we'll regroup those later):</p>
+<p id="p-98">There! We've made six longs, and we have 1 one left over. Now we have more than four longs so let's regroup four of them into one sixteen (square):</p>
+<p id="p-99">INSERT PIC HERE</p>
+<p id="p-100">Now, we have 1 square, 2 longs, and 1 one. So we can write this number as <span class="process-math">\(121_{four}\text{.}\)</span></p></article></div>
+<p id="p-101">Let's do one more example:</p>
+<article class="example example-like" id="example-5"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-5"><article class="example example-like"><p id="p-102">Let's write the number 77 in base five. First, we make as many groups of five as we can:</p>
+<p id="p-103">INSERT PIC HERE</p>
+<p id="p-104">We have divided the 77 ones into 15 groups of five (longs) with 2 remaining.</p>
+<p id="p-105">Now we group our 15 longss into groups of five, giving us groups of twenty-five, or squares:</p>
+<p id="p-106">Now we have 3 squares, and 2 ones. Can we write this as <span class="process-math">\(32_{five}\text{?}\)</span> No! Be careful here. We are missing a place; we have no fives, so we need to indicate that with the digit 0: so we should write <span class="process-math">\(302_{five}\text{.}\)</span> Note that <span class="process-math">\(32_{five}\)</span> is 3 fives and 2 ones, which is 17. This is why that 0 digit is important!</p></article></div>
+<p id="p-107">Let's analyze the examples above to come up with a procedure to convert any base ten number into a different base.</p>
+<ol class="decimal">
+<li id="li-6"><p id="p-108">Divide our base into the number of ones. The remainder is our ones digit.</p></li>
+<li id="li-7"><p id="p-109">Take the quotient of the step above and divide our base into that. The remainder is the next digit to the left.</p></li>
+<li id="li-8"><p id="p-110">Repeat the previous step until we have a quotient of 0. Then you have your number in the desired base.</p></li>
+</ol>
+<p id="p-111">Let's view the previous example in terms of division:</p>
+<p id="p-112">INSERT PIC OF DIVISION AND BLOCKS HERE</p>
+<article class="exercise exercise-like" id="exercise-3"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-3"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-3"><article class="exercise exercise-like"><p id="p-113">Convert the following numbers from base ten to the indicated base:</p>
+<ol class="decimal">
+<li id="li-9"><p id="p-114">45 (to base seven)</p></li>
+<li id="li-10"><p id="p-115">465 (to base three)</p></li>
+<li id="li-11"><p id="p-116">1377 (to base five)</p></li>
+<li id="li-12"><p id="p-117">54054 (to base nine)</p></li>
+</ol>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like"><p id="p-118">DO SOLUTIONS FOR THESE</p></div></div></article></div></section><section class="subsection" id="subsec-ConvertingToBaseTen"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.3</span> <span class="title">Converting To Base Ten</span>
+</h3>
+<p id="p-119">How can we convert in the other direction? If we have a number in, for example, base six, how can we determine which number it is base ten? Let's look at an example:</p>
+<article class="example example-like" id="example-6"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-6"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-6"><article class="example example-like"><p id="p-120">Let's look at <span class="process-math">\(2514_{six}\text{.}\)</span> What does this mean? Reading from right to left, we have 4 ones, 1 long, 5 squares, and 2 cubes. Longs are 6 ones, squares are <span class="process-math">\(6 \times 6= 6^2 = 36\)</span> ones, and cubes are <span class="process-math">\(6 \times 6 \times 6 = =6^3 = 216\)</span> ones. We can now add all of the ones and group in our usual base ten:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+2 \times 6^3 + 5 \times 6^2 + 1 \times 6 + 4 \times 1 = 622
+\end{equation*}
+</div>
+<p class="continuation">INSERT PICTURE HERE</p></article></div>
+<p id="p-121">Let's do one more example:</p>
+<article class="example example-like" id="example-7"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-7"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.6</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-7"><article class="example example-like"><p id="p-122">Let's look at <span class="process-math">\(10010101_{two}\text{.}\)</span> Here we have 1 one, 0 longs of size <span class="process-math">\(2^1\text{,}\)</span> 1 square of size <span class="process-math">\(2^2\text{,}\)</span> and similarly 0 <span class="process-math">\(2^3\text{,}\)</span> 1 <span class="process-math">\(2^4\text{,}\)</span> 0 <span class="process-math">\(2^5\text{,}\)</span> 0 <span class="process-math">\(2^6\text{,}\)</span> and 1 <span class="process-math">\(2^7\text{.}\)</span> So we have:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+1 \times 2^7 + 0 \times 2^6 + 0 \times 2^5 + 1 \times 2^4 + 0 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \times 1
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 128 + 0 + 0 + 16 + 0+ 4 + 0 + 1 = 149
+\end{equation*}
+</div>
+<p class="continuation">INSERT PICTURE HERE</p></article></div>
+<p id="p-123">Just like before, let's determine a method for converting from any base to base ten:</p>
+<ol class="decimal">
+<li id="li-13"><p id="p-124">1. Multiply the digits in the place value spot by the value of the place.</p></li>
+<li id="li-14"><p id="p-125">Sum these together.</p></li>
+</ol>
+<p class="continuation"><p id="p-126">INCLUDE PIC HERE</p></p></section><section class="subsection" id="subsec-BaseTwelve"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.4</span> <span class="title">Base Twelve</span>
+</h3>
+<p id="p-127">So far, we've only dealt with bases of ten or less. But there's nothing stopping us from dealing with bases larger than ten. The only thing is that we, so far, only have digits for numbers from 0 to 9. If we're not allowed to regroup until we have twelve things (ones, longs, etc) we need new digits to represent the numbers "ten" and "eleven". There aren't any really standard choices for these digits, but let's choose "A" to mean "ten" and "B" to mean "eleven".</p>
+<p id="p-128">To get a feel for base twelve, let's count in base twelve, starting at one, and going to fifteen.</p>
+<p id="p-129">INSERT PIC HERE</p>
+<p id="p-130">It might take a while to wrap your head around not regrouping when you have ten things, but in base twelve we do not.</p>
+<article class="example example-like" id="example-8"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-8"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.7</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-8"><article class="example example-like"><p id="p-131">Let's convert a base ten number to base twelve to get a feel for it. Let's start with 155 and use our algorithm above.</p>
+<div class="displaymath process-math">
+\begin{equation*}
+155 = 12 \times 12 + 11
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+12 = 1 \times 12 + 0
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1 = 0 \times 12 + 1
+\end{equation*}
+</div>
+<p class="continuation">So 155 in base twelve is <span class="process-math">\(10B_{twelve}\text{.}\)</span> Note that since we have eleven ones remaining, we write that in base twelve as <span class="process-math">\(B\text{.}\)</span></p>
+<p id="p-132">INCLUDE PIC HERE OF BASE TEN AND TWELVE BLOCKS</p></article></div>
+<article class="example example-like" id="example-9"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-9"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.8</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-9"><article class="example example-like"><p id="p-133">Now let's convert a base twleve number to base ten. Let's try <span class="process-math">\(13A09_{twelve}\text{.}\)</span> Using the algorithm above:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+13A09_{twleve} = 1 \times 12^4 + 3 \times 12^3+ 10 \times 12^2 + 0 \times 12^1 + 9 \times 1
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 1 \times 20736 + 3 \times 1728 + 10 \times 144 + 0 \times 12 + 9 \times 1 = 27369
+\end{equation*}
+</div>
+<p id="p-134">INCLUDE PIC HERE OF BASE TEN AND TWELVE BLOCKS</p></article></div></section><section class="subsection" id="subsec-HistoricalNumberSystems"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.5</span> <span class="title">Historical Number Systems</span>
+</h3>
+<p id="p-135">INCLUDE SECTION HERE!</p></section></section></div></main>
+</div>
+</body>
+</html>

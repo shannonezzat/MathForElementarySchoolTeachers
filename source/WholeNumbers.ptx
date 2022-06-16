@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-    <chapter xml:id="test">
+    <chapter xml:id="WholeNumbersJune13">
         <title>Sample Chapter: Whole Numbers</title>
 
         <section xml:id="sec-Equality">
@@ -1130,17 +1130,19 @@
         </statement>
     </definition>
     <p>
-        There are countless algorithms for solving arithmetic problems for whole numbers (which we can use to solve arithmetic problems in larger sets of numbers, like integers, rational numbers, or real numnbers). We will discuss a few of the most common algorithms that are used, discuss the pros and cons of each, and also discuss some non-algorithmic and ad-hoc methods that are widely used, especially when it comes to mental arithmetic.
+        There are countless algorithms for solving arithmetic problems for whole numbers (which we can use to solve arithmetic problems in larger sets of numbers, like integers, rational numbers, or real numnbers). We will discuss a few of the most common algorithms that are used, discuss the pros and cons of each, and also discuss some non-algorithmic and ad-hoc methods that are widely used, especially when it comes to mental arithmetic. </p>
 
         <p>
             Most, if not all, of the following algorithms use the fact that we write numbers in a place-value system to break the computation into easier parts that we can put together at the end.</p>
-    </p>
+    
         
         <p>
             Is there a "best" algorithm for each arithmetic operation? Depending on what you care about (speed, efficiency, ease of understanding, consistency in all cases), a different algorithm can be "better" than others. Regarding understanding, the most understandable algorithm may differ from student to student, and from teacher to teacher. So it is a very hard (and in some cases impossible) task to exclusively recommend one algorithm over another.
         </p>
         <p>
-            It is important to study multiple algorithms for many reasons. Forst of all, understanding the details of an algorithm allows a teacher to explain how and why an algorithm works, as opposed to simply relying on some authoritative explanation like "follow these steps because they are the ones that work". Also, this understanding allows teachers to be able to find student's conceptual errors in arithmetic. Not only can they find mistakes, they can, along with discussions with the students, also determine the conceptual reasons behind these mistakes. Knowing the underpinnings of multiple algorithms allows a teacher to have many algorithmic tools in their toolbox. They can use their professional judgement for what is the most appropriate algorithm to use and/or teach depending on the needs of their students. Also, studying multiple algorithms allows teachers the opportunity to understand arithmetic through many lenses, thus increasing their overall understanding of the operations themselves.
+            It is important to study multiple algorithms for many reasons. Forst of all, understanding the details of an algorithm allows a teacher to explain how and why an algorithm works, as opposed to simply relying on some authoritative explanation like "follow these steps because they are the ones that work". Also, this understanding allows teachers to be able to find student's conceptual errors in arithmetic. Not only can they find mistakes, they can, along with discussions with the students, also determine the conceptual reasons behind these mistakes. Knowing the underpinnings of multiple algorithms allows a teacher to have many algorithmic tools in their toolbox. They can use their professional judgement for what is the most appropriate algorithm to use and/or teach depending on the needs of their students. </p>
+            
+            <p>Also, studying multiple algorithms allows teachers the opportunity to understand arithmetic through many lenses, thus increasing their overall understanding of the operations themselves. It is relatively commonplace for curricula to suggest that students develop their own personal algorithms for arithmetic. Studying multiple algorithms gives a future teacher practice in evaluating and interpreting the algorithms that students are indeed discovering (and perhaps inventing) themselves.
         </p>
         <p>
             Note that we will also learn how to use these algorithms to do arithmetic in other bases, as discussined in INSERT SECTION REFERENCE. Even though it may be unlikely that you will need to teach students how to do arithmetic in other bases, this will allow us to turn off our "muscle memory" of doing arithmetic in base ten, as we are so comfortable with many of these algorithms that it is incredibly difficult to this muscle memory off to think deeply about the algorithmeic underpinnings. As an added bonus, we will get to experience, in a small way, the struggles that your future students will have when learning about performing arithmetic for the first time. 
@@ -1650,26 +1652,225 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
 
             </example>
 
-
-
-                    
+            <exercise>
+                <p>
+                    Perform the following subtractions in the indicated bases. Check your answer with addition: 
+                </p>
+                <ol>
+                    <li>
+                        <p>
+                            <m>65_{eight}-46_{eight}</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>403_{five} -123_{five}</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>540A8_{twelve} - 3B74A_{twelve}</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>10010101_{two}-1101110_{two}</m>
+                        </p>
+                    </li>
+                </ol>
+                <solution>
+                    <p>
+                        <m>17_{eight}</m>
+                    </p>
+                </solution>
+                <solution>
+                    <p>
+                        <m>230_{five}</m>
+                    </p>
+                </solution>
+                <solution>
+                    <p>
+                        <m>1455A_{twelve}</m>
+                    </p>
+                </solution>
+                <solution>
+                    <p>
+                        <m>100111_{two}</m>
+                    </p>
+                </solution>
+            </exercise>
+</subsubsection>
+          <subsubsection xml:id="subsubsec-PartialDifferences">
+              <title>Partial Differences</title>
+              
+                  
         
         <p>
-            Partial Differences 
+            Similar to partial sums, we can find the partial differences of each place value, and then combine these partial differences at the end to obtain our final difference. Note that this method involves being comfortable with negative numbers, and therefore integer operations. 
+        </p>
+        
+        
+       <example>
+           <p>
+               Let's subtract <m>4052-2457</m> again. Like before, we line up the numbers vertically by place value. In terms of blocks, we can view each place as a separate subtraction calculation with blocks of the same place value. 
+           </p>
+           <p>
+               INCLUDE PIC HERE
+           </p>
+           <p>
+               Order isn't important in this algorithm, so let's start from left and go right. Subtracting the thousands place, we know that <m>4000-2000 = 2000</m>. We write this partial difference in our calculation.
+           </p>
+
+            <p>
+                INCLUDE PIC HERE
+            </p>
+            <p>
+                Now, for the hundreds place, we have <m>000-400=-400.</m> (note that writing 0 as <m>000</m> is to remind you that we have <m>0</m> hundreds.) So we mark down <m>-400</m> in our calculation. Similarly, we have <m>50-50=0</m> and <m>2-7=-5</m>. We write these down in our calculation as well.
+            </p>
+            <p>
+                INCLUDE PIC HERE
+            </p>
+            <p>
+                So we must combine our partial differences to obtain the difference we are looking for. We have <m>2000-400+0-5</m>. Working from left to right we obtain.
+            </p>
+                <me>
+                     1600+0-5
+                </me>
+                 <me>
+                     =1595.
+                 </me>
+                 <p>
+                     And we have our final answer.
+                 </p> 
+                 <p>
+                     INCLUDE PIC HERE
+                 </p>          
+                            
+
+       </example>
+       
+       </subsubsection>
+       <subsubsection xml:id="subsubsec-SameChangeAlgorithm">
+           <title>Same Change Algorithm</title>
+           
+       
+        <p>
+            This algorithm relies on two important concepts:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Addition is easier than subtraction
+                </p>
+            </li>
+            <li>
+                <p>
+                    For any number <m>a, a-0=a</m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    For any numbers <m>a,b,c, a-b = (a+c) - (b+c)</m>
+                </p>
+            </li>
+        </ol>
+
+        <p>
+            The final concept says that if you add a quantity to the top number of a subtraction problem, you can add that quantity to the bottom number and not change the difference.
         </p>
         <p>
-            Same Change
+            We will call a digit <m>d</m> the <term>same-change opposite digit</term>  of another digit <m>e</m> if and only if <m>d+e=10</m>. We will shorten this to <term>opposite digit</term> if there would be no confusion. For example, the opposite digit of <m>8</m> is <m>2</m> since <m>8+2=10</m>. Also note that <m>5</m> is its own opposite digit, since <m>5+5=10</m>. Note that this definition is applicable for other bases beside base ten too! 
         </p>
         <p>
-            Oldtimers Algorithm
+            The algorithm is as follows.
         </p>
+        <ol>
+            <li>
+                <p>
+                    Write the subtraction vertically (as usual) with place values aligned in columns. Start at the rightmost column.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If the top digit in this place is less than the bottom digit, add the opposite digit number of places of the bottom digit to both numbers to make a new equivalent subtraction problem (this makes the bottom digit a 0, for easy subtraction). If the top digit in this place is not less than the bottom digit, do nothing.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If there are non-zero digits in any place to the left of this place, move to the left one place and go to step 2. Otherwise, go to the next step.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Each top digit should be greater than or equal to the bottom digit in its respective place. Subtract the digits in each place to obtain your final answer.
+                </p>
+            </li>
+            
+        </ol>
+        <p>
+            This sounds more complicated than it actually is, so we will show an example to see this algorithm in action.
+        </p>
+        <example>
+            <p>
+                Let's subtract <m>4052-2457</m> using the same change algorithm. We line up the two numbers as usual (and we'll keep block representations along with our calculation to see the process in a pictoral way)
+            </p>
+            <p>
+                INSERT PIC HERE
+            </p>
+            <p>
+                Starting at the ones place, we notice that the top digit is smaller than the bottom digit, we add 3 to both the top and bottom numbers (<m>(4052+3)-(2457+3))</m>) to obtain the new subtraction problem <m>4055-2460</m>. Notice that the bottom digit is now 0, so this will eventually make subtraction easy (at the cost of doing a bit of addition)
+            </p>
+            <p>
+                INSERT PIC HERE INCLUDING NEW SUBTRACTION PROBLEM
+            </p>
+            <p>
+                Now we move left to the tens place. As before, we notice that the top digit is less than the bottom digit, so add the opposite digit number of tens to both numbers. Since the opposite of <m>6</m> is <m>4</m> we add <m>40</m> to both numbers (<m>(4055+40)-(2460+40)</m>) to make the new subtraction problem <m>4095-2500.</m>
+            </p>
+            <p>
+                INSERT PIC OF THIS
+            </p>
+            <p>
+                Moving to the hundreds place, since the top digit is less than the bottom digit, we add the opposite number of hundreds, that is <m>500</m>, to both numbers to obtain the new subtraction problem <m>4595-3000</m>.  
+            </p>
+            <p>
+                Moving left to the thousands place, we notice that the top digit is greater than or equal to (in this case, greater than) the bottom digit, so we do nothing. Also, there are no non-zero digits in any places to our left (thousands is the largest place in our numbers) so we can now easily subtract place by place to obtain our final answer <m>4595-3000=1595.</m>
+            </p>
+            <p>
+                INSERT PIC OF THIS
+            </p>
+        </example>
+    
+    <subsubsection xml:id="subsubsec-EqualAdditionsAlgorithm">
+        <title>Equal Additions Algorithm</title>
+        <p>
+            This algorithm is, in some sense, a combination between the standard subtraction algorithm and the same change algorithm. This is a "borrowing" algorithm, though instead of borrowing from the place to the left in the top number, we are "in debt" to the place to the left in the bottom number. Let's write down the algorithm and then do our usual example. 
+        </p>
+        <ol>
+            <li>
+                <p>
+                   Write the subtraction vertically (as usual) with place values aligned in columns. Start at the rightmost column. 
+                </p>
+            </li>
+            <li>
+                <p>
+                    If the digit in the top number is less than the digit in the bottom number (including additional ones if one is there), add ten of that place to the top digit (signified by a 1) while adding an additional 1 to the place to the left in the bottom number. Then subtract the bottom number from the top number in that place. If the digit in the top number is greater than the digit in the bottom number, do the place subtraction without any borrowing.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If there are any non-zero digits in any places to the left of the current place, move one place to the left and go to step 2. Otherwise you are finished.
+                </p>
+            </li>
+        </ol>
+    </subsubsection>
+        
         <p>
             Austrian Algorithm
         </p>
         <p>
            Discussion of pros-cons of each and relationships
         </p>
-        </subsubsection>
+         </subsubsection> 
     </subsection>
     <subsection xml:id="subsec-MultiplicationAlgorithms">
         <title>Multiplication Algorithms</title>
