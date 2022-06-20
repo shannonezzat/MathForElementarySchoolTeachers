@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-16T13:51:18-03:00       *-->
+<!--*       on 2022-06-20T17:57:13-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -70,11 +70,11 @@
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-PropertiesOfArithmeticOperations.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="WholeNumbers.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch_pretext-features.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ArithmeticAlgorithms.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ArithmeticAlgorithms.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch_pretext-features.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-PropertiesOfArithmeticOperations.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="WholeNumbers.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch_pretext-features.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ArithmeticAlgorithms.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ArithmeticAlgorithms.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch_pretext-features.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -103,11 +103,13 @@
 <li><a href="sec-NumberSystems.html" data-scroll="sec-NumberSystems" class="internal">Number Systems</a></li>
 <li><a href="sec-ArithmeticOperations.html" data-scroll="sec-ArithmeticOperations" class="internal">Arithmetic Operations</a></li>
 <li><a href="sec-PropertiesOfArithmeticOperations.html" data-scroll="sec-PropertiesOfArithmeticOperations" class="internal">Properties Of Arithmetic Operations</a></li>
-<li><a href="sec-AlgorithmsforArithmetic.html" data-scroll="sec-AlgorithmsforArithmetic" class="active">Algorithms for Arithmetic</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="ch_pretext-features.html" data-scroll="ch_pretext-features" class="internal"><span class="codenumber">4</span> <span class="title">Examples of PreTeXt features</span></a><ul>
+<a href="ArithmeticAlgorithms.html" data-scroll="ArithmeticAlgorithms" class="internal"><span class="codenumber">4</span> <span class="title">Arithmetic Algorithms</span></a><ul><li><a href="sec-AlgorithmsforArithmetic.html" data-scroll="sec-AlgorithmsforArithmetic" class="active">Algorithms for Arithmetic</a></li></ul>
+</li>
+<li class="link">
+<a href="ch_pretext-features.html" data-scroll="ch_pretext-features" class="internal"><span class="codenumber">5</span> <span class="title">Examples of PreTeXt features</span></a><ul>
 <li><a href="sec_ptxfeat-blocks.html" data-scroll="sec_ptxfeat-blocks" class="internal">Environments and Blocks</a></li>
 <li><a href="section-2-2.html" data-scroll="section-2-2" class="internal">Another section</a></li>
 </ul>
@@ -121,11 +123,11 @@
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-AlgorithmsforArithmetic"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.7</span> <span class="title">Algorithms for Arithmetic</span>
+<span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">Algorithms for Arithmetic</span>
 </h2>
 <section class="introduction" id="introduction-6"><p id="p-254">In this section, we will talk about the ways we do arithmetic in practice. If you think about it, the methods we use to do arithmetic are a series of steps (a good analogy is a recipe) that we follow to obtain an answer. In mathematics we care about these enough to give them their own name:</p>
 <article class="definition definition-like" id="def-Algorithm"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.7.1</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span>
 </h3>
 <p id="p-255">An <dfn class="terminology">algorithm</dfn> is a (finite) series of well-defined steps that will always solve a certain class of problems if correctly followed.</p></article><p id="p-256">There are countless algorithms for solving arithmetic problems for whole numbers (which we can use to solve arithmetic problems in larger sets of numbers, like integers, rational numbers, or real numnbers). We will discuss a few of the most common algorithms that are used, discuss the pros and cons of each, and also discuss some non-algorithmic and ad-hoc methods that are widely used, especially when it comes to mental arithmetic.</p>
 <p id="p-257">Most, if not all, of the following algorithms use the fact that we write numbers in a place-value system to break the computation into easier parts that we can put together at the end.</p>
@@ -133,10 +135,10 @@
 <p id="p-259">It is important to study multiple algorithms for many reasons. Forst of all, understanding the details of an algorithm allows a teacher to explain how and why an algorithm works, as opposed to simply relying on some authoritative explanation like "follow these steps because they are the ones that work". Also, this understanding allows teachers to be able to find student's conceptual errors in arithmetic. Not only can they find mistakes, they can, along with discussions with the students, also determine the conceptual reasons behind these mistakes. Knowing the underpinnings of multiple algorithms allows a teacher to have many algorithmic tools in their toolbox. They can use their professional judgement for what is the most appropriate algorithm to use and/or teach depending on the needs of their students.</p>
 <p id="p-260">Also, studying multiple algorithms allows teachers the opportunity to understand arithmetic through many lenses, thus increasing their overall understanding of the operations themselves. It is relatively commonplace for curricula to suggest that students develop their own personal algorithms for arithmetic. Studying multiple algorithms gives a future teacher practice in evaluating and interpreting the algorithms that students are indeed discovering (and perhaps inventing) themselves.</p>
 <p id="p-261">Note that we will also learn how to use these algorithms to do arithmetic in other bases, as discussined in INSERT SECTION REFERENCE. Even though it may be unlikely that you will need to teach students how to do arithmetic in other bases, this will allow us to turn off our "muscle memory" of doing arithmetic in base ten, as we are so comfortable with many of these algorithms that it is incredibly difficult to this muscle memory off to think deeply about the algorithmeic underpinnings. As an added bonus, we will get to experience, in a small way, the struggles that your future students will have when learning about performing arithmetic for the first time.</p></section><section class="subsection" id="subsec-AdditionAlgorithms"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.7.1</span> <span class="title">Addition Algorithms</span>
+<span class="type">Subsection</span> <span class="codenumber">4.1.1</span> <span class="title">Addition Algorithms</span>
 </h3>
 <section class="subsubsection" id="subsubsec-TheStandardAdditionAlgorithm"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">3.7.1.1</span> <span class="title">The Standard Addition Algorithm</span>
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.1.1</span> <span class="title">The Standard Addition Algorithm</span>
 </h4>
 <p id="p-262">NOTE ON ADDITION "FACTS" OF SINGLE DIGIT SUMS</p>
 <p id="p-263">NOTE ON USING MANIPULATIVES/PICTURES AS "TRAINING WHEELS"</p>
@@ -148,7 +150,7 @@
 <li id="li-28"><p id="p-268">If there are no non-zero digits in any column to the left, you are done. Otherwise move to the next column to the left and go to Step 2.</p></li>
 </ol>
 <article class="example example-like" id="example-30"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-30"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.2</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-30"><article class="example example-like"><p id="p-269">Let's add <span class="process-math">\(447+629\)</span> slowly and carefully using this algorithm and visualize it using blocks.</p>
 <p id="p-270">First, let's view the two numbers in terms of blocks:</p>
 <p id="p-271">INSERT PIC OF THESE TWO NUMBERS AND THE STANDARD ALGORITHM TO THE SIDE</p>
@@ -207,7 +209,7 @@
 <p id="p-279">We won't go into as much detail with all algorithms in this section, but note that underpinning all of the algorithms are the arithmetic properties from SECTION REFERENCE</p>
 <p id="p-280">Note that the pictoral/block representation becomes difficult after thousands (as we run out of dimensions, as discussed above) but the idea behind the algorithm still applies for numbers with any place values.</p>
 <article class="exercise exercise-like" id="exercise-7"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-7"><h5 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.7.3</span><span class="period">.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-7"><article class="exercise exercise-like"><p id="p-281">Add the following numbers using the standard algorithm. Draw blocks as we did above and make sure to note the place values of any regroupings/carries you do:</p>
 <ol class="decimal">
 <li id="li-29"><p id="p-282"><span class="process-math">\(\displaystyle 45+58\)</span></p></li>
@@ -217,7 +219,7 @@
 <p id="p-285">Of course, there is nothing special about base ten; we can add numbers in any base we wish! Let's look at two examples in other bases. Note that we will not have the "addition facts" of adding single digits in other bases memorized, so we have to be careful when adding. If needed we can do a little side calculation, or draw a diagram to help us.</p>
 <p id="p-286">Also, so we don't get confused with the language of tens/hundreds/thousands/etc, we refer to the place value to the left of the ones the "longs" place, the next one to the left the "squares" place, and the next one to the left of that the "cubes" place.</p>
 <article class="example example-like" id="example-31"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-31"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.4</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-31"><article class="example example-like"><p id="p-287">Using the standard addition algorithm, let's add <span class="process-math">\(435_{seven}+43_{seven}.\)</span> The algorithm remains the same, except now we regroup whenever we have seven of one place.</p>
 <p id="p-288">INSERT BLOCK PIC OF NUMBERS</p>
 <p id="p-289">We start by adding the ones. We have <span class="process-math">\(5_{seven}+3_{seven} = 11_{seven}\)</span> as we regroup seven of the eight ones to get 1 long (made up of seven ones) and 1 one. We write down the one remaining:</p>
@@ -229,7 +231,7 @@
 <p id="p-295">Thus we have that <span class="process-math">\(435_{seven}+43_{seven} = 501_{seven}\)</span> and we have finished.</p></article></div>
 <p id="p-296">Let's now work in base twelve. Remember we *do not* regroup when we have ten or eleven of one place, and we use the symbols <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> to denote these quantities, respectively.</p>
 <article class="example example-like" id="example-32"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-32"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.5</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.5</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-32"><article class="example example-like"><p id="p-297">Let's find the sum <span class="process-math">\(6A3_{twelve}+90B_{twelve}\text{.}\)</span> First of all, it will be helpful to view these as blocks:</p>
 <p id="p-298">INSERT BLOCK PIC OF NUMBERS</p>
 <p id="p-299">Let's start with the ones place. We have <span class="process-math">\(3_{twelve}+B_{twelve} = 12_{twelve} \)</span> ones (think three + eleven ones is fourteen ones), where we regrouped twelve ones to make 1 long (containing twelve ones) with 2 ones remaining. We "carry" our one long, and write down our 2 ones:</p>
@@ -240,7 +242,7 @@
 <p id="p-304">INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE</p>
 <p id="p-305">We have just calculated that <span class="process-math">\(6A3_{twelve}+90B_{twelve} = 13B2_{twelve}\)</span> and we are finished.</p></article></div>
 <article class="exercise exercise-like" id="exercise-8"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-8"><h5 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.7.6</span><span class="period">.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.1.6</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-8"><article class="exercise exercise-like"><p id="p-306">Add the following using pictures/blocks as a guide if needed. If you do, try to make sure you understand how the blocks correspond to steps in the algorithm:</p>
 <ol class="decimal">
 <li id="li-32"><p id="p-307"><span class="process-math">\(\displaystyle 45_{eight} + 71_{eight}\)</span></p></li>
@@ -254,25 +256,25 @@
 <li id="li-37"><p id="p-313"><span class="process-math">\(\displaystyle 4A095_{twelve}+3BB78_{twelve}\)</span></p></li>
 <li id="li-38"><p id="p-314"><span class="process-math">\(422_{five}+344_{five}+43_{five}+141_{five}\)</span> (you may have to regroup more that one grouping in some places)</p></li>
 </ol></article></div></section><section class="subsubsection" id="subsubsec-DUMMY"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">3.7.1.2</span> <span class="title">Partial Sums</span>
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.1.2</span> <span class="title">Partial Sums</span>
 </h4>
 <p id="p-315">In the standard algorithm, we added our regrouping to the next place value as we went. Instead, we could add each place value separately without dealing with the regroupsing and then the regroupings to each place value as our final step. This is called the <dfn class="terminology">partial sum algorithm</dfn>, as you are finding the sums of each place value (these are the partial sums) and then adding these together to obtain the final answer. Let's take a look at an example, and in fact let's look at the same problem that we did previously with the standard addition algorithm:</p>
 <article class="example example-like" id="example-33"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-33"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.7</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.7</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-33"><article class="example example-like"><p id="p-316">Let's add <span class="process-math">\(447+629\)</span> slowly and carefully using partial sums and visualize it using blocks.</p> First we add our ones and find that we have <span class="process-math">\(7+9=16\)</span> ones, noticing that we can regroup 10 ones into a long. <p id="p-317">INSERT PIC OF CALCULATION HERE</p> Then, we add the tens and hundreds separately: <span class="process-math">\(40+20=60\)</span> and then <span class="process-math">\(400+600=1000\text{.}\)</span> We add this to our calculation above to obtain the final answer: <p id="p-318">INSERT PIC OF UPDATED CALCULATION</p></article></div>
 <p id="p-319">We note that this is not *that* different to the standard addition algorithm, as the "carries" are added at the end rather than as we go.</p></section><section class="subsubsection" id="subsubsec-SameChangeAddition"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">3.7.1.3</span> <span class="title">Same Change Algorithm</span>
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.1.3</span> <span class="title">Same Change Algorithm</span>
 </h4>
 <p id="p-320">Let's now discuss the <dfn class="terminology">same change</dfn> algorithm. To help us illustate the idea (any why it's useful to know) we start with an example. Let's add <span class="process-math">\(998+314\)</span> in our heads. Try doing this now.</p>
 <p id="p-321">I'm sure that most people reading this book did not mentally perform the standard algorithm for this calculation. In fact, I can imagine that many people noticed that 998 was 2 smaller than 1000, so they added 2 to 1000 and, to "balance" out, they subtracted 2 from 314. Then adding <span class="process-math">\(1000+312\)</span> is very easy in your head. In fact, you can use this idea to add any two numbers.</p>
 <p id="p-322">In general, we are using the fact that if <span class="process-math">\(a,b, \in \mathbb{N}_0\)</span> we know that <span class="process-math">\(a+b = (a+c)+(b-c)\)</span> since we can use associativity and commutativity to rearrange the RHS to <span class="process-math">\(a+b+(c-c) = a+b+0 = a+b\text{.}\)</span> In fact, since this holds for *any* whole numbers <span class="process-math">\(a,b,c\)</span> we can indeed use this idea to judiciously choose the <span class="process-math">\(c\)</span> in the calculation to make our computation easier.</p>
 <p id="p-323">In the first example we chose <span class="process-math">\(c=2\)</span> so that our addition step in each place value was as easy as possible; adding 0 in fact does nothing. Thus, we turned our calculation into <span class="process-math">\((998+2)+(314-2) = 1000+312 = 1312.\)</span></p>
 <p id="p-324">Note that this idea doesn't necessarily make the calculation easier and other than a few cases like the above, where one number is "close" to a round number, it's not very useful. However, we bring this up because there is a related algorithm for subtraction that is very useful!</p></section><section class="subsubsection" id="subsubsec-LatticeMethodAddition"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">3.7.1.4</span> <span class="title">Lattice Algorithm</span>
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.1.4</span> <span class="title">Lattice Algorithm</span>
 </h4>
 <p id="p-325">Another common method is the lattice algorithm. This is very similar to the partial sums algorithm except regroupings are displayed slightly differently. In this algorithm, each place value has a box divided into two diagonally; one section for the place value itself, and one for the next larger place value for the regroupings. This regrouping section looks connected to the diagonal section of the box to the left which contains the same place value. Like partial sums, each place value is then added separately to obtain the final sum. Again, let's look at our usual example:</p>
 <article class="example example-like" id="example-34"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-34"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.8</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.8</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-34"><article class="example example-like"><p id="p-326">Let's add <span class="process-math">\(447+629\text{.}\)</span> We align our two numbers as usual, and then draw a box for each place value split into two sections by a diagonal line, and just for teaching purposes, we will indicate the place value of each section of each box.</p>
 <p id="p-327">INSERT PIC OF THIS</p>
 <p id="p-328">We now add each place value separately. Starting with the ones place we add <span class="process-math">\(7+9=16\)</span> ones, which we regroup into <span class="process-math">\(1\)</span> ten and <span class="process-math">\(6\)</span> ones. We write this in the leftmost box.</p>
@@ -283,7 +285,7 @@
 <p id="p-333">STILL TO DO Estimation and Rounding (SECTION EARLIER??)</p>
 <p id="p-334">STILL TO DO (MAYBE) Algorithms for adding up lots of small numbers.</p>
 <article class="exercise exercise-like" id="exercise-9"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-9"><h5 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.7.9</span><span class="period">.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.1.9</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-9"><article class="exercise exercise-like"><p id="p-335">Think about the following questions about the algorithms above:</p>
 <ol class="decimal">
 <li id="li-39"><p id="p-336">For which algorithms is direction important? Do you need to add right-to-left, or can you add any place values in any order?</p></li>
@@ -292,13 +294,13 @@
 <li id="li-42"><p id="p-339">Which algorithms take up the least amount of space on your paper? Which take up the most?</p></li>
 <li id="li-43"><p id="p-340">For each algorithm, determine a situation where that algorithm is the best to use. The situation could be adding particular numbers efficiently, or needing to teach addition in the classroom, or some other situation!</p></li>
 </ol></article></div></section></section><section class="subsection" id="subsec-SubtractionAlgorithms"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.7.2</span> <span class="title">Subtraction Algorithms</span>
+<span class="type">Subsection</span> <span class="codenumber">4.1.2</span> <span class="title">Subtraction Algorithms</span>
 </h3>
 <section class="introduction" id="introduction-7"><p id="p-341">In the previous subsection we talked about different algorithms for adding. In some sense, all of the algorithms we talked about were the same, or at least very similar. It turns out that common subtraction algorithms actually differ from each other quite a bit.</p>
 <p id="p-342">First, we'll talk about the "standard" algorithm that you most likely learned when doing subtraction, and explain why it works the way it does. Then we'll discuss some more (once very common) algorithms for subtraction that rely on the property that addition is the opposite operation of subtraction. Finally, we will study a partial difference algorithm, much like the partial sum algorithm above.</p>
 <p id="p-343">We'll need some notation to easily talk about subtraction. In the subtraction problem <span class="process-math">\(a-b=c\)</span> we will call <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> the <dfn class="terminology">top number</dfn> and <dfn class="terminology">botto, number</dfn>, respectively, and we call <span class="process-math">\(c\)</span> the <dfn class="terminology">difference</dfn>.  Note that some (mostly antiquated) sources call the top number the subtrahend and the bottom number the minuend. We will avoid this archaic language, as it's rarely seen or used.</p>
 <p id="p-344">Standard Algorithm - Include Block Diagrams For All (reference: An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Textbooks and Cyphering Books An Investigation of Subtraction Algorithms from the 18th and 19th Centuriesup An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Definitions and Algorithms Author(s): Nicole M. Wessman-Enzinger (Illinois State University))</p></section><section class="subsubsection" id="subsubsec-StandardSubtractionAlgorithm"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">3.7.2.1</span> <span class="title">Standard Subtraction Algorithm</span>
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.2.1</span> <span class="title">Standard Subtraction Algorithm</span>
 </h4>
 <p id="p-345">The idea behind the standard subtraction algorithm is that you subtract place-by-place from right to left, that is smallest to largest place value, and if you are unable to subtract that particular place, "ungrouping" or "borrowing"  one of the places to the left and including those to the right.</p>
 <p id="p-346">Like the standard addition algorithm, let's list the steps for this algorithm too. Note that this is quite complicated compared to addition.</p>
@@ -312,7 +314,7 @@
 </ol>
 <p id="p-351">To make sure we understand what is happening, we will do an example along with pictoral blocks showing our subtraction.</p>
 <article class="example example-like" id="example-35"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-35"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.10</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.10</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-35"><article class="example example-like"><p id="p-352">Let's subtract <span class="process-math">\(4052-2457\text{.}\)</span> We first write the numbers aligned vertically, and view each number in terms of place value blocks:</p>
 <p id="p-353">INSERT PIC OF THIS</p>
 <p id="p-354">Now let's subtract the rightmost place. Note that the top 2 is smaller than the bottom digit, so we must borrow. The the place directly to the left has a non-zero top digit, so we regroup 1 of this place (tens) to make 10 of our current place (ones) and thus decrease the digit in that place by 1. Now we have <span class="process-math">\(2+10=12\)</span> ones and we do the subtraction <span class="process-math">\(12-7=5\text{.}\)</span></p>
@@ -325,7 +327,7 @@
 <p id="p-361">As we have no non-zero digits to the left of the thousands place, we are finished and we know <span class="process-math">\(4052-2457=1595.\)</span></p></article></div>
 <p id="p-362">We can perform the same algorithm in other bases too (remember, there is nothing special about base ten!). Let's try a calculation in base four:</p>
 <article class="example example-like" id="example-36"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-36"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.11</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.11</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-36"><article class="example example-like"><p id="p-363">Let's calculate <span class="process-math">\(2201_{four} - 1332_{four}\)</span> and since we are still getting used to arithmetic in other bases, let's draw some base four blocks to represent our calculation.</p>
 <p id="p-364">INSERT PIC OF THE STANDARD SETUP AND BLOCKS REPRESENTING THE SITUATION</p>
 <p id="p-365">We start from the ones digit on the right. Since the top digit is smaller than the bottom digit, we must borrow. The first non-zero digit to the left is the 2 (in the squares, or sixteens, place). We ungroup <span class="process-math">\(1_{four}\)</span> sixteen (square) to <span class="process-math">\(3_{four}\)</span> fours (longs) and <span class="process-math">\(10_{four}\)</span> ones (remember that <span class="process-math">\(10_{four}\)</span> represents the number "four"). We can see this since <span class="process-math">\(16 = 3 \times 4 + 4 \times 1\text{,}\)</span> similar to our situation in the previous example in base ten. Thus we decrease the squares digit in the top number by 1 and replace the 0 in the longs place by a 3, and thus we have <span class="process-math">\(11_{four}\)</span> ones (which, in base four, is five ones).</p>
@@ -337,7 +339,7 @@
 <p id="p-371">Thus we now have <span class="process-math">\(10_{four}+1_{four} = 11_{four}\)</span> squares and can now do our subtraction <span class="process-math">\(11_{four}-3_{four} = 2_{four}\text{.}\)</span> We can also do the subtraction in the cubes place: <span class="process-math">\(1_{four}-1_{four} = 0_{four}\text{.}\)</span> We now have our final difference: <span class="process-math">\(2201_{four} - 1332_{four} = 203_{four}.\text{.}\)</span></p>
 <p id="p-372">INSERT PIC OF THIS</p></article></div>
 <article class="exercise exercise-like" id="exercise-SubtractionDifferentBases"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-SubtractionDifferentBases"><h5 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.7.12</span><span class="period">.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.1.12</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-SubtractionDifferentBases"><article class="exercise exercise-like"><p id="p-373">Perform the following subtractions in the indicated bases. Check your answer with addition:</p>
 <ol class="decimal">
 <li id="li-49"><p id="p-374"><span class="process-math">\(\displaystyle 65_{eight}-46_{eight}\)</span></p></li>
@@ -349,11 +351,11 @@
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-10" id="solution-10"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-10"><div class="solution solution-like"><p id="p-379"><span class="process-math">\(230_{five}\)</span></p></div></div>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-11" id="solution-11"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-11"><div class="solution solution-like"><p id="p-380"><span class="process-math">\(1455A_{twelve}\)</span></p></div></div>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-12" id="solution-12"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-12"><div class="solution solution-like"><p id="p-381"><span class="process-math">\(100111_{two}\)</span></p></div></div></article></div></section><section class="subsubsection" id="subsubsec-PartialDifferences"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">3.7.2.2</span> <span class="title">Partial Differences</span>
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.2.2</span> <span class="title">Partial Differences</span>
 </h4>
 <p id="p-382">Similar to partial sums, we can find the partial differences of each place value, and then combine these partial differences at the end to obtain our final difference. Note that this method involves being comfortable with negative numbers, and therefore integer operations.</p>
 <article class="example example-like" id="example-37"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-37"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.13</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.13</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-37"><article class="example example-like"><p id="p-383">Let's subtract <span class="process-math">\(4052-2457\)</span> again. Like before, we line up the numbers vertically by place value. In terms of blocks, we can view each place as a separate subtraction calculation with blocks of the same place value.</p>
 <p id="p-384">INCLUDE PIC HERE</p>
 <p id="p-385">Order isn't important in this algorithm, so let's start from left and go right. Subtracting the thousands place, we know that <span class="process-math">\(4000-2000 = 2000\text{.}\)</span> We write this partial difference in our calculation.</p>
@@ -373,7 +375,7 @@
 </div>
 <p id="p-390">And we have our final answer.</p>
 <p id="p-391">INCLUDE PIC HERE</p></article></div></section><section class="subsubsection" id="subsubsec-SameChangeAlgorithm"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">3.7.2.3</span> <span class="title">Same Change Algorithm</span>
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.2.3</span> <span class="title">Same Change Algorithm</span>
 </h4>
 <p id="p-392">This algorithm relies on two important concepts:</p>
 <ol class="decimal">
@@ -392,7 +394,7 @@
 </ol>
 <p id="p-403">This sounds more complicated than it actually is, so we will show an example to see this algorithm in action.</p>
 <article class="example example-like" id="example-38"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-38"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.14</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.14</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-38"><article class="example example-like"><p id="p-404">Let's subtract <span class="process-math">\(4052-2457\)</span> using the same change algorithm. We line up the two numbers as usual (and we'll keep block representations along with our calculation to see the process in a pictoral way)</p>
 <p id="p-405">INSERT PIC HERE</p>
 <p id="p-406">Starting at the ones place, we notice that the top digit is smaller than the bottom digit, we add 3 to both the top and bottom numbers (<span class="process-math">\((4052+3)-(2457+3))\)</span>) to obtain the new subtraction problem <span class="process-math">\(4055-2460\text{.}\)</span> Notice that the bottom digit is now 0, so this will eventually make subtraction easy (at the cost of doing a bit of addition)</p>
@@ -402,7 +404,7 @@
 <p id="p-410">Moving to the hundreds place, since the top digit is less than the bottom digit, we add the opposite number of hundreds, that is <span class="process-math">\(500\text{,}\)</span> to both numbers to obtain the new subtraction problem <span class="process-math">\(4595-3000\text{.}\)</span></p>
 <p id="p-411">Moving left to the thousands place, we notice that the top digit is greater than or equal to (in this case, greater than) the bottom digit, so we do nothing. Also, there are no non-zero digits in any places to our left (thousands is the largest place in our numbers) so we can now easily subtract place by place to obtain our final answer <span class="process-math">\(4595-3000=1595.\)</span></p>
 <p id="p-412">INSERT PIC OF THIS</p></article></div></section><section class="subsubsection" id="subsubsec-EqualAdditionsAlgorithm"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">3.7.2.4</span> <span class="title">Equal Additions Algorithm</span>
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.2.4</span> <span class="title">Equal Additions Algorithm</span>
 </h4>
 <p id="p-413">This algorithm is, in some sense, a combination between the standard subtraction algorithm and the same change algorithm. This is a "borrowing" algorithm, though instead of borrowing from the place to the left in the top number, we are "in debt" to the place to the left in the bottom number. Let's write down the algorithm and then do our usual example.</p>
 <ol class="decimal">
@@ -411,7 +413,7 @@
 <li id="li-62"><p id="p-416">If there are any non-zero digits in any places to the left of the current place, move one place to the left and go to step 2. Otherwise you are finished.</p></li>
 </ol>
 <article class="example example-like" id="example-39"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-39"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.7.15</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.15</span><span class="period">.</span>
 </h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-39"><article class="example example-like"><p id="p-417">Let's subtract <span class="process-math">\(4052-2457\)</span> using the equal addition algorithm. As usual we line up our numbers so digits of the same place value are in the same column, but this time we will have just a little bit of space between the bottom number and our difference (for any borrowed 1's that will appear). And, as usual, we will include blocks for added pictoral understanding.</p>
 <p id="p-418">INSERT PIC HERE</p>
 <p id="p-419">Starting with the ones place, we see that the digit <span class="process-math">\(2\)</span> in the top number is less than the digit <span class="process-math">\(7\)</span> in the bottom. So we "borrow" 10 ones, but unlike the standard subtraction algorithm we are "in debt" 1 ten to the bottom number. Thus, we have <span class="process-math">\((10+2)-7=12-7=5\)</span> ones in our difference. We mark this, and our additional debt of 1 ten, in our calculation:</p>
@@ -423,22 +425,21 @@
 <p id="p-425">Finally we move to the thousands place. We see that <span class="process-math">\(4\)</span> in the top number is greater than the <span class="process-math">\(2+1\)</span> in the bottom number, so we subtract without borrowing: <span class="process-math">\(4-(2+1)=4-3=1\)</span> and write this in our answer. As there are no more non-zero digits to the left (that is; no larger places than thousands in our numbers,) we are finished, and we have calculated <span class="process-math">\(4052-2457=1595.\)</span></p>
 <p id="p-426">INSERT PIC OF THIS</p></article></div>
 <article class="exercise exercise-like" id="exercise-11"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-11"><h5 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.7.16</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-11"><article class="exercise exercise-like"><p id="p-427">Try to use the same change and equal additions algorithms to do subtraction in other bases by redo-ing the calculations in Exercise <a href="" class="xref" data-knowl="./knowl/exercise-SubtractionDifferentBases.html" title="Checkpoint 3.7.12">Checkpoint 3.7.12</a></p></article></div>
-<p id="p-428">Austrian Algorithm</p>
-<p id="p-429">Discussion of pros-cons of each and relationships</p></section></section><section class="subsection" id="subsec-MultiplicationAlgorithms"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.7.3</span> <span class="title">Multiplication Algorithms</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.1.16</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-11"><article class="exercise exercise-like"><p id="p-427">Try to use the same change and equal additions algorithms to do subtraction in other bases by redo-ing the calculations in Exercise <a href="" class="xref" data-knowl="./knowl/exercise-SubtractionDifferentBases.html" title="Checkpoint 4.1.12">Checkpoint 4.1.12</a></p></article></div>
+<p id="p-428">Discussion of pros-cons of each and relationships. NEED TO DO THIS!!!</p></section></section><section class="subsection" id="subsec-MultiplicationAlgorithms"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.3</span> <span class="title">Multiplication Algorithms</span>
 </h3>
-<p id="p-430">First, discuss multiplinying by single digits and by powers of "base" (used in basically every algorithm)</p>
-<p id="p-431">Partial Products (Use blocks and other bases. Show area model and then distributivity algebraically)</p>
-<p id="p-432">Standard Algorithm (show area model and comparison to partial products)</p>
-<p id="p-433">Lattice Method</p>
-<p id="p-434">Discussion of pros-cons and relationships</p></section><section class="subsection" id="subsec-DivisionAlgorithms"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.7.4</span> <span class="title">Division Algorithms</span>
+<p id="p-429">First, discuss multiplinying by single digits and by powers of "base" (used in basically every algorithm)</p>
+<p id="p-430">Partial Products (Use blocks and other bases. Show area model and then distributivity algebraically)</p>
+<p id="p-431">Standard Algorithm (show area model and comparison to partial products)</p>
+<p id="p-432">Lattice Method</p>
+<p id="p-433">Discussion of pros-cons and relationships</p></section><section class="subsection" id="subsec-DivisionAlgorithms"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.4</span> <span class="title">Division Algorithms</span>
 </h3>
-<p id="p-435">Partial Quotients</p>
-<p id="p-436">Standard Algorithm (make sure to talk about regrouping of quotient at the end)</p>
-<p id="p-437">Discussion of pros-cons and relationships</p></section></section></div></main>
+<p id="p-434">Partial Quotients</p>
+<p id="p-435">Standard Algorithm (make sure to talk about regrouping of quotient at the end)</p>
+<p id="p-436">Discussion of pros-cons and relationships</p></section></section></div></main>
 </div>
 </body>
 </html>

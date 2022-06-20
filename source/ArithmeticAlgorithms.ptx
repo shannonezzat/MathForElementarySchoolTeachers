@@ -2,8 +2,7 @@
 
 <chapter xml:id="ArithmeticAlgorithms" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Arithmetic Algorithms</title>
-  <section xml:id="sec-AlgorithmsforArithmetic">
-    <title>Algorithms for Arithmetic</title>
+  
     <introduction>
     <p>
         In this section, we will talk about the ways we do arithmetic in practice. If you think about it, the methods we use to do arithmetic are a series of steps (a good analogy is a recipe) that we follow to obtain an answer. In mathematics we care about these enough to give them their own name: 
@@ -35,9 +34,9 @@
             Note that we will also learn how to use these algorithms to do arithmetic in other bases, as discussined in INSERT SECTION REFERENCE. Even though it may be unlikely that you will need to teach students how to do arithmetic in other bases, this will allow us to turn off our "muscle memory" of doing arithmetic in base ten, as we are so comfortable with many of these algorithms that it is incredibly difficult to this muscle memory off to think deeply about the algorithmeic underpinnings. As an added bonus, we will get to experience, in a small way, the struggles that your future students will have when learning about performing arithmetic for the first time. 
         </p>
     </introduction>
-    <subsection xml:id="subsec-AdditionAlgorithms">
+    <section xml:id="sec-AdditionAlgorithms">
         <title>Addition Algorithms</title>
-        <subsubsection xml:id="subsubsec-TheStandardAdditionAlgorithm">
+        <subsection xml:id="subsec-TheStandardAdditionAlgorithm">
             <title>The Standard Addition Algorithm</title>
             <p>
                 NOTE ON ADDITION "FACTS" OF SINGLE DIGIT SUMS
@@ -281,8 +280,8 @@
                    </ol>
                </p>
            </exercise>
-        </subsubsection>
-        <subsubsection xml:id="subsubsec-DUMMY">
+        </subsection>
+        <subsection xml:id="subsec-PartialSums">
             <title>Partial Sums</title>
             
         <p>
@@ -309,8 +308,8 @@
         <p>
             We note that this is not *that* different to the standard addition algorithm, as the "carries" are added at the end rather than as we go.
         </p>
-        </subsubsection>
-        <subsubsection xml:id="subsubsec-SameChangeAddition">
+        </subsection>
+        <subsection xml:id="subsec-SameChangeAddition">
             <title>Same Change Algorithm</title>
             
         
@@ -330,8 +329,8 @@
         <p>
             Note that this idea doesn't necessarily make the calculation easier and other than a few cases like the above, where one number is "close" to a round number, it's not very useful. However, we bring this up because there is a related algorithm for subtraction that is very useful!
         </p>
-        </subsubsection>
-        <subsubsection xml:id="subsubsec-LatticeMethodAddition">
+        </subsection>
+        <subsection xml:id="subsec-LatticeMethodAddition">
             <title>Lattice Algorithm </title>
             
         
@@ -400,10 +399,10 @@
             </ol>
         </exercise>
        
-        </subsubsection>
+        </subsection>
 
-    </subsection>
-    <subsection xml:id="subsec-SubtractionAlgorithms">
+    </section>
+    <section xml:id="sec-SubtractionAlgorithms">
         <title>Subtraction Algorithms</title>
         <introduction>
             <p>
@@ -425,7 +424,7 @@ An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - De
 Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
 </p>
 </introduction>
-        <subsubsection xml:id="subsubsec-StandardSubtractionAlgorithm">
+        <subsection xml:id="subsec-StandardSubtractionAlgorithm">
             <title>Standard Subtraction Algorithm</title>
             <p>
                 The idea behind the standard subtraction algorithm is that you subtract place-by-place from right to left, that is smallest to largest place value, and if you are unable to subtract that particular place, "ungrouping" or "borrowing"  one of the places to the left and including those to the right.
@@ -586,8 +585,8 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     </p>
                 </solution>
             </exercise>
-</subsubsection>
-          <subsubsection xml:id="subsubsec-PartialDifferences">
+</subsection>
+          <subsection xml:id="subsec-PartialDifferences">
               <title>Partial Differences</title>
               
                   
@@ -636,8 +635,8 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
 
        </example>
        
-       </subsubsection>
-       <subsubsection xml:id="subsubsec-SameChangeAlgorithm">
+       </subsection>
+       <subsection xml:id="subsec-SameChangeAlgorithm">
            <title>Same Change Algorithm</title>
            
        
@@ -726,8 +725,8 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 INSERT PIC OF THIS
             </p>
         </example>
-    </subsubsection>
-    <subsubsection xml:id="subsubsec-EqualAdditionsAlgorithm">
+    </subsection>
+    <subsection xml:id="subsec-EqualAdditionsAlgorithm">
         <title>Equal Additions Algorithm</title>
         <p>
             This algorithm is, in some sense, a combination between the standard subtraction algorithm and the same change algorithm. This is a "borrowing" algorithm, though instead of borrowing from the place to the left in the top number, we are "in debt" to the place to the left in the bottom number. Let's write down the algorithm and then do our usual example. 
@@ -789,13 +788,28 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <p>
            Discussion of pros-cons of each and relationships. NEED TO DO THIS!!!
         </p>
-         </subsubsection> 
-    </subsection>
-    <subsection xml:id="subsec-MultiplicationAlgorithms">
+         </subsection> 
+    </section>
+    <section xml:id="sec-MultiplicationAlgorithms">
         <title>Multiplication Algorithms</title>
+        <introduction>
+            <p>
+                The way we multiply by hand is intrinsically based on both the ideas of place value, and the property of distributivity. In all of the following algorithms, both ideas will be important. Before we begin talking about how to multiply, we need to know how to do two things well; multiply powers of ten (that is, a place unit) by a single digit, and how to multiply two single digits together. The first of these is very easy. The second is easy too, but there is a lot of different cases.
+            </p>
+        </introduction>
+        <subsection xml:id="subsec-MultiplicationPreliminaries">
+            <title>Multiplication Preliminaries</title>
+            <subsubsection xml:id="subsubsec-MultiplyingPlaceByADigit">
+                <title>Multiplying Place By A Digit</title>
+                <p>
+                    
+                </p>
+            </subsubsection>
+        </subsection>
         <p>
             First, discuss multiplinying by single digits and by powers of "base" (used in basically every algorithm)
         </p>
+        sub
         <p>
             Partial Products (Use blocks and other bases. Show area model and then distributivity algebraically)
         </p>
@@ -808,8 +822,8 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <p>
             Discussion of pros-cons and relationships
         </p>
-    </subsection>
-    <subsection xml:id="subsec-DivisionAlgorithms">
+    </section>
+    <section xml:id="sec-DivisionAlgorithms">
         <title>Division Algorithms</title>
         <p>
             Partial Quotients
@@ -820,6 +834,6 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <p>
            Discussion of pros-cons and relationships 
         </p>
-    </subsection>
-</section>
+    </section>
+
 </chapter>
