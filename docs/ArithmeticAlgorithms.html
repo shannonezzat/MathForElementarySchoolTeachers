@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-20T19:12:26-03:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Arithmetic Algorithms</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="My Great Book">
+<meta property="book:author" content="Me">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">My Great Book:</span> <span class="subtitle">An example to be modified</span></a></h1>
+<p class="byline">Me</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-PropertiesOfArithmeticOperations.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="my-great-book.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-AdditionAlgorithms.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-PropertiesOfArithmeticOperations.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="my-great-book.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-AdditionAlgorithms.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="preface.html" data-scroll="preface" class="internal">Preface</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-first.html" data-scroll="ch-first" class="internal"><span class="codenumber">1</span> <span class="title">My First Chapter</span></a><ul>
+<li><a href="sec_firstch-intro.html" data-scroll="sec_firstch-intro" class="internal">Introduction to First Chapter</a></li>
+<li><a href="sec_firstch-examples.html" data-scroll="sec_firstch-examples" class="internal">Examples</a></li>
+<li><a href="ex_firstch.html" data-scroll="ex_firstch" class="internal">My Exercises</a></li>
+</ul>
+</li>
+<li class="link"><a href="ch-empty.html" data-scroll="ch-empty" class="internal"><span class="codenumber">2</span> <span class="title">(No title)</span></a></li>
+<li class="link">
+<a href="WholeNumbers.html" data-scroll="WholeNumbers" class="internal"><span class="codenumber">3</span> <span class="title">Sample Chapter: Whole Numbers</span></a><ul>
+<li><a href="sec-Equality.html" data-scroll="sec-Equality" class="internal">Equality</a></li>
+<li><a href="sec-ProblemSolving.html" data-scroll="sec-ProblemSolving" class="internal">Problem Solving</a></li>
+<li><a href="sec-2_1NumberSystemsAndPlaceValue.html" data-scroll="sec-2_1NumberSystemsAndPlaceValue" class="internal">NumberSystemsAndPlaceValueWhole Numbers</a></li>
+<li><a href="sec-NumberSystems.html" data-scroll="sec-NumberSystems" class="internal">Number Systems</a></li>
+<li><a href="sec-ArithmeticOperations.html" data-scroll="sec-ArithmeticOperations" class="internal">Arithmetic Operations</a></li>
+<li><a href="sec-PropertiesOfArithmeticOperations.html" data-scroll="sec-PropertiesOfArithmeticOperations" class="internal">Properties Of Arithmetic Operations</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="ArithmeticAlgorithms.html" data-scroll="ArithmeticAlgorithms" class="internal"><span class="codenumber">4</span> <span class="title">Arithmetic Algorithms</span></a><ul>
+<li><a href="sec-AdditionAlgorithms.html" data-scroll="sec-AdditionAlgorithms" class="internal">Addition Algorithms</a></li>
+<li><a href="sec-SubtractionAlgorithms.html" data-scroll="sec-SubtractionAlgorithms" class="internal">Subtraction Algorithms</a></li>
+<li><a href="sec-MultiplicationAlgorithms.html" data-scroll="sec-MultiplicationAlgorithms" class="internal">Multiplication Algorithms</a></li>
+<li><a href="sec-DivisionAlgorithms.html" data-scroll="sec-DivisionAlgorithms" class="internal">Division Algorithms</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch_pretext-features.html" data-scroll="ch_pretext-features" class="internal"><span class="codenumber">5</span> <span class="title">Examples of PreTeXt features</span></a><ul>
+<li><a href="sec_ptxfeat-blocks.html" data-scroll="sec_ptxfeat-blocks" class="internal">Environments and Blocks</a></li>
+<li><a href="section-2-2.html" data-scroll="section-2-2" class="internal">Another section</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
+<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="chapter" id="ArithmeticAlgorithms"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">4</span> <span class="title">Arithmetic Algorithms</span>
+</h2>
+<section class="introduction" id="introduction-6"><p id="p-259">In this section, we will talk about the ways we do arithmetic in practice. If you think about it, the methods we use to do arithmetic are a series of steps (a good analogy is a recipe) that we follow to obtain an answer. In mathematics we care about these enough to give them their own name:</p>
+<article class="definition definition-like" id="def-Algorithm"><h2 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.0.1</span><span class="period">.</span>
+</h2>
+<p id="p-260">An <dfn class="terminology">algorithm</dfn> is a (finite) series of well-defined steps that will always solve a certain class of problems if correctly followed.</p></article><p id="p-261">There are countless algorithms for solving arithmetic problems for whole numbers (which we can use to solve arithmetic problems in larger sets of numbers, like integers, rational numbers, or real numnbers). We will discuss a few of the most common algorithms that are used, discuss the pros and cons of each, and also discuss some non-algorithmic and ad-hoc methods that are widely used, especially when it comes to mental arithmetic.</p>
+<p id="p-262">Most, if not all, of the following algorithms use the fact that we write numbers in a place-value system to break the computation into easier parts that we can put together at the end.</p>
+<p id="p-263">Is there a "best" algorithm for each arithmetic operation? Depending on what you care about (speed, efficiency, ease of understanding, consistency in all cases), a different algorithm can be "better" than others. Regarding understanding, the most understandable algorithm may differ from student to student, and from teacher to teacher. So it is a very hard (and in some cases impossible) task to exclusively recommend one algorithm over another.</p>
+<p id="p-264">It is important to study multiple algorithms for many reasons. Forst of all, understanding the details of an algorithm allows a teacher to explain how and why an algorithm works, as opposed to simply relying on some authoritative explanation like "follow these steps because they are the ones that work". Also, this understanding allows teachers to be able to find student's conceptual errors in arithmetic. Not only can they find mistakes, they can, along with discussions with the students, also determine the conceptual reasons behind these mistakes. Knowing the underpinnings of multiple algorithms allows a teacher to have many algorithmic tools in their toolbox. They can use their professional judgement for what is the most appropriate algorithm to use and/or teach depending on the needs of their students.</p>
+<p id="p-265">Also, studying multiple algorithms allows teachers the opportunity to understand arithmetic through many lenses, thus increasing their overall understanding of the operations themselves. It is relatively commonplace for curricula to suggest that students develop their own personal algorithms for arithmetic. Studying multiple algorithms gives a future teacher practice in evaluating and interpreting the algorithms that students are indeed discovering (and perhaps inventing) themselves.</p>
+<p id="p-266">Note that we will also learn how to use these algorithms to do arithmetic in other bases, as discussined in INSERT SECTION REFERENCE. Even though it may be unlikely that you will need to teach students how to do arithmetic in other bases, this will allow us to turn off our "muscle memory" of doing arithmetic in base ten, as we are so comfortable with many of these algorithms that it is incredibly difficult to this muscle memory off to think deeply about the algorithmeic underpinnings. As an added bonus, we will get to experience, in a small way, the struggles that your future students will have when learning about performing arithmetic for the first time.</p></section><nav class="summary-links"><ul>
+<li><a href="sec-AdditionAlgorithms.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Addition Algorithms</span></a></li>
+<li><a href="sec-SubtractionAlgorithms.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Subtraction Algorithms</span></a></li>
+<li><a href="sec-MultiplicationAlgorithms.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Multiplication Algorithms</span></a></li>
+<li><a href="sec-DivisionAlgorithms.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Division Algorithms</span></a></li>
+</ul></nav></section></div></main>
+</div>
+</body>
+</html>
