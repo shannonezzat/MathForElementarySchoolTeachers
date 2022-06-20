@@ -1,3 +1,2 @@
-file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/main.ptx:33:5:FATAL:PARSER:ERR_NAME_REQUIRED: error parsing attribute name
-file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/main.ptx:33:5:FATAL:PARSER:ERR_SPACE_REQUIRED: attributes construct error
-file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/main.ptx:33:5:FATAL:PARSER:ERR_GT_REQUIRED: Couldn't find end of Start Tag include line 32
+<string>:0:0:WARNING:IO:IO_LOAD_ERROR: failed to load external entity "file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/WholeNumbersJune13.ptx"
+file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/main.ptx:32:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/WholeNumbersJune13.ptx, and no fallback was found
