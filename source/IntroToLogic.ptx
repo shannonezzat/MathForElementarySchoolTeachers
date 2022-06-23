@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext>
+    <article xml:id="test">
+        <title>Sample Chapter: The Language of Mathematics</title>
+            <section xml:id="sec-1_1IntroToLogic">
+                <title>Intro To Logic</title>
+                    <objectives permid="dEf" xml:id="objectives-structures">
+  <title>Logic</title>
+  <introduction>
+    <p>
+      When we say sentences like "I will have a coffee or a donut" or "If a number is even and divisible by three then it is divisible by six" we want to make sure we all agree on the precise meaning of the sentence. In this section, we will:    </p>
+  </introduction>
+  <ol>
+    <li xml:id="LogicIntro">
+      
+     introduce the topic of logical statements </li>
+    <li> give precise meaning to common english words like "and", "or", "all", "some" "if", and "then"</li>
+    <li> determine exactly when logical statements are true (and when they are false) and how to show this</li>
+    <li> introduce various related statements to "if-then" statements. 
+        
+    </li>
+  </ol>
+  <conclusion>
+    <p>
+      As we move forward in our study we will have a common "language" for expressing mathematical ideas.
+          </p>
+  </conclusion>
+</objectives>
+  <subsection xml:id="subsec-LogicObj">
+      <title>The Basics</title>
+      
+<p>
+    One of the most important aspects of mathematics is communication. As much as it's important to solve problems and master arithmetic and algebraic skills, it's just as important to be able to communicate your answers (or questions) to others so that everyone has the same understanding of what is being said mathematically. 
+</p>
+
+<p>
+    In mathematics we really care about the truth of sentences that we write or say.   We introduce the following concepts:
+</p>
+
+<definition>
+A <term> statement </term> is a sentence that is either always true or always false (but not both).
+<example>
+    <p>"Ottawa is the capital of Canada" is a true statement. </p> <p>"<m>4^2=10</m>" is a false statement.</p>
+</example>
+<example><title>Non-Examples</title>
+
+
+    "What time is it?" is a sentence that is not a statement. It is simply a question and cannot be given a truth value of true or false. Similarly, "Go do you homework" is a command, and not a statement.
+</example>
+</definition>
+
+<p>
+    Sometimes we want sentences to have a variable in them so that when we fill in the variable with a value it becomes a statement.
+</p>
+
+<definition>    
+An <term> open sentence </term> is a sentence with a variable such that the sentence becomes a statement when you fill in a value into the variable.
+<example>
+    <p>
+        "<m>X^2 = 1</m>" is an open sentence. It is true when <m>x=1</m> or <m>x=-1</m> and false for any other numbers.
+    </p>
+    <p>
+        "Winnipeg is the capital city of Canadian province P" is an open sentence. It is true when P = "Manitoba" and false for all other Canadian provinces.
+    </p>
+    
+</example>
+
+</definition>
+
+<assemblage xml:id="assemblage-Logic">
+    <title>Notes For a Deeper Understanding</title>
+    <p>
+      <ol>
+          <li>
+              <p>
+                  In open sentences, we usually restrict the allowable inputs for variables. The set of allowable inputs is called the <term>domain</term>. In the first example above, it's implicit that we only want <m>X</m> to be a number, and not, say, a colour, or telephone, or anything else! If it's not enitrely clear what the domiain of an open sentence is, we should tell people what the domain is.  
+              </p>
+          </li>
+          <li>
+              <p>
+                  We want statements to have exactly one truth value; either True(T) or False(F). If we know a sentence is a statement and it's not true, it must be false. The easiest way to think about this is by asking yourself "am I being lied to?" If the answer is no, then the statement is true (even if it doesn't really apply or make sense).  
+              </p>
+          </li>
+      </ol>  
+    </p>
+</assemblage>
+
+<exercise>
+    Put exercise here
+</exercise>
+  </subsection>          
+<subsection xml:id="subsec-AndOrNot">
+    <title>And, Or, and Not</title>
+    
+
+
+<p>
+    In the English language, there is a lot of ambiguity in the words that we say. Consider the following two sentences:
+    <ol>
+        <li>
+            <p>
+                Your hamburger combo comes with fries or onion rings.
+            </p>
+        </li>
+        <li>
+            <p>
+                You can check a free bag if you are have elite status or you purchased a business class ticket.
+            </p>
+        </li>
+    </ol>
+    In both of these examples, the word "or" has a different meaning. In the first, "or" is used exclusively; you can have fries or onion rings but not both. In the second, it is used inclusively; you would expect that you would get to check a free bag if you had elite status and a business class ticket.
+</p>
+
+<p>
+    In mathematics, we aim to be as precise as possible with our language. We want to make sure that everyone understands the exact same ideas when we express ourselves, especially in determining when a statement is true or false. The mathematical community has agreed upon precise meanings for words such as "and", "or", "not", "all", "some", and "if-then" (among others). Let's learn about them now. In the following definition we use <m>P</m> and <m>Q</m> as variables to mean any two statements:
+</p>
+<definition>
+<p>If <m>P</m> and <m>Q</m> are statements, then:
+    <ol>
+        <li> the statement "<m>P</m> <term>and</term> <m>Q</m>" is true exactly when <m>P</m> is true and <m>Q</m> is true. Otherwise it is false.</li>
+        <li> the statement "<m>P</m> <term>or</term> <m>Q</m>" is false exactly when <m>P</m> is false and <m>Q</m> is fasle. Otherwise it is true. </li>
+    </ol>
+</p>
+</definition>
+<exercise>
+   <p> Let <m>P :=</m> "I will have a donair for dinner" and <m>Q :=</m> "I will have pizza for dinner". Determine if the statements "<m>P</m> and <m>Q</m>" and "<m>P</m> or <m>Q</m>" are true when: </p>
+    <ol>
+        <li>
+            <p>
+                I had both a donair and pizza for dinner
+            </p>
+        </li>
+        <li>
+            <p>
+                I had a donair for dinner, but not pizza
+            </p>
+        </li>
+        <li>
+            <p>
+                I had pizza for dinner, but not a donair
+            </p>
+        </li>
+        <li>
+            <p>
+                I had neither a donair or pizza for dinner.
+            </p>
+        </li>
+    </ol>
+ <solution>
+     <p>
+       <m>P</m> and <m>Q</m>:
+       <ol>
+           <li>
+               <p>
+                   T
+               </p>
+           </li>
+           <li>
+               <p>
+                   F
+               </p>
+           </li>
+           <li>
+               <p>
+                   F
+               </p>
+           </li>
+           <li>
+               <p>
+                   F
+               </p>
+           </li>
+       </ol>  
+     </p>
+     <p>
+       <m>P</m> or <m>Q</m>:
+       <ol>
+           <li>
+               <p>
+                   T
+               </p>
+           </li>
+           <li>
+               <p>
+                   T
+               </p>
+           </li>
+           <li>
+               <p>
+                   T
+               </p>
+           </li>
+           <li>
+               <p>
+                   F
+               </p>
+           </li>
+       </ol>  
+     </p>
+ </solution>   
+</exercise>
+
+<definition>
+<p>
+    If <m>P</m> is a statement, then the <term>negation</term> of <m>P</m>, written <m>\sim P</m> is a statment with the opposite truth value of <m>P</m> (but with the same context). If <m>P</m> is an open sentence, then <m>\sim P</m> is an open sentence with the opposite truth value for each variable input.
+
+</p>
+<example>
+    If <m>P:=</m> "2 is a prime number" (which is true) then <m>\sim P = </m> "2 is not a prime number" (which is false).
+</example>
+<example>
+    If <m>P = "x &lt; 5"</m> over the domain of counting numbers (which is true when <m>= 1,2,3,4</m> and false otherwise) then <m>\sim P = "x \geq 5"</m> (which is false when <m>x=1,2,3,4</m> and true otherwise). You could also write <m>\sim P</m> as <m>"x > 4"</m>, or in many other logically equivalent ways.
+
+</example>
+</definition>
+<exercise>
+    <p>
+        If <m>P = "x &lt; 5"</m> over the domain of counting numbers, explain why <m>x &gt; 5</m> isn't the negation of <m>P</m>.
+    </p>
+    <solution>
+        <p>
+           When <m>x = 5</m>, <m>P</m> is false, since 5 is not less than 5. However <m>x &gt; 5</m> is also false when <m>x=5</m> since 5 is not greater than 5.  Since these open sentences do not have opposite truth values for every possible input, one cannot be the negation of the other.
+        </p>
+    </solution>
+</exercise>
+<p>
+    We can write down more complex expressions using combinations of "and", "or", and "not". To help us determine when these complex statements are true, we can use a <term>truth table</term> to look at these compound statements piece by piece:
+</p>
+
+<definition>
+<p>
+    If <m>A</m> and <m>B</m> are two (usually compound) statements, we say that they are <term>logically equivalent</term> when their truth values always agree given the truth values of the constituent parts.
+</p>
+</definition>
+
+<figure xml:id="TestFig">
+    <caption>Supplementary Video</caption>
+    <video xml:id="Test" youtube="F4eG0HzKZeU" />
+
+    
+</figure>
+</subsection>
+
+<subsection xml:id="subsec-Quantifiers">
+    <title>Quantified Statements</title>
+    
+
+When we talk about mathematical ideas, we want to express how many objects they apply to. We do this by using quantifiers:
+<definition>
+<p>
+    Universal quantifiers are words that signify every object in our domain (that is, every object unders consideration). These are words like "all", "for all", "every", "no", "none", and "each".
+</p>
+
+<p>
+    Existential quantifiers are words that signify at least one object in our domain. These are words and phrases like "there is", "some", "at least one", and "there exists".
+</p>
+
+<example>
+    <p>
+        Some universally quantified statements are:
+        <ol>
+            <li>
+                <p>
+                    All cats are mammals
+                </p>
+            </li>
+            <li>
+                <p>
+                    Each whole number is odd
+                </p>
+            </li>
+            <li>
+                <p>
+                    No polygons have exactly two sides
+                </p>
+            </li>
+            <li>
+                <p>
+                    Every whole number has a non-negative square
+                </p>
+            </li>
+        </ol>
+    </p>
+</example>
+<example>
+    <p>
+        Some existentially quantified statements are:
+        <ol>
+            <li>
+                <p>
+                    There is an odd integer
+                </p>
+            </li>
+            <li>
+                <p>
+                    Some cats are grey
+                </p>
+            </li>
+            <li>
+                <p>
+                    At least one fraction is equal to 1
+                </p>
+            </li>
+            <li>
+                <p>
+                    There exists a prime number with a factor of 6
+                </p>
+            </li>
+        </ol>
+    </p>
+</example>
+</definition>
+
+<p>You may have noticed that these quantified statements are a combination of a quantifier (universal or existental) and an open sentence, thought sometimes when written in English the variable can be hidden. For example, "there is an odd integer" can be reworded to "there is an integer <m>x</m> such that <m>x</m> is odd." </p>
+
+<exercise>
+    <p>
+        In the two examples above, write the quantified statement using a combination of a quantifier (use only "For All" or "There is") and an open sentence. Make sure to include a variable. Then, determine the truth value of the quantified statement.
+    </p>
+    <solution>
+        <p>
+            You may have a slighly different wording, but one choice would be:
+            <ol>
+                <li>
+                    <p>
+                       For all cats <m>C</m>, <m>C</m> is a mammal (T)
+
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        For all whole numbers <m>n</m>, <m>n</m> is odd (F)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        For all polygons <m>p</m>, <m>p</m> does not have exactly two sides (T)                       , , 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        For all whole numbers <m>n</m>, <m>n^2 \geq 0</m> (T)
+                    </p>
+                </li>
+            </ol>
+            Note that, for 3, we changed "No <m>p</m> are <m>Q</m>", where <m>Q</m> was an open sentence, to "All <m>p</m> are <m>\sim Q</m>". 
+        </p>
+    </solution>
+    <solution>
+        <p>
+            You may have a slighly different wording, but one choice would be:
+            <ol>
+                <li>
+                    <p>
+                        There is an integer <m>n</m> such that <m>n</m> is odd. (T)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        There is a cat <m>C</m> such that <m>C</m> is grey. (T)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        There is a fraction <m>\frac{a}{b}</m> such that <m>\frac{a}{b} =1</m> (T)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        There is a prime number <m>p</m> such that <m>p</m> is divisible by 6 (F)
+                    </p>
+                </li>
+            </ol>
+            Later in this chapter we will learn how to write "is an odd number" and "is divisible by 6" more mathemmatically, using algebra.
+        </p>
+    </solution>
+</exercise>
+
+<assemblage xml:id="assemblage-Quantifiers">
+    <title>Notes for a Deeper Understanding</title>
+    <p>
+        <ol>
+            <li>
+                <p>
+                    A universally quantified statement can be <term>vacuously true</term> if there are no objects that apply to the statement. For example, "all unicorns are named George" is not lying to you since you can't find a unicorn not named George, so we consider statements like this true.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Other than vacuously true statements, if a universally quantified statement is true so is the "extentially" quantified version. For example, "all polygons have at least three sides" is true, so "some polygons have at least three sides" is true too! Remember, existential quantifiers only care of an object exists, not how many. 
+                </p>
+            </li>
+        </ol>
+    </p>
+</assemblage>
+
+<p>
+    We can negate quantified statements as well. We do this regularly in our daily lives, but let's try and pinpoint what is going on:
+
+</p>
+
+<exercise>
+   <p> A friend tells you that all cats are blue. This is obviously a false statement! Suppose you wanted to reply to your friend with the correct  negated (true) statement. Which of the following could you reply with? </p>
+    <ol>
+        <li>
+            <p>
+                Some cats are blue
+            </p>
+        </li>
+        <li>
+            <p>
+                Some cats are not blue
+            </p>
+        </li>
+        <li>
+            <p>
+                All cats are not blue
+            </p>
+        </li>
+        <li>
+            <p>
+                There is a cat that isn't blue
+            </p>
+        </li>
+        <li>
+            <p>
+                No cats are blue
+            </p>
+        </li>
+    </ol>
+    <solution>
+        <p>
+            Statements 2 and 4 are correct. Be careful with statements 3 and 5; the reason we know not all cats are blue is that we've seen cats that are not blue. There may be a cat out there that is blue that we've never seen, so we can't say for sure that no cats are blue.
+        </p>
+    </solution>
+</exercise>
+
+<exercise>
+    <p> A friend tells you that some cats have wings. This, like the exercise above, is obviously a false statement! Suppose you wanted to reply to your friend with the correct negated (true) statement. Which of the following could you reply with? </p>
+    <ol>
+        <li>
+            <p>
+                All cats have wings
+            </p>
+        </li>
+        <li>
+            <p>
+                No cats have wings
+            </p>
+        </li>
+        <li>
+            <p>
+                Some cats do not have wings
+            </p>
+        </li>
+        <li>
+            <p>
+                All cats do not have wings
+            </p>
+        </li>
+        
+    </ol>
+    <solution>
+        <p>
+            Statements 2 and 4 are correct. Note the form of these two statements: statement 2 is "No P are Q" and statement 4 is "All P are not Q". As mentioned above, these are logically equivalent.
+        </p>
+    </solution>
+</exercise>
+
+<p> Note that in the previous two exercises, there was a pattern to negating a quantified statement. In general, this holds for negating any quantified statement. </p>
+<p>
+    To negate a quantified statement of the type "All P are Q" or "Some P are Q":
+    <ol>
+        <li>
+            <p>
+                Switch the type of quantifier to the other
+            </p>
+        </li>
+        <li>
+            <p>
+                Negate the open sentence part of the quantified statement.
+            </p>
+        </li>
+    </ol>
+
+</p>
+<p>
+    Remember that you can rewrite "No P are Q" as "All P are not Q". Using this, you can negate "No P are Q" to "Some P are Q" (and vice versa).
+</p>
+
+<assemblage xml:id="assemblage-QuantNeg">
+    <title>Notes for a Deeper Understanding</title>
+    <p>
+        It might be clear, but it should be noted that for any statement or open sentence <m>P</m> it's true that <m>\sim (\sim P)</m> is logically equivalent to <m>P</m>. So, much like negatives, two negations cancel each other out. Since quantified statements are indeed statements, this holds for them as well.
+    </p>
+</assemblage>
+
+
+</subsection>
+
+
+
+
+
+
+
+</section>
+
+<section xml:id="sec-ConditionalStatements">
+    <title>Conditional Statements</title>
+    <subsection>
+    <title>What is a Conditional Statement</title>
+    
+    
+    <introduction>
+        <p>
+            One of the most important type of statements in mathematics is the <term>conditional statements</term> or, more colloqually, <term>if-then statement</term>. These statements are of the form "if P then Q". We call P the <term>condition</term> and Q the <term>conclusion</term> of the conditional statement, or simply the if-part and then-part. We want to know when these statements are true or false, so let's explore this now:
+        </p>
+    </introduction>
+
+    <exercise>
+       <p> Your professor tells you "if you get 100 percent on the next midterm then I will give you ten dollars". In which of the following four situations is the professor lying to you (remember, we say a statement is false if it is indeed a lie): </p>
+    
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        You get 100 percent, and your professor does give you a dollar
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        You get 100 percent, and your professor does not give you a dollar
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        You do not get 100 percent, and your professor does give you a dollar
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        You do not get 100 percent, and your professor does not give you a dollar
+                    </p>
+                </li>
+            </ol>
+        </p>
+    <solution>
+        <p>
+           The only situation where your professor is lying to you is in situaion 2. Situaion 1 is obviously true, and the statement does not really apply to situations 3 and 4 as the if-part isn't satisfied. We call the statement <term>vacuously true</term> in these two situations.
+        </p>
+    </solution>
+    
+    </exercise>
+
+    <p>
+        Of course, there is nothing special about the meaning of the if-part and then-part in the previous example. In general we can say that an if-then statement is false when the if-part is true and the then-part is false, and it is true otherwise. Now we can construct a truth table for "it P then Q":
+    </p>
+
+    <figure xml:id="IfThenTruthTable">
+        <caption>Truth Table for "if P then Q"</caption>
+    </figure>
+</subsection>
+
+<subsection xml:id="subsec-JustifyingConditionalStatements">
+    <title>Justifying Conditional Statements</title>
+    
+
+<p>
+    In math, we're more concerned with if-then statements where both the if-part and then-part are open sentences with variables. For example "if <m>n</m> is an odd integer then <m>n^2</m> is also odd." In these cases, there's an assumed universal quantifier before these: "for all integers <m>n</m> is <m>n</m> is odd then <m>n^2</m> is odd." We don't usually write the quantifier, but it's there in the background. Since it's a universially quantified statement, we want it to be true for all inputs into our variables. 
+</p>
+    
+<p>
+   Remembering that an if-then statement is only false when the if-part is true and the then-part is false, an if-then statement like the one above is true exactly when there are no inputs that make the if-part true and the then-part false. 
+</p>
+
+
+<p>
+    To prove an if-then statement is true, we need to show that the "dreaded case", where the if-part is true and the then-part is false, never happens. There are three main ways to do this:
+    <ol>
+        <li>
+            <p>
+                Assume the if-part is true, and show that the then part *must* be true. Thus the "dreaded case" is impossible. This is called a <term>direct proof</term>.
+            </p>
+        </li>
+        <li>
+            <p>
+                Assume the then-part is false, and show that the if-part *must* be false. Thus the "dreaded case" is impossible.
+            </p>
+        </li>
+        <li>
+            <p>
+                Assume that there is an input that gives the "dreaded case" (where the if-part is true and the thenn-part is false) and show that some sort of contradition arises where mathemathics "breaks".
+            </p>
+        </li>
+    </ol>
+    We will mainly focus on direct proofs in this book, though there are a few times where we will see a proof of another type. When we come across those, we will remind everyone of the logic behind those types of proofs.
+</p>
+
+<assemblage xml:id="assemblage-Proofs">
+    <title>Notes for Additional Understanding</title>
+    <p>
+        We will mainly focus on direct proofs, though there will be times when we look at the other two types. We will revisit the logic behind those two types when the need arises.
+    </p>
+</assemblage>
+
+
+
+<p>
+    Let's look at some examples of direct proofs.
+</p>
+
+<exercise>
+    <p> Show that the following statements are true using direct proofs:
+    <ol>
+        <li>
+            <p>
+                if <m>n</m> is an even integer then <m>n^2</m> is even
+            </p>
+        </li>
+        <li>
+            <p>
+                if <m>a</m> and <m>b</m> are odd integers then <m>a+b</m> is even
+            </p>
+        </li>
+        <li>
+            <p>
+                The sum of any six consecutive integers is always odd. (hint: can you reword this as an if-then statement?)
+            </p>
+        </li>
+    </ol>
+    </p>
+    <solution>
+        <p>
+            We need to:
+            <ol>
+                <li>
+                    <p>
+                        assume that <m>n</m> is even and 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        show that <m>n^2</m> must be even.
+                    </p>
+                </li>
+            </ol>
+            So let's assume that <m>n</m> is even. This means that <m>n=2k</m> for some integer <m>k</m>. We need to show that <m>n^2</m> is even, thus <m>n^2 = 2( \quad )</m> where the expression in the brackets must be an integer.   
+            
+            
+                Now that we have our set-up, we can prove this result. Consider <m>n^2</m>. By our assumption: <me>
+                    n^2=(2k)^2 = (2k)(2k)
+                </me>
+                               
+            
+            We know how we need the expression to look algebraically ( as <m>2( \quad )</m>), so we use our creativity to get there:
+                <me>
+                (2k)(2k) = 2(2k^2)
+                </me>
+        </p>
+            <p> Since <m>2k^2</m> is an integer, we are done. We have shown that we can always express <m>n^2</m> in the form of an even integer, and this is what we wanted to prove. </p>
+    </solution>
+    <solution>
+        <p>
+            We need to:
+            <ol>
+                <li>
+                    <p>
+                        Assume that <m>a</m> and <m>b</m> are odd and
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Show that <m>a+b</m> must be even.
+                    </p>
+                </li>
+            </ol>
+            So let's write our assumption in terms of the algebraic definition of what it means for a number to be odd. So let <m>a=2r+1</m> and <m>b=2s+1</m> for some integers <m>r,s</m>.
+        </p>
+        <p>
+            
+                </p>
+                <p><assemblage xml:id="assemblage-CautionProof">
+                    <title>Caution!!</title>
+                    <p>
+                        CAUTION!! A very common mistake that students make is to use the same variable for the integers in the two above expressions (e.g. <m>a=2r+1</m> and <m>b=2r+1</m> for some integer <m>r</m>). Note that this would mean that <m>a</m> and <m>b</m> would be the same number (depending on the choice of <m>r</m>). We want <m>a</m> and <m>b</m> to be possibly different numbers, so we need two different variables to be able to express this.
+                    </p>
+                </assemblage>
+                    We need to show that <m>a+b=2( \quad )</m> where the bracket is some integer. Now that we have our set-up we can prove the result.
+                </p>
+                <p>
+                    Consider <m>a+b</m>. By our assumption, <me>a+b=(2r+1)+(2s+1)</me>. We know how we need the expression to look, so we can use our creativity to get there: <me>
+                        (2r+1) +(2s+1) = 2r+2s+2 = 2(r+s+2)
+                    </me>
+                    Since the expression in the brackets is the sum of integers, the bracket simplifies to an integer. So we've written <m>a+b</m> in the form we like and we are done.
+                </p>
+    
+    </solution>
+    <solution>
+        <p>
+            As the hint says, it might be easiest to reword this as an if-then statement first. One way to do this is  
+            <p>
+                If <m>a,b,c,d,e,f</m> are consecutive integers, then <m>a+b+c+d+e+f</m> is odd.
+            </p>
+        </p>
+        <p>
+            Now that we have a conditional statement we need to:
+            <ol>
+                <li>
+                    <p>
+                        Assume our integers are consecutive and
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Show their sum is odd
+                    </p>
+                </li>
+            </ol>
+            <p>
+                So let's write our assumption algebraically: Since the variables are just names for our numbers, let's let <m>a</m> be the smallest integer, <m>b</m> be the next smallest, and so on. Since they're all consecutive:
+            </p>
+            <me>
+                b = a+1
+            </me>
+            <me>
+                c=b+1=(a+1)+1=a+2
+            </me>
+            and similarly
+            <me>
+                d = a+3
+            </me>
+            <me>
+                e=a+4
+            </me>
+            and
+            <me>
+                f=a+5.
+            </me>
+            <p>
+                Now we need to show that we can always write <m>a+b+c+d+e+f = 2( \quad)+1</m> where the bracket is some integer. Let's try to use our creativity to get there:
+            </p>
+            <p>
+                Consider <m>a+b+c+d+e+f</m>. Using our assumption and noting the form we want to get, we can do the following:
+                <me>
+                    a+b+c+d+e+f=a+(a+1)+(a+2)+(a+3)+(a+4)+(a+5) = 6a+15
+                </me>
+                We know we want the expression to be of the form <m>a+b+c+d+e+f = 2( \quad)+1</m> so we can "pull out" a 1, and hopefully what is left will have a common factor of 2 so we can factor it out:
+                <me>
+                    6a+15=(6a+14)+1 = 2(3a+7)+1
+                </me>
+                
+                
+            </p>
+            <p>
+                Since the expression in brackets is integers multiplied and added together, it is an integer, and thus the sum is odd. We have finished our proof.
+            </p>
+            
+
+            
+            
+            
+            
+            
+        </p>
+
+
+    </solution>
+</exercise>
+</subsection>
+<subsection xml:id="subsec-WhyProofsAreImportant">
+    <title>Why Proofs Are Important</title>
+    <p>
+        A good question that you have probably thought about is "why do we even need to prove results like in the previous secion?" and "If I show a few examples is that emough to prove a result?" Let's explore these ideas:
+    </p>
+</subsection>
+
+</section>
+
+    </article>
+</pretext>

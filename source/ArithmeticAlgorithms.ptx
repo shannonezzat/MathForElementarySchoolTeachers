@@ -873,7 +873,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <subsection xml:id="subsec-PartialProducts">
             <title>Partial Products</title>
             <p>
-                All of our algorithms for multiplication rely heavily on place value and distributivity. For the partial products algorithm we calculate a product of two whole numbers by doing the following:
+                All of our algorithms for multiplication rely heavily on place value and distributivity. For the <term>partial products algorithm</term> we calculate a product of two whole numbers by doing the following:
             </p>
             <ol>
                 <li>
@@ -946,10 +946,17 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 
                 
             </example>
-        </subsection>
+
         <p>
-            Partial Products (Use blocks and other bases. Show area model and then distributivity algebraically)
+            Note that some people consider the pictoral representation of the partial products method its own algorithm as well. It's sometimes called the <term>grid method.</term>
         </p>
+        </subsection>
+       <subsection xml:id="subsec-StandardMultiplicationAlgorithm">
+           <title>Standard Multiplication Algorithm</title>
+           <p>
+               The <term>standard multiplication algorithm</term> is 
+           </p>
+       </subsection>
         <p>
             Standard Algorithm (show area model and comparison to partial products)
         </p>
