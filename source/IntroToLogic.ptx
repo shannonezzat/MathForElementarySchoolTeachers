@@ -3,7 +3,7 @@
 <pretext>
     <article xml:id="test">
         <title>Sample Chapter: The Language of Mathematics</title>
-            <section xml:id="sec-1_1IntroToLogic">
+            <section xml:id="IntroToLogic">
                 <title>Intro To Logic</title>
                     <objectives permid="dEf" xml:id="objectives-structures">
   <title>Logic</title>
