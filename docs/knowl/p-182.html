@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-24T10:32:59-03:00       *-->
+<!--*       on 2022-06-24T11:29:20-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,8 +14,49 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>We'll look at models of multiplication and exponents later in this chapter, but we will rely on our intuition about multiplication and our knowledge of exponents to help us talk about place value. We know that in our base ten number system, we group ten of one place to make one of the next place. We start with the ones place, which we can express as <span class="process-math">\(10^0\text{,}\)</span> as any non-zero number to the power of <span class="process-math">\(0\)</span> is <span class="process-math">\(1\)</span> (we will see why later.) So we know that we can express the tens place as 10 ones<span class="process-math">\(=10 \times 1 = 10^1\)</span> (remembering that an exponent of 1 is the same as having no exponent). We can also think of a "long" as being a one-dimensional object; that dimension being length.</p>
-<span class="incontext"><a href="sec-NumberSystems.html#p-182">in-context</a></span>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>Now that we have a conditional statement we need to:</p>
+<ol class="decimal">
+<li><p>Assume our integers are consecutive and</p></li>
+<li><p>Show their sum is odd</p></li>
+</ol>
+<p class="continuation"><p>So let's write our assumption algebraically: Since the variables are just names for our numbers, let's let <span class="process-math">\(a\)</span> be the smallest integer, <span class="process-math">\(b\)</span> be the next smallest, and so on. Since they're all consecutive:</p></p>
+<div class="displaymath process-math">
+\begin{equation*}
+b = a+1
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+c=b+1=(a+1)+1=a+2
+\end{equation*}
+</div>
+<p class="continuation">and similarly</p>
+<div class="displaymath process-math">
+\begin{equation*}
+d = a+3
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e=a+4
+\end{equation*}
+</div>
+<p class="continuation">and</p>
+<div class="displaymath process-math">
+\begin{equation*}
+f=a+5.
+\end{equation*}
+</div>
+<p class="continuation"><p>Now we need to show that we can always write <span class="process-math">\(a+b+c+d+e+f = 2( \quad)+1\)</span> where the bracket is some integer. Let's try to use our creativity to get there:</p> <p>Consider <span class="process-math">\(a+b+c+d+e+f\text{.}\)</span> Using our assumption and noting the form we want to get, we can do the following:</p><div class="displaymath process-math">
+\begin{equation*}
+a+b+c+d+e+f=a+(a+1)+(a+2)+(a+3)+(a+4)+(a+5) = 6a+15
+\end{equation*}
+</div><p class="continuation">We know we want the expression to be of the form <span class="process-math">\(a+b+c+d+e+f = 2( \quad)+1\)</span> so we can "pull out" a 1, and hopefully what is left will have a common factor of 2 so we can factor it out:</p><div class="displaymath process-math">
+\begin{equation*}
+6a+15=(6a+14)+1 = 2(3a+7)+1
+\end{equation*}
+</div> <p>Since the expression in brackets is integers multiplied and added together, it is an integer, and thus the sum is odd. We have finished our proof.</p></p>
+<span class="incontext"><a href="sec-ConditionalStatements.html#p-182">in-context</a></span>
 </body>
 </html>
