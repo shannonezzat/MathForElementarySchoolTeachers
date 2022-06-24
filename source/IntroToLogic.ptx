@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<pretext>
-    <article xml:id="test">
+
+    <chapter xml:id="test">
         <title>Sample Chapter: The Language of Mathematics</title>
             <section xml:id="IntroToLogic">
                 <title>Intro To Logic</title>
@@ -249,7 +249,7 @@ An <term> open sentence </term> is a sentence with a variable such that the sent
 When we talk about mathematical ideas, we want to express how many objects they apply to. We do this by using quantifiers:
 <definition>
 <p>
-    Universal quantifiers are words that signify every object in our domain (that is, every object unders consideration). These are words like "all", "for all", "every", "no", "none", and "each".
+    Universal quantifiers are words that signify every object in our domain (that is, every object under consideration). These are words like "all", "for all", "every", "no", "none", and "each".
 </p>
 
 <p>
@@ -499,7 +499,150 @@ When we talk about mathematical ideas, we want to express how many objects they 
 
 </subsection>
 
+<subsection xml:id="subsec-QuantVenn">
+    <title>Viewing Quantified Statements as a Diagram</title>
+    <p>
+        It's quite helpful to view these quantified statements as a diagram. Since most students are familiar with the idea of a <term>Venn diagram </term> (which are circles representing groups of objects), this is the tool we will use to help us visualize these statements.
+    </p>
+    <p>
+       We want to be able to represent both universally- and existentially quantified statements. For both types, we first need to draw a box representing the domain of all possible objects under consideration:
+    </p>
+    <p>
+        PICTURE GOES HERE!!!
+    </p>
+    <ol>
+        <li>
+            <p>
+                For universally quantified statements (e.g., "All A are B" or as a concrete example "All cats are mammals") we want a circle representing all objects that satisfy condition A (all cats in our example).
+            </p>
+            <p>
+                ANOTHER PICTURE
+            </p>
+            <p>
+                Now, we want a circle to represent all objects that satisfy B (in our example, all mammals). Note that since we wish to show all A are B, we want to draw this circle so that all of the A objects are also included in the B circle:
+            </p>
+            <p>
+                PICTURE
+            </p>
+        </li>
+        <li>
+            <p>
+              For existentially quantified statements (e.g., "Some A are B" or as a concrete example "Some cats are grey") we want a circle representing all objects that satisfy condition A (all cats in our example).  
+            </p>
+            <p>
+                ANOTHER PICTURE
+            </p>
+            <p>
+                Now, we want a circle to represent all objects that satisfy B (in out example, things that are grey). Note that there could be cats that are not grey, and grey things that are not cats, so we need to draw the diagram so that they only partially overlap. We also know that there is definitely at least one A that is B (cat that is grey) since the statement tells us so, therefore we can put a little dot in the intersection to represent that object (the grey cat).
+            </p>
+            <p>
+                ANOTHER PICTURE
+            </p>
+        </li>
+    </ol>
+    <p>
+        There is an alternate way of representing a universally quantified statement with overlapping circles. We will hatch out the area where we know is empty (the area that is A but not B, or in our example the area that is cats that are not mammals):
+    </p>
+    <exercise>
+        <p>Using the ideas above, draw a diagram representing the statement "No A are B". </p>
+        <solution>
+            <p>
+                We could represent this in (at least) two ways. One way is as two non-overlapping circles:
+            </p>
+            <p>
+                PICTURE
+            </p>
+            <p>
+                Or as intersecting circles with the intersection hatch out to indicate it is empty.
+            </p>
+                            
+        </solution>
+    </exercise>
+    
 
+</subsection>
+
+<subsection xml:id="subsec-EvenOdd">
+    <title>Expressing Even and Odd Numbers Algebraically</title>
+    <p>
+        In the coming sections, we will be using even and odd numbers as examples of quantified and conditional statements. For example, we can say "All pairs of whole numbers <m>a,b</m> that are both odd have a sum <m>a+b</m> that is even and a product <m>a \times b</m> that is odd". 
+    </p>
+    <p>
+        To determine the truth values of these statements, it's not enough to only look at some examples, as we'll see in the upcoming section <xref ref="subsec-Counterexamples"/>. So we will have to learn to express the idea of even and odd numbers it terms of the property that makes them even and odd.
+    </p>
+    <exercise>
+       <p> How would you explain or show to someone that the number 12 is even? How about that 15 is odd? Can you extend these ideas to any even or odd number? </p>
+       <solution>
+           <p>
+               Of course, there are many ways of doing this, but one way is to draw a picture. There is a very good chance that you would do the same thing! Let's start by showing 12 is even:
+           </p>
+           <p>
+               INSERT PIC HERE
+           </p>
+           <p>
+               Here we took 12 dots and organized them as 6 rows of 2. Since 12 can be grouped evenly into rows of 2, we know that 12 is even. Hence, we can write <m>12=2 \times 6.</m>
+           </p>
+           <p>
+               In general, the number of rows of 2 isn't particularly important to say that a number is even; it's the fact that we can group the number into *some amount* of rows of 2. Usually we'll express this as <m>k</m> rows of 2. So for a even whole number <m>n</m>, we know <m>n=2k</m> for some whole number <m>k</m>.
+           </p>
+           <p>
+               INSERT PIC HERE
+           </p>
+           <p>
+               To show 15 is odd, you probably drew a picture similar to this:
+           </p>
+           <p>
+               INSERT PIC HERE
+           </p>
+           <p>
+               Here we took the 12 dots and organized them into 7 rows of 2, but we had 1 dot remaining where we were unable to complete a full row of two. Hence, we can write <m>15=2 \times 7 + 1.</m>
+            </p>
+            <p>
+                Like for even numbers, the number of rows of 2 isn't particularly important to say that a number is odd; it's the fact that we can group the number into as many rows of 2 as possible, we always have 1 left over. Usually we'll express this as <m>k</m> rows of 2 + 1 remaining. So for a odd whole number <m>n</m>, we know <m>n=2k+1</m> for some whole number <m>k</m>.
+            </p>
+       </solution>
+    </exercise>
+    <p>
+        To summarize: let <m>n</m> be a whole number. 
+        <ol>
+            <li>
+                <p>
+                  If <m>n</m> is an <term>even number</term> then <m>n=2k</m> for some whole number <m>k</m>.  
+                </p>
+            </li>
+            <li>
+                <p>
+                  If <m>n</m> is an <term>odd number</term> then <m>n=2k+1</m> for some whole number <m>k</m>  
+                </p>
+            </li>
+        </ol> 
+    </p>
+    
+    <assemblage xml:id="assemblage-EvenOdd">
+        <title>Notes for a Deeper Understanding</title>
+        <p>
+           <ol>
+               <li>
+                   <p>
+                       The number 0 is even since <m>0=2 \times 0</m>.
+                   </p>
+                   
+                   
+               </li>
+               <li>
+                   <p>
+                       Even really just means "divisible by 2". We can (and will in subsequent chapters) extend this idea to express a number <m>n</m> being divisible by some other number <m>c</m> meaning <m>n=c \times k</m> for some whole number <m>k</m>. The idea of "odd" extends similarly, though you can have more than one part remaining. This is basically the idea of remainders when doing division.
+                   </p>
+               </li>
+               <li>
+                   <p>
+                       We can also extend these ideas to integers as well (that is, positive and negative counting numbers, including 0).
+                   </p>
+               </li>
+           </ol> 
+        </p>
+    </assemblage>
+</subsection>
 
 
 
@@ -774,9 +917,995 @@ When we talk about mathematical ideas, we want to express how many objects they 
     <p>
         A good question that you have probably thought about is "why do we even need to prove results like in the previous secion?" and "If I show a few examples is that emough to prove a result?" Let's explore these ideas:
     </p>
-</subsection>
+
+
+<example>
+    <p>
+        Is the conditional statement "if <m>n</m> is a whole number then <m>n^2+n+11</m> is a prime number" always true? Remember, a prime number is a number divisibile by exactly two numbers, 1 and itself.
+    </p>
+    <solution>
+        <p>
+            It is not! However, it may take a while to find a counterexample. If we let <m>n=1,2, \dots, 9</m> we find that <m>n^2+n+11</m> is indeed prime. For example, if <m>n=6</m> then <m>6^2+6+11=53</m> and you can check that 53 is a prime number. However, when <m>n=10</m>, we have that <m>10^2+10+11=121</m> and <m>121=11 \times 11</m> so <m>11</m> is not a prime number. 
+        </p>
+        
+    </solution>
+    
+   
+</example>
+
+<p>
+            The moral of the story here is that just doing a bunch of examples isn't enough to guarantee a statement is always true. It's possible that you haven't found a case where the result doesn't hold though a case does indeed exist.
+        </p>
+
+<p>
+        Additionally, proofs can give you more information about *why* a result is true. If you study the structure of a proof, in many cases it can give you insight into the precise reasons why a result holds. We'll explore this idea in many proofs to come!
+    </p>
+
+    </subsection>
+    <subsection xml:id="subsec-Counterexamples">
+        <title>Counterexamples</title>
+        <p>
+            When we were learning about conditional statements, we discussed when conditional statements were false. Remember, these are false exactly when the if-part true and the then-part is false. 
+            <definition xml:id="def-Counterexample">
+                <statement>
+                    <p>
+                       We call an object that makes the if-part true and the then-part false a <term>counterexample</term> to the conditional statement. 
+                    </p>
+                </statement>
+            </definition>
+             Whenever we can find a counterexample, we know that the conditional statement is a false one.  
+        </p>
+        <example>
+            <p>The statement "if <m>n</m> and <m>m</m> are odd counting numbers then <m>n \times m</m> is even" is a false conditional statement since it has the counterexample <m>n=3</m> and <m>m=5</m>. Here, the if-part is true (both 3 and 5 are odd numbers) but the then-part is false (<m>3 \times 5 =15</m> is not an even number). Note that this is only one of many (in fact infinitely many counterexamples).</p>
+            <p>
+                The statement "if <m>x</m> is an integer (positive or negative counting number, or zero)" then <m>x^2-1</m> is non-negative" is a false conditional statement. Here, <m>x=0</m> is a counterexample since <m>x</m> is an integer (if-part true) but <m>0^2-1=-1</m> (then-part false). Note that this is the only counterexample for this conditional statement.
+            </p>
+        </example>
+        <p>
+            Even though the first example has infinitely many counterexamples and the second only has one, they are still both considered false in the same way, and that way is "not always true". There is no "degree of falseness".
+        </p>
+
+        <assemblage xml:id="assemblage-Counterexamples">
+    <title>Notes for Additional Understanding</title>
+    <p>
+        In the case where a conditional statement is true for some, but not all, elements in the domain of the statement, it's possible to reword the statement to limit the domain so that it is now true. For example, we can change the second example above to "If <m>x</m> is a non-zero integer then <m>x^2-1</m> is non-negative" to make a true conditional statement.
+    </p>
+</assemblage>
+<exercise>
+    <p>
+        Find a counterexample for each of the following false conditional statements:
+        <ol>
+            <li>
+                <p>
+                    If <m>P</m> is a Canadian provincial capital then it is the city that has the largest population in the province.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If <m>a,b,c,d,e</m> are consecutive counting numbers, then their sum is odd.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If <m>P</m> is a polygon with four sides then all angles inside <m>P</m> are less than 180 degrees.
+                </p>
+            </li>
+        </ol>
+    </p>
+    <solution>
+        <p>
+            As of 2022, the counterexamples are Fredericton (Moncton and Saint John are larger), Quebec City (Montreal [among others] is larger), Regina (Saskatoon is larger), Edmonton (Calgary is larger), and British Columbia (Vancouver [amoung others] is larger).
+        </p>
+    </solution>
+    <solution>
+        <p>
+            There are infinitely many sets of 5 consecutive numbers where the sum is even. In fact, any whose smallest number is even will have an even sum (can you prove this?).
+        </p>
+    </solution>
+    <solution>
+        <p>
+            One such counterexample is a chevron, where there is one internal angle greater than 180 degrees.
+        </p>
+    </solution>
+</exercise>
+<example>
+    <p>A usual rule in most Canadian provinces is "If you are drinking alcohol then you must be at least 19 years old". Which of the following people may be violating this rule?</p>
+    <ol>
+        <li>
+            <p>
+                A 20 year old
+            </p>
+        </li>
+        <li>
+            <p>
+                A person drinking a beer
+            </p>
+        </li>
+        <li>
+            <p>
+                A person drinking water
+            </p>
+        </li>
+        <li>
+            <p>
+                A 16 year old
+            </p>
+        </li>
+    </ol>
+    <p>
+        Intuitively, most people know that you would need to check the person drinking beer, and the 16 year old. The person drinking a beer may be under 19, and the 16 year old may be drinking alcohol. Let's analyse this using the idea of a counterexample:
+    </p>
+    <ol>
+        <li>
+            <p>
+                The 20 year old satisfies the condition "then-part true". Since the only time a conditional statement is false is when the "if-part" is true and the "then-part" false, this can never be a counterexample.
+            </p>
+        </li>
+        <li>
+            <p>
+                The person drinking a beer satisfies the condition "if-part true". If they also satisfy "then-part false" (so they are under 19 years old) then they would be a counterexample to the rule. You would check this person.
+            </p>
+        </li>
+        <li>
+            <p>
+                The person drinking water satisfies "if-part false". Just like with 1, there is no possibility thay they can be a counterexample.
+            </p>
+        </li>
+        <li>
+            <p>
+                The 16 year old satisfies "then part false". If they are also drinking (the "if-part" true) then they are a counterexample. You would check this person.
+            </p>
+        </li>
+    </ol>
+</example>
+
+<p>
+    Even though this was an easy question when you're familliar with the context, many people find reasoning like this *very* challenging to do. Try the next exercise using the same technique as the previous example.
+</p>
+<exercise>
+    <p>
+        Each of the following cards have a letter on one side and a number on the other. Here is a rule: “if a card has a D on one side, then it has a 3 on the other”. Your task is to
+select all those cards, but only those cards, which you would have to turn over in order to find out whether the rule is true or false. Which cards would you select?  Try your best to explain your reasoning.
+    </p>
+    <solution>
+        <p>
+          Just like the previous example, we need to check situations when either:
+          <ol>
+              <li>
+                  <p>
+                      The "if-part" is true: if the then-part is false we have a counterexample, and 
+                  </p>
+              </li>
+              <li>
+                  <p>
+                      The "then-part" is false: if the if-part is true we have a counterexample.
+                  </p>
+              </li>
+          </ol>  
+        </p>
+        <p>
+            The cards that satisfy this are the D (the-if part is true) to see if there is a 3 on the other side, and the 9 (the then-part is false) to see if there is not a D on the other side. 
+        </p>
+        <p>
+            Note the A and the 3 can not be counterexamples. There is no way for the if-part to be true and the then-part to be false.
+        </p>
+    </solution>
+</exercise>
+    </subsection>
+
+    <subsection xml:id="subsec-CondExist">
+        <title>The Relationship Between Conditional and Existential Statements</title>
+        <p>
+            If you think about it, conditional statements with a variable are actually universally quantified statements! There is an implied quantifier hidden in the conditional statement itself. For example, the conditional statement (with the domain of all animals )"if <m>c</m>" is a cat then <m>c</m> is a mammal" is interpreted to mean "for all animals, if <m>c</m>" is a cat then <m>c</m> is a mammal".
+        </p>
+        <p>
+            We can view this as logically equivalent to the statement "all cats are mammals" (again with the domain of all animals), and we can see the link from the Venn diagram of the statement to all true possibilities for the conditional statement:
+        </p>
+        <p>
+            INSERT PICTURE
+        </p>
+       <p> Note that the three distinct areas in that diagram represent one of the true possibilities of the conditional statement. The area that does *not* appear is the "dreaded row;" when the if-part is true and the then-part is false. This illustrates that there are no counterexamples for conditional statements that are always true.</p>
+       <exercise>
+           <p>
+               Reword each conditional statement as a universally quantified statement. Then draw a Venn diagram representing each conditional statement as a universally quantified statement, indentify each of the regions, and give an example of an element in each region:
+           </p>
+           <ol>
+               <li>
+                   <p>
+                       If <m>x</m> is a whole number with a ones-digit of 0 then <m>x</m> is divisible by 5. (domain: all whole numbers)
+                   </p>
+               </li>
+               <li>
+                   <p>
+                       If <m>\frac{a}{b}</m> is a fraction with the numerator <m>a=1</m> then <m>\frac{a}{b}</m> cannot be reduced (i.e. is already in least terms as there is no common factor of <m>a</m> and <m>b</m>) (domiain: all fractions with counting number numerators and denominators)
+                   </p>
+               </li>
+               <li>
+                   <p>
+                       If <m>n</m> is a number whose English name has four letters, then <m>n</m> is odd or less than eight. (domain: all counting numbers). Make this diagram with three circles: all numbers with four letter in their name, all numbers less than eight, and all odd numbers.  
+                   </p>
+               </li>
+           </ol>
+           <solution>
+               <p>
+                   Reworded: "All whole numbers with a ones-digit of 0 are divisible by 5"
+               </p>
+               <p>
+                   Diagram: INSERT PICTURE
+               </p>
+               <p>
+                   Regions:
+                   <ol>
+                       <li>
+                           <p>
+                               Numbers with 0 as the ones digit and divisible by 5: if-part true and then-part true (ex 10)
+                           </p>
+                          
+                       </li>
+                       <li>
+                           
+                            <p>
+                               Numbers with a digit other than 0 as the ones digit and divisible by 5: if-part false and then-part true (ex 35)
+                           </p>
+                           
+                       </li>
+                       <li>
+                           <p>
+                               Numbers with a digit other than 0 as the ones digit and not divisible by 5: if-part false and then-part false (ex 27)
+                           </p>
+                       </li>
+                   </ol>
+               </p>
+           </solution>
+           <solution>
+               <p>
+                   Reworded: All fractions <m>\frac{a}{b}</m> with the numerator <m>a=1</m>  cannot be reduced.
+               </p>
+               <p>
+                   Diagram:
+               </p>
+               <p>
+                   Regions:
+                   <ol>
+                       <li>
+                           <p>
+                               Fractions of the form <m>\frac{1}{b}</m> in lowest terms: if-part true and then-part true   (ex <m>\frac{1}{8}</m>)
+                           </p>
+                       </li>
+                       <li>
+                           <p>
+                               Fractions not of the form <m>\frac{1}{b}</m> in lowest terms: if-part false and then-part true    (ex <m>\frac{3}{5}</m>)
+                           </p>
+                       </li>
+                       <li>
+                           <p>
+                               Fractions not of the form <m>\frac{1}{b}</m> and not in lowest terms: if-part false and then-part false   (ex <m>\frac{4}{8}</m>)
+                           </p>
+                       </li>
+                   </ol>
+               </p>
+           </solution>
+           <solution>
+               <p>
+                   Reworded: All numbers with English names consisting of four letters is odd or less than eight.
+               </p>
+               <p>
+                   Diagram (this one is a little more complicated!):
+               </p>
+               <p>
+                   Note that the three main regions can be broken down into subregions:
+                   <ol>
+                       <li>
+                           <p> Numbers with English names consisting of four letters that are odd or less than eight: if-part true and then-part true
+                              <ol>
+                                  <li>
+                                      <p>
+                                          odd and not less than eight (ex 9)
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <p>
+                                          not odd and less than eight (ex 4)
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <p>
+                                          both odd and less than eight (ex 5)
+                                      </p>
+                                  </li>
+                              </ol> 
+                           </p>
+                       </li>
+                       <li>
+                           <p>
+                               Numbers with English names not consisting of four letters that are odd or less than eight: if-part false and then-part true
+                               <ol>
+                                   <li>
+                                       <p>
+                                           odd and not less than eight (ex 11)
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           not odd and less than eight (ex 6)
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           both odd and less than eight (ex 3)
+                                       </p>
+                                   </li>
+                               </ol> 
+                           </p>
+                       </li>
+                       <li>
+                           <p>
+                               Numbers with English names not consisting of four letters that are not odd and not less than eight: if-part false and then-part false (ex: 12)
+                           </p>
+                       </li>
+                   </ol>
+               </p>
+           </solution>
+       </exercise>
+    </subsection>
+    <subsection xml:id="subsec-OtherFormsCondSt">
+        <title>Other Forms of Conditional Statements</title>
+        <p>
+            There are some important related statements to a conditional statement "if P then Q" (for example, if I walk to work then I wear a jacket ). These are the <term>converse</term> where we flip the order of P and Q: if Q then P (if I wear a jacket then I walk to work). The <term>inverse</term> is when we negate both P and Q: if (not P) then (not Q) (if I do not walk to work then I do not wear a jacket). The <term>contrapositive</term> is where we both reverse the order and negate both parts: if (not Q) then (not P): (if I do not wear a jacket then I do not walk to work).
+        </p>
+        <p>
+            Let's formalize these as a definition:
+            <definition xml:id="def-ConvInvContra">
+                <statement>
+                    <p>
+                        Let S="if P then Q" be a conditional statement for some P and Q. Then the conditional statement "if Q then P is the <term>converse</term>" of S, the conditional statement "if (not P) then (not Q)" is the <term>inverse</term> of S, and the conditional statement "if (not Q) then (not P)" is the <term>contrapositive</term> of S.
+                    </p>
+                </statement>
+            </definition>
+        </p>
+        <p>
+            We can show that the contrapositive is logically equivalent to the original statement. Let's do it using a truth table:
+        </p>
+        <p>
+            INSERT TRUTH TABLE
+        </p>
+        <p>
+            You can see that no matter what the truth values for P and Q, the truth value of the original statement "if P then Q" and the contrapositive statement "If (not Q) then (not P)" agree. So, if we want, we can reword a conditional statement to its contrapositive.
+        </p>
+        <p>
+            Also, note that the contrapositive of the contrapositive is the original statement; the statements get negated again to bring them back to their original truth values, and the if-part and then-part get swapped back as well.
+            <p>
+                INSERT TRUTH TABLE
+            </p>
+        </p>
+        <exercise>
+            <p>Show that the converse and inverse of a conditional statement are logically equivalent.</p>
+            <solution>
+                <p>
+                    ADD TRUTH TABLE
+                </p>
+                <p>
+                    You can see that no matter what the truth values for P and Q, the truth value of the converse statement "if Q then P" and the inverse statement "If (not P) then (not Q)" agree. 
+                </p>
+            </solution>
+        </exercise>
+        <example xml:id="Bicond1">
+            <p>Write the converse, inverse, and contrapositive of the following statements. Determine the truth value of each conditional statement:</p>
+            <ol>
+                <li>
+                    <p>
+                        If T is a polygon with three sides, then T is a triangle.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If L a whole number with a ones-digit of 2 or 4, then L is even. 
+                    </p>
+                </li>
+            </ol>
+            <solution>
+                <p>
+                    Original: if T is a polygon then T has three sides (T)
+                </p>
+                <p>
+                    Converse: If T is a triangle then it is a polygon with three sides (T)
+                </p>
+                <p>
+                    Inverse: If T is a polygon with more than three sides then T is not a triangle (T)
+                </p>
+                <p>
+                    Contrapositive: If T is not a triangle then T is a polygon with more than three sides (T)
+                </p>
+            </solution>
+            <solution>
+                <p>
+                    Note that the if-part of this statement is a compound, so we have to be careful negating it. If we let A = "have a ones digit of 2" and B = "have a ones digit of 4", we can either say "has a ones digit other than 2 or 4" [not (A or B)] or we can say "does not have a ones digit of 2 and does not have a ones digit of 4" [(not A) and (not B)]. We will use the first, but the second is equally correct.
+                </p>
+                <ol>
+                    <li>
+                        <p>
+                            Original: If L a whole number with a ones-digit of 2 or 4, then L is even. (T)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Converse: If L is an even whole number then its ones-digit is 2 or 4 (F; counterexample 12)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Inverse: If L is an whole number with a ones-digit other than 2 or 4 then it is odd. (F; counterexample 12)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Contrapositive: If L is an odd whole number, then its ones digit is something other than 2 or 4. (T)
+                        </p>
+                    </li>
+                </ol>
+            </solution>
+        </example>
+        <example>
+            Show that the converse and inverse are contrapositives of each other.
+            <solution>
+                <p>
+                    ADD TRUTH TABLE
+                </p>
+            </solution>
+        </example>
+    </subsection>
+    <subsection xml:id="subsec-BiconditionalSentences">
+        <title>Biconditional Sentences</title>
+        <p>
+            Look at the previous examples in <xref ref="Bicond1"/>. Notice in the first example, the original statement and its converse were true (and, it follows that the inverse and contrapositive are true too!). However, in the second, only the original statement was true. Let's view these as Venn diagrams: 
+        </p>
+        <p>
+            ADD VENN DIAGRAM
+        </p>
+        <p>
+            In the second example, we know there are numbers with ones-digit that aren't 2 or 4 that are still even, so we can think of numbers that do have a ones-digit of 2 or 4 as only a part (later we'll call it a <term>subest</term>) of the even numbers. For example, 10 is a counterexample to "If Q then P" for this example.</p> 
+            <p>Looking at the first example, we want both Venn diagrams to be true. The only way for this to be possible is if both circles are actually the same circle! That's because the two ideas of polygons with three sides and triangles are really the same thing. These situations are very special, and we can think of one part as just a "rewording" of the idea of the other part. Formally, we call statements where both the original statement and its converse are true <term>biconditional statements</term> and we write it as "P if and only if Q", which means "(if P then Q) *and* (if Q then P)". 
+        </p>
+        <p>
+            Let's look a a truth table of the biconditional statement:
+        </p>
+        <p>
+            ADD TRUTH TABLE
+        </p>
+        <p>
+            Here you can see that the biconditional statement is true exacltly when its truth values match. So it can neven be the case that one of P or Q is true and the other false. This idea will inform how we go about proving biconditional statements.
+        </p>
+        <exercise>
+            <p>
+                Which of the following statements can be expressed as true biconditional statements? If so, reword the conditional as a biconditional, and if not, give a counterexample to show why not. 
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        If <m>n</m> is an even whole number then <m>n^2</m> is also an even whole number.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        (Let <m>a,b</m> be integers). If both <m>a</m> and <m>b</m> are positive, then <m>a+b</m> is positive.
+                    </p>
+                </li>
+            </ol>
+            <solution>
+                <p>
+                    This can be a true biconditional statement. We can say: a whole number <m>n</m> is even if and only if <m>n^2</m> is even.
+                </p>
+            </solution>
+            <solution>
+                <p>
+                    This can not be a true biconditional statement. The converse "if <m>a+b</m> is positive then <m>a</m> and <m>b</m> are positive" has counterexamples. One is when <m>a=3</m> and <m>b=-1</m>.
+                </p>
+            </solution>
+        </exercise>
+        <p>
+            When we want to prove the biconditional statement "P if and only if Q", we do it in two proofs: first, we prove "if P then Q"; second, we prove "if Q then P". Note that sometimes it's easier to use a logically equivalent form to prove a results (e.g. you can prove the inverse instead of the converse since they are logically equaivalent).
+        </p>
+        <example>
+            Prove " a whole number <m>n</m> is even if and only if <m>n^2</m> is even."
+            <solution>
+                <p>
+                    Let's do "if <m>n</m> is even then <m>n^2</m> is even" first. Then we'll find that it's easier to prove the inverse statement "if <m>n</m> is odd then <m>n^2</m> is odd" than the converse.
+                </p>
+                <ol>
+                    <li>
+                        <p>
+                            Let <m>n</m> be even. Then <m>n=2k</m> for some whole number <m>k</m>. We want to show that <m>n^2 = 2(\text{integer})</m> which would show that it is always even when <m>n</m> is even. Consider <me>
+                                n^2 = (2k)^2 = 4k^2 = 2(2k^2).
+                            </me>
+                         Since <m>2k^2</m> is a whole number, we have written <m>n^2</m> as an even whole number.  
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                          Let <m>n</m> be odd. Then <m>n=2k+1</m> for some whole number <m>k</m>. We want to show that <m>n^2 = 2(\text{integer})+1</m> which would show that it is always odd when <m>n</m> is odd. Consider <me>
+                                n^2 = (2k+1)^2 = (2k+1)(2k+1) = 4k^2+4k+1 = 2(2k^2+2k)+1.
+                            </me>
+                         Since <m>2k^2+2k</m> is a whole number, we have written <m>n^2</m> as an odd whole number.  
+                        </p>
+                    </li>
+                </ol>
+                <p>
+                    Since we showed that both the original statement and its inverse are true, we have showed the biconditional statement is true.
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+</section>
+<section xml:id="sec-Sets">
+    <title>Sets</title>
+    <subsection xml:id="subsec-IntroToSets">
+        <title>Intro To Sets</title>
+        
+    
+   <p> We often talk about collections of objects, like whole numbers, or integers, or polygons, or triangles. So far, we've dealt with these just with words but it was pretty repetitive and clumsy. It would be nice (and it is important!) if we had some rules for talking about collections of objects. </p>
+   <p>
+       In this section, we do introduce our language for collections of objects and their members. We also look at how to combine collections and the relationship between our language for collections and logic.
+   </p>
+   <p>
+   <definition xml:id="def-Set">
+       <statement>
+           <p>
+               A <term>set</term> is a collection of objects, called <term>elements</term>, with some rules attached:
+       <ol>
+           <li>
+               <p>
+                 Elements do not occur more than once in a set.  
+               </p>
+           </li>
+           <li>
+               <p>
+                   The order in which the elements are listed does not matter.
+               </p>
+           </li>
+       </ol>
+           </p>
+       </statement>
+   </definition>
+       
+   </p>
+   <p>
+       Often, sets are written with capital letters, like <m>A,B,X,Y</m>, and so on, and elements of these sets are written with lower case letters, like <m>a,b,x,y</m>, and so on. If an object <m>a</m> is an element of a set <m>A</m> we write <m>a \in A</m>. If <m>a</m> is not an element of <m>A</m>, we write <m>a \notin A</m>.
+   </p>
+   <p>
+       There are a few different ways of telling people what elements are in a set. We can:
+       <ol>
+           <li>
+               <p>
+                   List the elements; e.g. <m>\{1,2,3,4,5\}</m>
+               </p>
+           </li>
+           <li>
+               <p>
+                   Describe the elements in words; e.g. <m>\{ \text{all counting numbers from 1 to 5, inclusive} \}</m>
+               </p>
+            </li>
+            <li>
+               <p>
+                   Decribe the elements using mathematical notation; e.g. <m>\{ \text{whole numbers} n \ | \ 1 \leq n \leq 5 \}</m>
+               </p>
+           </li>
+       </ol>
+       We call the final method <term>set builder notation</term> and read the " <m>|</m> " symbol as the phrase "such that". So, in words, we would read this set builder notation as "whole numbers <m>n</m> such that <m>n</m> is between 1 and 5, inclusive", or some other phrase with an equivalent meaning (for example, greater than or equal to 1 and less than or equal to 5).
+   </p>
+
+   \<exercise>
+       List all of the elements of these sets, which are initially given in a text description or in set builder notation:
+       \<ol>
+           <li>
+               <p>
+                   <m>A_1 = \{ \text{all prime numbers less than 11} \}</m>
+               </p>
+           </li>
+           <li>
+               <p>
+                   <m> A_2 = \{ \text{whole numbers} n \ | \ 10 \leq  n(n+1) \leq 25 \} </m>
+               </p>
+           </li>
+           <li>
+               <p>
+                   <m>A_3 = \{ \text{NHL teams active in the 2021-2022 season that, as of Jan 1, 2022 have never won a Stanley Cup} \}</m>
+               </p>
+           </li>
+           <li>
+               <p>
+                  <m>A_4 = \{ \text{prime numbers } p \ | \ p \geq 3 \text{ and } p^2 \text{ is even} \}</m> 
+               </p>
+           </li>
+       </ol>
+       <solution>
+           <p>
+               <m>A_1 = \{2,3,5,7 \}</m>. Note that 11 is not included as 11 is not less than 11.
+           </p>
+       </solution>
+       <solution>
+           <p>
+               It's probably easiest to check this by trial and error. The smallest value of <m>n</m> that satisfies this condition is <m>n=3</m> (as <m>3 \times 4 = 12</m> but <m>2 \times 3 = 6</m>). And the largest value that satisfies this condition is <m>n=4</m> as <m>4 \times 5 =20</m> but <m>5 \times 6 = 30</m>. So <m>A_2 = \{3,4\}</m>.
+           </p>
+        </solution> 
+       <solution>
+           <p>
+               You might have to know a bit of hockey to know this, but you can look this up in a table on, say, Wikipedia. Thus <m>A_3 = \{ \text{Panthers, Sabres, Blue Jackets, Jets, Wild, Coyotes, Predators, Canucks, Sharks, Kraken, Golden Knights} \}</m>
+           </p>
+          
+       </solution>
+       <solution>
+           <p>
+               There are *no* prime numbers besides 2 that have an even square, as for any odd number <m>n, n^2</m> is also odd. So <m>A_4 = \{ \}. </m> 
+           </p>
+       </solution>
+   </exercise>
+   <p> 
+   Remember that sets do not have an order to their elements. It's simply a list of what the set contains. A good analogy for a set is a bag containing the elements in your set:
+
+   </p>
+   <p>
+      INSERT PICTURE OF BAG ANALOGY OF A SET 
+   </p>
+   <p>
+        Note that in the previous exercise, we came across the set with no elements. We call this the <term>empty set</term> and write it as <m>\{ \}</m> or with <m>\emptyset.</m>
+       
+   </p>
+   <p>
+       It's very useful to be able to talk about sets contained in other sets. We call these subsets. More generally, let A and B be two sets. If all elements of B are also elements of A, then we say B is a subset of A, and we write <m>B \subseteq A.</m> </p>
+<example>
+   <p> Notice that the definition of a subset contains a quantifier. Use the idea of negation of quantifiers to determine when B is not a subset of A, written <m>B \not \subseteq A</m>. </p>
+   <solution>
+       <p>
+           Remember, to negate a quantifier, we change the quantifier type, and negate the open sentence. So <m>B \not \subseteq A</m> means "There is an element in B that is not in A." In the language of counterexamples, this says that there is a counterexample to the definition of subsets.
+       </p>
+   </solution>
+</example>
+<p>
+    You can view the idea of a subset using Venn diagrams:
+</p>
+<p>
+    INSERT VENN DIAGRAM
+</p>
+<p>
+    Let's look at a few examples of subsets to help us understand how the concept works:
+</p>
+
+   <example>
+      <p> Let's define the following sets: </p>
+       <ol>
+           <li>
+               <p>
+                   <m>A = \{1,2,3,4,5,6,7\}</m>
+               </p>
+           </li>
+           <li>
+               <p>
+                   <m>B = \{2,4,6,8\}</m>
+               </p>
+           </li>
+           <li>
+               <p>
+                   <m>C = \{1, 2, 4, 6 \}</m>
+               </p>
+           </li>
+           <li>
+               <p>
+                   <m>D = \emptyset</m>
+               </p>
+           </li>
+       </ol>
+       <p>
+           Let's check if <m>B \subseteq A</m>. If we find one element that is in B but not in A, then <m>B \not \subseteq A.</m>. Note that <m>8 \in B</m> but <m>8 \not \in A</m>. We've found a counterexample to the definition of a subset, thus <m>B \not \subseteq A.</m>
+               
+        </p>
+        <p>
+            Is <m>C \subseteq A</m>? We can see that all of the element of C, that is 1,2,4, and 6, are also elements of A. Thus <m>C \subseteq A.</m>
+        </p>
+        <p>
+            Is <m>D \subseteq A</m>? Yes! This is "vacuously true" as there is no counterexample to the definition of subset. Alternatively you can view it the following way: The statement <m>D  \not \subseteq A</m> is not true, as there is no element of D that is not an element of A. So if <m>D \not \subseteq A</m> is false, it must be that its negation <m>D \subseteq A</m> is true.
+        </p>
+        <p>
+            Is <m>A \subseteq A</m>? Of course! Every element of A is also an element of A (obviously!). 
+        </p>
+   </example>
+   <p>
+       Another concept that is important to us is the number of elements in a set A, which we call the <term>cardinality</term> of A. We write this <m>|A|</m>.
+   </p>
+   <example>
+       Let's let A,B,C, and D be the sets above. Also let <m>E = \{ \text{all even ounting numbers} \}.</m>. Then <m>|A| = 7,  \ |B| = 4, \ |C|= 4, \ |D| = 0, \ |E| = \infty</m>.
+   </example>
+
+   <assemblage xml:id="assemblage-Sets">
+    <title>Notes for Additional Understanding</title>
+    <p>
+        There's no limit to the types of objects sets can contain, and can even contain other sets. There is a lot more to be said about sets (there is an entire branch of mathematics dedicated to studying them), but it's beyond the scope of this book.
+    </p>
+</assemblage>
+
+   <p>
+       Another important concept is when two sets have the same elements. We say that sets A and B are <term>equal</term>, and write <m>A=B</m> if A and B have exactly the same elements. Alternatively, we can say that <m>A=B</m> when <m>A \subseteq B</m> and <m>B \subseteq A</m>.
+   </p>
+
+   <example>
+      <p>  Let <m>S_1 = \{ 2,3,5,7\}</m> and <m>S_2 = \{\text{prime numbers less than 10}\}</m>. Since all prime numbers less than 10 are 2,3,5 and 7, we have that <m>S_1 = S_2</m>. </p>
+   </example>
+
+   <p>
+       There are a few sets of numbers that we talk about quite a lot (you've probably noticed that so far). Since they are so commonly used, mathematicians have some notation for these, and we'll use this throughout the rest of the textbook to save time and space.
+   </p>
+   <ul>
+       <li>
+           <p>
+               We let <m>\mathbb{N} = \{1,2,3,4, \ldots \}</m> and call it the set of <term>natural numbers</term>, or <term>counting numbers</term>.
+           </p>
+       </li>
+       <li>
+           <p>
+              We let <m>\mathbb{N}_0 = \{0,1,2,3,4, \ldots \}</m> and call it the set of <term>natural numbers with zero</term>, or <term>whole numbers</term>. 
+           </p>
+       </li>
+       <li>
+           <p>
+               We let <m>\mathbb{Z} = \{ \ldots, -3, -2, -1, 0, 1, 2, 3, \ldots \} </m> and call it the set of <term>integers</term>. Note that some other textbooks might use the symbol <m>\mathbb{I}</m> instead, but <m>\mathbb{Z}</m> is most common.
+           </p>
+       </li>
+       <li>
+           <p>
+               We let <m>\mathbb{Q} = \{ \dfrac{a}{b} \ | \ a,b \in \mathbb{Z} \text{ and } b \neq 0 \text{ and the usual rules for equivalent fractions hold} \}</m> and call it the set of <term>rational numbers</term>. Note that this is saying that the set contains all fractions with integer numerators and denominators, but we cannot have a denominator of 0.
+           </p>
+       </li>
+       <li>
+           <p>
+               We let <m>\mathbb{R} = \{ \text{all numbers on the number line} \}</m> be the set of <term>real numbers</term>. This set includes numbers like <m>\pi, \sqrt{2},</m> and all others.
+           </p>
+       </li>
+   </ul>
+   <p>
+       From the following diagram you can see that these sets are listed in a "subset ordering", that is <m>\mathbb{N} \subseteq \mathbb{N}_0 \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R}</m>.
+   </p>
+   <p>
+       INCLUDE DIAGRAM HERE
+   </p>
+
+   <exercise>
+      <p>Let A,B,C be sets that aren't the empty set (so <m>A,B,C \neq \emptyset</m>). Show that if <m>A \subseteq B</m> and <m>B \subseteq C</m> then <m>A \subseteq C</m>. </p>
+      <solution>
+          <p>
+              Note the this is an if-then statement. So we need to show that it's never the case that the if-part is true and the then-part is false. But, in the definition of subsets we have additional if-then statements as well, so we have to be careful with these "nested" conditional statements.
+          </p>
+          <p>
+              Let's assume the if-part is true: that <m>A \subseteq B</m> and <m>B \subseteq C</m>. So this means that if <m>x \in A</m> then <m>x \in B</m> (since A is a subset of B) and if <m>x \in B</m> then <m>x \in C</m> (since B is a subset of C).
+          </p>
+          <p>
+              We need to show that the then-part is true; that A is a subset of C, so if <m>x \in A</m> then <m>x \in C</m>. 
+          </p>
+          <p>
+              So now, using the if-part assumption, let's show that the then-part is true. Let <m>x \in A</m>. By our assumption that <m>A \subseteq B</m> we know <m>x \in B</m>. Now, by the second part of our assumption, that <m>B \subseteq C</m> we know that <m>x \in C</m>.
+          </p>
+          <p>Since we started with an element of A and showed that it must be an element of C, we have shown the then-aprt; that <m>A \subseteq C</m>, and this means we've proved that the if-then statement is always true.</p>
+          <p>
+              Note that you can see this visually using the following Venn diagram:
+          </p>
+          <p>
+              INSERT VENN DIAGRAM
+          </p>
+
+      </solution>
+   </exercise>
+   <p>
+       Looking at the Venn diagram for subsets, you may have realized that it's the same as the diagram for conditional statements, which is very related to the universal quantifiers. In fact, they are very related concepts, and we can view the same Venn diagram with these three lenses.
+   </p>
+   <p>
+       For example, we can phrase the same idea in three ways:
+       <ol>
+           <li>
+               <p>
+                   All cats are mammals
+               </p>
+               <p>
+                   If something is a cat, then it is a mammal.
+               </p>
+               <p>
+                   Cats are a subset of mammals.
+               </p>
+           </li>
+       </ol>
+   </p>
+   <p>
+       Let's label the same Venn diagram using the three viewpoints:
+   </p>
+   <p>
+       INSERT VENN DIAGRAM
+   </p>
+   </subsection>
+   <subsection xml:id="subsec-CombiningSets">
+       <title>Combining Sets</title>
+       <p>
+           An important thing we wish to do is to be able to talk about set operations. These are very related to logical operations from the previous section.
+       </p>
+       <p>
+           Sometimes we like to keep track of when objects (like numbers) satisfy all conditions, and other times we like when they satisfy at least one. And another thing we like to talk about is when objects satisfy one condition, but not another. Let's introduce some notation for this: 
+       </p>
+       <example>
+           <p>
+               PUT EXAMPLE HERE THAT SHOWS WHY THESE ARE IMPORTANT
+           </p>
+       </example>
+       <definition xml:id="def-Union">
+           <statement>
+               <p>
+                   Let A and B be two sets. Then the <term>union</term> of A and B, written <m>A \cup B</m> is the set of all elements that are either in A or B (or both). In set notation we write <m>A \cup B = \{ x \ | \ x \in A \text{ or } x \in B\}.</m>
+               </p>
+           </statement>
+       </definition>
+       <definition xml:id="def-Intersection">
+           <statement>
+               <p>
+                   Let A and B be two sets. Then the <term>intersection</term> of A and B, written <m>A \cap B</m> is the set of all elements that are in both A and B. In set notation we write <m>A \cup B = \{ x \ | \ x \in A \text{ and } x \in B\}.</m>
+               </p>
+           </statement>
+       </definition>
+       <definition xml:id="def-SetDifference">
+           <statement>
+               <p>
+                   Let A and B be two sets. Then the <term>difference</term> of A and B, written <m>A - B</m> is the set of all elements that are in A but not in B. In set notation we write <m>A - B = \{ x \ | \ x \in A \text{ and } x \not \in B\}.</m>
+               </p>
+           </statement>
+       </definition>
+       <p>
+           Finally, we like to talk about *all* objects that do not satisfy a rule. However, we have to be careful that we limit the objects just to those that we're interested in talking about.  
+       </p>
+       <definition xml:id="def-universe">
+           <statement>
+               <p>
+                   We call the set of all opssible objects we wish to consider the <term>universe</term>, and usually denote this set by the letter <m>U</m>.
+               </p>
+           </statement>
+       </definition>
+       <definition xml:id="def-setcompliment">
+           <statement>
+               <p>
+                   Let A be a set. We say the <term>set compliment</term>, written <m>\sim A</m>, is the set of all elements in the universe <m>U</m> not in A. In set notation, <m>\sim A = \{ x \in U \ | \ x \not \in A \}.</m>
+               </p>
+           </statement>
+       </definition>
+       <example>
+           <p> Suppose we were only interested in the counting numbers up to 10. Let's define the universe <m>U = \{ 1,2,3, \ldots , 9, 10 \}</m> and the following sets: </p>
+       <ol>
+           <li>
+               <p>
+                   <m>A = \{1,2,3,4,5,6,7\}</m>
+               </p>
+           </li>
+           <li>
+               <p>
+                   <m>B = \{2,4,6,8\}</m>
+               </p>
+           </li>
+        </ol>
+        <p>
+            Then <me>A \cup B = \{ 1,2,3,4,5,6,7,8\}, \ A \cap B = \{2,4,6\}, \ A - B = \{1,3,5,7\}, \ B - A = \{8\}, \ \sim A = \{8,9,10\} </me>
+        </p>
+        <p>
+            Here are some Venn diagram showing the sets above:
+        </p>
+        <p>
+            INSERT VENN DIAGRAM
+        </p>
+       </example>
+       <exercise>
+           <p>
+               Let the universe <m>U = \{ \text{ all polygons } \}</m> and define the following sets:
+               <me> A = \{ \text{ all triangles } \}, </me>
+               <me> B = \{ \text{ all polygons with at least one obtuse angle (angle larger than 90 degrees) }\}, </me>
+               <me> C= \{ \text{ all polygons with at most 5 sides } \}.</me>
+           </p>
+           <p>
+               For each set:
+               <ul>
+                   <li>
+                       <p>
+                           Describe the set in words
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           Give an example of an element contained in the set
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           Give an example of an element not contained in the set (but still in the universe!)
+                       </p>
+                   </li>
+               </ul>
+           </p>
+           <p>
+               <ol>
+                   <li>
+                       <p>
+                           <m>A \cap B</m>
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           <m>A \cup C</m>
+                       </p>
+                   </li>
+               
+                    <li>
+                       <p>
+                           <m>\sim B</m>
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           <m>C - B</m>
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           <m>A - A</m>
+                       </p>
+                   </li>
+               </ol>
+               <solution>
+                   <p>
+                       Since elements in an intersection need to satisfy *both* being a memebr of A and B, we have that <m>A \cap B = \{ \text{ obtuse triangles} \}</m>.
+
+                   </p>
+                   <p>
+                       INSERT PIC OF ELEMENT/NON-ELEMENT
+                   </p>
+               </solution>
+               <solution>
+                   <p>
+                       Since elements in an intersection need to satisfy *either* being a memebr of A or B, we have that <m>A \cup C = \{ \text{ all triangles and all polygons of at most 5 sides.} \}</m>. However, triangles are polygons of at most 5 sides (they have three), we have that <m>A \subseteq C</m> and thus we can express <m>A \cup C = \{ \text{ all polygons of at most 5 sides.} \}</m> and note <m>A \cup C = C</m>.
+
+                   </p>
+                   <p>
+                       INSERT VENN DIAGRAM OF THIS SITUATION
+                   </p>
+                   <p>
+                       INSERT PIC OF ELEMENT/NON-ELEMENT
+                   </p>
+                   
+               </solution>
+               <solution>
+                   <p>
+                       Since elements in complement are all elements not in the original set, we have that <m>\sim B = \{ \text{ all polygons with no obtuse angles } \}</m>. In the future Geometry chapter we will show that this set will only contain certain triangles and quadrilaterals (polygons with 4 sides).
+
+                   </p>
+                   <p>
+                       INSERT PIC OF ELEMENT/NON-ELEMENT
+                   </p>
+               </solution>
+                 <solution>
+                   <p>
+                       Since elements in the set difference need to satisfy being a memebr of C but not B, we have that <m>C - B = \{ \text{ polygons with at most 5 sides but without any obtuse angles } \}</m>. Again, in a future chapter we will show that <m>\sim B = C - B</m>
+
+                   </p>
+                   <p>
+                       INSERT PIC OF ELEMENT/NON-ELEMENT
+                   </p>
+               </solution>
+               <solution>
+                   
+                   <p>
+                       Elements in the set difference need to satisfy being a memebr of A but not A. However there are, of course, *no* elements that are both a member and not a memeber of a set. Thus, we have that <m>A - A =\emptyset</m>. 
+
+                   </p>
+                   <p>
+                       INSERT PIC OF ELEMENT/NON-ELEMENT
+                   </p>
+               
+               </solution>
+           </p>
+       </exercise>
+   </subsection>
+
 
 </section>
 
-    </article>
-</pretext>
+    </chapter>
