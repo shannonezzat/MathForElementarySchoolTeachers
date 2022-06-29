@@ -961,7 +961,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                INSERT PIC OF THIS
            </p>
            <p>
-               Note that since multiplication is commutative, we know that <m>348 \times 97 = 97 \times 348</m>. However, the calculation will be different since we would be subdividing our rectangle in "the other direction" when we think of <m>97 \times (300+40+8)</m>           </p>:
+               Note that since multiplication is commutative, we know that <m>348 \times 97 = 97 \times 348</m>. However, the calculation will be different since we would be subdividing our rectangle in "the other direction" when we think of <m>97 \times (300+40+8)</m>. Indeed, we could use this as a "check" to make sure that we did the calculation correctly; both products should, of course, be the same           </p>:
 
             <p>
                 INSERT PIC OF THIS
@@ -1049,9 +1049,102 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     INSERT PIC HERE
                 </p>
             </example>
-
+            
             
 
+           
+       </subsection>
+       <subsection xml:id="subsec-MultiplicationInBaseTwelve">
+           <title>Multiplication In Base Twelve</title>
+           <p>
+               Look closely at the algorithms for multiplication. Is there anything about the steps in the algorithm that are applicable to only base ten? You should see that this isn't the case. Since the ideas of an expanded form and distributivity occur in any base, we can use these algorithms to multiply in any base we like.
+           </p>
+           <p>
+               Just like addition and subtraction, there is nothing special about base ten that allows these multiplication algorithms to work. In base <m>b</m> multiplication by powers of <m>10_b</m> behaves the same way as in base ten. Also, we have the same notion of expanded form in any base we choose. The only thing that is different is our knowledge of multiplication of single digits. Just as in base ten, we could make a "times table" for each base. However, in the interest of time and space, we will only work in one base; base twelve. Multiplying in other bases would work the same, except for the multiplication table for single digit numbers, of course.
+           </p>
+
+           <p>
+               A quick reminder that in base twelve, we ony regroup when we have twleve of one place. We represent ten of a place by the symbol <m>A</m> and eleven of a place by the symbol <m>B</m>. Also, note that in this section we will assume all calculations are in base twelve, even if we do not note the base for each number; that is, for example, we'll write <m>3A \times 15</m> to mean <m>3A_{twelve} \times 15_{twelve}</m>. 
+           </p>
+
+           <p>
+               First, it makes sense to develop a multiplication table for base twelve. The most straightforward way is using repeated addition for multiplication. Let's do one row/column, the 5's, to illustrate the process. Here is a blank times table for every digit in base twelve; you can copy and fill in yourself:
+           </p>
+           <p>
+               INSERT BLANK TIMES TABLE
+           </p>
+           <p>
+               By the property of multiplicative identity, we know that <m>1 \times 5 = 5</m> and we know that <m>2 \times 5 = 5 + 5 = A</m>, since we have ten ones (not enough to regoup). We can determine <m>3 \times 5</m> by adding <m>5</m> to <m>2 \times 5</m>. Thus we have <m>3 \times 5 = 2 \times 5 +5 = A+5 = 13</m>. We can input these into our times table in both the 5 row and 5 column since multiplication is commutative: <m>5 \times n = n \times 5</m> for any number <m>n</m>.
+           </p>
+           <p>
+               INSERT PIC HERE
+           </p>
+           <p>
+               We can continue in the same way, using our skills for addition in base twelve, to finish the rest of the "<m>5</m> times table":
+           </p>
+           <p>
+               INSERT PIC HERE
+           </p>
+
+           <p>
+               We can use the same idea for every other digit in base twelve to complete our entire multiplication table in base twelve for single digits. We'll leave this as an exerise:
+           </p> 
+
+           <exercise>
+               <p>
+                   Complete the entire multiplication table in base twelve for single digits.
+               </p>
+               <solution>
+                   <p>
+                       INSERT PIC HERE
+                   </p>
+               </solution>
+           </exercise>
+
+           <p>
+               Now that we have our times table in base twelve, we can easily multiply any two numbers in base twelve that we want. Let's do an example using the standard algorithm, though you could use the partial products algorithm (or any other algorithm) as well.
+           </p>
+                <example>
+                    <p>
+                        Let's calculate <m>6A0B \times 3B4</m> using the standard algorithm. Let's write the numbers aligned vertically by place value first:
+                    </p>
+                    <p>
+                        INSERT PIC OF THIS
+                    </p>
+                    <p>
+                        Starting with the <m>4</m> in the ones place of the bottom number, we look at our times table to determine that <m>4 \times B = 38</m> so we write down the <m>8</m> and "carry" the <m>3</m>. Now moving to the next place in the top number, <m>4 \times 0 + 3 =3</m>. We write this down and we do not need to regroup. Next, <m>4 \times A = 34</m> so we write down the <m>4</m> and carry the <m>3</m>. Finally, <m>4 \times 6+3 = 20+3 = 23</m>. Thus <m>6A0B \times 4 = 23438</m>. 
+                    </p>
+                    <p>
+                        INCLUDE PIC OF THIS
+                    </p>
+                    <p>
+                        Now we move on to the longs place (that is, the twelves place). We put a <m>0</m> in the rightmost entry of that row and we multiply. For this partial sum we will not be as explicit with the calculation as the previous one. We have that <m>B \times B =A1</m>, <m>B \times 0 +A =A</m>, <m>B \times A = 92</m>, and <m>B \times 6 + 9 = 63</m>. Thus, <m>6A0B \times B0 = 632A10</m>.
+                    </p>
+                    <p>
+                        INSERT PIC OF THIS
+                    </p>
+                    <p>
+                        Next, we move on to the squares place (that is, the one-hundred-forty-fours place, or "twelve squared place"). We put a <m>0</m> in the two rightmost entries of that row and we multiply. Using a similar method to above we get that <m>6A0B \times 3 = 1862900</m>. You should check that you obtain the same answer as this!
+                    </p>
+                    <p>
+                        INSERT PIC OF THIS
+                    </p>
+                        <p>
+                           Finally, we sum all of our partial products. We have that <m>23438+632A10+1862900 = 22B8B48</m>. 
+                        </p>
+                    <p>
+                    INSERT PIC OF THIS
+                </p>
+                </example>
+                <p>
+                    As you can see, the idea is the exact same as in base ten, and we simply have to remember that we are operating in a different base. 
+                </p>
+                
+                
+
+       </subsection>
+       <subsection xml:id="subsec-RussianMultiplication">
+           <title>Russian Multiplication</title>
            
        </subsection>
         <p>
