@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-24T11:29:16-03:00       *-->
+<!--*       on 2022-06-28T23:22:11-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -184,7 +184,7 @@
 <li id="li-211"><p id="p-818">Multiply each single digit multiple of powers of ten in the first number by each single digit multiple of powers of ten in the second number. For each calculation, write down this partial product, lining it up according to place value with the other partial products.</p></li>
 <li id="li-212"><p id="p-819">Sum all partial products together (using, for example, the standard addition algorithm) to find the final product of the two numbers.</p></li>
 </ol>
-<p id="p-820">Let's do an example. Along with this example, we will include both an algebraic and pictoral representation , using the area moel of multiplication, of the process.</p>
+<p id="p-820">Let's do an example. Along with this example, we will include both an algebraic and pictoral representation , using the area model of multiplication, of the process.</p>
 <article class="example example-like" id="example-59"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-59"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-59"><article class="example example-like"><p id="p-821">Let's multiply <span class="process-math">\(348 \times 97\text{.}\)</span> First, we write the numbers lined up by place value, but we are thinking of these numbers in expanded form: <span class="process-math">\((300 + 40 + 8) \times (90 + 7). \)</span> Pictorally, we can view this as breaking up a rectangle with side lengths <span class="process-math">\(348\)</span> and <span class="process-math">\(97\)</span> units into sub rectangles where the side lengths are the terms in each expanded form.</p>
@@ -224,9 +224,39 @@
 <p id="p-830">Note that some people consider the pictoral representation of the partial products method its own algorithm as well. It's sometimes called the <dfn class="terminology">grid method.</dfn></p></section><section class="subsection" id="subsec-StandardMultiplicationAlgorithm"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.3</span> <span class="title">Standard Multiplication Algorithm</span>
 </h3>
-<p id="p-831">The <dfn class="terminology">standard multiplication algorithm</dfn> is</p></section><p id="p-832">Standard Algorithm (show area model and comparison to partial products)</p>
-<p id="p-833">Lattice Method</p>
-<p id="p-834">Discussion of pros-cons and relationships</p></section></div></main>
+<p id="p-831">The <dfn class="terminology">standard multiplication algorithm</dfn> is, very likely, the method that you would have been taught how to multiply numbers in elementary school. It is very related to the partial products algorithm. The main difference is that we only expand one of our numbers, our "bottom number", into expanded form. For example, we would think of the multiplication <span class="process-math">\(348 \times 97\)</span> as <span class="process-math">\(348 \times (90 + 8)\text{.}\)</span> We can view this in our area model as only subdividing our rectangle in one direction:</p>
+<p id="p-832">INSERT PIC OF THIS</p>
+<p id="p-833">Note that since multiplication is commutative, we know that <span class="process-math">\(348 \times 97 = 97 \times 348\text{.}\)</span> However, the calculation will be different since we would be subdividing our rectangle in "the other direction" when we think of <span class="process-math">\(97 \times (300+40+8)\)</span></p>
+<p id="p-834">INSERT PIC OF THIS</p>
+<p id="p-835">Of course, multiplying a non-single-digit number (like <span class="process-math">\(348\)</span>) by a single digit number isn't as easy as multiplying two single digit numbers together. We will still multiply place by place, but instead of writing down each individual place multiplication calculation, we will do them all at once, and keep track of any regroupings by "carries" above the digits in our top number.</p>
+<p id="p-836">The algorithm for the standard algorithm is as follows:</p>
+<ol class="decimal">
+<li id="li-213"><p id="p-837">Write (or at least view in your head) one of the numbers in expanded form. Usually, this is done by writing the numbers so that the same place values are in the same column so that the expanded number is the bottom number. Start with the right-most digit in the bottom number.</p></li>
+<li id="li-214"><p id="p-838">Starting from the right, write the number of zeroes associated to the place value of the current digit in the bottom number that you're working with in the row below the previous one you've calculated, if any exist.</p></li>
+<li id="li-215"><p id="p-839">Working from right to left, multiply the bottom digit by each digit in the top number, adding any regroupings from the previous multiplication if they exist. If the product is greater than 9, regroup the tens to the next place value by writing the number of tens over the digit to the left in the top number. Write down the ones digit of your calculation to the left of the previous digit you have written, if any exist.</p></li>
+<li id="li-216"><p id="p-840">Once there are no more non-zero digits to the left in the top number, if there are non-zero digits to the left of your current digit in the bottom number, move one digit to the left in the bottom number and return to Step 2. If there are no non-zero numbers to the left, move on to the next step.</p></li>
+<li id="li-217"><p id="p-841">Sum all partial products together (using, for example, the standard addition algorithm) to find the final product of the two numbers.</p></li>
+</ol>
+<p id="p-842">As usual, we compute the same example so we can see the commonalities and diffrences between algorithms. Also, we will have a pictoral representation alongside our calculation.</p>
+<article class="example example-like" id="example-60"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-60"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-60"><article class="example example-like"><p id="p-843">Let's multiply <span class="process-math">\(348 \times 97\text{.}\)</span> First, we write the numbers lined up by place value, but we are thinking of the bottom number in expanded form: <span class="process-math">\((349) \times (90 + 7). \)</span> Pictorally, we can view this as breaking up a rectangle with side lengths <span class="process-math">\(348\)</span> and <span class="process-math">\(97\)</span> units into sub rectangles where the side length of <span class="process-math">\(97\)</span> are the terms in the expanded form.</p>
+<p id="p-844">INCLUDE PICTURE HERE</p>
+<p id="p-845">We start at the right hand side of the bottom number, with our aim being to calculate <span class="process-math">\(7 \times 348\text{.}\)</span> Since that digit is in the ones place, we do not write down any zeroes yet. We multiply it by each digit in the top number and add any regroupings to the next place: <span class="process-math">\(7 \times 8 = 56\)</span> so we write down the <span class="process-math">\(6\)</span> and "carry" the <span class="process-math">\(5\)</span> to the tens place.</p>
+<p id="p-846">INSERT PIC HERE</p>
+<p id="p-847">Next, we multiply the our ones digit by the tens place, and add the regrouping: <span class="process-math">\(7 \times 4 + 5 =28 +5 = 33\text{.}\)</span> We write down the <span class="process-math">\(3\)</span> to the  left of the <span class="process-math">\(6\)</span> and carry the other three to the hundreds place.</p>
+<p id="p-848">INSERT PIC HERE</p>
+<p id="p-849">Now, we multiply the hundreds place: <span class="process-math">\(7 \times 3 + 3 = 21+3=24\text{.}\)</span> As there is no (non-zero) digit to the left, we write both digits down to the left of the <span class="process-math">\(3\text{.}\)</span> Thus we have calculated <span class="process-math">\(7 \times 348 = 2436.\)</span></p>
+<p id="p-850">INSERT PIC HERE</p>
+<p id="p-851">Now we move to the tens digit of the bottom number. Our aim is now to calculate <span class="process-math">\(90 \times 348\text{.}\)</span> Since the <span class="process-math">\(9\)</span> is in the tens place, we first write a <span class="process-math">\(0\)</span> in the right-most spot (we know that <span class="process-math">\(90 \times 348 = 10 \times (9 \times 348)\)</span> so this <span class="process-math">\(0\)</span> signifies that we have taken out a factor of <span class="process-math">\(10\text{.}\)</span>)</p>
+<p id="p-852">We start with <span class="process-math">\(9 \times 8 = 72\text{.}\)</span> So we write down the <span class="process-math">\(2\)</span> and "carry" the <span class="process-math">\(7\)</span> to the next place value. Note that this <span class="process-math">\(7\)</span> actually signifies <span class="process-math">\(7\)</span> hundreds since we are really calculating <span class="process-math">\(90 \times 8 = 720\text{.}\)</span> Similar to the first digit of the bottom number, we have <span class="process-math">\(9 \times 4 + 7 = 43\)</span> and <span class="process-math">\(9 \times 3 + 4 = 31\text{.}\)</span> Thus we have calculated <span class="process-math">\(90 \times 348 = 31320\)</span></p>
+<p id="p-853">INSERT PIC HERE</p>
+<p id="p-854">Now that we are out of non-zero digits in the bottom number, we simply add the two partial products we have calculated: <span class="process-math">\(2436+31320 = 33756\)</span></p>
+<p id="p-855">INSERT PIC HERE</p>
+<p id="p-856">Note that our first partial sum is the same as the <span class="process-math">\(56+280+2100\)</span> in the partial sum algorithm, and similarly <span class="process-math">\(31320 = 720 + 3600 + 27,000 \text{.}\)</span> We can see this relationship in the diagram too</p>
+<p id="p-857">INSERT PIC HERE</p></article></div></section><p id="p-858">Standard Algorithm (show area model and comparison to partial products)</p>
+<p id="p-859">Lattice Method</p>
+<p id="p-860">Discussion of pros-cons and relationships</p></section></div></main>
 </div>
 </body>
 </html>

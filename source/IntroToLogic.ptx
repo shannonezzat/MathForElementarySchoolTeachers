@@ -1742,7 +1742,7 @@ select all those cards, but only those cards, which you would have to turn over 
        <definition xml:id="def-Intersection">
            <statement>
                <p>
-                   Let A and B be two sets. Then the <term>intersection</term> of A and B, written <m>A \cap B</m> is the set of all elements that are in both A and B. In set notation we write <m>A \cup B = \{ x \ | \ x \in A \text{ and } x \in B\}.</m>
+                   Let A and B be two sets. Then the <term>intersection</term> of A and B, written <m>A \cap B</m> is the set of all elements that are in both A and B. In set notation we write <m>A \cap B = \{ x \ | \ x \in A \text{ and } x \in B\}.</m>
                </p>
            </statement>
        </definition>

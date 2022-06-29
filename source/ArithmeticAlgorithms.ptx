@@ -894,7 +894,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 </li>
             </ol>
             <p>
-                Let's do an example. Along with this example, we will include both an algebraic and pictoral representation , using the area moel of multiplication, of the process.
+                Let's do an example. Along with this example, we will include both an algebraic and pictoral representation , using the area model of multiplication, of the process.
             </p>
             <example>
                 <p>
@@ -954,8 +954,105 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
        <subsection xml:id="subsec-StandardMultiplicationAlgorithm">
            <title>Standard Multiplication Algorithm</title>
            <p>
-               The <term>standard multiplication algorithm</term> is 
+               The <term>standard multiplication algorithm</term> is, very likely, the method that you would have been taught how to multiply numbers in elementary school. It is very related to the partial products algorithm. The main difference is that we only expand one of our numbers, our "bottom number", into expanded form. For example, we would think of the multiplication <m>348 \times 97</m> as <m>348 \times (90 + 8)</m>. We can view this in our area model as only subdividing our rectangle in one direction:
            </p>
+
+           <p>
+               INSERT PIC OF THIS
+           </p>
+           <p>
+               Note that since multiplication is commutative, we know that <m>348 \times 97 = 97 \times 348</m>. However, the calculation will be different since we would be subdividing our rectangle in "the other direction" when we think of <m>97 \times (300+40+8)</m>           </p>:
+
+            <p>
+                INSERT PIC OF THIS
+            </p>
+
+            <p>
+              Of course, multiplying a non-single-digit number (like <m>348</m>) by a single digit number isn't as easy as multiplying two single digit numbers together. We will still multiply place by place, but instead of writing down each individual place multiplication calculation, we will do them all at once, and keep track of any regroupings by "carries" above the digits in our top number.   
+            </p>
+
+            <p>
+                The algorithm for the standard algorithm is as follows:
+            </p>
+            <ol>
+                <li>
+                    <p>
+                       Write (or at least view in your head) one of the numbers in expanded form. Usually, this is done by writing the numbers so that the same place values are in the same column so that the expanded number is the bottom number. Start with the right-most digit in the bottom number.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                       Starting from the right, write the number of zeroes associated to the place value of the current digit in the bottom number that you're working with in the row below the previous one you've calculated, if any exist. 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Working from right to left, multiply the bottom digit by each digit in the top number, adding any regroupings from the previous multiplication if they exist. If the product is greater than 9, regroup the tens to the next place value by writing the number of tens over the digit to the left in the top number. Write down the ones digit of your calculation to the left of the previous digit you have written, if any exist.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Once there are no more non-zero digits to the left in the top number, if there are non-zero digits to the left of your current digit in the bottom number, move one digit to the left in the bottom number and return to Step 2. If there are no non-zero numbers to the left, move on to the next step.  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Sum all partial products together (using, for example, the standard addition algorithm) to find the final product of the two numbers.
+                    </p>
+                </li>
+            </ol>
+            <p>
+                As usual, we compute the same example so we can see the commonalities and diffrences between algorithms. Also, we will have a pictoral representation alongside our calculation.
+            </p>
+            <example>
+                <p>
+                    Let's multiply <m>348 \times 97</m>. First, we write the numbers lined up by place value, but we are thinking of the bottom number in expanded form: <m>(349) \times (90 + 7). </m> Pictorally, we can view this as breaking up a rectangle with side lengths <m>348</m> and <m>97</m> units into sub rectangles where the side length of <m>97</m> are the terms in the expanded form. 
+                </p>
+                <p>
+                    INCLUDE PICTURE HERE
+                </p>
+                <p>
+                    We start at the right hand side of the bottom number, with our aim being to calculate <m>7 \times 348</m>. Since that digit is in the ones place, we do not write down any zeroes yet. We multiply it by each digit in the top number and add any regroupings to the next place: <m>7 \times 8 = 56</m> so we write down the <m>6</m> and "carry" the <m>5</m> to the tens place. 
+                </p>
+                <p>
+                    INSERT PIC HERE
+                </p>
+                <p>
+                    Next, we multiply the our ones digit by the tens place, and add the regrouping: <m>7 \times 4 + 5 =28 +5 = 33</m>. We write down the <m>3</m> to the  left of the <m>6</m> and carry the other three to the hundreds place.
+                </p>
+                <p>
+                    INSERT PIC HERE
+                </p>
+                <p>
+                    Now, we multiply the hundreds place: <m>7 \times 3 + 3 = 21+3=24</m>. As there is no (non-zero) digit to the left, we write both digits down to the left of the <m>3</m>. Thus we have calculated <m>7 \times 348 = 2436.</m>
+                </p>
+                <p>
+                    INSERT PIC HERE
+                </p>
+                <p>
+                    Now we move to the tens digit of the bottom number. Our aim is now to calculate <m>90 \times 348</m>. Since the <m>9</m> is in the tens place, we first write a <m>0</m> in the right-most spot (we know that <m>90 \times 348 = 10 \times (9 \times 348)</m> so this <m>0</m> signifies that we have taken out a factor of <m>10</m>.) </p>
+                  <p>  We start with <m>9 \times 8 = 72</m>. So we write down the <m>2</m> and "carry" the <m>7</m> to the next place value. Note that this <m>7</m> actually signifies <m>7</m> hundreds since we are really calculating <m>90 \times 8 = 720</m>. Similar to the first digit of the bottom number, we have <m>9 \times 4 + 7 = 43</m> and <m>9 \times 3 + 4 = 31</m>. Thus we have calculated <m>90 \times 348 = 31320</m>
+                </p>
+                <p>
+                    INSERT PIC HERE
+                </p>
+                <p>
+                    Now that we are out of non-zero digits in the bottom number, we simply add the two partial products we have calculated: <m>2436+31320 = 33756</m>
+                </p>
+                <p>
+                    INSERT PIC HERE
+                </p>
+                <p>
+                    Note that our first partial sum is the same as the <m>56+280+2100</m> in the partial sum algorithm, and similarly <m>31320 = 720 + 3600 + 27,000 </m>. We can see this relationship in the diagram too
+                </p>
+                <p>
+                    INSERT PIC HERE
+                </p>
+            </example>
+
+            
+
+           
        </subsection>
         <p>
             Standard Algorithm (show area model and comparison to partial products)
