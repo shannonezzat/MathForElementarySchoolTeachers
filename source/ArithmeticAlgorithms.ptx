@@ -1207,7 +1207,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    INSERT PIC OF THIS
                </p>
                <p>
-                   Now, we cross out all rows that contain an even number on the left. That are the rows with the left number being <m>48, 24, 12,</m> and <m>6</m>. This leaves the rows with the left number being <m>3</m> and <m>1</m>. 
+                   Now, we cross out all rows that contain an even number on the left. That are the rows with the left number being <m>48, 24, 12,</m> and <m>6</m>. This leaves the rows with the left number being <m>97, 3,</m> and <m>1</m>. 
                </p>
                <p>
                    INSERT PIC OF THIS
@@ -1267,7 +1267,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                </solution>
                <solution>
                    <p>
-                       Let's look at what changes from <m>9 \times 10</m> to the next line <m>4 \times 20</m>. If we didn't round down we would have <m>4.5 \times 20.</m> When we round down we are deleting area from our rectangle. We have <m>0.5 \times 20</m>, or equivalently <m>1 \tmes 10</m> less area than in the line above. And indeed, the amount of area we are deleting is the right-hand number of the line above. So we need to account for this missing area by adding it back in at the end.
+                       Let's look at what changes from <m>9 \times 10</m> to the next line <m>4 \times 20</m>. If we didn't round down we would have <m>4.5 \times 20.</m> When we round down we are deleting area from our rectangle. We have <m>0.5 \times 20</m>, or equivalently <m>1 \times 10</m> less area than in the line above. And indeed, the amount of area we are deleting is the right-hand number of the line above. So we need to account for this missing area by adding it back in at the end.
                    </p>
                    <p>
                        INSERT PIC DESCRIBING MISSING AREA
@@ -1282,6 +1282,12 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </p>
                </solution>
            </exercise>
+           <assemblage xml:id="assemblage-RussianBaseTwo">
+               <title>Notes for Additional Understanding</title>
+               <p>
+                   Really, this algorithm relies on writing the left hand number in base two and then multiplying each place by the right hand number. Since <m>97 = 1 \times 2^6 + 1 \times 2^5 + 0 \times 2^4 + 0 \times 2^3 + 0 \times 2^2 + 0 \times 2^1 + 1 \times 2^0</m>, we could have viewed the calculation <m>97 \times 348</m> as (ignoring multiples of zero) <m>2^6 \times 348 + 2^5 \times 348 + 2^0 \times 348 = 22,272 + 11,136 + 348 = 33756.</m>
+               </p>
+           </assemblage>
            
        </subsection>
         <p>

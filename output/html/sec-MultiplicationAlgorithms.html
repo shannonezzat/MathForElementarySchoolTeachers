@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-04T10:27:45-03:00       *-->
+<!--*       on 2022-07-04T10:59:37-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -306,7 +306,7 @@
 <p id="p-894">INSERT PIC OF THIS</p>
 <p id="p-895">We continue this process until we get to 1 on the left side. Note that <span class="process-math">\(3 \div 2 = 1.5\)</span> so we round down to <span class="process-math">\(1.\)</span></p>
 <p id="p-896">INSERT PIC OF THIS</p>
-<p id="p-897">Now, we cross out all rows that contain an even number on the left. That are the rows with the left number being <span class="process-math">\(48, 24, 12,\)</span> and <span class="process-math">\(6\text{.}\)</span> This leaves the rows with the left number being <span class="process-math">\(3\)</span> and <span class="process-math">\(1\text{.}\)</span></p>
+<p id="p-897">Now, we cross out all rows that contain an even number on the left. That are the rows with the left number being <span class="process-math">\(48, 24, 12,\)</span> and <span class="process-math">\(6\text{.}\)</span> This leaves the rows with the left number being <span class="process-math">\(97, 3,\)</span> and <span class="process-math">\(1\text{.}\)</span></p>
 <p id="p-898">INSERT PIC OF THIS</p>
 <p id="p-899">We now sum the right numbers of the remaining rows: <span class="process-math">\(348+11,136 + 22,272 = 33756.\)</span></p></article></div>
 <p id="p-900">Maybe surprisingly, we did get the product we expected, but using a calculation that is quite a bit different! Let's now explore why this algorithm works. We will lead you through the exploration below. You definitely should try this exercise before looking at the solutions!</p>
@@ -329,13 +329,15 @@
 <p id="p-910">In this case, we have converted the calculation <span class="process-math">\(8 \times 10\)</span> to the equivalent calculations <span class="process-math">\(4 \times 20\text{,}\)</span> <span class="process-math">\(2 \times 40\text{,}\)</span> and <span class="process-math">\(1 \times 80\text{.}\)</span> So <span class="process-math">\(8 \times 10 = 1 \times 80.\)</span></p>
 </div></div>
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-57" id="solution-57"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-57"><div class="solution solution-like">
-<p id="p-911">Let's look at what changes from <span class="process-math">\(9 \times 10\)</span> to the next line <span class="process-math">\(4 \times 20\text{.}\)</span> If we didn't round down we would have <span class="process-math">\(4.5 \times 20.\)</span> When we round down we are deleting area from our rectangle. We have <span class="process-math">\(0.5 \times 20\text{,}\)</span> or equivalently <span class="process-math">\(1 \tmes 10\)</span> less area than in the line above. And indeed, the amount of area we are deleting is the right-hand number of the line above. So we need to account for this missing area by adding it back in at the end.</p>
+<p id="p-911">Let's look at what changes from <span class="process-math">\(9 \times 10\)</span> to the next line <span class="process-math">\(4 \times 20\text{.}\)</span> If we didn't round down we would have <span class="process-math">\(4.5 \times 20.\)</span> When we round down we are deleting area from our rectangle. We have <span class="process-math">\(0.5 \times 20\text{,}\)</span> or equivalently <span class="process-math">\(1 \times 10\)</span> less area than in the line above. And indeed, the amount of area we are deleting is the right-hand number of the line above. So we need to account for this missing area by adding it back in at the end.</p>
 <p id="p-912">INSERT PIC DESCRIBING MISSING AREA</p>
 <p id="p-913">After this line, the calculation is the same as <span class="process-math">\(8 \times 10\text{.}\)</span> So we have the product being the right hand number of the final line <span class="process-math">\(1 \times 80\)</span> plus the "missing" area, which is accounted for in the right hand number of the line <span class="process-math">\(9 \times 10\text{.}\)</span> Thus <span class="process-math">\(9 \times 10 = 80+10 = 90.\)</span></p>
 </div></div>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-58" id="solution-58"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-58"><div class="solution solution-like"><p id="p-914">In general, any time we round down, we're missing area equal to the right hand number of the line above. And since every time we rounded down we had an odd number on the left hand side above, we add the right hand number of those lines.</p></div></div></article></div></section><p id="p-915">Standard Algorithm (show area model and comparison to partial products)</p>
-<p id="p-916">Lattice Method</p>
-<p id="p-917">Discussion of pros-cons and relationships</p></section></div></main>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-58" id="solution-58"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-58"><div class="solution solution-like"><p id="p-914">In general, any time we round down, we're missing area equal to the right hand number of the line above. And since every time we rounded down we had an odd number on the left hand side above, we add the right hand number of those lines.</p></div></div></article></div>
+<article class="assemblage assemblage-like" id="assemblage-RussianBaseTwo"><h4 class="heading"><span class="title">Notes for Additional Understanding.</span></h4>
+<p id="p-915">Really, this algorithm relies on writing the left hand number in base two and then multiplying each place by the right hand number. Since <span class="process-math">\(97 = 1 \times 2^6 + 1 \times 2^5 + 0 \times 2^4 + 0 \times 2^3 + 0 \times 2^2 + 0 \times 2^1 + 1 \times 2^0\text{,}\)</span> we could have viewed the calculation <span class="process-math">\(97 \times 348\)</span> as (ignoring multiples of zero) <span class="process-math">\(2^6 \times 348 + 2^5 \times 348 + 2^0 \times 348 = 22,272 + 11,136 + 348 = 33756.\)</span></p></article></section><p id="p-916">Standard Algorithm (show area model and comparison to partial products)</p>
+<p id="p-917">Lattice Method</p>
+<p id="p-918">Discussion of pros-cons and relationships</p></section></div></main>
 </div>
 </body>
 </html>
