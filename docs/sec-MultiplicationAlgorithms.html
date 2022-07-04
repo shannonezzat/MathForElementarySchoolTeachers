@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-29T13:44:54-03:00       *-->
+<!--*       on 2022-07-04T10:27:45-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -286,9 +286,56 @@
 <p id="p-880">INSERT PIC OF THIS</p></article></div>
 <p id="p-881">As you can see, the idea is the exact same as in base ten, and we simply have to remember that we are operating in a different base.</p></section><section class="subsection" id="subsec-RussianMultiplication"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.5</span> <span class="title">Russian Multiplication</span>
-</h3></section><p id="p-882">Standard Algorithm (show area model and comparison to partial products)</p>
-<p id="p-883">Lattice Method</p>
-<p id="p-884">Discussion of pros-cons and relationships</p></section></div></main>
+</h3>
+<p id="p-882">The two algorithms we have learned so far are quite similar to each other. However, there are other algorithms that look quite a bit different to the ones that we have used. Let's talk about one of these, sometimes called <dfn class="terminology">Russian multiplication</dfn> or <dfn class="terminology">Ethiopian multiplication</dfn>. It relies on the fact that multiplication by two and division by two are inverse operations; more exactly, <span class="process-math">\((a \div 2) \times (b \times 2) = a \times b\text{.}\)</span> First we will describe the algorithm, then do an example, and then talk about why this algorithm works.</p>
+<p id="p-883">The algorithm for Russian multiplication is as follows:</p>
+<ol class="decimal">
+<li id="li-218"><p id="p-884">Write down both numbers side by side, with plenty of space below. Usually, the smaller of the two numbers is written on the left, but it doesn't have to be. Note that this counts as a "row" in the algorithm below.</p></li>
+<li id="li-219"><p id="p-885">Take the left number and divide it by two. If the result is not a whole number, round down to the nearest whole number. Write this number below the left number.</p></li>
+<li id="li-220"><p id="p-886">Take the right number and multiply it by two. Write this number below the right number.</p></li>
+<li id="li-221"><p id="p-887">If the number on the left is 1, go to the next step. Else, go to Step 2.</p></li>
+<li id="li-222"><p id="p-888">Cross out all rows where the left number is even.</p></li>
+<li id="li-223"><p id="p-889">Sum the right number of all remaining rows. This sum is the product of the two numbers that you started with.</p></li>
+</ol>
+<p id="p-890">If you haven't seen this algorithm before, it may look a lot different than what you're used to. Let's do an example to make sure we understand it. We'll use the same compuatation as the other algorithms.</p>
+<article class="example example-like" id="example-62"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-62"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.6</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-62"><article class="example example-like"><p id="p-891">Let's multiply <span class="process-math">\(348 \times 97\text{.}\)</span> Since <span class="process-math">\(97\)</span> is the smaller number, we will write this on the left.</p>
+<p id="p-892">INSERT PIC OF THIS</p>
+<p id="p-893">Now, we divide the left number by two. Since <span class="process-math">\(97 \div 2  = 48.5\text{,}\)</span> we round down to <span class="process-math">\(48\)</span> and write this number below the left number. Also, we multiply the right number by two and write this below the right number.</p>
+<p id="p-894">INSERT PIC OF THIS</p>
+<p id="p-895">We continue this process until we get to 1 on the left side. Note that <span class="process-math">\(3 \div 2 = 1.5\)</span> so we round down to <span class="process-math">\(1.\)</span></p>
+<p id="p-896">INSERT PIC OF THIS</p>
+<p id="p-897">Now, we cross out all rows that contain an even number on the left. That are the rows with the left number being <span class="process-math">\(48, 24, 12,\)</span> and <span class="process-math">\(6\text{.}\)</span> This leaves the rows with the left number being <span class="process-math">\(3\)</span> and <span class="process-math">\(1\text{.}\)</span></p>
+<p id="p-898">INSERT PIC OF THIS</p>
+<p id="p-899">We now sum the right numbers of the remaining rows: <span class="process-math">\(348+11,136 + 22,272 = 33756.\)</span></p></article></div>
+<p id="p-900">Maybe surprisingly, we did get the product we expected, but using a calculation that is quite a bit different! Let's now explore why this algorithm works. We will lead you through the exploration below. You definitely should try this exercise before looking at the solutions!</p>
+<article class="exercise exercise-like" id="exercise-32"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-32"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">5.3.7</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-32"><article class="exercise exercise-like"><ol class="decimal">
+<li id="li-224"><p id="p-901">As a warmup, draw some dots or an area diagram to convince yourself of the fact that <span class="process-math">\((a \div 2) \times (b \times 2) = a \times b\text{.}\)</span> Start with <span class="process-math">\(a = 4\)</span> and <span class="process-math">\(b=5\text{,}\)</span> and then do a few other examples (for now, pick even numbers for <span class="process-math">\(a\)</span>). What equivalent multiplication problem have you converted <span class="process-math">\(4 \times 5\)</span> to? Explain why both diagrams have the same numer of dots/same area.</p></li>
+<li id="li-225"><p id="p-902">Now, complete the Russian algorithm with the problem <span class="process-math">\(8 \times 10\text{.}\)</span> Draw a diagram for each step, and note that the only row with an odd left number is the last row. Cases where the left number is a power of <span class="process-math">\(2\)</span> are the "easiest" cases to think about.</p></li>
+<li id="li-226"><p id="p-903">Now, let's try the calculation <span class="process-math">\(9 \times 10\text{.}\)</span> In the second row, our left number is <span class="process-math">\(4\)</span> since <span class="process-math">\(9 \div 2 = 4.5\)</span> and we rounded down. Draw a diagram for both rows and describe how much is "missing" from the first row to the next. How does this relate to the calculation <span class="process-math">\(8 \times 10\text{?}\)</span> Where is that number appear in your algorithm?</p></li>
+<li id="li-227"><p id="p-904">Describe what is happening in general when you round down on the left hand side. When you round down, how can you keep track of that "missing" area in your calculation?</p></li>
+</ol>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-55" id="solution-55"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-55"><div class="solution solution-like">
+<p id="p-905">For <span class="process-math">\(4 \times 5\)</span> you should have a similar diagram to this:</p>
+<p id="p-906">INSERT PIC HERE</p>
+<p id="p-907">One way of viewing this is that we are splitting our diagram in half and then adding the bottom half to the left hand side, thus turning this into the equivalent problem <span class="process-math">\(2 \times 10\text{.}\)</span></p>
+</div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-56" id="solution-56"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-56"><div class="solution solution-like">
+<p id="p-908">You should have the following calculation and diagram:</p>
+<p id="p-909">INSERT PIC HERE</p>
+<p id="p-910">In this case, we have converted the calculation <span class="process-math">\(8 \times 10\)</span> to the equivalent calculations <span class="process-math">\(4 \times 20\text{,}\)</span> <span class="process-math">\(2 \times 40\text{,}\)</span> and <span class="process-math">\(1 \times 80\text{.}\)</span> So <span class="process-math">\(8 \times 10 = 1 \times 80.\)</span></p>
+</div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-57" id="solution-57"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-57"><div class="solution solution-like">
+<p id="p-911">Let's look at what changes from <span class="process-math">\(9 \times 10\)</span> to the next line <span class="process-math">\(4 \times 20\text{.}\)</span> If we didn't round down we would have <span class="process-math">\(4.5 \times 20.\)</span> When we round down we are deleting area from our rectangle. We have <span class="process-math">\(0.5 \times 20\text{,}\)</span> or equivalently <span class="process-math">\(1 \tmes 10\)</span> less area than in the line above. And indeed, the amount of area we are deleting is the right-hand number of the line above. So we need to account for this missing area by adding it back in at the end.</p>
+<p id="p-912">INSERT PIC DESCRIBING MISSING AREA</p>
+<p id="p-913">After this line, the calculation is the same as <span class="process-math">\(8 \times 10\text{.}\)</span> So we have the product being the right hand number of the final line <span class="process-math">\(1 \times 80\)</span> plus the "missing" area, which is accounted for in the right hand number of the line <span class="process-math">\(9 \times 10\text{.}\)</span> Thus <span class="process-math">\(9 \times 10 = 80+10 = 90.\)</span></p>
+</div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-58" id="solution-58"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-58"><div class="solution solution-like"><p id="p-914">In general, any time we round down, we're missing area equal to the right hand number of the line above. And since every time we rounded down we had an odd number on the left hand side above, we add the right hand number of those lines.</p></div></div></article></div></section><p id="p-915">Standard Algorithm (show area model and comparison to partial products)</p>
+<p id="p-916">Lattice Method</p>
+<p id="p-917">Discussion of pros-cons and relationships</p></section></div></main>
 </div>
 </body>
 </html>
