@@ -1285,26 +1285,215 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
            <assemblage xml:id="assemblage-RussianBaseTwo">
                <title>Notes for Additional Understanding</title>
                <p>
-                   Really, this algorithm relies on writing the left hand number in base two and then multiplying each place by the right hand number. Since <m>97 = 1 \times 2^6 + 1 \times 2^5 + 0 \times 2^4 + 0 \times 2^3 + 0 \times 2^2 + 0 \times 2^1 + 1 \times 2^0</m>, we could have viewed the calculation <m>97 \times 348</m> as (ignoring multiples of zero) <m>2^6 \times 348 + 2^5 \times 348 + 2^0 \times 348 = 22,272 + 11,136 + 348 = 33756.</m>
+                   Really, this algorithm relies on writing the left hand number in base two and then multiplying each place by the right hand number. Since <me>97 = 1 \times 2^6 + 1 \times 2^5 + 0 \times 2^4 + 0 \times 2^3 + 0 \times 2^2 + 0 \times 2^1 + 1 \times 2^0</me>, we could have viewed the calculation <m>97 \times 348</m> as (ignoring multiples of zero) <me>2^6 \times 348 + 2^5 \times 348 + 2^0 \times 348 = 22,272 + 11,136 + 348 = 33756.</me> Note the use of distributivity here too. So you can look at the Russian algorithm as like the standard algorithm, but instead in base two.
                </p>
            </assemblage>
            
        </subsection>
-        <p>
-            Standard Algorithm (show area model and comparison to partial products)
-        </p>
-        <p>
-            Lattice Method
-        </p>
-        <p>
-            Discussion of pros-cons and relationships
-        </p>
+       <subsection xml:id="subsec-ProsAndConsOfMultiplicationAlgorithms">
+           <title>Pros And Cons Of Multiplication Algorithms</title>
+           <p>
+               We just discussed four different methods for multiplying. Which one is better? Is one always better? In the author's opinion, there are pros and cons with each algorithm. We will discuss some of these now.
+           </p>
+           <subsubsection xml:id="subsubsec-PartialProductsAlgorithm">
+               <title>PartialProductsAlgorithm</title>
+               <p>
+                   Pros:
+               </p>
+               <ol>
+                   <li>
+                       <p>
+                           The idea of distribution of place value is very clear.
+                       </p>
+                       <p>
+                           Each multiplication step is one straightforward calculation that will only invlove multiplication of powers of ten and multiplication of single digit numbers.
+                       </p>
+                   </li>
+                   <li>
+                       
+                       <p>
+                           We can use this algorithm to help students think about any distributive multiplication (like multiplying two polynomials, for example). 
+                       </p>
+                   
+                   </li>
+               </ol>
+               <p>
+                   Cons:
+               </p>
+               <ol>
+                   <li>
+                       <p>
+                           There could be a lot of partial products to sum. Indeed, if the first number has <m>a</m> digits and the second <m>b</m> digits, then we need to sum <m>a \times b</m> numbers.
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           This algorithm takes up a significant amount of space on the page, especially if you have numbers with many digits.
+                       </p>
+                   </li>
+                   
+               </ol>
+           </subsubsection>
+           <subsubsection xml:id="subsubsec-GridMethod">
+               <title>Grid Method</title>
+               <p>
+                   Pros:
+               </p>
+               <ol>
+                   <li>
+                       <p>
+                           The distribution process over place value is highly visual. It is very apparent why the algorithm works the way it does.
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           
+                           Each multiplication step is one straightforward calculation that will only invlove multiplication of powers of ten and multiplication of single digit numbers.
+                       
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           We can use this algorithm to help students think about any distributive multiplication (like multiplying two polynomials, for example). 
+                       </p>
+                   </li>
+               </ol>
+               <p>
+                   Cons:
+               </p>
+               <ol>
+                   <li>
+                       <p>
+                           The algorithm takes up a lot of space on the page, especially for numbers with many digits.
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           There is no part of the page set aside to sum the partial products together, so it takes up even *more* room.
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           Usually, the sub rectangles aren't sized to scale, and thus it might confuse students about the size of place values.
+                       </p>
+                   </li>
+               </ol>
+               </subsubsection>  
+            <subsubsection xml:id="subsubsec-StandardMultiplicationAlgorithm">
+                <title>Standard Multiplication Algorithm</title>
+                <p>
+                    Pros:
+                </p>
+                <ol>
+                    <li>
+                        <p>
+                            Doesn't take up a lot of space. In fact, if the bottom number has <m>a</m> digits, it only requires <m>a</m> rows for the partial sums (and an additional <m>a</m> rows above for the "carries".)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            There is less adding than in the partial products and grid method algorithms.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            It's the method that is most commonly known in North America, so it is easier to get help with this algorithm.
+                        </p>
+                    </li>
+                </ol>
+                <p>
+                    Cons:
+                </p>
+                <ol>
+                    <li>
+                        <p>
+                            Each row of the algorithm is a fairly complex multiplication, invloving carrying over to the next place value.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The idea of place value isn't as obvious in the top number, thus losing somet of the idea of distributivity in the calculation.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The algorithm isn't easily adaptable to multiplying other objects (like polynomials)
+                        </p>
+                    </li>
+                </ol>
+                
+             
+
+               
+           </subsubsection>
+           <subsection xml:id="subsec-RussianMultiplicationAlgorithm">
+               <title>Russian Multiplication Algorithm</title>
+               <p>
+                   Pros:
+               </p>
+               <ol>
+                   <li>
+                       <p>
+                           Relies on only being able to multiply and divide by one number (that is, of course, 2) 
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           The number of rows is quite small (indeed it's the number of digits in the base two representation of the left number.)
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                          The number of additions is even smaller, as we sum only some of the rows. 
+                       </p>
+                   </li>
+                   
+               </ol>
+               <p>
+                   Cons:
+               </p>
+               <ol>
+                   <li>
+                       <p>
+                           It's not a well known algorithm, so it will be hard for a student to get help with it
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           The idea of place value and distributivity is quite buried in the algorithm.
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           It cannot be used to multiply other objects (like polynomials) 
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           The number of rows to add together changes based on the base two representation, which isn't obvious at forst glance. For example, if <m>129</m> is the left number, you would need to add two numbers. However, if <m>127</m> is the left number, you would need to add seven numbers.
+                       </p>
+                   </li>
+                   
+               </ol>
+               <exercise>
+                   <p>
+                       For each of the algorithms, list some other pros and cons for using them.
+                   </p>
+                   
+               </exercise>
+           </subsection>
+           
+       </subsection>
+        
     </section>
     <section xml:id="sec-DivisionAlgorithms">
         <title>Division Algorithms</title>
-        <p>
-            Partial Quotients
+            <introduction>
+               <p>
+            In this section, we will predominantly talk about only one algorithm, commonly called long division. We will talk about a few other algorithms that are minor variations of the well known long division.
         </p>
+            </introduction>
+        
         <p>
             Standard Algorithm (make sure to talk about regrouping of quotient at the end)
         </p>

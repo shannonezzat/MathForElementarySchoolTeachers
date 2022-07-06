@@ -768,11 +768,44 @@
            <p>Note just like us defining subtraction in terms of something we already knew, we defined divison in terms of multiplication and addition. So we're on solid footing here; if we ever forget what division means, we just look up this definition which is in terms of multiplication and addition, which, if we forget, we can look up the definition of those too. This seems like it's overkill for such simple concepts (and it is in a way) but this is how mathematicians think about concepts so it's good practice to do this for easy and intuitive ideas like arithmetic. 
        </p>
        <p>
-           We can also view the division <m>a \div b</m> as the number of groups of size <m>b</m> you can make out of <m>a</m> objects. Let's look at <m>43 \div 4</m>.
+           We can also view the division <m>a \div b</m> as the number of groups of size <m>b</m> you can make out of <m>a</m> objects. This is called the <term>measurement model of division.</term> Let's look at <m>43 \div 4</m>.
        </p>
        <p>
            INSERT PIC OF DIVISION BY GROUPING
        </p>
+       <p>
+           The division <m>a \div b</m> can be viewed in another way as well; we can ask if we wish to partition <m>a</m> objects into <m>b</m> groups, how many objects are in each group? This is called the <term>partitive model of division</term> (the word "partitive" being related to the idea of a partition). Again, we look at <m>43 \div 4</m> using this model
+       </p>
+<p>
+           INSERT PIC OF DIVISION INTO GROUPS
+       </p>
+       <exercise>
+          <p> Which of the following is viewing division using the measurement model, and which is viewing division using the partitive model? </p>
+          <ol>
+              <li>
+                  <p>
+                      You wish to divide <m>43</m> students into <m>4</m> equal sized groups? How many students are in each group, and how many students are left over?
+                  </p>
+              </li>
+              <li>
+                  <p>
+                      You wish to divide <m>43</m> students into groups of size <m>4</m>. How many groups can you make, and how many students are left over?
+                  </p>
+              </li>
+          </ol>
+          <solution>
+              <p>
+                  This is partitive, since the size of the groups is unknown, but the number of groups is fixed.
+              </p>
+          </solution>
+          <solution>
+              <p>
+                  This is measurement, since the size of the groups is fixed, but the number of groups is unknown.
+              </p>
+          </solution>
+       </exercise>
+       
+
        <assemblage xml:id="assemblage-DivUnique">
            <title>Notes for Additional Understanding</title>
            <p>
