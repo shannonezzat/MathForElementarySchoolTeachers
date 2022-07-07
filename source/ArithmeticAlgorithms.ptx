@@ -1493,7 +1493,128 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
             In this section, we will predominantly talk about only one algorithm, commonly called long division. We will talk about a few other algorithms that are minor variations of the well known long division.
         </p>
             </introduction>
-        
+        <subsection xml:id="subsec-LongDivision">
+            <title>Long Division</title>
+            <p>
+               Consider the division problem <m>a \div b</m> where <m>a,b \in mathbb{N}.</m> The idea behind <term>long division</term> uses the partitive mode of division along with the idea of place value. Starting with the largest place value of the dividend <m>a</m>, we group as many of those place into <m>b</m> groups. Any of that place value remaining we ungroup into the next largest place value. Let's write this as an algorithm:
+            </p>
+
+            <ol>
+                <li>
+                    <p>
+                        Write the division <m>a \div b</m> with the dividend <m>a</m> under the "long division" symbol, and the divisor <m>b</m> directly to the left.
+                    </p>
+                    <p>
+                        INSERT PIC OF THIS
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Starting with the largest place value in <m>a</m>, group as many of that place as possible evenly into <m>b</m> groups. Write the number in each group above the place value you are working with. Note that you may have some of that place value remaining.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Subtract the number you were able to group from the total of that place value to determine your palce remainder. Do this subtraction below the dividend.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If the current place value is the ones place, you have finished. The remaining ones are your <m>remainder</m> for the calculation, and the number above the dividend is the <m>quotient</m>. Otherwise, ungroup the place remainder into the next place value to the right and add these to the place to the right. Go to Step 2. 
+                    </p>
+                </li>
+            </ol>
+            <p>
+                Let's do an example to see how this works.
+            </p>
+            <example>
+                <p>
+                    Let's do the calculation <m>587 \div 4</m>. We write this using the long division symbol. We think of <m>4</m> as the number of groups we are making (using the partitive model of division). 
+                </p>
+                <p>
+                    INSERT PIC OF THIS, ALONG WITH BLOCKS TOO
+                </p>
+                <p>
+                    Starting with the hundreds place, we find that we can group at most one hundred evenly into each of our four groups. We note this in the quotient by putting a <m>1</m> in the hundreds place. We have <m>5-4=1</m> hundred remaining.
+                </p>
+                <p>
+                    INSERT PIC OF THIS, ALONG WITH GROUPING
+                </p>
+                <p>
+                    Now we "ungroup" our one hundred into 10 tens, giving us <m>10+8=18</m> tens. We note this in our calculation by "bringing down" the <m>8</m> tens in the dividend.
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+                <p>
+                    Now, we can evenly divide our <m>18</m> tens so that <m>4</m> are in each group, with <m>2</m> tens remaining (since <m>18=4 \times 4 +2</m>, or <m>18 \div 4 = 4R2</m>.) We write the <m>4</m> in the tens place of the quotient, and we have <m>18-4 \times 4=18-16=2</m> tens remaining. We write this down in our calculation.
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+                <p>
+                    We "ungroup" the <m>2</m> tens into <m>20</m> longs giving us <m>20+7 = 27 </m> longs. We write this in our calculation.
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+                <p>
+                    Finally, we can divide our <m>27</m> ones so that <m>6</m> are in each group of <m>4</m>. We write this in our quotient and since <m>27 \div 4 = 6R3</m> we have <m>3</m> ones remaining. Since we are at the ones place we are finished our calculation, and thus <m>587 \div 4 = 146R3</m>. Each group of <m>4</m> contains <m>146</m> with <m>3</m> ones unable to be grouped evenly.
+                </p>
+                <p>
+                    INSERT PIC OF THIS
+                </p>
+            </example>
+
+        </subsection>
+        <subsection xml:id="subsec-LongDivisionBaseTwelve">
+            <title>Long Division Base Twelve</title>
+            <p>
+                Just like our other algorithms, we can perform division in any base we like. Let's do an example in base twelve. For this section, all numbers will be in base twelve even without the subscript indicating so, though sometimes it will be included for clarity.
+            </p>
+
+            <example>
+               <p> Let's do the base twelve division computation <m>54A87 \div A.</m>. Remember here that <m>A</m> is our symbol for "ten". Our base twelve multiplication table will help a lot, so we include it here for easy reference:
+               </p>
+               <p>
+                   INCLUDE BASE TWELVE TIMES TABLE
+               </p>
+               <p>
+                   We write down our dividend and divisor in the appropraite locations. Now we perform the algorithm. We start at the <m>10^4_{twelve}</m> place (a long made of cubes) and ask "if we have 5 of this place, how many can be evenly divided among ten groups." We do not have enough to put any in the groups, so we put a zero in the quotient above this place (however, we don't need to explicity write it since we do not write whole numbers starting with a zero). We have grouped <m>0 \times A = 0 </m> of this place, and have <m>5-0=0</m> remaining.
+               </p>
+               <p>
+                   INSERT PIC OF THIS
+               </p>
+               <p>
+                   Each of this place can be ungrouped to twelve (that is <m>10_{twelve}</m>) of the place to the right. So we ungroup these to have <m>5 \times 10 + 4 = 54</m> of the next place value, which is <m>10^3_{twelve}</m> (that is, cubes). Similarly we ask "if we have <m>54_{twelve}</m> of this place, how many can be evenly divided among ten groups?" Using our multiplication table we see that <m>6 \times A = 50</m> and <m>7 \times A = 5A</m> thus the most we can put in our groups is <m>6</m> cubes. Thus we have grouped <m>6 \times A = 50</m> and have <m>54-50 = 4</m> cubes remaining. 
+                   </p>
+                   <p>
+                       INSERT PIC OF THIS
+                   </p>
+                   <p>
+                       We now ungroup these <m>4</m> cubes into forty-eight, or <m>40_{twelve}</m> squares and add these to the <m>A</m> squares we originally have. Similarly, since <m>5 \times A = 42</m> and <m>6 \times A = 50</m> we know that we can evenly put <m>5</m> squares in each of our <m>A</m> groups, and we have <m>4A-42=8</m> squares remaining.
+                   </p>
+                   <p>
+                       INSERT PIC OF THIS
+                   </p>
+                   <p>
+                       We ungroup these <m>8</m> squares to make ninety-six (or <m>80_{twelve}</m>) longs. Adding our original <m>8</m> longs we have <m>80+8==88</m> longs. Similarly to the previous places, we know <m>A \times A = 84</m> and <m>B \times A = 92</m> so we can evenly put <m>A</m> longs in each of our <m>A</m> groups, and we have <m>88-84=4</m> remaining.
+                   </p>
+                   <p>
+                       INSERT PIC OF THIS
+                   </p>
+                   <p>
+                       Finally, we ungroup these <m>4</m> longs to make <m>40_{twelve}</m> ones. Adding our original <m>7</m> ones we have <m>47</m> ones in total. Since <m>5 \times A = 42</m> and <m>6 \times A = 50</m> we know that we can evenly put <m>5</m> ones in each of our <m>A</m> groups, and we have <m>47-42=5</m> remaining. We have reached the ones place, so we are finished. Thus <m>54A87 \div A = 65A5R5.</m>
+
+                   </p>
+                   <p>
+                       INSERT PIC OF THIS
+                   </p>
+            </example>
+
+
+
+        </subsection>
         <p>
             Standard Algorithm (make sure to talk about regrouping of quotient at the end)
         </p>
