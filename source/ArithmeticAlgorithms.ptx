@@ -1496,7 +1496,11 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <subsection xml:id="subsec-LongDivision">
             <title>Long Division</title>
             <p>
-               Consider the division problem <m>a \div b</m> where <m>a,b \in mathbb{N}.</m> The idea behind <term>long division</term> uses the partitive mode of division along with the idea of place value. Starting with the largest place value of the dividend <m>a</m>, we group as many of those place into <m>b</m> groups. Any of that place value remaining we ungroup into the next largest place value. Let's write this as an algorithm:
+               Consider the division problem <m>a \div b</m> where <m>a,b \in mathbb{N}.</m> The idea behind <term>long division</term> uses the partitive mode of division along with the idea of place value. Starting with the largest place value of the dividend <m>a</m>, we group as many of those place into <m>b</m> groups. Any of that place value remaining we ungroup into the next largest place value. 
+               
+               A quick note: remember from the Quotient Remainder Theorem that remainders are always between <m>0</m> and <m>b-1</m> (inclusive) so we know each remainder in our calculation, which we will call a <m>place remainder</m>, must be within this range. 
+               
+               Let's write the above as an algorithm:
             </p>
 
             <ol>
@@ -1510,7 +1514,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 </li>
                 <li>
                     <p>
-                        Starting with the largest place value in <m>a</m>, group as many of that place as possible evenly into <m>b</m> groups. Write the number in each group above the place value you are working with. Note that you may have some of that place value remaining.
+                        Starting with the largest place value in <m>a</m>, group as many of that place as possible evenly into <m>b</m> groups. Write the number in each group above the place value you are working with (we call this the <term>partial quotient</term> of the place). Note that you may have some of that place value remaining.
                     </p>
                 </li>
                 <li>
@@ -1566,6 +1570,33 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 </p>
             </example>
 
+           <p>
+               It may be the case that our divisor <m>b</m> is not a single digit. In these cases, we don't usually know our "<m>b</m> times tables" but we can use our estimation and trial-and-error skills to determine the correct number of places in each group. Let's do a quick example to see this in action:
+           </p>
+           <example>
+               <p>
+                   Let's do <m>986 \div 23</m>. Now, we don't know our <m>23</m> times tables, so we are going to have to estimate. Let's write our calculation in the correct long divison form, and note that we won't include the block representation here, but it is worth using this representation if we need some visual guidance:
+               </p>
+            <p>
+                INSERT PIC OF THIS
+            </p>
+            <p>
+                Now, we know that we cannot group <m>9</m> hundreds evenly among <m>23</m> groups, so we ungroup these into tens, giving us <m>94</m> tens in total. We know that <m>23</m> is close to <m>20</m>, so we can use multiples of <m>20</m> as an estimation for the correct hundreds quotient. We know <m>4 \times 20 = 80</m> and <m>5 \times 20 = 100</m>, so let's see if we can put at most <m>4</m> tens evenly in each of our <m>23</m> groups: <m>4 \times 23 = 92</m> and <m>5 \times 23 = 115</m>, so <m>4</m> is the correct partial quotient. Subtracting, we find that we have a remainder of <m>6</m>.
+            </p>
+            <p>
+                INSERT PIC OF THIS
+            </p>
+            <p>
+                Ungrouping these <m>6</m> tens into ones gives us <m>66</m> ones in total. Using a similar procedure to before, we find that <m>2 \times 23 = 46</m> and <m>3 \times 23 = 69</m> so our ones quotient is <m>2</m> with a remainder of <m>66-46=20</m>. 
+            </p>
+            <p>
+                INSERT PIC OF THIS
+            </p>
+            <p>
+                Thus we have calculated that <m>986 \div 23 = 42R20</m>. 
+            </p>
+           </example>
+
         </subsection>
         <subsection xml:id="subsec-LongDivisionBaseTwelve">
             <title>Long Division Base Twelve</title>
@@ -1615,12 +1646,25 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
 
 
         </subsection>
-        <p>
-            Standard Algorithm (make sure to talk about regrouping of quotient at the end)
-        </p>
-        <p>
-           Discussion of pros-cons and relationships 
-        </p>
+        
+        <subsection xml:id="subsec-ShortDivision">
+            <title>ShortDivision</title>
+            <p>
+                There is another, slighly more encapsulated method of doing division. Essentially it is the same as long division, except we do the subtractions in our head and put the partial remainders above the digit in the place to the right. This gets a bit cumbersome if we have a large divisor (even greater than a single digit divisor can get tricky unless you're very comfortable with mental arithmetic). However, it's great for single digit divisors. We call this <term>short division</term>.
+            </p>
+            <p>
+                Rather than explaining short division in any depth, doing our previous long division problem using short division, aling with the preceding explanation, should be instructive enough.
+            </p>
+            <example>
+                <p>
+                    Let's do the calculation <m>587 \div 4</m> using short division. We will simply show the calculation here, and this should be enough to understand once we're reminded that the "carried" numbers that appear are the partial remainders from long division. 
+                </p>
+                <p>
+                    INCLUDE PIC OF LONG AND SHORT DIVISION, CIRCLING THE COMMON REMAINDERS IN BOTH CALCULATIONS
+                </p>
+            </example>
+        </subsection>
+        
     </section>
 
 </chapter>
