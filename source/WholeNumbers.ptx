@@ -1075,13 +1075,121 @@
         <title>Consequences of Properties</title>
         <subsubsection xml:id="subsubsec-RelatedSubtractionandDivisionProblems">
             <title>Related Subtraction and Division Problems</title>
+           <p>
+               Using the definitions of subtraction and division (in terms of addition and multiplication, respectively) and the property of commutativity, if we know the answer to one subtraction or division problem (with a remainder of <m>0</m>), we know the answer to another related subtraction or division problem. 
+           </p> 
+
+           <p>
+               Let's explore this with a few examples first (which is always a good idea), and then we can think about what is happening in general.
+           </p>
+           <example>
+               <p>
+                   Consider the subtraction problem <m>11-4=7</m>. Intuitively, we are taking away <m>4</m> from <m>11</m> to leave <m>7</m>. However, there is no real difference between the ideas of "taking away" and "leaving". We're simply separating <m>11</m> into two groups; one of size <m>4</m> and one of size <m>7</m>.
+               </p>
+               <p>
+                   INSERT PIC HERE
+               </p>
+               <p>
+                  So <m>4</m> and <m>7</m> are playing similar roles here. We can see this in the definition of addition: we know <me>11-4 = 7</me> since <m>7</m> is the number such that <m>11 = 4+7</m>. However, we can use the idea of commutativity to swap the <m>4</m> and <m>7</m>: <me> 11=7+4</me> and thus <m>4</m> can be viewed as the number, when added to <m>7</m>, to have a sum of <m>11</m>. This is the definition of the subtraction problem <me>
+                      11-7=4.
+                  </me> So we have two related subtraction problems, <m>11-4=7</m> and <m>11-7=4</m>.
+                   
+                   
+               </p>
+
             
+           </example>
+
+           <example>
+               <p>
+                   Now consider the division problem <m>15 \div 5 = 3</m>. This means that <m>3</m> is the number such that <me>15 = 3 \times 5</me> (note there is no remainder here so we don't have to worry about that part of division). Like the previous example, we can use commutativity to swap the <m>3</m> and <m>5</m>: <me>
+                       15 = 5 \times 3.
+                   </me>
+                   Thus we can view <m>5</m> as the number, when multiplied by <m>3</m>, to give you a product of <m>15</m> and thus <me>
+                       15 \div 3 = 5.
+                   </me>
+                   
+               </p>
+
+                <p>
+                    INSERT PIC OF DIVIDING 15 DOTS BY 5, AND BY 3 (vertical and horizontal groupings should do)
+                </p>
+
+                <p>
+                    Thus we have two related division problems: <m>15 \div 5 = 3</m> and <m>15 \iv 3 = 5</m>.
+                </p>
+               
+           </example>
+
+           <p>
+               If we look (somewhat) carefully at the last two examples, we notice that there is nothing special about any of the numbers in the examples; the important part in the first example is splitting the top number of the subtraction into two parts, and in the second example it's grouping our dividend horizontally and vertically (in the area model of division). We can generalize this idea to any numbers being subtracted or divided (in the case of division, with remainder of 0) using the exact logic of above. Let's write these out as theorems below. It's a good idea to try and prove these ourselves before looking at the proof given.
+           </p>
+
+
+
+           <theorem xml:id="thm-RelatedSubtraction">
+               <statement>
+                   <p>
+                       Let <m>a,b,c \in \mathbb{N}_0</m>. If<m>a-b=c</m> then <m>a-c=b</m>.
+                   </p>
+               </statement>
+               <proof>
+                   <p>
+                       Let's assume the if-part of the conditional statement is true. Assume that <m>a-b=c</m>. Using the definition of subtraction, this means that <m>a=b+c</m>.
+                   </p>
+                   <p>
+                       We wish to show that <m>a-c=b</m>. Let's keep that in our mind so that we know where we are working to.
+                   </p>
+                   <p>
+                       Since we know that <m>a=b+c</m>, using commutativity of addition we have that <m>a=c+b</m>. By the definition of subtraction, this means that <m>a-c=b</m>. Thus we have shown what we wanted to show.
+                   </p>
+               </proof>
+           </theorem>
+
+            <p>
+                The proof for division is very similar to the subtraction proof. If you have looked at the proof for subtraction, see if you can modify it to be a proof for the division result.
+            </p>
+
+           <theorem xml:id="thm-RelatedDivision">
+               <statement>
+                   <p>
+                       Let <m>a,b,c \in \mathbb{N}_0</m>. If<m>a \div b=c</m> (with a remainder of <m>0</m>) then <m>a \div c=b</m>.
+                   </p>
+               </statement>
+               <proof>
+                   <p>
+                       Let's assume the if-part of the conditional statement is true. Assume that <m>a \div b=c</m>. Using the definition of division, this means that <m>a=b \times c</m>.
+                   </p>
+                   <p>
+                       We wish to show that <m>a \div c=b</m>. Let's keep that in our mind so that we know where we are working to.
+                   </p>
+                   <p>
+                       Since we know that <m>a=b \times c</m>, using commutativity of multiplication we have that <m>a=c \times b</m>. By the definition of subtraction, this means that <m>a \div c=b</m>. Thus we have shown what we wanted to show.
+                   </p>
+               </proof>
+           </theorem>
+
+           <exercise>
+               <p>
+                   The previous theorem had the condition that we had a remainder of <m>0</m>. Show that this needs to be the case; that is, find a counterexample to: 
+               </p>
+
+               <p>
+                   "If <m>a \div b = cRr</m>, where <m>r \neq 0</m> then <m>a \div c = bRr</m>". 
+               </p>
+
+               <p>
+                   Try a few examples with non-zero remainder. Is it true for other remainders besides zero? Compare the size of the remainder to both <m>b</m> and <m>c</m>.  What needs to be true about the remainder for the above conditional statement to be true? Write down a modified conditional statement that is always true. Prove that you are correct.
+               </p>
+
+               
+           </exercise>
+           
+           
         
         
     
-    <p>
-        SECTION ON Build up if <m>a-b=c</m> then <m>a-c=b</m> and if <m>a\div b=c</m> then <m>a \div c = b</m>.
-    </p>
+    
     </subsubsection>
     <subsubsection xml:id="subsubsec-MultiplicationandDivisionByZero">
         <title>Multiplication By Zero</title>
@@ -1117,59 +1225,7 @@
 
     </example>
     </subsubsection>
-    <subsubsection xml:id="subsubsec-RelatedSubtractionAndDivisionProblems">
-        <title>Related Subtraction And Division Problems</title>
-        <p>
-            It's quite intuitive to understand that since, for example, <m>7-4=3</m>, we immediately know the related subtraction problem <m>7-3 = 4</m>. And, in general, if <m>a-b=c</m> we know that <m>a-c=b</m>. 
-        </p>
-        <p>
-            INSERT PIC OF THESE USING EITHER NUMBERLINE OR OBJECTS
-        </p>
-        <p>
-            The picture above is basically a proof of this fact, but let's show that this always holds in general for every subtraction problem using our careful definition of subtraction.
-        </p>
-        <theorem xml:id="thm-SubtractionRelated">
-            <statement>
-                <p>
-                    For whole numbers <m>a,b,c</m> if <m>a-b=c</m> then <m>a-c=b</m>.
-                </p>
-            </statement>
-            <proof>
-                <p>
-                    Assume that the if-part is true; that is <m>a-b=c</m>. By the definition of subtraction, we know that this means that <m>a=b+c</m>. Now, by using commutativity of addition we can write this as <m>a = c+b</m>, which, by the definition of subtraction, is the same as the subtraction problem <m>a-c=b</m>.
-                </p>
-            </proof>
-        </theorem>
-        <p>
-            We can do a similar argument for division when there is no remainder, that is <m>r=0</m> in the equation <m>a \div b = q Rr</m>. This, of course, means that <m>b</m> divides evenly into <m>a</m> with nothing remaining. Let's first look at the example <m>84 \div 7 =12</m> and <m>84 \div 12 =7</m> pictorally;
-        </p>
-        <p>
-            INSERT PIC OF THE ABOVE EXAMPLE
-        </p>
-        <theorem xml:id="thm-DivisionRelated">
-            <statement>
-                <p>
-                    For whole numbers <m>a,b,c</m> with <m>b,c \neq 0</m> if <m>a \div b=c</m> then <m>a \div c=b</m>.
-                </p>
-            </statement>
-            <proof>
-                <p>
-                    This is left as an exercise for you. Try and draw a general picture in the same style of the subtraction picture, and then try to show this algebraically using the definition of division (with a remainder of zero)
-                </p>
-            </proof>
-        </theorem>
-        <assemblage xml:id="assemblage-DivisionNote">
-            <title>Notes for Additional Understanding</title>
-            <p>
-                If we have a remainder that isn't zero, things get a little more complicated. For example, look at the division equation <m>64 \div 40 = 1R24</m>, but since our remainder is quite large (notably it's bigger than our quotient) the related problem <m>64 \div 1</m> obviously does not equal <m>24</m>. 
-            </p>
-            <p>
-                As a challenge problem, see if you can come up with a general result when <m>a \div b = qRr</m> relating to <m>a \div q</m>. 
-            </p>
-        </assemblage>
-        
-        
-    </subsubsection>
+    
     
     </subsection>
 </section>
