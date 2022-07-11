@@ -20,12 +20,32 @@
     </definition>
      <example>
         <p>
-            INCLUDE EXAMPLES OF EQUALITY HERE! LEAD TOWARDS SUBSTITUTION
+        Here are a few examples stating what we mean. 
+            <ol>
+                <li>
+                    <p>
+                        <m>2+3=1+4</m>. This means that these two expressions are the same number (in this case <m>5</m>) written in different ways.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Another important and common example is equality of fractions. We will explore this more later in the book, but we know that <m>/frac{1}{2} = \frac{2}{4}</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If we write <m>x=7</m>, this means that whenever we see the quantity <m>x</m> again in our problem, we can say that it is the same as the number <m>7</m>. Thus we can "substitute" <m>7</m> for <m>x</m> whenever we like.
+                    </p>
+                </li>
+            </ol>
         </p>
     </example>
 
     <p>
-        INCLUDE SECTION ON BALANCE MODEL
+        A good idea is to think of equality as a balance. If both sides are equal, then the balance will be balanced; neither side will be heavier than the other.
+    </p>
+    <p>
+        INSERT PIC OF BALANCE
     </p>
     <p>
         There are a few properties of equality that are important and intuitive, but for completeness we write them down here:
@@ -66,7 +86,7 @@
     <subsection xml:id="subsec-MorePropertiesOfEquality">
         <title>More Properties Of Equality</title>
         <p>
-            The most important property of equality when doing mathematics is that you can always <m>substitute</m> one expression for another equal to it. In fact, this is how many algebraic equations are solved, and arithmetic expressions simplified. We regularly do this whenever we simplify an arithmetic expression, but many of us do not realize we are doing a substitution when we do it! For example, if we are calculating the expression <m>4 \times 7 - 3</m>, we know that <m>4 \times 7 = 28</m>. Since these two quantities equal each other, we can substitute <m>28</m> any time we see the expression <m>4 \times 7</m>. Doing this, we get <m>28-3</m>, and we know that <m>28-3=25.</m> So, putting it all together we have that <m>4 \times 7 -3 = 25</m>. We can view this idea using the balance model descibed above: 
+            The most important property of equality when doing mathematics is that you can always <term>substitute</term> one expression for another equal to it. In fact, this is how many algebraic equations are solved, and arithmetic expressions simplified. We regularly do this whenever we simplify an arithmetic expression, but many of us do not realize we are doing a substitution when we do it! For example, if we are calculating the expression <m>4 \times 7 - 3</m>, we know that <m>4 \times 7 = 28</m>. Since these two quantities equal each other, we can substitute <m>28</m> any time we see the expression <m>4 \times 7</m>. Doing this, we get <m>28-3</m>, and we know that <m>28-3=25.</m> So, putting it all together we have that <m>4 \times 7 -3 = 25</m>. We can view this idea using the balance model descibed above: 
         </p>
         <p>
             INCLUDE PIC OF BALANCE MODEL
@@ -81,13 +101,71 @@
             Another important property to equality is that two expressions remain equal when we do the same arithmetic operations to them. For example, if we know <m>a=b</m> we can subtract 5 from both of these and the resulting expressions equal: <m>a-5=b-5</m>. </p>INSERT BALANCE PIC HERE<p> Or, we could divide both sides by 2, and then <m>a \div 2 = b \div 2</m>. </p>INSERT BALANCE PIC HERE<p> This is an incredibly powerful idea that allows us to solve equations for a unknown quantities.
         </p>
         <p>
-            Together, the next section will talk about how the above properties of equality allow us to solve equations using two methods. 
+            The next example will talk about how the above properties of equality allow us to solve equations using two methods. 
         </p>
 
+      <example>
+          <p>
+              Suppose we know that Angela is thirty years younger than her father. Also, that in ten years, Angela will be half the age of her father at that time. Let's determine Angela's current age, and her father's current age.          </p>
+
+              <p>
+                  First, we ask "what quantities are we interested in, but are unknown?". In this example, we are interested in Angela's current age and her father's current age. To help us write these algebraically, let's give these quantities variable names (and we need to be specific about what these variables stand for, so that readers, and ourselves, do not get confused.)
+              </p>
+              <p>
+                  Let <m>A := </m> Angela's current age (in years), and let <m>F := </m> Angela's father's current age (in years).
+              </p>
+              <p>
+                  Since Angela is thirty year's younger than her father, we need to think about how to translate this to an algebraic statement. We can think of trying to reword this sentence to have the concept of equality in it. For example, we could say "Angela's age plus thirty years is the same age as her father" or "If you subtract thirty years from her father's age, it will be Angela's age" or something else. Using the first rewording, we can make the algebraic equation
+              </p>
+              <me>
+                  A+30 = F.
+              </me>
+              <p>
+                  For the second sentence, we need to be careful; remember that this holds in ten years time. So Angela's age in ten years is <m>A+10</m> and her father's is <m>F+10</m>. Now we know that in ten years, Angela will be half the age of her father, which means if you double her age then, it will be equal to her father's age. So we can write
+              </p>
+              <me>
+                  2 \times (A+10) = F+10.
+              </me>
+
+              <p>
+                  Now, in our problem both equations are things that are true, so we can use both at the same time. Here we can use substitution to replace the <m>F</m> in the second equation with <m>A+30</m> since these quantities equal in the first equation. This way, we will end up with an equation with only one unknown/variable, which we can solve using the properties of arithmetic of equal expressions.
+              </p>
+              <me>
+                  2 \times (A+10) = (A+30)
+              </me>
+              <p>
+                  Expanding the bracket on the left hand side:
+              </p>
+              <me>
+                  2A+20 = A+30
+              </me>
+              <p>
+                  Subtracting <m>A</m> and <m>20</m> from both sides (this will have our variable only on one side and our constants only on the other)
+              </p>
+              <me>
+                  A = 10
+              </me>
+              <p>
+                  So we know that Angela's current age is <m>10</m> years old. We can then use the first equation to find her father's current age using substitution again:
+              </p>
+              <me>
+                  (10) + 30 = F
+              </me>
+              <me>
+                  40 = F
+              </me>
+              <p>
+                  and thus Angela's father's current age is <m>40</m> years old.
+              </p>
+              
+              
+              
+              
+              
+              
+              
+      </example>
        
-        <p>
-            HOW TO USE SUBSTITUTION AND ELIMINATION (not in detail, but a little bit?)
-        </p>
     </subsection>
     </section>
 <section xml:id="sec-ProblemSolving">
