@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-12T09:47:56-03:00       *-->
+<!--*       on 2022-07-12T11:50:28-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -138,37 +138,77 @@
 <span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Problem Solving</span>
 </h2>
 <section class="introduction" id="introduction-6"><p id="p-430">In order to solve problems, it helps to be comfortable solving algebraic equations. In this section we will first talk about solving algebraic equations of a certain type (called linear equations), solving multiple linear equations at the same time, and then talking about some problem solving strategies that you can use to try and get a handle on a problem where the answer and/or approach isn't immediately obvious.</p>
-<p id="p-431">First, let's give a careful definition of the types equations we wish to solve. For this section, all coefficients of variables</p>
-<article class="definition definition-like" id="def-coefficient"><h3 class="heading">
+<p id="p-431">First, let's give a careful definition of the types equations we wish to solve. For this section, all coefficients of variables will be integers (that is, positive or negative whole numbers) but some of the solutions to our equations may be rational numbers. In general, these techniques will work with any real numbers in most situations.</p>
+<article class="definition definition-like" id="def-TermsEtc"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span>
 </h3>
-<p id="p-432">A <dfn class="terminology">coefficient</dfn> of a term with that includes a variable is the number that variable is multiplied by.</p>
+<p id="p-432">A <dfn class="terminology">term</dfn> is a product of (zero or more) variables and a number (if there is more than one number, these can be multiplied together to get one number).</p>
+<p id="p-433">A <dfn class="terminology">coefficient</dfn> of a term that includes a variable is the number that variable is multiplied by.</p>
+<p id="p-434">Numbers not multiplied by variables are called <dfn class="terminology">constants.</dfn></p>
+<p id="p-435">An <dfn class="terminology">expression</dfn> is the sum or difference of terms.</p>
+<p id="p-436">An <dfn class="terminology">equation</dfn> is two equal expressions with an equal sign between them.</p>
+<p id="p-437">To <dfn class="terminology">solve</dfn> an equation for a variable <span class="process-math">\(x\)</span> means to perform arithemtic operations on both sides of the equation (while maintaining equality) so that the equation is now in the form <span class="process-math">\(x = \ldots\text{.}\)</span> Note that if there is only one variable, specifying the variable is usually omitted.</p>
 <article class="example example-like" id="example-24"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-24"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-24"><article class="example example-like"><p id="p-433">Consider <span class="process-math">\(3x+4= 5-6x\text{.}\)</span> In the term <span class="process-math">\(3x\)</span> the coefficient is <span class="process-math">\(3\text{,}\)</span> and in <span class="process-math">\(-6x\)</span> the coefficient is <span class="process-math">\(-6\)</span> (here, we are viewing <span class="process-math">\(5-6x\)</span> as <span class="process-math">\(5+(-6)x\text{.}\)</span> We will be more precise about this later in the book.)</p>
-<p id="p-434">Sometimes we can have unknown coefficients even in terms with variables, but we specify that these are indeed coefficients. For example, we could have the expression <span class="process-math">\(ax+by\)</span> where we are thinking of <span class="process-math">\(x,y\)</span> as our variables and <span class="process-math">\(a,b \in \mathbb{N}\)</span> as our coefficients.</p></article></div></article><article class="definition definition-like" id="def-LinearEquation"><h3 class="heading">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-24"><article class="example example-like"><p id="p-438">Consider the equation <span class="process-math">\(3x+4= 5-6x\)</span> which is made of two expressions, <span class="process-math">\(3x+4\)</span> and <span class="process-math">\(5-6x\)</span> . In the term <span class="process-math">\(3x\)</span> on the left hand side (or LHS) of the coefficient is <span class="process-math">\(3\text{,}\)</span> and in the term <span class="process-math">\(-6x\)</span> on the right hand side (or RHS) of the equation the coefficient is <span class="process-math">\(-6\)</span> (here, we are viewing <span class="process-math">\(5-6x\)</span> as <span class="process-math">\(5+(-6)x\text{.}\)</span> We will be more precise about this later in the book.)</p>
+<p id="p-439">Sometimes we can have unknown coefficients even in terms with variables, but we specify that these are indeed coefficients. For example, we could have the expression <span class="process-math">\(ax+by\)</span> where we are thinking of <span class="process-math">\(x,y\)</span> as our variables and <span class="process-math">\(a,b \in \mathbb{N}\)</span> as our coefficients.</p></article></div></article><article class="definition definition-like" id="def-LinearEquation"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span>
 </h3>
-<p id="p-435">An equation over one (or more) variables is called a <dfn class="terminology">linear equation</dfn> exactly when every term of the equation has at most one variable in it, and that variable has an exponent of <span class="process-math">\(1\text{.}\)</span></p>
+<p id="p-440">An equation over one (or more) variables is called a <dfn class="terminology">linear equation</dfn> exactly when every term of the equation has at most one variable in it, and that variable has an exponent of <span class="process-math">\(1\text{.}\)</span></p>
 <article class="example example-like" id="example-25"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-25"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.4</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-25"><article class="example example-like"><p id="p-436"><span class="process-math">\(3x+4 = 6x-7\)</span> is a linear equation since each term has (at most) one copy of <span class="process-math">\(x\text{.}\)</span></p>
-<p id="p-437">Similarly, <span class="process-math">\(3x+4y=7\)</span> is another linear equation since both <span class="process-math">\(3x\)</span> and <span class="process-math">\(4y\)</span> have exactly one copy of <span class="process-math">\(x,y\)</span> in them, and <span class="process-math">\(7\)</span> has no <span class="process-math">\(x\)</span>'s or <span class="process-math">\(y\)</span>'s.</p>
-<p id="p-438">Now a non-example: <span class="process-math">\(3xy-4x^2=6\)</span> is *not* a linear equation. Here there are two problems (onte that just one is enough to disqualify it from being a linear equation): the first term has two variables in it, <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> Also the second term has two copies of <span class="process-math">\(x\)</span> multiplied together, since by the definition of exponents <span class="process-math">\(x^2 = x \times x.\)</span></p></article></div></article></section><section class="subsection" id="subsec-SolvingOneEquation"><h3 class="heading hide-type">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-25"><article class="example example-like"><p id="p-441"><span class="process-math">\(3x+4 = 6x-7\)</span> is a linear equation since each term has (at most) one copy of <span class="process-math">\(x\text{.}\)</span></p>
+<p id="p-442">Similarly, <span class="process-math">\(3x+4y=7\)</span> is another linear equation since both <span class="process-math">\(3x\)</span> and <span class="process-math">\(4y\)</span> have exactly one copy of <span class="process-math">\(x,y\)</span> in them, and <span class="process-math">\(7\)</span> has no <span class="process-math">\(x\)</span>'s or <span class="process-math">\(y\)</span>'s.</p>
+<p id="p-443">Now a non-example: <span class="process-math">\(3xy-4x^2=6\)</span> is *not* a linear equation. Here there are two problems (onte that just one is enough to disqualify it from being a linear equation): the first term has two variables in it, <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> Also the second term has two copies of <span class="process-math">\(x\)</span> multiplied together, since by the definition of exponents <span class="process-math">\(x^2 = x \times x.\)</span></p></article></div></article></section><section class="subsection" id="subsec-SolvingOneEquation"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.2.1</span> <span class="title">Solving One Equation</span>
 </h3>
-<p id="p-439"></p></section><p id="p-440">Solving one equation.</p>
-<p id="p-441">Solving a system of linear equations (using substitution and elimination) - Focus on 2x2 examples, but note that elimination is good for larger systems (that's why it's good to know it!)</p>
-<p id="p-442">Substitution - solve one equation for one variable, and then substitute that in to the other equation.</p>
-<p id="p-443">Elimination - idea: if <span class="process-math">\(A = B\)</span> and <span class="process-math">\(C = D\)</span> we can subtract <span class="process-math">\(C\)</span> from both sides of <span class="process-math">\(A=B\)</span> to get <span class="process-math">\(A-C = B-C\text{.}\)</span> But since <span class="process-math">\(C=D\)</span> we can say <span class="process-math">\(A-C = B-D\text{.}\)</span> Thus we can do arithmetic with "sides" of an equation. + and - are most useful.</p>
-<p id="p-444">How many solutions? One, none, infinitely many? How to tell.</p>
-<p id="p-445">What if the equation is more complicated? Ideas? Trial and error/factoring/etc.</p>
-<p id="p-446">Using technology.</p>
-<p id="p-447">The "work" in solving a problem is setting it up correctly (usually in the language of algebra, but other ways too)</p>
-<p id="p-448"></p>
-<p id="p-449">Some problem solving strategies and techniques. Try to find something "better" than Polya. Include some problems to solve, of course, and try to include problems of a similar difficulty throughout. Discussion on patterns (with reference to if-then statements). INCLUDE EXPLORATION, TRANSLATING INTO ALGEBRA, SHOWING MULTIPLE METHODS.</p>
-<p id="p-450">Translating. Focus on testing with simple examples, defining your variables. Using equality to substitute. Exploration to find formula for situation.</p>
-<p id="p-451">Open ended problems: going from examples to conjecture to "proof". HIGHLIGHT MANY WAYS OF PROVING!</p></section></div></main>
+<p id="p-444">Before we get into the idea of translating a "real world" problem into the language of mathematics, we'll go over some very important skills to solve many of these problems, which is solving linear equations (or systems of equations). Let's start with the simplest of cases: solving one equation with one variable.</p>
+<p id="p-445">Let <span class="process-math">\(x\)</span> be the symbol for our variable, and let <span class="process-math">\(a,b,c,d \in \mathbb{Z}\)</span> be our coefficients. After collecting like terms, any linear equation can be written in the form <span class="process-math">\(ax+b=cx+d\text{.}\)</span> As long as <span class="process-math">\(a \neq c\)</span> we can follow these following steps (called an algorithm) to solve for our variable <span class="process-math">\(x\text{.}\)</span></p>
+<ol class="decimal">
+<li id="li-151">
+<p id="p-446">Subtract <span class="process-math">\(cx\)</span> and <span class="process-math">\(b\)</span> from both sides of the equation. This gives us</p>
+<div class="displaymath process-math">
+\begin{equation*}
+ax+b -cx-b = cx+d -cx - b
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow ax-cx  = d-b 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow (a-c)x=d-b
+\end{equation*}
+</div>
+</li>
+<li id="li-152">
+<p id="p-447">Divide everything on both sides by the coefficient <span class="process-math">\(a-c\text{.}\)</span> This gives us</p>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{(a-c)x}{(a-c)} = \dfrac{(d-b)}{(a-c)}.
+\end{equation*}
+</div>
+<p id="p-448">Cancelling out the <span class="process-math">\(a-c\)</span> we have</p>
+<div class="displaymath process-math">
+\begin{equation*}
+x = \dfrac{(d-b)}{(a-c)}.
+\end{equation*}
+</div>
+</li>
+</ol></section><p id="p-449">Solving one equation.</p>
+<p id="p-450">Solving a system of linear equations (using substitution and elimination) - Focus on 2x2 examples, but note that elimination is good for larger systems (that's why it's good to know it!)</p>
+<p id="p-451">Substitution - solve one equation for one variable, and then substitute that in to the other equation.</p>
+<p id="p-452">Elimination - idea: if <span class="process-math">\(A = B\)</span> and <span class="process-math">\(C = D\)</span> we can subtract <span class="process-math">\(C\)</span> from both sides of <span class="process-math">\(A=B\)</span> to get <span class="process-math">\(A-C = B-C\text{.}\)</span> But since <span class="process-math">\(C=D\)</span> we can say <span class="process-math">\(A-C = B-D\text{.}\)</span> Thus we can do arithmetic with "sides" of an equation. + and - are most useful.</p>
+<p id="p-453">How many solutions? One, none, infinitely many? How to tell.</p>
+<p id="p-454">What if the equation is more complicated? Ideas? Trial and error/factoring/etc.</p>
+<p id="p-455">Using technology.</p>
+<p id="p-456">The "work" in solving a problem is setting it up correctly (usually in the language of algebra, but other ways too)</p>
+<p id="p-457"></p>
+<p id="p-458">Some problem solving strategies and techniques. Try to find something "better" than Polya. Include some problems to solve, of course, and try to include problems of a similar difficulty throughout. Discussion on patterns (with reference to if-then statements). INCLUDE EXPLORATION, TRANSLATING INTO ALGEBRA, SHOWING MULTIPLE METHODS.</p>
+<p id="p-459">Translating. Focus on testing with simple examples, defining your variables. Using equality to substitute. Exploration to find formula for situation.</p>
+<p id="p-460">Open ended problems: going from examples to conjecture to "proof". HIGHLIGHT MANY WAYS OF PROVING!</p></section></div></main>
 </div>
 </body>
 </html>

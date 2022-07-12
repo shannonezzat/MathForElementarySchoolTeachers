@@ -175,29 +175,35 @@
         In order to solve problems, it helps to be comfortable solving algebraic equations. In this section we will first talk about solving algebraic equations of a certain type (called linear equations), solving multiple linear equations at the same time, and then talking about some problem solving strategies that you can use to try and get a handle on a problem where the answer and/or approach isn't immediately obvious. 
     </p>
 <p>
-    First, let's give a careful definition of the types equations we wish to solve. For this section, all coefficients of variables
+    First, let's give a careful definition of the types equations we wish to solve. For this section, all coefficients of variables will be integers (that is, positive or negative whole numbers) but some of the solutions to our equations may be rational numbers. In general, these techniques will work with any real numbers in most situations.
 </p>
 
-<definition xml:id="def-coefficient">
+<definition xml:id="def-TermsEtc">
     <statement>
         <p>
-            A <term>coefficient</term> of a term with that includes a variable is the number that variable is multiplied by.
+           A <term>term</term> is a product of (zero or more) variables and a number (if there is more than one number, these can be multiplied together to get one number). </p><p> A <term>coefficient</term> of a term that includes a variable is the number that variable is multiplied by. </p><p> Numbers not multiplied by variables are called <term>constants.</term> </p><p> An <term>expression</term> is the sum or difference of terms. </p><p> An <term>equation</term> is two equal expressions with an equal sign between them. </p><p> To <term>solve</term> an equation for a variable <m>x</m> means to perform arithemtic operations on both sides of the equation (while maintaining equality) so that the equation is now in the form <m>x = \ldots</m>. Note that if there is only one variable, specifying the variable is usually omitted.
         </p>
 
-
-
-
     </statement>
-
     <example>
         <p>
-            Consider <m>3x+4= 5-6x</m>. In the term <m>3x</m> the coefficient is <m>3</m>, and in <m>-6x</m> the coefficient is <m>-6</m> (here, we are viewing <m>5-6x</m> as <m>5+(-6)x</m>. We will be more precise about this later in the book.)
+            Consider the equation <m>3x+4= 5-6x</m> which is made of two expressions, <m>3x+4</m> and <m>5-6x</m> . In the term <m>3x</m> on the left hand side (or LHS) of the coefficient is <m>3</m>, and in the term <m>-6x</m> on the right hand side (or RHS) of the equation the coefficient is <m>-6</m> (here, we are viewing <m>5-6x</m> as <m>5+(-6)x</m>. We will be more precise about this later in the book.)
         </p>
         <p>
             Sometimes we can have unknown coefficients even in terms with variables, but we specify that these are indeed coefficients. For example, we could have the expression <m>ax+by</m> where we are thinking of <m>x,y</m> as our variables and <m>a,b \in \mathbb{N}</m> as our coefficients.
         </p>
     </example>
 </definition>
+
+
+
+
+
+
+   
+
+    
+
 
 <definition xml:id="def-LinearEquation">
     <statement>
@@ -224,8 +230,47 @@
    <subsection xml:id="subsec-SolvingOneEquation">
        <title>Solving One Equation</title>
        <p>
-           
+          Before we get into the idea of translating a "real world" problem into the language of mathematics, we'll go over some very important skills to solve many of these problems, which is solving linear equations (or systems of equations). Let's start with the simplest of cases: solving one equation with one variable.  
        </p>
+
+       <p>
+           Let <m>x</m> be the symbol for our variable, and let <m>a,b,c,d \in \mathbb{Z}</m> be our coefficients. After collecting like terms, any linear equation can be written in the form <m>ax+b=cx+d</m>. As long as <m>a \neq c</m> we can follow these following steps (called an algorithm) to solve for our variable <m>x</m>.
+       </p>
+       <ol>
+           <li>
+               <p>
+                   Subtract <m>cx</m> and <m>b</m> from both sides of the equation. This gives us 
+                   <me>
+                       ax+b -cx-b = cx+d -cx - b
+                   </me>
+                   <me>
+                        \rightarrow ax-cx  = d-b 
+                   </me>
+                   <me>
+                       \rightarrow (a-c)x=d-b
+                   </me>
+                   
+                   
+                   
+               </p>
+           </li>
+           <li>
+               <p>
+                   Divide everything on both sides by the coefficient <m>a-c</m>. This gives us
+               </p>
+               <me>
+                   \dfrac{(a-c)x}{(a-c)} = \dfrac{(d-b)}{(a-c)}.
+               </me>
+               <p>
+                   Cancelling out the <m>a-c</m> we have
+               </p>
+               <me>
+                   x = \dfrac{(d-b)}{(a-c)}.
+               </me>
+               
+               
+           </li>
+       </ol>
    </subsection>
     <p>
         Solving one equation.
