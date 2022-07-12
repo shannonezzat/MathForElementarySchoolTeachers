@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-12T11:50:28-03:00       *-->
+<!--*       on 2022-07-12T13:26:22-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -197,18 +197,67 @@ x = \dfrac{(d-b)}{(a-c)}.
 \end{equation*}
 </div>
 </li>
-</ol></section><p id="p-449">Solving one equation.</p>
-<p id="p-450">Solving a system of linear equations (using substitution and elimination) - Focus on 2x2 examples, but note that elimination is good for larger systems (that's why it's good to know it!)</p>
-<p id="p-451">Substitution - solve one equation for one variable, and then substitute that in to the other equation.</p>
-<p id="p-452">Elimination - idea: if <span class="process-math">\(A = B\)</span> and <span class="process-math">\(C = D\)</span> we can subtract <span class="process-math">\(C\)</span> from both sides of <span class="process-math">\(A=B\)</span> to get <span class="process-math">\(A-C = B-C\text{.}\)</span> But since <span class="process-math">\(C=D\)</span> we can say <span class="process-math">\(A-C = B-D\text{.}\)</span> Thus we can do arithmetic with "sides" of an equation. + and - are most useful.</p>
-<p id="p-453">How many solutions? One, none, infinitely many? How to tell.</p>
-<p id="p-454">What if the equation is more complicated? Ideas? Trial and error/factoring/etc.</p>
-<p id="p-455">Using technology.</p>
-<p id="p-456">The "work" in solving a problem is setting it up correctly (usually in the language of algebra, but other ways too)</p>
-<p id="p-457"></p>
-<p id="p-458">Some problem solving strategies and techniques. Try to find something "better" than Polya. Include some problems to solve, of course, and try to include problems of a similar difficulty throughout. Discussion on patterns (with reference to if-then statements). INCLUDE EXPLORATION, TRANSLATING INTO ALGEBRA, SHOWING MULTIPLE METHODS.</p>
-<p id="p-459">Translating. Focus on testing with simple examples, defining your variables. Using equality to substitute. Exploration to find formula for situation.</p>
-<p id="p-460">Open ended problems: going from examples to conjecture to "proof". HIGHLIGHT MANY WAYS OF PROVING!</p></section></div></main>
+</ol>
+<p id="p-449">We could just memorize the formula above, but there are so many different situations that arise in mathematics that it isn't feasable to remember everything. However, if you have a strong knowledge of the ideas behind equality and arithmetic of equations, you can recreate this when the need arises.</p>
+<article class="example example-like" id="example-26"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-26"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.5</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-26"><article class="example example-like"><p id="p-450">Let's solve <span class="process-math">\(x+5=8\text{.}\)</span> The easiest way to view this is asking "what number can I add to 5 to get 8". We can formally solve for <span class="process-math">\(x\)</span> here by subtracting 5 from both sides:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+x+5-5=8-5
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow x = 3.
+\end{equation*}
+</div>
+<p class="continuation">We can solve this using the general algorithm above by viewing the equation as <span class="process-math">\(x+5=0x+8\text{.}\)</span> Then <span class="process-math">\(x = \dfrac{8-5}{1-0} = 3.\)</span></p>
+<p id="p-451">We can solve <span class="process-math">\(7(a-4)=4-(4-3a)\)</span> by first expanding out the brackets and then combining like terms so that the equation is in the standard form given in the algorithm:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow 7a-28 = 4-4+3a
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow 7a -28 = 3a.
+\end{equation*}
+</div>
+<p class="continuation">Noting that we can view the RHS of the equation as <span class="process-math">\(3a+0\text{,}\)</span> we can now use our algorithm above, giving us <span class="process-math">\(a = \dfrac{0-(-28)}{7-3} = \dfrac{28}{4} = 7.\)</span></p>
+<p id="p-452">We can check our answers by substituting our solution for the variable and making sure that equality holds. For the second equation we have</p>
+<div class="displaymath process-math">
+\begin{equation*}
+7(7-4) =? 4-(4-3(7))
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow 7(3) =? 4-(4-21)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow 21 =? 4-(-17)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow 21 = 21.
+\end{equation*}
+</div>
+<p class="continuation">Since we do indeed have equality our solution is correct.</p></article></div></section><p id="p-453">Solving one equation.</p>
+<p id="p-454">Solving a system of linear equations (using substitution and elimination) - Focus on 2x2 examples, but note that elimination is good for larger systems (that's why it's good to know it!)</p>
+<p id="p-455">Substitution - solve one equation for one variable, and then substitute that in to the other equation.</p>
+<p id="p-456">Elimination - idea: if <span class="process-math">\(A = B\)</span> and <span class="process-math">\(C = D\)</span> we can subtract <span class="process-math">\(C\)</span> from both sides of <span class="process-math">\(A=B\)</span> to get <span class="process-math">\(A-C = B-C\text{.}\)</span> But since <span class="process-math">\(C=D\)</span> we can say <span class="process-math">\(A-C = B-D\text{.}\)</span> Thus we can do arithmetic with "sides" of an equation. + and - are most useful.</p>
+<p id="p-457">How many solutions? One, none, infinitely many? How to tell.</p>
+<p id="p-458">What if the equation is more complicated? Ideas? Trial and error/factoring/etc.</p>
+<p id="p-459">Using technology.</p>
+<p id="p-460">The "work" in solving a problem is setting it up correctly (usually in the language of algebra, but other ways too)</p>
+<p id="p-461"></p>
+<p id="p-462">Some problem solving strategies and techniques. Try to find something "better" than Polya. Include some problems to solve, of course, and try to include problems of a similar difficulty throughout. Discussion on patterns (with reference to if-then statements). INCLUDE EXPLORATION, TRANSLATING INTO ALGEBRA, SHOWING MULTIPLE METHODS.</p>
+<p id="p-463">Translating. Focus on testing with simple examples, defining your variables. Using equality to substitute. Exploration to find formula for situation.</p>
+<p id="p-464">Open ended problems: going from examples to conjecture to "proof". HIGHLIGHT MANY WAYS OF PROVING!</p></section></div></main>
 </div>
 </body>
 </html>
