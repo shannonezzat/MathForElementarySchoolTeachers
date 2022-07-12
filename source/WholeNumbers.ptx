@@ -170,6 +170,63 @@
     </section>
 <section xml:id="sec-ProblemSolving">
     <title>Problem Solving</title>
+<<introduction>
+     <p>
+        In order to solve problems, it helps to be comfortable solving algebraic equations. In this section we will first talk about solving algebraic equations of a certain type (called linear equations), solving multiple linear equations at the same time, and then talking about some problem solving strategies that you can use to try and get a handle on a problem where the answer and/or approach isn't immediately obvious. 
+    </p>
+<p>
+    First, let's give a careful definition of the types equations we wish to solve. For this section, all coefficients of variables
+</p>
+
+<definition xml:id="def-coefficient">
+    <statement>
+        <p>
+            A <term>coefficient</term> of a term with that includes a variable is the number that variable is multiplied by.
+        </p>
+
+
+
+
+    </statement>
+
+    <example>
+        <p>
+            Consider <m>3x+4= 5-6x</m>. In the term <m>3x</m> the coefficient is <m>3</m>, and in <m>-6x</m> the coefficient is <m>-6</m> (here, we are viewing <m>5-6x</m> as <m>5+(-6)x</m>. We will be more precise about this later in the book.)
+        </p>
+        <p>
+            Sometimes we can have unknown coefficients even in terms with variables, but we specify that these are indeed coefficients. For example, we could have the expression <m>ax+by</m> where we are thinking of <m>x,y</m> as our variables and <m>a,b \in \mathbb{N}</m> as our coefficients.
+        </p>
+    </example>
+</definition>
+
+<definition xml:id="def-LinearEquation">
+    <statement>
+        <p>
+            An equation over one (or more) variables is called a <term>linear equation</term> exactly when every term of the equation has at most one variable in it, and that variable has an exponent of <m>1</m>.
+        </p>
+        
+    </statement>
+
+    <example>
+            <p>
+                <m>3x+4 = 6x-7</m> is a linear equation since each term has (at most) one copy of <m>x</m>.
+            </p>
+            <p>
+                Similarly, <m>3x+4y=7</m> is another linear equation since both <m>3x</m> and <m>4y</m> have exactly one copy of <m>x,y</m> in them, and <m>7</m> has no <m>x</m>'s or <m>y</m>'s.
+            </p>
+            <p>
+                Now a non-example: <m>3xy-4x^2=6</m> is *not* a linear equation. Here there are two problems (onte that just one is enough to disqualify it from being a linear equation): the first term has two variables in it, <m>x</m> and <m>y</m>. Also the second term has two copies of <m>x</m> multiplied together, since by the definition of exponents <m>x^2 = x \times x.</m>
+            </p>
+        </example>
+</definition>
+
+</introduction>
+   <subsection xml:id="subsec-SolvingOneEquation">
+       <title>Solving One Equation</title>
+       <p>
+           
+       </p>
+   </subsection>
     <p>
         Solving one equation.
     </p>
@@ -1007,9 +1064,31 @@
             </p>
         </example>
             </definition>
-            <exercise>
-               <p> PUT SOME EXERCISES ABOUT THESE HERE!! </p>
-            </exercise>
+                <p>
+                   Using associativity and distributivity can help us do arithmetic more quickly and easily. For example, if we were to add <m>7+5+11+4+8+3,</m> we can look for pairs (or triples, etc) of numbers that sum to a multiple of ten. Using associativity and commutativity we can rearrange the above to 
+                   <me>
+                       7+5+11+4+8+3 = (7+3) + (11+5+4) + 8 = 10 +20 +8 = 38
+                   </me>
+                   
+               </p>
+               <p>
+                   Similarly for multiplication, we can look for number that multiply together to give a power of ten. This will make our multiplication much easier. For example, if we were to multiply <m>4 \times 7 \times 5 \times 15</m> we could use associativity and commutativity to rearrange to above to
+
+                <me>
+                   <m>4 \times 7 \times 5 \times 15 = (4 \times 5) \times 7 \times 15</m> 
+                </me>
+                <me>
+                    = 20 \times 7 \times 15 = (20 \times 15) \times 7
+                </me>
+                <me>
+                    =300 \times 7 = 2100.
+                </me>
+                
+                
+                
+               </p>
+
+            
             <p>
                 Now we talk about properties specific to addition/subtraction and multiplication/division.
             </p>
