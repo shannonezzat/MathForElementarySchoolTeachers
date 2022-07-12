@@ -271,6 +271,51 @@
                
            </li>
        </ol>
+       <p>
+           We could just memorize the formula above, but there are so many different situations that arise in mathematics that it isn't feasable to remember everything. However, if you have a strong knowledge of the ideas behind equality and arithmetic of equations, you can recreate this when the need arises. 
+       </p>
+       <example>
+           <p>
+               Let's solve <m>x+5=8</m>. The easiest way to view this is asking "what number can I add to 5 to get 8". We can formally solve for <m>x</m> here by subtracting 5 from both sides:
+               <me>
+                   x+5-5=8-5
+               </me>
+               <me>
+                   \rightarrow x = 3.
+               </me>
+               We can solve this using the general algorithm above by viewing the equation as <m>x+5=0x+8</m>. Then <m>x = \dfrac{8-5}{1-0} = 3.</m>
+               
+               
+           </p>
+           <p>
+               We can solve <m>7(a-4)=4-(4-3a)</m> by first expanding out the brackets and then combining like terms so that the equation is in the standard form given in the algorithm:
+               <me>
+                   \rightarrow 7a-28 = 4-4+3a
+               </me>
+               <me>
+                   \rightarrow 7a -28 = 3a.
+               </me>
+               Noting that we can view the RHS of the equation as <m>3a+0</m>, we can now use our algorithm above, giving us <m>a = \dfrac{0-(-28)}{7-3} = \dfrac{28}{4} = 7.</m>
+               
+               
+           </p>
+           <p>
+               We can check our answers by substituting our solution for the variable and making sure that equality holds. For the second equation we have <me>7(7-4) =? 4-(4-3(7))</me>
+               <me>
+                   \rightarrow 7(3) =? 4-(4-21)
+               </me>
+               <me>
+                   \rightarrow 21 =? 4-(-17)
+               </me>
+               <me>
+                   \rightarrow 21 = 21.
+               </me>
+               Since we do indeed have equality our solution is correct.
+               
+               
+           </p>
+
+       </example>
    </subsection>
     <p>
         Solving one equation.
