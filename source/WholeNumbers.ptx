@@ -302,13 +302,13 @@
            <p>
                We can check our answers by substituting our solution for the variable and making sure that equality holds. For the second equation we have <me>7(7-4) =? 4-(4-3(7))</me>
                <me>
-                   \rightarrow 7(3) =? 4-(4-21)
+                   \rightarrow 7(3) \mathop{=}\limits^? 4-(4-21)
                </me>
                <me>
-                   \rightarrow 21 =? 4-(-17)
+                   \rightarrow 21 \mathop{=}\limits^? 4-(-17)
                </me>
                <me>
-                   \rightarrow 21 = 21.
+                   \rightarrow 21 \mathop{=}\limits^? 21.
                </me>
                Since we do indeed have equality our solution is correct.
                
