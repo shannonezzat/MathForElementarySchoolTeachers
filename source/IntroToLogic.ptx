@@ -508,7 +508,12 @@ When we talk about mathematical ideas, we want to express how many objects they 
        We want to be able to represent both universally- and existentially quantified statements. For both types, we first need to draw a box representing the domain of all possible objects under consideration:
     </p>
     <p>
-        PICTURE GOES HERE!!!
+    <figure>
+      <caption>The Universe includes all possible objects we might want to consider.</caption>
+      <image source="Ch1-TLoM/S1-ItL/Subsctn1-4/1.jpg" width="50%">
+        <description>An empty box labelled The Universe.</description>
+      </image>
+    </figure>
     </p>
     <ol>
         <li>
@@ -516,13 +521,23 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 For universally quantified statements (e.g., "All A are B" or as a concrete example "All cats are mammals") we want a circle representing all objects that satisfy condition A (all cats in our example).
             </p>
             <p>
-                ANOTHER PICTURE
+    <figure>
+      <caption>We may represent the objects we are interested in, in this case cats, as a circle inside our Universe.</caption>
+      <image source="Ch1-TLoM/S1-ItL/Subsctn1-4/1-11.jpg" width="50%">
+        <description>A box labelled The Universe containing a circle labelled Cats.</description>
+      </image>
+    </figure>        
             </p>
             <p>
                 Now, we want a circle to represent all objects that satisfy B (in our example, all mammals). Note that since we wish to show all A are B, we want to draw this circle so that all of the A objects are also included in the B circle:
             </p>
             <p>
-                PICTURE
+    <figure>
+      <caption>We draw the "Mammals" circle around our "Cats" circle to show that all cats are mammals.</caption>
+      <image source="Ch1-TLoM/S1-ItL/Subsctn1-4/1-12.jpg" width="50%">
+        <description>A circle labelled Cats is inside a circle labelled Mammals, and both are inside a box labelled The Universe.</description>
+      </image>
+    </figure>
             </p>
         </li>
         <li>
@@ -530,13 +545,23 @@ When we talk about mathematical ideas, we want to express how many objects they 
               For existentially quantified statements (e.g., "Some A are B" or as a concrete example "Some cats are grey") we want a circle representing all objects that satisfy condition A (all cats in our example).  
             </p>
             <p>
-                ANOTHER PICTURE
+    <figure>
+      <caption>We use a circle to represent Cats.</caption>
+      <image source="Ch1-TLoM/S1-ItL/Subsctn1-4/1-21.jpg" width="50%">
+        <description>A box labelled The Universe containing a circle labelled Cats.</description>
+      </image>
+    </figure>
             </p>
             <p>
                 Now, we want a circle to represent all objects that satisfy B (in out example, things that are grey). Note that there could be cats that are not grey, and grey things that are not cats, so we need to draw the diagram so that they only partially overlap. We also know that there is definitely at least one A that is B (cat that is grey) since the statement tells us so, therefore we can put a little dot in the intersection to represent that object (the grey cat).
             </p>
             <p>
-                ANOTHER PICTURE
+    <figure>
+      <caption>We put our grey cat in the intersection of "Grey Things" and "Cats", since it is both grey and a cat.</caption>
+      <image source="Ch1-TLoM/S1-ItL/Subsctn1-4/1-21.jpg" width="50%">
+        <description>Two overlapping circles, one labelled Grey Things and the other Cats. A dot labelled The Grey Cat is inside their overlap.</description>
+      </image>
+    </figure>
             </p>
         </li>
     </ol>
