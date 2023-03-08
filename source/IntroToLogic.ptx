@@ -508,7 +508,10 @@ When we talk about mathematical ideas, we want to express how many objects they 
        We want to be able to represent both universally- and existentially quantified statements. For both types, we first need to draw a box representing the domain of all possible objects under consideration:
     </p>
     <p>
-        PICTURE GOES HERE!!!
+        <image xml:id="testimage">
+            <description></description>
+            source="assets\Section1\S1-Intro to Logic\Sctn1.4"
+        </image>
     </p>
     <ol>
         <li>
