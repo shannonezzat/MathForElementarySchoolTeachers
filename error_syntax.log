@@ -1,2 +1,2 @@
-file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/WholeNumbers.ptx:173:2:FATAL:PARSER:ERR_NAME_REQUIRED: StartTag: invalid element name
+file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/WholeNumbers.ptx:617:26:FATAL:PARSER:ERR_NAME_REQUIRED: StartTag: invalid element name
 file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/main.ptx:33:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/WholeNumbers.ptx, and no fallback was found

@@ -187,7 +187,7 @@
                    INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
                </p>
                <p>
-                   Now we move on to add the longs place. We have <m>3_{seven}+3_{seven}+3_{seven}=10_{seven}</m>. Thus we regroup seven longs to make one square, adn we have no longs left over. We write this down in our working:
+                   Now we move on to add the longs place. We have <m>3_{seven}+4_{seven}+1_{seven}=10_{seven}</m>. Thus we regroup seven longs to make one square, adn we have one long left over. We write this down in our working:
                </p>
                <p>
                    INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
@@ -199,7 +199,7 @@
                    INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
                </p>
               <p>
-                  Thus we have that <m>435_{seven}+43_{seven} = 501_{seven}</m> and we have finished.
+                  Thus we have that <m>435_{seven}+43_{seven} = 511_{seven}</m> and we have finished.
               </p>
            </example>
            <p> Let's now work in base twelve. Remember we *do not* regroup when we have ten or eleven of one place, and we use the symbols <m>A</m> and <m>B</m> to denote these quantities, respectively. </p>
