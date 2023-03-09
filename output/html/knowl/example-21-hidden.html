@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-14T16:45:19-03:00       *-->
+<!--*       on 2023-03-08T21:52:36-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,17 +13,49 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="example example-like"><p>Suppose we were only interested in the counting numbers up to 10. Let's define the universe <span class="process-math">\(U = \{ 1,2,3, \ldots , 9, 10 \}\)</span> and the following sets:</p>
-<ol class="decimal">
-<li><p><span class="process-math">\(\displaystyle A = \{1,2,3,4,5,6,7\}\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle B = \{2,4,6,8\}\)</span></p></li>
-</ol>
-<p>Then</p>
+<body class="ignore-math"><article class="example example-like"><p>Suppose we know that Angela is thirty years younger than her father. Also, that in ten years, Angela will be half the age of her father at that time. Let's determine Angela's current age, and her father's current age.</p>
+<p>First, we ask "what quantities are we interested in, but are unknown?". In this example, we are interested in Angela's current age and her father's current age. To help us write these algebraically, let's give these quantities variable names (and we need to be specific about what these variables stand for, so that readers, and ourselves, do not get confused.)</p>
+<p>Let <span class="process-math">\(A := \)</span> Angela's current age (in years), and let <span class="process-math">\(F := \)</span> Angela's father's current age (in years).</p>
+<p>Since Angela is thirty year's younger than her father, we need to think about how to translate this to an algebraic statement. We can think of trying to reword this sentence to have the concept of equality in it. For example, we could say "Angela's age plus thirty years is the same age as her father" or "If you subtract thirty years from her father's age, it will be Angela's age" or something else. Using the first rewording, we can make the algebraic equation</p>
 <div class="displaymath process-math">
 \begin{equation*}
-A \cup B = \{ 1,2,3,4,5,6,7,8\}, \ A \cap B = \{2,4,6\}, \ A - B = \{1,3,5,7\}, \ B - A = \{8\}, \ \sim A = \{8,9,10\} 
+A+30 = F.
 \end{equation*}
 </div>
-<p>Here are some Venn diagram showing the sets above:</p>
-<p>INSERT VENN DIAGRAM</p></article></body>
+<p>For the second sentence, we need to be careful; remember that this holds in ten years time. So Angela's age in ten years is <span class="process-math">\(A+10\)</span> and her father's is <span class="process-math">\(F+10\text{.}\)</span> Now we know that in ten years, Angela will be half the age of her father, which means if you double her age then, it will be equal to her father's age. So we can write</p>
+<div class="displaymath process-math">
+\begin{equation*}
+2 \times (A+10) = F+10.
+\end{equation*}
+</div>
+<p>Now, in our problem both equations are things that are true, so we can use both at the same time. Here we can use substitution to replace the <span class="process-math">\(F\)</span> in the second equation with <span class="process-math">\(A+30\)</span> since these quantities equal in the first equation. This way, we will end up with an equation with only one unknown/variable, which we can solve using the properties of arithmetic of equal expressions.</p>
+<div class="displaymath process-math">
+\begin{equation*}
+2 \times (A+10) = (A+30)
+\end{equation*}
+</div>
+<p>Expanding the bracket on the left hand side:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+2A+20 = A+30
+\end{equation*}
+</div>
+<p>Subtracting <span class="process-math">\(A\)</span> and <span class="process-math">\(20\)</span> from both sides (this will have our variable only on one side and our constants only on the other)</p>
+<div class="displaymath process-math">
+\begin{equation*}
+A = 10
+\end{equation*}
+</div>
+<p>So we know that Angela's current age is <span class="process-math">\(10\)</span> years old. We can then use the first equation to find her father's current age using substitution again:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+(10) + 30 = F
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+40 = F
+\end{equation*}
+</div>
+<p>and thus Angela's father's current age is <span class="process-math">\(40\)</span> years old.</p></article></body>
 </html>

@@ -508,10 +508,14 @@ When we talk about mathematical ideas, we want to express how many objects they 
        We want to be able to represent both universally- and existentially quantified statements. For both types, we first need to draw a box representing the domain of all possible objects under consideration:
     </p>
     <p>
-        <image xml:id="testimage"
-            <description></description>
-            source="assets\Section1\S1-Intro to Logic\Sctn1.4"
-        />
+        
+        <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Sctn1.4\1.jpg" width="50%">
+            <description>First Image</description>
+        </image>
+        
+            
+            
+        
     </p>
     <ol>
         <li>
@@ -519,13 +523,17 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 For universally quantified statements (e.g., "All A are B" or as a concrete example "All cats are mammals") we want a circle representing all objects that satisfy condition A (all cats in our example).
             </p>
             <p>
-                ANOTHER PICTURE
+                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Sctn1.4\2.jpg" width="50%">
+                    <description>Second Image</description>
+                </image>
             </p>
             <p>
                 Now, we want a circle to represent all objects that satisfy B (in our example, all mammals). Note that since we wish to show all A are B, we want to draw this circle so that all of the A objects are also included in the B circle:
             </p>
             <p>
-                PICTURE
+                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Sctn1.4\3.jpg" width="50%">
+                    <description>Third Image</description>
+                </image>
             </p>
         </li>
         <li>
@@ -533,13 +541,17 @@ When we talk about mathematical ideas, we want to express how many objects they 
               For existentially quantified statements (e.g., "Some A are B" or as a concrete example "Some cats are grey") we want a circle representing all objects that satisfy condition A (all cats in our example).  
             </p>
             <p>
-                ANOTHER PICTURE
+                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Sctn1.4\4.jpg" width="50%">
+                    <description>Fourth Image</description>
+                </image>
             </p>
             <p>
                 Now, we want a circle to represent all objects that satisfy B (in out example, things that are grey). Note that there could be cats that are not grey, and grey things that are not cats, so we need to draw the diagram so that they only partially overlap. We also know that there is definitely at least one A that is B (cat that is grey) since the statement tells us so, therefore we can put a little dot in the intersection to represent that object (the grey cat).
             </p>
             <p>
-                ANOTHER PICTURE
+                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Sctn1.4\5.jpg" width="50%">
+                    <description>Fifth Image</description>
+                </image>
             </p>
         </li>
     </ol>
