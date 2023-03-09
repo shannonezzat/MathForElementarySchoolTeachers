@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-14T16:45:11-03:00       *-->
+<!--*       on 2023-03-08T23:22:06-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,14 +14,23 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<p>Of course, there are many ways of doing this, but one way is to draw a picture. There is a very good chance that you would do the same thing! Let's start by showing 12 is even:</p>
-<p>INSERT PIC HERE</p>
-<p>Here we took 12 dots and organized them as 6 rows of 2. Since 12 can be grouped evenly into rows of 2, we know that 12 is even. Hence, we can write <span class="process-math">\(12=2 \times 6.\)</span></p>
-<p>In general, the number of rows of 2 isn't particularly important to say that a number is even; it's the fact that we can group the number into *some amount* of rows of 2. Usually we'll express this as <span class="process-math">\(k\)</span> rows of 2. So for a even whole number <span class="process-math">\(n\text{,}\)</span> we know <span class="process-math">\(n=2k\)</span> for some whole number <span class="process-math">\(k\text{.}\)</span></p>
-<p>INSERT PIC HERE</p>
-<p>To show 15 is odd, you probably drew a picture similar to this:</p>
-<p>INSERT PIC HERE</p>
-<p>Here we took the 12 dots and organized them into 7 rows of 2, but we had 1 dot remaining where we were unable to complete a full row of two. Hence, we can write <span class="process-math">\(15=2 \times 7 + 1.\)</span></p>
-<p>Like for even numbers, the number of rows of 2 isn't particularly important to say that a number is odd; it's the fact that we can group the number into as many rows of 2 as possible, we always have 1 left over. Usually we'll express this as <span class="process-math">\(k\)</span> rows of 2 + 1 remaining. So for a odd whole number <span class="process-math">\(n\text{,}\)</span> we know <span class="process-math">\(n=2k+1\)</span> for some whole number <span class="process-math">\(k\text{.}\)</span></p>
+<p>We need to:</p>
+<ol class="decimal">
+<li><p>assume that <span class="process-math">\(n\)</span> is even and</p></li>
+<li><p>show that <span class="process-math">\(n^2\)</span> must be even.</p></li>
+</ol>
+<p class="continuation">So let's assume that <span class="process-math">\(n\)</span> is even. This means that <span class="process-math">\(n=2k\)</span> for some integer <span class="process-math">\(k\text{.}\)</span> We need to show that <span class="process-math">\(n^2\)</span> is even, thus <span class="process-math">\(n^2 = 2( \quad )\)</span> where the expression in the brackets must be an integer. Now that we have our set-up, we can prove this result. Consider <span class="process-math">\(n^2\text{.}\)</span> By our assumption:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+n^2=(2k)^2 = (2k)(2k)
+\end{equation*}
+</div>
+<p class="continuation">We know how we need the expression to look algebraically ( as <span class="process-math">\(2( \quad )\)</span>), so we use our creativity to get there:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+(2k)(2k) = 2(2k^2)
+\end{equation*}
+</div>
+<p>Since <span class="process-math">\(2k^2\)</span> is an integer, we are done. We have shown that we can always express <span class="process-math">\(n^2\)</span> in the form of an even integer, and this is what we wanted to prove.</p>
 </div></body>
 </html>
