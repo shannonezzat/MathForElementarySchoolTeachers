@@ -677,6 +677,13 @@ When we talk about mathematical ideas, we want to express how many objects they 
            </ol> 
         </p>
     </assemblage>
+
+    <figure xml:id="EvenOddVid">
+        <caption>Supplementary Video: Even and Odd Numbers</caption>
+        <video youtube="aofNN-ZGf4I" />
+    
+        
+    </figure>
 </subsection>
 
 
@@ -738,6 +745,10 @@ When we talk about mathematical ideas, we want to express how many objects they 
 
     <figure xml:id="IfThenTruthTable">
         <caption>Truth Table for "if P then Q"</caption>
+        <image xml:id="TruthTable" source="MathForElementarySchoolTeachers\assets\ConditionalStatements\S2-Conditional Statements\Fig2.2\1.jpg">
+            <description></description>
+            
+        </image>
     </figure>
 </subsection>
 
@@ -2064,8 +2075,42 @@ select all those cards, but only those cards, which you would have to turn over 
     </exercise>
 
     <exercise>
+<p>
+    Write a negation of each of the following.
+</p>
+<ol>
+    <li>
+        <p>
+            Gravity is not a force.
+        </p>
+    </li>
+    <li>
+        <p>
+            City C has a population of at least 10 million.
+        </p>
+    </li>
+    <li>
+        <p>
+            Harold ate a burger and fries for lunch.
+        </p>
+    </li>
+    <li>
+        <p>
+            There is at least one penguin that has never seen Antarctica.
+        </p>
+    </li>
+    <li>
+        <p>
+            Everyone on campus is a student or a staff-member.
+        </p>
+    </li>
+    <li>
+        <p>
+            No beverage is hot and sweet.
+        </p>
+    </li>
+</ol>
 
-        
     </exercise>
     
 
