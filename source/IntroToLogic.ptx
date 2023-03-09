@@ -119,7 +119,7 @@ An <term> open sentence </term> is a sentence with a variable such that the sent
 <p>If <m>P</m> and <m>Q</m> are statements, then:
     <ol>
         <li> the statement "<m>P</m> <term>and</term> <m>Q</m>" is true exactly when <m>P</m> is true and <m>Q</m> is true. Otherwise it is false.</li>
-        <li> the statement "<m>P</m> <term>or</term> <m>Q</m>" is false exactly when <m>P</m> is false and <m>Q</m> is fasle. Otherwise it is true. </li>
+        <li> the statement "<m>P</m> <term>or</term> <m>Q</m>" is false exactly when <m>P</m> is false and <m>Q</m> is false. Otherwise it is true. </li>
     </ol>
 </p>
 </definition>
@@ -320,7 +320,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     </p>
     <solution>
         <p>
-            You may have a slighly different wording, but one choice would be:
+            You may have a different wording, but one choice would be:
             <ol>
                 <li>
                     <p>
@@ -372,7 +372,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                     </p>
                 </li>
             </ol>
-            Later in this chapter we will learn how to write "is an odd number" and "is divisible by 6" more mathemmatically, using algebra.
+            Later in this chapter we will learn how to write "is an odd number" and "is divisible by 6" more mathematically, using algebra.
         </p>
     </solution>
 </exercise>
@@ -565,11 +565,19 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 We could represent this in (at least) two ways. One way is as two non-overlapping circles:
             </p>
             <p>
-                PICTURE
+                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.21\1.jpg" width="50%">
+                    <description>No A are B</description>
+                    
+                </image>
             </p>
             <p>
                 Or as intersecting circles with the intersection hatch out to indicate it is empty.
             </p>
+
+            <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.21\2.jpg" width="50%">
+                <description>No A are B Ver 2</description>
+                
+            </image>
                             
         </solution>
     </exercise>
@@ -592,7 +600,11 @@ When we talk about mathematical ideas, we want to express how many objects they 
                Of course, there are many ways of doing this, but one way is to draw a picture. There is a very good chance that you would do the same thing! Let's start by showing 12 is even:
            </p>
            <p>
-               INSERT PIC HERE
+            
+            <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.22\1.jpg" width="50%">
+                <description>2=2x6</description>
+                
+            </image>
            </p>
            <p>
                Here we took 12 dots and organized them as 6 rows of 2. Since 12 can be grouped evenly into rows of 2, we know that 12 is even. Hence, we can write <m>12=2 \times 6.</m>
@@ -601,16 +613,24 @@ When we talk about mathematical ideas, we want to express how many objects they 
                In general, the number of rows of 2 isn't particularly important to say that a number is even; it's the fact that we can group the number into *some amount* of rows of 2. Usually we'll express this as <m>k</m> rows of 2. So for a even whole number <m>n</m>, we know <m>n=2k</m> for some whole number <m>k</m>.
            </p>
            <p>
-               INSERT PIC HERE
+            <figure xml:id="gtgtg">
+                <caption></caption>
+            
+            <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.22\2.jpg" width="50%">
+                <description>2k=2xk</description>
+                </image>
+            </figure>
            </p>
            <p>
                To show 15 is odd, you probably drew a picture similar to this:
            </p>
            <p>
-               INSERT PIC HERE
+            <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.22\3.jpg" width="50%">
+                                <description>15=2x7+1</description>
+                            </image>
            </p>
            <p>
-               Here we took the 12 dots and organized them into 7 rows of 2, but we had 1 dot remaining where we were unable to complete a full row of two. Hence, we can write <m>15=2 \times 7 + 1.</m>
+               Here we took the 15 dots and organized them into 7 rows of 2, but we had 1 dot remaining where we were unable to complete a full row of two. Hence, we can write <m>15=2 \times 7 + 1.</m>
             </p>
             <p>
                 Like for even numbers, the number of rows of 2 isn't particularly important to say that a number is odd; it's the fact that we can group the number into as many rows of 2 as possible, we always have 1 left over. Usually we'll express this as <m>k</m> rows of 2 + 1 remaining. So for a odd whole number <m>n</m>, we know <m>n=2k+1</m> for some whole number <m>k</m>.
@@ -1117,7 +1137,9 @@ select all those cards, but only those cards, which you would have to turn over 
             We can view this as logically equivalent to the statement "all cats are mammals" (again with the domain of all animals), and we can see the link from the Venn diagram of the statement to all true possibilities for the conditional statement:
         </p>
         <p>
-            INSERT PICTURE
+            <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.21\1.jpg" width="50%">
+                <description>All Cats are Mammals</description>
+            </image>
         </p>
        <p> Note that the three distinct areas in that diagram represent one of the true possibilities of the conditional statement. The area that does *not* appear is the "dreaded row;" when the if-part is true and the then-part is false. This illustrates that there are no counterexamples for conditional statements that are always true.</p>
        <exercise>
@@ -1146,7 +1168,9 @@ select all those cards, but only those cards, which you would have to turn over 
                    Reworded: "All whole numbers with a ones-digit of 0 are divisible by 5"
                </p>
                <p>
-                   Diagram: INSERT PICTURE
+                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.21\2.jpg" width="50%">
+                    <description>All whole numbers with a ones-digit of 0 are divisible by 5</description>
+                </image>
                </p>
                <p>
                    Regions:
@@ -1919,8 +1943,136 @@ select all those cards, but only those cards, which you would have to turn over 
            </p>
        </exercise>
    </subsection>
-
-
 </section>
+   <section>
+    <title>Supplemental Exercises</title>
+    <exercise>
+        <p>
+            Joe says "Dolphins are mammals or live primarily underwater." Is his statement true?
+        </p>
+    </exercise>
+    <exercise>
+        <p>
+            Which of the following are statements?
+        </p>
+        <ol>
+            <li>
+                <p>
+                    It rained yesterday. 
+                </p>
+            </li>
+            <li>
+                <p>
+                    All cars have engines. 
+                </p>
+            </li>
+            <li>
+                <p>
+                    Did you see the game last night?
+                </p>
+            </li>
+            <li>
+                <p>
+                    All dogs go to Heaven. 
+                </p>
+            </li>
+            <li>
+                <p>
+                    This statement is false.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Come visit sometime.  
+                </p>
+            </li>
+        </ol>
+    </exercise>
+    <exercise>
+        <p>
+            Which of the following are open sentences? For each open sentence, identify its domain.
+        </p>
+        <ol>
+            <li>
+                <p>
+                    <m> x+3 \leq 5 </m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Dog D is a mastiff.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Vitamin C helps prevent scurvy.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The statement P is both true and false.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Some countries have kings.
+                </p>
+            </li>
+            <li>
+                <p>
+                    No one lives in a house.
+                </p>
+            </li>
+        </ol>
+        <p>For each open sentence above, give a value of the variable that makes the statement true.</p>
+    </exercise>
+
+    <exercise>
+        <p>
+            Layla says "Statement P is false." How does the truth value of this open sentence depend on the truth value of the variable P?
+        </p>
+
+
+    </exercise>
+    <exercise>
+<p>
+    Draw a truth table for each of the following.
+</p>
+<ol>
+    <li>
+        <p>
+            The cow is awake and the pig is asleep.
+        </p>
+    </li>
+    <li>
+        <p>
+            Stores accept cash or credit as payment.
+        </p>
+    </li>
+    <li>
+        <p>
+            Education prepares you for a career or is a poor way to spend your time.
+        </p>
+    </li>
+    <li>
+        <p>
+            Anna and Jordan are not happy.
+        </p>
+    </li>
+</ol>
+
+    </exercise>
+
+    <exercise>
+
+        
+    </exercise>
+    
+
+
+   </section>
+
+
+
 
     </chapter>
