@@ -36,7 +36,9 @@
 
 <!-- Specify the default type of cross reference:           -->
   <cross-references text="type-global" />
-  
+  <latex-image-preamble>
+    \usepackage{tikz}
+    </latex-image-preamble>
 
 </docinfo>
 
