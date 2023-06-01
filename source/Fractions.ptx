@@ -6,7 +6,7 @@
         <section>
           <title>Introduction to Fractions</title>
           <p>
-            In this chapter, we will explore the concept of fractions, which are vital in understanding many mathematical concepts and applications. As future elementary school teachers, it is essential to have a firm grasp of fractions to effectively teach students and build a strong foundation in mathematics.
+            In this chapter, we will explore the concept of fractions and rational numbers, which are vital in understanding many mathematical concepts and applications. As future elementary school teachers, it is essential to have a firm grasp of fractions to effectively teach students and build a strong foundation in mathematics.
           </p>
           <p>
             Fractions represent a way to express parts of a whole. They have two components: the <term>numerator</term>, which indicates the number of equal parts considered, and the <term>denominator</term>, which represents the total number of equal parts that make up the whole. Of course, it's easy to see that we can divide one whole into 2 halves, or 3 thirds, or in general <m>n</m> <m>n</m>ths for any <m>n \in \mathbb{N}.</m>
@@ -322,5 +322,548 @@
     </me>
 </example>
       </subsection>
-    </section>            
+    <subsection xml:id="MixedFractions">
+  <title>Mixed Fractions</title>
+  <p>
+    In this subsection, we will discuss mixed fractions and how to convert between mixed and improper fractions. We give definitions of these concepts below. In all of thee definitions we let <m>a,b,c \in \mathbb{N}.</m>
+  </p>
+
+  
+
+<definition xml:id="def-ProperFraction">
+    <statement>
+        <p>
+            A <term>proper fraction</term> is a fraction where the numerator is less than the denominator, that is, <m>\frac{a}{b}</m> is a proper fraction if <m>a &lt; b</m>. 
+        </p>
+    </statement>
+</definition>
+
+<definition xml:id="def-ImproperFraction">
+    <statement>
+        <p>
+            An <term>improper fraction</term> is a fraction where the numerator is equal to or greater than the denominator, that is, <m>\frac{a}{b}</m> is an improper fraction if <m>a \geq b</m>. 
+        </p>
+    </statement>
+</definition>
+<definition xml:id="def-MixedNumber">
+    <statement>
+        <p>
+            A <term>mixed number</term> is a number that is represented as the sum of a whole number and a proper fraction. It is usually written in the form <m>a\left(\frac{b}{c}\right)</m> which really means <m>a + \frac{b}{c}</m> but written without the addition sign between the whole number and fraction, where <m>a</m> is a whole number, and <m>\frac{b}{c}</m> is a proper fraction, meaning <m>b &lt; c</m>. 
+        </p>
+    </statement>
+</definition>
+  
+  <p>
+    Mixed fractions are usually written in the form <m>a\left(\frac{b}{c}\right)</m>, . To convert a mixed fraction to an improper fraction, we can convert the whole number part <m>a</m> to the fraction <m>\frac{a}{1}</m> and then use equivalent fractions and addition of fractions.
+  </p>
+  
+  <p>
+    To convert a mixed fraction to an improper fraction, follow these steps:
+  </p>
+  
+  <ol>
+    <li>Convert the whole number part <m>a</m> to the fraction <m>\frac{a}{1}</m>.</li>
+    <li>Find equivalent fractions for <m>\frac{a}{1}</m> and <m>\frac{b}{c}</m> with a common denominator.</li>
+    <li>Add the numerators of the equivalent fractions, and keep the common denominator.</li>
+  </ol>
+  
+  <example>
+    <title>Converting a Mixed Fraction to an Improper Fraction</title>
+    <p>
+      Let's convert the mixed fraction <m>3\left(\frac{2}{5}\right)</m> to an improper fraction. First, we convert the whole number part 3 to the fraction <m>\frac{3}{1}</m>.
+    </p>
+    <p>
+      Now, we need to find equivalent fractions for <m>\frac{3}{1}</m> and <m>\frac{2}{5}</m> with a common denominator. In this case, the least common denominator is 5. We multiply the numerator and denominator of <m>\frac{3}{1}</m> by 5 to get the equivalent fraction <m>\frac{15}{5}</m>.
+    </p>
+    <p>
+      Now, we can add the numerators of the equivalent fractions: <m>15 + 2 = 17</m>. Keeping the common denominator, we get the improper fraction <m>\frac{17}{5}</m>. So, <m>3\left(\frac{2}{5}\right) = \frac{17}{5}</m>.
+    </p>
+  </example>
+  
+  <example>
+    <title>Converting a Mixed Fraction to an Improper Fraction</title>
+    <p>
+      Let's convert the mixed fraction <m>4\left(\frac{3}{8}\right)</m> to an improper fraction. First, we convert the whole number part 4 to the fraction <m>\frac{4}{1}</m>.
+    </p>
+    <p>
+      Now, we need to find equivalent fractions for <m>\frac{4}{1}</m> and <m>\frac{3}{8}</m> with a common denominator. In this case, the least common denominator is 8. We multiply the numerator and denominator of <m>\frac{4}{1}</m> by 8 to get the equivalent fraction <m>\frac{32}{8}</m>. Since both the numerator and denominator are divisible by 8 we can reduce this fraction to <m>\frac{4}{1} = 4.</m>
+    </p>
+  </example>
+    </subsection>
+  <subsection xml:id="ImproperToFractions">
+  <title>Converting Improper Fractions to Mixed Numbers</title>
+  
+  <p>
+    In many situations, it is more convenient to represent improper fractions as mixed numbers. A mixed number is a whole number plus a proper fraction (a fraction where the numerator is less than the denominator).
+  </p>
+
+  <p>
+    To convert an improper fraction to a mixed number, follow these steps:
+  </p>
+  
+  <ol>
+    <li>Divide the numerator by the denominator. This gives you the whole number part of the mixed number.</li>
+    <li>The remainder of the division becomes the numerator of the fractional part of the mixed number.</li>
+    <li>The denominator remains the same in the fractional part of the mixed number.</li>
+  </ol>
+
+  <example>
+    <title>Converting an Improper Fraction to a Mixed Number</title>
+    <p>
+      Let's convert the improper fraction <m>\frac{23}{5}</m> to a mixed number. First, divide the numerator 23 by the denominator 5. This gives us 4 with a remainder of 3. So, the whole number part of the mixed number is 4, and the numerator of the fractional part is 3.
+    </p>
+    <p>
+      The denominator remains the same in the fractional part of the mixed number. So, the fractional part is <m>\frac{3}{5}</m>.
+    </p>
+    <p>
+      Thus, the improper fraction <m>\frac{23}{5}</m> is equal to the mixed number <m>4\left(\frac{3}{5}\right)</m>.
+    </p>
+  </example>
+</subsection>
+<subsection xml:id="subsec-MultiplicationOfFractions">
+    <title>Multiplication of Fractions</title>
+    <p>
+        Let's delve into the concept of multiplication of fractions. This operation may appear more complex than addition or subtraction of fractions, but it is fundamentally straightforward. To illustrate, let's consider a few examples. 
+    </p>
+    
+    <example xml:id="ex-MultiplicationOfFractions1">
+        <statement>
+            <p>
+                What is <m>\frac{1}{2} \times 3</m>, or in other words, half of 3?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                If we take three units and split everything in half, we essentially have three halfs, or <m>\frac{3}{2}</m>.  
+            </p>
+        </solution>
+    </example>
+    
+    <example xml:id="ex-MultiplicationOfFractions2">
+        <statement>
+            <p>
+                What is half of <m>\frac{2}{3}</m>, or in other words, <m>\frac{1}{2} \times \frac{2}{3}</m>?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                If we take two thirds and divide them in half, we get <m>\frac{1}{3}</m>. Therefore, half of <m>\frac{2}{3}</m> is <m>\frac{1}{3}</m>.
+            </p>
+        </solution>
+    </example>
+    
+    <example xml:id="ex-MultiplicationOfFractions3">
+        <statement>
+            <p>
+                What is $\frac{2}{5}$ times $\frac{2}{3}$, or in other words, two-fifths of two-thirds?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                If we take two thirds and divide them into fifths, and then take two of those fifths, we essentially have $\frac{4}{15}$. 
+            </p>
+        </solution>
+    </example>
+    
+    <p>
+        The examples above illustrate how multiplication of fractions works. Essentially, we multiply the numerators to get the numerator of the result, and multiply the denominators to get the denominator of the result. For instance, for any fractions $\frac{a}{b}$ and $\frac{c}{d}$, $\frac{a}{b}$ times $\frac{c}{d}$ equals $\frac{a \times c}{b \times d}$. This operation breaks up our units into $b \times d$ equal pieces, and we have $a \times c$ of these pieces.
+    </p>
+    
+    <definition xml:id="def-Reciprocal">
+        <statement>
+            <p>
+                The <term>reciprocal</term> of a fraction $\frac{a}{b}$, where $a$ and $b$ are both nonzero, is $\frac{b}{a}$ - essentially, we swap the numerator and the denominator.
+            </p>
+        </statement>
+    </definition>
+    
+    <example xml:id="ex-Reciprocal">
+        <statement>
+            <p>
+                What is the reciprocal of $\frac{4}{5}$?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The reciprocal of $\frac{4}{5}$ is $\frac{5}{4}$.
+            </p>
+        </solution>
+    </example>
+    
+    <p>
+        Note that a non-zero fraction multiplied by its reciprocal always equals one. This is because $\frac{a}{b}$ times $\frac{b}{a}$ equals $\frac{a \times b}{b \times a}$. Since $a \times b$ equals $b \times a$, this simplifies to $\frac{1}{1}$, which equals 1.
+    </p>
+</subsection>
+<subsection>
+    <title>Division of Fractions</title>
+    <p>
+    Dividing fractions is a concept that, like addition and subtraction, can be visualized using the denominator of fractions as some unit or object. Let's consider an example where we have 13 apples divided into groups of 4 apples. We take the 13 apples, group them into sets of 4, and get 3 groups with 1 apple left over. This can be represented as 3 and a quarter groups (using mixed number notation), where the 1 apple left over is a quarter of a group. ADD PIC HERE
+    </p>
+    <p>
+    Now, if we consider a fraction like thirteen-fifths divided by four-fifths, the principle is the same. We group them into sets of four fifths and find that we have 3 groups of four fifths with one fifth left over. This also gives us 3 and a quarter groups, or in other terms, thirteen quarters. ADD PIC HERE
+    </p>
+    <p>
+     The key idea here is that the two problems above are fundamentally the same problem, as we are dividing thirteen units into groups of four units; whether the units are apples or fifths, or something else does not make a difference to our solution. So, fundamentally if we understand the idea of division of whole numbers, we understand the idea of division of fractions.  
+    </p>
+    <p>
+    This leads us to the general rule of dividing fractions: if we have $a/c$ divided by $b/c$ (where $a, b, c$ are any whole numbers where <m>c \neq 0</m>), our result will be $a/b$. The important thing to note is that our units (the things we're grouping) are the same, which allows us to simply divide the first number by the second number. ADD PIC HERE
+    </p>
+    <p>
+    However, it's not always the case that we have fractions with common denominators to divide. For this, we need to know how to divide fractions with any denominators. The rule here is that $a/b$ divided by $c/d$ is equal to $a/b$ times the reciprocal of $c/d$, which is $d/c$. 
+    </p>
+    <p>
+    You have most likely learned in school that to divide to fractions, you multiply the first fraction by the reciprocal of the second fraction; for example <m>\frac{2}{3} \div {4}{5} = \frac{2}{3} \times {5}{4}.</m> Of course this is correct, but as we are in the business of understanding why these ideas are correct, let's look more closely at why this idea is true. 
+    </p>
+    <p>
+    Consider the division <m>\frac{a}{b} \div \frac{c}{d}</m>. We know how to divide fractions with the same denominator, so let's find equivalent fractions to these two with the denominator of <m>bd</m>.  
+    </p>
+    <me>
+      \frac{a}{b} = \frac{ad}{bd} \qquad \frac{c}{d} = \frac{bc}{bd}.
+    </me>
+    <p>
+    Now, we are dividing <m>ad</m> <m>bd</m>ths into groups of size <m>bc</m> <m>bd</m>ths. From our discussion above we know that <m>\frac{ad}{bd} \div \frac{bc}{bd} = \frac{ad}{bc}</m>. But we can express this as the multiplication of two fractions: <m>\frac{ad}{bc} = \frac{a}{b} \times \frac{d}{c}</m> which is indeed the multiplication by the reciplocal result we wanted to show.
+    </p>
+    <p>
+    In addition, it's important to note that all the properties that hold for integers under addition also hold for fractions. Because we can convert any division operation to a multiplication operation (by multiplying by the reciprocal), we can think of dealing with fractions as only involving addition and multiplication. This allows us to use the commutative, associative, and distributive properties as needed to simplify expressions involving fractions.
+    </p>
+    
+
+    <example xml:id="example-fraction-operations">
+  <title>Adding, Subtracting, Multiplying, and Dividing Fractions</title>
+  <statement>
+    <p>
+      Let's perform multiple operations on fractions in one problem. Consider the expression:
+    </p>
+    <me>
+      \frac{3}{4} - \frac{1}{2} + \frac{5}{6} \cdot \frac{2}{3} ÷ \frac{4}{5}.
+    </me>
+  </statement>
+  <solution>
+    <p>
+      To simplify the expression, we follow the order of operations (BEMDAS): Brackets, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).
+    </p>
+    
+    <p>
+      First, we handle the division by changing the operation to multiplication by the reciprocal of the divisor:
+    </p>
+    <me>
+      \frac{5}{6} \times \frac{2}{3} ÷ \frac{4}{5} = \frac{5}{6} \times \frac{2}{3} \cdot \frac{5}{4}.
+    </me>
+    <p>
+      Multiplying these fractions and redicing to equivalent fractions where possible:
+    </p>
+    <me>
+      \frac{5}{6} \times \frac{2}{3} \cdot \frac{5}{4} = \frac{10}{18} \times \frac{5}{4} =  \frac{5}{9} \times {5}{4} = \frac{25}{36}.
+    </me>
+    <p>
+      So the original expression is equivalent to
+  </p>
+<me>
+  \frac{3}{4}-\frac{1}{2}+\frac{25}{36}
+</me>
+
+    <p>
+      We have dealt with all of the multiplication and division. Now we can add and subtract from left to right. Noting that <m>\frac{3}{4}-\frac{1}{2} = \frac{1}{4}</m> and then having a common denominator of 36 we have
+    </p>
+  
+    <me>
+      \frac{1}{4} + \frac{25}{36} = \frac{9}{36} + \frac{25}{36}= \frac{9 + 25}{24} = \frac{34}{36} = \frac{17}{18}.
+    </me>
+    <p>
+      Thus, the simplified result of the given expression is <m>\frac{17}{18}</m>.
+    </p>
+  </solution>
+</example>
+
+</subsection>
+<subsection xml:id="negative-exponents-fractions">
+<title>Negative Exponents and Fractions</title>
+
+<p>
+Let's consider some important rules about negative exponents. Remember from the previous section on exponents, we had that, for a base <m>a \in \mathbb{R}</m> and exponents <m>b,c \in \mathbb{N}</m> we have that <m>a^b \times a^c=a^{b+c}.</m> We would like to extend this idea to having negative integers as our exponents. Now that we have developed the idea of fractions, we can indeed define what a negative exponent would mean.
+</p>
+<p>  
+
+ Suppose we have a number <m>a</m> and we are indeed curious about what <m>a</m> raised to a negative exponent would mean. We want to keep the same rules that we've used before, where if you have the same base and different exponents, you add them. This would imply that <m>a^1 \cdot a^{-1}</m> should equal <m>a^{1+(-1)}</m>, which is <m>a^0</m>. And anything raised to the power of zero is one. So what could we multiply <m>a</m> by to get one? The answer is <m>\frac{1}{a}</m>. Hence, whenever we see a negative exponent like this, it implies the reciprocal of the base raised to the corresponding positive exponent. In general, <m>a^{-n} = \frac{1}{a^n}</m>.
+</p>
+
+<aside type="theorem" xml:id="negative-exponent-rule">
+<title>Negative Exponent Rule</title>
+<p>
+For any nonzero real number <m>a</m> and positive integer <m>n</m>, we have:
+<m>a^{-n} = \frac{1}{a^n}</m>
+</p>
+</aside>
+
+<p>
+Another rule deals with fractions raised to an exponent. The exponent means we multiply the base, in this case our base is the fraction <m>\frac{a}{b}</m>, by itself the exponent number of times. Since we multiply fractions by multiplying the numerators and denominators together, respectively, this means that <m>(\frac{a}{b})^n</m> equals <m>\frac{a^n}{b^n}</m>.
+</p>
+
+<aside type="theorem" xml:id="fraction-exponent-rule">
+<title>Exponent of a Fraction Rule</title>
+<p>
+For any nonzero real number <m>a</m>, <m>b</m> and positive integer <m>n</m>, we have:
+<m>(\frac{a}{b})^n = \frac{a^n}{b^n}</m>
+</p>
+</aside>
+
+<p>
+Now, what happens when we have a negative exponent of a fraction? Let's consider <m>(\frac{a}{b})^{-1}</m>. If we multiply <m>\frac{a}{b}^{-1} \cdot \frac{a}{b}^{1}</m>, we'd like that to be <m>\frac{a}{b}^{0}</m>, and anything raised to the power of 0 is 1. So what can we multiply <m>\frac{a}{b}</m> by to get 1? The answer is <m>\frac{b}{a}</m>. So, this means that <m>(\frac{a}{b})^{-1} = \frac{b}{a}</m>.
+</p>
+
+<aside type="theorem" xml:id="negative-fraction-exponent-rule">
+<title>Negative Exponent of a Fraction Rule</title>
+<p>
+For any nonzero real numbers <m>a</m> and <m>b</m>, we have:
+<m>(\frac{a}{b})^{-1} = \frac{b}{a}</m>
+</p>
+</aside>
+
+<p>
+We will now explore some examples to further solidify our understanding of these concepts.
+</p>
+
+<subsubsection xml:id="simplify-compound-fraction">
+<title>Simplifying Compound Fractions</title>
+
+<p>
+A compound fraction, also known as a complex fraction, is a fraction where the numerator, the denominator, or both are fractions themselves. For example, <m>\frac{a}{b}/\frac{c}{d}</m> is a compound fraction. To simplify such fractions, we follow the principle of dividing fractions which states that dividing by a fraction is the same as multiplying by its reciprocal. Hence, <m>\frac{a}{b}/\frac{c}{d}</m> simplifies to <m>\frac{a}{b} \cdot \frac{d}{c}</m> which further simplifies to <m>\frac{ad}{bc}</m>.
+</p>
+
+<aside type="theorem" xml:id="compound-fraction-rule">
+<title>Compound Fraction Rule</title>
+<p>
+For any nonzero real numbers <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>, we have:
+<m>\frac{a}{b}/\frac{c}{d} = \frac{ad}{bc}</m>
+</p>
+</aside>
+
+<p>
+Let's now consider an example that combines the ideas of positive and negative exponents, positive and negative exponents of fractions, the exponent 0, and compound fractions.
+</p>
+
+<example xml:id="complex-fraction-exponent-example">
+<title>Simplifying a Complex Fraction with Exponents</title>
+<statement>
+<p>
+Simplify the compound fraction <m>\frac{2^{3} \cdot 3^{-1} \cdot 5^{2}}{(3^{2} \cdot 5^{-2})/ (2^{-4} \cdot 3^{4}/(3^{4} \cdot 5^{4}))}</m> and express the result such that there are no negative exponents anywhere.
+</p>
+</statement>
+<solution>
+<p>
+First, we simplify the denominator using the compound fraction rule: <m>(3^{2} \cdot 5^{-2})/ (2^{-4} \cdot 3^{4}/(3^{4} \cdot 5^{4})) = (3^{2} \cdot 5^{-2}) \cdot (3^{4} \cdot 5^{4}/2^{-4} \cdot 3^{4})</m>. This simplifies further to <m>3^{4} \cdot 5^{2} \cdot 2^{4}</m>. 
+
+Now our expression becomes <m>\frac{2^{3} \cdot 3^{-1} \cdot 5^{2}}{3^{4} \cdot 5^{2} \cdot 2^{4}}</m>. We use the rules of exponents to simplify this to <m>2^{3-4} \cdot 3^{-1-4} \cdot 5^{2-2} = 2^{-1} \cdot 3^{-5}</m>. 
+
+Finally, applying the negative exponent rule, we get <m>\frac{1}{2^{1} \cdot 3^{5}} = \frac{1}{2 \cdot 243} = \frac{1}{486}</m>.
+</p>
+</solution>
+</example>
+</subsubsection>
+
+
+</subsection>
+
+
+
+    </section>    
+
+  <section>
+  <title>Ratios, Rates, and Proportions</title>
+  <p>
+    Ratios, rates, and proportions are fundamental concepts in mathematics, and they appear in Chapter 5.4 of your book. Let's start by examining what each term means and how they are used in real-life scenarios.
+  </p>
+  <subsection>
+    <title>Ratios</title>
+    <p>
+      Ratios are used to compare two quantities with the same units. For example, if we have three circles and five squares, the ratio of circles to squares is 3:5 or 3 to 5 or \(\frac{3}{5}\). Note that while the notation for ratios can resemble fractions, they are not fractions. A fraction represents a part of a whole, while a ratio compares two quantities, which may not necessarily relate to a part-to-whole relationship. ADD PIC HERE
+    </p>
+    <p>
+      However, ratios do share some characteristics with fractions, one of them being the concept of equivalence. For example, the ratio 6:3 is equivalent to 2:1 since the quantities can be simplified by multiplying by a number, or dividing by a common factor; in the case of this example, dividing by 3.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Simplify the ratio 6:3.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          We can simplify the ratio by dividing both sides by 3. Doing this, we get \( \frac{6}{3} : \frac{3}{3} = 2:1 \).
+        </p>
+      </proof>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Rates</title>
+    <p>
+      Rates are similar to ratios, but they involve quantities with different units. For example, if we traveled 300 kilometers in five hours, the rate of travel would be 60 kilometers per hour. Rates with a denominator of one are called unit rates and provide a way to easily compare different quantities.
+    </p>
+    <example>
+      <statement>
+        <p>
+          If we traveled 300 kilometers in five hours, what is our speed in kilometers per hour?
+        </p>
+      </statement>
+      <proof>
+        <p>
+          We can find the unit rate by dividing the total distance by the total time, so we get \( \frac{300 \, \text{km}}{5 \, \text{hr}} = 60 \, \text{km/hr} \).
+        </p>
+      </proof>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>Proportions</title>
+    <content>
+        <p>A proportion is an equation that states that two ratios are equal. For example, if we know that the ratio of apples to oranges in a fruit basket is 3:2 and there are 12 apples, we can set up a proportion to find the number of oranges. We set up the proportion as follows: 3/2 = 12/x. Solving for x (which represents the number of oranges), we find that there are 8 oranges.</p>
+        
+        <p>Proportions are a powerful tool and are used in a wide variety of mathematical and real-world contexts, from scaling recipes in cooking to predicting population growth in biology.</p>
+
+         <subsubsection xml:id="cross-multiplication">
+    <title>Cross Multiplication for Solving Equal Proportions</title>
+    <p>
+      Before we look at some examples, let's explore the idea of cross multiplication and why it works as a way of solving equal proportion problems.
+    </p>
+    <p>Cross multiplication is a technique used to solve problems involving equal proportions. When two ratios or fractions are set equal to each other, we can use cross multiplication to find the missing value.</p>
+    <p>Suppose we have two fractions <m>a/b</m> and <m>c/d</m>, where <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> are numbers, and we want to find the missing value <m>x</m>:</p>
+    <me>
+        <m>\frac{a}{b}=\frac{c}{d}</m>
+    </me>
+    <p>To use cross multiplication, we multiply the numerator of one fraction with the denominator of the other fraction, and set it equal to the product of the numerator of the second fraction and the denominator of the first fraction:</p>
+    <me>
+        <m>ad = bc</m>
+    </me>
+    <p>This equation can be solved to find the missing value <m>x</m>.</p>
+    <p>But why does cross multiplication work? Think of it this way: when two fractions are equal, they represent the same proportion or ratio. If we could find a common denominator for both fractions, then the numerators must be equal. So, by cross multiplying, we essentially force both fractions to have a common denominator (<m>bd</m>), then equate the numerators, which leads to <m>ad = bc</m>. This comparison of numerators of fractions with a common denominator is the foundation of why cross multiplication works.</p>
+    <example xml:id="example-cross-multiplication">
+        <statement>
+            <p>Use cross multiplication to find the value of <m>x</m> in the following proportion:</p>
+            <me>
+                \frac{3}{5} = \frac{x}{15}
+            </me>
+        </statement>
+        <solution>
+            <p>First, set up the cross multiplication equation:</p>
+            <me>
+                3(15) = 5x
+            </me>
+            <p>Now, solve for <m>x</m>:</p>
+            <calculation>
+                <p>Multiply <m>3</m> by <m>15</m>: <m>3(15) = 45</m>.</p>
+                <p>So, the equation becomes: <m>45 = 5x</m>.</p>
+                <p>Divide both sides by <m>5</m>: <m>45/5 = 9</m>.</p>
+                <p>So, <m>x = 9</m>.</p>
+            </calculation>
+            <p>Therefore, the value of <m>x</m> in the proportion is <m>9</m>.</p>
+        </solution>
+    </example>
+</subsubsection>
+   
+
+        <example>
+            <statement>
+                <p>Imagine you are planning a road trip. You know that your car gets 30 miles to the gallon, and you want to know how many gallons of gas you will need to travel 450 miles. You can set up the proportion as follows: 30/1 = 450/x, where x is the number of gallons needed.</p>
+            </statement>
+            <solution>
+                <p>To find the number of gallons needed, we can cross-multiply and solve for x. This gives us x = 450/30, so we find that we need 15 gallons of gas for the trip.</p>
+            </solution>
+        </example>
+
+        <exercise>
+            <statement>
+                <p>Now let's practice with some exercises. Use proportions to solve the following problems:</p>
+
+                <ol type="a">
+                    <li>If a car travels 180 miles in 3 hours, how far can it travel in 5 hours, assuming a constant speed?</li>
+                    <li>A recipe calls for 4 cups of flour for 8 servings. How many cups of flour would you need for 12 servings?</li>
+                </ol>
+            </statement>
+
+            <solution>
+                <p>Here are the solutions:</p>
+
+                <ol type="a">
+                    <li>Set up the proportion as follows: 180/3 = x/5. Solving for x, we find that the car can travel 300 miles in 5 hours.</li>
+                    <li>Set up the proportion as follows: 4/8 = x/12. Solving for x, we find that you would need 6 cups of flour for 12 servings.</li>
+                </ol>
+            </solution>
+        </exercise>
+    </content>
+    <example xml:id="example-grade-calculation">
+    <statement>
+        <p>Consider a course with the following grading structure:</p>
+        <ul>
+            <li>Assignments are worth 10 points towards the final grade, with an average mark of 65%.</li>
+            <li>The first midterm is worth 25 points, with a score of 85%.</li>
+            <li>The second midterm is worth 20 points, with a score of 55%.</li>
+            <li>The final exam, with an unknown score, contributes the remaining points to a total of 100 points.</li>
+        </ul>
+        <p>If the goal is to achieve a final course mark of 70%, what percentage grade is needed on the final exam?</p>
+    </statement>
+    <solution>
+      
+        <p>First, calculate the points earned from each part of the course using proportions:</p>
+        <ul>
+            <li>Assignments: <m>\frac{x}{10}=\frac{65}{100}</m>. Solving for <m>x</m> by cross multiplication we get that <m>x=6.5</m>  points, or 65% of the assignment points. </li>
+            <li>Similarly for the first midterm: 25 * 0.85 = 21.25 points, or 85% of the first midterm points</li>
+            <li>Second midterm: 20 * 0.55 = 11 points, or 55% of the second midterm points</li>
+        </ul>
+        <p>The total points earned so far are 6.5 + 21.25 + 11 = 38.75 points. This is a proportion of 38.75 / 100 = 0.3875, or 38.75%, of the total course points.</p>
+        <p>To reach the goal of 70 points, which is a proportion of 70 / 100 = 0.7, or 70%, of the total course points, 70 - 38.75 = 31.25 points are needed.</p>
+        <p>The final exam is worth the remaining 45 points. To find out the required percentage grade on the final exam, we set up a proportion where 31.25 points is to 45 points as the unknown percentage (x) is to 100%:</p>
+        <p>31.25 / 45 = x / 100</p>
+        <p>Solving for x gives approximately 69.44%. Therefore, a grade of approximately 69.44% is needed on the final exam to reach the total course mark of 70%.</p>
+    </solution>
+</example>
+<example xml:id="example-work-problem">
+    <statement>
+        <p>Person A can finish a particular job by themselves in 4 hours. Person B can finish a job by themselves in 5 hours. Person C can finish a job by themselves in 10 hours. Working together, how long does it take them to finish the job?</p>
+    </statement>
+    <solution>
+        <p>First, we need to find out how much of the job each person can do in one hour, which is referred to as their work rate. Note that our "unit" in this case is the job, and we need to calculate the proportion of the job each person can complete in one hour, thus giving us our work rate.</p>
+        <p>The work rate of Person A is 1/4 of the job per hour, for Person B it's 1/5 of the job per hour, and for Person C it's 1/10 of the job per hour.</p>
+        <p>When they work together, their work rates add up. So, the total work rate is (1/4 + 1/5 + 1/10) of the job per hour.</p>
+        <p>To find out how long it takes them to complete the job working together, we take the reciprocal of the total work rate. This will give us the total time it takes all three to complete the job working together.</p>
+        <calculation>
+            <p>First, calculate the total work rate: 1/4 + 1/5 + 1/10 = 1/2 per hour. This means that working together, they complete half the job in one hour.</p>
+            <p>Then, we can find <m>t,</m> the amount of time (in hours) needed by solving the following equation: <m>1/2 t = 1</m>, where the <m>1/2</m> is the rate of jobs/hour and 1 is the number of jobs (remember, our unit is a job, so that's what 1 stands for in this case.) .</p>
+            <p>
+              It's then easy to solve this and get <m>t=2</m> hours.
+            </p> 
+        </calculation>
+        <p>So, working together, it takes Person A, Person B, and Person C 2 hours to finish the job.</p>
+    </solution>
+</example>
+
+
+    <exercise>
+    <statement>
+        <p>Let's practice more with what we've learned about ratios, rates, and proportions. Here are some problems for you to solve.</p>
+
+        <ol type="a">
+            <li>If a car travels 240 miles in 4 hours, what is the unit rate (miles per hour)?</li>
+            <li>Jacky's toy car collection has a ratio of 5:3 of cars to trucks. If she has 20 cars, how many trucks does she have?</li>
+            <li>In a recipe, the ratio of cups of flour to cups of sugar is 2:1. If you want to make a half batch of the recipe and the full recipe requires 4 cups of flour, how many cups of sugar will you need?</li>
+            <li>Assume that a class's grading scheme consists of assignments worth 10%, the better midterm is worth 30%, the other midterm is worth 20%, and the final exam is worth 40%. If a student got 85% on the assignments, 80% on their better midterm, 70% on the other midterm, and they want to get an overall mark of 80%, what do they need to score on the final exam?</li>
+        </ol>
+    </statement>
+
+    <solution>
+        <p>Here are the solutions:</p>
+
+        <ol type="a">
+            <li>To find the unit rate, divide the total miles by the total hours. So, 240 miles ÷ 4 hours = <m>60 miles/hour</m>.</li>
+            <li>First, let's create a proportion using the ratio 5:3 (cars:trucks) and the information we know (20 cars and unknown number of trucks). Set up the proportion like this: 5/3 = 20/x. Cross-multiply and solve for x, you'll get <m>x = 12</m> trucks.</li>
+            <li>The original recipe has a ratio of 2:1 for flour to sugar. Since you want to make a half batch and the full recipe needs 4 cups of flour, a half batch will require 2 cups of flour. Because the ratio is 2:1, for every 2 cups of flour, you need 1 cup of sugar. So for a half batch, you will need <m>1 cup of sugar</m>.</li>
+            <li>Use the idea of proportions to find out how many points the student has already secured in each category (assignments, better midterm, and other midterm), then figure out how many points they need to reach their target grade of 80%. Compute the points needed on the final by subtracting the points already secured from the target points. Convert this into a percentage by creating a proportion with 100, then solve for x. This will be the score they need on the final exam. The exact percentage will depend on the specific values you calculate.</li>
+        </ol>
+    </solution>
+</exercise>
+
+</subsection>
+
+</section>
+        
 </chapter>

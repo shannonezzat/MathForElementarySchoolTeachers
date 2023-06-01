@@ -1,3 +1,2 @@
-file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/Fractions.ptx:229:160:FATAL:PARSER:ERR_ENTITYREF_SEMICOL_MISSING: EntityRef: expecting ';'
-file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/Fractions.ptx:261:341:FATAL:PARSER:ERR_ENTITYREF_SEMICOL_MISSING: EntityRef: expecting ';'
+file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/Fractions.ptx:351:404:FATAL:PARSER:ERR_NAME_REQUIRED: StartTag: invalid element name
 file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/main.ptx:35:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/Fractions.ptx, and no fallback was found
