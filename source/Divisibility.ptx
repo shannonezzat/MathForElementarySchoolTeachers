@@ -141,6 +141,15 @@
                 </statement>
                 <proof>
                     <p>
+                        Again, we do the additive case, and leave the subtraction case to an exercise later. Let <m>a \mid b</m> and <m>a \nmid c</m>. This means that <m>b=ax</m> for some natural number <m>x</m>, and <m>c=ay+r</m>, where <m>y</m> is a natural number, and thinking about it as a remainder, <m>r</m> is a natural number such that <m>r \leq a-1</m>. We need to show that <m>a \nmid b+c</m>, so we need to show that <m>b+c</m> has a remainder. Adding both equations together, we get
+                        <me>
+                            b+c = ax+ay+r.
+                        </me>
+                        Factoring out an <m>a</m> from the first two terms on the RHS,
+                        <me>
+                            b+c = a(x+y)+r.
+                        </me>
+                        Since <m>x+y \in \mathbb{N}</m> and <m>r \in \mathbb{N}</m> with <m>r \leq n-1</m>, we have written <m>b+c</m> in quotient-remainder form, and we know there is exactly one way to do this. And since <m>r \neq 0</m>, then <m>a \nmid b+c</m>. 
                         
                     </p>
                 </proof>

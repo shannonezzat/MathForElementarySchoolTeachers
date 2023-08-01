@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-07-31T16:19:42-03:00       *-->
+<!--*       on 2023-08-01T15:20:54-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -213,7 +213,26 @@ b+c=a(x+y).
 <p id="p-1365">If a number <span class="process-math">\(a\)</span> is divisible by <span class="process-math">\(c\)</span> but a number <span class="process-math">\(b\)</span> is not divisible by <span class="process-math">\(c\text{,}\)</span> then <span class="process-math">\(a+b\)</span> and <span class="process-math">\(a-b\)</span> are not divisible by <span class="process-math">\(c\text{.}\)</span></p>
 <article class="example example-like" id="example-theorem3"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-theorem3"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Example for Theorem 3.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-theorem3"><article class="example example-like"><p id="p-1366">Let's consider <span class="process-math">\(a = 15\text{,}\)</span> <span class="process-math">\(b = 7\text{,}\)</span> and <span class="process-math">\(c = 5\text{.}\)</span> Here, <span class="process-math">\(a\)</span> is divisible by <span class="process-math">\(c\)</span> but <span class="process-math">\(b\)</span> is not divisible by <span class="process-math">\(c\text{.}\)</span> Therefore, <span class="process-math">\(a+b = 22\)</span> and <span class="process-math">\(a-b = 8\)</span> are not divisible by <span class="process-math">\(c\text{.}\)</span></p></article></div></section></section></section></div></main>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-theorem3"><article class="example example-like"><p id="p-1366">Let's consider <span class="process-math">\(a = 15\text{,}\)</span> <span class="process-math">\(b = 7\text{,}\)</span> and <span class="process-math">\(c = 5\text{.}\)</span> Here, <span class="process-math">\(a\)</span> is divisible by <span class="process-math">\(c\)</span> but <span class="process-math">\(b\)</span> is not divisible by <span class="process-math">\(c\text{.}\)</span> Therefore, <span class="process-math">\(a+b = 22\)</span> and <span class="process-math">\(a-b = 8\)</span> are not divisible by <span class="process-math">\(c\text{.}\)</span></p></article></div>
+<p id="p-1367">Like the other two theorems, let's try and get an idea for a proof via a diagram first. This is a good opportunity for you to try to come up with a diagram that shows this situation before looking below. Try and draw this result, at least for the additive case, and then check if your idea is close to the picture hidden below:</p>
+<p id="p-1368">INSERT HIDDEN PIC HERE, MAYBE BY AN EXERCISE OR SOMETHING.</p>
+<p id="p-1369">It looks like when you "glue" the two rectangle-like objects together, the remainder that doesn't make a full row in the non-divisible number is still there when the ojects are added. This is essentially the entire idea.</p>
+<p id="p-1370"><article class="theorem theorem-like" id="thm-thm3"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.1.7</span><span class="period">.</span>
+</h5>
+<p id="p-1371">If a number <span class="process-math">\(b\)</span> is divisible by <span class="process-math">\(a\)</span> but a number <span class="process-math">\(c\)</span> is not divisible by <span class="process-math">\(a\text{,}\)</span> then <span class="process-math">\(b+c\)</span> and <span class="process-math">\(b-c\)</span> are not divisible by <span class="process-math">\(c\text{.}\)</span></p></article><article class="hiddenproof" id="proof-11"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-11"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-11"><article class="hiddenproof"><p id="p-1372">Again, we do the additive case, and leave the subtraction case to an exercise later. Let <span class="process-math">\(a \mid b\)</span> and <span class="process-math">\(a \nmid c\text{.}\)</span> This means that <span class="process-math">\(b=ax\)</span> for some natural number <span class="process-math">\(x\text{,}\)</span> and <span class="process-math">\(c=ay+r\text{,}\)</span> where <span class="process-math">\(y\)</span> is a natural number, and thinking about it as a remainder, <span class="process-math">\(r\)</span> is a natural number such that <span class="process-math">\(r \leq a-1\text{.}\)</span> We need to show that <span class="process-math">\(a \nmid b+c\text{,}\)</span> so we need to show that <span class="process-math">\(b+c\)</span> has a remainder. Adding both equations together, we get</p>
+<div class="displaymath process-math">
+\begin{equation*}
+b+c = ax+ay+r.
+\end{equation*}
+</div>
+<p class="continuation">Factoring out an <span class="process-math">\(a\)</span> from the first two terms on the RHS,</p>
+<div class="displaymath process-math">
+\begin{equation*}
+b+c = a(x+y)+r.
+\end{equation*}
+</div>
+<p class="continuation">Since <span class="process-math">\(x+y \in \mathbb{N}\)</span> and <span class="process-math">\(r \in \mathbb{N}\)</span> with <span class="process-math">\(r \leq n-1\text{,}\)</span> we have written <span class="process-math">\(b+c\)</span> in quotient-remainder form, and we know there is exactly one way to do this. And since <span class="process-math">\(r \neq 0\text{,}\)</span> then <span class="process-math">\(a \nmid b+c\text{.}\)</span></p></article></div></p></section></section></section></div></main>
 </div>
 </body>
 </html>
