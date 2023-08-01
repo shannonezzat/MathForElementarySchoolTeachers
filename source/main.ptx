@@ -34,7 +34,8 @@
     <xi:include href="./ArithmeticAlgorithms.ptx" />
     <xi:include href="./Fractions.ptx" />
     <xi:include href="./Decimals.ptx" />
-    <!-- Of course you will want to add more chapters as you proceed-->
+    <xi:include href="./Divisibility.ptx" />
+    <!--  Of course you will want to add more chapters as you proceed-->
 
     <!-- The final chapter contains a wide variety of elements to  -->
     <!-- illustrate what pretext can do, plus links to more help.  -->

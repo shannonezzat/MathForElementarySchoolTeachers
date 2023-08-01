@@ -1,24 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <chapter xml:id="Decimals" >
+    <title>Decimals</title>
 
 <section xml:id="decimals">
     <title>Introduction to Decimals</title>
-    <p>We're going to move on and start discussing decimals. Now, decimals really are fractions, and this section will help us understand why and how. We use decimal notation since the behaviour of decimal fractions is very similar to the behaviour of integers in our base ten nuber system.</p>
-
     <subsection xml:id="decimal-fractions">
         <title>Decimal Fractions</title>
+        <subsubsection>
+            <title>Decimal Fractions and Their Relationship to Whole Numbers</title>
+    <p>We're going to move on and start discussing decimals. Now, decimals really are fractions, and this section will help us understand why and how. We use decimal notation since the behaviour of decimal fractions is very similar to the behaviour of integers in our base ten nuber system.</p>
+
+    
         <p>A <term>decimal fraction</term> is a fraction where the denominator is a power of 10. More formally, a decimal fraction is a rational number <m>\frac{a}{b} \in \mathbb{R}</m> where <m>b=10^k</m> for some <m>k \in \mathbb{N}_0</m>. This means the denominators of these fractions are all multiples of 10, which makes them behave a lot like the way our place values to the left of the decimal point operate. In base 10, a <term>unit decimal fraction</term> has 1 as the numerator.</p>
 
-            <subsubsection>
-  <title>Decimal Fractions and Their Relationship to Whole Numbers</title>
+            
   <p>
     Decimal fractions are a way of expressing quantities that are smaller than a whole unit. In our base-ten number system, each place value to the right of the decimal point represents a fraction of the whole unit. The first digit after the decimal point represents tenths (1/10), the second digit represents hundredths (1/100), and so on.
   </p>
   <p>
-    An interesting aspect of decimal fractions is the similarity they share with whole numbers. We know that multiplying a whole number by 10 raises its place value by 1, such as multiplying 10 by 10<sup>k</sup> gives us 10<sup>k+1</sup>. In a similar manner, multiplying a decimal fraction by 10 also shifts its place value to the left. For example, multiplying 1/10<sup>k</sup> by 10 gives us 1/10<sup>k-1</sup>. This relationship holds true as we move along the decimal places and will allow us to perform arithmetic operations similarly to arithmetic with whole numbers.
+    An interesting aspect of decimal fractions is the similarity they share with whole numbers. We know that multiplying a whole number by 10 raises its place value by 1, such as multiplying 10 by <m>10^k</m> gives us <m>10^{k+1}</m>. In a similar manner, dividing a decimal fraction by 10 also shifts its place value to the left. For example, dividing <m>(1/10^)k</m> by 10 gives us <m>(1/10)^{k-1}</m>. This relationship holds true as we move along the decimal places and will allow us to perform arithmetic operations similarly to arithmetic with whole numbers.
   </p>
-</subsubsection>
+
 
         
         <example xml:id="decimal-fraction-example1">
@@ -28,6 +31,7 @@
         </example>
         
         <p>When we add up ten unit decimal fractions, we get a unit fraction of the next largest kind. If we add up ten hundredths, we get one tenth.</p>
+    </subsubsection>
     </subsection>
 
     <subsection xml:id="decimal-representation">
@@ -51,10 +55,7 @@
         <title>Pictorial Representation of Decimals</title>
         <p>We can also represent decimals pictorially. Let's consider the decimal 0.32.</p>
 
-        <figure xml:id="pictorial-representation-figure">
-            <caption>A pictorial representation of 0.32</caption>
-            <graphics mimetype="image/png" src="tikz_pictorial_representation.png" />
-        </figure>
+        
     </subsection>
 
     <subsection xml:id="comparing-decimals">
@@ -73,8 +74,9 @@
 </section>
 <section xml:id="sec_operations_with_decimals">
     <title>Operations with Decimals</title>
+    <introduction>
     <p>In this section, we will explore the four basic operations with decimals: addition, subtraction, multiplication, and division. We will not only practice these operations but also understand why they work the way they do.</p>
-    
+    </introduction>
     <subsection xml:id="subsec_add_subtract_decimals">
         <title>Addition and Subtraction with Decimals</title>
         <p>Adding and subtracting decimals is straightforward because decimal fractions behave the same as place value. The key is to line up your place values (digits) and add or subtract right to left, carrying to the next place if necessary.</p>
@@ -82,9 +84,10 @@
             <title>Subtracting Decimals</title>
             <statement>
                 <p>Let's subtract 6.29 from 53.071.</p>
-            </statement>
-            <me>53.071 - 6.290 = 46.781</me>
-            <p>GIVE A PIC OF THE ALGORITHM WITH EXPLANATION The process is the same as adding and subtracting whole numbers, but with the added step of aligning the decimal points.</p>
+            
+            <p> <me>53.071 - 6.290 = 46.781</me>
+            GIVE A PIC OF THE ALGORITHM WITH EXPLANATION The process is the same as adding and subtracting whole numbers, but with the added step of aligning the decimal points.</p>
+        </statement>
         </example>
     </subsection>
     
@@ -95,9 +98,10 @@
             <title>Multiplying Decimals</title>
             <statement>
                 <p>Let's multiply 53.071 by 6.29.</p>
-            </statement>
-            <me>53.071 \times 6.29 = 333.81659</me>
-            <p>GIVE A PIC OF THE ALGORITHM WITH EXPLANATION The reason this works is because we can think of decimals as decimal fractions. For instance, 53.071 can be thought of as 53071/1000 and 6.29 as 629/100. When we multiply these fractions, we multiply the numerators (53071 * 629) and the denominators (1000 * 100), which gives us the same result as our decimal multiplication.</p>
+            
+                <p> <me>53.071 \times 6.29 = 333.81659</me>
+            GIVE A PIC OF THE ALGORITHM WITH EXPLANATION The reason this works is because we can think of decimals as decimal fractions. For instance, 53.071 can be thought of as 53071/1000 and 6.29 as 629/100. When we multiply these fractions, we multiply the numerators (53071 * 629) and the denominators (1000 * 100), which gives us the same result as our decimal multiplication.</p>
+        </statement>
         </example>
     </subsection>
     
@@ -108,9 +112,10 @@
             <title>Dividing Decimals</title>
             <statement>
                 <p>Let's divide 3.24 by 0.618.</p>
-            </statement>
+                <p>
             <me>3.24 \div 0.618 = 3240 \div 618 = 5.242</me>
-            <p>GIVE A PIC OF THE ALGORITHM WITH EXPLANATION This works because we can think of decimals as decimal fractions. For instance, 3.24 can be thought of as 324/100 and 0.618 as 618/1000. When we divide these fractions, we multiply the dividend by the reciprocal of the divisor, which gives us the same result as our decimal division.</p>
+            GIVE A PIC OF THE ALGORITHM WITH EXPLANATION This works because we can think of decimals as decimal fractions. For instance, 3.24 can be thought of as 324/100 and 0.618 as 618/1000. When we divide these fractions, we multiply the dividend by the reciprocal of the divisor, which gives us the same result as our decimal division.</p>
+        </statement>
         </example>
     </subsection>
     
@@ -134,27 +139,27 @@
         <title>Examples of Terminating Decimals</title>
         <p>
             Here are some examples of fractions that are equivalent to terminating decimals:
-            <itemize>
-                <item>1/2 = 0.5: Here, we can say that 1/2 is equivalent to the fraction 5/10. </item>
-                <item>3/4 = 0.75: When we divide 3 by 4, we get 0.75, which is a terminating decimal.</item>
-                <item>7/8 = 0.875: Dividing 7 by 8 gives us 0.875, another terminating decimal.</item>
-                <item>3/15 = 0.2: Even though 15 is not a power of 10, it is equivalent to a fraction that is; the fraction 3/15 simplifies to 1/5, and this is equivalent to the decimal fraction 20/100, and thus a terminating decimal.</item>
-            </itemize>
+            <ol>
+                <li>1/2 = 0.5: Here, we can say that 1/2 is equivalent to the fraction 5/10. </li>
+                <li>3/4 = 0.75: When we divide 3 by 4, we get 0.75, which is a terminating decimal.</li>
+                <li>7/8 = 0.875: Dividing 7 by 8 gives us 0.875, another terminating decimal.</li>
+                <li>3/15 = 0.2: Even though 15 is not a power of 10, it is equivalent to a fraction that is; the fraction 3/15 simplifies to 1/5, and this is equivalent to the decimal fraction 20/100, and thus a terminating decimal.</li>
+            </ol>
         </p>
         <p>
             And here are examples of how to write a terminating decimal as a fraction:
-            <itemize>
-                <item>0.5 = 5/10 = 1/2: Here, we express 0.5 as the fraction 5/10, which simplifies to 1/2.</item>
-                <item>0.75 = 75/100 = 3/4: We can express 0.75 as the fraction 75/100, which simplifies to 3/4.</item>
-                <item>0.875 = 875/1000 = 7/8: The decimal 0.875 can be expressed as the fraction 875/1000, which simplifies to 7/8.</item>
-                <item>0.2 = 2/10 = 1/5: The decimal 0.2 can be expressed as the fraction 2/10, which simplifies to 1/5.</item>
-            </itemize>
+            <ol>
+                <li>0.5 = 5/10 = 1/2: Here, we express 0.5 as the fraction 5/10, which simplifies to 1/2.</li>
+                <li>0.75 = 75/100 = 3/4: We can express 0.75 as the fraction 75/100, which simplifies to 3/4.</li>
+                <li>0.875 = 875/1000 = 7/8: The decimal 0.875 can be expressed as the fraction 875/1000, which simplifies to 7/8.</li>
+                <li>0.2 = 2/10 = 1/5: The decimal 0.2 can be expressed as the fraction 2/10, which simplifies to 1/5.</li>
+            </ol>
         </p>
     </example>
     <p>
         Now, let's prove that a rational number is equivalent to a terminating decimal* if and only if it is equivalent to a decimal fraction.
     </p>
-    <assemblage>*Note: this is not quite correct, as we'll see later that decimals that have repeating 9s to the right are equivalent to terminating decimals. We will discuss this in more depth later.</assemblage>
+    <p>*Note: this is not quite correct, as we'll see later that decimals that have repeating 9s to the right are equivalent to terminating decimals. We will discuss this in more depth later. </p>
     <proof xml:id="proof-terminating-decimal">
         <title>Proof</title>
         <p>
@@ -213,9 +218,11 @@
 </subsection>
 <subsection xml:id="repeating-decimals-as-rational-numbers">
     <title>Representing All Repeating Decimals as Rational Numbers</title>
+    <introduction>
     <p>
         In this subsection, we will show that all repeating decimals can be represented by rational numbers. We will start by demonstrating that 0.9999... = 1 using decimal and fraction notation. Then, we will define the repetend and period of a repeated decimal and provide examples.
     </p>
+    </introduction>
     <subsubsection xml:id="CanRepeatingDecimalsEqual1">
         <title>Can Repeating Decimals Equal 1?</title>
         <p>
@@ -243,20 +250,34 @@
         <title>Examples of Non-Repetends</title>
         <p>
             Here are some examples of non-repetends in repeating decimals:
-            <itemize>
-                <item>In the repeating decimal 0.<m>\overline{142857}</m>, the number 142857 is the repetend. The number 142 is not a repetend because it is not the shortest group of repeating digits.</item>
-                <item>In the repeating decimal 0.<m>\overline{27}=0.272727...</m>, the number 27 is the repetend. The number 2727 is not the repetend because it is not the shortest group of repeating digits. The number 72 is not the repetend since it is not the first instance of repeating digits. So we would not write <m>0.\overline{2727}</m> or <m>0.2\overline{72}.</m> </item>
-                            </itemize>
+            <ol>
+                <li>
+                    <p>
+                        In the repeating decimal 0.<m>\overline{142857}</m>, the number 142857 is the repetend. The number 142 is not a repetend because it is not the shortest group of repeating digits.
+                    </p>
+                </li>
+                <li>
+                    <p>In the repeating decimal 0.<m>\overline{27}=0.272727...</m>, the number 27 is the repetend. The number 2727 is not the repetend because it is not the shortest group of repeating digits. The number 72 is not the repetend since it is not the first instance of repeating digits. So we would not write <m>0.\overline{2727}</m> or <m>0.2\overline{72}.</m>  </p>
+                    </li>
+                
+                            </ol>
         </p>
     </example>
         <example xml:id="example-repetend-and-period">
             <title>Examples of Repetend and Period</title>
             <p>
                 Here are two examples of identifying the repetend and period of a repeating decimal:
-                <itemize>
-                    <item>In the repeating decimal 0.<m>\overline{3}</m>, the repetend is 3 and the period is 1.</item>
-                    <item>In the repeating decimal 0.00<m>\overline{142857}</m>, the repetend starts in the thousandths place and is 142857, and the period is 6.</item>
-                </itemize>
+                <ol>
+                    <li>
+                        <p>
+                           In the repeating decimal 0.<m>\overline{3}</m>, the repetend is 3 and the period is 1. 
+                        </p>
+                    </li>
+                    <li>
+                        <p> In the repeating decimal 0.00<m>\overline{142857}</m>, the repetend starts in the thousandths place and is 142857, and the period is 6.   </p>
+                        </li>
+                </ol>>
+                    
             </p>
         </example>
     </subsubsection>
@@ -264,7 +285,7 @@
     <title>Converting a Repeating Decimal to a Fraction</title>
     <p>
         To convert a repeating decimal to a fraction, we can use the following algorithm:
-    </p>
+    
     <ol>
         <li>Let x be the number in decimal form.</li>
         <li>Let p be the period of the repetend.</li>
@@ -273,6 +294,7 @@
         <li>Convert any numerators and denominators to integers by multiplying both by the appropriate power of 10 to clear decimal places.</li>
         <li>Simplify by converting the fraction to lowest terms.</li>
     </ol>
+</p>
     <example xml:id="example-converting-repeating-decimal-to-fraction">
         <title>Example: Converting a Repeating Decimal to a Fraction</title>
         <p>
@@ -366,8 +388,32 @@
         </ol>
     </p>
 </example>
-
+<p>A natural question is if a number has two or more different ways of expressing it using decimals. Let's explore this in the next example.</p>
+<example>
+<p><ol>
+    <li>
+        <p>
+           Consider the decimal number <m>x=0.24\overline{9}</m>. Using the procedure above, determine the fraction represented by this decimal. Do you know of another way of expressing this fraction using decimals? 
+     
+        </p>
+    </li>
+   <li>
+    <p>
+        Using the example above as a guide, conjecture a second decimal expression for the fraction <m>\frac{3}{10}</m>. Then check that this is correct.
+    </p>
+    </li>
+   <li>
+    <p>
+        Using the ideas above, make a conjecture about when two decimal expressions represent the same fraction. Do your best to prove/justify why this is the case.
+    </p>
+    </li>
+</ol>
+</p>
+<p> 
+    </p>
+</example>
 </subsubsection>
+
 
 </subsection>
 
