@@ -123,6 +123,30 @@
                 Let's consider <m>a = 15</m>, <m>b = 7</m>, and <m>c = 5</m>. Here, <m>a</m> is divisible by <m>c</m> but <m>b</m> is not divisible by <m>c</m>. Therefore, <m>a+b = 22</m> and <m>a-b = 8</m> are not divisible by <m>c</m>.
             </p>
         </example>
+        <p>
+            Like the other two theorems, let's try and get an idea for a proof via a diagram first. This is a good opportunity for you to try to come up with a diagram that shows this situation before looking below. Try and draw this result, at least for the additive case, and then check if your idea is close to the picture hidden below:
+        </p>
+        <p>
+            INSERT HIDDEN PIC HERE, MAYBE BY AN EXERCISE OR SOMETHING.
+        </p>
+        <p>
+          It looks like when you "glue" the two rectangle-like objects together, the remainder that doesn't make a full row in the non-divisible number is still there when the ojects are added. This is essentially the entire idea.  
+        </p>
+        <p>
+            <theorem xml:id="thm-thm3">
+                <statement>
+                    <p>
+                        If a number <m>b</m> is divisible by <m>a</m> but a number <m>c</m> is not divisible by <m>a</m>, then <m>b+c</m> and <m>b-c</m> are not divisible by <m>c</m>. 
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        
+                    </p>
+                </proof>
+            </theorem>
+            
+        </p>
     </subsubsection>
 </subsection>
 
