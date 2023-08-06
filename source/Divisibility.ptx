@@ -24,6 +24,90 @@
         <p>
             Let's look at two examples. Consider the numbers 4 and 12. We can say that 4 divides 12, or in symbol form, <m>4 | 12</m>. This is because there exists an integer (3 in this case) such that <m>4 * 3 = 12</m>. Now consider the numbers 7 and 23. We can say that 7 does not divide 23, or in symbol form, <m>7 ∤ 23</m>. This is because there does not exist an integer such that <m>7 * c = 23</m>.
         </p>
+        
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-TransitivityAndDivisibility">
+        <title>Transitivity And Divisibility</title>
+        <p>We know that <m>3 \mid 12</m> since <m>12 =3 \times 4.</m> If there is another number <m>n</m> for which we know <m>12 \mid n</m>, do we need to check whether <m>3 \mid n</m>?</p>
+        <p>
+            We can use the fact that <m>3 \mid 12</m> to show that <m>3 \mid n</m>. We need to show that <m>n = 3 \times (   )</m> for some natural number in the brackets. Since <m>12 \mid n</m> we know there is some number <m>c</m> such that <m>n = 12c</m>. But since <m>12 = 3 \times 4 </m> we can rewrite this as <me>n=12c=(3\times 4) c</me> <me>
+                =3\times (4c).
+            </me>
+            Since <m>4,c \in \mathbb{N}</m> we know <m>4 \times c \in \mathbb{N}</m>, so we were able to express <m>n</m> as <m>3</m> times another natural number, so <m>3 \mid n</m>.
+        </p>
+        <p>
+            If you look at this closely, you can see that there is nothing special about <m>3</m> or <m>12</m> or <m>n</m>, except for the fact that there is a "chain" of divisibility relating them. 
+        </p> 
+        <p>
+            Let's try and show that this patter always holds. The next exercise walks you through a proof of this fact. 
+        </p>
+        <p>
+            <exercise>
+                <p>
+                    Let's show that if we have three numbers <m>a,b,c \in \mathbb{N}</m> and we know that <m>a \mid b</m> and <m>b \mid c</m> then <m>a \mid c</m> as well.
+                </p>
+                <ol>
+                    <li>
+                        <p>
+                            How can we write <m>a \mid b</m> as an equation? You might want to introduce a new variable in it. Do something similar with <m>b \mid c</m>. <hint>
+                                <p>
+                                    A common mistake is to use the same variable to represent different quantities. Make sure you're using a different new symbol in both equations. 
+                                </p>
+                            </hint>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We want to show that <m>a \mid c</m>. Write this as an equation.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Assuming the two equations in the first part are true, we need to use the two equations above, plus some other mathematical rules, to show that the equation in the previous part must be true. Think if you can come up with a way of doing this. <hint>
+                                <p>
+                                    Think about substituting one equation into the other. Also, you'll need to use the idea of associativity of multiplication.
+                                </p>
+                            </hint>
+                        </p>
+                    </li>
+                </ol>
+            </exercise>
+        </p>
+        <p>
+            Now that we've shown this, we can use it to help up study divisibility of many numbers. We'll do many rules in the next subsection, but if we look at the example at the beginning of this section, we see that this shows the following:
+        </p>
+        <p>
+            <theorem xml:id="thm-if12then3">
+                <statement>
+                    <p>
+                        If a number <m>n</m> is divisible by <m>12</m> then it is also divisible by <m>3</m>.  
+                    </p>
+                </statement>
+            </theorem>
+                       
+        </p>
+        <p>
+            We will talk about <term>relationships</term> between two objects, like numbers, or polygons, or sets, or other things. Basically a relationship between two objects is any statement involving two obects that is either TRUE or FALSE.
+        </p>
+        <p>
+            For example, if our objects are sets, then <m>\in</m> is a relation between them. For example, let <m>A:=\{1,2\}, \quad B:=\{1,\{1,2\},3\}, \quad C:= \{1,2,3,4\}</m>. Under the relation <m>\in</m>, <m>A</m> is related to <m>B</m> since <m>A \in B</m>, but <m>A</m> is not related to <m>C</m> since <m>A \notin C</m>. Divisibility is also a relation. We can say that under divisibility <m>3</m> is related to <m>12</m> since <m>3 \mid 12</m> but <m>3</m> is not related to <m>10</m> since <m>3 \nmid 10</m>.
+        </p>
+        <p>
+            This "chain"-like property of relationships is incredibly important in mathematics. In fact, it comes up so often that we decided to give it it's own name. In fact, we've talked about this property before; equality has it as well, as we've seen in <xref ref="assemblage-PropertiesOfEquality"/>. We'll talk about it in more generality here.
+        </p>
+        <definition xml:id="def-transitivity">
+            <statement>
+                <p>
+                   Let <m>\tilde</m> be some relationship (such as equality "=", or divisibility "\mid")  between objects (such as numbers). We say the relationship <m>\tilde</m> is <term>transitive</term> exactly when if th's true that, for objects <m>a,b,c</m>, if  <m>a \tilde b</m> and <m>b \tilde c</m> then <m>a \tilde c</m>.
+                </p>
+            </statement>
+        </definition>
+        <exercise>
+            <p>
+                Can you think of any other relationships besides equality and divisibility that are transitive? 
+            </p>
+        </exercise>
+
     </subsubsection>
     <subsubsection xml:id="divisibility-properties">
         <title>Divisibility Properties of 0, 1, and a Number with Itself</title>
@@ -314,20 +398,65 @@
     <subsubsection xml:id="divisibility-rule-8">
         <title>Divisibility Rule for 8</title>
         <p>
-            A number is divisible by 8 if the number formed by its last three digits is divisible by 8.
+            Looking at the above rules, you may have started to notice a pattern emerging. We can view <m>2</m> as <m>2^1</m> and note that to check divisibility by 2 we only need to check whether the number formed by the last digit is divisibile by 2. For <m>4=2^2</m>, we need to check if the number formed by the last *two* digits is divisible by <m>4</m>. Let's check if the pattern has a chance of holding for <m>8=2^3:</m>
         </p>
-        <example xml:id="example-divisibility-8">
-            <title>Example</title>
+        <example>
             <p>
-                Consider the number 1232. The number formed by the last three digits is 232. Since 232 is divisible by 8, 1232 is also divisible by 8.
+                <p>
+                    Consider the number 1232. The number formed by the last three digits is 232. We can check that <m>232 \div 8 = 29</m>, and <m>1232 \div 8 = 154</m>. So it looks like the expected rule holds, at least for this example. Indeed, since 232 is divisible by 8, 1232 is also divisible by 8.
+                </p> 
             </p>
         </example>
+        <p>
+            Here's a non-example too:
+        </p>
         <example xml:id="non-example-divisibility-8">
             <title>Non-Example</title>
             <p>
                 Consider the number 1235. The number formed by the last three digits is 235. Since 235 is not divisible by 8, 1235 is not divisible by 8.
             </p>
         </example>
+
+        <p>
+            <theorem xml:id="thm-DivBy8">
+                <statement>
+                    <p>
+                        A number is divisible by 8 if and only if the number formed by the last three digits is divisible by 8.
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>8 \mid 1000</m>, so by <xref ref="theorem1"/> we know that <m>8 \mid A\times 1000</m>. For ease, let's define <m>S:=A\times 1000</m>. Thus we can write <m>\underline{ABCD}=S+B\times 100+C\times 10+D</m>. 
+                    </p>
+                    <p>
+                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. 
+                    </p>
+                </proof>
+            </theorem>
+            
+        </p> 
+            
+        <example xml:id="example-divisibility-8">
+            <title>Example</title>
+            
+        </example>
+        
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-DivisibilityRuleforHigherPowersof2">
+        <title>Divisibility Rule for Higher Powers of 2</title>
+        <p>
+            You can see that there seems to be a pattern emerging here. A good question is to see if we can figure out why this pattern holds. Let's walk through this in an exercise:
+        </p>
+        <exercise>
+            <ol>
+                <li>
+                    <p>
+                        Let's start with divisibility by <m>2</m>. 
+                    </p>
+                </li>
+            </ol>
+        </exercise>
+        
     </subsubsection>
 </subsection>
 
