@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2023-08-04T12:34:51-03:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Divisibility Theorems for Small Numbers</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math For Elementary School Teachers">
+<meta property="book:author" content="Me">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers:</span> <span class="subtitle"></span></a></h1>
+<p class="byline">Me</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-IntroductoryConcepts.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Divisibility.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-IntroductoryConcepts.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Divisibility.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="preface.html" data-scroll="preface" class="internal">Preface</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="test.html" data-scroll="test" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a><ul>
+<li><a href="IntroToLogic.html" data-scroll="IntroToLogic" class="internal">Intro To Logic</a></li>
+<li><a href="sec-ConditionalStatements.html" data-scroll="sec-ConditionalStatements" class="internal">Conditional Statements</a></li>
+<li><a href="sec-Sets.html" data-scroll="sec-Sets" class="internal">Sets</a></li>
+<li><a href="section-4.html" data-scroll="section-4" class="internal">Supplemental Exercises</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="WholeNumbers.html" data-scroll="WholeNumbers" class="internal"><span class="codenumber">2</span> <span class="title">Sample Chapter: Whole Numbers</span></a><ul>
+<li><a href="sec-Equality.html" data-scroll="sec-Equality" class="internal">Equality</a></li>
+<li><a href="sec-ProblemSolving.html" data-scroll="sec-ProblemSolving" class="internal">Problem Solving</a></li>
+<li><a href="sec-2_1NumberSystemsAndPlaceValue.html" data-scroll="sec-2_1NumberSystemsAndPlaceValue" class="internal">NumberSystemsAndPlaceValueWhole Numbers</a></li>
+<li><a href="sec-NumberSystems.html" data-scroll="sec-NumberSystems" class="internal">Number Systems</a></li>
+<li><a href="sec-ArithmeticOperations.html" data-scroll="sec-ArithmeticOperations" class="internal">Arithmetic Operations</a></li>
+<li><a href="sec-PropertiesOfArithmeticOperations.html" data-scroll="sec-PropertiesOfArithmeticOperations" class="internal">Properties Of Arithmetic Operations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ArithmeticAlgorithms.html" data-scroll="ArithmeticAlgorithms" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a><ul>
+<li><a href="sec-AdditionAlgorithms.html" data-scroll="sec-AdditionAlgorithms" class="internal">Addition Algorithms</a></li>
+<li><a href="sec-SubtractionAlgorithms.html" data-scroll="sec-SubtractionAlgorithms" class="internal">Subtraction Algorithms</a></li>
+<li><a href="sec-MultiplicationAlgorithms.html" data-scroll="sec-MultiplicationAlgorithms" class="internal">Multiplication Algorithms</a></li>
+<li><a href="sec-DivisionAlgorithms.html" data-scroll="sec-DivisionAlgorithms" class="internal">Division Algorithms</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Fractions.html" data-scroll="Fractions" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a><ul>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">Introduction to Fractions</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Arithmetic With Fractions</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">Ratios, Rates, and Proportions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Decimals.html" data-scroll="Decimals" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a><ul>
+<li><a href="decimals.html" data-scroll="decimals" class="internal">Introduction to Decimals</a></li>
+<li><a href="sec_operations_with_decimals.html" data-scroll="sec_operations_with_decimals" class="internal">Operations with Decimals</a></li>
+<li><a href="terminating-repeating-decimals.html" data-scroll="terminating-repeating-decimals" class="internal">Terminating and Repeating Decimals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Divisibility.html" data-scroll="Divisibility" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a><ul>
+<li><a href="sec-IntroductoryConcepts.html" data-scroll="sec-IntroductoryConcepts" class="internal">Introductory Concepts</a></li>
+<li><a href="divisibility-theorems-small-numbers.html" data-scroll="divisibility-theorems-small-numbers" class="active">Divisibility Theorems for Small Numbers</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
+<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="divisibility-theorems-small-numbers"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.2</span> <span class="title">Divisibility Theorems for Small Numbers</span>
+</h2>
+<section class="subsection" id="subsec-IntroductionDivThms"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.2.1</span> <span class="title">Introduction</span>
+</h3>
+<p id="p-1381">In this section, we will introduce and prove the divisibility theorems for numbers 2 through 11. Each theorem will be introduced with an example, and then we will prove them for four-digit numbers. While we will focus on four-digit numbers for simplicity, it's important to note that these proofs can be extended to numbers of any number of digits.</p>
+<p id="p-1382">To facilitate our discussion, we will use underline notation in LaTeX to indicate a number by its place value digits. For example, a four-digit number <span class="process-math">\(ABCD\)</span> can be represented as <span class="process-math">\(\underline{ABCD} = A \times 1000 + B \times 100 + C \times 10 + D\text{.}\)</span> This notation will allow us to break down the number into its constituent parts and analyze its divisibility properties. Since we are using variables to represent unknown digits, we need this new notation, since if we write <span class="process-math">\(ABCD\)</span> this usually means <span class="process-math">\(A \times B \times C \times D\text{.}\)</span> However, if we write actual digits like <span class="process-math">\(1234\)</span> without an underline, we still mean <span class="process-math">\(1000+200+30+4\text{.}\)</span></p></section><section class="subsection" id="divisibility-rule-2-4-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.2.2</span> <span class="title">Divisibility Rules for 2, 4, and 8</span>
+</h3>
+<p id="p-1383">In number theory, divisibility rules are simple methods to determine whether one number is divisible by another without performing the division. This section will focus on the divisibility rules for 2, 4, and 8.</p>
+<section class="subsubsection" id="divisibility-rule-2"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">6.2.2.1</span> <span class="title">Divisibility Rule for 2</span>
+</h4>
+<p id="p-1384">Most people reading this will know the divisilbity rule for <span class="process-math">\(2\text{.}\)</span> It is one of the first patterns that elementary students notice, and of course it extends to being able to check if any number has 2 as a factor. The rule is as follows; we will prove it after showing examples of the rule showing both divisibility and non-divisibility.</p>
+<article class="assemblage assemblage-like" id="assemblage-DivisibilityIfAndOnlyIf"><h5 class="heading"><span class="title">Reminder.</span></h5>
+<p id="p-1385">A reminder from the first chapter. Remember that an if-and-only-if statement, say <span class="process-math">\(P\)</span> if-and-only-if <span class="process-math">\(Q\)</span> is shorthand to mean "<span class="process-math">\(P \to Q\)</span> and <span class="process-math">\(Q \to P\)</span>". In fact, since the contrapositive of <span class="process-math">\(Q \to P\)</span> is <span class="process-math">\(\sim P \to \sim Q\text{,}\)</span> we can view <span class="process-math">\(P\)</span> if-and-only-if <span class="process-math">\(Q\)</span> as "<span class="process-math">\(P \to Q\)</span> and <span class="process-math">\(\sim P \to \sim Q\)</span>".</p></article><p id="p-1386">A number is divisible by 2 if and only if the last digit is divisible by 2.</p>
+<article class="example example-like" id="example-divisibility-2"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-divisibility-2"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Example.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-divisibility-2"><article class="example example-like"><p id="p-1387">Consider the number 1234. The last digit is 4, which is even. Therefore, 1234 is divisible by 2.</p></article></div>
+<article class="example example-like" id="non-example-divisibility-2"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-non-example-divisibility-2"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Non-Example.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-non-example-divisibility-2"><article class="example example-like"><p id="p-1388">Consider the number 1235. The last digit is 5, which is not even. Therefore, 1235 is not divisible by 2.</p></article></div>
+<p id="p-1389">Think about why we would only need to check the last digit of our number. It may be helpful to write <span class="process-math">\(1234\)</span> as <span class="process-math">\(1000+200+30+4\)</span> and <span class="process-math">\(1235\)</span> as <span class="process-math">\(1000+200+30+5\text{.}\)</span> Could you explain why this rule is true to another student?</p>
+<p id="p-1390">Let's now prove this rule for four-digit numbers, using the notation mentioned in the introduction. We will rely on the divisibility theorems in the previous section to justify why this rule is true.</p>
+<p id="p-1391"><article class="theorem theorem-like" id="thm-DivBy2"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.2.3</span><span class="period">.</span>
+</h5>
+<p id="p-1392">A number is divisible by 2 if and only if the last digit is divisible by 2.</p></article><article class="hiddenproof" id="proof-12"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-12"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><p id="p-1393">Consider the four-digit number <span class="process-math">\(\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D\text{.}\)</span> We know that <span class="process-math">\(2 \mid 1000\text{,}\)</span> <span class="process-math">\(2 \mid 100\text{,}\)</span> and <span class="process-math">\(2 \mid 10\text{,}\)</span> so by <a href="sec-IntroductoryConcepts.html#theorem1" class="internal" title="Subsubsection 6.1.2.1: Theorem 1">Subsubsection 6.1.2.1</a> we know that <span class="process-math">\(2 \mid A\times 1000,\)</span> <span class="process-math">\(2 \mid B\times 100\text{,}\)</span> and <span class="process-math">\(2 \mid C \times 10\text{.}\)</span> By <a href="sec-IntroductoryConcepts.html#theorem2" class="internal" title="Subsubsection 6.1.2.2: Theorem 2">Subsubsection 6.1.2.2</a> we know that <span class="process-math">\(2 \mid (A\times 1000+B\times 100+C\times 10).\\text{.}\)</span> For ease, let's define <span class="process-math">\(S:=A\times 1000+B\times 100+C\times 10\text{.}\)</span> Thus we can write <span class="process-math">\(\underline{ABCD}=S+D\text{.}\)</span></p>
+<p id="p-1394">Now with that setup we can start proving <span class="process-math">\(P \to Q\)</span> and <span class="process-math">\(\sim P \to \sim Q\text{.}\)</span> By <a href="sec-IntroductoryConcepts.html#theorem2" class="internal" title="Subsubsection 6.1.2.2: Theorem 2">Subsubsection 6.1.2.2</a> we know that if <span class="process-math">\(2 \mid D\)</span> (P being true) then <span class="process-math">\(2 \mid S+D\text{,}\)</span> so Q is true. So we have that <span class="process-math">\(P \to Q\)</span> is always true. By <a href="sec-IntroductoryConcepts.html#theorem3" class="internal" title="Subsubsection 6.1.2.3: Theorem 3">Subsubsection 6.1.2.3</a> if <span class="process-math">\(2 \nmid D\)</span> (P being false) then <span class="process-math">\(2 \nmid S+D\text{,}\)</span> so Q is false. So we have that <span class="process-math">\(\sim P \to \sim Q\)</span> is always true.</p></article></div></p></section><section class="subsubsection" id="divisibility-rule-4"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">6.2.2.2</span> <span class="title">Divisibility Rule for 4</span>
+</h4>
+<p id="p-1395">A number is divisible by 4 if the number formed by its last two digits is divisible by 4.</p>
+<article class="example example-like" id="example-divisibility-4"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-divisibility-4"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Example.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-divisibility-4"><article class="example example-like"><p id="p-1396">Consider the number 1232. The number formed by the last two digits is 32. Since 32 is divisible by 4, 1232 is also divisible by 4.</p></article></div>
+<article class="example example-like" id="non-example-divisibility-4"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-non-example-divisibility-4"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Non-Example.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-non-example-divisibility-4"><article class="example example-like"><p id="p-1397">Consider the number 1235. The number formed by the last two digits is 35. Since 35 is not divisible by 4, 1235 is not divisible by 4.</p></article></div></section><section class="subsubsection" id="divisibility-rule-8"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">6.2.2.3</span> <span class="title">Divisibility Rule for 8</span>
+</h4>
+<p id="p-1398">A number is divisible by 8 if the number formed by its last three digits is divisible by 8.</p>
+<article class="example example-like" id="example-divisibility-8"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-divisibility-8"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Example.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-divisibility-8"><article class="example example-like"><p id="p-1399">Consider the number 1232. The number formed by the last three digits is 232. Since 232 is divisible by 8, 1232 is also divisible by 8.</p></article></div>
+<article class="example example-like" id="non-example-divisibility-8"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-non-example-divisibility-8"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Non-Example.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-non-example-divisibility-8"><article class="example example-like"><p id="p-1400">Consider the number 1235. The number formed by the last three digits is 235. Since 235 is not divisible by 8, 1235 is not divisible by 8.</p></article></div></section></section></section></div></main>
+</div>
+</body>
+</html>
