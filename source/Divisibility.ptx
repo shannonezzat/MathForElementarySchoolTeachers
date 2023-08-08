@@ -34,12 +34,27 @@
                 =3\times (4c).
             </me>
             Since <m>4,c \in \mathbb{N}</m> we know <m>4 \times c \in \mathbb{N}</m>, so we were able to express <m>n</m> as <m>3</m> times another natural number, so <m>3 \mid n</m>.
+
         </p>
+        <p>
+            INSERT PIC OF THIS DIVISBILITY
+        </p>
+        <p>
+            Now that we've shown this, we can use it to help up study divisibility of many numbers. We'll do many rules in the next subsection, but if we look at the example at the beginning of this section, we see that this shows the following:
+        </p>
+        <p>
+            <theorem xml:id="thm-if12then3">
+                <statement>
+                    <p>
+                        If a number <m>n</m> is divisible by <m>12</m> then it is also divisible by <m>3</m>.  
+                    </p>
+                </statement>
+            </theorem>
         <p>
             If you look at this closely, you can see that there is nothing special about <m>3</m> or <m>12</m> or <m>n</m>, except for the fact that there is a "chain" of divisibility relating them. 
         </p> 
         <p>
-            Let's try and show that this patter always holds. The next exercise walks you through a proof of this fact. 
+            Let's try and show that this pattern always holds. The next exercise walks you through a proof of this fact. 
         </p>
         <p>
             <exercise>
@@ -74,26 +89,37 @@
             </exercise>
         </p>
         <p>
-            Now that we've shown this, we can use it to help up study divisibility of many numbers. We'll do many rules in the next subsection, but if we look at the example at the beginning of this section, we see that this shows the following:
+            The following diagram shows the idea in the previous exercise: INSERT PIC HERE
         </p>
         <p>
-            <theorem xml:id="thm-if12then3">
-                <statement>
-                    <p>
-                        If a number <m>n</m> is divisible by <m>12</m> then it is also divisible by <m>3</m>.  
-                    </p>
-                </statement>
-            </theorem>
+            This is a very useful result we've proved in the previous exercise. Let's state it as a theorem, so that we can refer to it later on:
+        <theorem xml:id="thm-DivTrans">
+            <statement>
+                <p>
+                    Let <m>a,b,c \in 'mathbb{N}.</m> If <m>a \mid b</m> and <m>b \mid c</m> then <m>a \mid c</m>.
+                </p>
+            </statement>
+            <proof>
+                <p>
+                    See the previous exercise.
+                </p>
+            </proof>
+        </theorem>
+        
+        </p>
+
+        
+        
                        
         </p>
         <p>
-            We will talk about <term>relationships</term> between two objects, like numbers, or polygons, or sets, or other things. Basically a relationship between two objects is any statement involving two obects that is either TRUE or FALSE.
+            We will talk about <term>relation</term> between two objects, like numbers, or polygons, or sets, or other things. Basically a relation between two objects is any statement involving two obects that is either TRUE or FALSE.
         </p>
         <p>
             For example, if our objects are sets, then <m>\in</m> is a relation between them. For example, let <m>A:=\{1,2\}, \quad B:=\{1,\{1,2\},3\}, \quad C:= \{1,2,3,4\}</m>. Under the relation <m>\in</m>, <m>A</m> is related to <m>B</m> since <m>A \in B</m>, but <m>A</m> is not related to <m>C</m> since <m>A \notin C</m>. Divisibility is also a relation. We can say that under divisibility <m>3</m> is related to <m>12</m> since <m>3 \mid 12</m> but <m>3</m> is not related to <m>10</m> since <m>3 \nmid 10</m>.
         </p>
         <p>
-            This "chain"-like property of relationships is incredibly important in mathematics. In fact, it comes up so often that we decided to give it it's own name. In fact, we've talked about this property before; equality has it as well, as we've seen in <xref ref="assemblage-PropertiesOfEquality"/>. We'll talk about it in more generality here.
+            This "chain"-like property of relations is incredibly important in mathematics. In fact, it comes up so often that we decided to give it it's own name. In fact, we've talked about this property before; equality has it as well, as we've seen in <xref ref="assemblage-PropertiesOfEquality"/>. We'll talk about it in more generality here.
         </p>
         <definition xml:id="def-transitivity">
             <statement>
@@ -348,7 +374,7 @@
                         Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>2 \mid 1000</m>, <m>2 \mid 100</m>, and <m>2 \mid 10</m>, so by <xref ref="theorem1"/> we know that <m>2 \mid A\times 1000,</m> <m>2 \mid B\times 100</m>, and <m>2 \mid C \times 10</m>. By <xref ref="theorem2"/> we know that <m>2 \mid (A\times 1000+B\times 100+C\times 10).\</m>. For ease, let's define <m>S:=A\times 1000+B\times 100+C\times 10</m>. Thus we can write <m>\underline{ABCD}=S+D</m>. 
                     </p>
                     <p>
-                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>2 \mid D</m> (P being true) then <m>2 \mid S+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>2 \nmid D</m> (P being false) then <m>2 \nmid S+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. 
+                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>2 \mid D</m> (P being true) then <m>2 \mid S+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>2 \nmid D</m> (P being false) then <m>2 \nmid S+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                     </p>
                 </proof>
             </theorem>
@@ -389,7 +415,7 @@
                     Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>4 \mid 1000</m> and <m>4 \mid 100</m>, so by <xref ref="theorem1"/> we know that <m>4 \mid A\times 1000,</m> and <m>4 \mid B\times 100</m>. By <xref ref="theorem2"/> we know that <m>4 \mid (A\times 1000+B\times 100).\</m>. For ease, let's define <m>S:=A\times 1000+B\times 100</m>. Thus we can write <m>\underline{ABCD}=S+(C\times 10+D)</m>. 
                 </p>
                 <p>
-                    Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. 
+                    Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                 </p>
             </proof>
         </theorem>
@@ -429,7 +455,7 @@
                         Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>8 \mid 1000</m>, so by <xref ref="theorem1"/> we know that <m>8 \mid A\times 1000</m>. For ease, let's define <m>S:=A\times 1000</m>. Thus we can write <m>\underline{ABCD}=S+B\times 100+C\times 10+D</m>. 
                     </p>
                     <p>
-                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. 
+                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                     </p>
                 </proof>
             </theorem>
@@ -448,10 +474,37 @@
             You can see that there seems to be a pattern emerging here. A good question is to see if we can figure out why this pattern holds. Let's walk through this in an exercise:
         </p>
         <exercise>
+            
             <ol>
                 <li>
                     <p>
-                        Let's start with divisibility by <m>2</m>. 
+                        What is the largest power of <m>2</m> that is a factor of <m>10^3</m>? What about <m>10^7</m>? What about <m>10^k</m> for some number <m>k</m>? Try factoring <m>10^k</m> into its prime factors.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                       We know that <m>8 \mid 1000</m>. What can you say about whether <m>8 \mid 10^k</m> for <m>k \geq 4</m>? What theorem that we've proved justifies this?
+                    </p>
+                </li>
+                <li>
+                    <title></title>
+                    <p>
+                        Can you generalize the above idea to all powers of <m>2</m>? What can you say about which powers of <m>10</m> it is a factor of?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        How does this relate to digits of a number?  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Using the ideas above, conjecture a divisibility rule for when a number is divisibile by <m>2^k</m>. What do you have to check?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Let's say you have an <m>n</m>-digit number <m>\underline{A_{10^{n-1}}A_{10^{n-2}}\ldotsA_{10}A_1}</m> where the subscript of each digit is its place vaue. Using the proofs for <m>2,4,</m> and <m>8</m> as a blueprint, prove the conjecture you made above.
                     </p>
                 </li>
             </ol>
@@ -459,7 +512,148 @@
         
     </subsubsection>
 </subsection>
-
+<subsection xml:id="subsec-DivisibilityRuleFor5">
+    <title>Divisibility Rule For 5</title>
+    <p>
+        The divisibility rule for 5 is also increibly well known. Most people reading this should know that you only need to check whether the last digit of the number is either 5 or 0. However, like the divisibility rule for 2, it will be more advantageous to think the rule as the last digit being divisible by <m>5</m>. Note that the rule for divisibility by 2 relies on the fact that <m>10=2\times5</m>, since all multiples of <m>10</m>, including powers of <m>10</m>, are also divisbile by <m>2</m>. Since <m>10=2 \times 5,</m> the exact same idea should work for <m>5</m> as well as <m>2</m>. In fact, we should be able to write down the exact same argument for divisibility by 5 as divisibility by 2, with all the 2's replaced by 5:
+    </p>
+    <p>
+        <theorem xml:id="thm-DivBy5">
+            <statement>
+                <p>
+                    A number is divisible by 5 if and only if the last digit is divisible by 5.                </p>
+            </statement>
+            <proof>
+                <p>
+                    Modify the proof of <xref ref="thm-DivBy2"/> so that it is a proof of this theorem.
+                </p>
+            </proof>
+        </theorem>
+        
+    </p>
+    <example>
+        <p>
+         Consider the number <m>3456</m>. Since <m>5 \nmid 6</m>, we know that <m>5 \nmid 3456</m>. You can check this using long division or a calculator.   
+        </p>
+    </example>
+    <example>
+        <p>
+            Consider the number <m>2345</m>. Since <m>5 \mid 5</m>, we know that <m>5 \mid 2345</m>. Again, you can cehck this via long division.
+        </p>
+    </example>
+    <exercise>
+        <p>
+            Try and modify the divisibility rules for powers of <m>2</m> to be divisibility rules for powers of <m>5</m>. What do you have to check to determine if a number is divisible by <m>5^2=25</m>? What about <m>5^=125</m>? What about <m>5^k</m> for some number <m>k</m>?
+        </p>
+    </exercise>
+</subsection>
+<subsection xml:id="subsec-DivisibilityRulesFor3And9">
+    <title>Divisibility Rules For 3 And 9</title>
+    <p>
+        In the last section, we were able to develop divisibility rules for powers of <m>2</m> and <m>5</m> since powers of <m>10</m> are divisible by <m>2</m> and <m>5</m>. We could use this commonality between each power of <m>10</m>, and thus each place value in a number, to come up with a simplified rule for determining divisibility of these powers of <m>2</m> and <m>5</m>. In this section, we will look for another consistant commonality between powers of 10 being divided by <m>3</m> and <m>9</m> that will allow us to develop divisibility rules for these numbers. The next example will walk you through noticing the pattern.
+    </p>
+    <example>
+        <p>
+            In this example we will develop an intution for a divisibility rule for <m>3</m> and <m>9</m>.
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Using long division, so you can keep track of remainders, find <m>10 \div 3</m>. Now do the same thing for <m>100, 1000, 10000,</m> and <m>100000</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    What commonality do you notice about these answers? In each division, how many of each power of 10 are you able to group into groups of 3? 
+                </p>
+            </li>
+            <li>
+                <p>
+                    Now do the division <m>111 \div 3</m> in two ways; using long division, and then doing the division separately for each place value; that is, <m>(100+10+1) \div 3 = 100\div 3 + 10 \div 3 + 1\div 3.</m> What can you say about the three remainders in the second case?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Using the above as a guide, descibe a way to determine if a number is divisible by <m>3</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Now redo the work above replacing <m>3</m> by <m>9</m>. You should notice the exact same pattern.
+                </p>
+            </li>
+            
+        </ol>
+    </example>
+    <p>
+        Now that we have developed our rule let's prove it for four-digit numbers. Like the other proofs in this section, this can be expanded to a proof for number with any amount of digits.
+    </p>
+    <theorem xml:id="divisibility-3-9">
+        <title>Divisibility Rules for 3 and 9</title>
+        <statement>
+          <p>
+            A number is divisible by <m>3</m> if and only if the sum of its digits is divisible by <m>3</m>. Similarly, a number is divisible by <m>9</m> if and only if the sum of its digits is divisible by <m>9</m>.
+          </p>
+        </statement>
+        <proof>
+          <p>
+            Consider a number <m>\underline{abcd}</m> where <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m> are its digits. We can express this number in its expanded form as:
+            <me>
+              \underline{abcd} = a \times 1000 + b \times 100 + c \times 10 + d
+            </me>
+            Using place value, we can rewrite this as:
+            <me>
+              \underline{abcd} = a \times (999 + 1) + b \times (99 + 1) + c \times (9 + 1) + d
+            </me>
+            Expanding and grouping, we get:
+            <me>
+              \underline{abcd} = a \times 999 + b \times 99 + c \times 9 + (a + b + c + d)
+            </me>
+            The terms <m>a \times 999</m>, <m>b \times 99</m>, and <m>c \times 9</m> are all divisible by <m>3</m> and <m>9</m> since <m>999</m>, <m>99</m>, and <m>9</m> are divisible by both <m>3</m> and <m>9</m>. Therefore, the divisibility of the number <m>\underline{abcd}</m> by <m>3</m> or <m>9</m> depends solely on the sum of its digits, <m>a + b + c + d</m>.
+          </p>
+        </proof>
+      </theorem>
+      <p>
+        Let's look at a few examples to make sure we know how the rules work.
+      </p>
+      
+      <example xml:id="example-divisibility-3">
+        <title>Example for Divisibility by 3</title>
+        <statement>
+          <p>
+            Consider the number 123. The sum of its digits is <m>1 + 2 + 3 = 6</m>. Since 6 is divisible by 3, the number 123 is also divisible by 3.
+          </p>
+        </statement>
+      </example>
+      
+      <example xml:id="example-divisibility-9">
+        <title>Example for Divisibility by 9</title>
+        <statement>
+          <p>
+            Consider the number 234. The sum of its digits is <m>2 + 3 + 4 = 9</m>. Since 9 is divisible by 9, the number 234 is also divisible by 9.
+          </p>
+        </statement>
+      </example>
+      
+      <example xml:id="non-example-divisibility-3">
+        <title>Non-example for Divisibility by 3</title>
+        <statement>
+          <p>
+            Consider the number 124. The sum of its digits is <m>1 + 2 + 4 = 7</m>. Since 7 is not divisible by 3, the number 124 is not divisible by 3.
+          </p>
+        </statement>
+      </example>
+      
+      <example xml:id="non-example-divisibility-9">
+        <title>Non-example for Divisibility by 9</title>
+        <statement>
+          <p>
+            Consider the number 235. The sum of its digits is <m>2 + 3 + 5 = 10</m>. Since 10 is not divisible by 9, the number 235 is not divisible by 9.
+          </p>
+        </statement>
+      </example>
+      
+</subsection>
 
 </section>
 

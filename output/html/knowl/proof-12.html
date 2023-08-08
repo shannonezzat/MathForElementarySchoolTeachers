@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-08-06T14:27:16-03:00       *-->
+<!--*       on 2023-08-08T11:36:22-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,18 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h5 class="heading"><span class="type">Proof</span></h5>
-<p>Consider the four-digit number <span class="process-math">\(\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D\text{.}\)</span> We know that <span class="process-math">\(2 \mid 1000\text{,}\)</span> <span class="process-math">\(2 \mid 100\text{,}\)</span> and <span class="process-math">\(2 \mid 10\text{,}\)</span> so by <a href="sec-IntroductoryConcepts.html#theorem1" class="internal" title="Subsubsection 6.1.2.1: Theorem 1">Subsubsection 6.1.2.1</a> we know that <span class="process-math">\(2 \mid A\times 1000,\)</span> <span class="process-math">\(2 \mid B\times 100\text{,}\)</span> and <span class="process-math">\(2 \mid C \times 10\text{.}\)</span> By <a href="sec-IntroductoryConcepts.html#theorem2" class="internal" title="Subsubsection 6.1.2.2: Theorem 2">Subsubsection 6.1.2.2</a> we know that <span class="process-math">\(2 \mid (A\times 1000+B\times 100+C\times 10).\\text{.}\)</span> For ease, let's define <span class="process-math">\(S:=A\times 1000+B\times 100+C\times 10\text{.}\)</span> Thus we can write <span class="process-math">\(\underline{ABCD}=S+D\text{.}\)</span></p>
-<p>Now with that setup we can start proving <span class="process-math">\(P \to Q\)</span> and <span class="process-math">\(\sim P \to \sim Q\text{.}\)</span> By <a href="sec-IntroductoryConcepts.html#theorem2" class="internal" title="Subsubsection 6.1.2.2: Theorem 2">Subsubsection 6.1.2.2</a> we know that if <span class="process-math">\(2 \mid D\)</span> (P being true) then <span class="process-math">\(2 \mid S+D\text{,}\)</span> so Q is true. So we have that <span class="process-math">\(P \to Q\)</span> is always true. By <a href="sec-IntroductoryConcepts.html#theorem3" class="internal" title="Subsubsection 6.1.2.3: Theorem 3">Subsubsection 6.1.2.3</a> if <span class="process-math">\(2 \nmid D\)</span> (P being false) then <span class="process-math">\(2 \nmid S+D\text{,}\)</span> so Q is false. So we have that <span class="process-math">\(\sim P \to \sim Q\)</span> is always true.</p></article><span class="incontext"><a href="divisibility-theorems-small-numbers.html#proof-12">in-context</a></span>
+<p>Again, we do the additive case, and leave the subtraction case to an exercise later. Let <span class="process-math">\(a \mid b\)</span> and <span class="process-math">\(a \nmid c\text{.}\)</span> This means that <span class="process-math">\(b=ax\)</span> for some natural number <span class="process-math">\(x\text{,}\)</span> and <span class="process-math">\(c=ay+r\text{,}\)</span> where <span class="process-math">\(y\)</span> is a natural number, and thinking about it as a remainder, <span class="process-math">\(r\)</span> is a natural number such that <span class="process-math">\(r \leq a-1\text{.}\)</span> We need to show that <span class="process-math">\(a \nmid b+c\text{,}\)</span> so we need to show that <span class="process-math">\(b+c\)</span> has a remainder. Adding both equations together, we get</p>
+<div class="displaymath process-math">
+\begin{equation*}
+b+c = ax+ay+r.
+\end{equation*}
+</div>
+<p class="continuation">Factoring out an <span class="process-math">\(a\)</span> from the first two terms on the RHS,</p>
+<div class="displaymath process-math">
+\begin{equation*}
+b+c = a(x+y)+r.
+\end{equation*}
+</div>
+<p class="continuation">Since <span class="process-math">\(x+y \in \mathbb{N}\)</span> and <span class="process-math">\(r \in \mathbb{N}\)</span> with <span class="process-math">\(r \leq n-1\text{,}\)</span> we have written <span class="process-math">\(b+c\)</span> in quotient-remainder form, and we know there is exactly one way to do this. And since <span class="process-math">\(r \neq 0\text{,}\)</span> then <span class="process-math">\(a \nmid b+c\text{.}\)</span></p></article><span class="incontext"><a href="sec-IntroductoryConcepts.html#proof-12">in-context</a></span>
 </body>
 </html>
