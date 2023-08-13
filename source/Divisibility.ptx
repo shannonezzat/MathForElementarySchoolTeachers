@@ -504,7 +504,7 @@
                 </li>
                 <li>
                     <p>
-                        Let's say you have an <m>n</m>-digit number <m>\underline{A_{10^{n-1}}A_{10^{n-2}}\ldotsA_{10}A_1}</m> where the subscript of each digit is its place vaue. Using the proofs for <m>2,4,</m> and <m>8</m> as a blueprint, prove the conjecture you made above.
+                        Let's say you have an <m>n</m>-digit number <m>\underline{A_{10^{n-1}}A_{10^{n-2}}\ldots A_{10}A_1}</m> where the subscript of each digit is its place vaue. Using the proofs for <m>2,4,</m> and <m>8</m> as a blueprint, prove the conjecture you made above.
                     </p>
                 </li>
             </ol>
@@ -515,7 +515,7 @@
 <subsection xml:id="subsec-DivisibilityRuleFor5">
     <title>Divisibility Rule For 5</title>
     <p>
-        The divisibility rule for 5 is also increibly well known. Most people reading this should know that you only need to check whether the last digit of the number is either 5 or 0. However, like the divisibility rule for 2, it will be more advantageous to think the rule as the last digit being divisible by <m>5</m>. Note that the rule for divisibility by 2 relies on the fact that <m>10=2\times5</m>, since all multiples of <m>10</m>, including powers of <m>10</m>, are also divisbile by <m>2</m>. Since <m>10=2 \times 5,</m> the exact same idea should work for <m>5</m> as well as <m>2</m>. In fact, we should be able to write down the exact same argument for divisibility by 5 as divisibility by 2, with all the 2's replaced by 5:
+        The divisibility rule for 5 is also incredibly well known. Most people reading this should know that you only need to check whether the last digit of the number is either 5 or 0. However, like the divisibility rule for 2, it will be more advantageous to think the rule as the last digit being divisible by <m>5</m>. Note that the rule for divisibility by 2 relies on the fact that <m>10=2\times5</m>, since all multiples of <m>10</m>, including powers of <m>10</m>, are also divisbile by <m>2</m>. Since <m>10=2 \times 5,</m> the exact same idea should work for <m>5</m> as well as <m>2</m>. In fact, we should be able to write down the exact same argument for divisibility by 5 as divisibility by 2, with all the 2's replaced by 5:
     </p>
     <p>
         <theorem xml:id="thm-DivBy5">
@@ -543,12 +543,15 @@
     </example>
     <exercise>
         <p>
-            Try and modify the divisibility rules for powers of <m>2</m> to be divisibility rules for powers of <m>5</m>. What do you have to check to determine if a number is divisible by <m>5^2=25</m>? What about <m>5^=125</m>? What about <m>5^k</m> for some number <m>k</m>?
+            Try and modify the divisibility rules for powers of <m>2</m> to be divisibility rules for powers of <m>5</m>. What do you have to check to determine if a number is divisible by <m>5^2=25</m>? What about <m>5^3=125</m>? What about <m>5^k</m> for some number <m>k</m>?
         </p>
     </exercise>
 </subsection>
 <subsection xml:id="subsec-DivisibilityRulesFor3And9">
     <title>Divisibility Rules For 3 And 9</title>
+    
+        
+    
     <p>
         In the last section, we were able to develop divisibility rules for powers of <m>2</m> and <m>5</m> since powers of <m>10</m> are divisible by <m>2</m> and <m>5</m>. We could use this commonality between each power of <m>10</m>, and thus each place value in a number, to come up with a simplified rule for determining divisibility of these powers of <m>2</m> and <m>5</m>. In this section, we will look for another consistant commonality between powers of 10 being divided by <m>3</m> and <m>9</m> that will allow us to develop divisibility rules for these numbers. The next example will walk you through noticing the pattern.
     </p>
@@ -614,7 +617,7 @@
         </proof>
       </theorem>
       <p>
-        Let's look at a few examples to make sure we know how the rules work.
+        Let's look at a few small examples to make sure we know how the rules work.
       </p>
       
       <example xml:id="example-divisibility-3">
@@ -652,7 +655,88 @@
           </p>
         </statement>
       </example>
+      <p>
+        With smaller examples like the above, it might be difficult to see why these rules are very useful and powerful. Let's look at another, more difficult example:
+      </p>
+      <example>
+        <p>
+            A student wrote down the following ten digit number: <m>1,435,3k7,451</m>, where <m>k</m> is some digit that was too messy in their notes to make it out. However, the student does know that the number is divisible by 3 but not divisibile by 9. What are the possible choices for the digit <m>k</m>?
+        </p>
+        <solution>
+            <p>
+                This would be a very hard problem using long division, and even using a calculator naively would require ten different trials, one for each digit. However, we can use the divisibility rules above to help us out.
+            </p>
+            <p>
+                We know that the number is divisible by 3, so the sum of the digits must also be divisible by 3. The sum of the digits is <m>1+4+3+5+2+k+7+4+5+1=32+k</m>. We know that we can add either <m>1,4,</m> or <m>7</m> to <m>32</m> to get <m>33,36,</m> or <m>39</m>, which are multiples of <m>3</m>. But since the number isn't divisible by 9, we know that the sum cannot be divisible by 9, so it cannot be <m>36</m>. So <m>k \neq 4</m>. So the digit is either <m>1</m> or <m>7</m>.
+            </p>
+        </solution>
+      </example>
+    
+    
       
+      
+</subsection>
+<subsection xml:id="subsec-DivisibilityRuleFor11">
+    <title>Divisibility Rule For 11</title>
+    <p>
+        There is a nice divisibility rule for 11 that is similar to the divisibility rules for 3 and 9. The key of the divisibility rule for 3 and 9 was that for any <m>k \in \mathbb{N}_0</m>, it's true that <m>10^k \div 3</m> has a remainder of <m>1</m>. Let's explore dividing powers of <m>10</m> by <m>11</m> to see if we notice any patterns.
+    </p>
+    <exercise>
+        <ol>
+            <li>
+                <p>
+                    Let's start with <m>10^0=1</m>. What is the remainder of <m>10^0 \div 11</m>? It will be helpful to keep this information in a table.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Now do the same thing for <m>10^1, 10^2, 10^3</m> and <m>10^4</m>. That is, calculate the remainder of <m>10^k \div 11</m> for <m>k=1,2,3,4</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Make a conjecture about the patter of remainders of <m>10^k \div 11</m> for each <m>k \in \mathbb{N}_0</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Using the area and grouping model of division, draw a diagram that shows a few examples of this conjecture. Can you express the "large" remainders in terms of what is missing to obtain a full group of 11?
+                </p>
+            </li>
+        </ol>
+    </exercise>
+    <p>
+        Hopefully the exercise above gives you some intuition about what a divisibility rule for 11 will require. Note that there powers of 10, and therefore place values, fall into two groups; a remainder of 1 when <m>k</m> is even, and a remainder of 10 (or a "remainder" of -1) when <m>k</m> is odd. So when <m>k</m> is even, <m>11 \mid (10^k-1)</m>, and when <m>k</m> is odd <m>11 \mid (10^k+1)</m>. So we can express powers of 10 as numbers "close to" numbers divisible by 11, plus or minus 1. This is the key for this rule. Let's prove this now for six-digit numbers, just so we get a feel for the pattern that is happening. 
+    </p>
+    <p>
+        <theorem xml:id="DivBy11">
+            <title>Divisibility Rule for 11</title>
+            <statement>
+              <p>
+                A number is divisible by <m>11</m> if and only if the alternating sum of its digits (e.g., <m>A - B + C - D + E - F</m> for a six-digit number <m>\underline{ABCDEF}</m>) is divisible by <m>11</m>.
+              </p>
+            </statement>
+            <proof>
+              <p>
+                Let's prove this for a six-digit number, but the proof can be easily extended to a number of any number of digits. Consider a six-digit number <m>\underline{ABCDEF}</m> where <m>A</m>, <m>B</m>, <m>C</m>, <m>D</m>, <m>E</m>, and <m>F</m> are its digits. We can express this number in its expanded form as:
+                <me>
+                  \underline{ABCDEF} = A \times 100000 + B \times 10000 + C \times 1000 + D \times 100 + E \times 10 + F
+                </me>
+                Using properties of powers of 10 and their relation to 11, we can rewrite this as:
+                <me>
+                  \underline{ABCDEF} = A \times (10^5 + 1) - A + B \times (10^4 - 1) + B + C \times (10^3 + 1) - C + D \times (10^2 - 1) + D + E \times 10 + F
+                </me>
+                Grouping the terms, we get:
+                <me>
+                  \underline{ABCDEF} = A \times 10^5 + B \times 10^4 + C \times 10^3 + D \times 10^2 + E \times 10 + F - (A - B + C - D + E - F)
+                </me>
+                The terms <m>A \times 10^5</m>, <m>B \times 10^4</m>, <m>C \times 10^3</m>, <m>D \times 10^2</m>, and <m>E \times 10</m> are all divisible by 11 due to the properties of powers of 10. Therefore, the divisibility of the number <m>\underline{ABCDEF}</m> by 11 depends solely on the alternating sum of its digits, <m>A - B + C - D + E - F</m>.
+              </p>
+            </proof>
+          </theorem>
+          
+        
+    </p>
 </subsection>
 
 </section>
