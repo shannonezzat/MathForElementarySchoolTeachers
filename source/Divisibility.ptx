@@ -323,6 +323,9 @@
     <p>
         To facilitate our discussion, we will use underline notation in LaTeX to indicate a number by its place value digits. For example, a four-digit number <m>ABCD</m> can be represented as <m>\underline{ABCD} = A \times 1000 + B \times 100 + C \times 10 + D</m>. This notation will allow us to break down the number into its constituent parts and analyze its divisibility properties. Since we are using variables to represent unknown digits, we need this new notation, since if we write <m>ABCD</m> this usually means <m>A \times B \times C \times D</m>. However, if we write actual digits like <m>1234</m> without an underline, we still mean <m>1000+200+30+4</m>.
     </p>
+    <p>
+        In essence, the idea of divisibilty rules is to turn a question about divisibility of a large number into a question about divisibility of a smaller number. In some cases, that number will have a fixed number of digits, and in other cases the number of digits won't be fixed, but it will be a smaller number.
+    </p>
    
 </subsection>
 <subsection xml:id="divisibility-rule-2-4-8">
@@ -738,6 +741,123 @@
         
     </p>
 </subsection>
+<subsection xml:id="subsec-CompoundDivisibilityRules">
+    <title>Compound Divisibility Rules</title>
+    <subsubsection xml:id="subsubsec-WhenCompundDivisibilityRulesWork">
+        <title>When Compund Divisibility Rules Work</title>
+        
+    
+    <p>
+      Let's say you are interested in divisibility by some number <m>k</m>, and <m>k=a \times b</m>. This means that <m>a \mid k</m> and <m>b \mid k</m>. So if for some number <m>n</m> we know <m>k \mid n</m>, then by <xref ref="thm-DivTrans"/> we know that <m>a \mid n</m> and <m>b \mid n</m>. So we can say if <m>k \mid n</m> then <m>a \mid n</m> and <m>b \mid n</m>.
+       
+    </p>
+    <p>
+       Does the converse of this hold as well? That is if we know <m>a \mid n</m> and <m>b \mid n</m> then do we know that <m>k \mid n</m>? Let's explore with some examples and see if we can determine the conditions when we can indeed combine divisibility rules to make a new divisibility rule.
+    </p>
+    <exercise>
+        <ol>
+            <li>
+                <p>
+                    Let's start to think about numbers divisible by both, noting that <m>6=2 \times 3</m>. Using a calculator if you wish, write down around 10 or 20 examples of numbers with both 2 and 3 as factors (can you think about how to easily make these?). Are these numbers also divisible by 6? Check! 
+                </p>
+            </li>
+            <li>
+                <p>
+                    If you haven't found one above, can you think of a number that is divisible by 2 and 3 but not divisible by 6?
+                </p>
+            </li>
+        </ol>
+        <ol>
+            <li>
+                <p>
+                    Let's try another number, say <m>24=6 \times 4</m>. Write down many numbers with both 6 and 4 as factors. Is 24 also a factor of these numbers? Check!
+                </p>
+            </li>
+            <li>
+                <p>
+                    If you haven't found one above, can you think of a number that is divisible by 6 and 4 but not divisible by 24?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Try the above with other sets of numbers <m>a</m> and <m>b</m>, for example try <m>3 \times 5=15</m> and <m>2 \times 4=8</m>. Do you notice a pattern about  the numbers <m>a</m> and <m>b</m> where <m>a \times b</m> is always a factor of numbers where both <m>a</m> and <m>b</m> are factors, and when there are numbers that do not have <m>a \times b</m> as a factor?
+                </p>
+            </li>
+        </ol>
+        <p>
+            In the above example you probably have seen that if <m>a</m> and <m>b</m> have no common factors, then <m>a \times b</m> is necessarily a factor of any number where both <m>a</m> and <m>b</m> are factors. Let's try and prove this.
+        </p>
+        <p>
+            <theorem xml:id="thm-CompundDivisibility">
+                <statement>
+                    <p>
+                        Let <m>a,b</m> be numbers with no common factors (that is, <m>\text{GCD}(a,b)=1</m>), and let <m>n</m> be another number. Then <m>ab \mid n </m> if and only if <m>a \mid n</m> and <m>b \mid n</m>.
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        Since this is a biconditional statement, we need to show that <m>P \to Q</m> and <m>Q \to P</m>. The direction <m>P \to Q</m> was already proved in the first paragraph of this subsection. So let's do the other direction.
+                        
+                    </p>
+                    <p>
+                        Let's assume the "if-part" is true: let <m>a \mid n</m> and <m>b \mid n</m>. We need to show that the "then-part" is true, that is, <m>ab \mid n</m>.
+                    </p>
+                    <p>
+                        Since we know <m>a \mid n</m> we know that <m>n=ar</m> for some natural number <m>r</m>. But we also know <m>b \mid n</m>, so since <m>n=ar</m> we know <m>b \mid ar</m>. Since <m>ar</m> has a factor of <m>b</m>, and <m>a</m> and <m>b</m> share no common factors, then all of the factors of <m>b</m> must be in <m>r</m>, so <m>r=bs</m> for some number <m>s</m>. So <m>n=ar = a(bs) = (ab)s</m>. So since we've written <m>n</m> as a multiple of <m>ab</m>, this means that <m>ab \mid n</m>.
+                    </p>
+                </proof>
+            </theorem>
+            
+        </p>
+        <p>
+            To show that combining divisibility rules for numbers <m>a</m> and <m>b</m> doesn't work if <m>a</m> and <m>b</m> have a common factor, let's try and develop a counterexample for each choice of two numbers with a common factor.
+        </p>
+        <exercise>
+            <p>
+                For the following pairs of numbers, find the smallest number <m>n</m> where <m>a \mid n</m> and <m>b \mid n</m> but <m>ab \nmid n</m>. What is the largest common factor of <m>a</m> and <m>b</m>.
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        <m>a=2</m> and <m>b=4</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>a=6</m> and <m>b=4</m>. 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>a=10</m> and <m>b=15</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Do you notice a way of determining the smallest counterexample using the numbers <m>a</m> and <m>b</m> and their greatest common factor?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Try and prove that your method above works in general.
+                    </p>
+                </li>
+            </ol>
+        </exercise>
+        
+        
+    </exercise>
+</subsubsection>
+<subsubsection xml:id="subsubsec-SomeCommonCompoundDivisibilityRules">
+    <title>Some Common Compound Divisibility Rules</title>
+
+    <p>
+        From the subsection above, we know that as long as two numbers share no common factors, we can indeed combine their divisibility rules to determine if a number is divisibile by their product. Let's list a few of these for small numbers, and give an example and non example for each.
+    </p>
+    
+</subsubsection>
+</subsection>
+
 
 </section>
 
