@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2023-08-16T11:33:40-03:00       *-->
+<!--*       on 2023-08-24T14:56:38-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -70,11 +70,11 @@
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-IntroductoryConcepts.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Divisibility.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-IntroductoryConcepts.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Divisibility.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-PrimeNumbers.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-IntroductoryConcepts.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Divisibility.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-IntroductoryConcepts.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Divisibility.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-PrimeNumbers.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -131,6 +131,8 @@
 <a href="Divisibility.html" data-scroll="Divisibility" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a><ul>
 <li><a href="sec-IntroductoryConcepts.html" data-scroll="sec-IntroductoryConcepts" class="internal">Introductory Concepts</a></li>
 <li><a href="divisibility-theorems-small-numbers.html" data-scroll="divisibility-theorems-small-numbers" class="active">Divisibility Theorems for Small Numbers</a></li>
+<li><a href="sec-PrimeNumbers.html" data-scroll="sec-PrimeNumbers" class="internal">Prime Numbers</a></li>
+<li><a href="sec-DivisorsandMultiples.html" data-scroll="sec-DivisorsandMultiples" class="internal">Divisors and Multiples</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
@@ -345,19 +347,82 @@
 <li id="li-431"><p id="p-1483">Let's try another number, say <span class="process-math">\(24=6 \times 4\text{.}\)</span> Write down many numbers with both 6 and 4 as factors. Is 24 also a factor of these numbers? Check!</p></li>
 <li id="li-432"><p id="p-1484">If you haven't found one above, can you think of a number that is divisible by 6 and 4 but not divisible by 24?</p></li>
 <li id="li-433"><p id="p-1485">Try the above with other sets of numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> for example try <span class="process-math">\(3 \times 5=15\)</span> and <span class="process-math">\(2 \times 4=8\text{.}\)</span> Do you notice a pattern about  the numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> where <span class="process-math">\(a \times b\)</span> is always a factor of numbers where both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are factors, and when there are numbers that do not have <span class="process-math">\(a \times b\)</span> as a factor?</p></li>
-</ol>
+</ol></article></div>
 <p id="p-1486">In the above example you probably have seen that if <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> have no common factors, then <span class="process-math">\(a \times b\)</span> is necessarily a factor of any number where both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are factors. Let's try and prove this.</p>
-<p id="p-1487"><article class="theorem theorem-like" id="thm-CompundDivisibility"><h6 class="heading">
+<p id="p-1487"><article class="theorem theorem-like" id="thm-CompundDivisibility"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.2.26</span><span class="period">.</span>
-</h6>
-<p id="p-1488">Let <span class="process-math">\(a,b\)</span> be numbers with no common factors (that is, <span class="process-math">\(\text{GCD}(a,b)=1\)</span>), and let <span class="process-math">\(n\)</span> be another number. Then <span class="process-math">\(ab \mid n \)</span> if and only if <span class="process-math">\(a \mid n\)</span> and <span class="process-math">\(b \mid n\text{.}\)</span></p></article><article class="hiddenproof" id="proof-19"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-19"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-19"><article class="hiddenproof"><p id="p-1489">Since this is a biconditional statement, we need to show that <span class="process-math">\(P \to Q\)</span> and <span class="process-math">\(Q \to P\text{.}\)</span> The direction <span class="process-math">\(P \to Q\)</span> was already proved in the first paragraph of this subsection. So let's do the other direction.</p>
+</h5>
+<p id="p-1488">Let <span class="process-math">\(a,b\)</span> be numbers with no common factors (that is, <span class="process-math">\(\text{GCD}(a,b)=1\)</span>), and let <span class="process-math">\(n\)</span> be another number. Then <span class="process-math">\(ab \mid n \)</span> if and only if <span class="process-math">\(a \mid n\)</span> and <span class="process-math">\(b \mid n\text{.}\)</span></p></article><article class="hiddenproof" id="proof-19"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-19"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-19"><article class="hiddenproof"><p id="p-1489">Since this is a biconditional statement, we need to show that <span class="process-math">\(P \to Q\)</span> and <span class="process-math">\(Q \to P\text{.}\)</span> The direction <span class="process-math">\(P \to Q\)</span> was already proved in the first paragraph of this subsection. So let's do the other direction.</p>
 <p id="p-1490">Let's assume the "if-part" is true: let <span class="process-math">\(a \mid n\)</span> and <span class="process-math">\(b \mid n\text{.}\)</span> We need to show that the "then-part" is true, that is, <span class="process-math">\(ab \mid n\text{.}\)</span></p>
 <p id="p-1491">Since we know <span class="process-math">\(a \mid n\)</span> we know that <span class="process-math">\(n=ar\)</span> for some natural number <span class="process-math">\(r\text{.}\)</span> But we also know <span class="process-math">\(b \mid n\text{,}\)</span> so since <span class="process-math">\(n=ar\)</span> we know <span class="process-math">\(b \mid ar\text{.}\)</span> Since <span class="process-math">\(ar\)</span> has a factor of <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> share no common factors, then all of the factors of <span class="process-math">\(b\)</span> must be in <span class="process-math">\(r\text{,}\)</span> so <span class="process-math">\(r=bs\)</span> for some number <span class="process-math">\(s\text{.}\)</span> So <span class="process-math">\(n=ar = a(bs) = (ab)s\text{.}\)</span> So since we've written <span class="process-math">\(n\)</span> as a multiple of <span class="process-math">\(ab\text{,}\)</span> this means that <span class="process-math">\(ab \mid n\text{.}\)</span></p></article></div></p>
 <p id="p-1492">To show that combining divisibility rules for numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> doesn't work if <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> have a common factor, let's try and develop a counterexample for each choice of two numbers with a common factor.</p>
-<article class="exercise exercise-like" id="exercise-53"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-53"></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-53"><article class="exercise exercise-like"></article></div></article></div></section><section class="subsubsection" id="subsubsec-SomeCommonCompoundDivisibilityRules"><h4 class="heading hide-type">
+<article class="exercise exercise-like" id="exercise-53"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-53"><h5 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.2.27</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-53"><article class="exercise exercise-like"><p id="p-1493">For the following pairs of numbers, find the smallest number <span class="process-math">\(n\)</span> where <span class="process-math">\(a \mid n\)</span> and <span class="process-math">\(b \mid n\)</span> but <span class="process-math">\(ab \nmid n\text{.}\)</span> What is the largest common factor of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span></p>
+<ol class="decimal">
+<li id="li-434"><p id="p-1494"><span class="process-math">\(a=2\)</span> and <span class="process-math">\(b=4\text{.}\)</span></p></li>
+<li id="li-435"><p id="p-1495"><span class="process-math">\(a=6\)</span> and <span class="process-math">\(b=4\text{.}\)</span></p></li>
+<li id="li-436"><p id="p-1496"><span class="process-math">\(a=10\)</span> and <span class="process-math">\(b=15\)</span></p></li>
+<li id="li-437"><p id="p-1497">Do you notice a way of determining the smallest counterexample using the numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> and their greatest common factor?</p></li>
+<li id="li-438"><p id="p-1498">Try and prove that your method above works in general.</p></li>
+</ol></article></div></section><section class="subsubsection" id="subsubsec-SomeCommonCompoundDivisibilityRules"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">6.2.6.2</span> <span class="title">Some Common Compound Divisibility Rules</span>
 </h4>
-<p id="p-1499">From the subsection above, we know that as long as two numbers share no common factors, we can indeed combine their divisibility rules to determine if a number is divisibile by their product. Let's list a few of these for small numbers, and give an example and non example for each.</p></section></section></section></div></main>
+<p id="p-1499">From the subsection above, we know that as long as two numbers share no common factors, we can indeed combine their divisibility rules to determine if a number is divisibile by their product. Let's list a few of these for small numbers, and give an example and non example for each.</p>
+<ol class="decimal">
+<li id="li-439">
+<p id="p-1500">Rule for Divisibility by 6: A number is divisible by 6 if it is divisible by both 2 and 3.</p>
+<article class="example example-like" id="example-134"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-134"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.28</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-134"><article class="example example-like"><p id="p-1501">12 is divisible by 6 because it is even (divisible by 2) and the sum of its digits (1 + 2 = 3) is divisible by 3.</p></article></div>
+<article class="example example-like" id="example-135"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-135"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.29</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-135"><article class="example example-like"><p id="p-1502">14 is not divisible by 6 because while it is even (divisible by 2), the sum of its digits (1 + 4 = 5) is not divisible by 3.</p></article></div>
+</li>
+<li id="li-440">
+<p id="p-1503">Rule for Divisibility by 10: A number is divisible by 10 if its last digit is 0; that is, it is divisible by 2 and divisible by 5.</p>
+<article class="example example-like" id="example-136"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-136"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.30</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-136"><article class="example example-like"><p id="p-1504">150 is divisible by 10 because its last digit is 0.</p></article></div>
+<article class="example example-like" id="example-137"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-137"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.31</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-137"><article class="example example-like"><p id="p-1505">153 is not divisible by 10 because its last digit is 3, not 0.</p></article></div>
+</li>
+<li id="li-441">
+<p id="p-1506">Rule for Divisibility by 15: A number is divisible by 15 if it is divisible by both 3 and 5.</p>
+<article class="example example-like" id="example-138"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-138"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.32</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-138"><article class="example example-like"><p id="p-1507">30 is divisible by 15 because the sum of its digits (3 + 0 = 3) is divisible by 3 and its last digit is 0 or 5 (indicating divisibility by 5).</p></article></div>
+<article class="example example-like" id="example-139"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-139"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.33</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-139"><article class="example example-like"><p id="p-1508">35 is not divisible by 15 because while its last digit is 5 (indicating divisibility by 5), the sum of its digits (3 + 5 = 8) is not divisible by 3.</p></article></div>
+</li>
+</ol></section></section><section class="subsection" id="subsection-84"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.2.7</span> <span class="title">Iterative Divisibility Rules</span>
+</h3>
+<section class="introduction" id="introduction-13"><p id="p-1509">Sometimes, to determine if a number is divisible by another, we can use an iterative approach. This means applying the divisibility rule repeatedly until we get a number that we can easily determine its divisibility. This method is particularly useful for large numbers and for certain divisibility rules like those for 3, 9, and 11, which turn the problem of checcking divisibility of a large number into checking divisibility of a smaller number.</p></section><p id="p-1510">Let's explore this iterative method with examples and non-examples for divisibility by 3, 9, and 11.</p>
+<section class="subsubsection" id="subsubsection-28"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">6.2.7.1</span> <span class="title">Divisibility by 3</span>
+</h4>
+<article class="example example-like" id="example-140"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-140"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.34</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-140"><article class="example example-like"><p id="p-1511">To check if <span class="process-math">\(3\)</span> divides <span class="process-math">\(12345678901\text{,}\)</span> we sum its digits: <span class="process-math">\(1+2+3+4+5+6+7+8+9+0+1 = 46\text{.}\)</span> Now, to check if <span class="process-math">\(3\)</span> divides <span class="process-math">\(46\text{,}\)</span> we sum its digits: <span class="process-math">\(4+6 = 10\text{.}\)</span> Since 10 is not divisible by 3, neither is <span class="process-math">\(12345678901\text{.}\)</span></p></article></div>
+<p id="p-1512">For <span class="process-math">\(9876543210\text{,}\)</span> the sum of its digits is <span class="process-math">\(45\text{,}\)</span> which is divisible by 3. Therefore <span class="process-math">\(9876543210\)</span> is indeed divisible by 3.</p></section><section class="subsubsection" id="subsubsection-29"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">6.2.7.2</span> <span class="title">Divisibility by 9</span>
+</h4>
+<article class="example example-like" id="example-141"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-141"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.35</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-141"><article class="example example-like"><p id="p-1513">To check if <span class="process-math">\(9\)</span> divides <span class="process-math">\(123456789012\text{,}\)</span> we sum its digits: <span class="process-math">\(1+2+3+4+5+6+7+8+9+0+1+2 = 48\text{.}\)</span> Now, to check if <span class="process-math">\(9\)</span> divides <span class="process-math">\(48\text{,}\)</span> we sum its digits: <span class="process-math">\(4+8 = 12\text{.}\)</span> Finally, summing the digits of 12 gives <span class="process-math">\(3\text{,}\)</span> which is not divisible by 9. Thus, <span class="process-math">\(123456789012\)</span> is not divisible by 9.</p></article></div>
+<p id="p-1514">For <span class="process-math">\(98765432109\text{,}\)</span> the sum of its digits is <span class="process-math">\(54\text{,}\)</span> which is divisible by 9. Therefore <span class="process-math">\(98765432109\)</span> is indeed divisible by 9.</p></section><section class="subsubsection" id="subsubsection-30"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">6.2.7.3</span> <span class="title">Divisibility by 11</span>
+</h4>
+<article class="example example-like" id="example-142"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-142"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.36</span><span class="period">.</span>
+</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-142"><article class="example example-like"><p id="p-1515">To check if <span class="process-math">\(11\)</span> divides <span class="process-math">\(1234567890123\text{,}\)</span> we alternate the sum and subtraction of its digits: <span class="process-math">\(1-2+3-4+5-6+7-8+9-0+1-2+3 = 17\text{.}\)</span> Since 17 is not divisible by 11, neither is <span class="process-math">\(1234567890123\text{.}\)</span></p></article></div>
+<p id="p-1516">For <span class="process-math">\(9090909090909090909090909040\text{,}\)</span> the alternating sum is <span class="process-math">\(121\text{,}\)</span> and the alternating sum of <span class="process-math">\(121\)</span> is <span class="process-math">\(0\text{.}\)</span> Therefore <span class="process-math">\(9090909090909090909090909040\)</span> is divisible by 11.</p></section></section><section class="subsection" id="subsec-MakingDivisibilityRules"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.2.8</span> <span class="title">MakingDivisibilityRules</span>
+</h3>
+<p id="p-1517">MAKING A DIVISIBILITY RULE FOR ANY NUMBER USING TECHNIQUE FROM WIKIPEDIA.</p></section></section></div></main>
 </div>
 </body>
 </html>

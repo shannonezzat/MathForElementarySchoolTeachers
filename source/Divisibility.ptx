@@ -119,7 +119,7 @@
             For example, if our objects are sets, then <m>\in</m> is a relation between them. For example, let <m>A:=\{1,2\}, \quad B:=\{1,\{1,2\},3\}, \quad C:= \{1,2,3,4\}</m>. Under the relation <m>\in</m>, <m>A</m> is related to <m>B</m> since <m>A \in B</m>, but <m>A</m> is not related to <m>C</m> since <m>A \notin C</m>. Divisibility is also a relation. We can say that under divisibility <m>3</m> is related to <m>12</m> since <m>3 \mid 12</m> but <m>3</m> is not related to <m>10</m> since <m>3 \nmid 10</m>.
         </p>
         <p>
-            This "chain"-like property of relations is incredibly important in mathematics. In fact, it comes up so often that we decided to give it it's own name. In fact, we've talked about this property before; equality has it as well, as we've seen in <xref ref="assemblage-PropertiesOfEquality"/>. We'll talk about it in more generality here.
+            This "chain"-like property of relations is incredibly important in mathematics. In fact, it comes up so often that we decided to give it it's own name. In fact, we've talked about this property before; equality has it as well, as we've seen in PROPERTIES OF EQUALITY. We'll talk about it in more generality here.
         </p>
         <definition xml:id="def-transitivity">
             <statement>
@@ -784,6 +784,7 @@
                 </p>
             </li>
         </ol>
+    </exercise>
         <p>
             In the above example you probably have seen that if <m>a</m> and <m>b</m> have no common factors, then <m>a \times b</m> is necessarily a factor of any number where both <m>a</m> and <m>b</m> are factors. Let's try and prove this.
         </p>
@@ -846,7 +847,7 @@
         </exercise>
         
         
-    </exercise>
+    
 </subsubsection>
 <subsubsection xml:id="subsubsec-SomeCommonCompoundDivisibilityRules">
     <title>Some Common Compound Divisibility Rules</title>
@@ -855,10 +856,260 @@
         From the subsection above, we know that as long as two numbers share no common factors, we can indeed combine their divisibility rules to determine if a number is divisibile by their product. Let's list a few of these for small numbers, and give an example and non example for each.
     </p>
     
+    <ol>
+        <title>Combined Divisibility Rules for Co-prime Numbers</title>
+        
+        
+        <li>
+          <p>
+            Rule for Divisibility by 6: A number is divisible by 6 if it is divisible by both 2 and 3.
+          </p>
+          <example>
+            <p>
+              12 is divisible by 6 because it is even (divisible by 2) and the sum of its digits (1 + 2 = 3) is divisible by 3.
+            </p>
+          </example>
+          <example>
+            <p>
+              14 is not divisible by 6 because while it is even (divisible by 2), the sum of its digits (1 + 4 = 5) is not divisible by 3.
+            </p>
+          </example>
+        </li>
+      
+        <li>
+          <p>
+            Rule for Divisibility by 10: A number is divisible by 10 if its last digit is 0; that is, it is divisible by 2 and divisible by 5.
+          </p>
+          <example>
+            <p>
+              150 is divisible by 10 because its last digit is 0.
+            </p>
+          </example>
+          <example>
+            <p>
+              153 is not divisible by 10 because its last digit is 3, not 0.
+            </p>
+          </example>
+        </li>
+      
+        <li>
+          <p>
+            Rule for Divisibility by 15: A number is divisible by 15 if it is divisible by both 3 and 5.
+          </p>
+          <example>
+            <p>
+              30 is divisible by 15 because the sum of its digits (3 + 0 = 3) is divisible by 3 and its last digit is 0 or 5 (indicating divisibility by 5).
+            </p>
+          </example>
+          <example>
+            <p>
+              35 is not divisible by 15 because while its last digit is 5 (indicating divisibility by 5), the sum of its digits (3 + 5 = 8) is not divisible by 3.
+            </p>
+          </example>
+        </li>
+      
+      </ol>
+      
+        
+        
+      
+    
 </subsubsection>
+</subsection>
+<subsection>
+    <title>Iterative Divisibility Rules</title>
+    <introduction>
+      <p>
+        Sometimes, to determine if a number is divisible by another, we can use an iterative approach. This means applying the divisibility rule repeatedly until we get a number that we can easily determine its divisibility. This method is particularly useful for large numbers and for certain divisibility rules like those for 3, 9, and 11, which turn the problem of checcking divisibility of a large number into checking divisibility of a smaller number. 
+      </p>
+    </introduction>
+  
+    <p>
+      Let's explore this iterative method with examples and non-examples for divisibility by 3, 9, and 11.
+    </p>
+  
+    <subsubsection>
+      <title>Divisibility by 3</title>
+      <example>
+        <p>
+          To check if <m>3</m> divides <m>12345678901</m>, we sum its digits: <m>1+2+3+4+5+6+7+8+9+0+1 = 46</m>. Now, to check if <m>3</m> divides <m>46</m>, we sum its digits: <m>4+6 = 10</m>. Since 10 is not divisible by 3, neither is <m>12345678901</m>.
+        </p>
+      </example>
+      <nonexample>
+        <p>
+          For <m>9876543210</m>, the sum of its digits is <m>45</m>, which is divisible by 3. Therefore <m>9876543210</m> is indeed divisible by 3.
+        </p>
+      </nonexample>
+    </subsubsection>
+  
+    <subsubsection>
+      <title>Divisibility by 9</title>
+      <example>
+        <p>
+          To check if <m>9</m> divides <m>123456789012</m>, we sum its digits: <m>1+2+3+4+5+6+7+8+9+0+1+2 = 48</m>. Now, to check if <m>9</m> divides <m>48</m>, we sum its digits: <m>4+8 = 12</m>. Finally, summing the digits of 12 gives <m>3</m>, which is not divisible by 9. Thus, <m>123456789012</m> is not divisible by 9.
+        </p>
+      </example>
+      <nonexample>
+        <p>
+          For <m>98765432109</m>, the sum of its digits is <m>54</m>, which is divisible by 9. Therefore <m>98765432109</m> is indeed divisible by 9.
+        </p>
+      </nonexample>
+    </subsubsection>
+  
+    <subsubsection>
+      <title>Divisibility by 11</title>
+      <example>
+        <p>
+          To check if <m>11</m> divides <m>1234567890123</m>, we alternate the sum and subtraction of its digits: <m>1-2+3-4+5-6+7-8+9-0+1-2+3 = 17</m>. Since 17 is not divisible by 11, neither is <m>1234567890123</m>.
+        </p>
+      </example>
+      <nonexample>
+        <p>
+          For <m>9090909090909090909090909040</m>, the alternating sum is <m>121</m>, and the alternating sum of <m>121</m> is <m>0</m>. Therefore <m>9090909090909090909090909040</m> is divisible by 11. 
+        </p>
+      </nonexample>
+    </subsubsection>
+  
+  </subsection>
+  
+<subsection xml:id="subsec-MakingDivisibilityRules">
+    <title>MakingDivisibilityRules</title>
+    <p>
+        MAKING A DIVISIBILITY RULE FOR ANY NUMBER USING TECHNIQUE FROM WIKIPEDIA.
+    </p>
 </subsection>
 
 
+</section>
+<section xml:id="sec-PrimeNumbers">
+    <title>Prime Numbers</title>
+    <introduction>
+        <p>
+            Prime numbers are the multiplicative building blocks of all whole numbers. In fact, we will see that every whole number can be decomposed into a product of (maybe repeated) prime numbers in exactly one way. Let's define a prime number first:
+        </p>
+        <definition xml:id="def-PrimeNumber">
+            <statement>
+                <p>
+                    A <term>prime number</term> is a whole number that has exactly two factors; namely <m>1</m> and itself. If a natural number <m>n</m> is not prime, and not <m>1</m>, we say that <m>n</m> is <term>composite</term>.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            It's worth noting here that using this definition, <m>1</m> is not a prime number. Most mathematicians decided to follow this convention since <m>1</m> behaves quite differently to other prime numbers, and therefore to avoid frequently talking about <m>1</m> as a special case for various results, it was more convenient to exclude <m>1</m> from the list of prime numbers. 
+        </p>
+        <example>
+            <p>
+                The number <m>7</m> is prime since the only numbers that are factors of <m>7</m> are <m>1</m> and <m>7</m> itself. Every other number does not divide evenly into 7.
+            </p>
+            <p>
+                The number <m>6</m> is composite since <m>6=2 \times 3</m>, so both <m>2</m> and <m>3</m> are factors of <m>6</m>.
+            </p>
+        </example>
+    </introduction>
+    <subsection xml:id="subsec-FindingPrimeNumbers">
+        <title>Finding Prime Numbers</title>
+        <p>
+            Let's try and come up with a list of all prime numbers less than <m>100</m>. We could do this for all primes below any number, but we choosse 100 for space reasons.
+        </p>
+        <p>
+            Let's list all numbers up to 100, and we'll cross off any numbers that we determine are not prime (so are composite, or the number <m>1</m>).
+        </p>
+        <p>
+            INSERT PIC OF NUMBERS FROM 1 TO 100
+        </p>
+        <p>
+            We'll cross off <m>1</m> since we know that it doesn't have exactly two factors; its only factor is itself. So now we know that the next largest number, <m>2</m>, must be prime since it has <m>1</m> and itself as a factor, and there are no other numbers smaller than <m>2</m>. So we circle <m>2</m> and cross off all numbers that have <m>2</m> as a factor.
+        </p>
+        <p>
+            INSERT UPDATED PIC
+        </p>
+        <p>
+            Now we can go to the smallest number that remains, <m>3</m>, and circle that since it must be prime; 2 is not a factor and there are no smaller prime numbers. Like before we circle <m>3</m> and cross off all other multiples of <m>3</m>:
+        </p>
+        <p>
+            INSERT UPDATED PIC
+        </p>
+        <p>
+            We can continue this process until all numbers are either circled or crossed off. Before looking below, try this yourself and check that you get the same list of primes as below:
+        </p>
+        <p>
+            INSERT UPDATED PIC
+        </p>
+        <p>
+            This process is very old, and in fact is called the <term>sieve of Erotosthenes</term>, after the Greek mathematician Erotosthenes of Cyrene, of whom this method is attributed to.
+        </p>
+        <exercise>
+            <p>
+                We found a list of prime numbers less than 100. Let's see if we notice some patterns about primes by doing the same for numbers less than, say, 500.
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        Make a table of all numbers up to 500. You can probably search one online and print it off if that makes it easier.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Perform the sieve as above. It will take a bit longer, but it will be the exact same process.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        What can you say about the amount of smaller prime numbers compared to the number of larger (at least closer to 500) prime numbers? Why do you think this is the case? 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        On the same chart, highlight all multiples of 6. What can you say about how prime numbers relate to multiples of 6? Formulate your conjectures in terms of remainders.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Try and prove the conjecture you made in the previous part. <hint>
+                            <p>
+                                Show that prime numbers cannot have other remainder than the ones that you conjectured. Remember, if you can find a factor of your numbers that isn't <m>1</m> or itself, then the number isn't prime.
+                            </p>
+                        </hint>
+                    </p>
+                </li>
+            </ol>
+        </exercise>
+        <p>
+            SECTION ON OTHER SIEVES? ON ALGORITHMIC COMPLEXITY? ON SEGMENTED SIEVES?
+        </p>
+
+    </subsection>
+    <subsection xml:id="subsec-HowManyPrimeNumbersExist">
+        <title>How Many Prime Numbers Exist</title>
+        <p>
+            
+        </p>
+    </subsection>
+    <p>
+        HOW MANY PRIME NUMBERS ARE THERE?
+    </p>
+    <p>
+        HOW DO DETERMINE IF A NUMBER IS PRIME
+    </p>
+    <p>
+        PRIME FACTORIZATION OF NUMBERS + UNIQUE FACTORIZATION
+    </p>
+    <p>
+       COUNTING FACTORS OF A NUMBER 
+    </p>
+</section>
+<section xml:id="sec-DivisorsandMultiples">
+    <title>Divisors and Multiples</title>
+    <p>
+        WHAT IS A GCD AND LCM?
+    </p>
+    <p>
+        WHAT TYPES OF PROBLEMS USE THESE IDEAS?
+    </p>
+    <p>
+        HOW TO CALUCLATE A GCD USING EUCLIDEAN ALGORITHM
+    </p>
+    
 </section>
 
 
