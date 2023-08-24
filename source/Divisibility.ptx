@@ -1082,12 +1082,113 @@
     <subsection xml:id="subsec-HowManyPrimeNumbersExist">
         <title>How Many Prime Numbers Exist</title>
         <p>
+            Looking at the sieve above, it looks like prime numbers get more "rare" the higher up we go. So a good question to ask is whether we eventually "run out" of prime numbers, or whether there are infinitely many. Let's explore this idea a little bit:
+        </p>
+        <p>
+            First, we need a small result to help us out. In math, we call a small result that helps us justify a larger result a <term>lemma</term>.
+            <lemma xml:id="lem-PrimePlus1">
+                <statement>
+                    <p>
+                        Let <m>a_1,a_2 \ldots a_n \in \mathbb{N}</m> be <m>n</m> numbers, and let <m>a_* = a_1 \times a_2 \times \ldots \times a_n</m>. Then for each <m>a_i</m> from <m>a_1</m> to <m>a_n</m> we have that <m>a_i \nmid (a_*+1)</m>.
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        Left as an exercise. <hint>
+                            <p>
+                                Can you show that each remainder is some number that is not <m>0</m>?
+                            </p>
+                        </hint>
+                        <hint>
+                            <p>
+                                Each division gives you the remainder of <m>1</m>.
+                            </p>
+                        </hint>
+                    </p>
+                </proof>
+            </lemma> 
+        </p>
+        <example>
+            <p>
+              <ol>
+                <li>
+                    <p>
+                        Let's start with the primes <m>2</m> and <m>3</m> and put them into the set <m>A = \{2,3\}.</m> 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Let's make a new number by multiplying all numbers in <m>A</m> and then adding <m>1:</m>, say <m>a=2 \times 3+1=7</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        By <xref ref="lem-PrimePlus1"/> we know that <m>2 \nmid 7</m> and <m>3 \nmid 7</m> (although this is pretty obvious anyway). So <m>a</m> is not divisible by any prime numbers in our set <m>A</m>. This means that <m>a</m> is either prime itself, or a product of other primes that aren't already in <m>A</m>. In this case <m>a=7</m> is prime.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We now redefine <m>A</m> to include our new prime (or primes if <m>a</m> had other prime factors.) So in this case now <m>A:=A \cup \{7\} = \{2,3\} \cup \{7\} = \{2,3,7\}</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        We then repear the procedure with the new <m>A</m> to obtain <m>a=2\times 3\times 7+1 = 43</m>, which itself is prime, so we include it in our set as well; <m>A=\{2,3,7,43\}</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Let's do this again: now <m>a=2\times 3 \times 7 \times 43+1 = 1807</m>. You can check that <m>1807=13 \times 139</m> which are both prime, so we can add <m>13</m> and <m>39 </m> to our set: <m>A=\{2,3,7,13,39,43\}</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    We can continue this process, and at each step we will form a number <m>a</m> that has no numbers in <m>A</m> as a factor, so we will be able to add at least one more prime number (either <m>a</m> itself if it is prime, or the prime factors of <m>a</m> if it is not) to our set.
+                        
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        As our set grows by at least one number every iteration of this process, we know we can always include at least one more prime number in our set. So we will never run out of prime numbers, and thus there are infinitely many prime numbers.
+                    </p>
+                </li>
+                
+              </ol>  
+            </p>
+        </example>
+        <p>
+            This exercise shows such an important result, that there are infinitely many prime numbers, that we should state this as a theorem:
+            <theorem xml:id="thm-InfinitelyManyPrimes">
+                <statement>
+                    <p>
+                        There are infinitely many prime numbers
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        The previous exercise.
+                    </p>
+                </proof>
+            </theorem>
             
         </p>
+        <p>
+            Some good questions come out of the previous exercise: first, will this list eventually include all prime numbers?  Secondly, if we have a large number (like <m>1807</m> or even bigger,) how can we determine if this number has any prime factors? The second question we will answer in the next subsection of this section.
+        </p>
+        <exercise>
+            <p>
+                Show that the number <m>5</m> will never appear in the set <m>A</m> as defined in the previous exercise. 
+            </p>
+            <p>
+                <hint>
+                    <p>
+                        Think about what the last digit must be in <m>a_*</m> to be divisible by 5, and the possible last digits that you attain in the process above.
+                    </p>
+                </hint>
+            </p>
+        </exercise>
     </subsection>
-    <p>
-        HOW MANY PRIME NUMBERS ARE THERE?
-    </p>
+   
     <p>
         HOW DO DETERMINE IF A NUMBER IS PRIME
     </p>
