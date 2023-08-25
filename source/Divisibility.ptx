@@ -1188,6 +1188,28 @@
             </p>
         </exercise>
     </subsection>
+    <subsection xml:id="subsec-PrimesAsBuildingBlocks">
+        <title>Primes As Building Blocks</title>
+        <p>
+            From the previous sections, we know some interesting and important facts about prime numbers themselves. Now we will look at how prime numbers are the building blocks of every composite number. 
+        </p>
+        <p>
+            EXAMPLES OF PRIME FACTORIZATIONS WITH NOTATION
+        </p>
+        <p>
+            EXAMPLES OF DIFFERENT WAYS OF FACTORING GIVING YOU THE SAME FACTORIZATION
+        </p>
+        <p>
+            THEOREM: THE SMALLEST FACTOR OF A NUMBER IS PRIME
+        </p>
+        <p>
+            THEOREM: HANDWAVE INDUCTION TO SHOW A PRIME FACTORIZATION EXISTS
+        </p>
+        <p>
+            THEOREM: DO UNIQUENESS BY DIVIDING PRIMES ONE AT A TIME FROM THE SMALL SIDE TO THE BIG SIDE
+        </p>
+        
+    </subsection>
    
     <subsection xml:id="subsec-HowToDetermineIfaNumberisPrime">
         <title>How To Determine If a Number is Prime</title>
@@ -1292,7 +1314,54 @@
                 </proof>
             </lemma>
         </p>
-        
+        <p>
+            We can use the idea above to help us, somewhat efficiently, determine if a number is composite. Indeed, if <m>n</m> is a composite number, it must have a pair of factors <m>1 &lt; a,b &lt; n</m> (and say that <m>a \geq b</m>) where <m>n=ab</m>, and by <xref ref="lem-FactorizationSquareRoot"/> it must be that <m>b \leq \sqrt{n}</m>; that is, every pair of factors of <m>n</m> has one of the factors that is no bigger than <m>\sqrt{n}</m>. So we can only worry about these factors, since the larger factors are paired with a smaller one.
+        </p>
+        <p>
+            We can do even better than checking if all numbers less than <m>\sqrt{n}</m> are factors of <m>n</m>. We'll show that you only need to check whether the prime numbers less than <m>\sqrt{n}</m> are factors of <m>n</m>. First, we show that every composite number has at least one prime factor, and then we will show that the smallest non-unit (that is, not 1) factor of <m>n</m> is indeed a prime number.
+        </p>
+        <p>
+            <theorem xml:id="thm-primefactorofcomposite">
+                <statement>
+                    <p>
+                        If <m>n \in \mathbb{N}</m> is composite then <m>n</m> has at least one prime factor.
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        Similar to the previous proof, let's show this by contradiction. We'll pretend we have a counterexample (in fact the smallest counterexample), and show that something "breaks", so thus there must be no counterexamples. The contradiction we'll have is that even though we picked the smallest counterexample, we'll find one that's smaller.
+                    </p>
+                    <p>
+                        Let <m>n</m> be the smallest composite number (if-part true) that has no prime factors (then-part false). Since <m>n</m> is composite and has no prime factors, then <m>n=ab</m> for some composite numbers <m>a,b</m>. But all proper factors of a number are between <m>1</m> and <m>n</m> exclusive (that is <m>1 &lt; a,b &lt; n</m>). But since <m>n</m> has no prime factors, neither can <m>a</m> or <m>b</m>, since if <m>a=pc</m> for some prime number <m>c</m> then <m>n=ab=(pc)b=p(cb)</m>, and thus <m>p</m> is a factor of <m>n</m>. But this means that <m>a</m> is a smaller composite number than <m>n</m> with no prime factors, so <m>n</m> isn't the smallest counterexample, even though we picked it to be. This means that there is no smallest counterexample, and thus no counterexample to our statement. So <m>n</m> must have at least one prime factor.
+                    </p>
+                </proof>
+            </theorem>
+            
+        </p>
+        <p>
+            To show that the smallest factor of <m>n</m> is always a prime number, we do a very similar argument. We'll leave it as an exercise, but we state the theorem.
+
+            <theorem xml:id="thm-SmallestFactorIsPrime">
+                <statement>
+                    <p>
+                        If <m>n</m> is composite, then the smallest proper factor of <m>n</m> is a prime number.
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        Left as an exercise. <hint>
+                            <p>
+                                If the smallest factor of <m>n</m> was composite, could you find an even smaller factor of <m>n</m>? 
+                            </p>
+                        </hint>
+                    </p>
+                </proof>
+            </theorem>
+            
+        </p>
+        <p>
+            Putting this all together, we know that if a number <m>n</m> is composite then there is a prime number <m>p \leq \sqrt{n}</m> such that <m>p \mid n.</m> So to check that <m>n</m> is composite, all we need to do is check if each prime number up to <m>\sqrt{n}</m> is a factor of <m>n</m>.
+        </p>
         
         
         
