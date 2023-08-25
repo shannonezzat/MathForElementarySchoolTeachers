@@ -1189,9 +1189,116 @@
         </exercise>
     </subsection>
    
-    <p>
-        HOW DO DETERMINE IF A NUMBER IS PRIME
-    </p>
+    <subsection xml:id="subsec-HowToDetermineIfaNumberisPrime">
+        <title>How To Determine If a Number is Prime</title>
+        <p>
+           Think about a number like <m>72</m>. We can factor <m>72</m> into the product of two numbers in many ways, and we will list them all now. 
+        </p>
+        <me>
+            1 \times 72
+        </me>
+        <me>
+            2 \times 36
+        </me>
+        <me>
+            3 \times 24
+        </me>
+        <me>
+            4 \times 18
+        </me>
+        <me>
+            6 \times 12
+        </me>
+        <me>
+            8 \times 9
+        </me>
+        <p>
+            Later, we will be very careful and learn how to check that these are all of the possible ways of factoring 72 into two numbers. But it is not too hard to check in this case (do you see how to do this?) Let's plot these pairs on a number line to see if we notice something:
+        </p>
+        <p>
+            INSERT PIC OF A NUMBER LINE WITH EACH PAIR OF FACTORS OF 72 PLOTTED
+        </p>
+        <p>
+            It looks like the paris are approaching some point, let's call it <m>P</m> between 8 and 9, plotted above, and that there is always one number of the pair that's greater than <m>P</m>, and one that is less than <m>P</m>.  
+        </p>
+        <p>
+            Let's try the same process with another number, say <m>100</m>, and see if we can conjecture what this point <m>P</m> is mathematically:
+        </p>
+        <exercise>
+            <ol>
+                <li>
+                    <p>
+                        Write down all possible factorizations of <m>100</m> into two factors. The factors do not have to be different numbers.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Graph these pairs of factors on a number line as above.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Can you determine the point <m>P</m> in this case? Can you give a mathematical meaning to this point, as it relates to <m>100</m>?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Conjecture what the meaning of point <m>P</m> is in the previous example.
+                    </p>
+                </li>
+            </ol>
+        </exercise>
+        <p>
+            From the exercise above, factoring any number <m>n</m> into two factors, it looks like our factorizations approach the positive square root of <m>n</m> (usually written <m>\sqrt{n}</m>). In a later section we will explore square roots, and other roots, in more detail. The key observation here is that in any pair of factors of <m>n</m>, one factor is always greater than or equal to <m>\sqrt{n}</m> and the other factor is less than or equal to <m>\sqrt{n}</m>. Let's write this as a lemma:
+        </p>
+        <p>
+            <lemma xml:id="lem-FactorizationSquareRoot">
+                <statement>
+                    <p>
+                        Let <m>n \in \mathbb{N}</m>. If <m>n=a\times b</m> for some <m>a,b \in \mathbb{N}</m> where, say, <m>a \geq b</m>, then <m>a \geq \sqrt{n}</m> and <m>b \leq \sqrt{n}</m>.
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        We are going to show this result is true using a <term>proof by contradiction</term>. As in part 3 of <xref ref="subsec-JustifyingConditionalStatements"/>, we are going to pretend that there is a counterexample to our conditional statement (that is, the only situation where <m>P \to Q</m> is false; when <m>P</m> is true and <m>Q</m> is false.) We will show that if we are in this case, then mathematics "breaks" and we end up with something that is never true. This means that there are no counterexamples to our statement, so it must always be true. In our case, we will end up with showing that <m>n &gt; n</m>, which is always false; of course, no number is strictly greater than itself!. The idea will be that if we multiply two number bigger than <m>\sqrt{n}</m> together, we must get a number bigger than <m>n</m>.
+                    </p>
+                    <p>
+                        Assuming that the if-part is true, let <m>n=ab</m> be a factorization of <m>n</m> into two factors, where <m>a \geq b</m>. Let's also assume that the then-part is false; that either both <ol>
+                            <li>
+                                <p>
+                                    <m>a,b &gt; \sqrt{n}</m> or
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>a,b &lt; \sqrt{n}</m>.
+                                </p>
+                            </li>
+                        </ol>  There are two cases here. We will do the first case, and leave the second case as an exercise for you.
+                    </p>
+                    <p>
+                       By the definition of a square root, we can write <me>n = (\sqrt{n})(\sqrt{n})</me>. Since we're assuming <m>a &gt; \sqrt{n}</m>, if we replace one of the <m>\sqrt{n}</m> in the first expression with <m>a</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &gt; a(\sqrt{n}) </me>. Similarly, we're also assuming <m>b &gt; \sqrt{n}</m>, if we replace the other <m>\sqrt{n}</m> in the new expression with <m>b</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &gt; a(\sqrt{n}) &gt; ab </me>. But we know that <m>n=ab</m> so we can replace the <m>ab</m> on the right hand side by <m>n</m>. So <me>n = (\sqrt{n})(\sqrt{n}) &gt; a(\sqrt{n}) &gt; ab = n.</me> So if we look at the (in)equation above, we have just showed that <m>n &gt; n</m>. Since this is never true, then there are no counterexamples to our original statement (at least in the first case).
+
+                       <p>
+                        The case where we assume that <m>a,b &lt; \sqrt{n}</m> is very similar, and is left as an exercise to you. See if you can modify the case above to be a proof for this case.
+                       </p>
+                       <p>
+                        Combining the two cases, we know that there are no counterexamples to our conditional statement, so it is always true.
+                       </p>
+
+                        
+                    </p>
+                    
+                </proof>
+            </lemma>
+        </p>
+        
+        
+        
+        
+        
+        
+    </subsection>
     <p>
         PRIME FACTORIZATION OF NUMBERS + UNIQUE FACTORIZATION
     </p>
