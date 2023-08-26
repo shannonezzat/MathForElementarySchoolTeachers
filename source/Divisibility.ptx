@@ -1369,23 +1369,18 @@
             <p>
                 A number <m>n \in \mathbb{N}</m> where <m>n \geq 2</m> is prime exactly when it has no prime factors <m>p \leq \sqrt{n}</m>. We can test for primality using this following steps:
             </p>
-            <ol>
-                <li>
                     <p>
-                        Determine the largest prime number <m>p_* \leq \sqrt{n}</m>.
+                        1. Determine the largest prime number <m>p_* \leq \sqrt{n}</m>.
                     </p>
-                </li>
-                <li>
+                
                     <p>
-                        For each prime number <m>p \leq p_*</m>, determine if <m>p \mid n</m>. If you find such a prime <m>p</m>, stop. Then <m>n</m> is composite. Otherwise go to the next step.
+                       2.  For each prime number <m>p \leq p_*</m>, determine if <m>p \mid n</m>. If you find such a prime <m>p</m>, stop. Then <m>n</m> is composite. Otherwise go to the next step.
                     </p>
-                </li>
-                <li>
+                
                     <p>
-                        Congratuations! Your number <m>n</m> is prime!
+                        3. Congratuations! Your number <m>n</m> is prime!
                     </p>
-                </li>
-            </ol>
+               
         </assemblage>
         <p>
             Let's see this test in action.
