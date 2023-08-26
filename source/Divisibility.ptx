@@ -1360,11 +1360,110 @@
             
         </p>
         <p>
-            Putting this all together, we know that if a number <m>n</m> is composite then there is a prime number <m>p \leq \sqrt{n}</m> such that <m>p \mid n.</m> So to check that <m>n</m> is composite, all we need to do is check if each prime number up to <m>\sqrt{n}</m> is a factor of <m>n</m>.
+            Putting this all together, we know that if a number <m>n</m> is composite then there is a prime number <m>p \leq \sqrt{n}</m> such that <m>p \mid n.</m> So to check that <m>n</m> is composite, all we need to do is check if each prime number up to <m>\sqrt{n}</m> is a factor of <m>n</m>. It's more common to talk about testing if a number *isn't* composite, so we will phrase the test below in that language:
         </p>
         
         
-        
+        <assemblage xml:id="assemblage-TestForPrimality">
+            <title>Teat For Primality</title>
+            <p>
+                A number <m>n \in \mathbb{N}</m> where <m>n \geq 2</m> is prime exactly when it has no prime factors <m>p \leq \sqrt{n}</m>. We can test for primality using this following steps:
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        Determine the largest prime number <m>p_* \leq \sqrt{n}</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        For each prime number <m>p \leq p_*</m>, determine if <m>p \mid n</m>. If you find such a prime <m>p</m>, stop. Then <m>n</m> is composite. Otherwise go to the next step.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Congratuations! Your number <m>n</m> is prime!
+                    </p>
+                </li>
+            </ol>
+        </assemblage>
+        <p>
+            Let's see this test in action.
+        </p>
+        <example>
+            <p>
+                Determine if the number <m>403</m> is prime.
+            </p>
+            <solution>
+                <p>
+                    First, we find the largest prime <m>p_* \leq \sqrt{n}</m>. If we have access to a calculator, we know that <m>\sqrt{403} \approx 20</m>. But if we do not, we can square primes and "sandwich" 403 between these squares. We know that <m>19^2=361</m> and the subsequent prime <m>23^2=529</m>. So this means that <m>19 \leq \sqrt{403} \leq 23</m>, and <m>19</m> is the largest prime that is less than or equal to <m>\sqrt{403}</m>.
+                </p>
+                <p>
+                    We now test the divisibility of each prime up to <m>19</m> into <m>403</m>. If none of these primes are a factor of <m>403</m> then by our test for primality, <m>403</m> is prime. We will do each prime individually, and when we have a divisibility rule to help us, we will use that.
+                </p>
+                <p>
+                    2: Since <m>2 \nmid 3</m>, we know <m>2 \nmid 403</m>.
+                </p>
+                <p>
+                    3: Since <m>3 \nmid (4+0+3)</m>, we know <m>3 \nmid 403</m>.
+                </p>
+                <p>
+                    5: Since <m>5 \nmid 3</m>, we know <m>5 \nmid 403</m>.
+                </p>
+                <p>
+                    7: By division, we know that <m>403 \div 7 = 57R4</m>. Since we have a non-zero remainder we know <m>7 \nmid 403</m>.
+                </p>
+                <p>
+                    11: Since <m>11 \nmid 4-0+3</m>, we know <m>11 \nmid 403</m>
+                </p>
+                <p>
+                    13: By division, we know that <m>403 \div 13 = 31</m>. So indeed <m>13 \mid 403</m> and <m>403=13 \times 31</m>. We have foudn a prime factor of <m>403</m> and thus by our test for primality, <m>403</m> is not prime (and we have a factorization of it too!)
+                </p>
+                <p>
+                    Note that once we find a prime that divides our number <m>n</m>, we do not need to test the other primes; we already know that <m>n</m> is composite.
+                </p>
+            </solution>
+        </example>
+        <example>
+            <p>
+                Determine if <m>293</m> is prime.
+            </p>
+            <solution>
+                <p>
+                    We need to find the greatest prime less than or equal to <m>\sqrt{293}</m>. Without a calculator, we can bound <m>\sqrt{293}</m> between two consecutive primes, or put another way, bound <m>293</m> between two squares od primes.
+                </p>
+                <p>
+                    We know that <m>17^2=289</m> and <m>19^2=361</m> so <m>17 \leq \sqrt{293} \leq 19</m>, and our <m>p_*=17</m>
+                </p>
+                <p>
+                    We now check if each prime less than <m>\sqrt{293}</m> is a factor of <m>293</m>:
+                </p>
+                <p>
+                    2: Since <m>2 \nmid 3</m>, we know <m>2 \nmid 293.</m>
+                </p>
+                <p>
+                    3: Since <m>3 \nmid (2+9+3)</m>, we know <m>3 \nmid 293</m>
+                </p>
+                <p>
+                    5: Since <m>5 \nmid 3</m>, we know <m>5 \nmid 293</m>.
+                </p>
+                <p>
+                    7: By division, we know that <m>293 \div 7 = 41R6</m>. Since we have a non-zero remainder, we know <m>7 /nmid 293</m>.
+                </p>
+                <p>
+                    11: Since <m>11 \nmid (2-9+3)</m>, we know <m>11 \nmid 293</m>.
+                </p>
+                <p>
+                    13: By division we know that <m>293 \div 13 = 22R7</m>. Since we have a non-zero remiander, we know <m>13 \nmid 293</m>.
+                </p>
+                <p>
+                    17: By division we know that <m>293 \div 17 = 17R4</m>. Since we have a non-zero remainder we know that <m>17 \nmid 293</m>.
+                </p>
+                <p>
+                    We have checked the divisibility of all primes up to and including <m>17</m>. Since we have found that none are factors of <m>293</m> our test for primality guarantees us that <m>293</m> is prime.
+                </p>
+            </solution>
+        </example>
         
         
     </subsection>
