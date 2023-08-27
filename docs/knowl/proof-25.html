@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2023-08-27T20:49:52-03:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
+<p>Let's do this proof in two cases: first the easy case when <span class="process-math">\(n\)</span> is a prime number itself. Then <span class="process-math">\(n\)</span> is its own prime factorization, and we are done.</p>
+<p>Now let <span class="process-math">\(n\)</span> be a composite number. There are two things to show here: first, that we can factor <span class="process-math">\(n\)</span> into a product of primes (the <dfn class="terminology">existence</dfn> of a prime factorization), and secondly, that there is only one way to do so (the <dfn class="terminology">uniqueness</dfn> of the prime factorization). We will do these two parts separately.</p>
+<p>Existence: By <a href="" class="xref" data-knowl="./knowl/thm-primefactorofcomposite.html" title="Theorem 6.3.10">Theorem 6.3.10</a> we know that <span class="process-math">\(n\)</span> has at least one prime factor, let's call one of them <span class="process-math">\(p\text{.}\)</span> So we can factor this out so <span class="process-math">\(n=pc\)</span> for some number <span class="process-math">\(c\text{.}\)</span> If <span class="process-math">\(c\)</span> is itself prime, we are done. If it isn't, then <span class="process-math">\(c\)</span> is composite and we can use <a href="" class="xref" data-knowl="./knowl/thm-primefactorofcomposite.html" title="Theorem 6.3.10">Theorem 6.3.10</a> again. And we can repeat this process, which must end since <span class="process-math">\(n\)</span> is a finite number and <span class="process-math">\(c &lt; n\text{,}\)</span> until we have completely factored <span class="process-math">\(n\)</span> into a product of primes. <a href="" class="xref" data-knowl="./knowl/ex-PrimeFactorization.html" title="Example 6.3.18">Example 6.3.18</a> is an example of this part of the theorem.</p>
+<p>Uniqueness: we will show this by contradiction, like in some previous proofs in this section. If there are numbers with two distinct prime factorizations, there must be a smallest one. We'll show that if we pick the smallest one, we can find an even smaller number with two different prime factorizations, which is our contradiction.</p>
+<p>Let <span class="process-math">\(n\)</span> be the smallest number to have have two different prime factorizations, say <span class="process-math">\(n=p_1p_2\ldotsp_s\)</span> and <span class="process-math">\(n=q_1q_2\ldots q_t\)</span> where the <span class="process-math">\(p\)</span>'s and <span class="process-math">\(q\)</span>'s are (not necessarily distinct) primes, and let's say that <span class="process-math">\(s \leq t\text{.}\)</span> We know that since <span class="process-math">\(p_1 \mid n\text{,}\)</span> <span class="process-math">\(p_1 \mid q_1q_2\ldots q_t\)</span> since <span class="process-math">\(n=q_1q_2\ldots q_t\)</span>By Euclid's Lemma, <a href="" class="xref" data-knowl="./knowl/lem-EuclidsLemma.html" title="Lemma 6.3.19: Euclid's Lemma">Lemma 6.3.19</a>, we know that <span class="process-math">\(p_1 \mid q_i\)</span> for one of the primes <span class="process-math">\(q_i\text{.}\)</span> But since <span class="process-math">\(q_i\)</span> is prime, its only factors are <span class="process-math">\(1\)</span> and <span class="process-math">\(q_i\text{.}\)</span> Since <span class="process-math">\(p_1 \neq 1\text{,}\)</span> since it is a prime as well, it must be that <span class="process-math">\(p_1=q_i\text{.}\)</span> Now let's divide both sides by this common prime, remembering that <span class="process-math">\(p_1=q_i\text{:}\)</span></p>
+<div class="displaymath process-math">
+\begin{equation*}
+(n)\div p_1 = (p_1p_2p_3 \ldots p_s) \div p_1 = (q_1 q_2 \ldots q_{i-1}q_{i}q_{i+1} \ldots q_t) \div p_1
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow n\div p_1 = p_2p_3 \ldots p_s = q_1 q_2 \ldots q_{i-1}q_{i+1} \ldots q_t.
+\end{equation*}
+</div>
+<p class="continuation">Since <span class="process-math">\(p_1 &gt; 1\)</span> it's clear that <span class="process-math">\(n %gt; (n \div p_1)\text{.}\)</span> But the equation above is two different prime factorizations for <span class="process-math">\(n \div p_1\text{,}\)</span> so <span class="process-math">\(n\)</span> was not the smallest number with two different prime factorizations. So this is a contradiction, which means that our original statement is true.</p></article><span class="incontext"><a href="sec-PrimeNumbers.html#proof-25">in-context</a></span>
+</body>
+</html>
