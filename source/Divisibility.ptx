@@ -12,10 +12,15 @@
         <title>Intro to Divisibility</title>
         <p>
             Divisibility is a fundamental concept in mathematics. It describes one type of fundamental relationship between two integers, as we can think of a factor of a number being a "building block" of the number it is a factor of. Note that in this chapter, we will predominately study divisibility properties of whole numbers, but these can be easily extended to integers. From now on, unless otherwise stated, any number that appears is a whole number; that is, for all numbers <m>n</m> in this chapter,<m>n \in \mathbb{N}_0</m>.</p>
-        <p> Specifically, a number <m>a</m> is said to be divisible by another number <m>b</m> if there exists a number <m>c</m> such that <m>a = bc</m>. This is often expressed in various ways, such as "<m>b</m> is a factor of <m>a</m>", "<m>b</m> divides <m>a</m>", "<m>a</m> is a multiple of <m>b</m>", or "<m>a</m> is divisible by <m>b</m>".
-        </p>
+            <definition xml:id="def-Divisibility">
+                <statement>
+                    <p> A number <m>a</m> is said to be <term>divisible by</term> another number <m>b</m> if there exists a number <m>c</m> such that <m>a = bc</m>. This is often expressed in various ways, such as "<m>b</m> is a factor of <m>a</m>", "<m>b</m> divides <m>a</m>", "<m>a</m> is a multiple of <m>b</m>", or "<m>a</m> is divisible by <m>b</m>". We say that <m>b</m> is a <term>proper factor</term> of <m>a</m> if <m>b \neq 1</m> and <m>b \neq a</m>.
+                    </p>
+                </statement>
+            </definition>
+        
         <example>
-        <p> We know that <m>35=5 \times 7</m> , so we know that <m>5</m> divides <m>35</m>. We can also say <m>5</m> is a factor of <m>35</m>, <m>35</m> is a multiple of <m>5</m>, and <m>35</m> is divisible by <m>5</m>. These all express the same information. </p>
+        <p> We know that <m>35=5 \times 7</m> , so we know that <m>5</m> divides <m>35</m>. We can also say <m>5</m> is a factor of <m>35</m>, <m>35</m> is a multiple of <m>5</m>, and <m>35</m> is divisible by <m>5</m>. These all express the same information. Additionally, <m>5</m> is a proper factor of <m>35</m> while <m>1</m> and <m>35</m> are not.</p>
         <p> You've probably spotted that we can say the same things about <m>7</m> as we did about <m>35</m>. This idea gives us our first theorem, that we will state and prove more formally after we develop some notation for the concept of divisibility. </p>
         </example>
         <p>
@@ -1188,28 +1193,7 @@
             </p>
         </exercise>
     </subsection>
-    <subsection xml:id="subsec-PrimesAsBuildingBlocks">
-        <title>Primes As Building Blocks</title>
-        <p>
-            From the previous sections, we know some interesting and important facts about prime numbers themselves. Now we will look at how prime numbers are the building blocks of every composite number. 
-        </p>
-        <p>
-            EXAMPLES OF PRIME FACTORIZATIONS WITH NOTATION
-        </p>
-        <p>
-            EXAMPLES OF DIFFERENT WAYS OF FACTORING GIVING YOU THE SAME FACTORIZATION
-        </p>
-        <p>
-            THEOREM: THE SMALLEST FACTOR OF A NUMBER IS PRIME
-        </p>
-        <p>
-            THEOREM: HANDWAVE INDUCTION TO SHOW A PRIME FACTORIZATION EXISTS
-        </p>
-        <p>
-            THEOREM: DO UNIQUENESS BY DIVIDING PRIMES ONE AT A TIME FROM THE SMALL SIDE TO THE BIG SIDE
-        </p>
-        
-    </subsection>
+    
    
     <subsection xml:id="subsec-HowToDetermineIfaNumberisPrime">
         <title>How To Determine If a Number is Prime</title>
@@ -1462,6 +1446,164 @@
         
         
     </subsection>
+    <subsection xml:id="subsec-PrimesAsBuildingBlocks">
+        <title>Primes As Building Blocks</title>
+        <p>
+            From the previous sections, we know some interesting and important facts about prime numbers themselves. Now we will look at how prime numbers are the building blocks of every composite number. 
+        </p>
+        <p>
+            Let's try and factor a number completely; that is, let's also factor the composite factors we use so that there are no composite factors left and all of our factors are prime. Let's try <m>72</m> again.
+        </p>
+        <p>
+            We know that <me>72=6 \times 12</me>, and both of these are composite, so we can factor both of these numbers: <me>
+                72= (2 \times 3) \times (3 \times 4).
+            </me> We know the numbers <m>2</m> and <m>3</m> are prime, so we cannot factor them any further. However, we can factor <m>4</m>: <me>
+                72=(2 \times 3) \times (3 \times (2 \times 2) ).
+            </me> Now all of our factors in our factorization are prime! Since multiplication is commutative and associative, we can regroup our factors so all of the <m>2</m>'s and <m>3</m>'s are together: <me>
+                72=(2\times 2 \times 2) \times (3 \times 3) = 2^3 3^2.
+            </me>
+            We call this factorization of <m>72</m> a <term>prime factorization</term>. Let's definte this more carefully:
+            
+            
+        </p>
+        <definition xml:id="def-PrimeFactoriZation">
+            <statement>
+                <p>
+                    A <term>prime factorization</term> of a number <m>n \in \mathbb{N}</m> is a factorization of <m>n</m> in the form <m>n = p_1^{e_1}p_2^{e_2} \ldots p_k^{e_k}</m> where the <m>p_1, \ldots, p_k</m> are distinct prime numbers in increasing order, there are <m>k</m> distinct primes, and the <m>e_1, \ldots, e_k </m> are the (natural number) exponents of these primes.
+                </p>
+            </statement>
+
+        </definition>
+        <example>
+            <p>
+                For <m>72 = 2^3 3^2,</m> we have that <m>p_1 = 2, p_2 = 3</m> (and in this case there are <m>2</m> distinct primes in the prime factorization), <m>e_1=3</m> (how many of the prime <m>2</m> we have in our prime factorization), and <m>e_2=2</m>.
+            </p>
+            <p>
+                If <m>n=21000</m> then you can check that <m>21000=2^3 3 5^3 7</m>, so <m>p_1=2, p_2=3, p_3 = 5, p_4=7</m>, there are <m>4</m> distinct primes so <m>k=4,</m>, and <m>e_1=3, e_2=1, e_3=3, e_4=1.</m>
+            </p>
+        </example>
+        <p>
+            We can make a tree diagram to show this factorization into primes: INSERT PIC OF TREE DIAGRAM
+        </p>
+        <p>
+            There are many different factorizations of <m>72</m> into two different factors, so let's see what happens if we try starting with another one:
+            <me>
+                72=4 \times 18 = (2\times 2) \times (2 \times 9) = (2\times 2) \times (2 \times (3 \times 3)) = (2\times 2 \times 2) \times (3 \times 3) = 2^3 3^2.
+            </me>
+            We send up with the same prime factorization as the first example. Here is the tree diagram of this factorization: INSERT PIC OF TREE DIAGRAM
+        </p>
+        <exercise>
+            <p>
+                Try determining the prime factorization of <m>72</m> starting with other factorizations. What do you notice?
+            </p>
+        </exercise>
+        <p>
+             It looks like no matter how we start factoring <m>72</m> we end up with the same prime factorization.
+        </p>
+        <exercise>
+            <p>
+                Add some strength to this conjecture by choosing another number <m>n</m> and determine prime factorizations of <m>n</m> beginning with different factorizations into two numbers.
+            </p>
+        </exercise>
+        <p>
+            It looks like our conjecture may be true, and in fact it is. We will show that every number has exactly one prime factorization, so we can indeed talk about *the* prime factorization of <m>n</m>. 
+        </p>
+        <p>
+            The idea of showing a prime factorization always exists is by using <xref ref="thm-primefactorofcomposite"/>. We'll factor out a prime at each step, and then keep going with the remaining composite factor until we have factored <m>n</m> ompletely into a product of primes.
+        </p>
+        <example xml:id="ex-PrimeFactorization">
+            <p>
+                Let's start with <m>60</m>. We can easily see that <m>2</m> is a factor, so we write <me>
+                    60=2 \times 30.
+                </me>
+                Since <m>30</m> is composite, we can factor a prime out of it as well; again, it is easy to see that <m>2</m> is a prime factor: <me>
+                    60 = 2 \times (2 \times 15).
+                </me>
+                We now continue with <m>15</m> which is composite. We easily see that <m>5</m> is a prime factor: <me>
+                    60 = 2 \times (2 \times (3 \times 5)).
+                </me>
+                Since <m>5</m> is already prime, there is nothing more to factor; we can regroup to make it easier to read. <me>
+                    60 = 2^2 \times 3 \times 5.
+                </me>
+            
+                
+                
+            </p>
+        </example>
+        <p>
+            Before we get to this theorem, we will need a small lemma. This lemma was originally proved by the ancient Greek mathematician Euclid and is usually named after him. The proof of this lemma uses some techniques from later in this section, so we will prove it later.
+            <lemma xml:id="lem-EuclidsLemma">
+                <title>Euclid's Lemma</title>
+                
+                
+                <statement>
+                    <p>
+                       Let <m>a_1,a_2, \ldots, a_k \in \mathbb{N}</m> and <m>p</m> be a prime number. If <m>p</m> divides the product of our <m>a</m>'s; that is, <m>p \mid a_1a_2 \ldots a_k</m> then <m>p | a_i</m> for some <m>1 \leq i \leq k</m>. 
+                    </p>
+                </statement>
+            </lemma>
+            <p>
+                Here's an example showing how the theorem above works:
+            </p>
+            <example>
+                <p>
+                    Suppose <m>a \in \mathbb{N}</m> and we know that <m>7 | (15\times 36 \times a)</m>. By <xref ref="lem-EuclidsLemma"/> we know that at least one of <m> 7 \mid 15 </m>, <m>7 \mid 36,</m> or <m>7 \mid a</m> is true. Since we know both of the first two divisibility statements are false, it must be that <m>7 \mid a</m>.
+                </p>
+            </example>
+            
+        </p>
+        <p>
+            The theorem we are about to prove is so important and special, it is given a name to reflect this fact.
+        </p>
+        <p>
+           <theorem xml:id="thm-PrimeFactorization">
+            <title>Fundamental Theorem of Arithmetic</title>
+            
+            
+            <statement>
+                <p>
+                   If <m>n \geq 2</m> is a natural number then <m>n</m> has a prime factorization and that prime factorization is unique.  
+                </p>
+                
+                
+            </statement>
+            <proof>
+                <p>
+                    Let's do this proof in two cases: first the easy case when <m>n</m> is a prime number itself. Then <m>n</m> is its own prime factorization, and we are done.
+                </p>
+                <p>
+                    Now let <m>n</m> be a composite number. There are two things to show here: first, that we can factor <m>n</m> into a product of primes (the <term>existence</term> of a prime factorization), and secondly, that there is only one way to do so (the <term>uniqueness</term> of the prime factorization). We will do these two parts separately.
+                </p>
+                <p>
+                    Existence: By <xref ref="thm-primefactorofcomposite"/> we know that <m>n</m> has at least one prime factor, let's call one of them <m>p</m>. So we can factor this out so <m>n=pc</m> for some number <m>c</m>. If <m>c</m> is itself prime, we are done. If it isn't, then <m>c</m> is composite and we can use <xref ref="thm-primefactorofcomposite"/> again. And we can repeat this process, which must end since <m>n</m> is a finite number and <m>c &lt; n</m>, until we have completely factored <m>n</m> into a product of primes. <xref ref="ex-PrimeFactorization"/> is an example of this part of the theorem.
+                </p>
+                <p>
+                    Uniqueness: we will show this by contradiction, like in some previous proofs in this section. If there are numbers with two distinct prime factorizations, there must be a smallest one. We'll show that if we pick the smallest one, we can find an even smaller number with two different prime factorizations, which is our contradiction.
+                </p>
+                
+                <p>
+                    Let <m>n</m> be the smallest number to have have two different prime factorizations, say <m>n=p_1p_2\ldotsp_s</m> and <m>n=q_1q_2\ldots q_t</m> where the <m>p</m>'s and <m>q</m>'s are (not necessarily distinct) primes, and let's say that <m>s \leq t</m>. We know that since <m>p_1 \mid n</m>, <m>p_1 \mid q_1q_2\ldots q_t</m> since <m>n=q_1q_2\ldots q_t</m>By Euclid's Lemma, <xref ref="lem-EuclidsLemma"/>, we know that <m>p_1 \mid q_i</m> for one of the primes <m>q_i</m>. But since <m>q_i</m> is prime, its only factors are <m>1</m> and <m>q_i</m>. Since <m>p_1 \neq 1</m>, since it is a prime as well, it must be that <m>p_1=q_i</m>. Now let's divide both sides by this common prime, remembering that <m>p_1=q_i</m>: <me>
+                        (n)\div p_1 = (p_1p_2p_3 \ldots p_s) \div p_1 = (q_1 q_2 \ldots q_{i-1}q_{i}q_{i+1} \ldots q_t) \div p_1
+                    </me>
+                    <me>
+                        \rightarrow n\div p_1 = p_2p_3 \ldots p_s = q_1 q_2 \ldots q_{i-1}q_{i+1} \ldots q_t.
+                    </me>
+                    Since <m>p_1 &gt; 1</m> it's clear that <m>n %gt; (n \div p_1)</m>. But the equation above is two different prime factorizations for <m>n \div p_1</m>, so <m>n</m> was not the smallest number with two different prime factorizations. So this is a contradiction, which means that our original statement is true.
+                    
+                </p>
+                
+            </proof>
+            
+           </theorem>
+            
+        </p>
+        <p>
+            This is a very special idea. It means that every natural number is built from prime numbers, and is built in exactly one way. So we can study properties of factors of numbers by studying their prime factorization. We will do so in upcoming sections.
+        </p>
+        
+        
+    </subsection>
+
     <p>
         PRIME FACTORIZATION OF NUMBERS + UNIQUE FACTORIZATION
     </p>
