@@ -1582,13 +1582,13 @@
                 </p>
                 
                 <p>
-                    Let <m>n</m> be the smallest number to have have two different prime factorizations, say <m>n=p_1p_2\ldotsp_s</m> and <m>n=q_1q_2\ldots q_t</m> where the <m>p</m>'s and <m>q</m>'s are (not necessarily distinct) primes, and let's say that <m>s \leq t</m>. We know that since <m>p_1 \mid n</m>, <m>p_1 \mid q_1q_2\ldots q_t</m> since <m>n=q_1q_2\ldots q_t</m>By Euclid's Lemma, <xref ref="lem-EuclidsLemma"/>, we know that <m>p_1 \mid q_i</m> for one of the primes <m>q_i</m>. But since <m>q_i</m> is prime, its only factors are <m>1</m> and <m>q_i</m>. Since <m>p_1 \neq 1</m>, since it is a prime as well, it must be that <m>p_1=q_i</m>. Now let's divide both sides by this common prime, remembering that <m>p_1=q_i</m>: <me>
+                    Let <m>n</m> be the smallest number to have have two different prime factorizations, say <m>n=p_1p_2\ldots p_s</m> and <m>n=q_1q_2\ldots q_t</m> where the <m>p</m>'s and <m>q</m>'s are (not necessarily distinct) primes, and let's say that <m>s \leq t</m>. We know that since <m>p_1 \mid n</m>, <m>p_1 \mid q_1q_2\ldots q_t</m> since <m>n=q_1q_2\ldots q_t</m>By Euclid's Lemma, <xref ref="lem-EuclidsLemma"/>, we know that <m>p_1 \mid q_i</m> for one of the primes <m>q_i</m>. But since <m>q_i</m> is prime, its only factors are <m>1</m> and <m>q_i</m>. Since <m>p_1 \neq 1</m>, since it is a prime as well, it must be that <m>p_1=q_i</m>. Now let's divide both sides by this common prime, remembering that <m>p_1=q_i</m>: <me>
                         (n)\div p_1 = (p_1p_2p_3 \ldots p_s) \div p_1 = (q_1 q_2 \ldots q_{i-1}q_{i}q_{i+1} \ldots q_t) \div p_1
                     </me>
                     <me>
                         \rightarrow n\div p_1 = p_2p_3 \ldots p_s = q_1 q_2 \ldots q_{i-1}q_{i+1} \ldots q_t.
                     </me>
-                    Since <m>p_1 &gt; 1</m> it's clear that <m>n %gt; (n \div p_1)</m>. But the equation above is two different prime factorizations for <m>n \div p_1</m>, so <m>n</m> was not the smallest number with two different prime factorizations. So this is a contradiction, which means that our original statement is true.
+                    Since <m>p_1 &gt; 1</m> it's clear that <m>n &gt; (n \div p_1)</m>. But the equation above is two different prime factorizations for <m>n \div p_1</m>, so <m>n</m> was not the smallest number with two different prime factorizations. So this is a contradiction, which means that our original statement is true.
                     
                 </p>
                 
