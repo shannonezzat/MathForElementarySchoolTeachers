@@ -1443,9 +1443,12 @@
                 </p>
             </solution>
         </example>
-        
+     
         
     </subsection>
+</section>
+<section xml:id="sec-FactorsAndMultiples">
+    <title>Factors and Multiples</title>
     <subsection xml:id="subsec-PrimesAsBuildingBlocks">
         <title>Primes As Building Blocks</title>
         <p>
@@ -1509,7 +1512,7 @@
             It looks like our conjecture may be true, and in fact it is. We will show that every number has exactly one prime factorization, so we can indeed talk about *the* prime factorization of <m>n</m>. 
         </p>
         <p>
-            The idea of showing a prime factorization always exists is by using <xref ref="thm-primefactorofcomposite"/>. We'll factor out a prime at each step, and then keep going with the remaining composite factor until we have factored <m>n</m> ompletely into a product of primes.
+            The idea of showing a prime factorization always exists is by using <xref ref="thm-primefactorofcomposite"/>. We'll factor out a prime at each step, and then keep going with the remaining composite factor until we have factored <m>n</m> completely into a product of primes.
         </p>
         <example xml:id="ex-PrimeFactorization">
             <p>
@@ -1604,24 +1607,418 @@
         
     </subsection>
 
-    <p>
-        PRIME FACTORIZATION OF NUMBERS + UNIQUE FACTORIZATION
-    </p>
-    <p>
-       COUNTING FACTORS OF A NUMBER 
-    </p>
-</section>
-<section xml:id="sec-DivisorsandMultiples">
-    <title>Divisors and Multiples</title>
-    <p>
-        WHAT IS A GCD AND LCM?
-    </p>
-    <p>
-        WHAT TYPES OF PROBLEMS USE THESE IDEAS?
-    </p>
-    <p>
-        HOW TO CALUCLATE A GCD USING EUCLIDEAN ALGORITHM
-    </p>
+    <subsection xml:id="subsec-HowManyFactorsDoesANumberHave">
+        <title>How Many Factors Does A Number Have?</title>
+        <p>
+            We know that all factors of numbers come in pairs, as if <m>a \mid n</m>, then <m>n=ab</m> for some other (possibly the same as <m>a</m>) factor <m>b</m>. We can also use the fact that one of the factors of <m>n</m> must be at most <m>\sqrt{n}</m>. So we can determine if each number <m>a \leq \sqrt{n}</m> is a factor, and we can get the other factor "for free".
+        </p>
+        <example>
+            <p>
+                Consider <m>n=144</m>. We know, checking via long division or using our divisibility rules, we obtain the following pairs of factors:
+                <ol>
+                    <li>
+                        <p>
+                            1 and 144
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            2 and 72
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            3 and 48
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            4 and 36
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            6 and 24
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            8 and 18
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            9 and 16
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            12 and 12
+                        </p>
+                    </li>
+                </ol>
+                Since we have reached <m>\sqrt{144}</m> we know we can stop. We now count the unique factors (we don't want to count 12 twice) and see we have 15 factors. 
+            </p>
+        </example>
+        <p>
+            However, if we had a larger number, such as 3600, this would take a while, as we would have to check the divisibility of every number up to <m>\sqrt{3600} = 60.</m> Let's see if we can determine an easier and more efficient way of counting the number of factors of a number. We will use the fact that each number has a prime factorization to help us out. 
+        </p>
+        <example>
+            <p>Let's look again at <m>n=144</m>. Using our method from <xref ref="thm-primefactorofcomposite"/> we can write <m>n</m> as a product of primes: <m>144=2^4 \times 3^2</m>. Now let's list the factors again, but also write their prime factorization:</p> 
+
+            <ol>
+                <li>
+                    <p>
+                        1 and 144 <m>(2^0 \times 3^0)(2^4 \times 3^2)</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        2 and 72 <m>(2^1 \times 3^0)(2^3 \times 3^2)</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        3 and 48 <m>(2^0 \times 3^1)(2^4 \times 3^1)</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        4 and 36 <m>(2^2 \times 3^0)(2^2 \times 3^2)</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        6 and 24 <m>(2^1 \times 3^1)(2^3 \times 3^1)</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        8 and 18 <m>(2^3 \times 3^0)(2^1 \times 3^2)</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        9 and 16 <m>(2^0 \times 3^2)(2^4 \times 3^0)</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        12 and 12 <m>(2^2 \times 3^1)(2^2 \times 3^1)</m>
+                    </p>
+                </li>
+            </ol>
+            <p>
+                Note that if <m>a \mid n</m>, then <m>a</m> must either be <m>1</m>, or a product of some of the <m>2</m>'s and <m>3</m>'s that are in the prime factorization of <m>144</m>, since we can think about grouping the primes in the prime factorization to make a pair of factors.
+            </p>
+            <p>
+                We can think: if <m>a</m> is a factor of <m>144</m> that we are making, how many choices for the number of <m>2</m>'s do we have? How many choices for the number of <m>3</m>'s do we have? Our factor <m>a</m> can have 0,1,2,3, or 4 copies of <m>2</m> (so 5 choices in total), and either 0,1, or 2 copies of <m>3</m> (so 3 choices in total). For example, if our factor has three <m>2</m>'s and one <m>3</m>, then <m>a=2^3 \times 3 = 24</m>. 
+            </p>
+            <p>
+                Since we have 5 choices for the number of <m>2</m>'s and 3 choices for the number of <m>3</m>'s, we have <m>5 \times 3 = 15</m> total factors of <m>144=2^4 \times 3^2</m>.
+            </p>
+            
+                
+
+        </example>
+        <p>
+            This process works for any number, as long as we have it factored into its prime factorization. We will state this result as a theorem.
+        </p>
+        <theorem xml:id="thm-NumberOfFactors">
+            <statement>
+                <p>
+                    Let <m>n \in \mathbb{N}</m> where <m>n</m> has a prime factorization of <m>n=p_1^{e_1}p_2^{e_2}\ldots p_k^{e_k}</m> for some primes <m>p_1, \ldots, p_k</m> and non-negative exponents <m>e_1, \ldots, e_k</m>. Then <m>n</m> has <m>(e_1+1) \times (e_2 +1) \times \ldots \times (e_k+1)</m> factors in total.
+                </p>
+            </statement>
+            <proof>
+                <p>
+                    If <m>a</m> is a factor of <m>n</m>, then <m>a</m> can be written as a subset of the prime factorization of <m>n</m>. Thus, for each prime <m>p_i</m>, we can have <m>0, 1, 2 \ldots e_i</m> copies of <m>p_i</m> in our factor, for a total of <m>e_i+1</m> choices. Since we have to make a choice for each different prime, and each choice is independent of other choices (that is, choosing the number of copies of one prime does not affect the number of choices for another prime), we can multiply these numbers of choices for each prime to determine the number of factors in total.
+                </p>
+            </proof>
+        </theorem>
+        <example>
+            <p>
+                Let <m>n=2^5 \times 3^3 \times 7 \times 11^2.</m>
+                <ol>
+                    <li>
+                        <p>
+                            How many factors does <m>n</m> have in total?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            How many prime factors does <m>n</m> have?
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            How many composite factors does <m>n</m> have?
+                        </p>
+                    </li>
+                </ol>
+            </p>
+            <solution>
+                <ol>
+                    <li>
+                        <p>
+                            Using <xref ref="thm-NumberOfFactors"/> we can say that <m>n</m> has <m>(5+1)(3+1)(1+1)(2+1) = 6 \times 4 \times 2 \times 3 = 144</m> factors in total.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Since we were given the prime factorization of <m>n</m> we can simply read off the prime factors: <m>2,3,7,</m> and <m>11</m>. So <m>n</m> has <m>4</m> prime factors.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We know how many total factors there are, and we know how many prime factors there are. Let <m>x</m> be the number of composite factors of <m>n</m>. Remembering that factors are either composite, prime, or the number <m>1</m>, we can say that <m>4+1+x=144</m> and thus <m>x=139</m>.
+                        </p>
+                    </li>
+                </ol>
+                
+            </solution>
+        </example>
+        <subsubsection xml:id="subsubsec-PuttingItAllTogether">
+            <title>Putting It All Together</title>
+            <p>
+                Let's work through one example that uses many of the techniques and idea that we've encountered so far.
+            </p>
+            <example>
+                <p>
+                   Determine the total number of factors of the number <m>n=30,177,400</m>. 
+                </p>
+                <solution>
+                    <p>
+                        Since we don't have the prime factorization of <m>n</m> we need to factor it completely into its prime factorization. There are many ways of doing this, but we can usse our divisibility tests to determine some small factors, and then once our divisibility tests fail, we can use trial division to determine other prime factors. 
+                    </p>
+                    <p>
+                        First, it's worth noting that by our divisibility test for <m>3</m> we know that <m>3 \nmid n</m>.
+                    </p>
+                    <p>
+                        We first notice that <m>n</m> ends in two zeros, so we know that <m>100 | n</m>. Since <m>100=2^2 \times 5^2</m> we can write <m>n=(2^2 \times 5^2)301,774</m>. We now look for more prime factors of <m>301,774.</m> Since <m>301,774</m> ends in an even digit, we know that <m>2 | 301,774</m> and by division we can determine that <m>301,174=2 \times 150,887. </m> So <m>n=(2^{2+1} \times 5^2) \times 150,887</m>.
+                    </p>
+                    <p>
+                        Next we may notice that <m>1-5+0-8+8-7=-11</m> so <m>11 | 150,887</m>. By division we see that <m>150887=11 \times 13717</m>. We then notice that <m>1-3+7-1+7=11</m> so <m>11 | 13717</m> and, again by division, <m>13717=11 \times  1247</m>. Putting this together we have <m>n =(2^3 \times 5^2 \times 11^2) \times 1247.</m>
+                    </p>
+                    <p>
+                        We can check all of our divisiblity tests and find that <m>1247</m> fails all of them. So by <xref ref="assemblage-TestForPrimality"/>we need to determine if <m>1247</m> has any prime factors great than 11. We note that <m>31^2 = 961</m> and <m>37^2 = 1369</m> and that <m>31</m> and <m>37</m> are consecutive primes so <m>31 &lt; \sqrt{1247} &lt; 37</m> so we need to check all prime numbers of size <m>31</m> and smaller. We've already checked <m>2,3,5,11</m> so we need to check <m>7,13,17,19,23,29,31</m> by trial division. 
+                    </p>
+                    <p>
+                        Using this trial division, we see that <m>1247 \div 29=43</m>, so we know that <m>29</m> is a factor of <m>n</m>. And since <m>43</m> is also prime, we have decomposed <m>n</m> into its prime factorization: <m>n = 2^3 \times 5^2 \times 11^2 \times 29 \times 43</m>. Thus by <xref ref="thm-NumberOfFactors"/> we see that <m>n</m> has <m>(3+1)(2+1)(2+1)(1+1)(1+1)=144</m> total factors. Of these factors, <m>5</m> are prime, <m>1</m> is the number <m>1</m>, and <m>138</m> are composite.
+                    </p>
+                </solution>
+            </example>
+        </subsubsection>
+        
+    </subsection>
+    <subsection xml:id="gcd_lcm_intro">
+        <title>Greatest Common Divisor and Least Common Multiple</title>
+        <subsubsection xml:id="understanding_gcd_lcm">
+          <title>Unraveling the Concepts</title>
+          <p>
+            When exploring the realm of numbers, particularly in the context of sets of natural numbers, the concept of the <em>Greatest Common Divisor (GCD)</em>, also known as the <em>Greatest Common Factor (GCF)</em>, emerges as a pivotal tool. The GCD of a set of numbers is essentially the largest factor that divides each number in the set without leaving a remainder.
+          </p>
+          <subsection xml:id="gcd_prime_factorization">
+            <title>Understanding GCD Through Prime Factorization</title>
+            <p>
+              To understand the GCD, prime factorization is a fundamental technique. Let's consider an example to elucidate this process: finding the GCD of 42, 294, and 132. We begin by determining the prime factorization of each number. For instance, the prime factorization of these numbers would be:
+            </p>
+            <ol>
+              <li><p> <m> 42 = 2 \times 3 \times 7 </m></p></li>
+              <li><p> <m>294 = 2 \times 3 \times 7^2</m></p></li>
+              <li><p> <m>132 = 2^2 \times 3 \times 11</m></p></li>
+            </ol>
+            <p>
+              In these factorizations, we identify the common prime factors and consider the lowest power (exponent) of these primes present in each number. For our example, the common primes are 2 and 3, and the lowest powers for these are 2¹ and 3¹, respectively. Thus, the GCD is <m>2 \times 3 = 6</m>.  This can be verified as:
+            </p>
+            <ol>
+              <li><p> <m> 42 = 6 \times 7 </m></p></li>
+              <li><p> <m>294 = 6 \times 49</m></p></li>
+              <li><p> <m>132 = 6 \times 22</m></p></li>
+            </ol>
+          </subsection>
+          <subsection xml:id="lcm_concept">
+            <title>Least Common Multiple (LCM)</title>
+            <p>
+              The concept of the <em>Least Common Multiple (LCM)</em> is somewhat the inverse of the GCD. It represents the smallest number that is a multiple of every number in a set. To find the LCM, we again turn to prime factorization.
+            </p>
+            <subsection xml:id="lcm_example">
+              <title>Exploring LCM with an Example</title>
+              <p>
+                Using the same set of numbers (42, 294, and 132), we determine the LCM by looking for the highest power (exponent) of each prime factor present in the factorizations of these numbers. In our example:
+              </p>
+              <ol>
+                <li>The maximum exponent for 2 is 2 (from 132)</li>
+                <li>The maximum exponent for 3 is 1 (common in all)</li>
+                <li>The maximum exponent for 7 is 2 (from 294)</li>
+                <li>The maximum exponent for 11 is 1 (from 132)</li>
+              </ol>
+              <p>
+                Thus, the LCM is calculated as <m>2^2 \times 3 \times 7^2 \times 11</m> which when expanded, gives us the LCM.
+              </p>
+            </subsection>
+            <p>
+              Understanding GCD and LCM is not just an academic exercise. These concepts are crucial in various mathematical operations, such as simplifying fractions (GCD) and finding common denominators (LCM). Moreover, they form a foundational understanding for more advanced mathematical concepts.
+            </p>
+          </subsection>
+        </subsubsection>
+      </subsection>
+      <subsection xml:id="word_problems_gcd_lcm">
+        <title>Word Problems: GCD and LCM in Practice</title>
+        <p>
+          Let's delve into some practical word problems to see how the concepts of GCD and LCM are applied in real-life scenarios.
+        </p>
+      
+        <!-- Problem 1 -->
+        <subsubsection xml:id="problem1_gcd">
+          <title>Problem 1: Distributing Items in Boxes</title>
+          <p>
+            Consider an online shop that needs to send <m>72</m> shirts, <m>100</m> hats, and <m>144</m> bags to a supplier. The goal is to use the smallest number of boxes possible, with each box containing the exact same items. This is a typical problem where we need to find the greatest common divisor (GCD) of the numbers <m>72</m>, <m>100</m>, and <m>144</m>.
+          </p>
+          <p>
+            After calculating, we find that the GCD of these numbers is <m>4</m>. Therefore, we need <m>4</m> boxes. Each box will contain <m>72 \div 4 = 18</m> shirts, <m>100 \div 4 = 25</m> hats, and <m>144 \div 4 = 36</m> bags. This distribution ensures that each box has the same items and uses the minimum number of boxes possible.
+          </p>
+        </subsubsection>
+      
+        <!-- Problem 2 -->
+        <subsubsection xml:id="problem2_lcm">
+          <title>Problem 2: Buying Ingredients for Burgers</title>
+          <p>
+            Imagine owning a burger restaurant that requires patties, buns, and cheese slices for its burgers. Patties come in boxes of <m>36</m>, buns in bags of <m>50</m>, and cheese slices in packs of <m>60</m>. The objective is to purchase these ingredients in such quantities that there are no leftovers, and the number of burgers made is as small as possible.
+          </p>
+          <p>
+            This scenario calls for finding the least common multiple (LCM) of <m>36</m>, <m>50</m>, and <m>60</m>. Calculating this, we find the LCM to be <m>900</m>. Consequently, to make <m>900</m> burgers without leftovers, we need <m>900 \div 36 = 25</m> boxes of patties, <m>900 \div 50 = 18</m> bags of buns, and <m>900 \div 60 = 15</m> packs of cheese slices. This is the least number of burgers we can make without any ingredient left over.
+          </p>
+        </subsubsection>
+      
+        <!-- Additional Insight: Venn Diagrams -->
+        <subsubsection xml:id="venn_diagrams_gcd_lcm">
+          <title>Visualizing GCD and LCM with Venn Diagrams</title>
+          <p>
+            GCD and LCM can also be visualized using Venn diagrams. For example, consider the numbers <m>180</m> and <m>144</m>. By placing the prime factors of these numbers in a Venn diagram, we can easily identify the GCD (intersection of the sets) and the LCM (union of the sets). This visual approach offers a clear and intuitive understanding of how these concepts interrelate.
+          </p>
+        </subsubsection>
+      </subsection>
+      <subsection xml:id="euclidean_algorithm">
+        <title>Understanding the Euclidean Algorithm</title>
+        <p>
+          The Euclidean Algorithm offers a systematic approach to finding the greatest common divisor (GCD) of two numbers, especially when their prime factorizations are complex or cumbersome. This algorithm is named after the ancient Greek mathematician Euclid.
+        </p>
+      
+        <subsubsection xml:id="euclidean_algorithm_basics">
+          <title>Basic Principles</title>
+          <p>
+            To begin with, let's review some essential principles:
+          </p>
+          <list>
+            <li>
+              The GCD of any counting number <m>n</m> and <m>0</m> is <m>n</m> itself, as every number is a divisor of zero.
+            </li>
+            <li>
+              For any two counting numbers <m>a</m> and <m>b</m>, with <m>a \geq b</m>, we can express <m>a</m> as <m>a = qb + r</m>, where <m>q</m> is the quotient, and <m>r</m> is the remainder such that <m>0 \leq r &lt; b</m>.
+            </li>
+            <li>
+              The GCD of <m>a</m> and <m>b</m> is the same as the GCD of <m>b</m> and the remainder <m>r</m>.
+            </li>
+          </list>
+          <p>
+            These principles reduce the problem of finding the GCD of two large numbers to a series of simpler calculations.
+          </p>
+
+                   
+            <!-- Theorem Statement -->
+            <theorem xml:id="euclidean_algorithm_theorem_statement">
+              <title>Euclidean Algorithm</title>
+              <statement>
+                <p>
+                  Given two positive integers <m>a</m> and <m>b</m> (without loss of generality, assume <m>a \geq b</m>), the greatest common divisor (GCD) of <m>a</m> and <m>b</m> can be computed using the following iterative process:
+                </p>
+                <p>
+                  Divide <m>a</m> by <m>b</m> to get a quotient <m>q</m> and a remainder <m>r</m>, where <m>0 \leq r &lt; b</m>. Then, the GCD of <m>a</m> and <m>b</m> is the same as the GCD of <m>b</m> and <m>r</m>. Continue this process, replacing <m>a</m> with <m>b</m> and <m>b</m> with <m>r</m>, until <m>r</m> is zero. The GCD is the non-zero remainder from the previous step.
+                </p>
+              </statement>
+              <proof>
+               
+              
+              <p>
+                Let <m>d</m> be the greatest common divisor of <m>a</m> and <m>b</m>. By the quotient-remainder theorem, <m>a</m> can be expressed as <m>a = qb + r</m>, where <m>q</m> is the quotient and <m>r</m> is the remainder, and <m>0 \leq r &lt; b</m>.
+              </p>
+              <p>
+                Since <m>d</m> divides both <m>a</m> and <m>b</m>, it also divides <m>a - qb</m> (which is equal to <m>r</m>). Therefore, <m>d</m> divides <m>r</m>. Now, if there exists a larger common divisor of <m>b</m> and <m>r</m>, it would also divide <m>a</m> (since <m>a = qb + r</m>), contradicting the fact that <m>d</m> is the greatest common divisor of <m>a</m> and <m>b</m>. Hence, <m>d</m> is also the greatest common divisor of <m>b</m> and <m>r</m>.
+              </p>
+              <p>
+                Repeating this process iteratively, we reduce the problem to finding the GCD of smaller and smaller pairs of numbers, until the remainder <m>r</m> becomes zero. At that point, the GCD of the original pair <m>a</m> and <m>b</m> is the non-zero remainder from the previous division.
+              </p>
+              <p>
+                This completes the proof that the Euclidean Algorithm correctly computes the GCD of two positive integers.
+              </p>
+            </proof>
+            </theorem>
+          
+            <!-- Proof of the Theorem -->
+            <proof xml:id="euclidean_algorithm_proof">
+              <title>Proof of the Euclidean Algorithm</title>
+              <p>
+                Let <m>d</m> be the greatest common divisor of <m>a</m> and <m>b</m>. By the quotient-remainder theorem, <m>a</m> can be expressed as <m>a = qb + r</m>, where <m>q</m> is the quotient and <m>r</m> is the remainder, and <m>0 \leq r &lt; b</m>.
+              </p>
+              <p>
+                Since <m>d</m> divides both <m>a</m> and <m>b</m>, it also divides <m>a - qb</m> (which is equal to <m>r</m>). Therefore, <m>d</m> divides <m>r</m>. Now, if there exists a larger common divisor of <m>b</m> and <m>r</m>, it would also divide <m>a</m> (since <m>a = qb + r</m>), contradicting the fact that <m>d</m> is the greatest common divisor of <m>a</m> and <m>b</m>. Hence, <m>d</m> is also the greatest common divisor of <m>b</m> and <m>r</m>.
+              </p>
+              <p>
+                Repeating this process iteratively, we reduce the problem to finding the GCD of smaller and smaller pairs of numbers, until the remainder <m>r</m> becomes zero. At that point, the GCD of the original pair <m>a</m> and <m>b</m> is the non-zero remainder from the previous division.
+              </p>
+              <p>
+                This completes the proof that the Euclidean Algorithm correctly computes the GCD of two positive integers.
+              </p>
+            </proof>
+          
+          
+        </subsubsection>
+      
+        <subsubsection xml:id="euclidean_algorithm_procedure">
+          <title>Applying the Euclidean Algorithm</title>
+          <p>
+            The Euclidean Algorithm iteratively applies these principles. Let's consider an example: finding the GCD of <m>2716</m> and <m>9478</m>.
+          </p>
+          <p>
+            We start by dividing the larger number by the smaller one, and then replace the original pair with the divisor and the remainder. We repeat this process until the remainder is zero. The GCD is the non-zero remainder just before this point.
+          </p>
+          <p>
+            In our example, we proceed as follows:
+          </p>
+          <list>
+            <li><m>9478 = 2716 \times 3 + 1330</m></li>
+            <li><m>2716 = 1330 \times 2 + 56</m></li>
+            <li><m>1330 = 56 \times 23 + 42</m></li>
+            <li><m>56 = 42 \times 1 + 14</m></li>
+            <li><m>42 = 14 \times 3</m> (remainder is zero)</li>
+          </list>
+          <p>
+            Hence, the GCD of <m>2716</m> and <m>9478</m> is <m>14</m>.
+          </p>
+        </subsubsection>
+      
+        <subsubsection xml:id="euclidean_algorithm_examples">
+          <title>Additional Examples</title>
+          <p>
+            Let's explore another example: finding the GCD of <m>785</m> and <m>554</m> using the Euclidean Algorithm.
+          </p>
+          <p>
+            Following the same iterative process, we determine the GCD to be <m>1</m>, indicating that the numbers are coprime, meaning they have no common prime factors.
+          </p>
+        </subsubsection>
+      
+        <subsubsection xml:id="euclidean_algorithm_significance">
+          <title>Significance and Applications</title>
+          <p>
+            The Euclidean Algorithm is significant not only for its historical importance but also for its practical applications, particularly in simplifying fractions. By efficiently finding the GCD, especially for large numbers, it makes the process of simplifying fractions more manageable.
+          </p>
+        </subsubsection>
+      </subsection>
+      
+
+
+    
     
 </section>
 
