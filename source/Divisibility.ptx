@@ -1816,12 +1816,12 @@
         <subsubsection xml:id="understanding_gcd_lcm">
           <title>Unraveling the Concepts</title>
           <p>
-            When exploring the realm of numbers, particularly in the context of sets of natural numbers, the concept of the <em>Greatest Common Divisor (GCD)</em>, also known as the <em>Greatest Common Factor (GCF)</em>, emerges as a pivotal tool. The GCD of a set of numbers is essentially the largest factor that divides each number in the set without leaving a remainder.
+            When exploring the properties of numbers, particularly sets of natural numbers, the concept of the <em>Greatest Common Divisor (GCD)</em>, also known as the <em>Greatest Common Factor (GCF)</em>, is an important idea. The GCD of a set of numbers is essentially the largest factor that divides each number in the set without leaving a remainder.
           </p>
           <subsection xml:id="gcd_prime_factorization">
             <title>Understanding GCD Through Prime Factorization</title>
             <p>
-              To understand the GCD, prime factorization is a fundamental technique. Let's consider an example to elucidate this process: finding the GCD of 42, 294, and 132. We begin by determining the prime factorization of each number. For instance, the prime factorization of these numbers would be:
+              To understand the GCD, we can use the idea of prime factorizations to help us. Let's consider an example to elucidate this process: finding the GCD of 42, 294, and 132. We begin by determining the prime factorization of each number. For instance, the prime factorization of these numbers would be:
             </p>
             <ol>
               <li><p> <m> 42 = 2 \times 3 \times 7 </m></p></li>
@@ -1829,13 +1829,19 @@
               <li><p> <m>132 = 2^2 \times 3 \times 11</m></p></li>
             </ol>
             <p>
-              In these factorizations, we identify the common prime factors and consider the lowest power (exponent) of these primes present in each number. For our example, the common primes are 2 and 3, and the lowest powers for these are 2¹ and 3¹, respectively. Thus, the GCD is <m>2 \times 3 = 6</m>.  This can be verified as:
+                If <m>d</m> is the GCD of our three numbers, then we know that <m>d \mid 42, \ d \mid 294, </m> and <m>d \mid 132</m>. So we must be able to make <m>d</m> by grouping prime factors of our three numbers in each number. For example, we know that <m>2 \mid d</m> since <m>2</m> is a factor or each of our numbers, and similarly for <m>3</m>. However, we know that <m>7 \nmid d</m> since <m>7</m> is not a prime factor of <m>132</m>. It follows that the smallest number of each prime factor will be factors of <m>d</m>.
+            </p>
+            <p>
+              In these factorizations, we identify the common prime factors and consider the lowest power (exponent) of these primes present in each number. For our example, the common primes are 2 and 3, and the lowest powers for these are <m>2^1</m> and <m>3^1</m>, respectively. Thus, the GCD is <m>2 \times 3 = 6</m> and we can write <m>\text{GCD}(42,294,132)=6</m>.  This can be verified as:
             </p>
             <ol>
-              <li><p> <m> 42 = 6 \times 7 </m></p></li>
-              <li><p> <m>294 = 6 \times 49</m></p></li>
-              <li><p> <m>132 = 6 \times 22</m></p></li>
+              <li><p> <m> 42 = 6 \times 7  = (2 \times 3) \times 7</m></p></li>
+              <li><p> <m>294 = 6 \times 49 = (2 \times 3) \times 7^2</m></p></li>
+              <li><p> <m>132 = 6 \times 22 = (2 \times 3) \times 2 \times 11</m></p></li>
             </ol>
+            <p>
+                Note that there are no common factors of the remaining factors of each number. That is, <m>\text{GCD}(7,49,22)=1</m>.
+            </p>
           </subsection>
           <subsection xml:id="lcm_concept">
             <title>Least Common Multiple (LCM)</title>
@@ -1843,7 +1849,20 @@
               The concept of the <em>Least Common Multiple (LCM)</em> is somewhat the inverse of the GCD. It represents the smallest number that is a multiple of every number in a set. To find the LCM, we again turn to prime factorization.
             </p>
             <subsection xml:id="lcm_example">
-              <title>Exploring LCM with an Example</title>
+                <title>Exploring LCM with an Example</title>
+            <p>
+                Using the same set of numbers (42, 294, and 132), we want a number <m>m</m> such that <m>42 \mid m, \ 294 \mid m</m>, and <m>132 \mid m</m>. So we need that the prime factorization of each number appears in the prime factorization of <m>m</m>. We can try and "build" <m>m</m>:  We know that since <m>42  = 2 \times 3 \times 7</m>, it must be that <m>m = 2 \times 3 \times 7 \times k</m>, where <m>k</m> is the prime factors of the remaining numbers (294 and 132 so far; we'll redefine <m>k</m> as we go), since <m>m</m> must be a multiple of <m>42</m>. </p>
+
+            <p>
+                Now, <m>m</m> must also be a multiple of <m>294</m> so we can include the minimum prime factors in <m>m</m> so that <m>m</m> is a multiple of both <m>42</m> and <m>294</m> (so we need to keep all the prime factors of <m>42</m> in the prime factorization of <m>m</m>). We note that we need another <m>7</m>, so we can say that <m>m=2 \times 3 \times 7^2 \times k</m>. 
+            </p>
+            <p>
+                Finally, we note that we need to include the prime factors of <m>132</m> in <m>m</m> as well. We note we already have a <m>2</m> and <m>3</m>, but still need to include another <m>2</m> and an <m>11</m>. So we must include these in our prime factorization. So <m>m=2^2 \times 3 \times 7^2 \times 11</m>. 
+            </p>
+            <p>
+                We note that we needed to include the *maximum* number of each prime factor in each of our numbers.
+            </p>
+            
               <p>
                 Using the same set of numbers (42, 294, and 132), we determine the LCM by looking for the highest power (exponent) of each prime factor present in the factorizations of these numbers. In our example:
               </p>
@@ -2004,16 +2023,60 @@
             Let's explore another example: finding the GCD of <m>785</m> and <m>554</m> using the Euclidean Algorithm.
           </p>
           <p>
-            Following the same iterative process, we determine the GCD to be <m>1</m>, indicating that the numbers are coprime, meaning they have no common prime factors.
+            Following the same process, we calcualte the GCD of these numbers to be <m>1</m>. This means that the numbers are coprime, since they have no common prime factors.
           </p>
-        </subsubsection>
-      
-        <subsubsection xml:id="euclidean_algorithm_significance">
-          <title>Significance and Applications</title>
+
           <p>
-            The Euclidean Algorithm is significant not only for its historical importance but also for its practical applications, particularly in simplifying fractions. By efficiently finding the GCD, especially for large numbers, it makes the process of simplifying fractions more manageable.
+            We can use the Euclidean algorithm to help us simplify fractions with large numerators and denominators:
+
+
           </p>
+          
+          
+            <example xml:id="complex_fraction_example">
+              <title>Example: Simplifying a Complex Fraction</title>
+              <statement>
+                <p>
+                  Simplify the fraction <m>\frac{78696}{120932}</m>.
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  We use the Euclidean Algorithm to find the GCD of <m>78696</m> and <m>120932</m>:
+                </p>
+                <list>
+                  <li><m>120932 = 78696 \times 1 + 42236</m></li>
+                  <li><m>78696 = 42236 \times 1 + 36460</m></li>
+                  <li><m>42236 = 36460 \times 1 + 5776</m></li>
+                  <li><m>36460 = 5776 \times 6 + 2324</m></li>
+                  <li><m>5776 = 2324 \times 2 + 1128</m></li>
+                  <li><m>2324 = 1128 \times 2 + 68</m></li>
+                  <li><m>1128 = 68 \times 16 + 40</m></li>
+                  <li><m>68 = 40 \times 1 + 28</m></li>
+                  <li><m>40 = 28 \times 1 + 12</m></li>
+                  <li><m>28 = 12 \times 2 + 4</m></li>
+                  <li><m>12 = 4 \times 3</m> (remainder is zero)</li>
+                </list>
+                <p>
+                  The GCD is <m>4</m>. Simplify the fraction by dividing both the numerator and denominator by <m>4</m>:
+                </p>
+                <p>
+                  <m>\frac{78696}{120932} = \frac{78696 \div 4}{120932 \div 4} = \frac{19674}{30233}</m>.
+                </p>
+                <p>
+                    Note that we know for certain that this fraction is in lowest terms since if this could be reduced further, we would have found a larger factor as the GCD of these numbers.
+                </p>
+              </solution>
+            </example>
+          
+            
+          
+
         </subsubsection>
+
+
+      
+        
       </subsection>
       
 

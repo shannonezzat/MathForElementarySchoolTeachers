@@ -1,0 +1,194 @@
+<chapter xml:id="irrational_numbers">
+  <title>Irrational Numbers</title>
+
+  <section xml:id="understanding_irrational_numbers">
+    <title>Understanding Irrational Numbers</title>
+    <p>
+      This section explores the concept of irrational numbers, which can be viewed in two ways: decimals that neither repeat nor terminate, or numbers that cannot be written as a fraction (with integer numerator and denominator).
+    </p>
+
+    <subsection xml:id="examples_of_irrational_numbers">
+      <title>Examples of Irrational Numbers</title>
+      <p>
+        Common examples include the number pi (<m>\pi</m>) and certain square roots like <m>\sqrt{2}</m>. While it is outside the scope of this course to show why <m>pi</m> is irrational (the easiest method requires a little bit of calculus, but it is definitely understandable to most 2nd year mathematics students) but we can indeed show that "roots" of integers, which we will define in more detail later, are irrational in almost all cases, and the cases where they are rational numbers only the cases where it is obvious.
+      </p>
+      <p>Another example is the number <m>n=12.0100100010001 \ldots </m> where the number of zeros preceding the next 1 increases by one each time. Although there is a pattern here, there is no repeating series of decimal digits and we know by Section <xref ref="terminating-repeating-decimals" /> </p>
+      <exercise>
+        <p>
+          Consider the number <m>n</m> in the paragraph above. Can you find another irrational number <m>m</m> so that <m>n+m</m> is a rational number? What about an irrational number <m>k</m> such that <m>n+k</m> is irrational? Finally, is it possible to have a rational number <m>\ell</m> such that <m>n+\ell</m> is rational? Explain (remember that all rational numbers can be expressed as terminating or repeating decimals). 
+        </p>
+      </exercise>
+      <p>
+        The set of all rational and irrational numbers together form the set of real numbers, denoted by a blackboard bold R (<m>\mathbb{R}</m>). We can view the sets of numbers we have studied so far in the following Venn diagram. Note that irrational numbers are "negatively defined", as in they are numbers that do not have a certain property. So when we try and show a number is irrational, we usually use a proof by contradiction; that is, we will pretend that the number is rational and show that this leads to a logical fallacy.
+      </p>
+    <p>
+      INSERT PIC HERE
+    </p>
+    </subsection>
+
+   <subsection xml:id="subsec-TypesOfIrrationalNumbers">
+    <title>TypesOfIrrationalNumbers</title>
+    <p>
+      There are many ways to classify irrational numbers, but the most common is to group them according to whether they are solutions to a polynomial equation with integer coefficients, like <m>2x^3-4x^2-5=0</m>. We call numbers that are solutions to such equations <term>algebraic numbers</term> and real numbers that are not algebraic we call <term>transcendental numbers</term>. The set of algebraic numbers can be quite complex to understand, so we will focus our attention to a subset of those numbers.
+    
+    </p>
+    <definition xml:id="def-AlgebraicNumbers">
+      <statement>
+        <p>
+          A real number <m>r \in \mathbb{R}</m> is <term>algebraic</term> if there is a polynomial with integer coefficients for which <m>r</m> is a solution to that polynomial. We call an algebraic number a <term>simple root</term> if it is a solution to a polynomial equation of the form <m>x^n=a</m> for some <m>n \in \mathbb{n}</m> and <m>a \in \mathbb{Z}</m>. We call these solutions <m>n</m>th roots.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Not every polynomial equation has solutions that are real numbers. For example, <m>x^2+1=0</m> has no real solutions, since in order for this equation to be true we need that <m>x^2 &lt; 0,</m> and we know that squaring real numbers gives us a positive number. We could expand our number system to include solutions to equations such as these (called the complex numbers) but this is beyond the scope of the course.
+    </p>
+    <p>
+      Some famous trancendental numbers are <m>\pi</m>, which is the ratio of the circumference of any circle to its diameter, and <m>e,</m> which is a number that is very important in calculus; in short and impresicely, it is a number related to exponential growth, and in fact the function <m>e^x</m> is the only non-zero type of function where the growth rate is always equal to the actual growth. 
+    </p>
+
+    
+   </subsection>
+   <subsection xml:id="subsec-Functions(Briefly)">
+    <title>Functions (Briefly)</title>
+
+    <p>
+      In order to talk about simple roots, we need to understand a little bit about functions. A <term>function</term> is a rule that turns an input element into eactly one output element. For example, the rule "add one to a number" can be expressed in the following way: <me>
+        f(x)=x+1.
+      </me>
+      Here, we name the function "add 1 to a number" with the letter <m>f</m>, and <m>x</m> is  the variable we're using to describe the rule using algebra. So if we wanted to add 1 to, say, 5, then we would write <m>f(5)=5+1=6</m>, where we are substituting <m>x=5</m> in to our function <m>f</m>.  
+    </p>
+
+    <p>
+      In the example above, we could input any real number we like into this function and we get exactly one answer, and this answer makes sense. We call all elements we are allowed to input into our function the <term>domain</term> of our function, and all possible outputs the <m>range</m> of the function. Note that sometimes a function has its domain specified when it is being defined.
+    </p>
+    <example>
+      <p>
+        Let's say the rule we want as a function is "multiply a number by itself and add one". If we want to name this rule <m>m</m> we can write <m>m(x)=x^2+1</m>. Here, the function makes sense for any realnumber as an input, so its implied domain is all of <m>\mathbb{R}</m>. Noting that <m>x^2</m> is never negative, and only <m>0</m> when <m>x=0,</m> we can say that the smallest number our function can output is when <m>x=0</m> which makes <m>m(0)=0^2+1=1</m>. So our range is all real numbers greater than or equal to <m>1</m>, or in set notation <m>\{x \in \mathbb{R} \ | \ x \geq 1 \}</m>. 
+      </p>
+    </example>
+    <exercise>
+      <p>
+        For the following rules, write an algebraic expression for a function. Are there any numbers that cannot be inputted into this function? If so, list them.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Multiply a number by 2
+          </p>
+          <solution>
+            <p>
+              
+            </p>
+          </solution>
+        </li>
+        <li>
+          <p>
+            Square a number and then subtract 1
+          </p>
+        </li>
+        <li>
+          <p>
+            Add 3 to a number and then divide the result by 3
+          </p>
+        </li>
+        <li>
+          <p>
+            Divide 5 by the chosen number.
+          </p>
+        </li>
+        
+      </ol>
+      
+    </exercise>
+    
+   </subsection>
+      
+
+
+   
+
+    
+  </section>
+  <section xml:id="sec-SimpleRoots">
+    <title>Simple Roots and Irrationality</title>
+    <subsection xml:id="subsec-nthPowers">
+      <title>nth Powers</title>
+      
+    <p>
+      In this chapter we will work towards showing that the only <m>n</m>th roots that are not irrational are those that are <m>n</m>th powers. We'll show that every other <m>n</m>th root cannot be written as a rational number by contradiction; we'll try to, and then show that two quantities that should be equal cannot be.
+    </p>
+    <p>
+      In order to show this, we'll first have to prove a property about <m>n</m>th powers; indeed, that they are exacly numbers where each prime in its prime factorization has an exponent with a factor of <m>n</m>. Let's do some examples to illustrate this:
+    </p>
+
+    <example>
+      <p>
+        Consider <m>s=144</m>. We know that <m>144</m> has a prime factorization of <m>144=2^4 \dot 3^2</m>. And since the exponents <m>4</m> and <m>2</m> are both even (have a factor of 2) then we can use our exponent rules and write <m>144 = 2^4 \dot 3^2 = (2^2 \dot 3)^2=12^2</m>. 
+      </p>
+      <p>
+        Also, we know that <m>72=2^3 \dot 3^2</m> is not a square number since there is one of the exponents that is not even. So there is no way to "factor out" a <m>2</m> from each exponent. 
+      </p>
+      <p>
+        Let's show this in general for any square and non-square number. 
+      </p>
+    </example>
+    <theorem xml:id="thm-SquareEvenExponents">
+      <statement>
+        <p>
+          Let <m>n</m> be a natural number.  The number <m>m</m> is a square number if and only if each exponent of its prime factorization has a factor of <m>2</m>.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          Assume <m>m</m> is a square number. Then <m>m=a^2</m> for some natural number <m>a</m>. Since <m>a</m> is a natural number it has a prime factorization, say <m>a=p_1^{e_1}p_2^{e_2}\ldots p_k^{e_k}.</m>. Then <m>m=a^2 = (p_1^{e_1}p_2^{e_2}\ldots p_k^{e_k})^2=</m> and thus each exponent of the primes in the prime factorization of <m>n</m> has a factor of <m>n</m>.
+        </p>
+        <p>
+          Now assume that every exponent in the prime factorization of <m>m</m> is even. Thus <m>m=p_1^{2e_1}p_2^{2e_2}\ldots p_k^{2e_k} = (p_1^{e_1}p_2^{e_2}\ldots p_k^{e_k})^2=</m>. This means that the number <m>a = p_1^{e_1}p_2^{e_2}\ldots p_k^{e_k} </m> is such that <m>a^2=m</m> and this means that <m>m</m> is a square number.
+        </p>
+      </proof>
+    </theorem>
+    <p>
+      Now that we've shown this for square numbers, can you work out how to generalize this for any <m>n</m>th power?
+    </p>
+    <exercise>
+      <p>
+        Modify the proof above to prove the result "The number <m>m</m> is an <m>n</m>th power if and only if each exponent in its prime factorization has a factor of <m>n</m>".
+      </p>
+     
+    </exercise>
+    <p> Remember that if we have a conditional statement "if P then Q" it is logically equivalent to its contrapositiveL "if not Q then not P". Thus we can express a biconditional as "If P then Q *and* if not P then not Q". We can rewite the result in the exercise above to be the following theorem that will be very useful for us:
+    <theorem xml:id="thm-nthPower">
+      <statement>
+        <p>
+          Let <m>m</m> be a natural number. If <m>m</m> is an <m>n</m>th power then each exponent in its prime factorization has a factor of <m>n</m>. If <m>m</m> is not an <m>n</m>th power, then there is a prime number in its prime factorization whith an exponent with no factor of <m>n</m>.
+        </p>
+      </statement>
+    </theorem>
+    
+      
+    </p>
+    <example>
+      <p>
+        Consider <m>m=5400</m>. You can check that the prime factorization of <m>m</m> is <m>m=2^3 \dot 3^3 \dot 5^2</m>. Since the prime <m>5</m> has an exponent that is not divisible by 3, we know that <m>5400</m> is not a cube (3rd power).
+      </p>
+      <p>
+        However, if <m>m=27000=2^3 \dot 3^3 \dot 5^3</m> we know that <m>m</m> is indeed a cube, and <m>m=(2\dot 3 \dot 5)^3 = 30^3</m>.
+      </p>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-ProvingIrrationalityofnthRoots">
+    <title>Proving Irrationality of nth Roots</title>
+    <p>
+      We will now work on proving what we set out to prove: that all <m>n</m>th roots of numbers that are not <m>n</m>th powers are indeed irrational. A key result that we will use to help us is the Fundamental Theorem of Arithmetic, which states that every natural number has a unique prime factorization.
+    </p>
+    <p>
+      DO AN EXAMPLE SHOWING IRRATIONALITY OF SQURE ROOT AND THEN SAY 4TH ROOT
+    </p>
+    <p>
+      DO THE THEOREM AND REFER TO THE EXAMPLE ABOVE TO UNDERSTAND THE PIECES
+    </p>
+  </subsection>
+    
+    
+  </section>
+</chapter>
