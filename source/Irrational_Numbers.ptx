@@ -48,8 +48,8 @@
 
     
    </subsection>
-   <subsection xml:id="subsec-Functions(Briefly)">
-    <title>Functions (Briefly)</title>
+   <subsection xml:id="subsec-FunctionsBriefly">
+    <title>Functions Briefly</title>
 
     <p>
       In order to talk about simple roots, we need to understand a little bit about functions. A <term>function</term> is a rule that turns an input element into eactly one output element. For example, the rule "add one to a number" can be expressed in the following way: <me>
@@ -179,14 +179,98 @@
   <subsection xml:id="subsec-ProvingIrrationalityofnthRoots">
     <title>Proving Irrationality of nth Roots</title>
     <p>
-      We will now work on proving what we set out to prove: that all <m>n</m>th roots of numbers that are not <m>n</m>th powers are indeed irrational. A key result that we will use to help us is the Fundamental Theorem of Arithmetic, which states that every natural number has a unique prime factorization.
+      Note that in this section we will assume that the set of natural numbers includes 0. We will now work on proving what we set out to prove: that all <m>n</m>th roots of numbers that are not <m>n</m>th powers are indeed irrational. A key result that we will use to help us is the Fundamental Theorem of Arithmetic, which states that every natural number has a unique prime factorization.
     </p>
     <p>
-      DO AN EXAMPLE SHOWING IRRATIONALITY OF SQURE ROOT AND THEN SAY 4TH ROOT
+      Let's first explore the more general case with square roots:
     </p>
+    <example>
+      <p>
+        Let <m>n</m> be a non-square number. This means that in its prime factorization, there is at least one prime that has a power that isn't a multiple of <m>2</m>. For example, if <m>n=60=2^2 \times 3 \times 5</m>. Here both <m>3</m> and <m>5</m> have an exponent of one, which isn't a multiple of <m>2</m>. We'll pick the smallest of these primes with such an exponent and call that prime <m>p_*</m> with exponent <m>2e_*+1</m> for some  <m>e_* \in \mathbb{N}_0</m> and we can write <m>n=p_*^{2e_*+1}k</m> where <m>k</m> is the "rest" of the factors of <m>n</m>. In our example, <m>p_*=3</m> and <m>e_*=1</m> and <m>60=3^1 \times (2^2 \times 5)</m> and thus <m>k=2^2 \times 5</m> in this example. 
+      </p>
+      <p>
+        We will show this by contradiction; let's pretend that we can indeed write <m>\sqrt{n}</m> as a rational number: <m>\sqrt{n}=\frac{a}{b}</m> for some appropriate integers <m>a,b</m>. In our example, we let <m>\sqrt{60}=\frac{a}{b}</m>. 
+      </p>
+      <p>
+        Let's arrange our equation so that we have no roots or denominators: this means multiplying both sides by <m>b</m> and then squaring both sides of the equation:
+        <me>
+          \sqrt{n}=\frac{a}{b} \rightarrow \sqrt{n}b=a \rightarrow nb^2=a^2.
+        </me> In our example:
+        <me>\sqrt{60}=\frac{a}{b} \rightarrow \sqrt{60}b=a \rightarrow 60b^2=a^2. </me>
+        
+      </p>
+      <p>
+        Let's count the number of factors of <m>p_*</m> on both sides of the equation. On the RHS, by <xref ref="thm-nthPower"/> we know that <m>a^2</m> has an even number of <m>p_*</m>, and thus the exponent <m>e</m> of <m>p_*</m> in the prime factorization of <m>b^2</m> is a factor of <m>2</m>, so say <m>e=2r</m> for some natural numnber <m>r</m>. So <m>b^2=p_*^{2r}j</m> where <m>j</m> are the "rest" of the factors of <m>n</m>.
+      </p>
+      <p>
+        However, on the LHS, by <xref ref="thm-nthPower"/> we also know that <m>b^2</m> has an even exponent for <m>p_*</m> in it's prime factorization, say <m>2s</m> for some natural number <m>s</m> and similarly to <m>a^2</m> we can say <m>b^2=p_*^{2s}\ell</m> for some integer <m>ell</m>, while <m>n</m> itself has an odd exponent for <m>p_*</m>. Thus 
+        <me>
+          nb^2 = (p_*^{2e_*+1}k)(p_*^{2s}\ell) = p_*^{2e_*+1+2s}k\ell = p_*^{2(e_*+s)+1}kl.
+        </me>
+        In our example:
+        <me>
+          60b^2 = (3^{1} (2^2 \times 5))(3^{2s}\ell) = 3^{2s+1}[(2^2 \times 5)\ell].
+        </me>
+       
+      </p>
+      <p>
+        Putting this together:
+        <me>p_*^{2(e_*+s)+1}kl = p_*^{2r}j.  </me>
+      </p> However, the exponent of <m>p_*</m> on the LHS is not a multiple of <m>2</m> while the exponent on the RHS is (this is true in our example too). So the only way that we can write <m>\sqrt{n}</m> as a rational number is if we can have an even and odd exponent of <m>p_*</m> in the prime factorization of <m>n</m>. But we know it must be one or the other since prime factorizations are unique by the Fundamental Theorem of Arithmetic. So this is a contradiction, and what we started with must be incorrect; that is, we cannot write <m>\sqrt{n}</m> as a rational number.
+    </example>
+    <exercise>
+      <p>
+        Use the above as a guideline to show that <m>\sqrt{2}</m> cannot be written as a rational number.
+      </p>
+      <hint>
+        <p>
+          You should count the number of <m>2</m>s on the LHS and RHS of the rearranged expression like in the theorem above.
+        </p>
+      </hint>
+    </exercise>
     <p>
-      DO THE THEOREM AND REFER TO THE EXAMPLE ABOVE TO UNDERSTAND THE PIECES
+      Look carefully at the result above. It focused on square roots, but the idea can be modified to work for any <m>n</m>th root.   
     </p>
+    <exercise>
+      
+            <p>Modify your argument for showing that <m>\sqrt{2}</m> is irrational to show that <m>\sqrt[3]{2}</m> is irrational.
+          </p>
+          <hint>
+            <p>
+              If a number is not a cube (or 3rd power), this means that there is at least one prime, say <m>p_*</m> in its prime factorization with an exponent, say <m>e</m> that is not a multiple of <m>3</m>. So <m>e=3e_*+c</m> where <m>c</m> is a proper remainder (in this case, either 1 or 2).
+            </p>
+          </hint>
+          <hint>
+            <p>
+              This means that <m>p_*=2</m> and <m>e=1</m> here.
+            </p>
+          </hint>
+          <hint>
+            <p>
+              You will want to count the number of <m>2</m>s on both sides of the equation when rearranged appropriately. 
+            </p>
+          </hint>
+          <hint>
+            <p>
+              The RHS should have an exponent of <m>2</m> that is a multiple of <m>3</m>, while the LHS will not.
+            </p>
+          </hint>
+        
+    </exercise>
+    <exercise>
+      <ol>
+        <li>
+          <p>
+            Use the previous exercises as a guide to show that <m>\sqrt[3]{m}</m> is irrational for a non-cubic number <m>m</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Use the previous exercises as a guide to show that <m>\sqrt[n]{m}</m> is irrational for a number <m>m</m> that is not a <m>n</m>th power.
+          </p>
+        </li>
+      </ol>
+    </exercise>
   </subsection>
     
     
