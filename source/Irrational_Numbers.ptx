@@ -173,7 +173,7 @@
         <hint>
           
             <p>
-              Pretend that there is a positive square root <m>k</m> and another positive square root <m>r</m> where <m>r &gt k</m>. Show that this leads to a contradiction. Then do the same if <m>r &lt k</m>.
+              Pretend that there is a positive square root <m>k</m> and another positive square root <m>r</m> where <m>r &gt; k</m>. Show that this leads to a contradiction. Then do the same if <m>r &lt; k</m>.
             </p>
           
         </hint>
@@ -369,7 +369,7 @@
       <subsection xml:id="addition_subtraction_irrational_numbers">
         <title>Addition and Subtraction with Irrational Numbers</title>
         <p>
-          As a reminder, when we add two rational numbers, the result is also a rational number. This is known as the closure property of addition for rational numbers. Formally, if <m>a</m> and <m>b</m> are rational numbers, then <m>a + b</m> is also a rational number.
+          As a reminder, when we add two rational numbers, the result is also a rational number. This is known as the closure property of addition for rational numbers. Formally, if <m>a</m> and <m>b</m> are rational numbers, then <m>a + b</m> and <m>a - b</m> are also rational numbers.
         </p>
         <p>
           However, the situation changes when we consider the sum of a rational number and an irrational number. The sum of a rational number and an irrational number is always irrational. Let's state this formally as a theorem and prove it by contradiction.
@@ -414,7 +414,7 @@
           If we express <m>\pi</m> as the sum of its decimal parts, we get an infinite series of rational numbers:
         </p>
         <p>
-          <m>\pi = 3 + 0.1 + 0.04 + 0.0015 + 0.00009 + 0.000002 + \ldots</m>
+          <m>\pi = 3 + 0.1 + 0.04 + 0.001 +0.0005 + 0.00009 + 0.000002 + \ldots</m>
         </p>
         <p>
           Each term in this series is a rational number, but their infinite sum converges to the irrational number <m>\pi</m>. This demonstrates that the sum of infinitely many rational numbers can indeed be irrational.
@@ -424,13 +424,13 @@
         </p>
         <example>
           <p>
-            Consider the irrational numbers <m>\sqrt{2}</m> and <m>-\sqrt{2}</m>. Their sum is:
+            Consider the irrational numbers <m>\sqrt{2}+1</m>, which is irrational by Theorem <xref ref="thm_rat_plus_irr_irr"/> and <m>-\sqrt{2}</m>. Their sum is:
           </p>
           <p>
-            <m>\sqrt{2} + (-\sqrt{2}) = 0</m>.
+            <m>\sqrt{2}+1 + (-\sqrt{2}) = 1</m>.
           </p>
           <p>
-            Here, the sum of two irrational numbers is a rational number (0).
+            Of course, <m>1</m> is a rational number. Thus in this example the sum of two irrational numbers is a rational number.
           </p>
         </example>
         <example>
@@ -441,36 +441,35 @@
             <m>\sqrt{2} + \sqrt{3}</m>.
           </p>
           <p>
-            This sum is still an irrational number because there is no way to express it as a ratio of two integers.
+            This sum is still an irrational number because there is no way to express it as a ratio of two integers; we will justify this claim in the following section.
           </p>
         </example>
         <p>
           We can summarize the possible results of adding or subtracting rational and irrational numbers in the following table:
         </p>
-        <table>
-          <tabular>
-            <row>
-              <entry></entry>
-              <entry>Addition</entry>
-              <entry>Subtraction</entry>
-            </row>
-            <row>
-              <entry>Rational + Rational</entry>
-              <entry>Rational</entry>
-              <entry>Rational</entry>
-            </row>
-            <row>
-              <entry>Rational + Irrational</entry>
-              <entry>Irrational</entry>
-              <entry>Irrational</entry>
-            </row>
-            <row>
-              <entry>Irrational + Irrational</entry>
-              <entry>Rational or Irrational</entry>
-              <entry>Rational or Irrational</entry>
-            </row>
-          </tabular>
-        </table>
+        <tabular>
+          <row>
+            <entry/>
+            <entry>Addition</entry>
+            <entry>Subtraction</entry>
+          </row>
+          <row>
+            <entry>Rational + Rational</entry>
+            <entry>Rational</entry>
+            <entry>Rational</entry>
+          </row>
+          <row>
+            <entry>Rational + Irrational</entry>
+            <entry>Irrational</entry>
+            <entry>Irrational</entry>
+          </row>
+          <row>
+            <entry>Irrational + Irrational</entry>
+            <entry>Rational or Irrational</entry>
+            <entry>Rational or Irrational</entry>
+          </row>
+        </tabular>
+        
         <exercise>
           <p>
             Consider the number <m>\sqrt{2}</m>. Show that <m>\sqrt{2} + 1</m> and <m>\sqrt{2} - 1</m> are both irrational.
@@ -538,13 +537,13 @@
         Note that multiplying any number by zero always results in zero, which is rational. Thus, the product of zero and any irrational number is zero.
       </p>
       <p>
-        It is important to note that while the product of a finite number of rational numbers is rational, the product of infinitely many rational numbers can be irrational. This can be understood by considering the Wallis product for <m>\pi</m>.
+        It is important to note that while the product of a finite number of rational numbers is rational, the product of infinitely many rational numbers can be irrational. This can be understood by considering the Wallis product for <m>\pi</m>. 
       </p>
       <p>
-        The Wallis product for <m>\pi</m> is an infinite product of rational numbers that converges to the irrational number <m>\pi</m>:
+        The Wallis product for <m>\pi</m> is an infinite product of rational numbers that converges to the irrational number <m>\pi</m>. Showing that the product below converges to <m>\pi</m> is slightly beyond the scope of this book, but you can explore this yourself by looking at "partial" products and continuing to multiply by succesive terms. You should notice that these partial products get closer and closer to <m>\pi</m>:
       </p>
       <p>
-        <m>\frac{\pi}{2} = \prod_{n=1}^{\infty} \frac{4n^2}{4n^2-1} = \left(\frac{2}{1} \times \frac{2}{3}\right) \times \left(\frac{4}{3} \times \frac{4}{5}\right) \times \left(\frac{6}{5} \times \frac{6}{7}\right) \times \ldots</m>
+        <m>\frac{\pi}{2} = \prod_{n=1}^{\infty} \frac{2n}{2n-1}\times \frac{2n}{2n+1} = \left(\frac{2}{1} \times \frac{2}{3}\right) \times \left(\frac{4}{3} \times \frac{4}{5}\right) \times \left(\frac{6}{5} \times \frac{6}{7}\right) \times \ldots</m>
       </p>
       <p>
         Each factor in this product is a rational number, but the infinite product converges to the irrational number <m>\pi</m>.
@@ -554,7 +553,7 @@
       </p>
       <example>
         <p>
-          Consider the irrational numbers <m>\sqrt{2}</m> and <m>\frac{1}{\sqrt{2}}</m>. Their product is:
+          Consider the irrational numbers <m>\sqrt{2}</m> and <m>\frac{1}{\sqrt{2}}</m>. We know the second of these numbers is irrational by Theorem <xref ref="thm_rat_times_irr_irr"/>. Their product is:
         </p>
         <p>
           <m>\sqrt{2} \times \frac{1}{\sqrt{2}} = 1</m>.
@@ -571,36 +570,35 @@
           <m>\sqrt{2} \times \sqrt{3} = \sqrt{6}</m>.
         </p>
         <p>
-          This product is still an irrational number because there is no way to express it as a ratio of two integers.
+          This product is still an irrational number which we know is irrational since it is a square root of a non-square number.
         </p>
       </example>
       <p>
         We can summarize the possible results of multiplying or dividing rational and irrational numbers in the following table:
       </p>
-      <table>
-        <tabular>
-          <row>
-            <entry></entry>
-            <entry>Multiplication</entry>
-            <entry>Division</entry>
-          </row>
-          <row>
-            <entry>Rational × Rational</entry>
-            <entry>Rational</entry>
-            <entry>Rational (if divisor ≠ 0)</entry>
-          </row>
-          <row>
-            <entry>Rational × Irrational</entry>
-            <entry>Irrational (if rational ≠ 0)</entry>
-            <entry>Irrational (if rational ≠ 0)</entry>
-          </row>
-          <row>
-            <entry>Irrational × Irrational</entry>
-            <entry>Rational or Irrational</entry>
-            <entry>Rational or Irrational</entry>
-          </row>
-        </tabular>
-      </table>
+      <tabular>
+        <row>
+          <entry/>
+          <entry>Multiplication</entry>
+          <entry>Division</entry>
+        </row>
+        <row>
+          <entry>Rational <m>\times</m> Rational</entry>
+          <entry>Rational</entry>
+          <entry>Rational (if divisor ≠ 0)</entry>
+        </row>
+        <row>
+          <entry>Rational <m>\times</m> Irrational</entry>
+          <entry>Irrational (if rational <m>\neq</m> 0)</entry>
+          <entry>Irrational (if rational <m>\neq</m> 0)</entry>
+        </row>
+        <row>
+          <entry>Irrational <m>\times</m> Irrational</entry>
+          <entry>Rational or Irrational</entry>
+          <entry>Rational or Irrational</entry>
+        </row>
+      </tabular>
+      
       <exercise>
         <p>
           Consider the number <m>\sqrt{2}</m>. Show that <m>\sqrt{2} \times 2</m> and <m>\sqrt{2} \times \sqrt{3}</m> are both irrational.
@@ -635,12 +633,12 @@
       </p>
       
       <p>
-        Let's begin by showing that \(\sqrt{2} + \sqrt{3}\) is irrational. We will do this by assuming that it is rational and then squaring the expression to arrive at a contradiction.
+        Let's begin by showing that <m>\sqrt{2} + \sqrt{3}\</m> is irrational. We will do this by assuming that it is rational and then squaring the expression to arrive at a contradiction.
       </p>
       
       <example>
         <p>
-          Assume, for the sake of contradiction, that \(\sqrt{2} + \sqrt{3}\) is rational. Then we can write:
+          Assume, for the sake of contradiction, that <m>\sqrt{2} + \sqrt{3}</m> is rational. Then we can write:
         </p>
         <p>
           \(\sqrt{2} + \sqrt{3} = r\) for some rational number \(r\).
@@ -678,7 +676,7 @@
       </example>
       
       <p>
-        Next, we will show that \(\sqrt[3]{2} \times \sqrt{3}\) is irrational by assuming it is rational and then solving for 2 to reach a contradiction.
+        Next, we will show that <m>\sqrt[3]{2} \times \sqrt{3}</m> is irrational by assuming it is rational and then solving for 2 to reach a contradiction.
       </p>
       
       <example>
