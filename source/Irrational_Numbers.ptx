@@ -111,15 +111,101 @@
   </section>
   <section xml:id="sec-SimpleRoots">
     <title>Simple Roots and Irrationality</title>
+    <subsection xml:id="subsec-PrincipalRoots">
+      <title>Principal Roots</title>
+      <p>
+        Think about the equation <m>x^2=4</m>. How many solutions does this equation have? We know that <m>2^2=2 \rimes 2=4</m>, but also <m>(-2)^2= (-2) \times (-2) = 4</m>. Notice that since we are multiplying two negative numbers (that happen to be the same number), the result is positive.</p> <p>There is nothing special about the number <m>4</m> here; in fact, this holds for any real number <m>a &gt; 0</m>. We will write this in a theorem.
+
+      </p>
+      <theorem xml:id="thm-SquaresAndNegatives">
+        <statement>
+          <p>
+            Let <m>a</m> be a positive real number. If a real number <m>k</m> is a solution to <m>x^2=a</m>, then <m>-k</m> is also a solution.
+          </p>
+        </statement>
+        <proof>
+          <p>
+            Assume that <m>k</m> is a solution to <m>x^2=a</m>. This means that <m>k^2=a</m>. We need to show that <m>-k</m> is also a solution to <m>x^2=a</m>. 
+          </p>
+          <p>
+            Consider <m>(-k)^2</m>. Now: <me>(-k)^2=(-k)\times (-k)</me> <me>=[(-1) \times k] \times [(-1) \times k] = [(-1)\times(-1) \times k^2</me> <me>=[1] \times k^2 = 1 \times a = a</me> since we are assuming <m>k^2=a</m>. Thus we have just showed that <m>(-k)^2=a</m> and thus <m>-k</m> is a solution to <m>x^2=a</m> as well.
+          </p>
+          </proof>
+          
+      </theorem>
+      <p>
+        We call solutions to <m>x^2=a</m> <term>square roots</term> of <m>a</m>.   
+      </p>
+      <example>
+        <p>
+          The numbers <m>7</m> and <m>(-7)</m> are square roots of <m>49</m> since <m>7^2=49</m> and <m>(-7)^2=49</m>.
+        </p>
+        <p>
+          The numbers <m>\frac{1}{4}</m> and <m>-\frac{1}{4}</m> are square roots of <m>\frac{1}{16}</m> since <m>\left(\frac{1}{4}\right)^2=\frac{1}{16}</m> and <m>\left(-\frac{1}{4}\right)^2=\frac{1}{16}</m>.
+        </p>
+        <p>
+          The number <m>0</m> is *the* square root of <m>0</m> since <m>0^2=0</m> and also since <m>-0=0</m> there is no other square root.
+        </p>
+      </example>
+      <p>
+        We have just shown that if there is a solution to the equation <m>x^2=a</m> then there are two solutions to this equation; the other being its negative. But for any real number <m>a</m>, is there always a solution to <m>x^2=a?</m> 
+      </p>
+      <exercise>
+        <p>
+          If <m>a</m> is a negative real number, why is it impossible for <m>x^2=a</m> to have any solutions? What about <m>x^n=a</m> if <m>n</m> is an even natural number?
+        </p>
+        <hint>
+          <p>
+            What is the sign of a number (positive/negative/zero) if you multiply two positive numbers? What about two negative numbers? What about 0 with itself? Use this to show that there are no <m>n</m>th roots (for even <m>n</m>) of any negative numbers.
+          </p>
+        </hint>
+        
+      </exercise>
+      <exercise>
+        <p>
+          Using the previous theorem as a model, prove that if <m>n</m> is an even natural number, <m>a</m> is a positive real number, and <m>k</m> is a solution to <m>x^n=a</m> then <m>(-k)</m> is also a solution to <m>x^n=a</m>. 
+        </p>
+      </exercise>
+      <exercise>
+        <p>
+          How do we know that there are at most two square roots? Prove by contradiction that this is impossible. Then modify your proof to show that there are at most two <m>n</m>th powers for an even natural number <m>n</m>.
+        </p>
+        <hint>
+          
+            <p>
+              Pretend that there is a positive square root <m>k</m> and another positive square root <m>r</m> where <m>r &gt k</m>. Show that this leads to a contradiction. Then do the same if <m>r &lt k</m>.
+            </p>
+          
+        </hint>
+        <hint>
+          <p>
+            In each case, what is larger? <m>k^2</m> or <m>kr</m>?
+          </p>
+        </hint>
+      </exercise>
+      
+      <p>
+        ONE ROOT OF ODD POWER EXAMPLES
+      </p>
+      <p>
+        DEFINITION OF A PRINCIPAL ROOT
+      </p>
+      <p>
+        PRINCIPAL ROOTS AND FUNCTIONS
+      </p>
+    </subsection>
     <subsection xml:id="subsec-nthPowers">
       <title>nth Powers</title>
-      
+      <p>
+        For this section, we will deal with the principal root of natural numbers, but these results also hold for other roots, if they exist. We will show this in the following section.
+      </p>
     <p>
       In this chapter we will work towards showing that the only <m>n</m>th roots that are not irrational are those that are <m>n</m>th powers. We'll show that every other <m>n</m>th root cannot be written as a rational number by contradiction; we'll try to, and then show that two quantities that should be equal cannot be.
     </p>
     <p>
       In order to show this, we'll first have to prove a property about <m>n</m>th powers; indeed, that they are exacly numbers where each prime in its prime factorization has an exponent with a factor of <m>n</m>. Let's do some examples to illustrate this:
     </p>
+    
 
     <example>
       <p>
@@ -272,6 +358,372 @@
       </ol>
     </exercise>
   </subsection>
+    
+    
+  </section>
+  <section xml:id="sec-OperationsWithIrrationalNumbers">
+    <title>Operations With Irrational Numbers</title>
+
+    
+    <p>
+      <subsection xml:id="addition_subtraction_irrational_numbers">
+        <title>Addition and Subtraction with Irrational Numbers</title>
+        <p>
+          As a reminder, when we add two rational numbers, the result is also a rational number. This is known as the closure property of addition for rational numbers. Formally, if <m>a</m> and <m>b</m> are rational numbers, then <m>a + b</m> is also a rational number.
+        </p>
+        <p>
+          However, the situation changes when we consider the sum of a rational number and an irrational number. The sum of a rational number and an irrational number is always irrational. Let's state this formally as a theorem and prove it by contradiction.
+        </p>
+        <theorem xml:id="thm_rat_plus_irr_irr">
+          <statement>
+            <p>
+              Let <m>r</m> be a rational number and <m>i</m> be an irrational number. Then <m>r + i</m> is irrational.
+            </p>
+          </statement>
+          <proof>
+            <p>
+              Assume for the sake of contradiction that <m>r + i</m> is a rational number. Since the set of rational numbers is closed under addition and subtraction, we can write:
+            </p>
+            <p>
+              <m>r + i = q</m> where <m>q</m> is a rational number.
+            </p>
+            <p>
+              We can then subtract <m>r</m> from both sides of the equation:
+            </p>
+            <p>
+              <m>i = q - r</m>.
+            </p>
+            <p>
+              Since both <m>q</m> and <m>r</m> are rational numbers, and the difference of two rational numbers is also rational, <m>q - r</m> must be rational.
+            </p>
+            <p>
+              This implies that <m>i</m> is rational, which contradicts our initial assumption that <m>i</m> is irrational. Therefore, our assumption that <m>r + i</m> is rational must be false, and <m>r + i</m> is indeed irrational.
+            </p>
+          </proof>
+        </theorem>
+        <p>
+          It is important to note that while the sum of a finite number of rational numbers is rational, the sum of infinitely many rational numbers can be irrational. This can be understood by considering the decimal expansion of certain numbers.
+        </p>
+        <p>
+          For example, the number <m>\pi</m> (pi) is known to be irrational. Its decimal expansion is non-repeating and non-terminating:
+        </p>
+        <p>
+          <m>\pi = 3.141592653589793238...</m>
+        </p>
+        <p>
+          If we express <m>\pi</m> as the sum of its decimal parts, we get an infinite series of rational numbers:
+        </p>
+        <p>
+          <m>\pi = 3 + 0.1 + 0.04 + 0.0015 + 0.00009 + 0.000002 + \ldots</m>
+        </p>
+        <p>
+          Each term in this series is a rational number, but their infinite sum converges to the irrational number <m>\pi</m>. This demonstrates that the sum of infinitely many rational numbers can indeed be irrational.
+        </p>
+        <p>
+          When adding two irrational numbers, the result can be either rational or irrational. Let's explore this with two examples:
+        </p>
+        <example>
+          <p>
+            Consider the irrational numbers <m>\sqrt{2}</m> and <m>-\sqrt{2}</m>. Their sum is:
+          </p>
+          <p>
+            <m>\sqrt{2} + (-\sqrt{2}) = 0</m>.
+          </p>
+          <p>
+            Here, the sum of two irrational numbers is a rational number (0).
+          </p>
+        </example>
+        <example>
+          <p>
+            Now, consider the irrational numbers <m>\sqrt{2}</m> and <m>\sqrt{3}</m>. Their sum is:
+          </p>
+          <p>
+            <m>\sqrt{2} + \sqrt{3}</m>.
+          </p>
+          <p>
+            This sum is still an irrational number because there is no way to express it as a ratio of two integers.
+          </p>
+        </example>
+        <p>
+          We can summarize the possible results of adding or subtracting rational and irrational numbers in the following table:
+        </p>
+        <table>
+          <tabular>
+            <row>
+              <entry></entry>
+              <entry>Addition</entry>
+              <entry>Subtraction</entry>
+            </row>
+            <row>
+              <entry>Rational + Rational</entry>
+              <entry>Rational</entry>
+              <entry>Rational</entry>
+            </row>
+            <row>
+              <entry>Rational + Irrational</entry>
+              <entry>Irrational</entry>
+              <entry>Irrational</entry>
+            </row>
+            <row>
+              <entry>Irrational + Irrational</entry>
+              <entry>Rational or Irrational</entry>
+              <entry>Rational or Irrational</entry>
+            </row>
+          </tabular>
+        </table>
+        <exercise>
+          <p>
+            Consider the number <m>\sqrt{2}</m>. Show that <m>\sqrt{2} + 1</m> and <m>\sqrt{2} - 1</m> are both irrational.
+          </p>
+          <solution>
+            <p>
+              Assume, for the sake of contradiction, that <m>\sqrt{2} + 1</m> is rational. Then we can write:
+            </p>
+            <p>
+              <m>\sqrt{2} + 1 = r</m> for some rational number <m>r</m>.
+            </p>
+            <p>
+              Subtracting 1 from both sides, we get:
+            </p>
+            <p>
+              <m>\sqrt{2} = r - 1</m>.
+            </p>
+            <p>
+              Since <m>r</m> is rational, <m>r - 1</m> is also rational, implying that <m>\sqrt{2}</m> is rational, which is a contradiction. Hence, <m>\sqrt{2} + 1</m> is irrational.
+            </p>
+            <p>
+              A similar argument shows that <m>\sqrt{2} - 1</m> is irrational by assuming it is rational and arriving at a contradiction that <m>\sqrt{2}</m> would be rational.
+            </p>
+          </solution>
+        </exercise>
+      </subsection>
+      
+    </p>
+    <subsection xml:id="multiplication_division_irrational_numbers">
+      <title>Multiplication and Division with Irrational Numbers</title>
+      <p>
+        As a reminder, when we multiply two rational numbers, the result is also a rational number. This is known as the closure property of multiplication for rational numbers. Formally, if <m>a</m> and <m>b</m> are rational numbers, then <m>a \times b</m> is also a rational number.
+      </p>
+      <p>
+        However, the situation changes when we consider the product of a non-zero rational number and an irrational number. The product of a non-zero rational number and an irrational number is always irrational. Let's state this formally as a theorem and prove it by contradiction.
+      </p>
+      <theorem xml:id="thm_rat_times_irr_irr">
+        <statement>
+          <p>
+            Let <m>r</m> be a non-zero rational number and <m>i</m> be an irrational number. Then <m>r \times i</m> is irrational.
+          </p>
+        </statement>
+        <proof>
+          <p>
+            Assume for the sake of contradiction that <m>r \times i</m> is a rational number. Since the set of rational numbers is closed under multiplication and division, we can write:
+          </p>
+          <p>
+            <m>r \times i = q</m> where <m>q</m> is a rational number.
+          </p>
+          <p>
+            We can then divide both sides of the equation by <m>r</m> (since <m>r \neq 0</m>):
+          </p>
+          <p>
+            <m>i = \frac{q}{r}</m>.
+          </p>
+          <p>
+            Since both <m>q</m> and <m>r</m> are rational numbers, and the quotient of two rational numbers is also rational, <m>\frac{q}{r}</m> must be rational.
+          </p>
+          <p>
+            This implies that <m>i</m> is rational, which contradicts our initial assumption that <m>i</m> is irrational. Therefore, our assumption that <m>r \times i</m> is rational must be false, and <m>r \times i</m> is indeed irrational.
+          </p>
+        </proof>
+      </theorem>
+      <p>
+        Note that multiplying any number by zero always results in zero, which is rational. Thus, the product of zero and any irrational number is zero.
+      </p>
+      <p>
+        It is important to note that while the product of a finite number of rational numbers is rational, the product of infinitely many rational numbers can be irrational. This can be understood by considering the Wallis product for <m>\pi</m>.
+      </p>
+      <p>
+        The Wallis product for <m>\pi</m> is an infinite product of rational numbers that converges to the irrational number <m>\pi</m>:
+      </p>
+      <p>
+        <m>\frac{\pi}{2} = \prod_{n=1}^{\infty} \frac{4n^2}{4n^2-1} = \left(\frac{2}{1} \times \frac{2}{3}\right) \times \left(\frac{4}{3} \times \frac{4}{5}\right) \times \left(\frac{6}{5} \times \frac{6}{7}\right) \times \ldots</m>
+      </p>
+      <p>
+        Each factor in this product is a rational number, but the infinite product converges to the irrational number <m>\pi</m>.
+      </p>
+      <p>
+        When multiplying two non-zero irrational numbers, the result can be either rational or irrational. Let's explore this with two examples:
+      </p>
+      <example>
+        <p>
+          Consider the irrational numbers <m>\sqrt{2}</m> and <m>\frac{1}{\sqrt{2}}</m>. Their product is:
+        </p>
+        <p>
+          <m>\sqrt{2} \times \frac{1}{\sqrt{2}} = 1</m>.
+        </p>
+        <p>
+          Here, the product of two irrational numbers is a rational number (1).
+        </p>
+      </example>
+      <example>
+        <p>
+          Now, consider the irrational numbers <m>\sqrt{2}</m> and <m>\sqrt{3}</m>. Their product is:
+        </p>
+        <p>
+          <m>\sqrt{2} \times \sqrt{3} = \sqrt{6}</m>.
+        </p>
+        <p>
+          This product is still an irrational number because there is no way to express it as a ratio of two integers.
+        </p>
+      </example>
+      <p>
+        We can summarize the possible results of multiplying or dividing rational and irrational numbers in the following table:
+      </p>
+      <table>
+        <tabular>
+          <row>
+            <entry></entry>
+            <entry>Multiplication</entry>
+            <entry>Division</entry>
+          </row>
+          <row>
+            <entry>Rational × Rational</entry>
+            <entry>Rational</entry>
+            <entry>Rational (if divisor ≠ 0)</entry>
+          </row>
+          <row>
+            <entry>Rational × Irrational</entry>
+            <entry>Irrational (if rational ≠ 0)</entry>
+            <entry>Irrational (if rational ≠ 0)</entry>
+          </row>
+          <row>
+            <entry>Irrational × Irrational</entry>
+            <entry>Rational or Irrational</entry>
+            <entry>Rational or Irrational</entry>
+          </row>
+        </tabular>
+      </table>
+      <exercise>
+        <p>
+          Consider the number <m>\sqrt{2}</m>. Show that <m>\sqrt{2} \times 2</m> and <m>\sqrt{2} \times \sqrt{3}</m> are both irrational.
+        </p>
+        <solution>
+          <p>
+            Assume, for the sake of contradiction, that <m>\sqrt{2} \times 2</m> is rational. Then we can write:
+          </p>
+          <p>
+            <m>\sqrt{2} \times 2 = r</m> for some rational number <m>r</m>.
+          </p>
+          <p>
+            Dividing both sides by 2, we get:
+          </p>
+          <p>
+            <m>\sqrt{2} = \frac{r}{2}</m>.
+          </p>
+          <p>
+            Since <m>r</m> is rational, <m>\frac{r}{2}</m> is also rational, implying that <m>\sqrt{2}</m> is rational, which is a contradiction. Hence, <m>\sqrt{2} \times 2</m> is irrational.
+          </p>
+          <p>
+            A similar argument shows that <m>\sqrt{2} \times \sqrt{3}</m> is irrational by assuming it is rational and arriving at a contradiction that <m>\sqrt{6}</m> would be rational, which it is not.
+          </p>
+        </solution>
+      </exercise>
+    </subsection>
+    
+    <subsection xml:id="more_elaborate_examples_irrationality">
+      <title>More Elaborate Examples of Irrationality</title>
+      <p>
+        Sometimes, demonstrating that a number is irrational can be more challenging and require more sophisticated techniques. In this subsection, we will explore some harder examples to illustrate these methods.
+      </p>
+      
+      <p>
+        Let's begin by showing that \(\sqrt{2} + \sqrt{3}\) is irrational. We will do this by assuming that it is rational and then squaring the expression to arrive at a contradiction.
+      </p>
+      
+      <example>
+        <p>
+          Assume, for the sake of contradiction, that \(\sqrt{2} + \sqrt{3}\) is rational. Then we can write:
+        </p>
+        <p>
+          \(\sqrt{2} + \sqrt{3} = r\) for some rational number \(r\).
+        </p>
+        <p>
+          Squaring both sides of the equation, we get:
+        </p>
+        <p>
+          \((\sqrt{2} + \sqrt{3})^2 = r^2\).
+        </p>
+        <p>
+          Expanding the left-hand side, we have:
+        </p>
+        <p>
+          \(\sqrt{2}^2 + 2\sqrt{2}\sqrt{3} + \sqrt{3}^2 = r^2\).
+        </p>
+        <p>
+          Simplifying, we get:
+        </p>
+        <p>
+          \(2 + 2\sqrt{6} + 3 = r^2\).
+        </p>
+        <p>
+          Combining like terms, we obtain:
+        </p>
+        <p>
+          \(5 + 2\sqrt{6} = r^2\).
+        </p>
+        <p>
+          Since \(r\) is rational, \(r^2\) is also rational. Therefore, \(5 + 2\sqrt{6}\) must be rational. However, we know that \(2\sqrt{6}\) is irrational because \(\sqrt{6}\) is irrational (as 6 is not a square number).
+        </p>
+        <p>
+          Thus, \(5 + 2\sqrt{6}\) is a sum of a rational number (5) and an irrational number (\(2\sqrt{6}\)), which is irrational. This contradicts our assumption that \(5 + 2\sqrt{6}\) is rational. Therefore, \(\sqrt{2} + \sqrt{3}\) must be irrational.
+        </p>
+      </example>
+      
+      <p>
+        Next, we will show that \(\sqrt[3]{2} \times \sqrt{3}\) is irrational by assuming it is rational and then solving for 2 to reach a contradiction.
+      </p>
+      
+      <example>
+        <p>
+          Assume, for the sake of contradiction, that \(\sqrt[3]{2} \times \sqrt{3}\) is rational. Then we can write:
+        </p>
+        <p>
+          \(\sqrt[3]{2} \times \sqrt{3} = r\) for some rational number \(r\).
+        </p>
+        <p>
+          We can cube both sides of the equation to remove the cube root:
+        </p>
+        <p>
+          \((\sqrt[3]{2} \times \sqrt{3})^3 = r^3\).
+        </p>
+        <p>
+          Expanding the left-hand side, we have:
+        </p>
+        <p>
+          \(\sqrt[3]{2}^3 \times \sqrt{3}^3 = r^3\).
+        </p>
+        <p>
+          Simplifying, we get:
+        </p>
+        <p>
+          \(2 \times 3\sqrt{3} = r^3\).
+        </p>
+        <p>
+          Combining the constants, we obtain:
+        </p>
+        <p>
+          \(6\sqrt{3} = r^3\).
+        </p>
+        <p>
+          Since \(r\) is rational, \(r^3\) is also rational. Therefore, \(6\sqrt{3}\) must be rational. However, we know that \(\sqrt{3}\) is irrational.
+        </p>
+        <p>
+          Thus, \(6\sqrt{3}\) is a product of a rational number (6) and an irrational number (\(\sqrt{3}\)), which is irrational. This contradicts our assumption that \(6\sqrt{3}\) is rational. Therefore, \(\sqrt[3]{2} \times \sqrt{3}\) must be irrational.
+        </p>
+      </example>
+    </subsection>
+    
+    <p>
+      Why you can write roots as fractional exponents, and practice with the rules.
+    </p>
     
     
   </section>
