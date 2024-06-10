@@ -721,10 +721,161 @@
       </example>
     </subsection>
     
-    <p>
-      Why you can write roots as fractional exponents, and practice with the rules.
-    </p>
+    
     
     
   </section>
+  <section xml:id="exponents_irrational_numbers">
+    <title>Exponents and Irrational Numbers</title>
+  
+    <subsection xml:id="nth_root_exponent">
+      <title>nth Root as Exponent 1/n</title>
+      <p>
+        An <m>n</m>th root of a number can be represented as raising the number to the power of <m>\frac{1}{n}</m>. This means that for any positive real number <m>a</m> and any natural number <m>n</m>, the expression <m>\sqrt[n]{a}</m> is equivalent to <m>a^{\frac{1}{n}}</m>. To understand this, consider that raising <m>a^{\frac{1}{n}}</m> to the power of <m>n</m> gives us back the original number:
+      </p>
+      <me>
+        \left(a^{\frac{1}{n}}\right)^n = a
+      </me>
+      <p>
+        This demonstrates that <m>a^{\frac{1}{n}}</m> is indeed the <m>n</m>th root of <m>a</m>.
+      </p>
+      <example>
+        <p>
+          For instance, the square root of 4 can be written as <m>4^{\frac{1}{2}}</m>. Squaring this gives us back 4:
+        </p>
+        <me>
+          \left(4^{\frac{1}{2}}\right)^2 = 4
+        </me>
+      </example>
+    </subsection>
+  
+    <subsection xml:id="multiplying_dividing_roots">
+      <title>Multiplying and Dividing nth Roots</title>
+      <p>
+        When working with roots, we can multiply or divide nth roots, but we cannot add or subtract them in a straightforward manner. The rules for multiplying and dividing roots come from the properties of exponents.
+      </p>
+      <p>
+        For example, to simplify the product of two square roots, we use the property that:
+      </p>
+      <me>
+        \sqrt{a} \times \sqrt{b} = \sqrt{a \times b}
+      </me>
+      <example>
+        <p>
+          Simplify <m>\sqrt{2} \times \sqrt{8}</m>:
+        </p>
+        <me>
+          \sqrt{2} \times \sqrt{8} = \sqrt{2 \times 8} = \sqrt{16} = 4
+        </me>
+      </example>
+      <p>
+        The same applies to division:
+      </p>
+      <me>
+        \frac{\sqrt{a}}{\sqrt{b}} = \sqrt{\frac{a}{b}}
+      </me>
+      <example>
+        <p>
+          Simplify <m>\frac{\sqrt{18}}{\sqrt{2}}</m>:
+        </p>
+        <me>
+          \frac{\sqrt{18}}{\sqrt{2}} = \sqrt{\frac{18}{2}} = \sqrt{9} = 3
+        </me>
+      </example>
+      <p>
+        However, adding or subtracting roots is not as straightforward. For example, <m>\sqrt{a} + \sqrt{b}</m> does not equal <m>\sqrt{a + b}</m>.
+      </p>
+      <example>
+        <p>
+          Simplify <m>\sqrt{9} + \sqrt{16}</m>:
+        </p>
+        <p>
+          <m>\sqrt{9} + \sqrt{16} = 3 + 4 = 7</m>, but <m>\sqrt{9 + 16} = \sqrt{25} = 5</m>, which is different.
+        </p>
+      </example>
+    </subsection>
+  
+    <subsection xml:id="simplifying_fractional_powers">
+      <title>Simplifying Expressions with Fractional Powers</title>
+      <p>
+        Simplifying expressions containing fractional powers often involves using the properties of exponents. Let's start with simpler examples and work our way up to more complex ones.
+      </p>
+      <example>
+        <p>
+          Simplify <m>a^{\frac{1}{2}} \times a^{\frac{1}{2}}</m>:
+        </p>
+        <p>
+          Using the property of exponents that <m>a^m \times a^n = a^{m+n}</m>, we get:
+        </p>
+        <me>
+          a^{\frac{1}{2}} \times a^{\frac{1}{2}} = a^{\frac{1}{2} + \frac{1}{2}} = a^1 = a
+        </me>
+      </example>
+      <example>
+        <p>
+          Simplify <m>\left(b^{\frac{1}{3}}\right)^3</m>:
+        </p>
+        <p>
+          Using the property of exponents that <m>\left(a^m\right)^n = a^{m \times n}</m>, we get:
+        </p>
+        <me>
+          \left(b^{\frac{1}{3}}\right)^3 = b^{\frac{1}{3} \times 3} = b^1 = b
+        </me>
+      </example>
+      <example>
+        <p>
+          Simplify <m>\frac{(a^2b^{-1})^{\frac{1}{2}}}{b^3c^{-2}} \div \left(\frac{a^2b^2c^{-1}}{(a^{-1}c)^{-1}}\right)^2</m>:
+        </p>
+        <p>
+          First, simplify each part of the expression separately:
+        </p>
+        <me>
+          (a^2b^{-1})^{\frac{1}{2}} = a^{2 \times \frac{1}{2}} b^{-1 \times \frac{1}{2}} = a^1 b^{-\frac{1}{2}} = ab^{-\frac{1}{2}}
+        </me>
+        <p>
+          <m>\frac{1}{b^3c^{-2}} = b^{-3}c^2</m>
+        </p>
+        <p>
+          <m>\left(\frac{a^2b^2c^{-1}}{(a^{-1}c)^{-1}}\right)^2</m>:
+        </p>
+        <p>
+          Simplify the denominator:
+        </p>
+        <me>
+          (a^{-1}c)^{-1} = a^1c^{-1} = ac^{-1}
+        </me>
+        <p>
+          Now the expression inside the parenthesis becomes:
+        </p>
+        <me>
+          \frac{a^2b^2c^{-1}}{ac^{-1}} = a^{2-1}b^2c^{-1+1} = ab^2
+        </me>
+        <p>
+          Squaring this, we get:
+        </p>
+        <me>
+          (ab^2)^2 = a^2b^4
+        </me>
+        <p>
+          Now combine all parts:
+        </p>
+        <me>
+          \frac{ab^{-\frac{1}{2}}}{b^{-3}c^2} \div a^2b^4 = \frac{ab^{-\frac{1}{2}} \times c^2}{b^{-3}} \div a^2b^4
+        </me>
+        <p>
+          Simplify the multiplication:
+        </p>
+        <me>
+          \frac{ab^{-\frac{1}{2}} \times b^3 \times c^2}{a^2b^4} = \frac{ab^{3-\frac{1}{2}}c^2}{a^2b^4} = \frac{ab^{\frac{5}{2}}c^2}{a^2b^4}
+        </me>
+        <p>
+          Now combine the exponents:
+        </p>
+        <me>
+          \frac{ab^{\frac{5}{2}}c^2}{a^2b^4} = \frac{ac^2}{a^2b^{4-\frac{5}{2}}} = \frac{ac^2}{a^2b^{\frac{3}{2}}} = \frac{c^2}{ab^{\frac{3}{2}}}
+        </me>
+      </example>
+    </subsection>
+  </section>
+  
 </chapter>
