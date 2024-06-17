@@ -189,14 +189,45 @@
       </p>
       <example>
         <p>
-          What are all the solutions to <m>x^3=-8</m>? First we realize that <m>x</m> must be negative since we are multiplying <m>x</m> by itself an odd number of times and this results in an odd number. We also know that <m>2^3=8</m>, so we can deduce that <m>x=-2</m> is a solution to <m>x^3=-8</m>. 
+
+          What are all the solutions to <m>x^3=-8</m>? First we realize that <m>x</m> must be negative since we are multiplying <m>x</m> by itself an odd number of times and this results in an odd number. We also know that <m>2^3=8</m>, so we can deduce that <m>x=-2</m> is a solution to <m>x^3=-8</m>. In fact, it is the only real number that is a solution to this, and thus the only <term>cube root</term> of <m>-8</m> is <m>-2</m>.
         </p>
       </example>
+
       <p>
-        DEFINITION OF A PRINCIPAL ROOT
+        Indeed, this example basically shows the only behaviour that odd roots have; there is exacly one odd root for any <m>a \in \mathbb{R}</m>. The next exercise will get you to show this always holds for cube roots, and then extended to all odd roots.
+      </p>
+      <exercise>
+        <p>
+          Let <m>a</m> be a real number. Show that there is exactly one solution to the equation <m>x^3=a</m>.
+        </p>
+        <hint>
+          <p>
+            First, show that there is always a solution by noticing that it is always true that if <m>r &gt; s</m> then <m>r^3 &gt; s^3</m>. How can we use this to show that, if you graph <m>x^3=a</m>, it always passes through the x-axis? How does this show that there cannot be more than one root?
+          </p>
+        </hint>
+        
+      </exercise>
+      <exercise>
+        Generalize the example above to any odd root.
+      </exercise>
+      <p>
+        Now that we understand the ideas of roots, we need an easy way of writing down which root we mean. The idea is that we want a function that uniquely expresses which nth root of a number <m>a</m> that we mean. We call this the <term>principal root</term> of <m>a</m> and write this as <m>\sqrt[n]{a}</m> or <m>\sqrt{a}</m> for the principal square root. We now go on to define what this means for both even and odd roots:
+      </p>
+
+      <p>
+        If <m>n</m> is even, then the principal <m>n</m>th root of <m>a</m> is the positive solution to <m>x^n=a</m> if <m>a &gt; 0</m>, and is <m>o</m> if <m>a=0</m>. Note there are no even roots if <m>a</m> is negative.
+      </p>
+
+      <p>
+        If <m>n</m> is odd then <m>\sqrt[n]{a}</m> is the unique root of the equation <m>x^n=a</m> for any real number <m>a</m>.
       </p>
       <p>
-        PRINCIPAL ROOTS AND FUNCTIONS
+        EXAMPLES OF PRINCIPLE ROOTS
+      </p>
+
+      <p>
+        WRITING IRRATIONAL ROOTS
       </p>
     </subsection>
     <subsection xml:id="subsec-nthPowers">
