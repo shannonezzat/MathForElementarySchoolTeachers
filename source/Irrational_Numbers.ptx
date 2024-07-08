@@ -222,13 +222,35 @@
       <p>
         If <m>n</m> is odd then <m>\sqrt[n]{a}</m> is the unique root of the equation <m>x^n=a</m> for any real number <m>a</m>.
       </p>
+      
       <p>
-        EXAMPLES OF PRINCIPLE ROOTS
+        Note that for even roots, choosing the positive root as the principal root is simply a choice that mathematicians decided on; there is nothing really special about the positive root; we simply picked one to make the principal root a function. 
       </p>
+      <example>
+        
+          <ol>
+            <li>
+              <p>
+                Even if we know there are two solutions to the equation <m>x^2=4</m>, we say that <m>\sqrt{4}=2</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                We say that the two solutions to the equation <m>x^2=14</m> are <m>x=\sqrt{14}</m> and <m>x=-\sqrt{14}</m> since the principal root is always positive. Note that since <m>14</m> isn't a square number we cannot write this as an integer. Later, we will learn about simplifying roots.
+              </p>
+            </li>
+            <li>
+              <p>
+                We know that <m>x^3=8</m> has one solution since the exponent 3 is odd, so we say that <m>\sqrt[3]{8}=2</m>. Similarly we say that <m>\sqrt[3]{-8}=-2</m>.
+              </p>
+            </li>
+          </ol>
+         
+        
+       
+      </example>
 
-      <p>
-        WRITING IRRATIONAL ROOTS
-      </p>
+      
     </subsection>
     <subsection xml:id="subsec-nthPowers">
       <title>nth Powers</title>
@@ -828,6 +850,136 @@
         </p>
       </example>
     </subsection>
+    <subsection xml:id="simplifying-principal-roots">
+      <title>Simplifying <m>n</m>th Principal Roots by Factoring Out <m>n</m>th Powers</title>
+      <p>
+        When simplifying <m>n</m>th principal roots, one effective method is to factor out any <m>n</m>th powers that appear in the prime factorization of the radicand. This method leverages the quotient remainder theorem to streamline the simplification process.
+      </p>
+    
+      <p>
+        Consider the cube root of 54:
+        <me>
+          \sqrt[3]{54}
+        </me>
+        First, we factor 54 into its prime factors:
+        <me>
+          54 = 2 \times 3^3
+        </me>
+        Notice that <m>3^3</m> is a perfect cube. We can use the property of cube roots that states:
+        <me>
+          \sqrt[3]{a \times b} = \sqrt[3]{a} \times \sqrt[3]{b}
+        </me>
+        Applying this property:
+        <me>
+          \sqrt[3]{54} = \sqrt[3]{2 \times 3^3} = \sqrt[3]{2} \times \sqrt[3]{3^3}
+        </me>
+        Since <m>\sqrt[3]{3^3} = 3</m>, we simplify the expression to:
+        <me>
+          \sqrt[3]{54} = 3 \times \sqrt[3]{2}
+        </me>
+      </p>
+    </subsection>
+    
+    <subsubsection xml:id="quotient-remainder-theorem">
+      <title>Using the Quotient Remainder Theorem</title>
+      <p>
+        The quotient remainder theorem states that for any integer <m>a</m> and a positive integer <m>n</m>, there exist unique integers <m>q</m> (quotient) and <m>r</m> (remainder) such that:
+        <me>
+          a = n \times q + r \quad \text{with} \quad 0 \leq r &lt; n
+        </me>
+        This theorem is particularly useful in identifying and extracting <m>n</m>th powers from the prime factorization. For instance, if we have a prime factor <m>p</m> raised to the power of <m>k</m>, we can express <m>k</m> as:
+        <me>
+          k = nq + r
+        </me>
+        Here, <m>nq</m> represents the highest <m>n</m>th power within <m>k</m> that can be factored out, leaving <m>r</m> as the remainder.
+      </p>
+    </subsubsection>
+    
+    <subsubsection xml:id="more-examples">
+      <title>Additional Examples</title>
+      <p>Let's explore three more examples of increasing difficulty.</p>
+    
+      <example xml:id="fourth-root-example">
+        <statement>Simplify <m>\sqrt[4]{162}</m>.</statement>
+        <solution>
+          <p>First, factor 162 into its prime factors:</p>
+          <p>
+            <me>
+              162 = 2 \times 3^4
+            </me>
+          </p>
+          <p>Notice that <m>3^4</m> is a perfect fourth power. Applying the property of fourth roots:</p>
+          <p>
+            <me>
+              \sqrt[4]{162} = \sqrt[4]{2 \times 3^4} = \sqrt[4]{2} \times \sqrt[4]{3^4}
+            </me>
+          </p>
+          <p>Since <m>\sqrt[4]{3^4} = 3</m>, we simplify the expression to:</p>
+          <p>
+            <me>
+              \sqrt[4]{162} = 3 \times \sqrt[4]{2}
+            </me>
+          </p>
+        </solution>
+      </example>
+    
+      <example xml:id="fifth-root-example">
+        <statement>Simplify <m>\sqrt[5]{2430}</m>.</statement>
+        <solution>
+          <p>First, factor 2430 into its prime factors:</p>
+          <p>
+            <me>
+              2430 = 2 \times 3^5 \times 5
+            </me>
+          </p>
+          <p>Notice that <m>3^5</m> is a perfect fifth power. Applying the property of fifth roots:</p>
+          <p>
+            <me>
+              \sqrt[5]{2430} = \sqrt[5]{2 \times 3^5 \times 5} = \sqrt[5]{2} \times \sqrt[5]{3^5} \times \sqrt[5]{5}
+            </me>
+          </p>
+          <p>Since <m>\sqrt[5]{3^5} = 3</m>, we simplify the expression to:</p>
+          <p>
+            <me>
+              \sqrt[5]{2430} = 3 \times \sqrt[5]{2 \times 5} = 3 \times \sqrt[5]{10}
+            </me>
+          </p>
+        </solution>
+      </example>
+    
+      <example xml:id="sixth-root-example">
+        <statement>Simplify <m>\sqrt[6]{5184}</m>.</statement>
+        <solution>
+          <p>First, factor 5184 into its prime factors:</p>
+          <p>
+            <me>
+              5184 = 2^6 \times 3^4
+            </me>
+          </p>
+          <p>Notice that <m>2^6</m> is a perfect sixth power. Applying the property of sixth roots:</p>
+          <p>
+            <me>
+              \sqrt[6]{5184} = \sqrt[6]{2^6 \times 3^4} = \sqrt[6]{2^6} \times \sqrt[6]{3^4}
+            </me>
+          </p>
+          <p>Since <m>\sqrt[6]{2^6} = 2</m>, we simplify the expression to:</p>
+          <p>
+            <me>
+              \sqrt[6]{5184} = 2 \times \sqrt[6]{3^4} = 2 \times \sqrt[6]{81}
+            </me>
+          </p>
+          <p>Further simplification yields:</p>
+          <p>
+            <me>
+              \sqrt[6]{5184} = 2 \times \sqrt[6]{3^4} = 2 \times 3^{2/3}
+            </me>
+          </p>
+        </solution>
+      </example>
+    </subsubsection>
+    
+    
+    
   
     <subsection xml:id="simplifying_fractional_powers">
       <title>Simplifying Expressions with Fractional Powers</title>
@@ -835,7 +987,7 @@
         Simplifying expressions containing fractional powers often involves using the properties of exponents. Understanding these properties is crucial for algebraic manipulation and solving various mathematical problems efficiently. Also, it allows us to see the relationship between multiplication of numbers with the same base, and addition of their exponents.
       </p>
       <p>
-        When working with fractional powers, it's important to remember that the numerator of the fraction represents the power, and the denominator represents the root. For example, \(a^{\frac{m}{n}}\) can be interpreted as the nth root of \(a\) raised to the mth power, as in <m>(a^{m})^{1/n}</m> or as the nth root of mth power of <m>a</m>, as in <m>(a^{1/n})^m</m>. This dual interpretation is helpful when simplifying or transforming expressions.
+        When working with fractional powers, it's important to remember that the numerator of the fraction represents the power, and the denominator represents the root. For example, <m>a^{\frac{m}{n}}</m> can be interpreted as the nth root of <m>a</m> raised to the mth power, as in <m>(a^{m})^{1/n}</m> or as the nth root of mth power of <m>a</m>, as in <m>(a^{1/n})^m</m>. This dual interpretation is helpful when simplifying or transforming expressions.
       </p>
       <example>
         <p>
