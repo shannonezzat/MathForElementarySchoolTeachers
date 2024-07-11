@@ -2,7 +2,7 @@
 
 
     <chapter xml:id="WholeNumbers">
-        <title>Sample Chapter: Whole Numbers</title>
+        <title>Whole Numbers and Integers</title>
 
         <section xml:id="sec-Equality">
     <title>Equality</title>
@@ -1895,7 +1895,460 @@
     
     </subsection>
 </section>
+<section xml:id="integers">
+    <title>Integers</title>
+    <p>
+      Integers are a fundamental concept in mathematics, extending the idea of whole numbers to include negative numbers. An integer can be understood as a solution to the equation <m>x + a = 0</m> for natural numbers <m>a</m>. This means that for any natural number <m>a</m>, there exists an integer <m>x</m> such that when <m>a</m> is added to <m>x</m>, the result is zero. This concept introduces the idea of negative numbers, allowing us to perform arithmetic operations in a more comprehensive number system.
+    </p>
+  
+    <subsection xml:id="integer-addition">
+      <title>Integer Addition</title>
+      <p>
+        Integer addition involves combining positive and negative numbers in various ways. Understanding how to add integers requires us to consider different cases, including adding two positive numbers, two negative numbers, and a positive and a negative number. Visualizing integer addition can be helpful, especially using number lines or counters to represent the values being combined.
+      </p>
+  
+      <subsubsection xml:id="visualizing-integer-addition">
+        <title>Visualizing Integer Addition</title>
+        <p>
+          Visualizing integer addition can make it easier to understand how different numbers interact. One common method is using a number line, where positive and negative numbers are represented as positions relative to zero. For example, adding a positive number involves moving to the right, while adding a negative number involves moving to the left. Another method is using counters, where positive numbers are represented by one color (e.g., red) and negative numbers by another color (e.g., blue). Combining these counters can help visualize the result of the addition.
+        </p>
+  
+        <subsubsection xml:id="how-to-add-integers">
+          <title>How to Add Integers</title>
+          <p>
+            Adding integers involves different scenarios:
+          </p>
+          <p>
+            1. **Adding Two Positive Integers**: The sum is always positive. For example, <m>3 + 5 = 8</m>.
+          </p>
+          <p>
+            2. **Adding Two Negative Integers**: The sum is always negative. For example, <m>-3 + (-5) = -8</m>.
+          </p>
+          <p>
+            3. **Adding a Positive Integer and a Negative Integer**: The sign of the sum depends on which absolute value is larger. For example, <m>3 + (-5) = -2</m> and <m>-3 + 5 = 2</m>. In both cases, we subtract the smaller absolute value from the larger one and take the sign of the number with the larger absolute value.
+          </p>
+  
+          <example xml:id="integer-addition-example-1">
+            <title>Example: Integer Addition</title>
+            <p>
+              Calculate <m>-7 + 4</m>.
+            </p>
+            <solution>
+              <p>
+                We have a negative number and a positive number. Since the absolute value of 7 is greater than 4, we subtract 4 from 7 and take the sign of the larger absolute value.
+              </p>
+              <me>
+              -7 + 4 = -3
+              </me>
+              <p>
+                Therefore, the result is <m>-3</m>.
+              </p>
+            </solution>
+          </example>
+  
+          <example xml:id="integer-addition-example-2">
+            <title>Example: Integer Addition Word Problem</title>
+            <p>
+              Maria had a debt of $15 (represented as -15). She then earned $20 from a part-time job. What is her new financial balance?
+            </p>
+            <solution>
+              <p>
+                To find Maria's new balance, we need to add her debt and her earnings.
+              </p>
+              <me>
+              -15 + 20 = 5
+              </me>
+              <p>
+                Therefore, Maria's new balance is $5.
+              </p>
+            </solution>
+          </example>
+        </subsubsection>
+      </subsubsection>
+  
+      <subsection xml:id="properties-of-integer-addition">
+        <title>Properties of Integer Addition</title>
+        <p>
+          Integer addition possesses several important properties that make it a consistent and reliable operation. These properties include commutativity, associativity, closure, inverses, and the additive identity.
+        </p>
+  
+        <subsubsection xml:id="commutativity">
+          <title>Commutativity</title>
+          <p>
+            The commutative property states that the order of addition does not affect the sum. In other words, <m>a + b = b + a</m> for any integers <m>a</m> and <m>b</m>. This property is useful because it allows flexibility in the order of operations, simplifying calculations and making mental arithmetic easier.
+          </p>
+        </subsubsection>
+  
+        <subsubsection xml:id="associativity">
+          <title>Associativity</title>
+          <p>
+            The associative property states that the way in which numbers are grouped in addition does not affect the sum. In mathematical terms, <m>(a + b) + c = a + (b + c)</m> for any integers <m>a</m>, <m>b</m>, and <m>c</m>. This property ensures that when adding multiple integers, the grouping of the numbers can be adjusted to simplify computation.
+          </p>
+        </subsubsection>
+  
+        <subsubsection xml:id="closure">
+          <title>Closure</title>
+          <p>
+            The closure property states that the sum of any two integers is always an integer. This means that the set of integers is "closed" under addition, and adding any two integers will never result in a number that is not an integer. This property is fundamental to the integrity of the number system, ensuring that operations within the set remain consistent.
+          </p>
+        </subsubsection>
+  
+        <subsubsection xml:id="additive-inverse">
+          <title>Additive Inverse</title>
+          <p>
+            The additive inverse property states that for every integer <m>a</m>, there exists an integer <m>-a</m> such that <m>a + (-a) = 0</m>. This property is important because it introduces the concept of negation, allowing for the representation of negative numbers and the balancing of equations.
+          </p>
+        </subsubsection>
+  
+        <subsubsection xml:id="additive-identity">
+          <title>Additive Identity</title>
+          <p>
+            The additive identity property states that there exists an integer, 0, which, when added to any integer <m>a</m>, results in <m>a</m>. In other words, <m>a + 0 = a</m>. This property highlights the unique role of zero in the number system, serving as the identity element for addition.
+          </p>
+        </subsubsection>
+      </subsection>
+  
+      <subsection xml:id="integer-subtraction">
+        <title>Integer Subtraction</title>
+        <p>
+          Integer subtraction can be viewed as the inverse operation of addition. When subtracting integers, we are essentially adding the additive inverse of the number being subtracted. Understanding integer subtraction involves visualizing the operation and applying the same properties that govern addition.
+        </p>
+  
+        <subsubsection xml:id="visualizing-integer-subtraction">
+          <title>Visualizing Integer Subtraction</title>
+          <p>
+            Visualizing integer subtraction can help in understanding how to manipulate positive and negative values. Using a number line is a common method, where moving left represents subtraction. For example, subtracting a positive number involves moving left on the number line, while subtracting a negative number (which is equivalent to adding its positive counterpart) involves moving right. Counters can also be used, where removing positive or negative counters helps visualize the subtraction process.
+          </p>
+  
+          <subsubsection xml:id="how-to-subtract-integers">
+            <title>How to Subtract Integers</title>
+            <p>
+              Subtracting integers involves converting the subtraction problem into an addition problem by adding the additive inverse:
+            </p>
+            <p>
+              1. **Subtracting a Positive Integer**: This is equivalent to adding its negative counterpart. For example, <m>5 - 3 = 5 + (-3) = 2</m>.
+            </p>
+            <p>
+              2. **Subtracting a Negative Integer**: This is equivalent to adding the positive counterpart. For example, <m>5 - (-3) = 5 + 3 = 8</m>.
+            </p>
+            <p>
+              3. **Subtracting a Positive Integer from a Negative Integer**: This involves adding two negative numbers. For example, <m>-5 - 3 = -5 + (-3) = -8</m>.
+            </p>
+            <p>
+              4. **Subtracting a Negative Integer from a Negative Integer**: This involves adding a positive number to a negative number. For example, <m>-5 - (-3) = -5 + 3 = -2</m>.
+            </p>
+  
+            <example xml:id="integer-subtraction-example-1">
+              <title>Example: Integer Subtraction</title>
+              <p>
+                Calculate <m>-10               - (-7)</m>.
+            </p>
+            <solution>
+              <p>
+                We have a negative number and we are subtracting a negative number, which is equivalent to adding the positive counterpart.
+              </p>
+              <me>
+              -10 - (-7) = -10 + 7 = -3
+              </me>
+              <p>
+                Therefore, the result is <m>-3</m>. This example demonstrates how subtracting a negative number effectively turns the operation into addition, simplifying the calculation.
+              </p>
+            </solution>
+          </example>
 
+          <example xml:id="integer-subtraction-example-2">
+            <title>Example: Integer Subtraction Word Problem</title>
+            <p>
+              Alex owes his friend $8. After repaying $3, how much does he still owe? This problem involves subtracting integers to determine the remaining debt.
+            </p>
+            <solution>
+              <p>
+                To find out how much Alex still owes, we need to subtract the amount repaid from the total debt.
+              </p>
+              <me>
+              -8 - (-3) = -8 + 3 = -5
+              </me>
+              <p>
+                Therefore, Alex still owes $5. This example illustrates how integer subtraction can be used in practical situations to determine remaining balances or debts.
+              </p>
+            </solution>
+          </example>
+        </subsubsection>
+      </subsubsection>
+
+      <subsection xml:id="properties-of-integer-subtraction">
+        <title>Properties of Integer Subtraction</title>
+        <p>
+          Integer subtraction, while not possessing all the same properties as addition, is governed by similar principles. These properties include closure and the relationship to the additive inverse, but subtraction does not have commutative or associative properties. Understanding these properties helps clarify the nature of subtraction in the context of integer arithmetic.
+        </p>
+
+        <subsubsection xml:id="closure-subtraction">
+          <title>Closure</title>
+          <p>
+            The closure property states that the difference of any two integers is always an integer. This ensures that the set of integers remains consistent and complete under subtraction, much like it does under addition. For instance, subtracting any integer from another will always yield an integer, maintaining the integrity of the number system.
+          </p>
+        </subsubsection>
+
+        <subsubsection xml:id="additive-inverse-subtraction">
+          <title>Relationship to Additive Inverse</title>
+          <p>
+            Subtraction can be understood in terms of adding the additive inverse. For any integers <m>a</m> and <m>b</m>, the subtraction <m>a - b</m> is equivalent to adding the inverse of <m>b</m> to <m>a</m>, that is, <m>a + (-b)</m>. This perspective helps in simplifying subtraction problems by converting them into addition problems.
+          </p>
+        </subsubsection>
+      </subsection>
+    </subsection>
+  </subsection>
+  <subsection xml:id="integer-multiplication">
+    <title>Integer Multiplication</title>
+    <p>
+      Integer multiplication extends the concept of multiplication to include both positive and negative numbers. Understanding how to multiply integers involves visualizing the operation and applying specific rules for dealing with negative signs. This section will cover these concepts and provide examples to illustrate integer multiplication.
+    </p>
+  
+    <subsubsection xml:id="visualizing-integer-multiplication">
+      <title>Visualizing Integer Multiplication</title>
+      <p>
+        Visualizing integer multiplication can help clarify how positive and negative numbers interact. One way to visualize multiplication is using a number line or a grid. For example, multiplying two positive numbers can be seen as repeated addition, while multiplying by a negative number can be interpreted as taking steps in the opposite direction. Using counters or tiles of different colors can also illustrate the multiplication process.
+      </p>
+    </subsubsection>
+  
+    <subsubsection xml:id="how-to-multiply-integers">
+      <title>How to Multiply Integers</title>
+      <p>
+        Multiplying integers involves several cases:
+      </p>
+      <p>
+        1. **Multiplying Two Positive Integers**: The product is positive. For example, <m>3 \times 5 = 15</m>.
+      </p>
+      <p>
+        2. **Multiplying Two Negative Integers**: The product is positive. For example, <m>-3 \times (-5) = 15</m>. This is because multiplying two negative values results in a positive value.
+      </p>
+      <p>
+        3. **Multiplying a Positive Integer by a Negative Integer**: The product is negative. For example, <m>3 \times (-5) = -15</m>. This is because a positive value combined with a negative value results in a negative value.
+      </p>
+      <p>
+        4. **Multiplying a Negative Integer by a Positive Integer**: The product is negative. For example, <m>-3 \times 5 = -15</m>. This follows the same rule as above.
+      </p>
+  
+      <example xml:id="integer-multiplication-example-1">
+        <title>Example: Integer Multiplication</title>
+        <p>
+          Calculate <m>-6 \times 4</m>.
+        </p>
+        <solution>
+          <p>
+            We have a negative number multiplied by a positive number, which results in a negative product.
+          </p>
+          <me>
+          -6 \times 4 = -24
+          </me>
+          <p>
+            Therefore, the product is <m>-24</m>.
+          </p>
+        </solution>
+      </example>
+  
+      <example xml:id="integer-multiplication-example-2">
+        <title>Example: Integer Multiplication Word Problem</title>
+        <p>
+          A submarine descends at a rate of 30 meters per minute. What is the depth after 5 minutes?
+        </p>
+        <solution>
+          <p>
+            To find the depth, we need to multiply the rate of descent by the time, keeping in mind that the descent represents a negative value.
+          </p>
+          <me>
+          -30 \times 5 = -150
+          </me>
+          <p>
+            Therefore, the submarine is at a depth of 150 meters below the surface after 5 minutes.
+          </p>
+        </solution>
+      </example>
+    </subsubsection>
+  
+    <subsubsection xml:id="proof-of-negative-multiplication">
+      <title>Proof: <m>(-a) = (-1) \times a</m></title>
+      <p>
+        To prove that <m>(-a) = (-1) \times a</m>, we start with the definition of negative numbers as additive inverses. For any integer <m>a</m>, <m>-a</m> is the number that, when added to <m>a</m>, gives zero:
+      </p>
+      <me>
+      a + (-a) = 0
+      </me>
+      <p>
+        Multiplying both sides of the equation by <m>-1</m> gives:
+      </p>
+      <me>
+      -1 \times (a + (-a)) = -1 \times 0
+      </me>
+      <p>
+        Using the distributive property of multiplication over addition, we get:
+      </p>
+      <me>
+      (-1 \times a) + (-1 \times (-a)) = 0
+      </me>
+      <p>
+        Since <m>-1 \times (-a)</m> is the additive inverse of <m>-1 \times a</m>, it must be that <m>-1 \times (-a) = a</m>. Therefore:
+      </p>
+      <me>
+      -a = (-1) \times a
+      </me>
+    </subsubsection>
+  
+    <subsubsection xml:id="proof-of-negative-times-negative">
+      <title>Proof: <m>(-1) \times (-1) = 1</m></title>
+      <p>
+        To prove that <m>(-1) \times (-1) = 1</m>, consider the additive inverse definition and the properties of multiplication:
+      </p>
+      <p>
+        We know that <m>-1</m> is the additive inverse of <m>1</m>, so:
+      </p>
+      <me>
+      1 + (-1) = 0
+      </me>
+      <p>
+        Multiplying both sides of this equation by <m>-1</m> gives:
+      </p>
+      <me>
+      -1 \times (1 + (-1)) = -1 \times 0
+      </me>
+      <p>
+        Using the distributive property of multiplication over addition, we get:
+      </p>
+      <me>
+      (-1 \times 1) + (-1 \times (-1)) = 0
+      </me>
+      <p>
+        Simplifying, we know that <m>-1 \times 1 = -1</m>, so:
+      </p>
+      <me>
+      -1 + (-1 \times (-1)) = 0
+      </me>
+      <p>
+        Adding 1 to both sides of the equation, we obtain:
+      </p>
+      <me>
+      -1 \times (-1) = 1
+      </me>
+    </subsubsection>
+    </subsection>
+  
+    <subsection xml:id="properties-of-integer-multiplication">
+      <title>Properties of Integer Multiplication</title>
+      <p>
+        Integer multiplication has several important properties, including commutativity, associativity, distributivity, closure, and the existence of a multiplicative identity.
+      </p>
+  
+      <subsubsection xml:id="commutativity-multiplication">
+        <title>Commutativity</title>
+        <p>
+          The commutative property states that the order of multiplication does not affect the product. In other words, <m>a \times b = b \times a</m> for any integers <m>a</m> and <m>b</m>. This property allows flexibility in the order of operations, simplifying calculations and making multiplication consistent regardless of order.
+        </p>
+      </subsubsection>
+  
+      <subsubsection xml:id="associativity-multiplication">
+        <title>Associativity</title>
+        <p>
+          The associative property states that the way in which numbers are grouped in multiplication does not affect the product. Mathematically, <m>(a \times b) \times c = a \times (b \times c)</m> for any integers <m>a</m>, <m>b</m>, and <m>c</m>. This property ensures that when multiplying multiple integers, the grouping of the numbers can be adjusted to simplify computation.
+        </p>
+      </subsubsection>
+  
+      <subsubsection xml:id="distributivity-multiplication">
+        <title>Distributivity</title>
+        <p>
+          The distributive property states that multiplication distributes over addition. For any integers <m>a</m>, <m>b</m>, and <m>c</m>, the following holds true: <m>a \times (b + c) = (a \times b) + (a \times c)</m>. This property is essential for simplifying expressions and solving equations that involve both addition and multiplication.
+        </p>
+      </subsubsection>
+  
+      <subsubsection xml:id="closure-multiplication">
+        <title>Closure</title>
+        <p>
+          The closure property states that the product of any two integers is always an integer. This means that the set of integers is "closed" under multiplication, ensuring that operations within the set remain consistent and the result is always an integer.
+        </p>
+      </subsubsection>
+  
+      <subsubsection xml:id="multiplicative-identity">
+        <title>Multiplicative Identity</title>
+        <p>
+          The multiplicative identity property states that there exists an integer, 1, which, when multiplied by any integer <m>a</m>, results in <m>a</m>. In other words, <m>a \times 1 = a</m>. This property highlights the unique role of one in the number system, serving as the identity element for multiplication.
+        </p>
+    </subsubsection>
+    </subsection>
+
+    <subsection xml:id="integer-division">
+      <title>Integer Division</title>
+      <p>
+        Integer division involves dividing one integer by another, resulting in a quotient and sometimes a remainder. Unlike multiplication, division does not always produce an integer, and understanding how to handle these cases is crucial. This section will cover visualizing integer division and the rules for dividing integers.
+      </p>
+  
+      <subsubsection xml:id="visualizing-integer-division">
+        <title>Visualizing Integer Division</title>
+        <p>
+          Visualizing integer division can help clarify the process of dividing positive and negative numbers. One common method is using a number line, where division by a positive number involves dividing the number line into equal parts. Division by a negative number can be interpreted as moving in the opposite direction. Another method is using counters or tiles, where dividing the total number of counters into groups can represent the division process.
+        </p>
+      </subsubsection>
+  
+      <subsubsection xml:id="how-to-divide-integers">
+        <title>How to Divide Integers</title>
+        <p>
+          Dividing integers involves several scenarios:
+        </p>
+        <p>
+          1. **Dividing Two Positive Integers**: The quotient is positive. For example, <m>10 \div 2 = 5</m>.
+        </p>
+        <p>
+          2. **Dividing Two Negative Integers**: The quotient is positive. For example, <m>-10 \div (-2) = 5</m>. This is because dividing two negative values results in a positive value.
+        </p>
+        <p>
+          3. **Dividing a Positive Integer by a Negative Integer**: The quotient is negative. For example, <m>10 \div (-2) = -5</m>. This is because a positive value divided by a negative value results in a negative value.
+        </p>
+        <p>
+          4. **Dividing a Negative Integer by a Positive Integer**: The quotient is negative. For example, <m>-10 \div 2 = -5</m>. This follows the same rule as above.
+        </p>
+  
+        <example xml:id="integer-division-example-1">
+          <title>Example: Integer Division</title>
+          <p>
+            Calculate <m>-20 \div 4</m>.
+          </p>
+          <solution>
+            <p>
+              We have a negative number divided by a positive number, which results in a negative quotient.
+            </p>
+            <me>
+            -20 \div 4 = -5
+            </me>
+            <p>
+              Therefore, the quotient is <m>-5</m>.
+            </p>
+          </solution>
+        </example>
+  
+        <example xml:id="integer-division-example-2">
+          <title>Example: Integer Division Word Problem</title>
+          <p>
+            A company made a loss of $60,000 over 12 months. What was the average monthly loss?
+          </p>
+          <solution>
+            <p>
+              To find the average monthly loss, we need to divide the total loss by the number of months.
+            </p>
+            <me>
+            -60000 \div 12 = -5000
+            </me>
+            <p>
+              Therefore, the average monthly loss was $5000. This example shows how integer division can be used to calculate averages and distribute values evenly across different periods.
+            </p>
+          </solution>
+        </example>
+      </subsubsection>
+    </subsection>
+  </section>
+  
+    
+  
+
+
+  
 
 
 

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-07-10T16:53:00-03:00       *-->
+<!--*       on 2024-07-11T15:47:48-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,16 +15,62 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
 </h4>
-<p>Let's subtract <span class="process-math">\(4052-2457\)</span> using the same change algorithm. We line up the two numbers as usual (and we'll keep block representations along with our calculation to see the process in a pictoral way)</p>
-<p>INSERT PIC HERE</p>
-<p>Starting at the ones place, we notice that the top digit is smaller than the bottom digit, we add 3 to both the top and bottom numbers (<span class="process-math">\((4052+3)-(2457+3))\)</span>) to obtain the new subtraction problem <span class="process-math">\(4055-2460\text{.}\)</span> Notice that the bottom digit is now 0, so this will eventually make subtraction easy (at the cost of doing a bit of addition)</p>
-<p>INSERT PIC HERE INCLUDING NEW SUBTRACTION PROBLEM</p>
-<p>Now we move left to the tens place. As before, we notice that the top digit is less than the bottom digit, so add the opposite digit number of tens to both numbers. Since the opposite of <span class="process-math">\(6\)</span> is <span class="process-math">\(4\)</span> we add <span class="process-math">\(40\)</span> to both numbers (<span class="process-math">\((4055+40)-(2460+40)\)</span>) to make the new subtraction problem <span class="process-math">\(4095-2500.\)</span></p>
-<p>INSERT PIC OF THIS</p>
-<p>Moving to the hundreds place, since the top digit is less than the bottom digit, we add the opposite number of hundreds, that is <span class="process-math">\(500\text{,}\)</span> to both numbers to obtain the new subtraction problem <span class="process-math">\(4595-3000\text{.}\)</span></p>
-<p>Moving left to the thousands place, we notice that the top digit is greater than or equal to (in this case, greater than) the bottom digit, so we do nothing. Also, there are no non-zero digits in any places to our left (thousands is the largest place in our numbers) so we can now easily subtract place by place to obtain our final answer <span class="process-math">\(4595-3000=1595.\)</span></p>
-<p>INSERT PIC OF THIS</p></article><span class="incontext"><a href="sec-SubtractionAlgorithms.html#example-64">in-context</a></span>
+<p>Let's add <span class="process-math">\(447+629\)</span> slowly and carefully using this algorithm and visualize it using blocks.</p>
+<p>First, let's view the two numbers in terms of blocks:</p>
+<p>INSERT PIC OF THESE TWO NUMBERS AND THE STANDARD ALGORITHM TO THE SIDE</p>
+<p>First we add the ones place. Note tha we have <span class="process-math">\(7+9 = 16\)</span> ones. We can regroup ten (10) of those to make one of the next place value, that is, one ten. We write that regrouping as a 1 above, and we are still left with 6 ones, so we can write that down:</p>
+<p>INSERT PIC OF GROUPING AND THE STEPS IN THE ALGORITHM. NOTE THAT THE CARRY IS THE REGROUPED ONES</p>
+<p>We now move on to the next place; the tens. We have <span class="process-math">\(4+2+1\)</span> tens (the additional 1 being the regrouping from the last step). So we have 7 tens. Note that as we're working in our usual base ten, we do not have enough tens to regroup, so we simply write that we have 7 tens.</p>
+<p>Now let's move on to the next place; the hundreds. We have <span class="process-math">\(4+6-10\)</span> hundreds. We can group all ten of those (with 0 left over after regrouping) to make one of the next place value, that is, one thousand. As this is the final place that our numbers contain, we don't need to mark a regrouping and simply write down that we have 1 thousand and 0 hundreds.</p>
+<p>INSERT PIC OF THIS SIMILAR TO LAST TWO</p>
+<p>Thus we finally have that <span class="process-math">\(447+629=1076\text{.}\)</span></p>
+<p>If we think about this carefully, the addition algorithm above relies on the properties of associativity and commutativity in addition to place value. We are using these propertie when we add each place value separately and regroup any "carries" with the place value to the left. Let's write out what the standard addition algorithm is doing in the example above in a little more detail.</p>
+<div class="displaymath process-math">
+\begin{equation*}
+447+629 = (400+40+7) + (600+20+9) \text{ explanded place value representation}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= (400+600) + (40+20) + (7+9) \text{ associativity and commutativity}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= (400 +600) + (40 + 20) + (16) \text{ addition}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= (400 +600) + (40 + 20) + (10+6) \text{ expanded place value representation}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= (400 + 600) + (40 + 20 +10) +6 \text{ associativity and commutativity}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= (400+600) +70 + 6 \text{ addition}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= (1200) + 70 +6 \text{ addition}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 1000 + 200 + 70 + 6 \text{ expanded place value representation}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 1270 \text{ addition}
+\end{equation*}
+</div></article><span class="incontext"><a href="sec-AdditionAlgorithms.html#example-64">in-context</a></span>
 </body>
 </html>
