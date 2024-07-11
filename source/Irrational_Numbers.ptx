@@ -853,9 +853,9 @@
     <subsection xml:id="simplifying-principal-roots">
       <title>Simplifying <m>n</m>th Principal Roots by Factoring Out <m>n</m>th Powers</title>
       <p>
-        When simplifying <m>n</m>th principal roots, one effective method is to factor out any <m>n</m>th powers that appear in the prime factorization of the radicand. This method leverages the quotient remainder theorem to streamline the simplification process.
+        When simplifying <m>n</m>th principal roots, you can factor out any <m>n</m>th powers that appear in the prime factorization of the number you are taking the root of. Let's do some examples to see the method first.
       </p>
-    
+    <example>
       <p>
         Consider the cube root of 54:
         <me>
@@ -878,6 +878,25 @@
           \sqrt[3]{54} = 3 \times \sqrt[3]{2}
         </me>
       </p>
+    </example>
+    <example>
+      <p>
+        Now consider the cube root of 162 and that the prime factorization of 162 is <m>2 \times 3^4</m>. Now, we can realize that we can factor out a perfect cube from <m>3^4</m>. Indeed <m>3^4=3^{3+1}=3^3 \times 3</m>.
+      </p>
+      <p>
+        Using the same idea as the previous example we can say
+        <me>
+          \sqrt[3]{162} = \sqrt[3]{2 \times 3^4} = \sqrt[3]{2 \times 3} \times \sqrt[3]{3^3}
+        </me>
+        Since <m>\sqrt[3]{3^3} = 3</m>, we simplify the expression to:
+        <me>
+          \sqrt[3]{162} = 3 \times \sqrt[3]{2 \times 3}
+        </me>
+      </p>
+    </example>
+    <p>
+      In the examples above, we showed that we can indeed simplify an <m>n</m>th root as long as we can factor out an <m>n</m>th power from its factors. We say this more precisely below.
+    </p>
     </subsection>
     
     <subsubsection xml:id="quotient-remainder-theorem">
@@ -1104,5 +1123,10 @@
       </example>
     </subsection>
   </section>
+
+
+  
+
+
   
 </chapter>
