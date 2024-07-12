@@ -509,7 +509,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     </p>
     <p>
         
-        <image source="assets\Section1\S1-Intro to Logic\Chkpt1.21\1.jpg" width="50%">
+        <image source="1.jpg" width="50%">
             <description>First Image</description>
         </image>
         
@@ -523,7 +523,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 For universally quantified statements (e.g., "All A are B" or as a concrete example "All cats are mammals") we want a circle representing all objects that satisfy condition A (all cats in our example).
             </p>
             <p>
-                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Sctn1.4\2.jpg" width="50%">
+                <image source="Section1.4b.svg" width="50%">
                     <description>Second Image</description>
                 </image>
             </p>
@@ -531,7 +531,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 Now, we want a circle to represent all objects that satisfy B (in our example, all mammals). Note that since we wish to show all A are B, we want to draw this circle so that all of the A objects are also included in the B circle:
             </p>
             <p>
-                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Sctn1.4\3.jpg" width="50%">
+                <image source="Section1.4c.svg" width="50%">
                     <description>Third Image</description>
                 </image>
             </p>
@@ -541,7 +541,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
               For existentially quantified statements (e.g., "Some A are B" or as a concrete example "Some cats are grey") we want a circle representing all objects that satisfy condition A (all cats in our example).  
             </p>
             <p>
-                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Sctn1.4\4.jpg" width="50%">
+                <image source="Section1.4d.svg" width="50%">
                     <description>Fourth Image</description>
                 </image>
             </p>
@@ -549,7 +549,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 Now, we want a circle to represent all objects that satisfy B (in out example, things that are grey). Note that there could be cats that are not grey, and grey things that are not cats, so we need to draw the diagram so that they only partially overlap. We also know that there is definitely at least one A that is B (cat that is grey) since the statement tells us so, therefore we can put a little dot in the intersection to represent that object (the grey cat).
             </p>
             <p>
-                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Sctn1.4\5.jpg" width="50%">
+                <image source="Section1.4e.svg" width="50%">
                     <description>Fifth Image</description>
                 </image>
             </p>
@@ -565,7 +565,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 We could represent this in (at least) two ways. One way is as two non-overlapping circles:
             </p>
             <p>
-                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.21\1.jpg" width="50%">
+                <image source="Checkpoint1.21a.svg" width="50%">
                     <description>No A are B</description>
                     
                 </image>
@@ -574,7 +574,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 Or as intersecting circles with the intersection hatch out to indicate it is empty.
             </p>
 
-            <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.21\2.jpg" width="50%">
+            <image source="Checkpoint1.21b.svg" width="50%">
                 <description>No A are B Ver 2</description>
                 
             </image>
@@ -601,7 +601,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
            </p>
            <p>
             
-            <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.22\1.jpg" width="50%">
+            <image source="Checkpoint1.22a.svg" width="50%">
                 <description>2=2x6</description>
                 
             </image>
@@ -616,7 +616,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
             <figure xml:id="gtgtg">
                 <caption></caption>
             
-            <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.22\2.jpg" width="50%">
+            <image source="Checkpoint1.22b.svg" width="50%">
                 <description>2k=2xk</description>
                 </image>
             </figure>
@@ -625,7 +625,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                To show 15 is odd, you probably drew a picture similar to this:
            </p>
            <p>
-            <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.22\3.jpg" width="50%">
+            <image source="Checkpoint1.22c.svg" width="50%">
                                 <description>15=2x7+1</description>
                             </image>
            </p>
@@ -634,6 +634,12 @@ When we talk about mathematical ideas, we want to express how many objects they 
             </p>
             <p>
                 Like for even numbers, the number of rows of 2 isn't particularly important to say that a number is odd; it's the fact that we can group the number into as many rows of 2 as possible, we always have 1 left over. Usually we'll express this as <m>k</m> rows of 2 + 1 remaining. So for a odd whole number <m>n</m>, we know <m>n=2k+1</m> for some whole number <m>k</m>.
+            </p>
+            <p>
+                In picture form:
+                <image source="Checkpoint1.22d.svg" width="50%">
+                    <description>15=2x7+1</description>
+                </image>
             </p>
        </solution>
     </exercise>
