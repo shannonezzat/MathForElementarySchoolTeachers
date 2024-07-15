@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-07-10T16:53:18-03:00       *-->
+<!--*       on 2024-07-15T15:13:56-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,18 +13,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="example example-like"><p>Let's look again at <span class="process-math">\(n=144\text{.}\)</span> Using our method from <a href="" class="xref" data-knowl="./knowl/thm-primefactorofcomposite.html" title="Theorem 6.3.10">Theorem 6.3.10</a> we can write <span class="process-math">\(n\)</span> as a product of primes: <span class="process-math">\(144=2^4 \times 3^2\text{.}\)</span> Now let's list the factors again, but also write their prime factorization:</p>
-<ol class="decimal">
-<li><p>1 and 144 <span class="process-math">\((2^0 \times 3^0)(2^4 \times 3^2)\)</span></p></li>
-<li><p>2 and 72 <span class="process-math">\((2^1 \times 3^0)(2^3 \times 3^2)\)</span></p></li>
-<li><p>3 and 48 <span class="process-math">\((2^0 \times 3^1)(2^4 \times 3^1)\)</span></p></li>
-<li><p>4 and 36 <span class="process-math">\((2^2 \times 3^0)(2^2 \times 3^2)\)</span></p></li>
-<li><p>6 and 24 <span class="process-math">\((2^1 \times 3^1)(2^3 \times 3^1)\)</span></p></li>
-<li><p>8 and 18 <span class="process-math">\((2^3 \times 3^0)(2^1 \times 3^2)\)</span></p></li>
-<li><p>9 and 16 <span class="process-math">\((2^0 \times 3^2)(2^4 \times 3^0)\)</span></p></li>
-<li><p>12 and 12 <span class="process-math">\((2^2 \times 3^1)(2^2 \times 3^1)\)</span></p></li>
-</ol>
-<p>Note that if <span class="process-math">\(a \mid n\text{,}\)</span> then <span class="process-math">\(a\)</span> must either be <span class="process-math">\(1\text{,}\)</span> or a product of some of the <span class="process-math">\(2\)</span>'s and <span class="process-math">\(3\)</span>'s that are in the prime factorization of <span class="process-math">\(144\text{,}\)</span> since we can think about grouping the primes in the prime factorization to make a pair of factors.</p>
-<p>We can think: if <span class="process-math">\(a\)</span> is a factor of <span class="process-math">\(144\)</span> that we are making, how many choices for the number of <span class="process-math">\(2\)</span>'s do we have? How many choices for the number of <span class="process-math">\(3\)</span>'s do we have? Our factor <span class="process-math">\(a\)</span> can have 0,1,2,3, or 4 copies of <span class="process-math">\(2\)</span> (so 5 choices in total), and either 0,1, or 2 copies of <span class="process-math">\(3\)</span> (so 3 choices in total). For example, if our factor has three <span class="process-math">\(2\)</span>'s and one <span class="process-math">\(3\text{,}\)</span> then <span class="process-math">\(a=2^3 \times 3 = 24\text{.}\)</span></p>
-<p>Since we have 5 choices for the number of <span class="process-math">\(2\)</span>'s and 3 choices for the number of <span class="process-math">\(3\)</span>'s, we have <span class="process-math">\(5 \times 3 = 15\)</span> total factors of <span class="process-math">\(144=2^4 \times 3^2\text{.}\)</span></p></article></body>
+<body class="ignore-math"><article class="example example-like"><ol class="decimal">
+<li><p>Let's start with the primes <span class="process-math">\(2\)</span> and <span class="process-math">\(3\)</span> and put them into the set <span class="process-math">\(A = \{2,3\}.\)</span></p></li>
+<li><p>Let's make a new number by multiplying all numbers in <span class="process-math">\(A\)</span> and then adding <span class="process-math">\(1:\text{,}\)</span> say <span class="process-math">\(a=2 \times 3+1=7\)</span></p></li>
+<li><p>By <a href="" class="xref" data-knowl="./knowl/lem-PrimePlus1.html" title="Lemma 6.3.4">Lemma 6.3.4</a> we know that <span class="process-math">\(2 \nmid 7\)</span> and <span class="process-math">\(3 \nmid 7\)</span> (although this is pretty obvious anyway). So <span class="process-math">\(a\)</span> is not divisible by any prime numbers in our set <span class="process-math">\(A\text{.}\)</span> This means that <span class="process-math">\(a\)</span> is either prime itself, or a product of other primes that aren't already in <span class="process-math">\(A\text{.}\)</span> In this case <span class="process-math">\(a=7\)</span> is prime.</p></li>
+<li><p>We now redefine <span class="process-math">\(A\)</span> to include our new prime (or primes if <span class="process-math">\(a\)</span> had other prime factors.) So in this case now <span class="process-math">\(A:=A \cup \{7\} = \{2,3\} \cup \{7\} = \{2,3,7\}\text{.}\)</span></p></li>
+<li><p>We then repear the procedure with the new <span class="process-math">\(A\)</span> to obtain <span class="process-math">\(a=2\times 3\times 7+1 = 43\text{,}\)</span> which itself is prime, so we include it in our set as well; <span class="process-math">\(A=\{2,3,7,43\}\text{.}\)</span></p></li>
+<li><p>Let's do this again: now <span class="process-math">\(a=2\times 3 \times 7 \times 43+1 = 1807\text{.}\)</span> You can check that <span class="process-math">\(1807=13 \times 139\)</span> which are both prime, so we can add <span class="process-math">\(13\)</span> and <span class="process-math">\(39 \)</span> to our set: <span class="process-math">\(A=\{2,3,7,13,39,43\}\text{.}\)</span></p></li>
+<li><p>We can continue this process, and at each step we will form a number <span class="process-math">\(a\)</span> that has no numbers in <span class="process-math">\(A\)</span> as a factor, so we will be able to add at least one more prime number (either <span class="process-math">\(a\)</span> itself if it is prime, or the prime factors of <span class="process-math">\(a\)</span> if it is not) to our set.</p></li>
+<li><p>As our set grows by at least one number every iteration of this process, we know we can always include at least one more prime number in our set. So we will never run out of prime numbers, and thus there are infinitely many prime numbers.</p></li>
+</ol></article></body>
 </html>
