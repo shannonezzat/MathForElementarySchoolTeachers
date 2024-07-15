@@ -1154,7 +1154,7 @@ select all those cards, but only those cards, which you would have to turn over 
             We can view this as logically equivalent to the statement "all cats are mammals" (again with the domain of all animals), and we can see the link from the Venn diagram of the statement to all true possibilities for the conditional statement:
         </p>
         <p>
-            <image source="Section2.5" width="50%">
+            <image source="Section2.5.svg" width="50%">
                 <description>All Cats are Mammals</description>
             </image>
         </p>
@@ -1323,7 +1323,7 @@ select all those cards, but only those cards, which you would have to turn over 
             We can show that the contrapositive is logically equivalent to the original statement. Let's do it using a truth table:
         </p>
         <p>
-            <image source="Section2.6a.svg">
+            <image source="Section 2.6a.svg">
                 <shortdescription>Truth Table for "If P then Q"</shortdescription>
             </image>
         </p>
@@ -1411,17 +1411,33 @@ select all those cards, but only those cards, which you would have to turn over 
             Look at the previous examples in <xref ref="Bicond1"/>. Notice in the first example, the original statement and its converse were true (and, it follows that the inverse and contrapositive are true too!). However, in the second, only the original statement was true. Let's view these as Venn diagrams: 
         </p>
         <p>
-            ADD VENN DIAGRAM
+            <image source="Section2.7a.svg" >
+                <shortdescription>If a triangle then a three sided polygon Venn Diagram</shortdescription>
+            </image>
+            <image source="Section2.7b.svg" >
+                <shortdescription>If a three sided polygon then a triangle Venn Diagram</shortdescription>
+            </image>
+            <image source="Section2.7c.svg" >
+                <shortdescription>If a number ending in 2 or 4 then even Venn Diagram</shortdescription>
+            </image>
         </p>
         <p>
             In the second example, we know there are numbers with ones-digit that aren't 2 or 4 that are still even, so we can think of numbers that do have a ones-digit of 2 or 4 as only a part (later we'll call it a <term>subest</term>) of the even numbers. For example, 10 is a counterexample to "If Q then P" for this example.</p> 
-            <p>Looking at the first example, we want both Venn diagrams to be true. The only way for this to be possible is if both circles are actually the same circle! That's because the two ideas of polygons with three sides and triangles are really the same thing. These situations are very special, and we can think of one part as just a "rewording" of the idea of the other part. Formally, we call statements where both the original statement and its converse are true <term>biconditional statements</term> and we write it as "P if and only if Q", which means "(if P then Q) *and* (if Q then P)". 
+            <p>Looking at the first example, we want both Venn diagrams to be true. The only way for this to be possible is if both circles are actually the same circle! That's because the two ideas of polygons with three sides and triangles are really the same thing. 
+
+                <image source="Section2.7b2.svg">
+                    <shortdescription>Biconditional Venn Diagram for Triangles and Three Sided Polygons</shortdescription>
+                </image>
+                
+            These situations are very special, and we can think of one part as just a "rewording" of the idea of the other part. Formally, we call statements where both the original statement and its converse are true <term>biconditional statements</term> and we write it as "P if and only if Q", which means "(if P then Q) *and* (if Q then P)". 
         </p>
         <p>
             Let's look a a truth table of the biconditional statement:
         </p>
         <p>
-            ADD TRUTH TABLE
+            <image source="Section2.72.svg">
+                <shortdescription>Truth Table for Biconditional</shortdescription>
+            </image>
         </p>
         <p>
             Here you can see that the biconditional statement is true exacltly when its truth values match. So it can neven be the case that one of P or Q is true and the other false. This idea will inform how we go about proving biconditional statements.
@@ -1596,7 +1612,9 @@ select all those cards, but only those cards, which you would have to turn over 
 
    </p>
    <p>
-      INSERT PICTURE OF BAG ANALOGY OF A SET 
+      <image source="Section3.1a.svg" >
+        <shortdescription>Bag analogy of a set</shortdescription>
+      </image>
    </p>
    <p>
         Note that in the previous exercise, we came across the set with no elements. We call this the <term>empty set</term> and write it as <m>\{ \}</m> or with <m>\emptyset.</m>
@@ -1613,10 +1631,12 @@ select all those cards, but only those cards, which you would have to turn over 
    </solution>
 </example>
 <p>
-    You can view the idea of a subset using Venn diagrams:
+    You can view the idea of a subset using Venn diagrams. In the diagram below, B is a subset of A:
 </p>
 <p>
-    INSERT VENN DIAGRAM
+    <image source="Section3.1b.svg">
+        <shortdescription>Subset Venn diagram</shortdescription>
+    </image>
 </p>
 <p>
     Let's look at a few examples of subsets to help us understand how the concept works:
@@ -1716,7 +1736,9 @@ select all those cards, but only those cards, which you would have to turn over 
        From the following diagram you can see that these sets are listed in a "subset ordering", that is <m>\mathbb{N} \subseteq \mathbb{N}_0 \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R}</m>.
    </p>
    <p>
-       INCLUDE DIAGRAM HERE
+       <image source="Section3.1c.svg">
+        <shortdescription>Inclusion Diagram of Number Sets</shortdescription>
+       </image>
    </p>
 
    <exercise>
@@ -1734,12 +1756,14 @@ select all those cards, but only those cards, which you would have to turn over 
           <p>
               So now, using the if-part assumption, let's show that the then-part is true. Let <m>x \in A</m>. By our assumption that <m>A \subseteq B</m> we know <m>x \in B</m>. Now, by the second part of our assumption, that <m>B \subseteq C</m> we know that <m>x \in C</m>.
           </p>
-          <p>Since we started with an element of A and showed that it must be an element of C, we have shown the then-aprt; that <m>A \subseteq C</m>, and this means we've proved that the if-then statement is always true.</p>
+          <p>Since we started with an element of A and showed that it must be an element of C, we have shown the then-part; that <m>A \subseteq C</m>, and this means we've proved that the if-then statement is always true.</p>
           <p>
               Note that you can see this visually using the following Venn diagram:
           </p>
           <p>
-              INSERT VENN DIAGRAM
+              <image source="Checkpoint3.7.svg">
+                <shortdescription>Inclusiong diagram for A, B, and C above</shortdescription>
+              </image>
           </p>
 
       </solution>
@@ -1793,14 +1817,14 @@ select all those cards, but only those cards, which you would have to turn over 
        <definition xml:id="def-Intersection">
            <statement>
                <p>
-                   Let A and B be two sets. Then the <term>intersection</term> of A and B, written <m>A \cap B</m> is the set of all elements that are in both A and B. In set notation we write <m>A \cap B = \{ x \ | \ x \in A \text{ and } x \in B\}.</m>
+                   Let A and B be two sets. Then the <term>intersection</term> of A and B, written <m>A \cap B</m> is the set of all elements that are in both A and B. In set notation we write <m>A \cap B = \{ x \ | \ x \in A</m> and <m> x \in B\}.</m>
                </p>
            </statement>
        </definition>
        <definition xml:id="def-SetDifference">
            <statement>
                <p>
-                   Let A and B be two sets. Then the <term>difference</term> of A and B, written <m>A - B</m> is the set of all elements that are in A but not in B. In set notation we write <m>A - B = \{ x \ | \ x \in A \text{ and } x \not \in B\}.</m>
+                   Let A and B be two sets. Then the <term>difference</term> of A and B, written <m>A - B</m> is the set of all elements that are in A but not in B. In set notation we write <m>A - B = \{ x \ | \ x \in A </m>> and <m>> x \not \in B\}.</m>
                </p>
            </statement>
        </definition>
@@ -1842,7 +1866,9 @@ select all those cards, but only those cards, which you would have to turn over 
             Here are some Venn diagram showing the sets above:
         </p>
         <p>
-            INSERT VENN DIAGRAM
+            <image source="Example3.14.svg">
+                <shortdescription>Venn Diagram for sets above</shortdescription>
+            </image>
         </p>
        </example>
        <exercise>
@@ -1906,30 +1932,53 @@ select all those cards, but only those cards, which you would have to turn over 
                        Since elements in an intersection need to satisfy *both* being a memebr of A and B, we have that <m>A \cap B = \{ \text{ obtuse triangles} \}</m>.
 
                    </p>
-                   <p>
-                       INSERT PIC OF ELEMENT/NON-ELEMENT
+                   <p> A possible example of an element in this set is a triangle with one angle of 100 degrees:
+                       <image source="Checkpoint3.15a.svg">
+                        <shortdescription>An obtuse traingle</shortdescription>
+                       </image>
+                       An possible example of an element not in this set is a square:
+                       <image source="square_diagram_same_size.svg">
+                        <shortdescription>A square</shortdescription>
+                       </image>
                    </p>
                </solution>
                <solution>
                    <p>
-                       Since elements in an intersection need to satisfy *either* being a memebr of A or B, we have that <m>A \cup C = \{ \text{ all triangles and all polygons of at most 5 sides.} \}</m>. However, triangles are polygons of at most 5 sides (they have three), we have that <m>A \subseteq C</m> and thus we can express <m>A \cup C = \{ \text{ all polygons of at most 5 sides.} \}</m> and note <m>A \cup C = C</m>.
+                       Since elements in an intersection need to satisfy *either* being a memebr of A or B, we have that <m>A \cup C = \{ \text{ all polygons that are triangles or have at most 5 sides.} \}</m>. However, triangles are polygons of at most 5 sides (they have three), we have that <m>A \subseteq C</m> and thus we can express <m>A \cup C = \{ \text{ all polygons of at most 5 sides.} \}</m> and note <m>A \cup C = C</m>.
 
                    </p>
                    <p>
-                       INSERT VENN DIAGRAM OF THIS SITUATION
+                       <image source="Checkpoint3.15b.svg">
+                        <shortdescription>Venn diagram of polygons of at most 5 sides and triangles</shortdescription>
+                       </image>
                    </p>
                    <p>
-                       INSERT PIC OF ELEMENT/NON-ELEMENT
+                       An example of an element of the set is the square:
+                       <image source="square_diagram_same_size.svg">
+                        <shortdescription>Picture of a square</shortdescription>
+                       </image>
+                       and a non-example would be a hexagon since it has more than 5 sides:
+                       <image source="hexagon_diagram_same_size.svg">
+                        <shortdescription>Picture of a hexagon</shortdescription>
+                       </image>
+
                    </p>
                    
                </solution>
                <solution>
                    <p>
-                       Since elements in complement are all elements not in the original set, we have that <m>\sim B = \{ \text{ all polygons with no obtuse angles } \}</m>. In the future Geometry chapter we will show that this set will only contain certain triangles and quadrilaterals (polygons with 4 sides).
+                       Since elements in complement are all elements not in the original set, we have that <m>\sim B = \{ \text{ all polygons with no obtuse angles } \}</m>. In a future Geometry chapter we will show that this set will only contain certain triangles and quadrilaterals (polygons with 4 sides).
 
                    </p>
                    <p>
-                       INSERT PIC OF ELEMENT/NON-ELEMENT
+                       An example of an element in the set is a square, since it has all angles of measure exactly 90 degrees (and not larger):
+                       <image source="square_diagram_same_size.svg">
+                        <shortdescription>Picture of a square</shortdescription>
+                       </image>
+                        A non-example is a triangle with one angle with measure 100 degrees:
+                        <image source="Checkpoint3.15a.svg">
+                            <shortdescription>Picture of an obtuse triangle</shortdescription>
+                        </image>
                    </p>
                </solution>
                  <solution>
@@ -1938,7 +1987,7 @@ select all those cards, but only those cards, which you would have to turn over 
 
                    </p>
                    <p>
-                       INSERT PIC OF ELEMENT/NON-ELEMENT
+                       Note that the examples and non-examples from the previous part work for this set as well.
                    </p>
                </solution>
                <solution>
@@ -1948,7 +1997,7 @@ select all those cards, but only those cards, which you would have to turn over 
 
                    </p>
                    <p>
-                       INSERT PIC OF ELEMENT/NON-ELEMENT
+                       Note that since the set is empty, no polygon is an example of an element in the set, and every polygon is a non-example.
                    </p>
                
                </solution>
