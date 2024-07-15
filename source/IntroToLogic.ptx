@@ -751,8 +751,8 @@ When we talk about mathematical ideas, we want to express how many objects they 
 
     <figure xml:id="IfThenTruthTable">
         <caption>Truth Table for "if P then Q"</caption>
-        <image xml:id="TruthTable" source="MathForElementarySchoolTeachers\assets\ConditionalStatements\S2-Conditional Statements\Fig2.2\1.jpg">
-            <description></description>
+        <image  source="Figure2.2.svg">
+            <description>Truth Table for "if P then Q"</description>
             
         </image>
     </figure>
@@ -1154,7 +1154,7 @@ select all those cards, but only those cards, which you would have to turn over 
             We can view this as logically equivalent to the statement "all cats are mammals" (again with the domain of all animals), and we can see the link from the Venn diagram of the statement to all true possibilities for the conditional statement:
         </p>
         <p>
-            <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.21\1.jpg" width="50%">
+            <image source="Section2.5" width="50%">
                 <description>All Cats are Mammals</description>
             </image>
         </p>
@@ -1185,7 +1185,7 @@ select all those cards, but only those cards, which you would have to turn over 
                    Reworded: "All whole numbers with a ones-digit of 0 are divisible by 5"
                </p>
                <p>
-                <image source="MathForElementarySchoolTeachers\assets\Section1\S1-Intro to Logic\Chkpt1.21\2.jpg" width="50%">
+                <image source="Checkpoint2.10.svg" width="50%">
                     <description>All whole numbers with a ones-digit of 0 are divisible by 5</description>
                 </image>
                </p>
@@ -1323,22 +1323,24 @@ select all those cards, but only those cards, which you would have to turn over 
             We can show that the contrapositive is logically equivalent to the original statement. Let's do it using a truth table:
         </p>
         <p>
-            INSERT TRUTH TABLE
+            <image source="Section2.6a.svg">
+                <shortdescription>Truth Table for "If P then Q"</shortdescription>
+            </image>
         </p>
         <p>
             You can see that no matter what the truth values for P and Q, the truth value of the original statement "if P then Q" and the contrapositive statement "If (not Q) then (not P)" agree. So, if we want, we can reword a conditional statement to its contrapositive.
         </p>
         <p>
             Also, note that the contrapositive of the contrapositive is the original statement; the statements get negated again to bring them back to their original truth values, and the if-part and then-part get swapped back as well.
-            <p>
-                INSERT TRUTH TABLE
-            </p>
+           
         </p>
         <exercise>
             <p>Show that the converse and inverse of a conditional statement are logically equivalent.</p>
             <solution>
                 <p>
-                    ADD TRUTH TABLE
+                    <image source="Example2.14.svg">
+                        <shortdescription>Truth table for converse and inverse of "If P then Q"</shortdescription>
+                    </image>
                 </p>
                 <p>
                     You can see that no matter what the truth values for P and Q, the truth value of the converse statement "if Q then P" and the inverse statement "If (not P) then (not Q)" agree. 
@@ -1401,14 +1403,7 @@ select all those cards, but only those cards, which you would have to turn over 
                 </ol>
             </solution>
         </example>
-        <example>
-            Show that the converse and inverse are contrapositives of each other.
-            <solution>
-                <p>
-                    ADD TRUTH TABLE
-                </p>
-            </solution>
-        </example>
+       
     </subsection>
     <subsection xml:id="subsec-BiconditionalSentences">
         <title>Biconditional Sentences</title>
