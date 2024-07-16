@@ -972,6 +972,7 @@
 <p>
     As our number system is base ten, we almost have too much "muscle memory" to be able to think about how place value works, and how our algorithms for doing arithmetic work. So we'll frequently change to other bases for this chapter.
 </p>
+<video youtube="OXG0Mj5DbI8"/>
 </subsection>
 <subsection xml:id="subsec-ConvertingFromBaseTen">
     <title>Converting From Base Ten</title>
@@ -1169,6 +1170,7 @@
           <p>
               It might take a while to wrap your head around not regrouping when you have ten things, but in base twelve we do not.
           </p>
+          
           <example>
               <p>
                   Let's convert a base ten number to base twelve to get a feel for it. Let's start with 155 and use our algorithm above.
@@ -1204,7 +1206,9 @@
                   INCLUDE PIC HERE OF BASE TEN AND TWELVE BLOCKS
               </p>
               
+              
           </example>
+          <video youtube="1AAIDjg8q90"/>
       </subsection>
       <subsection xml:id="subsec-HistoricalNumberSystems">
           <title>Historical Number Systems</title>
