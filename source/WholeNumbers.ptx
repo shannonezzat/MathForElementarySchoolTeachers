@@ -45,8 +45,25 @@
         A good idea is to think of equality as a balance. If both sides are equal, then the balance will be balanced; neither side will be heavier than the other.
     </p>
     <p>
-        INSERT PIC OF BALANCE
+        <image source="WholeNumbers/BalanceModelE.svg">
+            <shortdescription>A balance showing equality and both sides of the balance at the same height</shortdescription>
+        </image>
     </p>
+    <p>
+        If one side of the equation, then we have an <term>inequality</term> since the two sides do not equal each other. If the left hand side (LHS) is the heavier side then we say that the LHS <term>is greater than</term> the right hand side (RHS). If the RHS is larger, than we say that the LHS <term>is less than</term> the RHS. Note that the symbol to denote either greater than <m>&gt;</m> and less than <m>&lt;</m> has the more open side toward the larger quantity, somewhat matching up with the idea of the balance. 
+    </p>
+    <p>
+        Using the balance analogy greater than looks like:
+        <image source="WholeNumbers/BalanceModelG.svg">
+            <shortdescription>Greater than balance model</shortdescription>
+        </image>
+        and less than looks like:
+        <image source="WholeNumbers/BalanceModelL.svg">
+            <shortdescription>Less than balance model</shortdescription>
+        </image>
+    </p>
+    <subsection xml:id="subsec-PropertiesOfEquality">
+        <title>Properties Of Equality</title>
     <p>
         There are a few properties of equality that are important and intuitive, but for completeness we write them down here:
     </p>
@@ -83,22 +100,33 @@
     </assemblage>
 
     </subsection>
-    <subsection xml:id="subsec-MorePropertiesOfEquality">
-        <title>More Properties Of Equality</title>
+    
         <p>
             The most important property of equality when doing mathematics is that you can always <term>substitute</term> one expression for another equal to it. In fact, this is how many algebraic equations are solved, and arithmetic expressions simplified. We regularly do this whenever we simplify an arithmetic expression, but many of us do not realize we are doing a substitution when we do it! For example, if we are calculating the expression <m>4 \times 7 - 3</m>, we know that <m>4 \times 7 = 28</m>. Since these two quantities equal each other, we can substitute <m>28</m> any time we see the expression <m>4 \times 7</m>. Doing this, we get <m>28-3</m>, and we know that <m>28-3=25.</m> So, putting it all together we have that <m>4 \times 7 -3 = 25</m>. We can view this idea using the balance model descibed above: 
         </p>
         <p>
-            INCLUDE PIC OF BALANCE MODEL
+            <image source="WholeNumbers/BalanceModelSub1.svg">
+                <shortdescription>Balance model of 4*7-3=25</shortdescription>
+            </image>
         </p>
         <p>
             We use this idea when solving equations as well. Suppose we know that <m>x=9</m> and we're asked to calculate <m>3x-16</m>. Since <m>x</m> and <m>9</m> are indeed equal we can substitude a <m>9</m> where ever we see the variable <m>x</m>. Doing so we obtain <m>3(9)-16</m>. Similarly to above we can simplify this to <m>27-16=11</m>. And thus <m>3x-16=11</m> when <m>x=9</m>. Again, we can use a balance model to show this process:
         </p>
          <p>
-            INCLUDE PIC OF BALANCE MODEL
+            <image source="WholeNumbers/BalanceModelSub2.svg">
+                <shortdescription>Balance model of 3x-16=11 when x=9</shortdescription>
+            </image>
         </p>
         <p>
-            Another important property to equality is that two expressions remain equal when we do the same arithmetic operations to them. For example, if we know <m>a=b</m> we can subtract 5 from both of these and the resulting expressions equal: <m>a-5=b-5</m>. </p> <p> INSERT BALANCE PIC HERE </p><p> Or, we could divide both sides by 2, and then <m>a \div 2 = b \div 2</m>. </p> <p>INSERT BALANCE PIC HERE </p> <p> This is an incredibly powerful idea that allows us to solve equations for a unknown quantities.
+            Another important property to equality is that two expressions remain equal when we do the same arithmetic operations to them. For example, if we know <m>a=b</m> we can subtract 5 from both of these and the resulting expressions equal: <m>a-5=b-5</m>. </p> 
+            <p> <image source="WholeNumbers/BalanceModelSub3.svg">
+                <shortdescription>Balance model of a-5=b-5 when a=b</shortdescription>
+            </image> </p>
+            <p> Or for another example, we could divide both sides by 2, and then <m>a \div 2 = b \div 2</m>. </p> 
+            <p><image source="WholeNumbers/BalanceModelSub4.svg">
+                <shortdescription>Balance model of a/2=b/2 when a=b</shortdescription>
+            </image></p> 
+            <p> This is an incredibly powerful idea that allows us to solve equations for a unknown quantities.
         </p>
         <p>
             Let's define these more precisely so we can refer to them later.
@@ -786,14 +814,18 @@
     Place value is a very important concept that allows us to write down very large (and very small) numbers in a small amount of space. If we didn't have the concept of place value, we would simply use the number of "ticks" we wanted to write down to represent that number. For example, if we wanted to write down "twenty" we would do something like the following:
   </p>
   <p>
-     INSERT PIC OF TWENTY TICKS 
+     <image source="WholeNumbers/20Ticks.svg">
+        <shortdescription>20 tick marks</shortdescription>
+     </image> 
   </p>
   <p>
      And if we want to represent the number "one hundred and twelve" we would write:
      
   </p>
   <p>
-      INSERT PIC OF 112 TICKS
+      <image source="WholeNumbers/112Ticks.svg">
+        <shortdescription>112 tick marks</shortdescription>
+      </image>
   </p>
   <p>
       You can see how difficult it would be to write down and understand large numbers, or to easily do operations with them, like addition, subtraction, multiplication, and division.
@@ -814,7 +846,9 @@
         Consider the following objects:
     </p>
     <p>
-        INSERT PICTURE OF FIVE THINGS
+        <image source="WholeNumbers/5Ticks.svg">
+            <shortdescription>5 tick marks</shortdescription>
+        </image>
     </p>
     <p>
         In order to work with the idea of quantities, we want some symbol to represent this number of quantities, and other numbers of quantities too. In the Western world (and much of the rest of the world too) we've chosen the symbol "5" to represent these quantities. Note that it doesn't mean these particular five things, but simply the idea of having that many of anything.
@@ -862,7 +896,9 @@
     How does place value work? Let's see what happens as we count up from one to twelve:
 </p>
 <p>
-    INSERT PIC OF TICKS AND DIGITS
+    <image source="WholeNumbers/Section 4.1 - 2.svg">
+        <shortdescription>Counting from 1 to 12 using counting blocks</shortdescription>
+    </image>
 </p>
 <p>
     The idea is that once we reach nine ticks, we "run out" of digits to express any larger numbers with their own symbol. So, we group ten of these together to make one "ten" and we express this as a digit to the left of the ones place.
@@ -871,13 +907,15 @@
     Similarly, let's count from ninety-seven to one hundred-three:
 </p>
 <p>
-    INSERT PIC OF THIS COUNTING
+    <image source="WholeNumbers/Section 4.1 - 3.svg">
+        <shortdescription>Counting from 97 to 103 using counting blocks</shortdescription>
+    </image>
 </p>
 <p>
     You can see once we add an additional tick (or one) to ninety-nine, we then have ten ones. So we regroup those ones to one ten. Now this gives us ten tens, and since we have ten of those, we need to regroup them into a new place, called the hundreds place.
 </p>
 <p>
-    We'll look at models of multiplication and exponents later in this chapter, but we will rely on our intuition about multiplication and our knowledge of exponents to help us talk about place value. We know that in our base ten number system, we group ten of one place to make one of the next place. We start with the ones place, which we can express as <m>10^0</m>, as any non-zero number to the power of <m>0</m> is <m>1</m> (we will see why later.) So we know that we can express the tens place as 10 ones<m>=10 \times 1 = 10^1</m> (remembering that an exponent of 1 is the same as having no exponent). We can also think of a "long" as being a one-dimensional object; that dimension being length.
+    We'll look at models of multiplication and exponents in a later place in the book, but we will rely on our intuition about multiplication and our knowledge of exponents to help us talk about place value. We know that in our base ten number system, we group ten of one place to make one of the next place. We start with the ones place, which we can express as <m>10^0</m>, as any non-zero number to the power of <m>0</m> is <m>1</m> (we will see why later.) So we know that we can express the tens place as 10 ones<m>=10 \times 1 = 10^1</m> (remembering that an exponent of 1 is the same as having no exponent). We can also think of a "long" as being a one-dimensional object; that dimension being length.
 </p>
 <p>
     Similarly we group 10 tens to make one hundred: <m>10 \times 10=10^2=100</m>. Similarly to a "long" we can view the hundred "square" as a two dimensional object, with length and width. Hopefully you are noticing the relationship to the exponent of the place.
@@ -903,22 +941,20 @@
 
 
 <p>
-    PICTURE OR CARRIES ABOVE
-</p>
-
-<p>
     A good question is "is there anything special about regrouping in units of ten ?" or in the language of number systems "why do we use base ten?" The answer to this is no! We can indeed have a base of any counting number we like (say in base <m>b</m>) and then regoup once we have <m>b</m> of any place. 
 </p>
 <p>
     Let's try writing "thirteen" in a few different bases so that you get a feel for what is happening:
 </p>
 <p>
-    INSERT PIC OF THIRTEEN BASE TEN, EIGHT, FIVE, TWELVE, AND TWO
+    <image source="WholeNumbers/Section 4.1 - 4.svg">
+        <shortdescription>Counting blocks of thirteen in different bases</shortdescription>
+    </image>
 </p>
 <p>
     We can write these as the following numerals (note that the base is written as a subscript so that you know what base each number is in. We'll keep this practice up when needed.)
     <me>
-        13_{ten} \ 15_{eight} \ 23_{five} \ 11_{tweleve} \ 111_{two}
+        13_{ten} \ 15_{eight} \ 23_{five} \ 11_{twelve} \ 1101_{two}
     </me>
     
 </p>
@@ -950,7 +986,9 @@
 <p> Let's start in base ten. Suppose we wanted to write the base ten number 25 in base four. We can start by thinking to breaking up all of the base ten groupings into single ones:
     </p>
 <p>
-    INSERT PIC HERE
+    <image source="WholeNumbers/Example 4.2 - 1.svg">
+        <shortdescription>Expressing 2 tens and 5 ones as 25 ones in base ten blocks</shortdescription>
+    </image>
 </p>
 <p>
     Then, we can make as many groups of four ones (longs) as possible (we'll regroup those later):
@@ -959,10 +997,19 @@
     There! We've made six longs, and we have 1 one left over. Now we have more than four longs so let's regroup four of them into one sixteen (square):
 </p>
 <p>
-    INSERT PIC HERE
+    <image source="WholeNumbers/Example 4.2 - 2.svg">
+        <shortdescription>Regrouping 25 ones into 6 longs and 1 one in base four</shortdescription>
+    </image>
 </p>
 <p>
     Now, we have 1 square, 2 longs, and 1 one. So we can write this number as <m>121_{four}</m>.
+
+
+</p>
+<p>
+    <image source="WholeNumbers/Example 4.2 - 3.svg">
+        <shortdescription>Regrouping 6 longs and 1 one as 1 square 2 longs and 1 one in base four</shortdescription>
+    </image>
 </p>
 </example> 
 <p>
@@ -971,13 +1018,20 @@
     <example>
         <p>Let's write the number 77 in base five. First, we make as many groups of five as we can:</p>
         <p>
-            INSERT PIC HERE
+            <image source="WholeNumbers/Example 4.3 - 1.svg">
+                <shortdescription>Regrouping 77 ones into longs in base five</shortdescription>
+            </image>
         </p>
         <p>
             We have divided the 77 ones into 15 groups of five (longs) with 2 remaining. 
         </p>
         <p>
             Now we group our 15 longss into groups of five, giving us groups of twenty-five, or squares:
+        </p>
+        <p>
+            <image source="WholeNumbers/Example 4.3 - 2.svg">
+                <shortdescription>Regrouping longs as squares in base five</shortdescription>
+            </image>
         </p>
         <p>
             Now we have 3 squares, and 2 ones. Can we write this as <m>32_{five}</m>? No! Be careful here. We are missing a place; we have no fives, so we need to indicate that with the digit 0: so we should write <m>302_{five}</m>. Note that <m>32_{five}</m> is 3 fives and 2 ones, which is 17. This is why that 0 digit is important!
@@ -1012,7 +1066,12 @@
         Let's view the previous example in terms of division:
     </p>
     <p>
-        INSERT PIC OF DIVISION AND BLOCKS HERE
+        <image source="WholeNumbers/Section 4.1 - 5.svg">
+            <shortdescription>Long division of 77 by 5 and relation to base five blocks</shortdescription>
+        </image>
+        <image source="WholeNumbers/Section 4.1 - 6.svg">
+            <shortdescription>Long division of 15 by 5 and relation to base five blocks</shortdescription>
+        </image>
     </p>
    <exercise>
       <p> Convert the following numbers from base ten to the indicated base:</p>
@@ -1056,7 +1115,12 @@
               <me>
                   2 \times 6^3 + 5 \times 6^2 + 1 \times 6 + 4 \times 1 = 622
               </me>
-              INSERT PICTURE HERE
+              <image source="WholeNumbers/Section 4.1 - 7.svg">
+                <shortdescription>Converting cubes and squares to ones in base six </shortdescription>
+            </image>
+            <image source="WholeNumbers/Section 4.1 - 8.svg">
+                <shortdescription>Converting our base six number to base ten</shortdescription>
+            </image>
           </p>
       </example>
       <p>
@@ -1069,7 +1133,7 @@
           <me>
               = 128 + 0 + 0 + 16 + 0+ 4 + 0 + 1 = 149
           </me>
-          INSERT PICTURE HERE
+          
           </p>
       </example>
       <p>
@@ -1082,13 +1146,11 @@
               </li>
               <li>
                   <p>
-                      Sum these together.
+                      Sum these together in usual base ten arithmetic.
                   </p>
               </li>
           </ol>
-          <p>
-              INCLUDE PIC HERE
-          </p>
+          
       </p>
       </subsection>
       <subsection xml:id="subsec-BaseTwelve">
@@ -1100,7 +1162,9 @@
              To get a feel for base twelve, let's count in base twelve, starting at one, and going to fifteen. 
           </p>
           <p>
-              INSERT PIC HERE
+            <image source="WholeNumbers/Section 4.4 - 1.svg">
+                <shortdescription>Counting to fifteen in base twelve blocks</shortdescription>
+            </image>
           </p>
           <p>
               It might take a while to wrap your head around not regrouping when you have ten things, but in base twelve we do not.
@@ -1121,7 +1185,9 @@
                   
               </p>
               <p>
-                  INCLUDE PIC HERE OF BASE TEN AND TWELVE BLOCKS
+                <image source="WholeNumbers/Example 4.7.svg">
+                    <shortdescription>Long division of 77 by 5 and relation to base five blocks</shortdescription>
+                </image>
               </p>
           </example>
           <example>
