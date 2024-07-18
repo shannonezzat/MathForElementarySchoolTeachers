@@ -1202,9 +1202,7 @@
                   = 1 \times 20736 + 3 \times 1728 + 10 \times 144 + 0 \times 12 + 9 \times 1 = 27369
               </me>
               </p>
-              <p>
-                  INCLUDE PIC HERE OF BASE TEN AND TWELVE BLOCKS
-              </p>
+              
               
               
           </example>
@@ -1235,10 +1233,19 @@
     <subsection xml:id="subsec-Addition">
         <title>Addition</title>
         <p>
-            Addition is an operation that we usually have an intuitive grasp of. There are two common ways of viewing addtion (called addition models); the "set model," where we combine two sets (with non-overlapping elements) into one set, and the "number line model", where we start at one number on the umber line, and add additional spaces according to the number we're adding to the first one. 
+            Addition is an operation that we usually have an intuitive grasp of. There are two common ways of viewing addtion (called addition models); the "set model," where we combine two sets (with no elements in common; that is, and empty intersection) into one set, and the "number line model", where we start at one number on the umber line, and add additional spaces according to the number we're adding to the first one. 
         </p>
         <p>
-            INSERT PIC OF 7+4=11 in both models.
+            Here is the set model:
+            <image source="WholeNumbers/7+4Set.svg">
+                <shortdescription>Set Model for 7+4</shortdescription>
+            </image>
+        </p>
+        <p>
+            Here is the number line model:
+            <image source="WholeNumbers/7+4Line.svg">
+                <shortdescription>Number Line Model for 7+4</shortdescription>
+            </image>
         </p>
         <p>
             As addition is quite intuitive, we'll take the ability to add numbers as a given (in math we call this an <term>axiom</term>). 
@@ -1252,11 +1259,14 @@
             </statement>
         </definition>
         <p>
-            Be careful when adding numbers representing objects; if you have different objects you cannot simply add the two numbers. 
+            Be careful when adding numbers representing objects or units; if you have different objects or units you cannot simply add the two numbers. 
         </p>
         <example>
             <p>
-                Of course 3 apples + 4 apples = 7 apples, but if we are adding different objects we cannot add the numbers representing them; if we have 3 apples and 4 oranges, we cannot say we have 7 since we're treating apples and oranges as different objects. EXPAND ON THIS IDEA MORE
+                Of course 3 apples + 4 apples = 7 apples, but if we are adding different objects we cannot add the numbers representing them; if we have 3 apples and 4 oranges, we cannot say we have 7 since we're treating apples and oranges as different objects. 
+           </p>
+           <p>
+            However, if we wanted to add up the amount of pieces of fruit we had without making a distinction between apples and oranges, we would have 7 pieces of fruit. In short, in real world applications, your choice of units matters.
            </p>
         </example>
         <assemblage xml:id="assemblage-SetAddition">
@@ -1277,12 +1287,12 @@
             <ol>
             <li>
                 <p>
-                    Draw some sort of diagram showing that 7 is greater than 4.
+                    Draw some sort of diagram showing that 11 is greater than 7.
                 </p>
             </li>
                 <li>
                     <p>
-                        Using only addition and other whole numbers, try to explain why 7 is greater than 4. Referring to the diagram you made above may help.
+                        Using only addition and other whole numbers, try to explain why 11 is greater than 7. Referring to the diagram you made above may help.
                     </p>
                 </li>
                 <li>
@@ -1292,37 +1302,35 @@
                 </li>
                 <li>
                     <p>
-                        Can we generalize this? If <m>a,b \in  \mathbb{N}_0</m>, how do we know if <m>a > b</m>? Try and write this as a conditional statement: "If <m>a > b</m> then ..."
+                        Can we generalize this? If <m>a,b \in  \mathbb{N}_0</m>, how do we know if <m>a &gt; b</m>? Try and write this as a conditional statement: "If <m>a &gt; b</m> then ..."
                     </p>
                 </li>
             </ol>
             <solution>
                 <p>
-                    You probably drew a diagram that shows either the set model of addtion or the number line model: something like the following:
+                    You probably drew a diagram that shows either the set model of addtion or the number line model, maybe something like the following if <m>a=7</m>:
                 </p>
                 <p>
-                    INSERT DIAGRAM HERE
+                    <image source="WholeNumbers/GreaterThanLine.svg">
+                        <shortdescription>Greater than Seven on Number Line</shortdescription>
+                    </image>
                 </p>
             </solution>
             <solution>
                 <p>
-                    The key to this is realizing I can add a (non-zero) counting number to 4 to get 7. In our case it is 3. So we can say that <m>7 > 4</m> since we found the number 3 such that <m>7=4+3</m>.
+                    The key to this is realizing I can add a (non-zero) counting number to 7 to get 11. In our case it is 4. So we can say that <m>7 &gt; 4</m> since we found the number 4 such that <m>11=7+4</m>.
                 </p>
             </solution>
             <solution>
                 <p>
-                    We can apply the exact same logic to this problem; the only thing different are the numbers! So we can say <m>15 > 3</m> since there is a number (12) where <m>15 = 3 + 12</m>. You could draw the following diagrams too:
-                </p>
-                <p>
-                    INSERT DIAGRAMS HERE
-                </p>
+                    We can apply the exact same logic to this problem; the only thing different are the numbers! So we can say <m>15 &gt; 3</m> since there is a number (12) where <m>15 = 3 + 12</m>. </p>
             </solution>
             <solution>
                 <p>
                     The key thing to realize is that all that matters is the *existence* of a number, say <m>c</m>, such that <m>a=b+c</m>. Thus we can write this as a conditional statement:
                 </p>
                 <p>
-                    If <m>a > b</m> then there is a <m>c \ in \mathbb{N}</m> such that <m>a=b+c</m>.
+                    If <m>a &gt; b</m> then there is a <m>c \ in \mathbb{N}</m> such that <m>a=b+c</m>.
                 </p>
             </solution>
                 
@@ -1349,11 +1357,7 @@
                         </li>
                     </ol>
                 </p>
-                <solution>
-                    <p>
-                        SOLUTION HERE!!
-                    </p>
-                </solution>
+                
             </exercise>
             <p>
                 Now that we have the idea of comparing numbers, we can develop a definiton of subtraction of whole numbers. Before looking at the definition, see if you can take the "greater than or equal to" definition and modify it to a definition for subtraction.
@@ -1370,10 +1374,12 @@
             </p>
             <example>
                 <p>
-                    Let's let <m>a=7</m> and <m>b=2</m>. Since <m>7>2</m> we can talk about <m>7-2</m> using our defintion. We know <m>7-2=5</m> since <m>5</m> is the unique number such that <m>7=2+5</m>. So in the definiton above, we have that <m>c=5</m> We can view this subtraction via the following diagram.
+                    Let's let <m>a=7</m> and <m>b=2</m>. Since <m>7 &gt; 2</m> we can talk about <m>7-2</m> using our defintion. We know <m>7-2=5</m> since <m>5</m> is the unique number such that <m>7=2+5</m>. So in the definiton above, we have that <m>c=5</m> We can view this subtraction via the following diagram.
                 </p>
                 <p>
-                    INSERT PIC OF NUMBER LINE MODEL
+                    <image source="WholeNumbers/7-2Line.svg">
+                        <shortdescription>Seven subtract two on a number line</shortdescription>
+                    </image>
                 </p>
                 <p>
                     It's important to note that we cannot talk about the problem <m>2-7</m> using our definition above, since <m>2 \not\geq 7</m>. We will have to modify our definition later, once we introduce negative numbers.
@@ -1399,19 +1405,24 @@
                 </p>
             </statement>
             <p>
-                We can view this repeated addition in the following diagram.
+                We can view this repeated addition. Consider the example <m>4 \times 3</m> in the following diagram.
             </p> 
             <p>
-                INSERT DIAGRAM OF <m>a \times b</m> USING A NUMBER LINE ADDITION MODEL
+                <image source="WholeNumbers/4x3Line.svg">
+                    <shortdescription>A number line model of 4 times 3</shortdescription>
+                </image>
             </p>
 
         </definition>
 
         <p>
-            Another way of viewing the multiplication <m>a \times b</m> is as an area or array. Really, this idea is very similar to the number line model, except each group of <m>b</m> is directily below the first group. Later, we will see that this model is an excellent one for thinking about multiplication of fractions and decimals too.
+            Another way of viewing the multiplication <m>a \times b</m> is as an area or array. Really, this idea is very similar to the number line model, except each group of <m>b</m> is directily to the right of the first group. Later, we will see that this model is an excellent one for thinking about multiplication of fractions and decimals too. 
         </p>
         <p>
-            INSERT PICTURE OF <m>a \times b</m> using an area model.
+            Again, let's model <m>4 \times 3</m>:
+            <image source="WholeNumbers/4x3Area.svg">
+                <shortdescription>Area model for 4 times 3</shortdescription>
+            </image>
         </p>
         </introduction>
        
@@ -1466,7 +1477,9 @@
                
            </p>
            <p>
-               INCLUDE DIAGRAM OF REPEATED SUBTRACTION
+               <image source="WholeNumbers/21div5Line.svg">
+                <shortdescription>Number line model of 21 divided by 5</shortdescription>
+               </image>
            </p>
        </example>
 

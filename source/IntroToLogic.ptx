@@ -349,7 +349,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     </solution>
     <solution>
         <p>
-            You may have a slighly different wording, but one choice would be:
+            You may have a slightly different wording, but one choice would be:
             <ol>
                 <li>
                     <p>
@@ -712,7 +712,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     </introduction>
 
     <exercise>
-       <p> Your professor tells you "if you get 100 percent on the next midterm then I will give you ten dollars". In which of the following four situations is the professor lying to you (remember, we say a statement is false if it is indeed a lie): </p>
+       <p> Your professor tells you "if you get 100 percent on the next midterm then I will give you a dollar". In which of the following four situations is the professor lying to you (remember, we say a statement is false if it is indeed a lie): </p>
     
         <p>
             <ol>
@@ -764,7 +764,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     
 
 <p>
-    In math, we're more concerned with if-then statements where both the if-part and then-part are open sentences with variables. For example "if <m>n</m> is an odd integer then <m>n^2</m> is also odd." In these cases, there's an assumed universal quantifier before these: "for all integers <m>n</m> is <m>n</m> is odd then <m>n^2</m> is odd." We don't usually write the quantifier, but it's there in the background. Since it's a universially quantified statement, we want it to be true for all inputs into our variables. 
+    In math, we're more concerned with if-then statements where both the if-part and then-part are open sentences with variables. For example "if <m>n</m> is an odd integer then <m>n^2</m> is also odd." In these cases, there's an assumed universal quantifier before these: "for all integers <m>n</m> if <m>n</m> is odd then <m>n^2</m> is odd." We don't usually write the quantifier, but it's there in the background. Since it's a universially quantified statement, we want it to be true for all inputs into our variables. 
 </p>
     
 <p>
@@ -974,7 +974,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
 <subsection xml:id="subsec-WhyProofsAreImportant">
     <title>Why Proofs Are Important</title>
     <p>
-        A good question that you have probably thought about is "why do we even need to prove results like in the previous secion?" and "If I show a few examples is that emough to prove a result?" Let's explore these ideas:
+        A good question that you have probably thought about is "why do we even need to prove results like in the previous section?" and "If I show a few examples is that emough to prove a result?" Let's explore these ideas:
     </p>
 
 
@@ -1056,7 +1056,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     </p>
     <solution>
         <p>
-            As of 2022, the counterexamples are Fredericton (Moncton and Saint John are larger), Quebec City (Montreal [among others] is larger), Regina (Saskatoon is larger), Edmonton (Calgary is larger), and British Columbia (Vancouver [amoung others] is larger).
+            As of 2022, the counterexamples are Fredericton (Moncton and Saint John are larger), Quebec City (Montreal [among others] is larger), Regina (Saskatoon is larger), Edmonton (Calgary is larger), and British Columbia (Vancouver [among others] is larger).
         </p>
     </solution>
     <solution>
@@ -1128,6 +1128,11 @@ When we talk about mathematical ideas, we want to express how many objects they 
     <p>
         Each of the following cards have a letter on one side and a number on the other. Here is a rule: “if a card has a D on one side, then it has a 3 on the other”. Your task is to
 select all those cards, but only those cards, which you would have to turn over in order to find out whether the rule is true or false. Which cards would you select?  Try your best to explain your reasoning.
+<image source="Cards.svg">
+    <shortdescription>Wason Selection Task Cards</shortdescription>
+</image>
+
+
     </p>
     <solution>
         <p>
@@ -1161,7 +1166,7 @@ select all those cards, but only those cards, which you would have to turn over 
     <subsection xml:id="subsec-CondExist">
         <title>The Relationship Between Conditional and Existential Statements</title>
         <p>
-            If you think about it, conditional statements with a variable are actually universally quantified statements! There is an implied quantifier hidden in the conditional statement itself. For example, the conditional statement (with the domain of all animals )"if <m>c</m>" is a cat then <m>c</m> is a mammal" is interpreted to mean "for all animals, if <m>c</m>" is a cat then <m>c</m> is a mammal".
+            If you think about it, conditional statements with a variable are actually universally quantified statements! There is an implied quantifier hidden in the conditional statement itself. For example, the conditional statement (with the domain of all animals )"if <m>c</m> is a cat then <m>c</m> is a mammal" is interpreted to mean "for all animals, if <m>c</m> is a cat then <m>c</m> is a mammal".
         </p>
         <p>
             We can view this as logically equivalent to the statement "all cats are mammals" (again with the domain of all animals), and we can see the link from the Venn diagram of the statement to all true possibilities for the conditional statement:
@@ -1376,7 +1381,7 @@ select all those cards, but only those cards, which you would have to turn over 
             </ol>
             <solution>
                 <p>
-                    Original: if T is a polygon then T has three sides (T)
+                    Original: If T is a polygon with three sides, then T is a triangle. (T)
                 </p>
                 <p>
                     Converse: If T is a triangle then it is a polygon with three sides (T)
@@ -1453,7 +1458,7 @@ select all those cards, but only those cards, which you would have to turn over 
             </image>
         </p>
         <p>
-            Here you can see that the biconditional statement is true exacltly when its truth values match. So it can neven be the case that one of P or Q is true and the other false. This idea will inform how we go about proving biconditional statements.
+            Here you can see that the biconditional statement is true exactly when its truth values match. So it can never be the case that one of P or Q is true and the other false. This idea will inform how we go about proving biconditional statements.
         </p>
         <exercise>
             <p>
@@ -1483,7 +1488,7 @@ select all those cards, but only those cards, which you would have to turn over 
             </solution>
         </exercise>
         <p>
-            When we want to prove the biconditional statement "P if and only if Q", we do it in two proofs: first, we prove "if P then Q"; second, we prove "if Q then P". Note that sometimes it's easier to use a logically equivalent form to prove a results (e.g. you can prove the inverse instead of the converse since they are logically equaivalent).
+            When we want to prove the biconditional statement "P if and only if Q", we do it in two proofs: first, we prove "if P then Q"; second, we prove "if Q then P". Note that sometimes it's easier to use a logically equivalent form to prove a results (e.g. you can prove the inverse instead of the converse since they are logically equivalent).
         </p>
         <example>
             Prove " a whole number <m>n</m> is even if and only if <m>n^2</m> is even."
@@ -1570,14 +1575,14 @@ select all those cards, but only those cards, which you would have to turn over 
             </li>
             <li>
                <p>
-                   Decribe the elements using mathematical notation; e.g. <m>\{ \text{whole numbers} n \ | \ 1 \leq n \leq 5 \}</m>
+                   Decribe the elements using mathematical notation; e.g. <m>\{ \text{whole numbers } n \ | \ 1 \leq n \leq 5 \}</m>
                </p>
            </li>
        </ol>
        We call the final method <term>set builder notation</term> and read the " <m>|</m> " symbol as the phrase "such that". So, in words, we would read this set builder notation as "whole numbers <m>n</m> such that <m>n</m> is between 1 and 5, inclusive", or some other phrase with an equivalent meaning (for example, greater than or equal to 1 and less than or equal to 5).
    </p>
 
-   \<exercise>
+   <exercise>
        List all of the elements of these sets, which are initially given in a text description or in set builder notation:
        \<ol>
            <li>
@@ -1587,7 +1592,7 @@ select all those cards, but only those cards, which you would have to turn over 
            </li>
            <li>
                <p>
-                   <m> A_2 = \{ \text{whole numbers} n \ | \ 10 \leq  n(n+1) \leq 25 \} </m>
+                   <m> A_2 = \{ \text{whole numbers } n \ | \ 10 \leq  n(n+1) \leq 25 \} </m>
                </p>
            </li>
            <li>
@@ -1700,7 +1705,7 @@ select all those cards, but only those cards, which you would have to turn over 
        Another concept that is important to us is the number of elements in a set A, which we call the <term>cardinality</term> of A. We write this <m>|A|</m>.
    </p>
    <example>
-       Let's let A,B,C, and D be the sets above. Also let <m>E = \{ \text{all even ounting numbers} \}.</m>. Then <m>|A| = 7,  \ |B| = 4, \ |C|= 4, \ |D| = 0, \ |E| = \infty</m>.
+       Let's let A,B,C, and D be the sets above. Also let <m>E = \{ \text{all even counting numbers} \}.</m>. Then <m>|A| = 7,  \ |B| = 4, \ |C|= 4, \ |D| = 0, \ |E| = \infty</m>.
    </example>
 
    <assemblage xml:id="assemblage-Sets">
@@ -1851,7 +1856,7 @@ select all those cards, but only those cards, which you would have to turn over 
        <definition xml:id="def-universe">
            <statement>
                <p>
-                   We call the set of all opssible objects we wish to consider the <term>universe</term>, and usually denote this set by the letter <m>U</m>.
+                   We call the set of all possible objects we wish to consider the <term>universe</term>, and usually denote this set by the letter <m>U</m>.
                </p>
            </statement>
        </definition>
@@ -1946,7 +1951,7 @@ select all those cards, but only those cards, which you would have to turn over 
                </ol>
                <solution>
                    <p>
-                       Since elements in an intersection need to satisfy *both* being a memebr of A and B, we have that <m>A \cap B = \{ \text{ obtuse triangles} \}</m>.
+                       Since elements in an intersection need to satisfy *both* being a member of A and B, we have that <m>A \cap B = \{ \text{ obtuse triangles} \}</m>.
 
                    </p>
                    <p> A possible example of an element in this set is a triangle with one angle of 100 degrees:
@@ -1961,7 +1966,7 @@ select all those cards, but only those cards, which you would have to turn over 
                </solution>
                <solution>
                    <p>
-                       Since elements in an intersection need to satisfy *either* being a memebr of A or B, we have that <m>A \cup C = \{ \text{ all polygons that are triangles or have at most 5 sides.} \}</m>. However, triangles are polygons of at most 5 sides (they have three), we have that <m>A \subseteq C</m> and thus we can express <m>A \cup C = \{ \text{ all polygons of at most 5 sides.} \}</m> and note <m>A \cup C = C</m>.
+                       Since elements in an intersection need to satisfy *either* being a member of A or B, we have that <m>A \cup C = \{ \text{ all polygons that are triangles or have at most 5 sides.} \}</m>. However, triangles are polygons of at most 5 sides (they have three), we have that <m>A \subseteq C</m> and thus we can express <m>A \cup C = \{ \text{ all polygons of at most 5 sides.} \}</m> and note <m>A \cup C = C</m>.
 
                    </p>
                    <p>
@@ -2000,7 +2005,7 @@ select all those cards, but only those cards, which you would have to turn over 
                </solution>
                  <solution>
                    <p>
-                       Since elements in the set difference need to satisfy being a memebr of C but not B, we have that <m>C - B = \{ \text{ polygons with at most 5 sides but without any obtuse angles } \}</m>. Again, in a future chapter we will show that <m>\sim B = C - B</m>
+                       Since elements in the set difference need to satisfy being a member of C but not B, we have that <m>C - B = \{ \text{ polygons with at most 5 sides but without any obtuse angles } \}</m>. Again, in a future chapter we will show that <m>\sim B = C - B</m>
 
                    </p>
                    <p>
@@ -2010,7 +2015,7 @@ select all those cards, but only those cards, which you would have to turn over 
                <solution>
                    
                    <p>
-                       Elements in the set difference need to satisfy being a memebr of A but not A. However there are, of course, *no* elements that are both a member and not a memeber of a set. Thus, we have that <m>A - A =\emptyset</m>. 
+                       Elements in the set difference need to satisfy being a member of A but not A. However there are, of course, *no* elements that are both a member and not a member of a set. Thus, we have that <m>A - A =\emptyset</m>. 
 
                    </p>
                    <p>
