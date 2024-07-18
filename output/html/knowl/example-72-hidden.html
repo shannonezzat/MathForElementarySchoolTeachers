@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-07-18T16:46:30-03:00       *-->
+<!--*       on 2024-07-18T20:42:50-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,14 +13,38 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="example example-like"><p>Let's subtract <span class="process-math">\(4052-2457\)</span> using the equal addition algorithm. As usual we line up our numbers so digits of the same place value are in the same column, but this time we will have just a little bit of space between the bottom number and our difference (for any borrowed 1's that will appear). And, as usual, we will include blocks for added pictoral understanding.</p>
+<body class="ignore-math"><article class="example example-like"><p>Let's multiply <span class="process-math">\(348 \times 97\text{.}\)</span> First, we write the numbers lined up by place value, but we are thinking of these numbers in expanded form: <span class="process-math">\((300 + 40 + 8) \times (90 + 7). \)</span> Pictorally, we can view this as breaking up a rectangle with side lengths <span class="process-math">\(348\)</span> and <span class="process-math">\(97\)</span> units into sub rectangles where the side lengths are the terms in each expanded form.</p>
+<p>INSERT PIC OF THIS</p>
+<p>Now, using distributivity, we calculate each partial product: since there are 3 terms in the first expanded form and 3 in the second, we will have <span class="process-math">\(3 \times 2 = 6\)</span> partial products to calculate. We can start anywhere we like, but usually one starts by multiplying the bottom ones place by every place in the top number. Then, working right to left, we multiply the tens place by every place in the top number.</p>
 <p>INSERT PIC HERE</p>
-<p>Starting with the ones place, we see that the digit <span class="process-math">\(2\)</span> in the top number is less than the digit <span class="process-math">\(7\)</span> in the bottom. So we "borrow" 10 ones, but unlike the standard subtraction algorithm we are "in debt" 1 ten to the bottom number. Thus, we have <span class="process-math">\((10+2)-7=12-7=5\)</span> ones in our difference. We mark this, and our additional debt of 1 ten, in our calculation:</p>
+<p>Algebraically, we can view this in the following way. Note that the order the terms will be first the "natual" order that one would do using distributivity, and then reordered (in fact reversed, as it's usual to perform the algorithm from right to left and bottom to top) to match the partial products algorithm:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+(300+ 40 + 8) \times (90+ 7) 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 300 \times 90 + 300 \times 7 + 40 \times 90 + 40 \times 7 + 8 \times 90 + 8 \times 7
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 7 \times 8 + 7 \times 40 + 7 \times 300 + 90 \times 8 + 90 \times 40 + 90 \times 300
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 56 + 280 + 2100 + 720 + 3600 + 27,000
+\end{equation*}
+</div>
+<p>Pictorally, we can view this as "sub-areas" of each rectangle:</p>
 <p>INSERT PIC HERE</p>
-<p>Now we move to the tens place. We see that the <span class="process-math">\(5\)</span> in the top number is less than the <span class="process-math">\(5+1\)</span> in the bottom number, so we "borrow" 10 tens from 1 hundred in the same way as the previous step to have <span class="process-math">\((10+5)-(5+1)=15-6=9\)</span> tens in our difference.  We mark this, and our additional debt of 1 hundred, in our calculation:</p>
-<p>INCLUDE PIC HERE</p>
-<p>Now we move to the hundreds place. We see that the <span class="process-math">\(0\)</span> in the top number is less than the <span class="process-math">\(4+1\)</span> in the bottom number, so we "borrow" 10 hundreds from 1 thousand in the same way as our previous two steps to have <span class="process-math">\((10+0)-(4+1)=10-5=5\)</span> hundreds in our difference. We mark this, and our additional debt of 1 thousand, in our calculation:</p>
-<p>INCLUDE PIC HERE</p>
-<p>Finally we move to the thousands place. We see that <span class="process-math">\(4\)</span> in the top number is greater than the <span class="process-math">\(2+1\)</span> in the bottom number, so we subtract without borrowing: <span class="process-math">\(4-(2+1)=4-3=1\)</span> and write this in our answer. As there are no more non-zero digits to the left (that is; no larger places than thousands in our numbers,) we are finished, and we have calculated <span class="process-math">\(4052-2457=1595.\)</span></p>
-<p>INSERT PIC OF THIS</p></article></body>
+<p>Finally, we sum the partial products together to get our final product. We'll do this using the standard addition algorithm. Pictorally, we are adding all sub-areas together, and algebraically we are simply adding:</p>
+<div class="displaymath process-math">
+\begin{equation*}
+= 56 + 280 + 2100 + 720 + 3600 + 27,000 = 33756
+\end{equation*}
+</div>
+<p>INSERT PIC HERE</p></article></body>
 </html>

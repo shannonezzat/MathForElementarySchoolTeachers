@@ -1495,16 +1495,20 @@
            <p>Note just like us defining subtraction in terms of something we already knew, we defined divison in terms of multiplication and addition. So we're on solid footing here; if we ever forget what division means, we just look up this definition which is in terms of multiplication and addition, which, if we forget, we can look up the definition of those too. This seems like it's overkill for such simple concepts (and it is in a way) but this is how mathematicians think about concepts so it's good practice to do this for easy and intuitive ideas like arithmetic. 
        </p>
        <p>
-           We can also view the division <m>a \div b</m> as the number of groups of size <m>b</m> you can make out of <m>a</m> objects. This is called the <term>measurement model of division.</term> Let's look at <m>43 \div 4</m>.
+           We can also view the division <m>a \div b</m> as the number of groups with <m>b</m> elements you can make out of <m>a</m> objects. This is called the <term>measurement model of division.</term> Let's look at <m>21 \div 5</m>.
        </p>
        <p>
-           INSERT PIC OF DIVISION BY GROUPING
+           <image source="WholeNumbers/21div5Groups.svg">
+            <shortdescription>Dividing 21 into groups of size 5</shortdescription>
+           </image>
        </p>
        <p>
-           The division <m>a \div b</m> can be viewed in another way as well; we can ask if we wish to partition <m>a</m> objects into <m>b</m> groups, how many objects are in each group? This is called the <term>partitive model of division</term> (the word "partitive" being related to the idea of a partition). Again, we look at <m>43 \div 4</m> using this model
+           The division <m>a \div b</m> can be viewed in another way as well; we can ask if we wish to partition <m>a</m> objects into <m>b</m> groups, how many objects are in each group? This is called the <term>partitive model of division</term> (the word "partitive" being related to the idea of a partition). Again, we look at <m>21 \div 5</m> using this model
        </p>
 <p>
-           INSERT PIC OF DIVISION INTO GROUPS
+          <image source="WholeNumbers/21div5Grouping.svg">
+            <shortdescription>21 divided into 5 equal groups</shortdescription>
+          </image>
        </p>
        <exercise>
           <p> Which of the following is viewing division using the measurement model, and which is viewing division using the partitive model? </p>
@@ -1540,22 +1544,7 @@
            </p>
        </assemblage>
        </subsubsection>
-       <subsubsection xml:id="subsubsec-DivisionByZero">
-           <title>Division By Zero</title>
-           <p>
-               MOVE TO PROPERTIES OF ARITHMETIC SECTION Why did we have the condition that our divisor <m>b \neq 0</m>? That is, why can't we divide by <m>0</m>? Let's see if we can show why that's the case. 
-           </p>
-           <example>
-               <p>
-                   Let <m>a \in \mathbb{N}_0</m> and <m>b=0</m>, so <m>a</m> is some whole number. For now, let's assume that there is no condition on the size of the remainder <m>r</m>. If <m>a \div 0</m> does make sense, this means there is some unique quotient <m>q</m> and remainder <m>r</m> such that <m>a=q \times 0 + r</m>. Thus <m>a=r </m>, but <m>q</m> can be any number and this will still hold. Since we require that quotients are unique, this does not make sense.
-               </p>
-           </example>
-           <example>
-               <p>
-                   We need to be careful when doing arithmetic; if we divide by zero by mistake, we can make any expression equal any other expression. Let's view the following example to show this.
-               </p>
-           </example>
-       </subsubsection>
+       
 
     </subsection>
 </section>
@@ -1973,6 +1962,19 @@
         
 
     </example>
+    
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-DivisionByZero">
+        <title>Division By Zero</title>
+        <p>
+            Why did we have the condition that our divisor <m>b \neq 0</m>? That is, why can't we divide by <m>0</m>? Let's see if we can show why that's the case. 
+        </p>
+        <example>
+            <p>
+                Let <m>a \in \mathbb{N}_0</m> and <m>b=0</m>, so <m>a</m> is some whole number. For now, let's assume that there is no condition on the size of the remainder <m>r</m>. If <m>a \div 0</m> does make sense, this means there is some unique quotient <m>q</m> and remainder <m>r</m> such that <m>a=q \times 0 + r</m>. Thus <m>a=r </m>, but <m>q</m> can be any number and this will still hold. Since we require that quotients are unique, this does not make sense.
+            </p>
+        </example>
+        
     </subsubsection>
     
     
