@@ -1467,12 +1467,10 @@
        <example>
            <p>
                Let's say we wanted to do the division problem <m>21 \div 5.</m> We can view this as counting the number of times we can subtract 5 from 21 until we're unable to anymore (without going in to negative numbers). We know
-               <me>
-                   21-5=16
-                   16-5=11
-                   11-5=6
-                   6-5=1
-               </me>
+               <me> 21-5=16 </me>
+                 <me>16-5=11 </me>
+                  <me> 11-5=6 </me>
+                  <me> 6-5=1  </me>
                and since 1 is less than 5 we cannot subtract 5 from 1 using our definition of subtraction. We were able to subtract 5 four times from 21, so we say that <m>21 \div 5 = 4 \ R \ 1</m> since there is 1 remaning at the end of this repeated subtraction. Let's look at this in general:
                
            </p>
@@ -1620,7 +1618,12 @@
                 In <m>\mathbb{N}</m>, addition and multiplication are commutative. For example, <m>4+11 = 11+4</m> and <m>3 \times 7 = 7 \times 3</m>. We can view these pictorally:
             </p>
             <p>
-                INSERT PIC OF THE ABOVE
+                <image source="WholeNumbers/CommutativeLine.svg">
+                    <shortdescription>4+11 and 11+4 on a number line</shortdescription>
+                </image>
+                <image source="WholeNumbers/CommutativeArea.svg">
+                    <shortdescription>3x7 and 7x3 using area model</shortdescription>
+                </image>
             </p>
             <p>
                 Let's move to the set  <m>\mathbb{Z}</m> so that subtraction is closed and our subtractions make sense. Subtraction is *not* a commutative operation since, as a counterexample, <m>3-2=1</m> but <m>2-3=(-1)</m>. Similarly, division in the set <m>\mathbb{Q}</m> is not commutative.
@@ -1635,10 +1638,15 @@
         </statement>
         <example>
             <p>
-                In <m>\mathbb{N}</m>, addition and multiplication are associative. For example, <m>(4 \times 3) \times 2 = 4 \times (3 \times 2)</m> and <m>(3 + 7)=4 = 3+ (7 +4)</m>. We can view these pictorally:
+                In <m>\mathbb{N}</m>, addition and multiplication are associative. For example, <m>(3 \times 2) \times 4 = 3 \times (2 \times 4)</m> and <m>(3 + 7)=4 = 3+ (7 +4)</m>. We can view these pictorally:
             </p>
             <p>
-                INSERT PIC OF THE ABOVE
+                <image source="WholeNumbers/AssociativeLine.svg">
+                    <shortdescription>3+7+4 on number line showing associativity</shortdescription>
+                </image>
+                <image source="WholeNumbers/AssociativePrism.svg">
+                    <shortdescription>3x2x4 prism showing associativity</shortdescription>
+                </image>
             </p>
             <p>
                 Now in <m>\mathbb{N},</m> subtraction is *not* associative. As a counterexample, we have <m>(6-4)-1 = 2-1 =1</m> but <m>6-(4-1) = 6-3 = 3</m>.
@@ -1729,16 +1737,20 @@
                 </statement>
                 <example>
                     <p>
-                       The easiest way to view why distributivity holds is via a picture using the array model of multiplication. Consider a chocolate bar with <m>6</m> horizontal blocks and <m>8</m> vertical blocks. In total, the chocolate bar has <m>6 \times 8 = 48</m> blocks: 
+                       The easiest way to view why distributivity holds is via a picture using the array model of multiplication. Consider a chocolate bar that measures <m>6</m> blocks vertically and <m>8</m> blocks horizontally. In total, the chocolate bar has <m>6 \times 8 = 48</m> blocks: 
                     </p>
                     <p>
-                        INSERT PIC HERE
+                        <image source="WholeNumbers/6x8Rectangle">
+                            <shortdescription>A 6x8 rectangle</shortdescription>
+                        </image>
                     </p>
                     <p>
-                       Now, let's "break" this chocolate bar between the 3rd and 4th vertical block thus giving us 3 blocks in the first section and 5 in the second (of course, we still have the same amount of chocolate). So we can view this now as <m>6 \times (3+5)=48</m>. But we could calculate the number of blocks separately in each of the two sections, and then add them together. Obviously we would still have the same amount of chocolate. So there are <m>6 \times 3+ 6 \times 5 = 18 + 30 = 48</m> blocks of chocolate.
+                       Now, let's "break" this chocolate bar between the 3rd and 4th horizontal block thus giving us 3 blocks horizontally in the first section and 5 in the second (of course, we still have the same amount of chocolate). So we can view this now as <m>6 \times (3+5)=48</m>. But we could calculate the number of blocks separately in each of the two sections, and then add them together. Obviously we would still have the same amount of chocolate. So there are <m>6 \times 3+ 6 \times 5 = 18 + 30 = 48</m> blocks of chocolate.
                     </p>
                     <p>
-                        INSERT PIC HERE
+                        <image source="WholeNumbers/6x(3+5)Rectangle.svg">
+                            <shortdescription>Showing distributivity by braking a 6x8 rectangle into a 6x3 and a 6x5 rectangle.</shortdescription>
+                        </image>
                     </p>
                     <p>
                         This idea represents the idea behind distributivity. Note that distrivutivity is *very* important when we start discussing methods for multiplying in a later section.
@@ -1750,19 +1762,23 @@
             </p>
             <example>
                 <p>
-                    Let's look at <m>8 \times 9</m>. We can break <m>8</m> into <m>6+2</m>, and <m>9</m> into <m>5+4</m>. Thus we can view <m>8 \times 9</m> as <m>(6+2) \times (5+4)</m>. Viewed as a chocolate bar as in the previous example:
+                    Let's look at <m>6 \times 8</m> again. We can break <m>8</m> into <m>2+4</m>, and <m>8</m> into <m>3+5</m>. Thus we can view <m>6 \times 8</m> as <m>(2+4) \times (3+5)</m>. Viewed as a chocolate bar as in the previous example:
                 </p>
                 <p>
-                    INSERT PIC HERE SHOWING
+                    <image source="WholeNumbers/(2+4)x(3+5)Rectangle.svg">
+                        <shortdescription>Distributivity of (2+4)x(3+5)</shortdescription>
+                    </image>
                 </p>
                 <p>
-                    We can now multiply the constituent parts and the add them together to obtain the final answer. Note that we multiply each number in the first bracket by each number in the second. So <me>8 \times 9 = (6+2) \times (5+4)</me> <me> = 6 \times 5 + 6 \times 4 + 2 \times 5 + 2 \times 4</me> <me> = 30 + 24 + 10 + 8 = 72 </me>.
+                    We can now multiply the constituent parts and the add them together to obtain the final answer. Note that we multiply each number in the first bracket by each number in the second. So <me>6 \times 8 = (2+4) \times (3+5)</me> <me> = 2 \times 3 + 2 \times 5 + 4 \times 3 + 4 \times 5</me> <me> = 6+10+12+20 = 48 </me>.
                 </p>
             </example>
             <example>
                 There is nothing special about the numbers in the previous example. In fact, we can do this for any numbers. In fact, if <m>a,b,c,d </m> are numbers then <m>(a+b)(c+d) = ac + ad +bc +bd</m>. 
                 <p>
-                    INSERT PIC OF THE ABOVE
+                    <image source="WholeNumbers/(a+b)x(c+d)Rectangle.svg">
+                        <shortdescription>Distributivity of (a+b)x(c+d)</shortdescription>
+                    </image>
                 </p>
             </example>
             <example>
@@ -1791,9 +1807,7 @@
                     
                                 </p>   
 
-             <p>
-                 INSERT PIC OF ABOVE
-             </p>                   
+                               
                 
             </example>
 
