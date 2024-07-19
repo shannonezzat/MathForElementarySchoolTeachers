@@ -1839,7 +1839,12 @@
                    Consider the subtraction problem <m>11-4=7</m>. Intuitively, we are taking away <m>4</m> from <m>11</m> to leave <m>7</m>. However, there is no real difference between the ideas of "taking away" and "leaving". We're simply separating <m>11</m> into two groups; one of size <m>4</m> and one of size <m>7</m>.
                </p>
                <p>
-                   INSERT PIC HERE
+                   <image source="WholeNumbers/11-4Dots.svg">
+                    <shortdescription>11-4 dots</shortdescription>
+                   </image>
+                   <image source="WholeNumbers/11-7Dots.svg">
+                    <shortdescription>11-7 dots</shortdescription>
+                   </image>
                </p>
                <p>
                   So <m>4</m> and <m>7</m> are playing similar roles here. We can see this in the definition of addition: we know <me>11-4 = 7</me> since <m>7</m> is the number such that <m>11 = 4+7</m>. However, we can use the idea of commutativity to swap the <m>4</m> and <m>7</m>: <me> 11=7+4</me> and thus <m>4</m> can be viewed as the number, when added to <m>7</m>, to have a sum of <m>11</m>. This is the definition of the subtraction problem <me>
@@ -1864,11 +1869,18 @@
                </p>
 
                 <p>
-                    INSERT PIC OF DIVIDING 15 DOTS BY 5, AND BY 3 (vertical and horizontal groupings should do)
+                    Here is a picture of the measurement model of division on both related division problems. First <m>15 \div 5 = 3</m>:
+                    <image source="WholeNumbers/15div5Dots.svg">
+                        <shortdescription>15 divided by 5 in dots</shortdescription>
+                    </image>
+                    and now <m>15 \div 3 = 5</m>:
+                    <image source="WholeNumbers/15div3Dots.svg">
+                        <shortdescription>15 divided by 3 in dots</shortdescription>
+                    </image>
                 </p>
 
                 <p>
-                    Thus we have two related division problems: <m>15 \div 5 = 3</m> and <m>15 \iv 3 = 5</m>.
+                    Thus we have two related division problems: <m>15 \div 5 = 3</m> and <m>15 \div 3 = 5</m>.
                 </p>
                
            </example>
