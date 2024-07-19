@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-07-19T12:23:08-03:00       *-->
+<!--*       on 2024-07-19T13:23:20-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,25 +15,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Let's prove this for a six-digit number, but the proof can be easily extended to a number of any number of digits. Consider a six-digit number <span class="process-math">\(\underline{ABCDEF}\)</span> where <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(C\text{,}\)</span> <span class="process-math">\(D\text{,}\)</span> <span class="process-math">\(E\text{,}\)</span> and <span class="process-math">\(F\)</span> are its digits. We can express this number in its expanded form as:</p>
-<div class="displaymath process-math">
-\begin{equation*}
-\underline{ABCDEF} = A \times 100000 + B \times 10000 + C \times 1000 + D \times 100 + E \times 10 + F
-\end{equation*}
-</div>
-<p class="continuation">Using properties of powers of 10 and their relation to 11, we can rewrite this as:</p>
-<div class="displaymath process-math">
-\begin{equation*}
-\underline{ABCDEF} = A \times (10^5 + 1) - A + B \times (10^4 - 1) + B + C \times (10^3 + 1) - C + D \times (10^2 - 1) + D + E \times 10 + F
-\end{equation*}
-</div>
-<p class="continuation">Grouping the terms, we get:</p>
-<div class="displaymath process-math">
-\begin{equation*}
-\underline{ABCDEF} = A \times 10^5 + B \times 10^4 + C \times 10^3 + D \times 10^2 + E \times 10 + F - (A - B + C - D + E - F)
-\end{equation*}
-</div>
-<p class="continuation">The terms <span class="process-math">\(A \times 10^5\text{,}\)</span> <span class="process-math">\(B \times 10^4\text{,}\)</span> <span class="process-math">\(C \times 10^3\text{,}\)</span> <span class="process-math">\(D \times 10^2\text{,}\)</span> and <span class="process-math">\(E \times 10\)</span> are all divisible by 11 due to the properties of powers of 10. Therefore, the divisibility of the number <span class="process-math">\(\underline{ABCDEF}\)</span> by 11 depends solely on the alternating sum of its digits, <span class="process-math">\(A - B + C - D + E - F\text{.}\)</span></p>
+<p>Let's say you are interested in divisibility by some number <span class="process-math">\(k\text{,}\)</span> and <span class="process-math">\(k=a \times b\text{.}\)</span> This means that <span class="process-math">\(a \mid k\)</span> and <span class="process-math">\(b \mid k\text{.}\)</span> So if for some number <span class="process-math">\(n\)</span> we know <span class="process-math">\(k \mid n\text{,}\)</span> then by <a href="" class="xref" data-knowl="./knowl/thm-DivTrans.html" title="Theorem 6.1.4">Theorem 6.1.4</a> we know that <span class="process-math">\(a \mid n\)</span> and <span class="process-math">\(b \mid n\text{.}\)</span> So we can say if <span class="process-math">\(k \mid n\)</span> then <span class="process-math">\(a \mid n\)</span> and <span class="process-math">\(b \mid n\text{.}\)</span></p>
 <span class="incontext"><a href="divisibility-theorems-small-numbers.html#p-1582">in-context</a></span>
 </body>
 </html>
