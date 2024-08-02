@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-07-19T13:23:24-03:00       *-->
+<!--*       on 2024-08-01T21:32:24-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,18 +15,18 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>Let <span class="process-math">\(n\)</span> be the smallest number to have have two different prime factorizations, say <span class="process-math">\(n=p_1p_2\ldots p_s\)</span> and <span class="process-math">\(n=q_1q_2\ldots q_t\)</span> where the <span class="process-math">\(p\)</span>'s and <span class="process-math">\(q\)</span>'s are (not necessarily distinct) primes, and let's say that <span class="process-math">\(s \leq t\text{.}\)</span> We know that since <span class="process-math">\(p_1 \mid n\text{,}\)</span> <span class="process-math">\(p_1 \mid q_1q_2\ldots q_t\)</span> since <span class="process-math">\(n=q_1q_2\ldots q_t\)</span>By Euclid's Lemma, <a href="" class="xref" data-knowl="./knowl/lem-EuclidsLemma.html" title="Lemma 6.4.6: Euclid's Lemma">Lemma 6.4.6</a>, we know that <span class="process-math">\(p_1 \mid q_i\)</span> for one of the primes <span class="process-math">\(q_i\text{.}\)</span> But since <span class="process-math">\(q_i\)</span> is prime, its only factors are <span class="process-math">\(1\)</span> and <span class="process-math">\(q_i\text{.}\)</span> Since <span class="process-math">\(p_1 \neq 1\text{,}\)</span> since it is a prime as well, it must be that <span class="process-math">\(p_1=q_i\text{.}\)</span> Now let's divide both sides by this common prime, remembering that <span class="process-math">\(p_1=q_i\text{:}\)</span></p>
-<div class="displaymath process-math">
-\begin{equation*}
-(n)\div p_1 = (p_1p_2p_3 \ldots p_s) \div p_1 = (q_1 q_2 \ldots q_{i-1}q_{i}q_{i+1} \ldots q_t) \div p_1
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\rightarrow n\div p_1 = p_2p_3 \ldots p_s = q_1 q_2 \ldots q_{i-1}q_{i+1} \ldots q_t.
-\end{equation*}
-</div>
-<p class="continuation">Since <span class="process-math">\(p_1 &gt; 1\)</span> it's clear that <span class="process-math">\(n &gt; (n \div p_1)\text{.}\)</span> But the equation above is two different prime factorizations for <span class="process-math">\(n \div p_1\text{,}\)</span> so <span class="process-math">\(n\)</span> was not the smallest number with two different prime factorizations. So this is a contradiction, which means that our original statement is true.</p>
+<p>Consider <span class="process-math">\(n=144\text{.}\)</span> We know, checking via long division or using our divisibility rules, we obtain the following pairs of factors:</p>
+<ol class="decimal">
+<li><p>1 and 144</p></li>
+<li><p>2 and 72</p></li>
+<li><p>3 and 48</p></li>
+<li><p>4 and 36</p></li>
+<li><p>6 and 24</p></li>
+<li><p>8 and 18</p></li>
+<li><p>9 and 16</p></li>
+<li><p>12 and 12</p></li>
+</ol>
+<p class="continuation">Since we have reached <span class="process-math">\(\sqrt{144}\)</span> we know we can stop. We now count the unique factors (we don't want to count 12 twice) and see we have 15 factors.</p>
 <span class="incontext"><a href="sec-FactorsAndMultiples.html#p-1748">in-context</a></span>
 </body>
 </html>

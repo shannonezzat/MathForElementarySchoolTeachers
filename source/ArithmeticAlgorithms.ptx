@@ -19,7 +19,11 @@
         There are countless algorithms for solving arithmetic problems for whole numbers (which we can use to solve arithmetic problems in larger sets of numbers, like integers, rational numbers, or real numnbers). We will discuss a few of the most common algorithms that are used, discuss the pros and cons of each, and also discuss some non-algorithmic and ad-hoc methods that are widely used, especially when it comes to mental arithmetic. </p>
 
         <p>
-            Most, if not all, of the following algorithms use the fact that we write numbers in a place-value system to break the computation into easier parts that we can put together at the end.</p>
+            Most, if not all, of the following algorithms use the fact that we write numbers in a place-value system to break the computation into easier parts that we can put together at the end. It is incredibly important to have a solid understaning of this concept from  <xref ref="sec-NumberSystems"/> in order to understand the reasons why our algorithms work the way that they do.</p>
+
+            <p>
+                Additionally, our algorithms predominantly feature adding or multiplying each place value separately. If we instinctively know all sums and products of one-digit numbers by heart, we can quickly perform these computations without too much problem solving and thought. It is an excellent idea to work on being able to recall all single digit sums and products quickly.
+            </p>
     
         
         <p>
@@ -31,25 +35,24 @@
             <p>Also, studying multiple algorithms allows teachers the opportunity to understand arithmetic through many lenses, thus increasing their overall understanding of the operations themselves. It is relatively commonplace for curricula to suggest that students develop their own personal algorithms for arithmetic. Studying multiple algorithms gives a future teacher practice in evaluating and interpreting the algorithms that students are indeed discovering (and perhaps inventing) themselves.
         </p>
         <p>
+            Part of our study of these algorithms will involve being able to "picture" what is happening using blocks. Teachers could indeed use manipulatives so students can get a feel for the underpinnings of each algorithm that we will study. However, the author believes that students should not rely on the manipulatives to perform these algorithms. For many reasons, including speed and working with students towards the ideas of abstraction, being able to use the algorithms, while still being able to explain why they work as they do, is the best approach.  
+        </p>
+        <p>
             Note that we will also learn how to use these algorithms to do arithmetic in other bases, as discussined in INSERT SECTION REFERENCE. Even though it may be unlikely that you will need to teach students how to do arithmetic in other bases, this will allow us to turn off our "muscle memory" of doing arithmetic in base ten, as we are so comfortable with many of these algorithms that it is incredibly difficult to this muscle memory off to think deeply about the algorithmeic underpinnings. As an added bonus, we will get to experience, in a small way, the struggles that your future students will have when learning about performing arithmetic for the first time. 
         </p>
     </introduction>
     <section xml:id="sec-AdditionAlgorithms">
         <title>Addition Algorithms</title>
+        
         <subsection xml:id="subsec-TheStandardAdditionAlgorithm">
             <title>The Standard Addition Algorithm</title>
-            <p>
-                NOTE ON ADDITION "FACTS" OF SINGLE DIGIT SUMS
-            </p>
-            <p>
-                NOTE ON USING MANIPULATIVES/PICTURES AS "TRAINING WHEELS"
-            </p>
             
+                       
             <p>
                 The vast majority of students who learn arithmetic in North America lean to add using the following algorithm. As it's so common, it usually gets named the <term>standard addition algorithm</term>. In short, starting from the smallest place value to the largest (that is, from right to left) we add the place values of our numbers separately, and regroup (or "carry") any groups of the next largest place value (so the place value directly to the left) as we go. 
             </p>
             <p>
-                We can write this algorithmically (as a series of steps) as follows:
+                We can write this algorithmically (as a series of steps) as follows. Also note that these steps are written in language appropriate for university students, so teachers would have to adapt the wording appropriately for their audience of students:
             </p>
             <ol>
                 <li>
@@ -79,25 +82,37 @@
             </p>
 
             <p>
-                INSERT PIC OF THESE TWO NUMBERS AND THE STANDARD ALGORITHM TO THE SIDE
+                <image source="ArithmeticAlgorithms/447+629a.svg">
+                    <shortdescription>447 and 629 in blocks</shortdescription>
+                </image>
             </p>
             <p>
                 First we add the ones place. Note tha we have <m>7+9 = 16</m> ones. We can regroup ten (10) of those to make one of the next place value, that is, one ten. We write that regrouping as a 1 above, and we are still left with 6 ones, so we can write that down:
             </p>
             <p>
-                INSERT PIC OF GROUPING AND THE STEPS IN THE ALGORITHM. NOTE THAT THE CARRY IS THE REGROUPED ONES
+                <image source="ArithmeticAlgorithms/447+629b.svg">
+                    <shortdescription>447 and 629 in blocks adding ones</shortdescription>
+                </image>
             </p>
-           <p> We now move on to the next place; the tens. We have <m>4+2+1</m> tens (the additional 1 being the regrouping from the last step). So we have 7 tens. Note that as we're working in our usual base ten, we do not have enough tens to regroup, so we simply write that we have 7 tens. </p>
+           <p> We now move on to the next place; the tens. We have <m>4+2+1</m> tens (the additional 1 being the regrouping from the last step). So we have 7 tens. Note that as we're working in our usual base ten, we do not have enough tens to regroup, so we simply write that we have 7 tens. 
+            <image source="ArithmeticAlgorithms/447+629c.svg">
+                <shortdescription>447 and 629 in blocks adding tens</shortdescription>
+            </image>
+        
+        </p>
 
            <p>
-               Now let's move on to the next place; the hundreds. We have <m>4+6-10</m> hundreds. We can group all ten of those (with 0 left over after regrouping) to make one of the next place value, that is, one thousand. As this is the final place that our numbers contain, we don't need to mark a regrouping and simply write down that we have 1 thousand and 0 hundreds. 
+               Now let's move on to the next place; the hundreds. We have <m>4+6=10</m> hundreds. We can group all ten of those (with 0 left over after regrouping) to make one of the next place value, that is, one thousand. As this is the final place that our numbers contain, we don't need to mark a regrouping and simply write down that we have 1 thousand and 0 hundreds. 
            </p>
            <p>
-               INSERT PIC OF THIS SIMILAR TO LAST TWO
-           </p>
+            Thus we finally have that <m>447+629=1076</m>.
+        </p>
            <p>
-               Thus we finally have that <m>447+629=1076</m>.
+            <image source="ArithmeticAlgorithms/447+629d.svg">
+                <shortdescription>447 and 629 in blocks adding hundreds</shortdescription>
+            </image>
            </p>
+          
 
            <p>
                If we think about this carefully, the addition algorithm above relies on the properties of associativity and commutativity in addition to place value. We are using these propertie when we add each place value separately and regroup any "carries" with the place value to the left. Let's write out what the standard addition algorithm is doing in the example above in a little more detail. 
@@ -121,13 +136,13 @@
                = (400+600) +70 + 6 \text{ addition}
            </me>
            <me>
-               = (1200) + 70 +6 \text{ addition}
+               = (1000) + 70 +6 \text{ addition}
            </me>
            <me>
-               = 1000 + 200 + 70 + 6 \text{ expanded place value representation}
+               = 1000  + 70 + 6 \text{ expanded place value representation}
            </me>
            <me>
-                = 1270 \text{ addition}
+                = 1076 \text{ addition}
            </me>
 
            </example>
@@ -177,26 +192,34 @@
                </p>
 
                <p>
-                   INSERT BLOCK PIC OF NUMBERS
+                   <image source="ArithmeticAlgorithms/435+43a.svg">
+                    <shortdescription>435+43 base 7 in blocks</shortdescription>
+                   </image>
                </p>
 
                <p>
                    We start by adding the ones. We have <m>5_{seven}+3_{seven} = 11_{seven}</m> as we regroup seven of the eight ones to get 1 long (made up of seven ones) and 1 one. We write down the one remaining:
                </p>
                <p>
-                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+                <image source="ArithmeticAlgorithms/435+43b.svg">
+                    <shortdescription>435+43 base 7 in blocks adding ones</shortdescription>
+                   </image>
                </p>
                <p>
                    Now we move on to add the longs place. We have <m>3_{seven}+4_{seven}+1_{seven}=10_{seven}</m>. Thus we regroup seven longs to make one square, adn we have one long left over. We write this down in our working:
                </p>
                <p>
-                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+                <image source="ArithmeticAlgorithms/435+43c.svg">
+                    <shortdescription>435+43 base 7 in blocks adding longs</shortdescription>
+                   </image>
                </p>
               <p> Finally we add the squares place. We have <m>4_{seven}+1_{seven}=5_{seven}</m> squares, nothing that the bottom addend has no squares. Thus we write this down:  </p>
 
               
                   <p>
-                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+                    <image source="ArithmeticAlgorithms/435+43d.svg">
+                        <shortdescription>435+43 base 7 in blocks adding squares</shortdescription>
+                       </image>
                </p>
               <p>
                   Thus we have that <m>435_{seven}+43_{seven} = 511_{seven}</m> and we have finished.
@@ -209,25 +232,33 @@
                   Let's find the sum <m>6A3_{twelve}+90B_{twelve}</m>. First of all, it will be helpful to view these as blocks:
               </p>
               <p>
-                  INSERT BLOCK PIC OF NUMBERS
+                <image source="ArithmeticAlgorithms/6A3+90Ba.svg">
+                    <shortdescription>6A3+90B base 12 in blocks</shortdescription>
+                   </image>
               </p>
               <p>
                   Let's start with the ones place. We have <m>3_{twelve}+B_{twelve} = 12_{twelve} </m> ones (think three + eleven ones is fourteen ones), where we regrouped twelve ones to make 1 long (containing twelve ones) with 2 ones remaining. We "carry" our one long, and write down our 2 ones:
               </p>
               <p>
-                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+                <image source="ArithmeticAlgorithms/6A3+90Bb.svg">
+                    <shortdescription>6A3+90B base 12 in blocks adding ones</shortdescription>
+                   </image>
                </p>
                <p>
                    Now we add our longs place. We have <m>A_{twelve}+0_{twelve}+1_{twelve} = B_{twelve}</m> longs. Since eleven longs is not enough to regroup in base twelve, we simply write this down.
                </p>
                <p>
-                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+                <image source="ArithmeticAlgorithms/6A3+90Bc.svg">
+                    <shortdescription>6A3+90B base 12 in blocks adding longs</shortdescription>
+                   </image>
                </p>
                <p>
                    Now we add our squares place. We have <m>6_{twelve}+9_{twelve} = 13_{twelve}</m> squares, where twelve squares are regrouped to make one of the next place value (cubes) and we have 3 squares remaining. (Do this calculation on the side to make sure that you understand it). Since we are "out" of places in our numbers we simply write this down in our algorithm:
                </p>
                <p>
-                   INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE
+                <image source="ArithmeticAlgorithms/6A3+90Bd.svg">
+                    <shortdescription>6A3+90B base 12 in blocks adding squares</shortdescription>
+                   </image>
                </p>
                <p>
                    We have just calculated that <m>6A3_{twelve}+90B_{twelve} = 13B2_{twelve}</m> and we are finished.
@@ -294,14 +325,24 @@
 
         First we add our ones and find that we have <m>7+9=16</m> ones, noticing that we can regroup 10 ones into a long. 
         <p>
-            INSERT PIC OF CALCULATION HERE
+            <image source="ArithmeticAlgorithms/447+629bPartial.svg">
+                <shortdescription>447+629 in blocks adding ones using partial sums</shortdescription>
+            </image>
         </p>
         
-        Then, we add the tens and hundreds separately: <m>40+20=60</m> and then <m> 400+600=1000</m>. We add this to our calculation above to obtain the final answer:
+        Then, we add the tens and hundreds separately: <m>40+20=60</m> 
+        <image source="ArithmeticAlgorithms/447+629cPartial.svg">
+            <shortdescription>447+629 in blocks adding longs using partial sums</shortdescription>
+        </image>
+        
+        and then <m> 400+600=1000</m>.  We add this to our calculation above to obtain the final answer.
+        <image source="ArithmeticAlgorithms/447+629dPartial.svg">
+            <shortdescription>447+629 in blocks adding squares using partial sums</shortdescription>
+        </image>
 
-        <p>
-            INSERT PIC OF UPDATED CALCULATION
-        </p>
+       
+
+        
 </example>
         
 
@@ -318,7 +359,25 @@
         </p>
 
         <p>
-            I'm sure that most people reading this book did not mentally perform the standard algorithm for this calculation. In fact, I can imagine that many people noticed that 998 was 2 smaller than 1000, so they added 2 to 1000 and, to "balance" out, they subtracted 2 from 314. Then adding <m>1000+312</m> is very easy in your head. In fact, you can use this idea to add any two numbers. </p>
+            I'm sure that most people reading this book did not mentally perform the standard algorithm for this calculation. In fact, I can imagine that many people noticed that 998 was 2 smaller than 1000, so they added 2 to 1000 and, to "balance" out, they subtracted 2 from 314.
+            Step 1:
+            <image source="ArithmeticAlgorithms/998+314a.svg">
+                <shortdescription>998+314 Same Change</shortdescription>
+            </image>
+            Step 2:
+            <image source="ArithmeticAlgorithms/998+314b.svg">
+                <shortdescription>998+314 Same Change adding and subtracting</shortdescription>
+            </image>
+            Step 3:
+            <image source="ArithmeticAlgorithms/998+314c.svg">
+                <shortdescription>998+314 changed to 1000+312</shortdescription>
+            </image>
+            Then adding <m>1000+312</m> is very easy in your head.
+            <image source="ArithmeticAlgorithms/998+314d.svg">
+                <shortdescription>998+314 changed to 1000+312 final result</shortdescription>
+            </image>
+
+            In fact, you can use this idea to add any two numbers. </p>
 
         <p>
             In general, we are using the fact that if <m>a,b, \in \mathbb{N}_0</m> we know that <m>a+b = (a+c)+(b-c)</m> since we can use associativity and commutativity to rearrange the RHS to <m>a+b+(c-c) = a+b+0 = a+b</m>. In fact, since this holds for *any* whole numbers <m>a,b,c</m> we can indeed use this idea to judiciously choose the <m>c</m> in the calculation to make our computation easier. 
@@ -335,37 +394,42 @@
             
         
         <p>
-            Another common method is the lattice algorithm. This is very similar to the partial sums algorithm except regroupings are displayed slightly differently. In this algorithm, each place value has a box divided into two diagonally; one section for the place value itself, and one for the next larger place value for the regroupings. This regrouping section looks connected to the diagonal section of the box to the left which contains the same place value. Like partial sums, each place value is then added separately to obtain the final sum. Again, let's look at our usual example:
+            Another common method is the lattice algorithm. This is very similar to the partial sums algorithm except regroupings are displayed slightly differently. In this algorithm, each place value has a box divided into two diagonally; one section for the place value itself, and one for the next larger place value for the regroupings. This regrouping section looks connected to the diagonal section of the box to the left which contains the same place value. Like partial sums, each place value is then added separately to obtain the final sum. Again, let's look at our usual example. Note that we won't draw the blocks again for this example, as the regrouping is the same as for the other algorthims we've covered:
         </p>
         <example>
             <p>
                 Let's add <m>447+629</m>. We align our two numbers as usual, and then draw a box for each place value split into two sections by a diagonal line, and just for teaching purposes, we will indicate the place value of each section of each box.
             </p>
             <p>
-                INSERT PIC OF THIS
+                <image source="ArithmeticAlgorithms/447+629aLattice.svg">
+                    <shortdescription>The lattice algorithm setup</shortdescription>
+                </image>
             </p>
             <p>
                 We now add each place value separately. Starting with the ones place we add <m>7+9=16</m> ones, which we regroup into <m>1</m> ten and <m>6</m> ones. We write this in the leftmost box.
             </p>
             <p>
-                INSERT PIC OF THIS
+                <image source="ArithmeticAlgorithms/447+629bLattice.svg">
+                    <shortdescription>The lattice algorithm adding ones</shortdescription>
+                </image>
             </p>
             <p>
                 We continue with the other two places similarly. Note that we do not need to regroup any tens, so we leave the hundreds section of that box blank (or we can put a <m>0</m> there). Thus are final partial sum should look like this:
             </p>
             <p>
-                INSERT PIC OF THIS
+                <image source="ArithmeticAlgorithms/447+629cLattice.svg">
+                    <shortdescription>The lattice algorithm adding longs and squares</shortdescription>
+                </image>
             </p>
             <p>
-                Finally, we add the box sections diagonally to obtain our final sum of <m>1066</m>.
+                Finally, we add the box sections diagonally to obtain our final sum of <m>1076</m>.
+
+                <image source="ArithmeticAlgorithms/447+629dLattice.svg">
+                    <shortdescription>The lattice algorithm final answer</shortdescription>
+                </image>
             </p>
         </example>
-        <p>
-            STILL TO DO Estimation and Rounding (SECTION EARLIER??)
-        </p>
-        <p>
-            STILL TO DO (MAYBE) Algorithms for adding up lots of small numbers.
-        </p>
+       
         <exercise>
             <p>
                 Think about the following questions about the algorithms above:
@@ -484,7 +548,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     Now we move to the next place to the left; the tens place. Note that the top digit is now a 4, so it is smaller than the bottom digit 5. So again, we must borrow.
                 </p>
                 <p>
-                    We have a zero immediately to the left of the (what was a 5 but is now a) 4, so we move to the left one more time (to the thousands place) since there is a non-zer digit in the top number there. We borrow one thousand, thus decreasing the thousands digit by 1, and ungroup that into 9 hundreds and 10 tens. In our calculation, this means changing the zero in the hundreds place in the top number to a 9, and the 4 in the tens place to a 14. 
+                    We have a zero immediately to the left of the (what was a 5 but is now a) 4, so we move to the left one more time (to the thousands place) since there is a non-zero digit in the top number there. We borrow one thousand, thus decreasing the thousands digit by 1, and ungroup that into 9 hundreds and 10 tens. In our calculation, this means changing the zero in the hundreds place in the top number to a 9, and the 4 in the tens place to a 14. 
                 </p>
                 <p>
                     INSERT PIC OF THIS
