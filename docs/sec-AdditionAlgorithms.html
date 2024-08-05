@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-07-19T13:22:28-03:00       *-->
+<!--*       on 2024-08-05T15:19:37-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -159,10 +159,8 @@
 <section class="subsection" id="subsec-TheStandardAdditionAlgorithm"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.1.1</span> <span class="title">The Standard Addition Algorithm</span>
 </h3>
-<p id="p-832">NOTE ON ADDITION "FACTS" OF SINGLE DIGIT SUMS</p>
-<p id="p-833">NOTE ON USING MANIPULATIVES/PICTURES AS "TRAINING WHEELS"</p>
 <p id="p-834">The vast majority of students who learn arithmetic in North America lean to add using the following algorithm. As it's so common, it usually gets named the <dfn class="terminology">standard addition algorithm</dfn>. In short, starting from the smallest place value to the largest (that is, from right to left) we add the place values of our numbers separately, and regroup (or "carry") any groups of the next largest place value (so the place value directly to the left) as we go.</p>
-<p id="p-835">We can write this algorithmically (as a series of steps) as follows:</p>
+<p id="p-835">We can write this algorithmically (as a series of steps) as follows. Also note that these steps are written in language appropriate for university students, so teachers would have to adapt the wording appropriately for their audience of students:</p>
 <ol class="decimal">
 <li id="li-224"><p id="p-836">Write one number below the other so that each place value is in its own column. Now begin at the rightmost column.</p></li>
 <li id="li-225"><p id="p-837">Add the digits together (including any regroupings). If the sum is 10 or larger, write a 1 above the column to the left (this signifies that we regrouped 10 of the current place value to one of the place value to the left.)</p></li>
@@ -172,13 +170,13 @@
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-62"><article class="example example-like"><p id="p-839">Let's add <span class="process-math">\(447+629\)</span> slowly and carefully using this algorithm and visualize it using blocks.</p>
 <p id="p-840">First, let's view the two numbers in terms of blocks:</p>
-<p id="p-841">INSERT PIC OF THESE TWO NUMBERS AND THE STANDARD ALGORITHM TO THE SIDE</p>
+<p id="p-841"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629a.svg" class="contained"></div></p>
 <p id="p-842">First we add the ones place. Note tha we have <span class="process-math">\(7+9 = 16\)</span> ones. We can regroup ten (10) of those to make one of the next place value, that is, one ten. We write that regrouping as a 1 above, and we are still left with 6 ones, so we can write that down:</p>
-<p id="p-843">INSERT PIC OF GROUPING AND THE STEPS IN THE ALGORITHM. NOTE THAT THE CARRY IS THE REGROUPED ONES</p>
-<p id="p-844">We now move on to the next place; the tens. We have <span class="process-math">\(4+2+1\)</span> tens (the additional 1 being the regrouping from the last step). So we have 7 tens. Note that as we're working in our usual base ten, we do not have enough tens to regroup, so we simply write that we have 7 tens.</p>
-<p id="p-845">Now let's move on to the next place; the hundreds. We have <span class="process-math">\(4+6-10\)</span> hundreds. We can group all ten of those (with 0 left over after regrouping) to make one of the next place value, that is, one thousand. As this is the final place that our numbers contain, we don't need to mark a regrouping and simply write down that we have 1 thousand and 0 hundreds.</p>
-<p id="p-846">INSERT PIC OF THIS SIMILAR TO LAST TWO</p>
-<p id="p-847">Thus we finally have that <span class="process-math">\(447+629=1076\text{.}\)</span></p>
+<p id="p-843"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629b.svg" class="contained"></div></p>
+<p id="p-844">We now move on to the next place; the tens. We have <span class="process-math">\(4+2+1\)</span> tens (the additional 1 being the regrouping from the last step). So we have 7 tens. Note that as we're working in our usual base ten, we do not have enough tens to regroup, so we simply write that we have 7 tens. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629c.svg" class="contained"></div></p>
+<p id="p-845">Now let's move on to the next place; the hundreds. We have <span class="process-math">\(4+6=10\)</span> hundreds. We can group all ten of those (with 0 left over after regrouping) to make one of the next place value, that is, one thousand. As this is the final place that our numbers contain, we don't need to mark a regrouping and simply write down that we have 1 thousand and 0 hundreds.</p>
+<p id="p-846">Thus we finally have that <span class="process-math">\(447+629=1076\text{.}\)</span></p>
+<p id="p-847"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629d.svg" class="contained"></div></p>
 <p id="p-848">If we think about this carefully, the addition algorithm above relies on the properties of associativity and commutativity in addition to place value. We are using these propertie when we add each place value separately and regroup any "carries" with the place value to the left. Let's write out what the standard addition algorithm is doing in the example above in a little more detail.</p>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -212,17 +210,17 @@
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= (1200) + 70 +6 \text{ addition}
+= (1000) + 70 +6 \text{ addition}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= 1000 + 200 + 70 + 6 \text{ expanded place value representation}
+= 1000  + 70 + 6 \text{ expanded place value representation}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= 1270 \text{ addition}
+= 1076 \text{ addition}
 \end{equation*}
 </div></article></div>
 <p id="p-849">We won't go into as much detail with all algorithms in this section, but note that underpinning all of the algorithms are the arithmetic properties from SECTION REFERENCE</p>
@@ -240,25 +238,25 @@
 <article class="example example-like" id="example-63"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-63"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-63"><article class="example example-like"><p id="p-857">Using the standard addition algorithm, let's add <span class="process-math">\(435_{seven}+43_{seven}.\)</span> The algorithm remains the same, except now we regroup whenever we have seven of one place.</p>
-<p id="p-858">INSERT BLOCK PIC OF NUMBERS</p>
+<p id="p-858"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43a.svg" class="contained"></div></p>
 <p id="p-859">We start by adding the ones. We have <span class="process-math">\(5_{seven}+3_{seven} = 11_{seven}\)</span> as we regroup seven of the eight ones to get 1 long (made up of seven ones) and 1 one. We write down the one remaining:</p>
-<p id="p-860">INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE</p>
+<p id="p-860"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43b.svg" class="contained"></div></p>
 <p id="p-861">Now we move on to add the longs place. We have <span class="process-math">\(3_{seven}+4_{seven}+1_{seven}=10_{seven}\text{.}\)</span> Thus we regroup seven longs to make one square, adn we have one long left over. We write this down in our working:</p>
-<p id="p-862">INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE</p>
+<p id="p-862"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43c.svg" class="contained"></div></p>
 <p id="p-863">Finally we add the squares place. We have <span class="process-math">\(4_{seven}+1_{seven}=5_{seven}\)</span> squares, nothing that the bottom addend has no squares. Thus we write this down:</p>
-<p id="p-864">INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE</p>
+<p id="p-864"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43d.svg" class="contained"></div></p>
 <p id="p-865">Thus we have that <span class="process-math">\(435_{seven}+43_{seven} = 511_{seven}\)</span> and we have finished.</p></article></div>
 <p id="p-866">Let's now work in base twelve. Remember we *do not* regroup when we have ten or eleven of one place, and we use the symbols <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> to denote these quantities, respectively.</p>
 <article class="example example-like" id="example-64"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-64"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
 </h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-64"><article class="example example-like"><p id="p-867">Let's find the sum <span class="process-math">\(6A3_{twelve}+90B_{twelve}\text{.}\)</span> First of all, it will be helpful to view these as blocks:</p>
-<p id="p-868">INSERT BLOCK PIC OF NUMBERS</p>
+<p id="p-868"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Ba.svg" class="contained"></div></p>
 <p id="p-869">Let's start with the ones place. We have <span class="process-math">\(3_{twelve}+B_{twelve} = 12_{twelve} \)</span> ones (think three + eleven ones is fourteen ones), where we regrouped twelve ones to make 1 long (containing twelve ones) with 2 ones remaining. We "carry" our one long, and write down our 2 ones:</p>
-<p id="p-870">INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE</p>
+<p id="p-870"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Bb.svg" class="contained"></div></p>
 <p id="p-871">Now we add our longs place. We have <span class="process-math">\(A_{twelve}+0_{twelve}+1_{twelve} = B_{twelve}\)</span> longs. Since eleven longs is not enough to regroup in base twelve, we simply write this down.</p>
-<p id="p-872">INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE</p>
+<p id="p-872"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Bc.svg" class="contained"></div></p>
 <p id="p-873">Now we add our squares place. We have <span class="process-math">\(6_{twelve}+9_{twelve} = 13_{twelve}\)</span> squares, where twelve squares are regrouped to make one of the next place value (cubes) and we have 3 squares remaining. (Do this calculation on the side to make sure that you understand it). Since we are "out" of places in our numbers we simply write this down in our algorithm:</p>
-<p id="p-874">INSERT PIC OF THIS WITH ALGORITHM TO THE SIDE</p>
+<p id="p-874"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Bd.svg" class="contained"></div></p>
 <p id="p-875">We have just calculated that <span class="process-math">\(6A3_{twelve}+90B_{twelve} = 13B2_{twelve}\)</span> and we are finished.</p></article></div>
 <article class="exercise exercise-like" id="exercise-36"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-36"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
@@ -280,38 +278,36 @@
 <p id="p-885">In the standard algorithm, we added our regrouping to the next place value as we went. Instead, we could add each place value separately without dealing with the regroupsing and then the regroupings to each place value as our final step. This is called the <dfn class="terminology">partial sum algorithm</dfn>, as you are finding the sums of each place value (these are the partial sums) and then adding these together to obtain the final answer. Let's take a look at an example, and in fact let's look at the same problem that we did previously with the standard addition algorithm:</p>
 <article class="example example-like" id="example-65"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-65"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-65"><article class="example example-like"><p id="p-886">Let's add <span class="process-math">\(447+629\)</span> slowly and carefully using partial sums and visualize it using blocks.</p> First we add our ones and find that we have <span class="process-math">\(7+9=16\)</span> ones, noticing that we can regroup 10 ones into a long. <p id="p-887">INSERT PIC OF CALCULATION HERE</p> Then, we add the tens and hundreds separately: <span class="process-math">\(40+20=60\)</span> and then <span class="process-math">\(400+600=1000\text{.}\)</span> We add this to our calculation above to obtain the final answer: <p id="p-888">INSERT PIC OF UPDATED CALCULATION</p></article></div>
-<p id="p-889">We note that this is not *that* different to the standard addition algorithm, as the "carries" are added at the end rather than as we go.</p></section><section class="subsection" id="subsec-SameChangeAddition"><h3 class="heading hide-type">
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-65"><article class="example example-like"><p id="p-886">Let's add <span class="process-math">\(447+629\)</span> slowly and carefully using partial sums and visualize it using blocks.</p> First we add our ones and find that we have <span class="process-math">\(7+9=16\)</span> ones, noticing that we can regroup 10 ones into a long. <p id="p-887"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629bPartial.svg" class="contained"></div></p> Then, we add the tens and hundreds separately: <span class="process-math">\(40+20=60\)</span><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629cPartial.svg" class="contained"></div> and then <span class="process-math">\(400+600=1000\text{.}\)</span>  We add this to our calculation above to obtain the final answer. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629dPartial.svg" class="contained"></div></article></div>
+<p id="p-888">We note that this is not *that* different to the standard addition algorithm, as the "carries" are added at the end rather than as we go.</p></section><section class="subsection" id="subsec-SameChangeAddition"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.1.3</span> <span class="title">Same Change Algorithm</span>
 </h3>
-<p id="p-890">Let's now discuss the <dfn class="terminology">same change</dfn> algorithm. To help us illustate the idea (any why it's useful to know) we start with an example. Let's add <span class="process-math">\(998+314\)</span> in our heads. Try doing this now.</p>
-<p id="p-891">I'm sure that most people reading this book did not mentally perform the standard algorithm for this calculation. In fact, I can imagine that many people noticed that 998 was 2 smaller than 1000, so they added 2 to 1000 and, to "balance" out, they subtracted 2 from 314. Then adding <span class="process-math">\(1000+312\)</span> is very easy in your head. In fact, you can use this idea to add any two numbers.</p>
-<p id="p-892">In general, we are using the fact that if <span class="process-math">\(a,b, \in \mathbb{N}_0\)</span> we know that <span class="process-math">\(a+b = (a+c)+(b-c)\)</span> since we can use associativity and commutativity to rearrange the RHS to <span class="process-math">\(a+b+(c-c) = a+b+0 = a+b\text{.}\)</span> In fact, since this holds for *any* whole numbers <span class="process-math">\(a,b,c\)</span> we can indeed use this idea to judiciously choose the <span class="process-math">\(c\)</span> in the calculation to make our computation easier.</p>
-<p id="p-893">In the first example we chose <span class="process-math">\(c=2\)</span> so that our addition step in each place value was as easy as possible; adding 0 in fact does nothing. Thus, we turned our calculation into <span class="process-math">\((998+2)+(314-2) = 1000+312 = 1312.\)</span></p>
-<p id="p-894">Note that this idea doesn't necessarily make the calculation easier and other than a few cases like the above, where one number is "close" to a round number, it's not very useful. However, we bring this up because there is a related algorithm for subtraction that is very useful!</p></section><section class="subsection" id="subsec-LatticeMethodAddition"><h3 class="heading hide-type">
+<p id="p-889">Let's now discuss the <dfn class="terminology">same change</dfn> algorithm. To help us illustate the idea (any why it's useful to know) we start with an example. Let's add <span class="process-math">\(998+314\)</span> in our heads. Try doing this now.</p>
+<p id="p-890">I'm sure that most people reading this book did not mentally perform the standard algorithm for this calculation. In fact, I can imagine that many people noticed that 998 was 2 smaller than 1000, so they added 2 to 1000 and, to "balance" out, they subtracted 2 from 314. Step 1: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314a.svg" class="contained"></div> Step 2: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314b.svg" class="contained"></div> Step 3: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314c.svg" class="contained"></div> Then adding <span class="process-math">\(1000+312\)</span> is very easy in your head. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314d.svg" class="contained"></div> In fact, you can use this idea to add any two numbers.</p>
+<p id="p-891">In general, we are using the fact that if <span class="process-math">\(a,b, \in \mathbb{N}_0\)</span> we know that <span class="process-math">\(a+b = (a+c)+(b-c)\)</span> since we can use associativity and commutativity to rearrange the RHS to <span class="process-math">\(a+b+(c-c) = a+b+0 = a+b\text{.}\)</span> In fact, since this holds for *any* whole numbers <span class="process-math">\(a,b,c\)</span> we can indeed use this idea to judiciously choose the <span class="process-math">\(c\)</span> in the calculation to make our computation easier.</p>
+<p id="p-892">In the first example we chose <span class="process-math">\(c=2\)</span> so that our addition step in each place value was as easy as possible; adding 0 in fact does nothing. Thus, we turned our calculation into <span class="process-math">\((998+2)+(314-2) = 1000+312 = 1312.\)</span></p>
+<p id="p-893">Note that this idea doesn't necessarily make the calculation easier and other than a few cases like the above, where one number is "close" to a round number, it's not very useful. However, we bring this up because there is a related algorithm for subtraction that is very useful!</p></section><section class="subsection" id="subsec-LatticeMethodAddition"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.1.4</span> <span class="title">Lattice Algorithm</span>
 </h3>
-<p id="p-895">Another common method is the lattice algorithm. This is very similar to the partial sums algorithm except regroupings are displayed slightly differently. In this algorithm, each place value has a box divided into two diagonally; one section for the place value itself, and one for the next larger place value for the regroupings. This regrouping section looks connected to the diagonal section of the box to the left which contains the same place value. Like partial sums, each place value is then added separately to obtain the final sum. Again, let's look at our usual example:</p>
+<p id="p-894">Another common method is the lattice algorithm. This is very similar to the partial sums algorithm except regroupings are displayed slightly differently. In this algorithm, each place value has a box divided into two diagonally; one section for the place value itself, and one for the next larger place value for the regroupings. This regrouping section looks connected to the diagonal section of the box to the left which contains the same place value. Like partial sums, each place value is then added separately to obtain the final sum. Again, let's look at our usual example. Note that we won't draw the blocks again for this example, as the regrouping is the same as for the other algorthims we've covered:</p>
 <article class="example example-like" id="example-66"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-66"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-66"><article class="example example-like"><p id="p-896">Let's add <span class="process-math">\(447+629\text{.}\)</span> We align our two numbers as usual, and then draw a box for each place value split into two sections by a diagonal line, and just for teaching purposes, we will indicate the place value of each section of each box.</p>
-<p id="p-897">INSERT PIC OF THIS</p>
-<p id="p-898">We now add each place value separately. Starting with the ones place we add <span class="process-math">\(7+9=16\)</span> ones, which we regroup into <span class="process-math">\(1\)</span> ten and <span class="process-math">\(6\)</span> ones. We write this in the leftmost box.</p>
-<p id="p-899">INSERT PIC OF THIS</p>
-<p id="p-900">We continue with the other two places similarly. Note that we do not need to regroup any tens, so we leave the hundreds section of that box blank (or we can put a <span class="process-math">\(0\)</span> there). Thus are final partial sum should look like this:</p>
-<p id="p-901">INSERT PIC OF THIS</p>
-<p id="p-902">Finally, we add the box sections diagonally to obtain our final sum of <span class="process-math">\(1066\text{.}\)</span></p></article></div>
-<p id="p-903">STILL TO DO Estimation and Rounding (SECTION EARLIER??)</p>
-<p id="p-904">STILL TO DO (MAYBE) Algorithms for adding up lots of small numbers.</p>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-66"><article class="example example-like"><p id="p-895">Let's add <span class="process-math">\(447+629\text{.}\)</span> We align our two numbers as usual, and then draw a box for each place value split into two sections by a diagonal line, and just for teaching purposes, we will indicate the place value of each section of each box.</p>
+<p id="p-896"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629aLattice.svg" class="contained"></div></p>
+<p id="p-897">We now add each place value separately. Starting with the ones place we add <span class="process-math">\(7+9=16\)</span> ones, which we regroup into <span class="process-math">\(1\)</span> ten and <span class="process-math">\(6\)</span> ones. We write this in the leftmost box.</p>
+<p id="p-898"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629bLattice.svg" class="contained"></div></p>
+<p id="p-899">We continue with the other two places similarly. Note that we do not need to regroup any tens, so we leave the hundreds section of that box blank (or we can put a <span class="process-math">\(0\)</span> there). Thus are final partial sum should look like this:</p>
+<p id="p-900"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629cLattice.svg" class="contained"></div></p>
+<p id="p-901">Finally, we add the box sections diagonally to obtain our final sum of <span class="process-math">\(1076\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629dLattice.svg" class="contained"></div></p></article></div>
 <article class="exercise exercise-like" id="exercise-37"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-37"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.8</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-37"><article class="exercise exercise-like"><p id="p-905">Think about the following questions about the algorithms above:</p>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-37"><article class="exercise exercise-like"><p id="p-902">Think about the following questions about the algorithms above:</p>
 <ol class="decimal">
-<li id="li-237"><p id="p-906">For which algorithms is direction important? Do you need to add right-to-left, or can you add any place values in any order?</p></li>
-<li id="li-238"><p id="p-907">Which algorithms are easiest to explain using blocks? Which are most difficult?</p></li>
-<li id="li-239"><p id="p-908">Which algorithms are the quickest? Are they the quickest in all cases?</p></li>
-<li id="li-240"><p id="p-909">Which algorithms take up the least amount of space on your paper? Which take up the most?</p></li>
-<li id="li-241"><p id="p-910">For each algorithm, determine a situation where that algorithm is the best to use. The situation could be adding particular numbers efficiently, or needing to teach addition in the classroom, or some other situation!</p></li>
+<li id="li-237"><p id="p-903">For which algorithms is direction important? Do you need to add right-to-left, or can you add any place values in any order?</p></li>
+<li id="li-238"><p id="p-904">Which algorithms are easiest to explain using blocks? Which are most difficult?</p></li>
+<li id="li-239"><p id="p-905">Which algorithms are the quickest? Are they the quickest in all cases?</p></li>
+<li id="li-240"><p id="p-906">Which algorithms take up the least amount of space on your paper? Which take up the most?</p></li>
+<li id="li-241"><p id="p-907">For each algorithm, determine a situation where that algorithm is the best to use. The situation could be adding particular numbers efficiently, or needing to teach addition in the classroom, or some other situation!</p></li>
 </ol></article></div></section></section></div></main>
 </div>
 </body>
