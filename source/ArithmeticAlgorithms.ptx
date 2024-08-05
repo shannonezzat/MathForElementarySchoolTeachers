@@ -536,28 +536,49 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     Let's subtract <m>4052-2457</m>. We first write the numbers aligned vertically, and view each number in terms of place value blocks:
                 </p>
                 <p>
-                    INSERT PIC OF THIS
+                   <image source="ArithmeticAlgorithms/4052-2457a.svg">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
-                    Now let's subtract the rightmost place. Note that the top 2 is smaller than the bottom digit, so we must borrow. The the place directly to the left has a non-zero top digit, so we regroup 1 of this place (tens) to make 10 of our current place (ones) and thus decrease the digit in that place by 1. Now we have <m>2+10=12</m> ones and we do the subtraction <m>12-7=5</m>.
+                    Now let's subtract the rightmost place. Note that the top 2 is smaller than the bottom digit, so we must borrow. The the place directly to the left has a non-zero top digit, so we regroup 1 of this place (tens) to make 10 of our current place (ones) and thus decrease the digit in that place by 1. 
+
+                    <image source="ArithmeticAlgorithms/4052-2457b.svg">
+                        <shortdescription>(for accessibility)</shortdescription>
+                       </image>
+                    
+                    
+                    Now we have <m>2+10=12</m> ones and we do the subtraction <m>12-7=5</m>.
                 </p>
                 <p>
-                    INSERT PIC OF THIS
+                    <image source="ArithmeticAlgorithms/4052-2457c.svg">
+                        <shortdescription>(for accessibility)</shortdescription>
+                       </image>
                 </p>
                 <p>
                     Now we move to the next place to the left; the tens place. Note that the top digit is now a 4, so it is smaller than the bottom digit 5. So again, we must borrow.
                 </p>
                 <p>
-                    We have a zero immediately to the left of the (what was a 5 but is now a) 4, so we move to the left one more time (to the thousands place) since there is a non-zero digit in the top number there. We borrow one thousand, thus decreasing the thousands digit by 1, and ungroup that into 9 hundreds and 10 tens. In our calculation, this means changing the zero in the hundreds place in the top number to a 9, and the 4 in the tens place to a 14. 
+                    We have a zero immediately to the left of the (what was a 5 but is now a) 4, so we move to the left one more time (to the thousands place) since there is a non-zero digit in the top number there. We borrow one thousand, thus decreasing the thousands digit by 1 and increasing the hundreds by 10. 
+                    
+                    <image source="ArithmeticAlgorithms/4052-2457d.svg">
+                        <shortdescription>(for accessibility)</shortdescription>
+                       </image>
+                    
+                    Then we ungroup that into 9 hundreds and 10 tens. In our calculation, this means changing the zero in the hundreds place in the top number to a 9, and the 4 in the tens place to a 14. 
                 </p>
                 <p>
-                    INSERT PIC OF THIS
+                    <image source="ArithmeticAlgorithms/4052-2457e.svg">
+                        <shortdescription>(for accessibility)</shortdescription>
+                       </image>
                 </p>
                 <p>
                     Now we have 14 tens and we do the subtraction in the tens column <m>14-5=9</m> . Similarly, the top number in the hundreds and thousands place is smaller so we do those subtractions as well: <m>9-4=5</m> and <m>3-2 = 1</m> respectively.
                 </p>
                 <p>
-                    INSERT PIC OF THIS
+                    <image source="ArithmeticAlgorithms/4052-2457f.svg">
+                        <shortdescription>(for accessibility)</shortdescription>
+                       </image>
                 </p>
                 <p>
                     As we have no non-zero digits to the left of the thousands place, we are finished and we know <m>4052-2457=1595.</m>
