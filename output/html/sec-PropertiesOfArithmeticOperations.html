@@ -1,212 +1,723 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-08-05T15:19:35-03:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Properties Of Arithmetic Operations</title>
-<meta name="Keywords" content="Authored in PreTeXt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Math For Elementary School Teachers">
 <meta property="book:author" content="Me">
-<script>window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    useLabelIds: true,
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
-  },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-  },
-  chtml: {
-    scale: 0.88,
-    mtextInheritFont: true
-  },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
-  },
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.8.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
-<body class="pretext-book ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers</span> <span class="subtitle"></span></a></h1>
+<p class="byline">Me</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-ArithmeticOperations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="WholeNumbers.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="integers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers:</span> <span class="subtitle"></span></a></h1>
-<p class="byline">Me</p>
-</div>
-</div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-ArithmeticOperations.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="WholeNumbers.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="integers.html" title="Next">Next</a></span>
-</div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-ArithmeticOperations.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="WholeNumbers.html" title="Up">Up</a><a class="next-button button toolbar-item" href="integers.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
-<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
-<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
-<li><a href="preface.html" data-scroll="preface" class="internal">Preface</a></li>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="test.html" data-scroll="test" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a><ul>
-<li><a href="IntroToLogic.html" data-scroll="IntroToLogic" class="internal">Intro To Logic</a></li>
-<li><a href="sec-ConditionalStatements.html" data-scroll="sec-ConditionalStatements" class="internal">Conditional Statements</a></li>
-<li><a href="sec-Sets.html" data-scroll="sec-Sets" class="internal">Sets</a></li>
-<li><a href="section-4.html" data-scroll="section-4" class="internal">Supplemental Exercises</a></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="test.html" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IntroToLogic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Intro To Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-LogicObj" class="internal"><span class="codenumber">1.1.1</span> <span class="title">The Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-AndOrNot" class="internal"><span class="codenumber">1.1.2</span> <span class="title">And, Or, and Not</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-Quantifiers" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-QuantVenn" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Viewing Quantified Statements as a Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-EvenOdd" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Expressing Even and Odd Numbers Algebraically</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="WholeNumbers.html" data-scroll="WholeNumbers" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a><ul>
-<li><a href="sec-Equality.html" data-scroll="sec-Equality" class="internal">Equality</a></li>
-<li><a href="sec-ProblemSolving.html" data-scroll="sec-ProblemSolving" class="internal">Problem Solving</a></li>
-<li><a href="sec-2_1NumberSystemsAndPlaceValue.html" data-scroll="sec-2_1NumberSystemsAndPlaceValue" class="internal">NumberSystemsAndPlaceValueWhole Numbers</a></li>
-<li><a href="sec-NumberSystems.html" data-scroll="sec-NumberSystems" class="internal">Number Systems</a></li>
-<li><a href="sec-ArithmeticOperations.html" data-scroll="sec-ArithmeticOperations" class="internal">Arithmetic Operations</a></li>
-<li><a href="sec-PropertiesOfArithmeticOperations.html" data-scroll="sec-PropertiesOfArithmeticOperations" class="active">Properties Of Arithmetic Operations</a></li>
-<li><a href="integers.html" data-scroll="integers" class="internal">Integers</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ConditionalStatements.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#sec-ConditionalStatements-2" class="internal"><span class="codenumber">1.2.1</span> <span class="title">What is a Conditional Statement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-JustifyingConditionalStatements" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Justifying Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-WhyProofsAreImportant" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Why Proofs Are Important</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-Counterexamples" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Counterexamples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-CondExist" class="internal"><span class="codenumber">1.2.5</span> <span class="title">The Relationship Between Conditional and Existential Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-OtherFormsCondSt" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Other Forms of Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-BiconditionalSentences" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Biconditional Sentences</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ArithmeticAlgorithms.html" data-scroll="ArithmeticAlgorithms" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a><ul>
-<li><a href="sec-AdditionAlgorithms.html" data-scroll="sec-AdditionAlgorithms" class="internal">Addition Algorithms</a></li>
-<li><a href="sec-SubtractionAlgorithms.html" data-scroll="sec-SubtractionAlgorithms" class="internal">Subtraction Algorithms</a></li>
-<li><a href="sec-MultiplicationAlgorithms.html" data-scroll="sec-MultiplicationAlgorithms" class="internal">Multiplication Algorithms</a></li>
-<li><a href="sec-DivisionAlgorithms.html" data-scroll="sec-DivisionAlgorithms" class="internal">Division Algorithms</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-IntroToSets" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Intro To Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-CombiningSets" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Combining Sets</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="Fractions.html" data-scroll="Fractions" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a><ul>
-<li><a href="section-16.html" data-scroll="section-16" class="internal">Introduction to Fractions</a></li>
-<li><a href="section-17.html" data-scroll="section-17" class="internal">Arithmetic With Fractions</a></li>
-<li><a href="section-18.html" data-scroll="section-18" class="internal">Ratios, Rates, and Proportions</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="test-5.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Supplemental Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="Decimals.html" data-scroll="Decimals" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a><ul>
-<li><a href="decimals.html" data-scroll="decimals" class="internal">Introduction to Decimals</a></li>
-<li><a href="sec_operations_with_decimals.html" data-scroll="sec_operations_with_decimals" class="internal">Operations with Decimals</a></li>
-<li><a href="terminating-repeating-decimals.html" data-scroll="terminating-repeating-decimals" class="internal">Terminating and Repeating Decimals</a></li>
-<li><a href="percent-and-percent-change.html" data-scroll="percent-and-percent-change" class="internal">Percent and Percent Change</a></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="WholeNumbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Equality.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Equality.html#subsec-IntroToEquality" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Intro To Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Equality.html#subsec-PropertiesOfEquality" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Properties Of Equality</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SolvingOneEquation" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Solving One Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SystemsOfEquations" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Intro to Systems Of Equations</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Substitution" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Elimination" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Elimination</span></a></div></li></ul>
+</li>
 </ul>
 </li>
-<li class="link">
-<a href="Divisibility.html" data-scroll="Divisibility" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a><ul>
-<li><a href="sec-IntroductoryConcepts.html" data-scroll="sec-IntroductoryConcepts" class="internal">Introductory Concepts</a></li>
-<li><a href="divisibility-theorems-small-numbers.html" data-scroll="divisibility-theorems-small-numbers" class="internal">Divisibility Theorems for Small Numbers</a></li>
-<li><a href="sec-PrimeNumbers.html" data-scroll="sec-PrimeNumbers" class="internal">Prime Numbers</a></li>
-<li><a href="sec-FactorsAndMultiples.html" data-scroll="sec-FactorsAndMultiples" class="internal">Factors and Multiples</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2_1NumberSystemsAndPlaceValue.html" class="internal"><span class="codenumber">2.3</span> <span class="title">NumberSystemsAndPlaceValueWhole Numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-NumberSystems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#sec-NumberSystems-2" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Introduction to Number Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingFromBaseTen" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Converting From Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingToBaseTen" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Converting To Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-BaseTwelve" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-HistoricalNumberSystems" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Historical Number Systems</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="irrational_numbers.html" data-scroll="irrational_numbers" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a><ul>
-<li><a href="understanding_irrational_numbers.html" data-scroll="understanding_irrational_numbers" class="internal">Understanding Irrational Numbers</a></li>
-<li><a href="sec-SimpleRoots.html" data-scroll="sec-SimpleRoots" class="internal">Simple Roots and Irrationality</a></li>
-<li><a href="sec-OperationsWithIrrationalNumbers.html" data-scroll="sec-OperationsWithIrrationalNumbers" class="internal">Operations With Irrational Numbers</a></li>
-<li><a href="exponents_irrational_numbers.html" data-scroll="exponents_irrational_numbers" class="internal">Exponents and Irrational Numbers</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Addition" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Subtraction" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Inequality and Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Multiplication" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Multiplication</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-Exponents" class="internal"><span class="codenumber">2.5.3.1</span> <span class="title">Exponents</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Division" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Division with Remainders</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-IntroductionToDivision" class="internal"><span class="codenumber">2.5.4.1</span> <span class="title">Introduction To Division</span></a></div></li></ul>
+</li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
-<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
-<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
-<li class="link"><a href="appendix-1.html" data-scroll="appendix-1" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
-<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
-</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-PropertiesOfArithmeticOperations"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.6</span> <span class="title">Properties Of Arithmetic Operations</span>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Properties Of Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-OrderOfOperations" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Order Of Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-PropertiesOfArithmetic" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Properties Of Arithmetic</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-ConsequencesofProperties" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Consequences of Properties</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-RelatedSubtractionandDivisionProblems" class="internal"><span class="codenumber">2.6.3.1</span> <span class="title">Related Subtraction and Division Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-MultiplicationandDivisionByZero" class="internal"><span class="codenumber">2.6.3.2</span> <span class="title">Multiplication By Zero</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-DivisionByZero" class="internal"><span class="codenumber">2.6.3.3</span> <span class="title">Division By Zero</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="integers.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-addition" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Visualizing Integer Addition</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-add-integers" class="internal"><span class="title">How to Add Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Properties of Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity" class="internal"><span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity" class="internal"><span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse" class="internal"><span class="title">Additive Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-identity" class="internal"><span class="title">Additive Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-subtraction" class="internal"><span class="codenumber">2.7.1.2</span> <span class="title">Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-subtraction" class="internal"><span class="title">Visualizing Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-subtract-integers" class="internal"><span class="title">How to Subtract Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-subtraction" class="internal"><span class="title">Properties of Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-subtraction" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse-subtraction" class="internal"><span class="title">Relationship to Additive Inverse</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-multiplication" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-multiplication" class="internal"><span class="codenumber">2.7.2.1</span> <span class="title">Visualizing Integer Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-multiply-integers" class="internal"><span class="codenumber">2.7.2.2</span> <span class="title">How to Multiply Integers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-multiplication" class="internal"><span class="codenumber">2.7.2.3</span> <span class="title">Proof: <span class="process-math">\((-a) = (-1) \times a\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-times-negative" class="internal"><span class="codenumber">2.7.2.4</span> <span class="title">Proof: <span class="process-math">\((-1) \times (-1) = 1\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-multiplication" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Properties of Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity-multiplication" class="internal"><span class="codenumber">2.7.3.1</span> <span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity-multiplication" class="internal"><span class="codenumber">2.7.3.2</span> <span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#distributivity-multiplication" class="internal"><span class="codenumber">2.7.3.3</span> <span class="title">Distributivity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-multiplication" class="internal"><span class="codenumber">2.7.3.4</span> <span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#multiplicative-identity" class="internal"><span class="codenumber">2.7.3.5</span> <span class="title">Multiplicative Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-division" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Integer Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-division" class="internal"><span class="codenumber">2.7.4.1</span> <span class="title">Visualizing Integer Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-divide-integers" class="internal"><span class="codenumber">2.7.4.2</span> <span class="title">How to Divide Integers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ArithmeticAlgorithms.html" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-AdditionAlgorithms.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Addition Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-TheStandardAdditionAlgorithm" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Standard Addition Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-PartialSums" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-SameChangeAddition" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-LatticeMethodAddition" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Lattice Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subtraction Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-StandardSubtractionAlgorithm" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Standard Subtraction Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-PartialDifferences" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Partial Differences</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-SameChangeAlgorithm" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-EqualAdditionsAlgorithm" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Equal Additions Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationPreliminaries" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Multiplication Preliminaries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-PartialProducts" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Partial Products</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationInBaseTwelve" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Multiplication In Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplication" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Russian Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-ProsAndConsOfMultiplicationAlgorithms" class="internal"><span class="codenumber">3.3.6</span> <span class="title">Pros And Cons Of Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-PartialProductsAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">PartialProductsAlgorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-GridMethod" class="internal"><span class="codenumber">3.3.6.2</span> <span class="title">Grid Method</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">Russian Multiplication Algorithm</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DivisionAlgorithms.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Division Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivision" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Long Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivisionBaseTwelve" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Long Division Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-ShortDivision" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Short Division</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Fractions.html" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-2.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-8" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Examples of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#subsec-MakingSenseOfFractions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Making Sense Of Fractions and Division of Whole Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-10" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Equivalent Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingFractions" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Comparing Fractions Using a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingMultipleFractions" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Comparing Multiple Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#DensityOfFractions" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Density of Fractions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-3.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Arithmetic With Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#AddingSubtractingFractions" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Adding and Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#MixedFractions" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Mixed Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#ImproperToFractions" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Converting Improper Fractions to Mixed Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#subsec-MultiplicationOfFractions" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Multiplication of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#Fractions-3-6" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Division of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="Fractions-3.html#negative-exponents-fractions" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Negative Exponents and Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="Fractions-3.html#simplify-compound-fraction" class="internal"><span class="codenumber">4.2.6.1</span> <span class="title">Simplifying Compound Fractions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-4.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Ratios, Rates, and Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Ratios</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Proportions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Decimals.html" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="decimals.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction to Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="decimals.html#decimal-fractions" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Decimal Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="decimals.html#decimal-fractions-2" class="internal"><span class="codenumber">5.1.1.1</span> <span class="title">Decimal Fractions and Their Relationship to Whole Numbers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#decimal-representation" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#pictorial-representation" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Pictorial Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#comparing-decimals" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Comparing Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_operations_with_decimals.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Operations with Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_add_subtract_decimals" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Addition and Subtraction with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_multiply_decimals" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Multiplication with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_divide_decimals" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Division with Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Terminating and Repeating Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#terminating-decimals" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Terminating Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-long-division" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Expressing a Fraction as a Repeating Decimal Using Long Division</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-as-rational-numbers" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Representing All Repeating Decimals as Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#CanRepeatingDecimalsEqual1" class="internal"><span class="codenumber">5.3.3.1</span> <span class="title">Can Repeating Decimals Equal 1?</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repetend-and-period" class="internal"><span class="codenumber">5.3.3.2</span> <span class="title">Repetend and Period of a Repeated Decimal</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#converting-repeating-decimal-to-fraction" class="internal"><span class="codenumber">5.3.3.3</span> <span class="title">Converting a Repeating Decimal to a Fraction</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="percent-and-percent-change.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percent and Percent Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="percent-and-percent-change.html#introduction-to-percent" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Introduction to Percent</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-ratios-to-percents" class="internal"><span class="codenumber">5.4.1.1</span> <span class="title">Converting Ratios to Percents</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-fractions-to-percents" class="internal"><span class="codenumber">5.4.1.2</span> <span class="title">Converting Fractions to Percents</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#visualizing-percents" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Visualizing Percents Using a Bar Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-vs-percent-change" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Percent vs. Percent Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-change-vs-percentage-point-change" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Percent Change vs. Percentage Point Change</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Divisibility.html" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Introductory Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility2" class="internal"><span class="codenumber">6.1.1.1</span> <span class="title">Intro to Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TransitivityAndDivisibility" class="internal"><span class="codenumber">6.1.1.2</span> <span class="title">Transitivity And Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-properties" class="internal"><span class="codenumber">6.1.1.3</span> <span class="title">Divisibility Properties of 0, 1, and a Number with Itself</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-theorems" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Divisibility Theorems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem1" class="internal"><span class="codenumber">6.1.2.1</span> <span class="title">Theorem 1</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem2" class="internal"><span class="codenumber">6.1.2.2</span> <span class="title">Theorem 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem3" class="internal"><span class="codenumber">6.1.2.3</span> <span class="title">Theorem 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TheOtherCase" class="internal"><span class="codenumber">6.1.2.4</span> <span class="title">TheOtherCase</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Theorems for Small Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-IntroductionDivThms" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2-4-8" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Divisibility Rules for 2, 4, and 8</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2" class="internal"><span class="codenumber">6.2.2.1</span> <span class="title">Divisibility Rule for 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-4" class="internal"><span class="codenumber">6.2.2.2</span> <span class="title">Divisibility Rule for 4</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-8" class="internal"><span class="codenumber">6.2.2.3</span> <span class="title">Divisibility Rule for 8</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-DivisibilityRuleforHigherPowersof2" class="internal"><span class="codenumber">6.2.2.4</span> <span class="title">Divisibility Rule for Higher Powers of 2</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Rule For 5</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRulesFor3And9" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Rules For 3 And 9</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor11" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Divisibility Rule For 11</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-CompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Compound Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-WhenCompundDivisibilityRulesWork" class="internal"><span class="codenumber">6.2.6.1</span> <span class="title">When Compund Divisibility Rules Work</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-SomeCommonCompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6.2</span> <span class="title">Some Common Compound Divisibility Rules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8" class="internal"><span class="codenumber">6.2.7</span> <span class="title">Iterative Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-4" class="internal"><span class="codenumber">6.2.7.1</span> <span class="title">Divisibility by 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-5" class="internal"><span class="codenumber">6.2.7.2</span> <span class="title">Divisibility by 9</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-6" class="internal"><span class="codenumber">6.2.7.3</span> <span class="title">Divisibility by 11</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-MakingDivisibilityRules" class="internal"><span class="codenumber">6.2.8</span> <span class="title">MakingDivisibilityRules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PrimeNumbers.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-FindingPrimeNumbers" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Finding Prime Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowManyPrimeNumbersExist" class="internal"><span class="codenumber">6.3.2</span> <span class="title">How Many Prime Numbers Exist</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowToDetermineIfaNumberisPrime" class="internal"><span class="codenumber">6.3.3</span> <span class="title">How To Determine If a Number is Prime</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Factors and Multiples</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-PrimesAsBuildingBlocks" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Primes As Building Blocks</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-HowManyFactorsDoesANumberHave" class="internal"><span class="codenumber">6.4.2</span> <span class="title">How Many Factors Does A Number Have?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsubsec-PuttingItAllTogether" class="internal"><span class="codenumber">6.4.2.1</span> <span class="title">Putting It All Together</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_lcm_intro" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Greatest Common Divisor and Least Common Multiple</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#understanding_gcd_lcm" class="internal"><span class="codenumber">6.4.3.1</span> <span class="title">Unraveling the Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_prime_factorization" class="internal"><span class="title">Understanding GCD Through Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_concept" class="internal"><span class="title">Least Common Multiple (LCM)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_example" class="internal"><span class="title">Exploring LCM with an Example</span></a></div></li></ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#word_problems_gcd_lcm" class="internal"><span class="codenumber">6.4.4</span> <span class="title">Word Problems: GCD and LCM in Practice</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem1_gcd" class="internal"><span class="codenumber">6.4.4.1</span> <span class="title">Problem 1: Distributing Items in Boxes</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem2_lcm" class="internal"><span class="codenumber">6.4.4.2</span> <span class="title">Problem 2: Buying Ingredients for Burgers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#venn_diagrams_gcd_lcm" class="internal"><span class="codenumber">6.4.4.3</span> <span class="title">Visualizing GCD and LCM with Venn Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Understanding the Euclidean Algorithm</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_basics" class="internal"><span class="codenumber">6.4.5.1</span> <span class="title">Basic Principles</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_procedure" class="internal"><span class="codenumber">6.4.5.2</span> <span class="title">Applying the Euclidean Algorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_examples" class="internal"><span class="codenumber">6.4.5.3</span> <span class="title">Additional Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="irrational_numbers.html" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="understanding_irrational_numbers.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Understanding Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#examples_of_irrational_numbers" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Examples of Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-TypesOfIrrationalNumbers" class="internal"><span class="codenumber">7.1.2</span> <span class="title">TypesOfIrrationalNumbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-FunctionsBriefly" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Functions Briefly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SimpleRoots.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Simple Roots and Irrationality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-PrincipalRoots" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Principal Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-nthPowers" class="internal"><span class="codenumber">7.2.2</span> <span class="title">nth Powers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-ProvingIrrationalityofnthRoots" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Proving Irrationality of nth Roots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Operations With Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#addition_subtraction_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Addition and Subtraction with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#multiplication_division_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Multiplication and Division with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#more_elaborate_examples_irrationality" class="internal"><span class="codenumber">7.3.2</span> <span class="title">More Elaborate Examples of Irrationality</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="exponents_irrational_numbers.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exponents and Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#nth_root_exponent" class="internal"><span class="codenumber">7.4.1</span> <span class="title">nth Root as Exponent 1/n</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#multiplying_dividing_roots" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Multiplying and Dividing nth Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying-principal-roots" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Simplifying <span class="process-math">\(n\)</span>th Principal Roots by Factoring Out <span class="process-math">\(n\)</span>th Powers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#quotient-remainder-theorem" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Using the Quotient Remainder Theorem</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#more-examples" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Additional Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying_fractional_powers" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Simplifying Expressions with Fractional Powers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-PropertiesOfArithmeticOperations"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.6</span><span class="space"> </span><span class="title">Properties Of Arithmetic Operations</span>
 </h2>
 <section class="subsection" id="subsubsec-OrderOfOperations"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.6.1</span> <span class="title">Order Of Operations</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.6.1</span><span class="space"> </span><span class="title">Order Of Operations</span>
 </h3>
-<p id="p-675">A quick reminder about the order of operations that occur in an expression. These have been universally agreed upon over time, so we should make sure we're comfortable with this.</p>
-<ol class="decimal">
-<li id="li-220"><p id="p-676">Perform operations inside of brackets (using the ordering we are listing) in the order they occur, left to right.</p></li>
-<li id="li-221"><p id="p-677">Perform exponential and root operations in the order they occur, left to right.</p></li>
-<li id="li-222"><p id="p-678">Perform divisions and multiplications in the order they occur, left to right.</p></li>
-<li id="li-223"><p id="p-679">Perform addition and subtraction in the order they occur, left to right.</p></li>
+<div class="para logical" id="subsubsec-OrderOfOperations-2">
+<div class="para">A quick reminder about the order of operations that occur in an expression. These have been universally agreed upon over time, so we should make sure we’re comfortable with this.</div>
+<ol class="decimal" id="subsubsec-OrderOfOperations-2-1">
+<li id="subsubsec-OrderOfOperations-2-1-1">
+<div class="para" id="subsubsec-OrderOfOperations-2-1-1-1">Perform operations inside of brackets (using the ordering we are listing) in the order they occur, left to right.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-OrderOfOperations-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsubsec-OrderOfOperations-2-1-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsubsec-OrderOfOperations-2-1-2">
+<div class="para" id="subsubsec-OrderOfOperations-2-1-2-1">Perform exponential and root operations in the order they occur, left to right.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-OrderOfOperations-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsubsec-OrderOfOperations-2-1-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsubsec-OrderOfOperations-2-1-3">
+<div class="para" id="subsubsec-OrderOfOperations-2-1-3-1">Perform divisions and multiplications in the order they occur, left to right.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-OrderOfOperations-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsubsec-OrderOfOperations-2-1-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="subsubsec-OrderOfOperations-2-1-4">
+<div class="para" id="subsubsec-OrderOfOperations-2-1-4-1">Perform addition and subtraction in the order they occur, left to right.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-OrderOfOperations-2-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#subsubsec-OrderOfOperations-2-1-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
 </ol>
-<p class="continuation">You have probabily heard the expression BEDMAS as a reminder of the order. More precisely, it should read BE(DM)(AS), as we think of division and multiplication, and addition and subtraction, as pairs of the same operations (as each member of the pair is the inverse operation of the other member.)</p>
-<article class="example example-like" id="example-38"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-38"><h4 class="heading">
+<div class="para">You have probabily heard the expression BEDMAS as a reminder of the order. More precisely, it should read BE(DM)(AS), as we think of division and multiplication, and addition and subtraction, as pairs of the same operations (as each member of the pair is the inverse operation of the other member.)</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-OrderOfOperations-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsubsec-OrderOfOperations-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.1</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-38"><article class="example example-like"><p id="p-680">Be careful when you see expressions like <span class="process-math">\(3+4(5-2)\text{.}\)</span> It is a very common error to add the <span class="process-math">\(3+4\)</span> first, which is incorrect as it does not follow our oder of operations. OF course, we should have</p>
+</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="subsubsec-OrderOfOperations-3-1">
+<div class="para">Be careful when you see expressions like <span class="process-math">\(3+4(5-2)\text{.}\)</span> It is a very common error to add the <span class="process-math">\(3+4\)</span> first, which is incorrect as it does not follow our oder of operations. OF course, we should have</div>
 <div class="displaymath process-math">
 \begin{equation*}
 3+4(5-2) = 3+4(3) = 3+12 = 15.
 \end{equation*}
-</div></article></div></section><section class="subsection" id="subsec-PropertiesOfArithmetic"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.6.2</span> <span class="title">Properties Of Arithmetic</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-OrderOfOperations-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.1"><a href="#subsubsec-OrderOfOperations-3" title="Copy permalink for Example 2.6.1">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.6.1: Order Of Operations"><a href="#subsubsec-OrderOfOperations" title="Copy permalink for Subsection 2.6.1: Order Of Operations">🔗</a></div></section><section class="subsection" id="subsec-PropertiesOfArithmetic"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.6.2</span><span class="space"> </span><span class="title">Properties Of Arithmetic</span>
 </h3>
-<p id="p-681">There are some important properties of arithmetic operations that are worth pointing out and discussing. We use them regularly, and we will rely on them especially in the coming section on algorithms for arithmetic. Let's use the symbol <span class="process-math">\(\square \)</span> to mean any one of our arithmetic operations. Note that we can think of all of our operations *combining* two numbers to make another number.</p>
+<div class="para" id="subsec-PropertiesOfArithmetic-2">There are some important properties of arithmetic operations that are worth pointing out and discussing. We use them regularly, and we will rely on them especially in the coming section on algorithms for arithmetic. Let’s use the symbol <span class="process-math">\(\square \)</span> to mean any one of our arithmetic operations. Note that we can think of all of our operations *combining* two numbers to make another number.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-Closure"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.2</span><span class="period">.</span>
 </h4>
-<p id="p-682">Closure - We say a set <span class="process-math">\(S\)</span> is <dfn class="terminology">closed under the operation</dfn> <span class="process-math">\(\square\)</span> exactly when it's the case that if <span class="process-math">\(a.b \in S\)</span> then <span class="process-math">\((a \square b) \in S\text{.}\)</span></p>
-<article class="example example-like" id="example-39"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-39"><h5 class="heading">
+<div class="para" id="def-Closure-1-1">Closure - We say a set <span class="process-math">\(S\)</span> is <dfn class="terminology">closed under the operation</dfn> <span class="process-math">\(\square\)</span> exactly when it’s the case that if <span class="process-math">\(a.b \in S\)</span> then <span class="process-math">\((a \square b) \in S\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-Closure-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="def-Closure-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.3</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-39"><article class="example example-like"><p id="p-683">Since addition of two whole numbers gives us another whole number, we have that the set <span class="process-math">\(\mathbb{N}_0\)</span> is closed under <span class="process-math">\(+\text{.}\)</span> Similarly, <span class="process-math">\(\mathbb{N}_0\)</span> is closed under <span class="process-math">\(\times\)</span> as well. However, <span class="process-math">\(\mathbb{N}_0\)</span> is *not* closed under subtraction, since (as a counterexample to the if-then statement in the definition of closure) <span class="process-math">\(2-4 = (-2)\text{.}\)</span> We know that <span class="process-math">\(2,4 \in \mathbb{N}_0\)</span> (so the if part of the definition is true) but <span class="process-math">\((-2) \notin \mathbb{N}_0\)</span> (so the then part of the definition is false).</p></article></div></article><article class="definition definition-like" id="def-Commutativity"><h4 class="heading">
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="def-Closure-2-1">Since addition of two whole numbers gives us another whole number, we have that the set <span class="process-math">\(\mathbb{N}_0\)</span> is closed under <span class="process-math">\(+\text{.}\)</span> Similarly, <span class="process-math">\(\mathbb{N}_0\)</span> is closed under <span class="process-math">\(\times\)</span> as well. However, <span class="process-math">\(\mathbb{N}_0\)</span> is *not* closed under subtraction, since (as a counterexample to the if-then statement in the definition of closure) <span class="process-math">\(2-4 = (-2)\text{.}\)</span> We know that <span class="process-math">\(2,4 \in \mathbb{N}_0\)</span> (so the if part of the definition is true) but <span class="process-math">\((-2) \notin \mathbb{N}_0\)</span> (so the then part of the definition is false).<div class="autopermalink" data-description="Paragraph"><a href="#def-Closure-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.3"><a href="#def-Closure-2" title="Copy permalink for Example 2.6.3">🔗</a></div></article></details><div class="autopermalink" data-description="Definition 2.6.2"><a href="#def-Closure" title="Copy permalink for Definition 2.6.2">🔗</a></div></article><article class="definition definition-like" id="def-Commutativity"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.4</span><span class="period">.</span>
 </h4>
-<p id="p-684">We say an operation <span class="process-math">\(\square\)</span> is <dfn class="terminology">commutative</dfn> exactly when it's the case that when  <span class="process-math">\(a \square b=c\)</span> then <span class="process-math">\(b \square a=c\text{;}\)</span> that is, <span class="process-math">\(a \square b = b \square a\)</span>  (order of performing the operation doesn't matter).</p>
-<article class="example example-like" id="example-40"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-40"><h5 class="heading">
+<div class="para" id="def-Commutativity-1-1">We say an operation <span class="process-math">\(\square\)</span> is <dfn class="terminology">commutative</dfn> exactly when it’s the case that when  <span class="process-math">\(a \square b=c\)</span> then <span class="process-math">\(b \square a=c\text{;}\)</span> that is, <span class="process-math">\(a \square b = b \square a\)</span>  (order of performing the operation doesn’t matter).<div class="autopermalink" data-description="Paragraph"><a href="#def-Commutativity-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="def-Commutativity-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.5</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-40"><article class="example example-like"><p id="p-685">In <span class="process-math">\(\mathbb{N}\text{,}\)</span> addition and multiplication are commutative. For example, <span class="process-math">\(4+11 = 11+4\)</span> and <span class="process-math">\(3 \times 7 = 7 \times 3\text{.}\)</span> We can view these pictorally:</p>
-<p id="p-686"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/CommutativeLine.svg" class="contained"></div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/CommutativeArea.svg" class="contained"></div></p>
-<p id="p-687">Let's move to the set  <span class="process-math">\(\mathbb{Z}\)</span> so that subtraction is closed and our subtractions make sense. Subtraction is *not* a commutative operation since, as a counterexample, <span class="process-math">\(3-2=1\)</span> but <span class="process-math">\(2-3=(-1)\text{.}\)</span> Similarly, division in the set <span class="process-math">\(\mathbb{Q}\)</span> is not commutative.</p></article></div></article><article class="definition definition-like" id="def-Associativity"><h4 class="heading">
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="def-Commutativity-2-1">In <span class="process-math">\(\mathbb{N}\text{,}\)</span> addition and multiplication are commutative. For example, <span class="process-math">\(4+11 = 11+4\)</span> and <span class="process-math">\(3 \times 7 = 7 \times 3\text{.}\)</span> We can view these pictorally:<div class="autopermalink" data-description="Paragraph"><a href="#def-Commutativity-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="def-Commutativity-2-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/CommutativeLine.svg" class="contained" alt="4+11 and 11+4 on a number line"></div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/CommutativeArea.svg" class="contained" alt="3x7 and 7x3 using area model"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-Commutativity-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="def-Commutativity-2-3">Let’s move to the set  <span class="process-math">\(\mathbb{Z}\)</span> so that subtraction is closed and our subtractions make sense. Subtraction is *not* a commutative operation since, as a counterexample, <span class="process-math">\(3-2=1\)</span> but <span class="process-math">\(2-3=(-1)\text{.}\)</span> Similarly, division in the set <span class="process-math">\(\mathbb{Q}\)</span> is not commutative.<div class="autopermalink" data-description="Paragraph"><a href="#def-Commutativity-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.5"><a href="#def-Commutativity-2" title="Copy permalink for Example 2.6.5">🔗</a></div></article></details><div class="autopermalink" data-description="Definition 2.6.4"><a href="#def-Commutativity" title="Copy permalink for Definition 2.6.4">🔗</a></div></article><article class="definition definition-like" id="def-Associativity"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.6</span><span class="period">.</span>
 </h4>
-<p id="p-688">We say an operation <span class="process-math">\(\square\)</span> is <dfn class="terminology">associative</dfn> exactly when it's the case that when  <span class="process-math">\((a \square b) \square c =d\)</span> then <span class="process-math">\(a (\square b \square c) =d\text{;}\)</span> that is, <span class="process-math">\((a \square b) \square c = a a\square (b \square c)\)</span>  (grouping performing the operation doesn't matter).</p>
-<article class="example example-like" id="example-41"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-41"><h5 class="heading">
+<div class="para" id="def-Associativity-1-1">We say an operation <span class="process-math">\(\square\)</span> is <dfn class="terminology">associative</dfn> exactly when it’s the case that when  <span class="process-math">\((a \square b) \square c =d\)</span> then <span class="process-math">\(a (\square b \square c) =d\text{;}\)</span> that is, <span class="process-math">\((a \square b) \square c = a a\square (b \square c)\)</span>  (grouping performing the operation doesn’t matter).<div class="autopermalink" data-description="Paragraph"><a href="#def-Associativity-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="def-Associativity-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.7</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-41"><article class="example example-like"><p id="p-689">In <span class="process-math">\(\mathbb{N}\text{,}\)</span> addition and multiplication are associative. For example, <span class="process-math">\((3 \times 2) \times 4 = 3 \times (2 \times 4)\)</span> and <span class="process-math">\((3 + 7)=4 = 3+ (7 +4)\text{.}\)</span> We can view these pictorally:</p>
-<p id="p-690"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/AssociativeLine.svg" class="contained"></div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/AssociativePrism.svg" class="contained"></div></p>
-<p id="p-691">Now in <span class="process-math">\(\mathbb{N},\)</span> subtraction is *not* associative. As a counterexample, we have <span class="process-math">\((6-4)-1 = 2-1 =1\)</span> but <span class="process-math">\(6-(4-1) = 6-3 = 3\text{.}\)</span></p></article></div></article><p id="p-692">Using associativity and distributivity can help us do arithmetic more quickly and easily. For example, if we were to add <span class="process-math">\(7+5+11+4+8+3,\)</span> we can look for pairs (or triples, etc) of numbers that sum to a multiple of ten. Using associativity and commutativity we can rearrange the above to</p>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="def-Associativity-2-1">In <span class="process-math">\(\mathbb{N}\text{,}\)</span> addition and multiplication are associative. For example, <span class="process-math">\((3 \times 2) \times 4 = 3 \times (2 \times 4)\)</span> and <span class="process-math">\((3 + 7)=4 = 3+ (7 +4)\text{.}\)</span> We can view these pictorally:<div class="autopermalink" data-description="Paragraph"><a href="#def-Associativity-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="def-Associativity-2-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/AssociativeLine.svg" class="contained" alt="3+7+4 on number line showing associativity"></div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/AssociativePrism.svg" class="contained" alt="3x2x4 prism showing associativity"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-Associativity-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="def-Associativity-2-3">Now in <span class="process-math">\(\mathbb{N},\)</span> subtraction is *not* associative. As a counterexample, we have <span class="process-math">\((6-4)-1 = 2-1 =1\)</span> but <span class="process-math">\(6-(4-1) = 6-3 = 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-Associativity-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.7"><a href="#def-Associativity-2" title="Copy permalink for Example 2.6.7">🔗</a></div></article></details><div class="autopermalink" data-description="Definition 2.6.6"><a href="#def-Associativity" title="Copy permalink for Definition 2.6.6">🔗</a></div></article><div class="para logical" id="subsec-PropertiesOfArithmetic-6">
+<div class="para">Using associativity and distributivity can help us do arithmetic more quickly and easily. For example, if we were to add <span class="process-math">\(7+5+11+4+8+3,\)</span> we can look for pairs (or triples, etc) of numbers that sum to a multiple of ten. Using associativity and commutativity we can rearrange the above to</div>
 <div class="displaymath process-math">
 \begin{equation*}
 7+5+11+4+8+3 = (7+3) + (11+5+4) + 8 = 10 +20 +8 = 38
 \end{equation*}
 </div>
-<p id="p-693">Similarly for multiplication, we can look for number that multiply together to give a power of ten. This will make our multiplication much easier. For example, if we were to multiply <span class="process-math">\(4 \times 7 \times 5 \times 15\)</span> we could use associativity and commutativity to rearrange to above to</p>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-PropertiesOfArithmetic-7">
+<div class="para">Similarly for multiplication, we can look for number that multiply together to give a power of ten. This will make our multiplication much easier. For example, if we were to multiply <span class="process-math">\(4 \times 7 \times 5 \times 15\)</span> we could use associativity and commutativity to rearrange to above to</div>
 <div class="displaymath process-math">
 \begin{equation*}
 
@@ -222,49 +733,83 @@
 =300 \times 7 = 2100.
 \end{equation*}
 </div>
-<p id="p-694">Now we talk about properties specific to addition/subtraction and multiplication/division.</p>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PropertiesOfArithmetic-8">Now we talk about properties specific to addition/subtraction and multiplication/division.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-AIdentity"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.8</span><span class="period">.</span>
 </h4>
-<p id="p-695">We call 0 the <dfn class="terminology">additive identity</dfn> since <span class="process-math">\(a+0=a\)</span> for any number <span class="process-math">\(a\text{.}\)</span></p></article><article class="definition definition-like" id="def-MIdentity"><h4 class="heading">
+<div class="para" id="def-AIdentity-1-1">We call 0 the <dfn class="terminology">additive identity</dfn> since <span class="process-math">\(a+0=a\)</span> for any number <span class="process-math">\(a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-AIdentity-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.6.8"><a href="#def-AIdentity" title="Copy permalink for Definition 2.6.8">🔗</a></div></article><article class="definition definition-like" id="def-MIdentity"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.9</span><span class="period">.</span>
 </h4>
-<p id="p-696">We call 1 the <dfn class="terminology">multiplicative identity</dfn> since <span class="process-math">\(a \times 1 = a\)</span> for any number <span class="process-math">\(a\text{.}\)</span></p></article><p id="p-697">Using the idea of identities, we can talk about inverse elements for each pair of related operations. In laster sections when we discuss integers and rational numbers, we will talk about how we can turn every sutraction problem into an addtion problem, and (almost) every division problem into a multiplication problem. In this sense, we can think of subtraction as being the "same" operation as addition, and division being the "same" operation as multiplication.</p>
+<div class="para" id="def-MIdentity-1-1">We call 1 the <dfn class="terminology">multiplicative identity</dfn> since <span class="process-math">\(a \times 1 = a\)</span> for any number <span class="process-math">\(a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-MIdentity-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.6.9"><a href="#def-MIdentity" title="Copy permalink for Definition 2.6.9">🔗</a></div></article><div class="para" id="subsec-PropertiesOfArithmetic-11">Using the idea of identities, we can talk about inverse elements for each pair of related operations. In laster sections when we discuss integers and rational numbers, we will talk about how we can turn every sutraction problem into an addtion problem, and (almost) every division problem into a multiplication problem. In this sense, we can think of subtraction as being the "same" operation as addition, and division being the "same" operation as multiplication.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-11" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-AdditiveInverse"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.10</span><span class="period">.</span>
 </h4>
-<p id="p-698">Let <span class="process-math">\(a\)</span> be a number. Then <span class="process-math">\(b\)</span> is the <dfn class="terminology">additive inverse</dfn> or <dfn class="terminology">negative</dfn> of <span class="process-math">\(a\)</span> if and only if <span class="process-math">\(a+b=0\text{.}\)</span></p>
-<article class="example example-like" id="example-42"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-42"><h5 class="heading">
+<div class="para" id="def-AdditiveInverse-1-1">Let <span class="process-math">\(a\)</span> be a number. Then <span class="process-math">\(b\)</span> is the <dfn class="terminology">additive inverse</dfn> or <dfn class="terminology">negative</dfn> of <span class="process-math">\(a\)</span> if and only if <span class="process-math">\(a+b=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-AdditiveInverse-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="def-AdditiveInverse-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.11</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-42"><article class="example example-like"><p id="p-699">In the set of integers, <span class="process-math">\((-2)\)</span> is the negative of <span class="process-math">\(2\)</span> since <span class="process-math">\((-2)+2=0\text{.}\)</span> This also means that <span class="process-math">\(2\)</span> is the negative of <span class="process-math">\((-2)\text{.}\)</span></p></article></div>
-<article class="example example-like" id="example-43"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-43"><h5 class="heading">
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="def-AdditiveInverse-2-1">In the set of integers, <span class="process-math">\((-2)\)</span> is the negative of <span class="process-math">\(2\)</span> since <span class="process-math">\((-2)+2=0\text{.}\)</span> This also means that <span class="process-math">\(2\)</span> is the negative of <span class="process-math">\((-2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-AdditiveInverse-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.11"><a href="#def-AdditiveInverse-2" title="Copy permalink for Example 2.6.11">🔗</a></div></article></details><details id="def-AdditiveInverse-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.12</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-43"><article class="example example-like"><p id="p-700">However, <span class="process-math">\(2\)</span> has no negaive in the set of whole numbers, since there is no <span class="process-math">\(b \in \mathbb{N}_0\)</span> such that <span class="process-math">\(2+b=0\text{.}\)</span> So depending on the set you are working with, negatives may or may not exist.</p></article></div></article><article class="definition definition-like" id="def-MultiplicativeInverse"><h4 class="heading">
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="def-AdditiveInverse-3-1">However, <span class="process-math">\(2\)</span> has no negaive in the set of whole numbers, since there is no <span class="process-math">\(b \in \mathbb{N}_0\)</span> such that <span class="process-math">\(2+b=0\text{.}\)</span> So depending on the set you are working with, negatives may or may not exist.<div class="autopermalink" data-description="Paragraph"><a href="#def-AdditiveInverse-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.12"><a href="#def-AdditiveInverse-3" title="Copy permalink for Example 2.6.12">🔗</a></div></article></details><div class="autopermalink" data-description="Definition 2.6.10"><a href="#def-AdditiveInverse" title="Copy permalink for Definition 2.6.10">🔗</a></div></article><article class="definition definition-like" id="def-MultiplicativeInverse"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.13</span><span class="period">.</span>
 </h4>
-<p id="p-701">Let <span class="process-math">\(a\)</span> be a number. Then <span class="process-math">\(b\)</span> is the <dfn class="terminology">multiplicative inverse</dfn> of <dfn class="terminology">reciprocal</dfn> of <span class="process-math">\(a\)</span> if and only if <span class="process-math">\(a \times b = 1\text{.}\)</span></p>
-<article class="example example-like" id="example-44"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-44"><h5 class="heading">
+<div class="para" id="def-MultiplicativeInverse-1-1">Let <span class="process-math">\(a\)</span> be a number. Then <span class="process-math">\(b\)</span> is the <dfn class="terminology">multiplicative inverse</dfn> of <dfn class="terminology">reciprocal</dfn> of <span class="process-math">\(a\)</span> if and only if <span class="process-math">\(a \times b = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-MultiplicativeInverse-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="def-MultiplicativeInverse-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.14</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-44"><article class="example example-like"><p id="p-702">In the set of rational numbers, or fractions, <span class="process-math">\(\frac{1}{5}\)</span> is the reciprocal of <span class="process-math">\(5\)</span> since <span class="process-math">\(\frac{1}{5} \times 5 = 1\text{.}\)</span> This also means that <span class="process-math">\(5\)</span> is the reciprocal of <span class="process-math">\(\frac{1}{5}\text{.}\)</span></p></article></div>
-<article class="example example-like" id="example-45"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-45"><h5 class="heading">
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="def-MultiplicativeInverse-2-1">In the set of rational numbers, or fractions, <span class="process-math">\(\frac{1}{5}\)</span> is the reciprocal of <span class="process-math">\(5\)</span> since <span class="process-math">\(\frac{1}{5} \times 5 = 1\text{.}\)</span> This also means that <span class="process-math">\(5\)</span> is the reciprocal of <span class="process-math">\(\frac{1}{5}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-MultiplicativeInverse-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.14"><a href="#def-MultiplicativeInverse-2" title="Copy permalink for Example 2.6.14">🔗</a></div></article></details><details id="def-MultiplicativeInverse-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.15</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-45"><article class="example example-like"><p id="p-703">Note that in any set, <span class="process-math">\(0\)</span> does not have a reciprocal, since there is no number <span class="process-math">\(b\)</span> such that <span class="process-math">\(0 \times b = 1\)</span> since we know that <span class="process-math">\(0 \times b = 0\)</span> for any choice of <span class="process-math">\(b\)</span> (of course, we know this fact is true, but we will carefully show *why* it is true later in this section.)</p></article></div></article><p id="p-704">The last property we will discuss invloves how multiplication and addition "play" together.</p>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="def-MultiplicativeInverse-3-1">Note that in any set, <span class="process-math">\(0\)</span> does not have a reciprocal, since there is no number <span class="process-math">\(b\)</span> such that <span class="process-math">\(0 \times b = 1\)</span> since we know that <span class="process-math">\(0 \times b = 0\)</span> for any choice of <span class="process-math">\(b\)</span> (of course, we know this fact is true, but we will carefully show *why* it is true later in this section.)<div class="autopermalink" data-description="Paragraph"><a href="#def-MultiplicativeInverse-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.15"><a href="#def-MultiplicativeInverse-3" title="Copy permalink for Example 2.6.15">🔗</a></div></article></details><div class="autopermalink" data-description="Definition 2.6.13"><a href="#def-MultiplicativeInverse" title="Copy permalink for Definition 2.6.13">🔗</a></div></article><div class="para" id="subsec-PropertiesOfArithmetic-14">The last property we will discuss invloves how multiplication and addition "play" together.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-14" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-Distributivity"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.16</span><span class="period">.</span>
 </h4>
-<p id="p-705">Let <span class="process-math">\(a,b,c\)</span> be numbers. Then we call the property that <span class="process-math">\(a \times (b+c) = a\times b + a\times c\)</span> the <dfn class="terminology">distributive property</dfn>.</p>
-<article class="example example-like" id="example-46"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-46"><h5 class="heading">
+<div class="para" id="def-Distributivity-1-1">Let <span class="process-math">\(a,b,c\)</span> be numbers. Then we call the property that <span class="process-math">\(a \times (b+c) = a\times b + a\times c\)</span> the <dfn class="terminology">distributive property</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#def-Distributivity-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="def-Distributivity-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.17</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-46"><article class="example example-like"><p id="p-706">The easiest way to view why distributivity holds is via a picture using the array model of multiplication. Consider a chocolate bar that measures <span class="process-math">\(6\)</span> blocks vertically and <span class="process-math">\(8\)</span> blocks horizontally. In total, the chocolate bar has <span class="process-math">\(6 \times 8 = 48\)</span> blocks:</p>
-<p id="p-707"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/6x8Rectangle.svg" role="img" class="contained"></div></p>
-<p id="p-708">Now, let's "break" this chocolate bar between the 3rd and 4th horizontal block thus giving us 3 blocks horizontally in the first section and 5 in the second (of course, we still have the same amount of chocolate). So we can view this now as <span class="process-math">\(6 \times (3+5)=48\text{.}\)</span> But we could calculate the number of blocks separately in each of the two sections, and then add them together. Obviously we would still have the same amount of chocolate. So there are <span class="process-math">\(6 \times 3+ 6 \times 5 = 18 + 30 = 48\)</span> blocks of chocolate.</p>
-<p id="p-709"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/6x(3+5)Rectangle.svg" class="contained"></div></p>
-<p id="p-710">This idea represents the idea behind distributivity. Note that distrivutivity is *very* important when we start discussing methods for multiplying in a later section.</p></article></div></article><p id="p-711">Note that we can extend the idea in the previous example to any number of "cuts" in our chocolate bar. We could show this more formally, but the following examples should give an idea of how this works</p>
-<article class="example example-like" id="example-47"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-47"><h4 class="heading">
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="def-Distributivity-2-1">The easiest way to view why distributivity holds is via a picture using the array model of multiplication. Consider a chocolate bar that measures <span class="process-math">\(6\)</span> blocks vertically and <span class="process-math">\(8\)</span> blocks horizontally. In total, the chocolate bar has <span class="process-math">\(6 \times 8 = 48\)</span> blocks:<div class="autopermalink" data-description="Paragraph"><a href="#def-Distributivity-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="def-Distributivity-2-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/6x8Rectangle.svg" role="img" class="contained" alt="A 6x8 rectangle"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-Distributivity-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="def-Distributivity-2-3">Now, let’s "break" this chocolate bar between the 3rd and 4th horizontal block thus giving us 3 blocks horizontally in the first section and 5 in the second (of course, we still have the same amount of chocolate). So we can view this now as <span class="process-math">\(6 \times (3+5)=48\text{.}\)</span> But we could calculate the number of blocks separately in each of the two sections, and then add them together. Obviously we would still have the same amount of chocolate. So there are <span class="process-math">\(6 \times 3+ 6 \times 5 = 18 + 30 = 48\)</span> blocks of chocolate.<div class="autopermalink" data-description="Paragraph"><a href="#def-Distributivity-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="def-Distributivity-2-4">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/6x(3+5)Rectangle.svg" class="contained" alt="Showing distributivity by braking a 6x8 rectangle into a 6x3 and a 6x5 rectangle."></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-Distributivity-2-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="def-Distributivity-2-5">This idea represents the idea behind distributivity. Note that distrivutivity is *very* important when we start discussing methods for multiplying in a later section.<div class="autopermalink" data-description="Paragraph"><a href="#def-Distributivity-2-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.17"><a href="#def-Distributivity-2" title="Copy permalink for Example 2.6.17">🔗</a></div></article></details><div class="autopermalink" data-description="Definition 2.6.16"><a href="#def-Distributivity" title="Copy permalink for Definition 2.6.16">🔗</a></div></article><div class="para" id="subsec-PropertiesOfArithmetic-16">Note that we can extend the idea in the previous example to any number of "cuts" in our chocolate bar. We could show this more formally, but the following examples should give an idea of how this works<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-16" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-PropertiesOfArithmetic-17" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.18</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-47"><article class="example example-like"><p id="p-712">Let's look at <span class="process-math">\(6 \times 8\)</span> again. We can break <span class="process-math">\(8\)</span> into <span class="process-math">\(2+4\text{,}\)</span> and <span class="process-math">\(8\)</span> into <span class="process-math">\(3+5\text{.}\)</span> Thus we can view <span class="process-math">\(6 \times 8\)</span> as <span class="process-math">\((2+4) \times (3+5)\text{.}\)</span> Viewed as a chocolate bar as in the previous example:</p>
-<p id="p-713"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/(2+4)x(3+5)Rectangle.svg" class="contained"></div></p>
-<p id="p-714">We can now multiply the constituent parts and the add them together to obtain the final answer. Note that we multiply each number in the first bracket by each number in the second. So</p>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-PropertiesOfArithmetic-17-1">Let’s look at <span class="process-math">\(6 \times 8\)</span> again. We can break <span class="process-math">\(8\)</span> into <span class="process-math">\(2+4\text{,}\)</span> and <span class="process-math">\(8\)</span> into <span class="process-math">\(3+5\text{.}\)</span> Thus we can view <span class="process-math">\(6 \times 8\)</span> as <span class="process-math">\((2+4) \times (3+5)\text{.}\)</span> Viewed as a chocolate bar as in the previous example:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-17-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PropertiesOfArithmetic-17-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/(2+4)x(3+5)Rectangle.svg" class="contained" alt="Distributivity of (2+4)x(3+5)"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-17-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-PropertiesOfArithmetic-17-3">
+<div class="para">We can now multiply the constituent parts and the add them together to obtain the final answer. Note that we multiply each number in the first bracket by each number in the second. So</div>
 <div class="displaymath process-math">
 \begin{equation*}
 6 \times 8 = (2+4) \times (3+5)
@@ -279,13 +824,19 @@
 \begin{equation*}
 = 6+10+12+20 = 48 \text{.}
 \end{equation*}
-</div></article></div>
-<article class="example example-like" id="example-48"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-48"><h4 class="heading">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-17-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.18"><a href="#subsec-PropertiesOfArithmetic-17" title="Copy permalink for Example 2.6.18">🔗</a></div></article></details><details id="subsec-PropertiesOfArithmetic-18" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.19</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-48"><article class="example example-like">There is nothing special about the numbers in the previous example. In fact, we can do this for any numbers. In fact, if <span class="process-math">\(a,b,c,d \)</span> are numbers then <span class="process-math">\((a+b)(c+d) = ac + ad +bc +bd\text{.}\)</span> <p id="p-715"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/(a+b)x(c+d)Rectangle.svg" class="contained"></div></p></article></div>
-<article class="example example-like" id="example-49"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-49"><h4 class="heading">
+</h4></summary><article class="example example-like knowl__content"><span class="process-math">\(a,b,c,d \)</span><span class="process-math">\((a+b)(c+d) = ac + ad +bc +bd\text{.}\)</span><div class="para" id="subsec-PropertiesOfArithmetic-18-3">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/(a+b)x(c+d)Rectangle.svg" class="contained" alt="Distributivity of (a+b)x(c+d)"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-18-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.19"><a href="#subsec-PropertiesOfArithmetic-18" title="Copy permalink for Example 2.6.19">🔗</a></div></article></details><details id="subsec-PropertiesOfArithmetic-19" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.20</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-49"><article class="example example-like"><p id="p-716">Let's use the same idea to multiply <span class="process-math">\(237 \times 841\text{.}\)</span> We can split each number in terms of its place values: <span class="process-math">\((200+30+7) \times (800 \times 40 \times 1)\text{.}\)</span> Using the same idea as the previous examples we can view this as</p>
+</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="subsec-PropertiesOfArithmetic-19-1">
+<div class="para">Let’s use the same idea to multiply <span class="process-math">\(237 \times 841\text{.}\)</span> We can split each number in terms of its place values: <span class="process-math">\((200+30+7) \times (800 \times 40 \times 1)\text{.}\)</span> Using the same idea as the previous examples we can view this as</div>
 <div class="displaymath process-math">
 \begin{equation*}
 200 \times 800 + 200 \times 40 + 200 \times 1
@@ -320,127 +871,186 @@
 \begin{equation*}
 =199317
 \end{equation*}
-</div></article></div>
-<article class="assemblage assemblage-like" id="assemblage-Properties"><h4 class="heading"><span class="title">Notes For Additional Understanding.</span></h4>
-<p id="p-717">It is just beyond the scope of this textbook, but we could show that the above properties *must* hold for addition and multiplication using a proving technique called <dfn class="terminology">mathematical induction</dfn> for many of these. We will eventually prove that <span class="process-math">\(a \times  0 = 0\)</span> for all numbers <span class="process-math">\(a\)</span> which is usually called the <dfn class="terminology">property of multiplication by zero</dfn>.</p></article><p id="p-718">We can use these properties to carefully show some results about arithmetic. We will do one, and leave the others as an exercise for you.</p></section><section class="subsection" id="subsec-ConsequencesofProperties"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.6.3</span> <span class="title">Consequences of Properties</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-19-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.20"><a href="#subsec-PropertiesOfArithmetic-19" title="Copy permalink for Example 2.6.20">🔗</a></div></article></details><article class="assemblage assemblage-like" id="assemblage-Properties"><h4 class="heading"><span class="title">Notes For Additional Understanding.</span></h4>
+<div class="para" id="assemblage-Properties-2">It is just beyond the scope of this textbook, but we could show that the above properties *must* hold for addition and multiplication using a proving technique called <dfn class="terminology">mathematical induction</dfn> for many of these. We will eventually prove that <span class="process-math">\(a \times  0 = 0\)</span> for all numbers <span class="process-math">\(a\)</span> which is usually called the <dfn class="terminology">property of multiplication by zero</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-Properties-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Summary: Notes For Additional Understanding"><a href="#assemblage-Properties" title="Copy permalink for Summary: Notes For Additional Understanding">🔗</a></div></article><div class="para" id="subsec-PropertiesOfArithmetic-21">We can use these properties to carefully show some results about arithmetic. We will do one, and leave the others as an exercise for you.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PropertiesOfArithmetic-21" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.6.2: Properties Of Arithmetic"><a href="#subsec-PropertiesOfArithmetic" title="Copy permalink for Subsection 2.6.2: Properties Of Arithmetic">🔗</a></div></section><section class="subsection" id="subsec-ConsequencesofProperties"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.6.3</span><span class="space"> </span><span class="title">Consequences of Properties</span>
 </h3>
 <section class="subsubsection" id="subsubsec-RelatedSubtractionandDivisionProblems"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">2.6.3.1</span> <span class="title">Related Subtraction and Division Problems</span>
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.6.3.1</span><span class="space"> </span><span class="title">Related Subtraction and Division Problems</span>
 </h4>
-<p id="p-719">Using the definitions of subtraction and division (in terms of addition and multiplication, respectively) and the property of commutativity, if we know the answer to one subtraction or division problem (with a remainder of <span class="process-math">\(0\)</span>), we know the answer to another related subtraction or division problem.</p>
-<p id="p-720">Let's explore this with a few examples first (which is always a good idea), and then we can think about what is happening in general.</p>
-<article class="example example-like" id="example-50"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-50"><h5 class="heading">
+<div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-2">Using the definitions of subtraction and division (in terms of addition and multiplication, respectively) and the property of commutativity, if we know the answer to one subtraction or division problem (with a remainder of <span class="process-math">\(0\)</span>), we know the answer to another related subtraction or division problem.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-3">Let’s explore this with a few examples first (which is always a good idea), and then we can think about what is happening in general.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsubsec-RelatedSubtractionandDivisionProblems-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.21</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-50"><article class="example example-like"><p id="p-721">Consider the subtraction problem <span class="process-math">\(11-4=7\text{.}\)</span> Intuitively, we are taking away <span class="process-math">\(4\)</span> from <span class="process-math">\(11\)</span> to leave <span class="process-math">\(7\text{.}\)</span> However, there is no real difference between the ideas of "taking away" and "leaving". We're simply separating <span class="process-math">\(11\)</span> into two groups; one of size <span class="process-math">\(4\)</span> and one of size <span class="process-math">\(7\text{.}\)</span></p>
-<p id="p-722"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/11-4Dots.svg" class="contained"></div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/11-7Dots.svg" class="contained"></div></p>
-<p id="p-723">So <span class="process-math">\(4\)</span> and <span class="process-math">\(7\)</span> are playing similar roles here. We can see this in the definition of addition: we know</p>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-4-1">Consider the subtraction problem <span class="process-math">\(11-4=7\text{.}\)</span> Intuitively, we are taking away <span class="process-math">\(4\)</span> from <span class="process-math">\(11\)</span> to leave <span class="process-math">\(7\text{.}\)</span> However, there is no real difference between the ideas of "taking away" and "leaving". We’re simply separating <span class="process-math">\(11\)</span> into two groups; one of size <span class="process-math">\(4\)</span> and one of size <span class="process-math">\(7\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-4-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/11-4Dots.svg" class="contained" alt="11-4 dots"></div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/11-7Dots.svg" class="contained" alt="11-7 dots"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-4-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-RelatedSubtractionandDivisionProblems-4-3">
+<div class="para">So <span class="process-math">\(4\)</span> and <span class="process-math">\(7\)</span> are playing similar roles here. We can see this in the definition of addition: we know</div>
 <div class="displaymath process-math">
 \begin{equation*}
 11-4 = 7
 \end{equation*}
 </div>
-<p class="continuation">since <span class="process-math">\(7\)</span> is the number such that <span class="process-math">\(11 = 4+7\text{.}\)</span> However, we can use the idea of commutativity to swap the <span class="process-math">\(4\)</span> and <span class="process-math">\(7\text{:}\)</span></p>
+<div class="para">since <span class="process-math">\(7\)</span> is the number such that <span class="process-math">\(11 = 4+7\text{.}\)</span> However, we can use the idea of commutativity to swap the <span class="process-math">\(4\)</span> and <span class="process-math">\(7\text{:}\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
 11=7+4
 \end{equation*}
 </div>
-<p class="continuation">and thus <span class="process-math">\(4\)</span> can be viewed as the number, when added to <span class="process-math">\(7\text{,}\)</span> to have a sum of <span class="process-math">\(11\text{.}\)</span> This is the definition of the subtraction problem</p>
+<div class="para">and thus <span class="process-math">\(4\)</span> can be viewed as the number, when added to <span class="process-math">\(7\text{,}\)</span> to have a sum of <span class="process-math">\(11\text{.}\)</span> This is the definition of the subtraction problem</div>
 <div class="displaymath process-math">
 \begin{equation*}
 11-7=4.
 \end{equation*}
 </div>
-<p class="continuation">So we have two related subtraction problems, <span class="process-math">\(11-4=7\)</span> and <span class="process-math">\(11-7=4\text{.}\)</span></p></article></div>
-<article class="example example-like" id="example-51"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-51"><h5 class="heading">
+<div class="para">So we have two related subtraction problems, <span class="process-math">\(11-4=7\)</span> and <span class="process-math">\(11-7=4\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-4-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.21"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-4" title="Copy permalink for Example 2.6.21">🔗</a></div></article></details><details id="subsubsec-RelatedSubtractionandDivisionProblems-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.22</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-51"><article class="example example-like"><p id="p-724">Now consider the division problem <span class="process-math">\(15 \div 5 = 3\text{.}\)</span> This means that <span class="process-math">\(3\)</span> is the number such that</p>
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="subsubsec-RelatedSubtractionandDivisionProblems-5-1">
+<div class="para">Now consider the division problem <span class="process-math">\(15 \div 5 = 3\text{.}\)</span> This means that <span class="process-math">\(3\)</span> is the number such that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 15 = 3 \times 5
 \end{equation*}
 </div>
-<p class="continuation">(note there is no remainder here so we don't have to worry about that part of division). Like the previous example, we can use commutativity to swap the <span class="process-math">\(3\)</span> and <span class="process-math">\(5\text{:}\)</span></p>
+<div class="para">(note there is no remainder here so we don’t have to worry about that part of division). Like the previous example, we can use commutativity to swap the <span class="process-math">\(3\)</span> and <span class="process-math">\(5\text{:}\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
 15 = 5 \times 3.
 \end{equation*}
 </div>
-<p class="continuation">Thus we can view <span class="process-math">\(5\)</span> as the number, when multiplied by <span class="process-math">\(3\text{,}\)</span> to give you a product of <span class="process-math">\(15\)</span> and thus</p>
+<div class="para">Thus we can view <span class="process-math">\(5\)</span> as the number, when multiplied by <span class="process-math">\(3\text{,}\)</span> to give you a product of <span class="process-math">\(15\)</span> and thus</div>
 <div class="displaymath process-math">
 \begin{equation*}
 15 \div 3 = 5.
 \end{equation*}
 </div>
-<p id="p-725">Here is a picture of the measurement model of division on both related division problems. First <span class="process-math">\(15 \div 5 = 3\text{:}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/15div5Dots.svg" class="contained"></div> and now <span class="process-math">\(15 \div 3 = 5\text{:}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/15div3Dots.svg" class="contained"></div></p>
-<p id="p-726">Thus we have two related division problems: <span class="process-math">\(15 \div 5 = 3\)</span> and <span class="process-math">\(15 \div 3 = 5\text{.}\)</span></p></article></div>
-<p id="p-727">If we look (somewhat) carefully at the last two examples, we notice that there is nothing special about any of the numbers in the examples; the important part in the first example is splitting the top number of the subtraction into two parts, and in the second example it's grouping our dividend horizontally and vertically (in the area model of division). We can generalize this idea to any numbers being subtracted or divided (in the case of division, with remainder of 0) using the exact logic of above. Let's write these out as theorems below. It's a good idea to try and prove these ourselves before looking at the proof given.</p>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-5-2">Here is a picture of the measurement model of division on both related division problems. First <span class="process-math">\(15 \div 5 = 3\text{:}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/15div5Dots.svg" class="contained" alt="15 divided by 5 in dots"></div> and now <span class="process-math">\(15 \div 3 = 5\text{:}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/15div3Dots.svg" class="contained" alt="15 divided by 3 in dots"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-5-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-5-3">Thus we have two related division problems: <span class="process-math">\(15 \div 5 = 3\)</span> and <span class="process-math">\(15 \div 3 = 5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-5-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.22"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-5" title="Copy permalink for Example 2.6.22">🔗</a></div></article></details><div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-6">If we look (somewhat) carefully at the last two examples, we notice that there is nothing special about any of the numbers in the examples; the important part in the first example is splitting the top number of the subtraction into two parts, and in the second example it’s grouping our dividend horizontally and vertically (in the area model of division). We can generalize this idea to any numbers being subtracted or divided (in the case of division, with remainder of 0) using the exact logic of above. Let’s write these out as theorems below. It’s a good idea to try and prove these ourselves before looking at the proof given.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="thm-RelatedSubtraction"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.6.23</span><span class="period">.</span>
 </h5>
-<p id="p-728">Let <span class="process-math">\(a,b,c \in \mathbb{N}_0\text{.}\)</span> If<span class="process-math">\(a-b=c\)</span> then <span class="process-math">\(a-c=b\text{.}\)</span></p></article><article class="hiddenproof" id="proof-1"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-1"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-1"><article class="hiddenproof"><p id="p-729">Let's assume the if-part of the conditional statement is true. Assume that <span class="process-math">\(a-b=c\text{.}\)</span> Using the definition of subtraction, this means that <span class="process-math">\(a=b+c\text{.}\)</span></p>
-<p id="p-730">We wish to show that <span class="process-math">\(a-c=b\text{.}\)</span> Let's keep that in our mind so that we know where we are working to.</p>
-<p id="p-731">Since we know that <span class="process-math">\(a=b+c\text{,}\)</span> using commutativity of addition we have that <span class="process-math">\(a=c+b\text{.}\)</span> By the definition of subtraction, this means that <span class="process-math">\(a-c=b\text{.}\)</span> Thus we have shown what we wanted to show.</p></article></div>
-<p id="p-732">The proof for division is very similar to the subtraction proof. If you have looked at the proof for subtraction, see if you can modify it to be a proof for the division result.</p>
+<div class="para" id="thm-RelatedSubtraction-1-1">Let <span class="process-math">\(a,b,c \in \mathbb{N}_0\text{.}\)</span> If<span class="process-math">\(a-b=c\)</span> then <span class="process-math">\(a-c=b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-RelatedSubtraction-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.6.23"><a href="#thm-RelatedSubtraction" title="Copy permalink for Theorem 2.6.23">🔗</a></div></article><details id="thm-RelatedSubtraction-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-RelatedSubtraction-2-1">Let’s assume the if-part of the conditional statement is true. Assume that <span class="process-math">\(a-b=c\text{.}\)</span> Using the definition of subtraction, this means that <span class="process-math">\(a=b+c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-RelatedSubtraction-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="thm-RelatedSubtraction-2-2">We wish to show that <span class="process-math">\(a-c=b\text{.}\)</span> Let’s keep that in our mind so that we know where we are working to.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RelatedSubtraction-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="thm-RelatedSubtraction-2-3">Since we know that <span class="process-math">\(a=b+c\text{,}\)</span> using commutativity of addition we have that <span class="process-math">\(a=c+b\text{.}\)</span> By the definition of subtraction, this means that <span class="process-math">\(a-c=b\text{.}\)</span> Thus we have shown what we wanted to show.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RelatedSubtraction-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 2.6.23.1"><a href="#thm-RelatedSubtraction-2" title="Copy permalink for Proof 2.6.23.1">🔗</a></div></article></details><div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-8">The proof for division is very similar to the subtraction proof. If you have looked at the proof for subtraction, see if you can modify it to be a proof for the division result.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="thm-RelatedDivision"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.6.24</span><span class="period">.</span>
 </h5>
-<p id="p-733">Let <span class="process-math">\(a,b,c \in \mathbb{N}_0\text{.}\)</span> If<span class="process-math">\(a \div b=c\)</span> (with a remainder of <span class="process-math">\(0\)</span>) then <span class="process-math">\(a \div c=b\text{.}\)</span></p></article><article class="hiddenproof" id="proof-2"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-2"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-2"><article class="hiddenproof"><p id="p-734">Let's assume the if-part of the conditional statement is true. Assume that <span class="process-math">\(a \div b=c\text{.}\)</span> Using the definition of division, this means that <span class="process-math">\(a=b \times c\text{.}\)</span></p>
-<p id="p-735">We wish to show that <span class="process-math">\(a \div c=b\text{.}\)</span> Let's keep that in our mind so that we know where we are working to.</p>
-<p id="p-736">Since we know that <span class="process-math">\(a=b \times c\text{,}\)</span> using commutativity of multiplication we have that <span class="process-math">\(a=c \times b\text{.}\)</span> By the definition of subtraction, this means that <span class="process-math">\(a \div c=b\text{.}\)</span> Thus we have shown what we wanted to show.</p></article></div>
-<article class="exercise exercise-like" id="exercise-34"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-34"><h5 class="heading">
+<div class="para" id="thm-RelatedDivision-1-1">Let <span class="process-math">\(a,b,c \in \mathbb{N}_0\text{.}\)</span> If<span class="process-math">\(a \div b=c\)</span> (with a remainder of <span class="process-math">\(0\)</span>) then <span class="process-math">\(a \div c=b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-RelatedDivision-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.6.24"><a href="#thm-RelatedDivision" title="Copy permalink for Theorem 2.6.24">🔗</a></div></article><details id="thm-RelatedDivision-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-RelatedDivision-2-1">Let’s assume the if-part of the conditional statement is true. Assume that <span class="process-math">\(a \div b=c\text{.}\)</span> Using the definition of division, this means that <span class="process-math">\(a=b \times c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-RelatedDivision-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="thm-RelatedDivision-2-2">We wish to show that <span class="process-math">\(a \div c=b\text{.}\)</span> Let’s keep that in our mind so that we know where we are working to.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RelatedDivision-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="thm-RelatedDivision-2-3">Since we know that <span class="process-math">\(a=b \times c\text{,}\)</span> using commutativity of multiplication we have that <span class="process-math">\(a=c \times b\text{.}\)</span> By the definition of subtraction, this means that <span class="process-math">\(a \div c=b\text{.}\)</span> Thus we have shown what we wanted to show.<div class="autopermalink" data-description="Paragraph"><a href="#thm-RelatedDivision-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 2.6.24.1"><a href="#thm-RelatedDivision-2" title="Copy permalink for Proof 2.6.24.1">🔗</a></div></article></details><details id="subsubsec-RelatedSubtractionandDivisionProblems-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.6.25</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-34"><article class="exercise exercise-like"><p id="p-737">The previous theorem had the condition that we had a remainder of <span class="process-math">\(0\text{.}\)</span> Show that this needs to be the case; that is, find a counterexample to:</p>
-<p id="p-738">"If <span class="process-math">\(a \div b = cRr\text{,}\)</span> where <span class="process-math">\(r \neq 0\)</span> then <span class="process-math">\(a \div c = bRr\)</span>".</p>
-<p id="p-739">Try a few examples with non-zero remainder. Is it true for other remainders besides zero? Compare the size of the remainder to both <span class="process-math">\(b\)</span> and <span class="process-math">\(c\text{.}\)</span>  What needs to be true about the remainder for the above conditional statement to be true? Write down a modified conditional statement that is always true. Prove that you are correct.</p></article></div></section><section class="subsubsection" id="subsubsec-MultiplicationandDivisionByZero"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">2.6.3.2</span> <span class="title">Multiplication By Zero</span>
+</h5></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-10-1">The previous theorem had the condition that we had a remainder of <span class="process-math">\(0\text{.}\)</span> Show that this needs to be the case; that is, find a counterexample to:<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-10-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-10-2">"If <span class="process-math">\(a \div b = cRr\text{,}\)</span> where <span class="process-math">\(r \neq 0\)</span> then <span class="process-math">\(a \div c = bRr\)</span>".<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-10-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-RelatedSubtractionandDivisionProblems-10-3">Try a few examples with non-zero remainder. Is it true for other remainders besides zero? Compare the size of the remainder to both <span class="process-math">\(b\)</span> and <span class="process-math">\(c\text{.}\)</span>  What needs to be true about the remainder for the above conditional statement to be true? Write down a modified conditional statement that is always true. Prove that you are correct.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-10-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.6.25"><a href="#subsubsec-RelatedSubtractionandDivisionProblems-10" title="Copy permalink for Checkpoint 2.6.25">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection 2.6.3.1: Related Subtraction and Division Problems"><a href="#subsubsec-RelatedSubtractionandDivisionProblems" title="Copy permalink for Subsubsection 2.6.3.1: Related Subtraction and Division Problems">🔗</a></div></section><section class="subsubsection" id="subsubsec-MultiplicationandDivisionByZero"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.6.3.2</span><span class="space"> </span><span class="title">Multiplication By Zero</span>
 </h4>
-<p id="p-740">Does it have to be the case that multiplication by zero always gives and answer of zero, or is that something we just decided because it works (more specifically, do we need to make an axoim covering multiplication by zero)? In fact, it's somthing that *must* follow from previous properties we've discussed. An important result that can be proved from axioms or previous results is called a <dfn class="terminology">theorem</dfn>. Let's write this as a theorem, and then prove it. We have to be careful here, since we may be tempted to simplify <span class="process-math">\(a \times 0 = 0\text{,}\)</span> but we need to put ourselves in the mindset of the first person ever to think about this; we have no idea what it could equal, so we need to solve for it using some properties that we know.</p>
-<article class="example example-like" id="example-52"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-52"><h5 class="heading">
+<div class="para" id="subsubsec-MultiplicationandDivisionByZero-2">Does it have to be the case that multiplication by zero always gives and answer of zero, or is that something we just decided because it works (more specifically, do we need to make an axoim covering multiplication by zero)? In fact, it’s somthing that *must* follow from previous properties we’ve discussed. An important result that can be proved from axioms or previous results is called a <dfn class="terminology">theorem</dfn>. Let’s write this as a theorem, and then prove it. We have to be careful here, since we may be tempted to simplify <span class="process-math">\(a \times 0 = 0\text{,}\)</span> but we need to put ourselves in the mindset of the first person ever to think about this; we have no idea what it could equal, so we need to solve for it using some properties that we know.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-MultiplicationandDivisionByZero-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsubsec-MultiplicationandDivisionByZero-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.26</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-52"><article class="example example-like"><article class="theorem theorem-like" id="thm-atimeszero"><h6 class="heading">
+</h5></summary><article class="example example-like knowl__content"><article class="theorem theorem-like" id="thm-atimeszero"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.6.27</span><span class="period">.</span>
 </h6>
-<p id="p-741">If <span class="process-math">\(a\)</span> is a number then <span class="process-math">\(a \times 0 = 0\)</span></p></article><article class="hiddenproof" id="proof-3"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-742">Let <span class="process-math">\(a\)</span> be a number and let's consider <span class="process-math">\(a \times 0\text{,}\)</span> which is our unknown expression; this is what we need to solve for. Remember, we *cannot* simplify this. The key to this is trying to come up with a way of finding something equal to <span class="process-math">\(a \times 0\)</span> and then using some algebra to solve for our unknown expression.</p>
-<p id="p-743">One way of doing this is remembering the multiplicitave identity and additive indentity properties. Let's be very precise here, and make sure we label all of the properties we are using. By the multiplicative identity property we know</p>
+<div class="para" id="thm-atimeszero-1-1">If <span class="process-math">\(a\)</span> is a number then <span class="process-math">\(a \times 0 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-atimeszero-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 2.6.27"><a href="#thm-atimeszero" title="Copy permalink for Theorem 2.6.27">🔗</a></div></article><details id="thm-atimeszero-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-atimeszero-2-1">Let <span class="process-math">\(a\)</span> be a number and let’s consider <span class="process-math">\(a \times 0\text{,}\)</span> which is our unknown expression; this is what we need to solve for. Remember, we *cannot* simplify this. The key to this is trying to come up with a way of finding something equal to <span class="process-math">\(a \times 0\)</span> and then using some algebra to solve for our unknown expression.<div class="autopermalink" data-description="Paragraph"><a href="#thm-atimeszero-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="thm-atimeszero-2-2">
+<div class="para">One way of doing this is remembering the multiplicitave identity and additive indentity properties. Let’s be very precise here, and make sure we label all of the properties we are using. By the multiplicative identity property we know</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a \times 1 = a
 \end{equation*}
 </div>
-<p class="continuation">and by the additive identity property we know</p>
+<div class="para">and by the additive identity property we know</div>
 <div class="displaymath process-math">
 \begin{equation*}
 1+0 = 1 \text{.}
 \end{equation*}
 </div>
-<p class="continuation">Using substitution of equal expressions we can write</p>
+<div class="para">Using substitution of equal expressions we can write</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a \times (1+0) = 1 \text{.}
 \end{equation*}
 </div>
-<p class="continuation">Now using distributivity we can say that</p>
+<div class="para">Now using distributivity we can say that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a \times 1 + a\times 0 = a\text{.}
 \end{equation*}
 </div>
-<p class="continuation">Again, by multiplicitive identity we can simplify this to</p>
+<div class="para">Again, by multiplicitive identity we can simplify this to</div>
 <div class="displaymath process-math">
 \begin{equation*}
 a + a\times 0 = a \text{.}
 \end{equation*}
 </div>
-<p class="continuation">Finally ,by arithmetic of equal expressions we can subtract <span class="process-math">\(a\)</span> from both sides to have <span class="process-math">\(a \times 0 = 0\text{.}\)</span></p></article></div>
-<p id="p-744">Keep in mind what this is saying; if we want 1 to be the multiplicitave identity, 0 to be the additive identity, and the properties of equality and distributivity to hold, it *must* be the case that <span class="process-math">\(a \times 0 = 0\text{.}\)</span> So this is a consequence of these properties; if we want to live in a mathematical world where these properties hold, then multiplying by zero *must* give you an answer of zero.</p></article></div></section><section class="subsubsection" id="subsubsec-DivisionByZero"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">2.6.3.3</span> <span class="title">Division By Zero</span>
+<div class="para">Finally ,by arithmetic of equal expressions we can subtract <span class="process-math">\(a\)</span> from both sides to have <span class="process-math">\(a \times 0 = 0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-atimeszero-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 2.6.27.1"><a href="#thm-atimeszero-2" title="Copy permalink for Proof 2.6.27.1">🔗</a></div></article></details><div class="para" id="subsubsec-MultiplicationandDivisionByZero-3-2">Keep in mind what this is saying; if we want 1 to be the multiplicitave identity, 0 to be the additive identity, and the properties of equality and distributivity to hold, it *must* be the case that <span class="process-math">\(a \times 0 = 0\text{.}\)</span> So this is a consequence of these properties; if we want to live in a mathematical world where these properties hold, then multiplying by zero *must* give you an answer of zero.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-MultiplicationandDivisionByZero-3-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.26"><a href="#subsubsec-MultiplicationandDivisionByZero-3" title="Copy permalink for Example 2.6.26">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection 2.6.3.2: Multiplication By Zero"><a href="#subsubsec-MultiplicationandDivisionByZero" title="Copy permalink for Subsubsection 2.6.3.2: Multiplication By Zero">🔗</a></div></section><section class="subsubsection" id="subsubsec-DivisionByZero"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.6.3.3</span><span class="space"> </span><span class="title">Division By Zero</span>
 </h4>
-<p id="p-745">Why did we have the condition that our divisor <span class="process-math">\(b \neq 0\text{?}\)</span> That is, why can't we divide by <span class="process-math">\(0\text{?}\)</span> Let's see if we can show why that's the case.</p>
-<article class="example example-like" id="example-53"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-53"><h5 class="heading">
+<div class="para" id="subsubsec-DivisionByZero-2">Why did we have the condition that our divisor <span class="process-math">\(b \neq 0\text{?}\)</span> That is, why can’t we divide by <span class="process-math">\(0\text{?}\)</span> Let’s see if we can show why that’s the case.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-DivisionByZero-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsubsec-DivisionByZero-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.28</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-53"><article class="example example-like"><p id="p-746">Let <span class="process-math">\(a \in \mathbb{N}_0\)</span> and <span class="process-math">\(b=0\text{,}\)</span> so <span class="process-math">\(a\)</span> is some whole number. For now, let's assume that there is no condition on the size of the remainder <span class="process-math">\(r\text{.}\)</span> If <span class="process-math">\(a \div 0\)</span> does make sense, this means there is some unique quotient <span class="process-math">\(q\)</span> and remainder <span class="process-math">\(r\)</span> such that <span class="process-math">\(a=q \times 0 + r\text{.}\)</span> Thus <span class="process-math">\(a=r \text{,}\)</span> but <span class="process-math">\(q\)</span> can be any number and this will still hold. Since we require that quotients are unique, this does not make sense.</p></article></div></section></section></section></div></main>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="subsubsec-DivisionByZero-3-1">Let <span class="process-math">\(a \in \mathbb{N}_0\)</span> and <span class="process-math">\(b=0\text{,}\)</span> so <span class="process-math">\(a\)</span> is some whole number. For now, let’s assume that there is no condition on the size of the remainder <span class="process-math">\(r\text{.}\)</span> If <span class="process-math">\(a \div 0\)</span> does make sense, this means there is some unique quotient <span class="process-math">\(q\)</span> and remainder <span class="process-math">\(r\)</span> such that <span class="process-math">\(a=q \times 0 + r\text{.}\)</span> Thus <span class="process-math">\(a=r \text{,}\)</span> but <span class="process-math">\(q\)</span> can be any number and this will still hold. Since we require that quotients are unique, this does not make sense.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-DivisionByZero-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.6.28"><a href="#subsubsec-DivisionByZero-3" title="Copy permalink for Example 2.6.28">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection 2.6.3.3: Division By Zero"><a href="#subsubsec-DivisionByZero" title="Copy permalink for Subsubsection 2.6.3.3: Division By Zero">🔗</a></div></section><div class="autopermalink" data-description="Subsection 2.6.3: Consequences of Properties"><a href="#subsec-ConsequencesofProperties" title="Copy permalink for Subsection 2.6.3: Consequences of Properties">🔗</a></div></section><div class="autopermalink" data-description="Section 2.6: Properties Of Arithmetic Operations"><a href="#sec-PropertiesOfArithmeticOperations" title="Copy permalink for Section 2.6: Properties Of Arithmetic Operations">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-ArithmeticOperations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="integers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

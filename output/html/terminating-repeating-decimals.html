@@ -1,341 +1,1108 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-08-05T15:19:45-03:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Terminating and Repeating Decimals</title>
-<meta name="Keywords" content="Authored in PreTeXt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Math For Elementary School Teachers">
 <meta property="book:author" content="Me">
-<script>window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    useLabelIds: true,
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
-  },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-  },
-  chtml: {
-    scale: 0.88,
-    mtextInheritFont: true
-  },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
-  },
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.8.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
-<body class="pretext-book ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers</span> <span class="subtitle"></span></a></h1>
+<p class="byline">Me</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec_operations_with_decimals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Decimals.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="percent-and-percent-change.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers:</span> <span class="subtitle"></span></a></h1>
-<p class="byline">Me</p>
-</div>
-</div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_operations_with_decimals.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Decimals.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="percent-and-percent-change.html" title="Next">Next</a></span>
-</div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_operations_with_decimals.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Decimals.html" title="Up">Up</a><a class="next-button button toolbar-item" href="percent-and-percent-change.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
-<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
-<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
-<li><a href="preface.html" data-scroll="preface" class="internal">Preface</a></li>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="test.html" data-scroll="test" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a><ul>
-<li><a href="IntroToLogic.html" data-scroll="IntroToLogic" class="internal">Intro To Logic</a></li>
-<li><a href="sec-ConditionalStatements.html" data-scroll="sec-ConditionalStatements" class="internal">Conditional Statements</a></li>
-<li><a href="sec-Sets.html" data-scroll="sec-Sets" class="internal">Sets</a></li>
-<li><a href="section-4.html" data-scroll="section-4" class="internal">Supplemental Exercises</a></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="test.html" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IntroToLogic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Intro To Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-LogicObj" class="internal"><span class="codenumber">1.1.1</span> <span class="title">The Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-AndOrNot" class="internal"><span class="codenumber">1.1.2</span> <span class="title">And, Or, and Not</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-Quantifiers" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-QuantVenn" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Viewing Quantified Statements as a Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-EvenOdd" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Expressing Even and Odd Numbers Algebraically</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="WholeNumbers.html" data-scroll="WholeNumbers" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a><ul>
-<li><a href="sec-Equality.html" data-scroll="sec-Equality" class="internal">Equality</a></li>
-<li><a href="sec-ProblemSolving.html" data-scroll="sec-ProblemSolving" class="internal">Problem Solving</a></li>
-<li><a href="sec-2_1NumberSystemsAndPlaceValue.html" data-scroll="sec-2_1NumberSystemsAndPlaceValue" class="internal">NumberSystemsAndPlaceValueWhole Numbers</a></li>
-<li><a href="sec-NumberSystems.html" data-scroll="sec-NumberSystems" class="internal">Number Systems</a></li>
-<li><a href="sec-ArithmeticOperations.html" data-scroll="sec-ArithmeticOperations" class="internal">Arithmetic Operations</a></li>
-<li><a href="sec-PropertiesOfArithmeticOperations.html" data-scroll="sec-PropertiesOfArithmeticOperations" class="internal">Properties Of Arithmetic Operations</a></li>
-<li><a href="integers.html" data-scroll="integers" class="internal">Integers</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ConditionalStatements.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#sec-ConditionalStatements-2" class="internal"><span class="codenumber">1.2.1</span> <span class="title">What is a Conditional Statement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-JustifyingConditionalStatements" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Justifying Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-WhyProofsAreImportant" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Why Proofs Are Important</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-Counterexamples" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Counterexamples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-CondExist" class="internal"><span class="codenumber">1.2.5</span> <span class="title">The Relationship Between Conditional and Existential Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-OtherFormsCondSt" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Other Forms of Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-BiconditionalSentences" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Biconditional Sentences</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ArithmeticAlgorithms.html" data-scroll="ArithmeticAlgorithms" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a><ul>
-<li><a href="sec-AdditionAlgorithms.html" data-scroll="sec-AdditionAlgorithms" class="internal">Addition Algorithms</a></li>
-<li><a href="sec-SubtractionAlgorithms.html" data-scroll="sec-SubtractionAlgorithms" class="internal">Subtraction Algorithms</a></li>
-<li><a href="sec-MultiplicationAlgorithms.html" data-scroll="sec-MultiplicationAlgorithms" class="internal">Multiplication Algorithms</a></li>
-<li><a href="sec-DivisionAlgorithms.html" data-scroll="sec-DivisionAlgorithms" class="internal">Division Algorithms</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-IntroToSets" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Intro To Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-CombiningSets" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Combining Sets</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="Fractions.html" data-scroll="Fractions" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a><ul>
-<li><a href="section-16.html" data-scroll="section-16" class="internal">Introduction to Fractions</a></li>
-<li><a href="section-17.html" data-scroll="section-17" class="internal">Arithmetic With Fractions</a></li>
-<li><a href="section-18.html" data-scroll="section-18" class="internal">Ratios, Rates, and Proportions</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="test-5.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Supplemental Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="Decimals.html" data-scroll="Decimals" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a><ul>
-<li><a href="decimals.html" data-scroll="decimals" class="internal">Introduction to Decimals</a></li>
-<li><a href="sec_operations_with_decimals.html" data-scroll="sec_operations_with_decimals" class="internal">Operations with Decimals</a></li>
-<li><a href="terminating-repeating-decimals.html" data-scroll="terminating-repeating-decimals" class="active">Terminating and Repeating Decimals</a></li>
-<li><a href="percent-and-percent-change.html" data-scroll="percent-and-percent-change" class="internal">Percent and Percent Change</a></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="WholeNumbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Equality.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Equality.html#subsec-IntroToEquality" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Intro To Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Equality.html#subsec-PropertiesOfEquality" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Properties Of Equality</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SolvingOneEquation" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Solving One Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SystemsOfEquations" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Intro to Systems Of Equations</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Substitution" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Elimination" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Elimination</span></a></div></li></ul>
+</li>
 </ul>
 </li>
-<li class="link">
-<a href="Divisibility.html" data-scroll="Divisibility" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a><ul>
-<li><a href="sec-IntroductoryConcepts.html" data-scroll="sec-IntroductoryConcepts" class="internal">Introductory Concepts</a></li>
-<li><a href="divisibility-theorems-small-numbers.html" data-scroll="divisibility-theorems-small-numbers" class="internal">Divisibility Theorems for Small Numbers</a></li>
-<li><a href="sec-PrimeNumbers.html" data-scroll="sec-PrimeNumbers" class="internal">Prime Numbers</a></li>
-<li><a href="sec-FactorsAndMultiples.html" data-scroll="sec-FactorsAndMultiples" class="internal">Factors and Multiples</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2_1NumberSystemsAndPlaceValue.html" class="internal"><span class="codenumber">2.3</span> <span class="title">NumberSystemsAndPlaceValueWhole Numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-NumberSystems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#sec-NumberSystems-2" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Introduction to Number Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingFromBaseTen" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Converting From Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingToBaseTen" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Converting To Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-BaseTwelve" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-HistoricalNumberSystems" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Historical Number Systems</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="irrational_numbers.html" data-scroll="irrational_numbers" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a><ul>
-<li><a href="understanding_irrational_numbers.html" data-scroll="understanding_irrational_numbers" class="internal">Understanding Irrational Numbers</a></li>
-<li><a href="sec-SimpleRoots.html" data-scroll="sec-SimpleRoots" class="internal">Simple Roots and Irrationality</a></li>
-<li><a href="sec-OperationsWithIrrationalNumbers.html" data-scroll="sec-OperationsWithIrrationalNumbers" class="internal">Operations With Irrational Numbers</a></li>
-<li><a href="exponents_irrational_numbers.html" data-scroll="exponents_irrational_numbers" class="internal">Exponents and Irrational Numbers</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Addition" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Subtraction" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Inequality and Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Multiplication" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Multiplication</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-Exponents" class="internal"><span class="codenumber">2.5.3.1</span> <span class="title">Exponents</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Division" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Division with Remainders</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-IntroductionToDivision" class="internal"><span class="codenumber">2.5.4.1</span> <span class="title">Introduction To Division</span></a></div></li></ul>
+</li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
-<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
-<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
-<li class="link"><a href="appendix-1.html" data-scroll="appendix-1" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
-<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
-</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="terminating-repeating-decimals"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Terminating and Repeating Decimals</span>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Properties Of Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-OrderOfOperations" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Order Of Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-PropertiesOfArithmetic" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Properties Of Arithmetic</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-ConsequencesofProperties" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Consequences of Properties</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-RelatedSubtractionandDivisionProblems" class="internal"><span class="codenumber">2.6.3.1</span> <span class="title">Related Subtraction and Division Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-MultiplicationandDivisionByZero" class="internal"><span class="codenumber">2.6.3.2</span> <span class="title">Multiplication By Zero</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-DivisionByZero" class="internal"><span class="codenumber">2.6.3.3</span> <span class="title">Division By Zero</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="integers.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-addition" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Visualizing Integer Addition</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-add-integers" class="internal"><span class="title">How to Add Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Properties of Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity" class="internal"><span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity" class="internal"><span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse" class="internal"><span class="title">Additive Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-identity" class="internal"><span class="title">Additive Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-subtraction" class="internal"><span class="codenumber">2.7.1.2</span> <span class="title">Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-subtraction" class="internal"><span class="title">Visualizing Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-subtract-integers" class="internal"><span class="title">How to Subtract Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-subtraction" class="internal"><span class="title">Properties of Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-subtraction" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse-subtraction" class="internal"><span class="title">Relationship to Additive Inverse</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-multiplication" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-multiplication" class="internal"><span class="codenumber">2.7.2.1</span> <span class="title">Visualizing Integer Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-multiply-integers" class="internal"><span class="codenumber">2.7.2.2</span> <span class="title">How to Multiply Integers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-multiplication" class="internal"><span class="codenumber">2.7.2.3</span> <span class="title">Proof: <span class="process-math">\((-a) = (-1) \times a\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-times-negative" class="internal"><span class="codenumber">2.7.2.4</span> <span class="title">Proof: <span class="process-math">\((-1) \times (-1) = 1\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-multiplication" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Properties of Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity-multiplication" class="internal"><span class="codenumber">2.7.3.1</span> <span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity-multiplication" class="internal"><span class="codenumber">2.7.3.2</span> <span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#distributivity-multiplication" class="internal"><span class="codenumber">2.7.3.3</span> <span class="title">Distributivity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-multiplication" class="internal"><span class="codenumber">2.7.3.4</span> <span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#multiplicative-identity" class="internal"><span class="codenumber">2.7.3.5</span> <span class="title">Multiplicative Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-division" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Integer Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-division" class="internal"><span class="codenumber">2.7.4.1</span> <span class="title">Visualizing Integer Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-divide-integers" class="internal"><span class="codenumber">2.7.4.2</span> <span class="title">How to Divide Integers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ArithmeticAlgorithms.html" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-AdditionAlgorithms.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Addition Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-TheStandardAdditionAlgorithm" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Standard Addition Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-PartialSums" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-SameChangeAddition" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-LatticeMethodAddition" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Lattice Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subtraction Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-StandardSubtractionAlgorithm" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Standard Subtraction Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-PartialDifferences" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Partial Differences</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-SameChangeAlgorithm" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-EqualAdditionsAlgorithm" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Equal Additions Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationPreliminaries" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Multiplication Preliminaries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-PartialProducts" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Partial Products</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationInBaseTwelve" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Multiplication In Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplication" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Russian Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-ProsAndConsOfMultiplicationAlgorithms" class="internal"><span class="codenumber">3.3.6</span> <span class="title">Pros And Cons Of Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-PartialProductsAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">PartialProductsAlgorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-GridMethod" class="internal"><span class="codenumber">3.3.6.2</span> <span class="title">Grid Method</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">Russian Multiplication Algorithm</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DivisionAlgorithms.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Division Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivision" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Long Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivisionBaseTwelve" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Long Division Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-ShortDivision" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Short Division</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Fractions.html" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-2.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-8" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Examples of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#subsec-MakingSenseOfFractions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Making Sense Of Fractions and Division of Whole Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-10" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Equivalent Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingFractions" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Comparing Fractions Using a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingMultipleFractions" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Comparing Multiple Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#DensityOfFractions" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Density of Fractions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-3.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Arithmetic With Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#AddingSubtractingFractions" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Adding and Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#MixedFractions" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Mixed Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#ImproperToFractions" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Converting Improper Fractions to Mixed Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#subsec-MultiplicationOfFractions" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Multiplication of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#Fractions-3-6" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Division of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="Fractions-3.html#negative-exponents-fractions" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Negative Exponents and Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="Fractions-3.html#simplify-compound-fraction" class="internal"><span class="codenumber">4.2.6.1</span> <span class="title">Simplifying Compound Fractions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-4.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Ratios, Rates, and Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Ratios</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Proportions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="Decimals.html" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="decimals.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction to Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="decimals.html#decimal-fractions" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Decimal Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="decimals.html#decimal-fractions-2" class="internal"><span class="codenumber">5.1.1.1</span> <span class="title">Decimal Fractions and Their Relationship to Whole Numbers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#decimal-representation" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#pictorial-representation" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Pictorial Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#comparing-decimals" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Comparing Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_operations_with_decimals.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Operations with Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_add_subtract_decimals" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Addition and Subtraction with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_multiply_decimals" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Multiplication with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_divide_decimals" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Division with Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Terminating and Repeating Decimals</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#terminating-decimals" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Terminating Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-long-division" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Expressing a Fraction as a Repeating Decimal Using Long Division</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-as-rational-numbers" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Representing All Repeating Decimals as Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#CanRepeatingDecimalsEqual1" class="internal"><span class="codenumber">5.3.3.1</span> <span class="title">Can Repeating Decimals Equal 1?</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repetend-and-period" class="internal"><span class="codenumber">5.3.3.2</span> <span class="title">Repetend and Period of a Repeated Decimal</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#converting-repeating-decimal-to-fraction" class="internal"><span class="codenumber">5.3.3.3</span> <span class="title">Converting a Repeating Decimal to a Fraction</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="percent-and-percent-change.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percent and Percent Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="percent-and-percent-change.html#introduction-to-percent" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Introduction to Percent</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-ratios-to-percents" class="internal"><span class="codenumber">5.4.1.1</span> <span class="title">Converting Ratios to Percents</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-fractions-to-percents" class="internal"><span class="codenumber">5.4.1.2</span> <span class="title">Converting Fractions to Percents</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#visualizing-percents" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Visualizing Percents Using a Bar Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-vs-percent-change" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Percent vs. Percent Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-change-vs-percentage-point-change" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Percent Change vs. Percentage Point Change</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Divisibility.html" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Introductory Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility2" class="internal"><span class="codenumber">6.1.1.1</span> <span class="title">Intro to Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TransitivityAndDivisibility" class="internal"><span class="codenumber">6.1.1.2</span> <span class="title">Transitivity And Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-properties" class="internal"><span class="codenumber">6.1.1.3</span> <span class="title">Divisibility Properties of 0, 1, and a Number with Itself</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-theorems" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Divisibility Theorems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem1" class="internal"><span class="codenumber">6.1.2.1</span> <span class="title">Theorem 1</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem2" class="internal"><span class="codenumber">6.1.2.2</span> <span class="title">Theorem 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem3" class="internal"><span class="codenumber">6.1.2.3</span> <span class="title">Theorem 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TheOtherCase" class="internal"><span class="codenumber">6.1.2.4</span> <span class="title">TheOtherCase</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Theorems for Small Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-IntroductionDivThms" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2-4-8" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Divisibility Rules for 2, 4, and 8</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2" class="internal"><span class="codenumber">6.2.2.1</span> <span class="title">Divisibility Rule for 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-4" class="internal"><span class="codenumber">6.2.2.2</span> <span class="title">Divisibility Rule for 4</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-8" class="internal"><span class="codenumber">6.2.2.3</span> <span class="title">Divisibility Rule for 8</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-DivisibilityRuleforHigherPowersof2" class="internal"><span class="codenumber">6.2.2.4</span> <span class="title">Divisibility Rule for Higher Powers of 2</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Rule For 5</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRulesFor3And9" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Rules For 3 And 9</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor11" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Divisibility Rule For 11</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-CompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Compound Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-WhenCompundDivisibilityRulesWork" class="internal"><span class="codenumber">6.2.6.1</span> <span class="title">When Compund Divisibility Rules Work</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-SomeCommonCompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6.2</span> <span class="title">Some Common Compound Divisibility Rules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8" class="internal"><span class="codenumber">6.2.7</span> <span class="title">Iterative Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-4" class="internal"><span class="codenumber">6.2.7.1</span> <span class="title">Divisibility by 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-5" class="internal"><span class="codenumber">6.2.7.2</span> <span class="title">Divisibility by 9</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-6" class="internal"><span class="codenumber">6.2.7.3</span> <span class="title">Divisibility by 11</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-MakingDivisibilityRules" class="internal"><span class="codenumber">6.2.8</span> <span class="title">MakingDivisibilityRules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PrimeNumbers.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-FindingPrimeNumbers" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Finding Prime Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowManyPrimeNumbersExist" class="internal"><span class="codenumber">6.3.2</span> <span class="title">How Many Prime Numbers Exist</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowToDetermineIfaNumberisPrime" class="internal"><span class="codenumber">6.3.3</span> <span class="title">How To Determine If a Number is Prime</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Factors and Multiples</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-PrimesAsBuildingBlocks" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Primes As Building Blocks</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-HowManyFactorsDoesANumberHave" class="internal"><span class="codenumber">6.4.2</span> <span class="title">How Many Factors Does A Number Have?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsubsec-PuttingItAllTogether" class="internal"><span class="codenumber">6.4.2.1</span> <span class="title">Putting It All Together</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_lcm_intro" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Greatest Common Divisor and Least Common Multiple</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#understanding_gcd_lcm" class="internal"><span class="codenumber">6.4.3.1</span> <span class="title">Unraveling the Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_prime_factorization" class="internal"><span class="title">Understanding GCD Through Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_concept" class="internal"><span class="title">Least Common Multiple (LCM)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_example" class="internal"><span class="title">Exploring LCM with an Example</span></a></div></li></ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#word_problems_gcd_lcm" class="internal"><span class="codenumber">6.4.4</span> <span class="title">Word Problems: GCD and LCM in Practice</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem1_gcd" class="internal"><span class="codenumber">6.4.4.1</span> <span class="title">Problem 1: Distributing Items in Boxes</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem2_lcm" class="internal"><span class="codenumber">6.4.4.2</span> <span class="title">Problem 2: Buying Ingredients for Burgers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#venn_diagrams_gcd_lcm" class="internal"><span class="codenumber">6.4.4.3</span> <span class="title">Visualizing GCD and LCM with Venn Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Understanding the Euclidean Algorithm</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_basics" class="internal"><span class="codenumber">6.4.5.1</span> <span class="title">Basic Principles</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_procedure" class="internal"><span class="codenumber">6.4.5.2</span> <span class="title">Applying the Euclidean Algorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_examples" class="internal"><span class="codenumber">6.4.5.3</span> <span class="title">Additional Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="irrational_numbers.html" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="understanding_irrational_numbers.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Understanding Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#examples_of_irrational_numbers" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Examples of Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-TypesOfIrrationalNumbers" class="internal"><span class="codenumber">7.1.2</span> <span class="title">TypesOfIrrationalNumbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-FunctionsBriefly" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Functions Briefly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SimpleRoots.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Simple Roots and Irrationality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-PrincipalRoots" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Principal Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-nthPowers" class="internal"><span class="codenumber">7.2.2</span> <span class="title">nth Powers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-ProvingIrrationalityofnthRoots" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Proving Irrationality of nth Roots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Operations With Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#addition_subtraction_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Addition and Subtraction with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#multiplication_division_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Multiplication and Division with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#more_elaborate_examples_irrationality" class="internal"><span class="codenumber">7.3.2</span> <span class="title">More Elaborate Examples of Irrationality</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="exponents_irrational_numbers.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exponents and Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#nth_root_exponent" class="internal"><span class="codenumber">7.4.1</span> <span class="title">nth Root as Exponent 1/n</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#multiplying_dividing_roots" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Multiplying and Dividing nth Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying-principal-roots" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Simplifying <span class="process-math">\(n\)</span>th Principal Roots by Factoring Out <span class="process-math">\(n\)</span>th Powers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#quotient-remainder-theorem" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Using the Quotient Remainder Theorem</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#more-examples" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Additional Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying_fractional_powers" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Simplifying Expressions with Fractional Powers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="terminating-repeating-decimals"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.3</span><span class="space"> </span><span class="title">Terminating and Repeating Decimals</span>
 </h2>
-<section class="introduction" id="introduction-11"><p id="p-1375">In this section, our goal is to understand the relationship between rational numbers and their decimal representations. Specifically, we aim to show that a rational number is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction. Conversely, a rational number is equivalent to a repeating decimal if and only if it is not equivalent to a decimal fraction. This understanding is crucial for elementary school mathematics teachers as it forms the basis for many mathematical operations and concepts.</p></section><section class="subsection" id="terminating-decimals"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">5.3.1</span> <span class="title">Terminating Decimals</span>
+<section class="introduction" id="terminating-repeating-decimals-2"><div class="para" id="terminating-repeating-decimals-2-1">In this section, our goal is to understand the relationship between rational numbers and their decimal representations. Specifically, we aim to show that a rational number is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction. Conversely, a rational number is equivalent to a repeating decimal if and only if it is not equivalent to a decimal fraction. This understanding is crucial for elementary school mathematics teachers as it forms the basis for many mathematical operations and concepts.<div class="autopermalink" data-description="Paragraph"><a href="#terminating-repeating-decimals-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="terminating-decimals"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="space"> </span><span class="title">Terminating Decimals</span>
 </h3>
-<p id="p-1376">A <dfn class="terminology">terminating decimal</dfn> is a decimal number that has a finite number of digits. In other words, it is a decimal that ends or "terminates". It can be expressed as a fraction where the denominator is a power of 10.</p>
-<article class="example example-like" id="example-terminating-decimal"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-terminating-decimal"><h4 class="heading">
+<div class="para" id="terminating-decimals-2">A <dfn class="terminology">terminating decimal</dfn> is a decimal number that has a finite number of digits. In other words, it is a decimal that ends or "terminates". It can be expressed as a fraction where the denominator is a power of 10.<div class="autopermalink" data-description="Paragraph"><a href="#terminating-decimals-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="example-terminating-decimal" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Examples of Terminating Decimals.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-terminating-decimal"><article class="example example-like"><p id="p-1377">Here are some examples of fractions that are equivalent to terminating decimals:</p>
-<ol class="decimal">
-<li id="li-334"><p id="p-derived-li-334">1/2 = 0.5: Here, we can say that 1/2 is equivalent to the fraction 5/10.</p></li>
-<li id="li-335"><p id="p-derived-li-335">3/4 = 0.75: When we divide 3 by 4, we get 0.75, which is a terminating decimal.</p></li>
-<li id="li-336"><p id="p-derived-li-336">7/8 = 0.875: Dividing 7 by 8 gives us 0.875, another terminating decimal.</p></li>
-<li id="li-337"><p id="p-derived-li-337">3/15 = 0.2: Even though 15 is not a power of 10, it is equivalent to a fraction that is; the fraction 3/15 simplifies to 1/5, and this is equivalent to the decimal fraction 20/100, and thus a terminating decimal.</p></li>
+</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-terminating-decimal-2">
+<div class="para">Here are some examples of fractions that are equivalent to terminating decimals:</div>
+<ol class="decimal" id="example-terminating-decimal-2-1">
+<li id="example-terminating-decimal-2-1-1">
+<div class="para" id="p-derived-example-terminating-decimal-2-1-1">1/2 = 0.5: Here, we can say that 1/2 is equivalent to the fraction 5/10.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-terminating-decimal-2-1-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-terminating-decimal-2-1-2">
+<div class="para" id="p-derived-example-terminating-decimal-2-1-2">3/4 = 0.75: When we divide 3 by 4, we get 0.75, which is a terminating decimal.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-terminating-decimal-2-1-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-terminating-decimal-2-1-3">
+<div class="para" id="p-derived-example-terminating-decimal-2-1-3">7/8 = 0.875: Dividing 7 by 8 gives us 0.875, another terminating decimal.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-terminating-decimal-2-1-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="example-terminating-decimal-2-1-4">
+<div class="para" id="p-derived-example-terminating-decimal-2-1-4">3/15 = 0.2: Even though 15 is not a power of 10, it is equivalent to a fraction that is; the fraction 3/15 simplifies to 1/5, and this is equivalent to the decimal fraction 20/100, and thus a terminating decimal.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#example-terminating-decimal-2-1-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
 </ol>
-<p id="p-1378">And here are examples of how to write a terminating decimal as a fraction:</p>
-<ol class="decimal">
-<li id="li-338"><p id="p-derived-li-338">0.5 = 5/10 = 1/2: Here, we express 0.5 as the fraction 5/10, which simplifies to 1/2.</p></li>
-<li id="li-339"><p id="p-derived-li-339">0.75 = 75/100 = 3/4: We can express 0.75 as the fraction 75/100, which simplifies to 3/4.</p></li>
-<li id="li-340"><p id="p-derived-li-340">0.875 = 875/1000 = 7/8: The decimal 0.875 can be expressed as the fraction 875/1000, which simplifies to 7/8.</p></li>
-<li id="li-341"><p id="p-derived-li-341">0.2 = 2/10 = 1/5: The decimal 0.2 can be expressed as the fraction 2/10, which simplifies to 1/5.</p></li>
-</ol></article></div>
-<p id="p-1379">Now, let's prove that a rational number is equivalent to a terminating decimal* if and only if it is equivalent to a decimal fraction.</p>
-<p id="p-1380">*Note: this is not quite correct, as we'll see later that decimals that have repeating 9s to the right are equivalent to terminating decimals. We will discuss this in more depth later.</p>
-<article class="hiddenproof" id="proof-terminating-decimal"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-terminating-decimal"><h4 class="heading"><span class="title">Proof.</span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-terminating-decimal"><article class="hiddenproof"><p id="p-1381">Since this is an "if and only if" statement in the form <span class="process-math">\(P \leftrightarrow Q\text{,}\)</span> we have to prove two results, <span class="process-math">\(P \rightarrow Q\)</span> and <span class="process-math">\(Q \rightarrow P\text{.}\)</span>  Let's denote a rational number as a/b, where a and b are integers and b ≠ 0. We want to show that a/b is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction.</p>
-<p id="p-1382">Suppose a/b is equivalent to a terminating decimal. Then, by definition of a terminating decimal, a/b can be written as a decimal with a finite number of digits. This means that a/b can be expressed as a decimal fraction, because a decimal fraction is a fraction where the denominator is a power of 10, and any terminating decimal can be expressed in this form.</p>
-<p id="p-1383">Conversely, suppose a/b is equivalent to a decimal fraction. Then a/b can be expressed as a decimal with a finite number of digits, because a decimal fraction is a fraction where the denominator is a power of 10, and any fraction with a denominator that is a power of 10 can be expressed as a terminating decimal. Therefore, a/b is equivalent to a terminating decimal.</p>
-<p id="p-1384">Putting both results together, a rational number is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction.</p></article></div>
-<p id="p-1385">Let's look at a non-example; 7/15. Since <span class="process-math">\(15=3 \times 5\)</span> and 3 and 7 share no common factors, there is no way of "cancelling" the factor of 3 in the denominator. Thus there is nothing we can multiply both the numerator and denominator by so that both are still integers and the denominator does not have a factor of 3, and thus it isn't equivalent to a decimal fraction, which has denominators of the form <span class="process-math">\(10^k=2^k5^k\text{.}\)</span></p></section><section class="subsection" id="repeating-decimals-long-division"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">5.3.2</span> <span class="title">Expressing a Fraction as a Repeating Decimal Using Long Division</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-terminating-decimal-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-terminating-decimal-3">
+<div class="para">And here are examples of how to write a terminating decimal as a fraction:</div>
+<ol class="decimal" id="example-terminating-decimal-3-1">
+<li id="example-terminating-decimal-3-1-1">
+<div class="para" id="p-derived-example-terminating-decimal-3-1-1">0.5 = 5/10 = 1/2: Here, we express 0.5 as the fraction 5/10, which simplifies to 1/2.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-terminating-decimal-3-1-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-terminating-decimal-3-1-2">
+<div class="para" id="p-derived-example-terminating-decimal-3-1-2">0.75 = 75/100 = 3/4: We can express 0.75 as the fraction 75/100, which simplifies to 3/4.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-terminating-decimal-3-1-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-terminating-decimal-3-1-3">
+<div class="para" id="p-derived-example-terminating-decimal-3-1-3">0.875 = 875/1000 = 7/8: The decimal 0.875 can be expressed as the fraction 875/1000, which simplifies to 7/8.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-terminating-decimal-3-1-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="example-terminating-decimal-3-1-4">
+<div class="para" id="p-derived-example-terminating-decimal-3-1-4">0.2 = 2/10 = 1/5: The decimal 0.2 can be expressed as the fraction 2/10, which simplifies to 1/5.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#example-terminating-decimal-3-1-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-terminating-decimal-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 5.3.1: Examples of Terminating Decimals"><a href="#example-terminating-decimal" title="Copy permalink for Example 5.3.1: Examples of Terminating Decimals">🔗</a></div></article></details><div class="para" id="terminating-decimals-4">Now, let’s prove that a rational number is equivalent to a terminating decimal* if and only if it is equivalent to a decimal fraction.<div class="autopermalink" data-description="Paragraph"><a href="#terminating-decimals-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="terminating-decimals-5">*Note: this is not quite correct, as we’ll see later that decimals that have repeating 9s to the right are equivalent to terminating decimals. We will discuss this in more depth later.<div class="autopermalink" data-description="Paragraph"><a href="#terminating-decimals-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="proof-terminating-decimal" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Proof.</span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="proof-terminating-decimal-2">Since this is an "if and only if" statement in the form <span class="process-math">\(P \leftrightarrow Q\text{,}\)</span> we have to prove two results, <span class="process-math">\(P \rightarrow Q\)</span> and <span class="process-math">\(Q \rightarrow P\text{.}\)</span>  Let’s denote a rational number as a/b, where a and b are integers and b ≠ 0. We want to show that a/b is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction.<div class="autopermalink" data-description="Paragraph"><a href="#proof-terminating-decimal-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="proof-terminating-decimal-3">Suppose a/b is equivalent to a terminating decimal. Then, by definition of a terminating decimal, a/b can be written as a decimal with a finite number of digits. This means that a/b can be expressed as a decimal fraction, because a decimal fraction is a fraction where the denominator is a power of 10, and any terminating decimal can be expressed in this form.<div class="autopermalink" data-description="Paragraph"><a href="#proof-terminating-decimal-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="proof-terminating-decimal-4">Conversely, suppose a/b is equivalent to a decimal fraction. Then a/b can be expressed as a decimal with a finite number of digits, because a decimal fraction is a fraction where the denominator is a power of 10, and any fraction with a denominator that is a power of 10 can be expressed as a terminating decimal. Therefore, a/b is equivalent to a terminating decimal.<div class="autopermalink" data-description="Paragraph"><a href="#proof-terminating-decimal-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="proof-terminating-decimal-5">Putting both results together, a rational number is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction.<div class="autopermalink" data-description="Paragraph"><a href="#proof-terminating-decimal-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 5.3.1.1: Proof"><a href="#proof-terminating-decimal" title="Copy permalink for Proof 5.3.1.1: Proof">🔗</a></div></article></details><div class="para" id="terminating-decimals-7">Let’s look at a non-example; 7/15. Since <span class="process-math">\(15=3 \times 5\)</span> and 3 and 7 share no common factors, there is no way of "cancelling" the factor of 3 in the denominator. Thus there is nothing we can multiply both the numerator and denominator by so that both are still integers and the denominator does not have a factor of 3, and thus it isn’t equivalent to a decimal fraction, which has denominators of the form <span class="process-math">\(10^k=2^k5^k\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#terminating-decimals-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.3.1: Terminating Decimals"><a href="#terminating-decimals" title="Copy permalink for Subsection 5.3.1: Terminating Decimals">🔗</a></div></section><section class="subsection" id="repeating-decimals-long-division"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="space"> </span><span class="title">Expressing a Fraction as a Repeating Decimal Using Long Division</span>
 </h3>
-<p id="p-1386">If a fraction is not equivalent to a decimal fraction, it can be expressed as a repeating decimal. One way to do this is by using long division. During this process, we may notice that we "run out" of non-zero remainders before the remainders must repeat, indicating a repeating decimal.</p>
-<p id="p-1387">Why is this the case? Well, imagine you are dividing <span class="process-math">\(a\)</span> by some non-zero integer <span class="process-math">\(b\text{.}\)</span> There are only finitely many possible remainders: <span class="process-math">\(\{0,1,2, \ldots, b-2, b-1 \}\text{.}\)</span></p>
-<p id="p-1388">Now, we can convert a fraction a/b to its decimal representation by long division. If we do get a reminder of 0, then we know that the decimal is a terminating decimal. So imagine that a/b cannot be expressed as a terminating decimal. Then we will never see the remainder 0, and thus we only have <span class="process-math">\(b-1\)</span> possible remainders when performing each partial division in the long division algorithm. Note that we can add as many zeros to the right (after the decimal and after all non-zero decimal digits); e.g. 20.201 = 20.2010000... Let's call these the <dfn class="terminology">trailing zeroes.</dfn></p>
-<p id="p-1389">Now when we get to using the place values of the trailing zeros, every time we "bring down" a digit from a new place value, that digit will be 0. If, at this point, we keep track of remainders, we note that we have at most <span class="process-math">\(b-1\)</span> unique remainders before one must repeat. At the point of repetition, our "previous work" will repeat over and over again, since we will only end up in situations we have seen before and thus the digits of decimal representation of our fraction between the repeated remainders will repeat over and over again to the right. Thus, we know that if fraction is not equivalent to a terminating decimal, it must be a repeating decimal.</p>
-<article class="example example-like" id="example-long-division-2-7"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-long-division-2-7"><h4 class="heading">
+<div class="para" id="repeating-decimals-long-division-2">If a fraction is not equivalent to a decimal fraction, it can be expressed as a repeating decimal. One way to do this is by using long division. During this process, we may notice that we "run out" of non-zero remainders before the remainders must repeat, indicating a repeating decimal.<div class="autopermalink" data-description="Paragraph"><a href="#repeating-decimals-long-division-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="repeating-decimals-long-division-3">Why is this the case? Well, imagine you are dividing <span class="process-math">\(a\)</span> by some non-zero integer <span class="process-math">\(b\text{.}\)</span> There are only finitely many possible remainders: <span class="process-math">\(\{0,1,2, \ldots, b-2, b-1 \}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#repeating-decimals-long-division-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="repeating-decimals-long-division-4">Now, we can convert a fraction a/b to its decimal representation by long division. If we do get a reminder of 0, then we know that the decimal is a terminating decimal. So imagine that a/b cannot be expressed as a terminating decimal. Then we will never see the remainder 0, and thus we only have <span class="process-math">\(b-1\)</span> possible remainders when performing each partial division in the long division algorithm. Note that we can add as many zeros to the right (after the decimal and after all non-zero decimal digits); e.g. 20.201 = 20.2010000... Let’s call these the <dfn class="terminology">trailing zeroes.</dfn><div class="autopermalink" data-description="Paragraph"><a href="#repeating-decimals-long-division-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="repeating-decimals-long-division-5">Now when we get to using the place values of the trailing zeros, every time we "bring down" a digit from a new place value, that digit will be 0. If, at this point, we keep track of remainders, we note that we have at most <span class="process-math">\(b-1\)</span> unique remainders before one must repeat. At the point of repetition, our "previous work" will repeat over and over again, since we will only end up in situations we have seen before and thus the digits of decimal representation of our fraction between the repeated remainders will repeat over and over again to the right. Thus, we know that if fraction is not equivalent to a terminating decimal, it must be a repeating decimal.<div class="autopermalink" data-description="Paragraph"><a href="#repeating-decimals-long-division-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="example-long-division-2-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Example: Expressing 2/7 as a Repeating Decimal Using Long Division.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-long-division-2-7"><article class="example example-like"><p id="p-1390">Let's express the fraction 2/7 as a repeating decimal using long division.</p>
-<ol class="decimal">
-<li id="li-342"><p id="p-derived-li-342">Divide 2 by 7. Since 2 is less than 7, we add a decimal point and a zero to the right of 2, making it 20.</p></li>
-<li id="li-343"><p id="p-derived-li-343">Now, divide 20 by 7. The result is 2 with a remainder of 6.</p></li>
-<li id="li-344"><p id="p-derived-li-344">Add another zero to the right of the remainder, making it 60.</p></li>
-<li id="li-345"><p id="p-derived-li-345">Divide 60 by 7. The result is 8 with a remainder of 4.</p></li>
-<li id="li-346"><p id="p-derived-li-346">Repeat this process. Each time, we add a zero to the right of the remainder and divide by 7.</p></li>
-<li id="li-347"><p id="p-derived-li-347">Eventually, we notice that the remainders start to repeat (and must repeat, since there are only a finite number of remainders), indicating a repeating decimal.</p></li>
+</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-long-division-2-7-2">
+<div class="para">Let’s express the fraction 2/7 as a repeating decimal using long division.</div>
+<ol class="decimal" id="example-long-division-2-7-2-1">
+<li id="example-long-division-2-7-2-1-1">
+<div class="para" id="p-derived-example-long-division-2-7-2-1-1">Divide 2 by 7. Since 2 is less than 7, we add a decimal point and a zero to the right of 2, making it 20.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-long-division-2-7-2-1-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-long-division-2-7-2-1-2">
+<div class="para" id="p-derived-example-long-division-2-7-2-1-2">Now, divide 20 by 7. The result is 2 with a remainder of 6.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-long-division-2-7-2-1-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-long-division-2-7-2-1-3">
+<div class="para" id="p-derived-example-long-division-2-7-2-1-3">Add another zero to the right of the remainder, making it 60.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-long-division-2-7-2-1-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="example-long-division-2-7-2-1-4">
+<div class="para" id="p-derived-example-long-division-2-7-2-1-4">Divide 60 by 7. The result is 8 with a remainder of 4.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#example-long-division-2-7-2-1-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
+<li id="example-long-division-2-7-2-1-5">
+<div class="para" id="p-derived-example-long-division-2-7-2-1-5">Repeat this process. Each time, we add a zero to the right of the remainder and divide by 7.</div>
+<div class="autopermalink" data-description="Item 5"><a href="#example-long-division-2-7-2-1-5" title="Copy permalink for Item 5">🔗</a></div>
+</li>
+<li id="example-long-division-2-7-2-1-6">
+<div class="para" id="p-derived-example-long-division-2-7-2-1-6">Eventually, we notice that the remainders start to repeat (and must repeat, since there are only a finite number of remainders), indicating a repeating decimal.</div>
+<div class="autopermalink" data-description="Item 6"><a href="#example-long-division-2-7-2-1-6" title="Copy permalink for Item 6">🔗</a></div>
+</li>
 </ol>
-<p class="continuation">So, 2/7 = 0.<span class="process-math">\(\overline{285714}\text{.}\)</span></p></article></div>
-<article class="example example-like" id="example-long-division-6-13"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-long-division-6-13"><h4 class="heading">
+<div class="para">So, 2/7 = 0.<span class="process-math">\(\overline{285714}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-long-division-2-7-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 5.3.2: Example: Expressing 2/7 as a Repeating Decimal Using Long Division"><a href="#example-long-division-2-7" title="Copy permalink for Example 5.3.2: Example: Expressing 2/7 as a Repeating Decimal Using Long Division">🔗</a></div></article></details><details id="example-long-division-6-13" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Example: Expressing 6/13 as a Repeating Decimal Using Long Division.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-long-division-6-13"><article class="example example-like"><p id="p-1391">Let's express the fraction 6/13 as a repeating decimal using long division.</p>
-<ol class="decimal">
-<li id="li-348"><p id="p-derived-li-348">Divide 6 by 13. Since 6 is less than 13, we add a decimal point and a zero to the right of 6, making it 60.</p></li>
-<li id="li-349"><p id="p-derived-li-349">Now, divide 60 by 13. The result is 4 with a remainder of 8.</p></li>
-<li id="li-350"><p id="p-derived-li-350">Add another zero to the right of the remainder, making it 80.</p></li>
-<li id="li-351"><p id="p-derived-li-351">Divide 80 by 13. The result is 6 with a remainder of 2.</p></li>
-<li id="li-352"><p id="p-derived-li-352">Repeat this process. Each time, we add a zero to the right of the remainder and divide by 13.</p></li>
-<li id="li-353"><p id="p-derived-li-353">Eventually, we notice that the remainders start to repeat, indicating a repeating decimal.</p></li>
+</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-long-division-6-13-2">
+<div class="para">Let’s express the fraction 6/13 as a repeating decimal using long division.</div>
+<ol class="decimal" id="example-long-division-6-13-2-1">
+<li id="example-long-division-6-13-2-1-1">
+<div class="para" id="p-derived-example-long-division-6-13-2-1-1">Divide 6 by 13. Since 6 is less than 13, we add a decimal point and a zero to the right of 6, making it 60.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-long-division-6-13-2-1-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-long-division-6-13-2-1-2">
+<div class="para" id="p-derived-example-long-division-6-13-2-1-2">Now, divide 60 by 13. The result is 4 with a remainder of 8.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-long-division-6-13-2-1-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-long-division-6-13-2-1-3">
+<div class="para" id="p-derived-example-long-division-6-13-2-1-3">Add another zero to the right of the remainder, making it 80.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-long-division-6-13-2-1-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="example-long-division-6-13-2-1-4">
+<div class="para" id="p-derived-example-long-division-6-13-2-1-4">Divide 80 by 13. The result is 6 with a remainder of 2.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#example-long-division-6-13-2-1-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
+<li id="example-long-division-6-13-2-1-5">
+<div class="para" id="p-derived-example-long-division-6-13-2-1-5">Repeat this process. Each time, we add a zero to the right of the remainder and divide by 13.</div>
+<div class="autopermalink" data-description="Item 5"><a href="#example-long-division-6-13-2-1-5" title="Copy permalink for Item 5">🔗</a></div>
+</li>
+<li id="example-long-division-6-13-2-1-6">
+<div class="para" id="p-derived-example-long-division-6-13-2-1-6">Eventually, we notice that the remainders start to repeat, indicating a repeating decimal.</div>
+<div class="autopermalink" data-description="Item 6"><a href="#example-long-division-6-13-2-1-6" title="Copy permalink for Item 6">🔗</a></div>
+</li>
 </ol>
-<p class="continuation">So, 6/13 = 0.<span class="process-math">\(\overline{461538}\text{.}\)</span></p></article></div></section><section class="subsection" id="repeating-decimals-as-rational-numbers"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">5.3.3</span> <span class="title">Representing All Repeating Decimals as Rational Numbers</span>
+<div class="para">So, 6/13 = 0.<span class="process-math">\(\overline{461538}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-long-division-6-13-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 5.3.3: Example: Expressing 6/13 as a Repeating Decimal Using Long Division"><a href="#example-long-division-6-13" title="Copy permalink for Example 5.3.3: Example: Expressing 6/13 as a Repeating Decimal Using Long Division">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 5.3.2: Expressing a Fraction as a Repeating Decimal Using Long Division"><a href="#repeating-decimals-long-division" title="Copy permalink for Subsection 5.3.2: Expressing a Fraction as a Repeating Decimal Using Long Division">🔗</a></div></section><section class="subsection" id="repeating-decimals-as-rational-numbers"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="space"> </span><span class="title">Representing All Repeating Decimals as Rational Numbers</span>
 </h3>
-<section class="introduction" id="introduction-12"><p id="p-1392">In this subsection, we will show that all repeating decimals can be represented by rational numbers. We will start by demonstrating that 0.9999... = 1 using decimal and fraction notation. Then, we will define the repetend and period of a repeated decimal and provide examples.</p></section><section class="subsubsection" id="CanRepeatingDecimalsEqual1"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">5.3.3.1</span> <span class="title">Can Repeating Decimals Equal 1?</span>
+<section class="introduction" id="repeating-decimals-as-rational-numbers-2"><div class="para" id="repeating-decimals-as-rational-numbers-2-1">In this subsection, we will show that all repeating decimals can be represented by rational numbers. We will start by demonstrating that 0.9999... = 1 using decimal and fraction notation. Then, we will define the repetend and period of a repeated decimal and provide examples.<div class="autopermalink" data-description="Paragraph"><a href="#repeating-decimals-as-rational-numbers-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsubsection" id="CanRepeatingDecimalsEqual1"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">5.3.3.1</span><span class="space"> </span><span class="title">Can Repeating Decimals Equal 1?</span>
 </h4>
-<p id="p-1393">Let's consider the sum of 1/3 + 1/3 + 1/3 in decimal notation and fraction notation.</p>
-<p id="p-1394">In decimal notation, 1/3 is equivalent to 0.333..., so the sum is 0.333... + 0.333... + 0.333... = 0.999.... ADD PIC OF THIS ADDITION</p>
-<p id="p-1395">In fraction notation, the sum is 1/3 + 1/3 + 1/3 = 1.</p>
-<p id="p-1396">Therefore, 0.999... = 1.</p>
-<p id="p-1397">Another way to look at this is to ask yourself "if <span class="process-math">\(0.\overline{9} &lt; 1\text{,}\)</span> what would I add to <span class="process-math">\(0.\overline{9}\)</span> to make it equal 1? Any positive number that you think of adding would be too big!</p></section><section class="subsubsection" id="repetend-and-period"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">5.3.3.2</span> <span class="title">Repetend and Period of a Repeated Decimal</span>
+<div class="para" id="CanRepeatingDecimalsEqual1-2">Let’s consider the sum of 1/3 + 1/3 + 1/3 in decimal notation and fraction notation.<div class="autopermalink" data-description="Paragraph"><a href="#CanRepeatingDecimalsEqual1-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="CanRepeatingDecimalsEqual1-3">In decimal notation, 1/3 is equivalent to 0.333..., so the sum is 0.333... + 0.333... + 0.333... = 0.999.... ADD PIC OF THIS ADDITION<div class="autopermalink" data-description="Paragraph"><a href="#CanRepeatingDecimalsEqual1-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="CanRepeatingDecimalsEqual1-4">In fraction notation, the sum is 1/3 + 1/3 + 1/3 = 1.<div class="autopermalink" data-description="Paragraph"><a href="#CanRepeatingDecimalsEqual1-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="CanRepeatingDecimalsEqual1-5">Therefore, 0.999... = 1.<div class="autopermalink" data-description="Paragraph"><a href="#CanRepeatingDecimalsEqual1-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="CanRepeatingDecimalsEqual1-6">Another way to look at this is to ask yourself "if <span class="process-math">\(0.\overline{9} &lt; 1\text{,}\)</span> what would I add to <span class="process-math">\(0.\overline{9}\)</span> to make it equal 1? Any positive number that you think of adding would be too big!<div class="autopermalink" data-description="Paragraph"><a href="#CanRepeatingDecimalsEqual1-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 5.3.3.1: Can Repeating Decimals Equal 1?"><a href="#CanRepeatingDecimalsEqual1" title="Copy permalink for Subsubsection 5.3.3.1: Can Repeating Decimals Equal 1?">🔗</a></div></section><section class="subsubsection" id="repetend-and-period"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">5.3.3.2</span><span class="space"> </span><span class="title">Repetend and Period of a Repeated Decimal</span>
 </h4>
-<p id="p-1398">The <dfn class="terminology">repetend</dfn> of a repeating decimal is the first instance of the shortest group of digits that repeat indefinitely. It's important to note that the repetend is the smallest repeating unit in the decimal expansion. The <dfn class="terminology">period</dfn> of a repeating decimal is the number of digits in the repetend.</p>
-<article class="example example-like" id="example-non-repetends"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-non-repetends"><h5 class="heading">
+<div class="para" id="repetend-and-period-2">The <dfn class="terminology">repetend</dfn> of a repeating decimal is the first instance of the shortest group of digits that repeat indefinitely. It’s important to note that the repetend is the smallest repeating unit in the decimal expansion. The <dfn class="terminology">period</dfn> of a repeating decimal is the number of digits in the repetend.<div class="autopermalink" data-description="Paragraph"><a href="#repetend-and-period-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="example-non-repetends" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Examples of Non-Repetends.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-non-repetends"><article class="example example-like"><p id="p-1399">Here are some examples of non-repetends in repeating decimals:</p>
-<ol class="decimal">
-<li id="li-354"><p id="p-1400">In the repeating decimal 0.<span class="process-math">\(\overline{142857}\text{,}\)</span> the number 142857 is the repetend. The number 142 is not a repetend because it is not the shortest group of repeating digits.</p></li>
-<li id="li-355"><p id="p-1401">In the repeating decimal 0.<span class="process-math">\(\overline{27}=0.272727...\text{,}\)</span> the number 27 is the repetend. The number 2727 is not the repetend because it is not the shortest group of repeating digits. The number 72 is not the repetend since it is not the first instance of repeating digits. So we would not write <span class="process-math">\(0.\overline{2727}\)</span> or <span class="process-math">\(0.2\overline{72}.\)</span></p></li>
-</ol></article></div>
-<article class="example example-like" id="example-repetend-and-period"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-repetend-and-period"><h5 class="heading">
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="example-non-repetends-2">
+<div class="para">Here are some examples of non-repetends in repeating decimals:</div>
+<ol class="decimal" id="example-non-repetends-2-1">
+<li id="example-non-repetends-2-1-1">
+<div class="para" id="example-non-repetends-2-1-1-1">In the repeating decimal 0.<span class="process-math">\(\overline{142857}\text{,}\)</span> the number 142857 is the repetend. The number 142 is not a repetend because it is not the shortest group of repeating digits.<div class="autopermalink" data-description="Paragraph"><a href="#example-non-repetends-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-non-repetends-2-1-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-non-repetends-2-1-2">
+<div class="para" id="example-non-repetends-2-1-2-1">In the repeating decimal 0.<span class="process-math">\(\overline{27}=0.272727...\text{,}\)</span> the number 27 is the repetend. The number 2727 is not the repetend because it is not the shortest group of repeating digits. The number 72 is not the repetend since it is not the first instance of repeating digits. So we would not write <span class="process-math">\(0.\overline{2727}\)</span> or <span class="process-math">\(0.2\overline{72}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-non-repetends-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-non-repetends-2-1-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-non-repetends-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 5.3.4: Examples of Non-Repetends"><a href="#example-non-repetends" title="Copy permalink for Example 5.3.4: Examples of Non-Repetends">🔗</a></div></article></details><details id="example-repetend-and-period" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Examples of Repetend and Period.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-repetend-and-period"><article class="example example-like"><p id="p-1402">Here are two examples of identifying the repetend and period of a repeating decimal:</p>
-<ol class="decimal">
-<li id="li-356"><p id="p-1403">In the repeating decimal 0.<span class="process-math">\(\overline{3}\text{,}\)</span> the repetend is 3 and the period is 1.</p></li>
-<li id="li-357"><p id="p-1404">In the repeating decimal 0.00<span class="process-math">\(\overline{142857}\text{,}\)</span> the repetend starts in the thousandths place and is 142857, and the period is 6.</p></li>
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="example-repetend-and-period-2">
+<div class="para">Here are two examples of identifying the repetend and period of a repeating decimal:</div>
+<ol class="decimal" id="example-repetend-and-period-2-1">
+<li id="example-repetend-and-period-2-1-1">
+<div class="para" id="example-repetend-and-period-2-1-1-1">In the repeating decimal 0.<span class="process-math">\(\overline{3}\text{,}\)</span> the repetend is 3 and the period is 1.<div class="autopermalink" data-description="Paragraph"><a href="#example-repetend-and-period-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-repetend-and-period-2-1-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-repetend-and-period-2-1-2">
+<div class="para" id="example-repetend-and-period-2-1-2-1">In the repeating decimal 0.00<span class="process-math">\(\overline{142857}\text{,}\)</span> the repetend starts in the thousandths place and is 142857, and the period is 6.<div class="autopermalink" data-description="Paragraph"><a href="#example-repetend-and-period-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-repetend-and-period-2-1-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
 </ol>
-<p class="continuation">&gt;</p></article></div></section><section class="subsubsection" id="converting-repeating-decimal-to-fraction"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">5.3.3.3</span> <span class="title">Converting a Repeating Decimal to a Fraction</span>
+<div class="para">&gt;</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-repetend-and-period-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 5.3.5: Examples of Repetend and Period"><a href="#example-repetend-and-period" title="Copy permalink for Example 5.3.5: Examples of Repetend and Period">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection 5.3.3.2: Repetend and Period of a Repeated Decimal"><a href="#repetend-and-period" title="Copy permalink for Subsubsection 5.3.3.2: Repetend and Period of a Repeated Decimal">🔗</a></div></section><section class="subsubsection" id="converting-repeating-decimal-to-fraction"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">5.3.3.3</span><span class="space"> </span><span class="title">Converting a Repeating Decimal to a Fraction</span>
 </h4>
-<p id="p-1405">To convert a repeating decimal to a fraction, we can use the following algorithm:</p>
-<ol class="decimal">
-<li id="li-358"><p id="p-derived-li-358">Let x be the number in decimal form.</p></li>
-<li id="li-359"><p id="p-derived-li-359">Let p be the period of the repetend.</p></li>
-<li id="li-360"><p id="p-derived-li-360">Calculate (10^p)x - x in repeated decimal form.</p></li>
-<li id="li-361"><p id="p-derived-li-361">Solve for x.</p></li>
-<li id="li-362"><p id="p-derived-li-362">Convert any numerators and denominators to integers by multiplying both by the appropriate power of 10 to clear decimal places.</p></li>
-<li id="li-363"><p id="p-derived-li-363">Simplify by converting the fraction to lowest terms.</p></li>
+<div class="para logical" id="converting-repeating-decimal-to-fraction-2">
+<div class="para">To convert a repeating decimal to a fraction, we can use the following algorithm:</div>
+<ol class="decimal" id="converting-repeating-decimal-to-fraction-2-1">
+<li id="converting-repeating-decimal-to-fraction-2-1-1">
+<div class="para" id="p-derived-converting-repeating-decimal-to-fraction-2-1-1">Let x be the number in decimal form.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#converting-repeating-decimal-to-fraction-2-1-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="converting-repeating-decimal-to-fraction-2-1-2">
+<div class="para" id="p-derived-converting-repeating-decimal-to-fraction-2-1-2">Let p be the period of the repetend.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#converting-repeating-decimal-to-fraction-2-1-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="converting-repeating-decimal-to-fraction-2-1-3">
+<div class="para" id="p-derived-converting-repeating-decimal-to-fraction-2-1-3">Calculate (10^p)x - x in repeated decimal form.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#converting-repeating-decimal-to-fraction-2-1-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="converting-repeating-decimal-to-fraction-2-1-4">
+<div class="para" id="p-derived-converting-repeating-decimal-to-fraction-2-1-4">Solve for x.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#converting-repeating-decimal-to-fraction-2-1-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
+<li id="converting-repeating-decimal-to-fraction-2-1-5">
+<div class="para" id="p-derived-converting-repeating-decimal-to-fraction-2-1-5">Convert any numerators and denominators to integers by multiplying both by the appropriate power of 10 to clear decimal places.</div>
+<div class="autopermalink" data-description="Item 5"><a href="#converting-repeating-decimal-to-fraction-2-1-5" title="Copy permalink for Item 5">🔗</a></div>
+</li>
+<li id="converting-repeating-decimal-to-fraction-2-1-6">
+<div class="para" id="p-derived-converting-repeating-decimal-to-fraction-2-1-6">Simplify by converting the fraction to lowest terms.</div>
+<div class="autopermalink" data-description="Item 6"><a href="#converting-repeating-decimal-to-fraction-2-1-6" title="Copy permalink for Item 6">🔗</a></div>
+</li>
 </ol>
-<article class="example example-like" id="example-converting-repeating-decimal-to-fraction"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-converting-repeating-decimal-to-fraction"><h5 class="heading">
+<div class="autopermalink" data-description="Paragraph"><a href="#converting-repeating-decimal-to-fraction-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="example-converting-repeating-decimal-to-fraction" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Example: Converting a Repeating Decimal to a Fraction.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-converting-repeating-decimal-to-fraction"><article class="example example-like"><p id="p-1406">Let's convert the repeating decimal 0.<span class="process-math">\(\overline{3}\)</span> to a fraction using the above algorithm:</p>
-<ol class="decimal">
-<li id="li-364"><p id="p-derived-li-364">Let x = 0.<span class="process-math">\(\overline{3}\text{.}\)</span></p></li>
-<li id="li-365"><p id="p-derived-li-365">The period of the repetend is 1, so p = 1.</p></li>
-<li id="li-366"><p id="p-derived-li-366">Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 3.333... - 0.333... = 3.</p></li>
-<li id="li-367"><p id="p-derived-li-367">Solve for x: x = 3/9. This is the equation we get when we equate the decimal form and the fraction form.</p></li>
-<li id="li-368"><p id="p-derived-li-368">Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</p></li>
-<li id="li-369"><p id="p-derived-li-369">Simplify by converting the fraction to lowest terms: x = 1/3.</p></li>
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="example-converting-repeating-decimal-to-fraction-2">
+<div class="para">Let’s convert the repeating decimal 0.<span class="process-math">\(\overline{3}\)</span> to a fraction using the above algorithm:</div>
+<ol class="decimal" id="example-converting-repeating-decimal-to-fraction-2-2">
+<li id="example-converting-repeating-decimal-to-fraction-2-2-1">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-2-2-1">Let x = 0.<span class="process-math">\(\overline{3}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-converting-repeating-decimal-to-fraction-2-2-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-converting-repeating-decimal-to-fraction-2-2-2">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-2-2-2">The period of the repetend is 1, so p = 1.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-converting-repeating-decimal-to-fraction-2-2-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-converting-repeating-decimal-to-fraction-2-2-3">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-2-2-3">Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 3.333... - 0.333... = 3.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-converting-repeating-decimal-to-fraction-2-2-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="example-converting-repeating-decimal-to-fraction-2-2-4">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-2-2-4">Solve for x: x = 3/9. This is the equation we get when we equate the decimal form and the fraction form.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#example-converting-repeating-decimal-to-fraction-2-2-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
+<li id="example-converting-repeating-decimal-to-fraction-2-2-5">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-2-2-5">Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</div>
+<div class="autopermalink" data-description="Item 5"><a href="#example-converting-repeating-decimal-to-fraction-2-2-5" title="Copy permalink for Item 5">🔗</a></div>
+</li>
+<li id="example-converting-repeating-decimal-to-fraction-2-2-6">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-2-2-6">Simplify by converting the fraction to lowest terms: x = 1/3.</div>
+<div class="autopermalink" data-description="Item 6"><a href="#example-converting-repeating-decimal-to-fraction-2-2-6" title="Copy permalink for Item 6">🔗</a></div>
+</li>
 </ol>
-<p class="continuation">So, the repeating decimal 0.<span class="process-math">\(\overline{3}\)</span> is equal to the fraction 1/3.</p>
-<p id="p-1407">Let's convert another repeating decimal, 0.<span class="process-math">\(\overline{27}\text{,}\)</span> to a fraction:</p>
-<ol class="decimal">
-<li id="li-370"><p id="p-derived-li-370">Let x = 0.<span class="process-math">\(\overline{27}\text{.}\)</span></p></li>
-<li id="li-371"><p id="p-derived-li-371">The period of the repetend is 2, so p = 2.</p></li>
-<li id="li-372"><p id="p-derived-li-372">Calculate (10^p)x - x = 100x - x = 99x. In decimal form, this is 27.2727... - 0.2727... = 27.</p></li>
-<li id="li-373"><p id="p-derived-li-373">Solve for x: x = 27/99.</p></li>
-<li id="li-374"><p id="p-derived-li-374">Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</p></li>
-<li id="li-375"><p id="p-derived-li-375">Simplify by converting the fraction to lowest terms: x = 3/11.</p></li>
+<div class="para">So, the repeating decimal 0.<span class="process-math">\(\overline{3}\)</span> is equal to the fraction 1/3.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-converting-repeating-decimal-to-fraction-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-converting-repeating-decimal-to-fraction-3">
+<div class="para">Let’s convert another repeating decimal, 0.<span class="process-math">\(\overline{27}\text{,}\)</span> to a fraction:</div>
+<ol class="decimal" id="example-converting-repeating-decimal-to-fraction-3-2">
+<li id="example-converting-repeating-decimal-to-fraction-3-2-1">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-3-2-1">Let x = 0.<span class="process-math">\(\overline{27}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-converting-repeating-decimal-to-fraction-3-2-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-converting-repeating-decimal-to-fraction-3-2-2">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-3-2-2">The period of the repetend is 2, so p = 2.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-converting-repeating-decimal-to-fraction-3-2-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-converting-repeating-decimal-to-fraction-3-2-3">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-3-2-3">Calculate (10^p)x - x = 100x - x = 99x. In decimal form, this is 27.2727... - 0.2727... = 27.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-converting-repeating-decimal-to-fraction-3-2-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="example-converting-repeating-decimal-to-fraction-3-2-4">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-3-2-4">Solve for x: x = 27/99.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#example-converting-repeating-decimal-to-fraction-3-2-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
+<li id="example-converting-repeating-decimal-to-fraction-3-2-5">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-3-2-5">Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</div>
+<div class="autopermalink" data-description="Item 5"><a href="#example-converting-repeating-decimal-to-fraction-3-2-5" title="Copy permalink for Item 5">🔗</a></div>
+</li>
+<li id="example-converting-repeating-decimal-to-fraction-3-2-6">
+<div class="para" id="p-derived-example-converting-repeating-decimal-to-fraction-3-2-6">Simplify by converting the fraction to lowest terms: x = 3/11.</div>
+<div class="autopermalink" data-description="Item 6"><a href="#example-converting-repeating-decimal-to-fraction-3-2-6" title="Copy permalink for Item 6">🔗</a></div>
+</li>
 </ol>
-<p class="continuation">So, the repeating decimal 0.<span class="process-math">\(\overline{27}\)</span> is equal to the fraction 3/11.</p></article></div>
-<article class="example example-like" id="example-more-conversions"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-more-conversions"><h5 class="heading">
+<div class="para">So, the repeating decimal 0.<span class="process-math">\(\overline{27}\)</span> is equal to the fraction 3/11.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-converting-repeating-decimal-to-fraction-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 5.3.6: Example: Converting a Repeating Decimal to a Fraction"><a href="#example-converting-repeating-decimal-to-fraction" title="Copy permalink for Example 5.3.6: Example: Converting a Repeating Decimal to a Fraction">🔗</a></div></article></details><details id="example-more-conversions" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">More Examples of Converting Repeating Decimals to Fractions.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-more-conversions"><article class="example example-like"><p id="p-1408">Let's convert more repeating decimals to fractions using the algorithm we discussed earlier:</p>
-<ol id="p-1409" class="decimal">
-<li id="li-376">
-<p id="p-1410">Convert 0.5 to a fraction:</p>
-<ol class="lower-alpha">
-<li id="li-377"><p id="p-derived-li-377">Let x = 0.5. Notice that this is a terminating decimal, not a repeating decimal. However, we can still use our method to convert it to a fraction.</p></li>
-<li id="li-378"><p id="p-derived-li-378">Since there's no repetend, we can say p = 0.</p></li>
-<li id="li-379"><p id="p-derived-li-379">Calculate (10^p)x - x = x - x = 0. In decimal form, this is 0.5 - 0.5 = 0.</p></li>
-<li id="li-380"><p id="p-derived-li-380">Solve for x: x = 0/1.</p></li>
-<li id="li-381"><p id="p-derived-li-381">Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</p></li>
-<li id="li-382"><p id="p-derived-li-382">Simplify by converting the fraction to lowest terms: x = 0.</p></li>
-</ol>
-<p class="continuation">So, the decimal 0.5 is equal to the fraction 1/2.</p>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="example-more-conversions-2">Let’s convert more repeating decimals to fractions using the algorithm we discussed earlier:<div class="autopermalink" data-description="Paragraph"><a href="#example-more-conversions-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-more-conversions-3">
+<ol class="decimal" id="example-more-conversions-3-1">
+<li id="example-more-conversions-3-1-1">
+<div class="para logical" id="example-more-conversions-3-1-1-1">
+<div class="para">Convert 0.5 to a fraction:</div>
+<ol class="lower-alpha lower-alpha-level-1" id="example-more-conversions-3-1-1-1-1">
+<li id="example-more-conversions-3-1-1-1-1-1">
+<div class="para" id="p-derived-example-more-conversions-3-1-1-1-1-1">Let x = 0.5. Notice that this is a terminating decimal, not a repeating decimal. However, we can still use our method to convert it to a fraction.</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#example-more-conversions-3-1-1-1-1-1" title="Copy permalink for Item 1.a">🔗</a></div>
 </li>
-<li id="li-383">
-<p id="p-1411">Convert 0.01<span class="process-math">\(\overline{4}\)</span> to a fraction:</p>
-<ol class="lower-alpha">
-<li id="li-384"><p id="p-derived-li-384">Let x = 0.01<span class="process-math">\(\overline{4}\text{.}\)</span></p></li>
-<li id="li-385"><p id="p-derived-li-385">The period of the repetend is 1, so p = 1.</p></li>
-<li id="li-386"><p id="p-derived-li-386">Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 0.014444... - 0.0144 = 0.0004.</p></li>
-<li id="li-387"><p id="p-derived-li-387">Solve for x: x = 0.0004/9.</p></li>
-<li id="li-388"><p id="p-derived-li-388">Convert the numerator and denominator to integers by multiplying both by 10000 (to clear four decimal places): x = 4/90000.</p></li>
-<li id="li-389"><p id="p-derived-li-389">Simplify by converting the fraction to lowest terms: x = 1/22500.</p></li>
-</ol>
-<p class="continuation">So, the repeating decimal 0.01<span class="process-math">\(\overline{4}\)</span> is equal to the fraction 1/22500.</p>
+<li id="example-more-conversions-3-1-1-1-1-2">
+<div class="para" id="p-derived-example-more-conversions-3-1-1-1-1-2">Since there’s no repetend, we can say p = 0.</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#example-more-conversions-3-1-1-1-1-2" title="Copy permalink for Item 1.b">🔗</a></div>
 </li>
-<li id="li-390">
-<p id="p-1412">Convert 1.<span class="process-math">\(\overline{6}\)</span> to a fraction:</p>
-<ol class="lower-alpha">
-<li id="li-391"><p id="p-derived-li-391">Let x = 1.<span class="process-math">\(\overline{6}\text{.}\)</span> This is an improper fraction because the decimal is greater than 1.</p></li>
-<li id="li-392"><p id="p-derived-li-392">The period of the repetend is 1, so p = 1.</p></li>
-<li id="li-393"><p id="p-derived-li-393">Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 16.666... - 1.666... = 15.</p></li>
-<li id="li-394"><p id="p-derived-li-394">Solve for x: x = 15/9.</p></li>
-<li id="li-395"><p id="p-derived-li-395">Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</p></li>
-<li id="li-396"><p id="p-derived-li-396">Simplify by converting the fraction to lowest terms: x = 5/3.</p></li>
-</ol>
-<p class="continuation">So, the repeating decimal 1.<span class="process-math">\(\overline{6}\)</span> is equal to the fraction 5/3.</p>
+<li id="example-more-conversions-3-1-1-1-1-3">
+<div class="para" id="p-derived-example-more-conversions-3-1-1-1-1-3">Calculate (10^p)x - x = x - x = 0. In decimal form, this is 0.5 - 0.5 = 0.</div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#example-more-conversions-3-1-1-1-1-3" title="Copy permalink for Item 1.c">🔗</a></div>
 </li>
-<li id="li-397">
-<p id="p-1413">Convert -0.<span class="process-math">\(\overline{8}\)</span> to a fraction:</p>
-<ol class="lower-alpha">
-<li id="li-398"><p id="p-derived-li-398">Let x = -0.<span class="process-math">\(\overline{8}\text{.}\)</span> This is a negative number.</p></li>
-<li id="li-399"><p id="p-derived-li-399">The period of the repetend is 1, so p = 1.</p></li>
-<li id="li-400"><p id="p-derived-li-400">Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is -8.888... - (-0.888...) = -8.</p></li>
-<li id="li-401"><p id="p-derived-li-401">Solve for x: x = -8/9.</p></li>
-<li id="li-402"><p id="p-derived-li-402">Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</p></li>
-<li id="li-403"><p id="p-derived-li-403">Simplify by converting the fraction to lowest terms: x = -8/9.</p></li>
-</ol>
-<p class="continuation">So, the repeating decimal -0.<span class="process-math">\(\overline{8}\)</span> is equal to the fraction -8/9.</p>
+<li id="example-more-conversions-3-1-1-1-1-4">
+<div class="para" id="p-derived-example-more-conversions-3-1-1-1-1-4">Solve for x: x = 0/1.</div>
+<div class="autopermalink" data-description="Item 1.d"><a href="#example-more-conversions-3-1-1-1-1-4" title="Copy permalink for Item 1.d">🔗</a></div>
 </li>
-</ol></article></div>
-<p id="p-1414">A natural question is if a number has two or more different ways of expressing it using decimals. Let's explore this in the next example.</p>
-<article class="example example-like" id="example-120"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-120"><h5 class="heading">
+<li id="example-more-conversions-3-1-1-1-1-5">
+<div class="para" id="p-derived-example-more-conversions-3-1-1-1-1-5">Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</div>
+<div class="autopermalink" data-description="Item 1.e"><a href="#example-more-conversions-3-1-1-1-1-5" title="Copy permalink for Item 1.e">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-1-1-1-6">
+<div class="para" id="p-derived-example-more-conversions-3-1-1-1-1-6">Simplify by converting the fraction to lowest terms: x = 0.</div>
+<div class="autopermalink" data-description="Item 1.f"><a href="#example-more-conversions-3-1-1-1-1-6" title="Copy permalink for Item 1.f">🔗</a></div>
+</li>
+</ol>
+<div class="para">So, the decimal 0.5 is equal to the fraction 1/2.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-more-conversions-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-more-conversions-3-1-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-2">
+<div class="para logical" id="example-more-conversions-3-1-2-1">
+<div class="para">Convert 0.01<span class="process-math">\(\overline{4}\)</span> to a fraction:</div>
+<ol class="lower-alpha lower-alpha-level-1" id="example-more-conversions-3-1-2-1-2">
+<li id="example-more-conversions-3-1-2-1-2-1">
+<div class="para" id="p-derived-example-more-conversions-3-1-2-1-2-1">Let x = 0.01<span class="process-math">\(\overline{4}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#example-more-conversions-3-1-2-1-2-1" title="Copy permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-2-1-2-2">
+<div class="para" id="p-derived-example-more-conversions-3-1-2-1-2-2">The period of the repetend is 1, so p = 1.</div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#example-more-conversions-3-1-2-1-2-2" title="Copy permalink for Item 2.b">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-2-1-2-3">
+<div class="para" id="p-derived-example-more-conversions-3-1-2-1-2-3">Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 0.014444... - 0.0144 = 0.0004.</div>
+<div class="autopermalink" data-description="Item 2.c"><a href="#example-more-conversions-3-1-2-1-2-3" title="Copy permalink for Item 2.c">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-2-1-2-4">
+<div class="para" id="p-derived-example-more-conversions-3-1-2-1-2-4">Solve for x: x = 0.0004/9.</div>
+<div class="autopermalink" data-description="Item 2.d"><a href="#example-more-conversions-3-1-2-1-2-4" title="Copy permalink for Item 2.d">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-2-1-2-5">
+<div class="para" id="p-derived-example-more-conversions-3-1-2-1-2-5">Convert the numerator and denominator to integers by multiplying both by 10000 (to clear four decimal places): x = 4/90000.</div>
+<div class="autopermalink" data-description="Item 2.e"><a href="#example-more-conversions-3-1-2-1-2-5" title="Copy permalink for Item 2.e">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-2-1-2-6">
+<div class="para" id="p-derived-example-more-conversions-3-1-2-1-2-6">Simplify by converting the fraction to lowest terms: x = 1/22500.</div>
+<div class="autopermalink" data-description="Item 2.f"><a href="#example-more-conversions-3-1-2-1-2-6" title="Copy permalink for Item 2.f">🔗</a></div>
+</li>
+</ol>
+<div class="para">So, the repeating decimal 0.01<span class="process-math">\(\overline{4}\)</span> is equal to the fraction 1/22500.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-more-conversions-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-more-conversions-3-1-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-3">
+<div class="para logical" id="example-more-conversions-3-1-3-1">
+<div class="para">Convert 1.<span class="process-math">\(\overline{6}\)</span> to a fraction:</div>
+<ol class="lower-alpha lower-alpha-level-1" id="example-more-conversions-3-1-3-1-2">
+<li id="example-more-conversions-3-1-3-1-2-1">
+<div class="para" id="p-derived-example-more-conversions-3-1-3-1-2-1">Let x = 1.<span class="process-math">\(\overline{6}\text{.}\)</span> This is an improper fraction because the decimal is greater than 1.</div>
+<div class="autopermalink" data-description="Item 3.a"><a href="#example-more-conversions-3-1-3-1-2-1" title="Copy permalink for Item 3.a">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-3-1-2-2">
+<div class="para" id="p-derived-example-more-conversions-3-1-3-1-2-2">The period of the repetend is 1, so p = 1.</div>
+<div class="autopermalink" data-description="Item 3.b"><a href="#example-more-conversions-3-1-3-1-2-2" title="Copy permalink for Item 3.b">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-3-1-2-3">
+<div class="para" id="p-derived-example-more-conversions-3-1-3-1-2-3">Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 16.666... - 1.666... = 15.</div>
+<div class="autopermalink" data-description="Item 3.c"><a href="#example-more-conversions-3-1-3-1-2-3" title="Copy permalink for Item 3.c">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-3-1-2-4">
+<div class="para" id="p-derived-example-more-conversions-3-1-3-1-2-4">Solve for x: x = 15/9.</div>
+<div class="autopermalink" data-description="Item 3.d"><a href="#example-more-conversions-3-1-3-1-2-4" title="Copy permalink for Item 3.d">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-3-1-2-5">
+<div class="para" id="p-derived-example-more-conversions-3-1-3-1-2-5">Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</div>
+<div class="autopermalink" data-description="Item 3.e"><a href="#example-more-conversions-3-1-3-1-2-5" title="Copy permalink for Item 3.e">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-3-1-2-6">
+<div class="para" id="p-derived-example-more-conversions-3-1-3-1-2-6">Simplify by converting the fraction to lowest terms: x = 5/3.</div>
+<div class="autopermalink" data-description="Item 3.f"><a href="#example-more-conversions-3-1-3-1-2-6" title="Copy permalink for Item 3.f">🔗</a></div>
+</li>
+</ol>
+<div class="para">So, the repeating decimal 1.<span class="process-math">\(\overline{6}\)</span> is equal to the fraction 5/3.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-more-conversions-3-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-more-conversions-3-1-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-4">
+<div class="para logical" id="example-more-conversions-3-1-4-1">
+<div class="para">Convert -0.<span class="process-math">\(\overline{8}\)</span> to a fraction:</div>
+<ol class="lower-alpha lower-alpha-level-1" id="example-more-conversions-3-1-4-1-2">
+<li id="example-more-conversions-3-1-4-1-2-1">
+<div class="para" id="p-derived-example-more-conversions-3-1-4-1-2-1">Let x = -0.<span class="process-math">\(\overline{8}\text{.}\)</span> This is a negative number.</div>
+<div class="autopermalink" data-description="Item 4.a"><a href="#example-more-conversions-3-1-4-1-2-1" title="Copy permalink for Item 4.a">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-4-1-2-2">
+<div class="para" id="p-derived-example-more-conversions-3-1-4-1-2-2">The period of the repetend is 1, so p = 1.</div>
+<div class="autopermalink" data-description="Item 4.b"><a href="#example-more-conversions-3-1-4-1-2-2" title="Copy permalink for Item 4.b">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-4-1-2-3">
+<div class="para" id="p-derived-example-more-conversions-3-1-4-1-2-3">Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is -8.888... - (-0.888...) = -8.</div>
+<div class="autopermalink" data-description="Item 4.c"><a href="#example-more-conversions-3-1-4-1-2-3" title="Copy permalink for Item 4.c">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-4-1-2-4">
+<div class="para" id="p-derived-example-more-conversions-3-1-4-1-2-4">Solve for x: x = -8/9.</div>
+<div class="autopermalink" data-description="Item 4.d"><a href="#example-more-conversions-3-1-4-1-2-4" title="Copy permalink for Item 4.d">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-4-1-2-5">
+<div class="para" id="p-derived-example-more-conversions-3-1-4-1-2-5">Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</div>
+<div class="autopermalink" data-description="Item 4.e"><a href="#example-more-conversions-3-1-4-1-2-5" title="Copy permalink for Item 4.e">🔗</a></div>
+</li>
+<li id="example-more-conversions-3-1-4-1-2-6">
+<div class="para" id="p-derived-example-more-conversions-3-1-4-1-2-6">Simplify by converting the fraction to lowest terms: x = -8/9.</div>
+<div class="autopermalink" data-description="Item 4.f"><a href="#example-more-conversions-3-1-4-1-2-6" title="Copy permalink for Item 4.f">🔗</a></div>
+</li>
+</ol>
+<div class="para">So, the repeating decimal -0.<span class="process-math">\(\overline{8}\)</span> is equal to the fraction -8/9.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-more-conversions-3-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#example-more-conversions-3-1-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-more-conversions-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 5.3.7: More Examples of Converting Repeating Decimals to Fractions"><a href="#example-more-conversions" title="Copy permalink for Example 5.3.7: More Examples of Converting Repeating Decimals to Fractions">🔗</a></div></article></details><div class="para" id="converting-repeating-decimal-to-fraction-5">A natural question is if a number has two or more different ways of expressing it using decimals. Let’s explore this in the next example.<div class="autopermalink" data-description="Paragraph"><a href="#converting-repeating-decimal-to-fraction-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="converting-repeating-decimal-to-fraction-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.8</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-120"><article class="example example-like"><ol id="p-1415" class="decimal">
-<li id="li-404"><p id="p-1416">Consider the decimal number <span class="process-math">\(x=0.24\overline{9}\text{.}\)</span> Using the procedure above, determine the fraction represented by this decimal. Do you know of another way of expressing this fraction using decimals?</p></li>
-<li id="li-405"><p id="p-1417">Using the example above as a guide, conjecture a second decimal expression for the fraction <span class="process-math">\(\frac{3}{10}\text{.}\)</span> Then check that this is correct.</p></li>
-<li id="li-406"><p id="p-1418">Using the ideas above, make a conjecture about when two decimal expressions represent the same fraction. Do your best to prove/justify why this is the case.</p></li>
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="converting-repeating-decimal-to-fraction-6-1">
+<ol class="decimal" id="converting-repeating-decimal-to-fraction-6-1-1">
+<li id="converting-repeating-decimal-to-fraction-6-1-1-1">
+<div class="para" id="converting-repeating-decimal-to-fraction-6-1-1-1-1">Consider the decimal number <span class="process-math">\(x=0.24\overline{9}\text{.}\)</span> Using the procedure above, determine the fraction represented by this decimal. Do you know of another way of expressing this fraction using decimals?<div class="autopermalink" data-description="Paragraph"><a href="#converting-repeating-decimal-to-fraction-6-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#converting-repeating-decimal-to-fraction-6-1-1-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="converting-repeating-decimal-to-fraction-6-1-1-2">
+<div class="para" id="converting-repeating-decimal-to-fraction-6-1-1-2-1">Using the example above as a guide, conjecture a second decimal expression for the fraction <span class="process-math">\(\frac{3}{10}\text{.}\)</span> Then check that this is correct.<div class="autopermalink" data-description="Paragraph"><a href="#converting-repeating-decimal-to-fraction-6-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#converting-repeating-decimal-to-fraction-6-1-1-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="converting-repeating-decimal-to-fraction-6-1-1-3">
+<div class="para" id="converting-repeating-decimal-to-fraction-6-1-1-3-1">Using the ideas above, make a conjecture about when two decimal expressions represent the same fraction. Do your best to prove/justify why this is the case.<div class="autopermalink" data-description="Paragraph"><a href="#converting-repeating-decimal-to-fraction-6-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#converting-repeating-decimal-to-fraction-6-1-1-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
 </ol>
-<p id="p-1419"></p></article></div></section></section></section></div></main>
+<div class="autopermalink" data-description="Paragraph"><a href="#converting-repeating-decimal-to-fraction-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="converting-repeating-decimal-to-fraction-6-2"><div class="autopermalink" data-description="Paragraph"><a href="#converting-repeating-decimal-to-fraction-6-2" title="Copy permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Example 5.3.8"><a href="#converting-repeating-decimal-to-fraction-6" title="Copy permalink for Example 5.3.8">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection 5.3.3.3: Converting a Repeating Decimal to a Fraction"><a href="#converting-repeating-decimal-to-fraction" title="Copy permalink for Subsubsection 5.3.3.3: Converting a Repeating Decimal to a Fraction">🔗</a></div></section><div class="autopermalink" data-description="Subsection 5.3.3: Representing All Repeating Decimals as Rational Numbers"><a href="#repeating-decimals-as-rational-numbers" title="Copy permalink for Subsection 5.3.3: Representing All Repeating Decimals as Rational Numbers">🔗</a></div></section><div class="autopermalink" data-description="Section 5.3: Terminating and Repeating Decimals"><a href="#terminating-repeating-decimals" title="Copy permalink for Section 5.3: Terminating and Repeating Decimals">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec_operations_with_decimals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="percent-and-percent-change.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

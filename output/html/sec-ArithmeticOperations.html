@@ -1,241 +1,791 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-08-05T15:19:34-03:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Arithmetic Operations</title>
-<meta name="Keywords" content="Authored in PreTeXt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Math For Elementary School Teachers">
 <meta property="book:author" content="Me">
-<script>window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    useLabelIds: true,
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
-  },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-  },
-  chtml: {
-    scale: 0.88,
-    mtextInheritFont: true
-  },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
-  },
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.8.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
-<body class="pretext-book ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers</span> <span class="subtitle"></span></a></h1>
+<p class="byline">Me</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-NumberSystems.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="WholeNumbers.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-PropertiesOfArithmeticOperations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers:</span> <span class="subtitle"></span></a></h1>
-<p class="byline">Me</p>
-</div>
-</div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-NumberSystems.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="WholeNumbers.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-PropertiesOfArithmeticOperations.html" title="Next">Next</a></span>
-</div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-NumberSystems.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="WholeNumbers.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-PropertiesOfArithmeticOperations.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
-<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
-<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
-<li><a href="preface.html" data-scroll="preface" class="internal">Preface</a></li>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="test.html" data-scroll="test" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a><ul>
-<li><a href="IntroToLogic.html" data-scroll="IntroToLogic" class="internal">Intro To Logic</a></li>
-<li><a href="sec-ConditionalStatements.html" data-scroll="sec-ConditionalStatements" class="internal">Conditional Statements</a></li>
-<li><a href="sec-Sets.html" data-scroll="sec-Sets" class="internal">Sets</a></li>
-<li><a href="section-4.html" data-scroll="section-4" class="internal">Supplemental Exercises</a></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="test.html" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IntroToLogic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Intro To Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-LogicObj" class="internal"><span class="codenumber">1.1.1</span> <span class="title">The Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-AndOrNot" class="internal"><span class="codenumber">1.1.2</span> <span class="title">And, Or, and Not</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-Quantifiers" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-QuantVenn" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Viewing Quantified Statements as a Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-EvenOdd" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Expressing Even and Odd Numbers Algebraically</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="WholeNumbers.html" data-scroll="WholeNumbers" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a><ul>
-<li><a href="sec-Equality.html" data-scroll="sec-Equality" class="internal">Equality</a></li>
-<li><a href="sec-ProblemSolving.html" data-scroll="sec-ProblemSolving" class="internal">Problem Solving</a></li>
-<li><a href="sec-2_1NumberSystemsAndPlaceValue.html" data-scroll="sec-2_1NumberSystemsAndPlaceValue" class="internal">NumberSystemsAndPlaceValueWhole Numbers</a></li>
-<li><a href="sec-NumberSystems.html" data-scroll="sec-NumberSystems" class="internal">Number Systems</a></li>
-<li><a href="sec-ArithmeticOperations.html" data-scroll="sec-ArithmeticOperations" class="active">Arithmetic Operations</a></li>
-<li><a href="sec-PropertiesOfArithmeticOperations.html" data-scroll="sec-PropertiesOfArithmeticOperations" class="internal">Properties Of Arithmetic Operations</a></li>
-<li><a href="integers.html" data-scroll="integers" class="internal">Integers</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ConditionalStatements.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#sec-ConditionalStatements-2" class="internal"><span class="codenumber">1.2.1</span> <span class="title">What is a Conditional Statement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-JustifyingConditionalStatements" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Justifying Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-WhyProofsAreImportant" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Why Proofs Are Important</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-Counterexamples" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Counterexamples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-CondExist" class="internal"><span class="codenumber">1.2.5</span> <span class="title">The Relationship Between Conditional and Existential Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-OtherFormsCondSt" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Other Forms of Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-BiconditionalSentences" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Biconditional Sentences</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ArithmeticAlgorithms.html" data-scroll="ArithmeticAlgorithms" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a><ul>
-<li><a href="sec-AdditionAlgorithms.html" data-scroll="sec-AdditionAlgorithms" class="internal">Addition Algorithms</a></li>
-<li><a href="sec-SubtractionAlgorithms.html" data-scroll="sec-SubtractionAlgorithms" class="internal">Subtraction Algorithms</a></li>
-<li><a href="sec-MultiplicationAlgorithms.html" data-scroll="sec-MultiplicationAlgorithms" class="internal">Multiplication Algorithms</a></li>
-<li><a href="sec-DivisionAlgorithms.html" data-scroll="sec-DivisionAlgorithms" class="internal">Division Algorithms</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-IntroToSets" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Intro To Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-CombiningSets" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Combining Sets</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="Fractions.html" data-scroll="Fractions" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a><ul>
-<li><a href="section-16.html" data-scroll="section-16" class="internal">Introduction to Fractions</a></li>
-<li><a href="section-17.html" data-scroll="section-17" class="internal">Arithmetic With Fractions</a></li>
-<li><a href="section-18.html" data-scroll="section-18" class="internal">Ratios, Rates, and Proportions</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="test-5.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Supplemental Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="Decimals.html" data-scroll="Decimals" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a><ul>
-<li><a href="decimals.html" data-scroll="decimals" class="internal">Introduction to Decimals</a></li>
-<li><a href="sec_operations_with_decimals.html" data-scroll="sec_operations_with_decimals" class="internal">Operations with Decimals</a></li>
-<li><a href="terminating-repeating-decimals.html" data-scroll="terminating-repeating-decimals" class="internal">Terminating and Repeating Decimals</a></li>
-<li><a href="percent-and-percent-change.html" data-scroll="percent-and-percent-change" class="internal">Percent and Percent Change</a></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="WholeNumbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Equality.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Equality.html#subsec-IntroToEquality" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Intro To Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Equality.html#subsec-PropertiesOfEquality" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Properties Of Equality</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SolvingOneEquation" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Solving One Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SystemsOfEquations" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Intro to Systems Of Equations</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Substitution" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Elimination" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Elimination</span></a></div></li></ul>
+</li>
 </ul>
 </li>
-<li class="link">
-<a href="Divisibility.html" data-scroll="Divisibility" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a><ul>
-<li><a href="sec-IntroductoryConcepts.html" data-scroll="sec-IntroductoryConcepts" class="internal">Introductory Concepts</a></li>
-<li><a href="divisibility-theorems-small-numbers.html" data-scroll="divisibility-theorems-small-numbers" class="internal">Divisibility Theorems for Small Numbers</a></li>
-<li><a href="sec-PrimeNumbers.html" data-scroll="sec-PrimeNumbers" class="internal">Prime Numbers</a></li>
-<li><a href="sec-FactorsAndMultiples.html" data-scroll="sec-FactorsAndMultiples" class="internal">Factors and Multiples</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2_1NumberSystemsAndPlaceValue.html" class="internal"><span class="codenumber">2.3</span> <span class="title">NumberSystemsAndPlaceValueWhole Numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-NumberSystems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#sec-NumberSystems-2" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Introduction to Number Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingFromBaseTen" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Converting From Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingToBaseTen" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Converting To Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-BaseTwelve" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-HistoricalNumberSystems" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Historical Number Systems</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="irrational_numbers.html" data-scroll="irrational_numbers" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a><ul>
-<li><a href="understanding_irrational_numbers.html" data-scroll="understanding_irrational_numbers" class="internal">Understanding Irrational Numbers</a></li>
-<li><a href="sec-SimpleRoots.html" data-scroll="sec-SimpleRoots" class="internal">Simple Roots and Irrationality</a></li>
-<li><a href="sec-OperationsWithIrrationalNumbers.html" data-scroll="sec-OperationsWithIrrationalNumbers" class="internal">Operations With Irrational Numbers</a></li>
-<li><a href="exponents_irrational_numbers.html" data-scroll="exponents_irrational_numbers" class="internal">Exponents and Irrational Numbers</a></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Addition" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Subtraction" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Inequality and Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Multiplication" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Multiplication</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-Exponents" class="internal"><span class="codenumber">2.5.3.1</span> <span class="title">Exponents</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Division" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Division with Remainders</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-IntroductionToDivision" class="internal"><span class="codenumber">2.5.4.1</span> <span class="title">Introduction To Division</span></a></div></li></ul>
+</li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
-<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
-<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
-<li class="link"><a href="appendix-1.html" data-scroll="appendix-1" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
-<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
-</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-ArithmeticOperations"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.5</span> <span class="title">Arithmetic Operations</span>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Properties Of Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-OrderOfOperations" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Order Of Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-PropertiesOfArithmetic" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Properties Of Arithmetic</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-ConsequencesofProperties" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Consequences of Properties</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-RelatedSubtractionandDivisionProblems" class="internal"><span class="codenumber">2.6.3.1</span> <span class="title">Related Subtraction and Division Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-MultiplicationandDivisionByZero" class="internal"><span class="codenumber">2.6.3.2</span> <span class="title">Multiplication By Zero</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-DivisionByZero" class="internal"><span class="codenumber">2.6.3.3</span> <span class="title">Division By Zero</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="integers.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-addition" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Visualizing Integer Addition</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-add-integers" class="internal"><span class="title">How to Add Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Properties of Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity" class="internal"><span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity" class="internal"><span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse" class="internal"><span class="title">Additive Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-identity" class="internal"><span class="title">Additive Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-subtraction" class="internal"><span class="codenumber">2.7.1.2</span> <span class="title">Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-subtraction" class="internal"><span class="title">Visualizing Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-subtract-integers" class="internal"><span class="title">How to Subtract Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-subtraction" class="internal"><span class="title">Properties of Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-subtraction" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse-subtraction" class="internal"><span class="title">Relationship to Additive Inverse</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-multiplication" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-multiplication" class="internal"><span class="codenumber">2.7.2.1</span> <span class="title">Visualizing Integer Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-multiply-integers" class="internal"><span class="codenumber">2.7.2.2</span> <span class="title">How to Multiply Integers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-multiplication" class="internal"><span class="codenumber">2.7.2.3</span> <span class="title">Proof: <span class="process-math">\((-a) = (-1) \times a\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-times-negative" class="internal"><span class="codenumber">2.7.2.4</span> <span class="title">Proof: <span class="process-math">\((-1) \times (-1) = 1\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-multiplication" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Properties of Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity-multiplication" class="internal"><span class="codenumber">2.7.3.1</span> <span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity-multiplication" class="internal"><span class="codenumber">2.7.3.2</span> <span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#distributivity-multiplication" class="internal"><span class="codenumber">2.7.3.3</span> <span class="title">Distributivity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-multiplication" class="internal"><span class="codenumber">2.7.3.4</span> <span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#multiplicative-identity" class="internal"><span class="codenumber">2.7.3.5</span> <span class="title">Multiplicative Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-division" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Integer Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-division" class="internal"><span class="codenumber">2.7.4.1</span> <span class="title">Visualizing Integer Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-divide-integers" class="internal"><span class="codenumber">2.7.4.2</span> <span class="title">How to Divide Integers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ArithmeticAlgorithms.html" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-AdditionAlgorithms.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Addition Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-TheStandardAdditionAlgorithm" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Standard Addition Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-PartialSums" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-SameChangeAddition" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-LatticeMethodAddition" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Lattice Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subtraction Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-StandardSubtractionAlgorithm" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Standard Subtraction Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-PartialDifferences" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Partial Differences</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-SameChangeAlgorithm" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-EqualAdditionsAlgorithm" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Equal Additions Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationPreliminaries" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Multiplication Preliminaries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-PartialProducts" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Partial Products</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationInBaseTwelve" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Multiplication In Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplication" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Russian Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-ProsAndConsOfMultiplicationAlgorithms" class="internal"><span class="codenumber">3.3.6</span> <span class="title">Pros And Cons Of Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-PartialProductsAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">PartialProductsAlgorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-GridMethod" class="internal"><span class="codenumber">3.3.6.2</span> <span class="title">Grid Method</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">Russian Multiplication Algorithm</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DivisionAlgorithms.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Division Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivision" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Long Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivisionBaseTwelve" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Long Division Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-ShortDivision" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Short Division</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Fractions.html" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-2.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-8" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Examples of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#subsec-MakingSenseOfFractions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Making Sense Of Fractions and Division of Whole Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-10" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Equivalent Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingFractions" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Comparing Fractions Using a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingMultipleFractions" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Comparing Multiple Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#DensityOfFractions" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Density of Fractions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-3.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Arithmetic With Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#AddingSubtractingFractions" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Adding and Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#MixedFractions" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Mixed Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#ImproperToFractions" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Converting Improper Fractions to Mixed Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#subsec-MultiplicationOfFractions" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Multiplication of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#Fractions-3-6" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Division of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="Fractions-3.html#negative-exponents-fractions" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Negative Exponents and Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="Fractions-3.html#simplify-compound-fraction" class="internal"><span class="codenumber">4.2.6.1</span> <span class="title">Simplifying Compound Fractions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-4.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Ratios, Rates, and Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Ratios</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Proportions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Decimals.html" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="decimals.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction to Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="decimals.html#decimal-fractions" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Decimal Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="decimals.html#decimal-fractions-2" class="internal"><span class="codenumber">5.1.1.1</span> <span class="title">Decimal Fractions and Their Relationship to Whole Numbers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#decimal-representation" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#pictorial-representation" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Pictorial Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#comparing-decimals" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Comparing Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_operations_with_decimals.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Operations with Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_add_subtract_decimals" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Addition and Subtraction with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_multiply_decimals" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Multiplication with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_divide_decimals" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Division with Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Terminating and Repeating Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#terminating-decimals" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Terminating Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-long-division" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Expressing a Fraction as a Repeating Decimal Using Long Division</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-as-rational-numbers" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Representing All Repeating Decimals as Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#CanRepeatingDecimalsEqual1" class="internal"><span class="codenumber">5.3.3.1</span> <span class="title">Can Repeating Decimals Equal 1?</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repetend-and-period" class="internal"><span class="codenumber">5.3.3.2</span> <span class="title">Repetend and Period of a Repeated Decimal</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#converting-repeating-decimal-to-fraction" class="internal"><span class="codenumber">5.3.3.3</span> <span class="title">Converting a Repeating Decimal to a Fraction</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="percent-and-percent-change.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percent and Percent Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="percent-and-percent-change.html#introduction-to-percent" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Introduction to Percent</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-ratios-to-percents" class="internal"><span class="codenumber">5.4.1.1</span> <span class="title">Converting Ratios to Percents</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-fractions-to-percents" class="internal"><span class="codenumber">5.4.1.2</span> <span class="title">Converting Fractions to Percents</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#visualizing-percents" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Visualizing Percents Using a Bar Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-vs-percent-change" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Percent vs. Percent Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-change-vs-percentage-point-change" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Percent Change vs. Percentage Point Change</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Divisibility.html" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Introductory Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility2" class="internal"><span class="codenumber">6.1.1.1</span> <span class="title">Intro to Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TransitivityAndDivisibility" class="internal"><span class="codenumber">6.1.1.2</span> <span class="title">Transitivity And Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-properties" class="internal"><span class="codenumber">6.1.1.3</span> <span class="title">Divisibility Properties of 0, 1, and a Number with Itself</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-theorems" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Divisibility Theorems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem1" class="internal"><span class="codenumber">6.1.2.1</span> <span class="title">Theorem 1</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem2" class="internal"><span class="codenumber">6.1.2.2</span> <span class="title">Theorem 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem3" class="internal"><span class="codenumber">6.1.2.3</span> <span class="title">Theorem 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TheOtherCase" class="internal"><span class="codenumber">6.1.2.4</span> <span class="title">TheOtherCase</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Theorems for Small Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-IntroductionDivThms" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2-4-8" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Divisibility Rules for 2, 4, and 8</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2" class="internal"><span class="codenumber">6.2.2.1</span> <span class="title">Divisibility Rule for 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-4" class="internal"><span class="codenumber">6.2.2.2</span> <span class="title">Divisibility Rule for 4</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-8" class="internal"><span class="codenumber">6.2.2.3</span> <span class="title">Divisibility Rule for 8</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-DivisibilityRuleforHigherPowersof2" class="internal"><span class="codenumber">6.2.2.4</span> <span class="title">Divisibility Rule for Higher Powers of 2</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Rule For 5</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRulesFor3And9" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Rules For 3 And 9</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor11" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Divisibility Rule For 11</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-CompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Compound Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-WhenCompundDivisibilityRulesWork" class="internal"><span class="codenumber">6.2.6.1</span> <span class="title">When Compund Divisibility Rules Work</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-SomeCommonCompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6.2</span> <span class="title">Some Common Compound Divisibility Rules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8" class="internal"><span class="codenumber">6.2.7</span> <span class="title">Iterative Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-4" class="internal"><span class="codenumber">6.2.7.1</span> <span class="title">Divisibility by 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-5" class="internal"><span class="codenumber">6.2.7.2</span> <span class="title">Divisibility by 9</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-6" class="internal"><span class="codenumber">6.2.7.3</span> <span class="title">Divisibility by 11</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-MakingDivisibilityRules" class="internal"><span class="codenumber">6.2.8</span> <span class="title">MakingDivisibilityRules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PrimeNumbers.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-FindingPrimeNumbers" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Finding Prime Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowManyPrimeNumbersExist" class="internal"><span class="codenumber">6.3.2</span> <span class="title">How Many Prime Numbers Exist</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowToDetermineIfaNumberisPrime" class="internal"><span class="codenumber">6.3.3</span> <span class="title">How To Determine If a Number is Prime</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Factors and Multiples</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-PrimesAsBuildingBlocks" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Primes As Building Blocks</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-HowManyFactorsDoesANumberHave" class="internal"><span class="codenumber">6.4.2</span> <span class="title">How Many Factors Does A Number Have?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsubsec-PuttingItAllTogether" class="internal"><span class="codenumber">6.4.2.1</span> <span class="title">Putting It All Together</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_lcm_intro" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Greatest Common Divisor and Least Common Multiple</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#understanding_gcd_lcm" class="internal"><span class="codenumber">6.4.3.1</span> <span class="title">Unraveling the Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_prime_factorization" class="internal"><span class="title">Understanding GCD Through Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_concept" class="internal"><span class="title">Least Common Multiple (LCM)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_example" class="internal"><span class="title">Exploring LCM with an Example</span></a></div></li></ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#word_problems_gcd_lcm" class="internal"><span class="codenumber">6.4.4</span> <span class="title">Word Problems: GCD and LCM in Practice</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem1_gcd" class="internal"><span class="codenumber">6.4.4.1</span> <span class="title">Problem 1: Distributing Items in Boxes</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem2_lcm" class="internal"><span class="codenumber">6.4.4.2</span> <span class="title">Problem 2: Buying Ingredients for Burgers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#venn_diagrams_gcd_lcm" class="internal"><span class="codenumber">6.4.4.3</span> <span class="title">Visualizing GCD and LCM with Venn Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Understanding the Euclidean Algorithm</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_basics" class="internal"><span class="codenumber">6.4.5.1</span> <span class="title">Basic Principles</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_procedure" class="internal"><span class="codenumber">6.4.5.2</span> <span class="title">Applying the Euclidean Algorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_examples" class="internal"><span class="codenumber">6.4.5.3</span> <span class="title">Additional Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="irrational_numbers.html" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="understanding_irrational_numbers.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Understanding Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#examples_of_irrational_numbers" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Examples of Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-TypesOfIrrationalNumbers" class="internal"><span class="codenumber">7.1.2</span> <span class="title">TypesOfIrrationalNumbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-FunctionsBriefly" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Functions Briefly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SimpleRoots.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Simple Roots and Irrationality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-PrincipalRoots" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Principal Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-nthPowers" class="internal"><span class="codenumber">7.2.2</span> <span class="title">nth Powers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-ProvingIrrationalityofnthRoots" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Proving Irrationality of nth Roots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Operations With Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#addition_subtraction_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Addition and Subtraction with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#multiplication_division_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Multiplication and Division with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#more_elaborate_examples_irrationality" class="internal"><span class="codenumber">7.3.2</span> <span class="title">More Elaborate Examples of Irrationality</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="exponents_irrational_numbers.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exponents and Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#nth_root_exponent" class="internal"><span class="codenumber">7.4.1</span> <span class="title">nth Root as Exponent 1/n</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#multiplying_dividing_roots" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Multiplying and Dividing nth Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying-principal-roots" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Simplifying <span class="process-math">\(n\)</span>th Principal Roots by Factoring Out <span class="process-math">\(n\)</span>th Powers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#quotient-remainder-theorem" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Using the Quotient Remainder Theorem</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#more-examples" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Additional Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying_fractional_powers" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Simplifying Expressions with Fractional Powers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ArithmeticOperations"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.5</span><span class="space"> </span><span class="title">Arithmetic Operations</span>
 </h2>
-<section class="introduction" id="introduction-4"><p id="p-614">In this section, we will talk about the four main operations of arithmetic of whole numbers; addition, subtraction, multiplication, and division. The idea is that we will start with the idea of addition, and "build" the others from that. Indeed, mathematicians like to start with as little as possible, and making as many results and ideas out of this starting place as we can.</p>
-<p id="p-615">Once we talk about these operations, we can then talk about some nice properties that (some of) these operations have, which allows us to rearrange and regroup numbers so we can easily perform operations. Then, we'll talk about common (and uncommon!) rules, called algorithms, that we use to do arithmetic. We'll learn the steps in the algorithms, and why these algorithms work!</p>
-<p id="p-616">A reminder; we use the notation <span class="process-math">\(\mathbb{N}_0\)</span> to mean the set of whole numbers <span class="process-math">\(\{0, 1, 2, 3, \ldots \}\text{.}\)</span></p></section><section class="subsection" id="subsec-Addition"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.5.1</span> <span class="title">Addition</span>
+<section class="introduction" id="sec-ArithmeticOperations-2"><div class="para" id="sec-ArithmeticOperations-2-1">In this section, we will talk about the four main operations of arithmetic of whole numbers; addition, subtraction, multiplication, and division. The idea is that we will start with the idea of addition, and "build" the others from that. Indeed, mathematicians like to start with as little as possible, and making as many results and ideas out of this starting place as we can.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ArithmeticOperations-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-ArithmeticOperations-2-2">Once we talk about these operations, we can then talk about some nice properties that (some of) these operations have, which allows us to rearrange and regroup numbers so we can easily perform operations. Then, we’ll talk about common (and uncommon!) rules, called algorithms, that we use to do arithmetic. We’ll learn the steps in the algorithms, and why these algorithms work!<div class="autopermalink" data-description="Paragraph"><a href="#sec-ArithmeticOperations-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-ArithmeticOperations-2-3">A reminder; we use the notation <span class="process-math">\(\mathbb{N}_0\)</span> to mean the set of whole numbers <span class="process-math">\(\{0, 1, 2, 3, \ldots \}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-ArithmeticOperations-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-Addition"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="space"> </span><span class="title">Addition</span>
 </h3>
-<p id="p-617">Addition is an operation that we usually have an intuitive grasp of. There are two common ways of viewing addtion (called addition models); the "set model," where we combine two sets (with no elements in common; that is, and empty intersection) into one set, and the "number line model", where we start at one number on the umber line, and add additional spaces according to the number we're adding to the first one.</p>
-<p id="p-618">Here is the set model: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/7+4Set.svg" class="contained"></div></p>
-<p id="p-619">Here is the number line model: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/7+4Line.svg" class="contained"></div></p>
-<p id="p-620">As addition is quite intuitive, we'll take the ability to add numbers as a given (in math we call this an <dfn class="terminology">axiom</dfn>).</p>
+<div class="para" id="subsec-Addition-2">Addition is an operation that we usually have an intuitive grasp of. There are two common ways of viewing addtion (called addition models); the "set model," where we combine two sets (with no elements in common; that is, and empty intersection) into one set, and the "number line model", where we start at one number on the umber line, and add additional spaces according to the number we’re adding to the first one.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Addition-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Addition-3">Here is the set model: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/7+4Set.svg" class="contained" alt="Set Model for 7+4"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Addition-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Addition-4">Here is the number line model: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/7+4Line.svg" class="contained" alt="Number Line Model for 7+4"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Addition-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Addition-5">As addition is quite intuitive, we’ll take the ability to add numbers as a given (in math we call this an <dfn class="terminology">axiom</dfn>).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Addition-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-Addition"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="period">.</span>
 </h4>
-<p id="p-621">Let <span class="process-math">\(a,b \in \mathbb{N}_0\text{.}\)</span> We say <span class="process-math">\(c \in \mathbb{N}_0\)</span> is the <dfn class="terminology">sum</dfn> of the <dfn class="terminology">addends</dfn> <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> and we write <span class="process-math">\(a+b=c\text{.}\)</span></p></article><p id="p-622">Be careful when adding numbers representing objects or units; if you have different objects or units you cannot simply add the two numbers.</p>
-<article class="example example-like" id="example-33"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-33"><h4 class="heading">
+<div class="para" id="def-Addition-1-1">Let <span class="process-math">\(a,b \in \mathbb{N}_0\text{.}\)</span> We say <span class="process-math">\(c \in \mathbb{N}_0\)</span> is the <dfn class="terminology">sum</dfn> of the <dfn class="terminology">addends</dfn> <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> and we write <span class="process-math">\(a+b=c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-Addition-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.5.1"><a href="#def-Addition" title="Copy permalink for Definition 2.5.1">🔗</a></div></article><div class="para" id="subsec-Addition-7">Be careful when adding numbers representing objects or units; if you have different objects or units you cannot simply add the two numbers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Addition-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-Addition-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-33"><article class="example example-like"><p id="p-623">Of course 3 apples + 4 apples = 7 apples, but if we are adding different objects we cannot add the numbers representing them; if we have 3 apples and 4 oranges, we cannot say we have 7 since we're treating apples and oranges as different objects.</p>
-<p id="p-624">However, if we wanted to add up the amount of pieces of fruit we had without making a distinction between apples and oranges, we would have 7 pieces of fruit. In short, in real world applications, your choice of units matters.</p></article></div>
-<article class="assemblage assemblage-like" id="assemblage-SetAddition"><h4 class="heading"><span class="title">Notes for Additional Understanding.</span></h4>
-<p id="p-625">Though we're taking addition to be our "axiom" that we are using to define all other operations, mathematicians usually build up the ideas of whole numbers and addition from sets themselves. This approach, while more fundamental, is a bit beyond the scope of what teachers need to understand.</p></article></section><section class="subsection" id="subsec-Subtraction"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.5.2</span> <span class="title">Inequality and Subtraction</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-Addition-8-1">Of course 3 apples + 4 apples = 7 apples, but if we are adding different objects we cannot add the numbers representing them; if we have 3 apples and 4 oranges, we cannot say we have 7 since we’re treating apples and oranges as different objects.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Addition-8-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Addition-8-2">However, if we wanted to add up the amount of pieces of fruit we had without making a distinction between apples and oranges, we would have 7 pieces of fruit. In short, in real world applications, your choice of units matters.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Addition-8-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.5.2"><a href="#subsec-Addition-8" title="Copy permalink for Example 2.5.2">🔗</a></div></article></details><article class="assemblage assemblage-like" id="assemblage-SetAddition"><h4 class="heading"><span class="title">Notes for Additional Understanding.</span></h4>
+<div class="para" id="assemblage-SetAddition-2">Though we’re taking addition to be our "axiom" that we are using to define all other operations, mathematicians usually build up the ideas of whole numbers and addition from sets themselves. This approach, while more fundamental, is a bit beyond the scope of what teachers need to understand.<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-SetAddition-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Summary: Notes for Additional Understanding"><a href="#assemblage-SetAddition" title="Copy permalink for Summary: Notes for Additional Understanding">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.5.1: Addition"><a href="#subsec-Addition" title="Copy permalink for Subsection 2.5.1: Addition">🔗</a></div></section><section class="subsection" id="subsec-Subtraction"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="space"> </span><span class="title">Inequality and Subtraction</span>
 </h3>
-<p id="p-626">Before we talk about subtraction, let's talk about how to compare numbers; that is, how to tell if one number is larger than another. We want to "build" all ideas from addition, so let's see if we can come up with a way of describing this using only addition and whole numbers.</p>
-<article class="exercise exercise-like" id="exercise-31"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-31"><h4 class="heading">
+<div class="para" id="subsec-Subtraction-2">Before we talk about subtraction, let’s talk about how to compare numbers; that is, how to tell if one number is larger than another. We want to "build" all ideas from addition, so let’s see if we can come up with a way of describing this using only addition and whole numbers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-Subtraction-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-31"><article class="exercise exercise-like"><ol class="decimal">
-<li id="li-211"><p id="p-627">Draw some sort of diagram showing that 11 is greater than 7.</p></li>
-<li id="li-212"><p id="p-628">Using only addition and other whole numbers, try to explain why 11 is greater than 7. Referring to the diagram you made above may help.</p></li>
-<li id="li-213"><p id="p-629">Do the same thing to show that 15 is greater than 3.</p></li>
-<li id="li-214"><p id="p-630">Can we generalize this? If <span class="process-math">\(a,b \in  \mathbb{N}_0\text{,}\)</span> how do we know if <span class="process-math">\(a &gt; b\text{?}\)</span> Try and write this as a conditional statement: "If <span class="process-math">\(a &gt; b\)</span> then ..."</p></li>
+</h4></summary><article class="exercise exercise-like knowl__content"><ol class="decimal" id="subsec-Subtraction-3-1">
+<li id="subsec-Subtraction-3-1-1">
+<div class="para" id="subsec-Subtraction-3-1-1-1">Draw some sort of diagram showing that 11 is greater than 7.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-3-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.3.1"><a href="#subsec-Subtraction-3-1-1" title="Copy permalink for Item 2.5.3.1">🔗</a></div>
+</li>
+<li id="subsec-Subtraction-3-1-2">
+<div class="para" id="subsec-Subtraction-3-1-2-1">Using only addition and other whole numbers, try to explain why 11 is greater than 7. Referring to the diagram you made above may help.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-3-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.3.2"><a href="#subsec-Subtraction-3-1-2" title="Copy permalink for Item 2.5.3.2">🔗</a></div>
+</li>
+<li id="subsec-Subtraction-3-1-3">
+<div class="para" id="subsec-Subtraction-3-1-3-1">Do the same thing to show that 15 is greater than 3.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-3-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.3.3"><a href="#subsec-Subtraction-3-1-3" title="Copy permalink for Item 2.5.3.3">🔗</a></div>
+</li>
+<li id="subsec-Subtraction-3-1-4">
+<div class="para" id="subsec-Subtraction-3-1-4-1">Can we generalize this? If <span class="process-math">\(a,b \in  \mathbb{N}_0\text{,}\)</span> how do we know if <span class="process-math">\(a &gt; b\text{?}\)</span> Try and write this as a conditional statement: "If <span class="process-math">\(a &gt; b\)</span> then ..."<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-3-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.3.4"><a href="#subsec-Subtraction-3-1-4" title="Copy permalink for Item 2.5.3.4">🔗</a></div>
+</li>
 </ol>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-40" id="solution-40"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-40"><div class="solution solution-like">
-<p id="p-631">You probably drew a diagram that shows either the set model of addtion or the number line model, maybe something like the following if <span class="process-math">\(a=7\text{:}\)</span></p>
-<p id="p-632"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/GreaterThanLine.svg" class="contained"></div></p>
-</div></div>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-41" id="solution-41"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-41"><div class="solution solution-like"><p id="p-633">The key to this is realizing I can add a (non-zero) counting number to 7 to get 11. In our case it is 4. So we can say that <span class="process-math">\(7 &gt; 4\)</span> since we found the number 4 such that <span class="process-math">\(11=7+4\text{.}\)</span></p></div></div>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-42" id="solution-42"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-42"><div class="solution solution-like"><p id="p-634">We can apply the exact same logic to this problem; the only thing different are the numbers! So we can say <span class="process-math">\(15 &gt; 3\)</span> since there is a number (12) where <span class="process-math">\(15 = 3 + 12\text{.}\)</span></p></div></div>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-43" id="solution-43"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-43"><div class="solution solution-like">
-<p id="p-635">The key thing to realize is that all that matters is the *existence* of a number, say <span class="process-math">\(c\text{,}\)</span> such that <span class="process-math">\(a=b+c\text{.}\)</span> Thus we can write this as a conditional statement:</p>
-<p id="p-636">If <span class="process-math">\(a &gt; b\)</span> then there is a <span class="process-math">\(c \ in \mathbb{N}\)</span> such that <span class="process-math">\(a=b+c\text{.}\)</span></p>
-</div></div></article></div>
-<article class="exercise exercise-like" id="exercise-32"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-32"><h4 class="heading">
+<details id="subsec-Subtraction-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-Subtraction-3-2-1">You probably drew a diagram that shows either the set model of addtion or the number line model, maybe something like the following if <span class="process-math">\(a=7\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Subtraction-3-2-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/GreaterThanLine.svg" class="contained" alt="Greater than Seven on Number Line"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-3-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.5.3.1"><a href="#subsec-Subtraction-3-2" title="Copy permalink for Solution 2.5.3.1">🔗</a></div>
+</div></details><details id="subsec-Subtraction-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-Subtraction-3-3-1">The key to this is realizing I can add a (non-zero) counting number to 7 to get 11. In our case it is 4. So we can say that <span class="process-math">\(7 &gt; 4\)</span> since we found the number 4 such that <span class="process-math">\(11=7+4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-3-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.5.3.2"><a href="#subsec-Subtraction-3-3" title="Copy permalink for Solution 2.5.3.2">🔗</a></div>
+</div></details><details id="subsec-Subtraction-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-Subtraction-3-4-1">We can apply the exact same logic to this problem; the only thing different are the numbers! So we can say <span class="process-math">\(15 &gt; 3\)</span> since there is a number (12) where <span class="process-math">\(15 = 3 + 12\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-3-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.5.3.3"><a href="#subsec-Subtraction-3-4" title="Copy permalink for Solution 2.5.3.3">🔗</a></div>
+</div></details><details id="subsec-Subtraction-3-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-Subtraction-3-5-1">The key thing to realize is that all that matters is the *existence* of a number, say <span class="process-math">\(c\text{,}\)</span> such that <span class="process-math">\(a=b+c\text{.}\)</span> Thus we can write this as a conditional statement:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-3-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Subtraction-3-5-2">If <span class="process-math">\(a &gt; b\)</span> then there is a <span class="process-math">\(c \ in \mathbb{N}\)</span> such that <span class="process-math">\(a=b+c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-3-5-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.5.3.4"><a href="#subsec-Subtraction-3-5" title="Copy permalink for Solution 2.5.3.4">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Checkpoint 2.5.3"><a href="#subsec-Subtraction-3" title="Copy permalink for Checkpoint 2.5.3">🔗</a></div></article></details><details id="subsec-Subtraction-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.5.4</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-32"><article class="exercise exercise-like"><p id="p-637">In the previous exercise, we developed a definition for "greater than". Modify this definition to define</p>
-<ol class="decimal">
-<li id="li-215"><p id="p-638">"greater than or equal to"</p></li>
-<li id="li-216"><p id="p-639">"less than"</p></li>
-<li id="li-217"><p id="p-640">"less than or equal to"</p></li>
-</ol></article></div>
-<p id="p-641">Now that we have the idea of comparing numbers, we can develop a definiton of subtraction of whole numbers. Before looking at the definition, see if you can take the "greater than or equal to" definition and modify it to a definition for subtraction.</p>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para logical" id="subsec-Subtraction-4-1">
+<div class="para">In the previous exercise, we developed a definition for "greater than". Modify this definition to define</div>
+<ol class="decimal" id="subsec-Subtraction-4-1-1">
+<li id="subsec-Subtraction-4-1-1-1">
+<div class="para" id="subsec-Subtraction-4-1-1-1-1">"greater than or equal to"<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-4-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.4.1"><a href="#subsec-Subtraction-4-1-1-1" title="Copy permalink for Item 2.5.4.1">🔗</a></div>
+</li>
+<li id="subsec-Subtraction-4-1-1-2">
+<div class="para" id="subsec-Subtraction-4-1-1-2-1">"less than"<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-4-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.4.2"><a href="#subsec-Subtraction-4-1-1-2" title="Copy permalink for Item 2.5.4.2">🔗</a></div>
+</li>
+<li id="subsec-Subtraction-4-1-1-3">
+<div class="para" id="subsec-Subtraction-4-1-1-3-1">"less than or equal to"<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-4-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.4.3"><a href="#subsec-Subtraction-4-1-1-3" title="Copy permalink for Item 2.5.4.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.5.4"><a href="#subsec-Subtraction-4" title="Copy permalink for Checkpoint 2.5.4">🔗</a></div></article></details><div class="para" id="subsec-Subtraction-5">Now that we have the idea of comparing numbers, we can develop a definiton of subtraction of whole numbers. Before looking at the definition, see if you can take the "greater than or equal to" definition and modify it to a definition for subtraction.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-subtraction"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.5.5</span><span class="period">.</span>
 </h4>
-<p id="p-642">Let <span class="process-math">\(a,b \in \mathbb{N}_0\)</span> where <span class="process-math">\(a \geq b\text{.}\)</span> Then we define the subtraction <span class="process-math">\(a-b\)</span> to be the unique <span class="process-math">\(c \in \mathbb{N}_0\)</span> such that <span class="process-math">\(a=b+c\text{.}\)</span></p></article><p id="p-643">Note that this <span class="process-math">\(c\)</span> is the same number <span class="process-math">\(c\)</span> in the definition for "greater than or equal to". And we wanted the set to include zero since we want to be able to subtract 0, or have an answer of 0. We will get into subtraction with negative answers when we talk about integers in a later section.</p>
-<article class="example example-like" id="example-34"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-34"><h4 class="heading">
+<div class="para" id="def-subtraction-1-1">Let <span class="process-math">\(a,b \in \mathbb{N}_0\)</span> where <span class="process-math">\(a \geq b\text{.}\)</span> Then we define the subtraction <span class="process-math">\(a-b\)</span> to be the unique <span class="process-math">\(c \in \mathbb{N}_0\)</span> such that <span class="process-math">\(a=b+c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-subtraction-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.5.5"><a href="#def-subtraction" title="Copy permalink for Definition 2.5.5">🔗</a></div></article><div class="para" id="subsec-Subtraction-7">Note that this <span class="process-math">\(c\)</span> is the same number <span class="process-math">\(c\)</span> in the definition for "greater than or equal to". And we wanted the set to include zero since we want to be able to subtract 0, or have an answer of 0. We will get into subtraction with negative answers when we talk about integers in a later section.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-Subtraction-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.6</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-34"><article class="example example-like"><p id="p-644">Let's let <span class="process-math">\(a=7\)</span> and <span class="process-math">\(b=2\text{.}\)</span> Since <span class="process-math">\(7 &gt; 2\)</span> we can talk about <span class="process-math">\(7-2\)</span> using our defintion. We know <span class="process-math">\(7-2=5\)</span> since <span class="process-math">\(5\)</span> is the unique number such that <span class="process-math">\(7=2+5\text{.}\)</span> So in the definiton above, we have that <span class="process-math">\(c=5\)</span> We can view this subtraction via the following diagram.</p>
-<p id="p-645"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/7-2Line.svg" class="contained"></div></p>
-<p id="p-646">It's important to note that we cannot talk about the problem <span class="process-math">\(2-7\)</span> using our definition above, since <span class="process-math">\(2 \not\geq 7\text{.}\)</span> We will have to modify our definition later, once we introduce negative numbers.</p></article></div>
-<article class="example example-like" id="example-35"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-35"><h4 class="heading">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-Subtraction-8-1">Let’s let <span class="process-math">\(a=7\)</span> and <span class="process-math">\(b=2\text{.}\)</span> Since <span class="process-math">\(7 &gt; 2\)</span> we can talk about <span class="process-math">\(7-2\)</span> using our defintion. We know <span class="process-math">\(7-2=5\)</span> since <span class="process-math">\(5\)</span> is the unique number such that <span class="process-math">\(7=2+5\text{.}\)</span> So in the definiton above, we have that <span class="process-math">\(c=5\)</span> We can view this subtraction via the following diagram.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-8-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Subtraction-8-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/7-2Line.svg" class="contained" alt="Seven subtract two on a number line"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-8-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Subtraction-8-3">It’s important to note that we cannot talk about the problem <span class="process-math">\(2-7\)</span> using our definition above, since <span class="process-math">\(2 \not\geq 7\text{.}\)</span> We will have to modify our definition later, once we introduce negative numbers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-8-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.5.6"><a href="#subsec-Subtraction-8" title="Copy permalink for Example 2.5.6">🔗</a></div></article></details><details id="subsec-Subtraction-9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.7</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-35"><article class="example example-like">Now let's let <span class="process-math">\(a=14\)</span> and <span class="process-math">\(b=0\text{.}\)</span> Then <span class="process-math">\(14-0=14\)</span> since <span class="process-math">\(14=0+14\text{.}\)</span> So in the definition above <span class="process-math">\(c=14\text{.}\)</span></article></div>
-<p id="p-647">INCLUDE SECTION ON a-b=c IFF a-c=b, EITHER HERE OR IN PROPERTIES OF ARITHMETIC SECTION</p></section><section class="subsection" id="subsec-Multiplication"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.5.3</span> <span class="title">Multiplication</span>
+</h4></summary><article class="example example-like knowl__content"><span class="process-math">\(a=14\)</span><span class="process-math">\(b=0\text{.}\)</span><span class="process-math">\(14-0=14\)</span><span class="process-math">\(14=0+14\text{.}\)</span><span class="process-math">\(c=14\text{.}\)</span><div class="autopermalink" data-description="Example 2.5.7"><a href="#subsec-Subtraction-9" title="Copy permalink for Example 2.5.7">🔗</a></div></article></details><div class="para" id="subsec-Subtraction-10">INCLUDE SECTION ON a-b=c IFF a-c=b, EITHER HERE OR IN PROPERTIES OF ARITHMETIC SECTION<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Subtraction-10" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.5.2: Inequality and Subtraction"><a href="#subsec-Subtraction" title="Copy permalink for Subsection 2.5.2: Inequality and Subtraction">🔗</a></div></section><section class="subsection" id="subsec-Multiplication"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="space"> </span><span class="title">Multiplication</span>
 </h3>
-<section class="introduction" id="introduction-5"><p id="p-648">There are many ways to think about multiplication, but one of the most common is to think of it as repeated addition. That way, we can define multiplication in a way that uses a concept that we have already talked about, namely addition.</p>
+<section class="introduction" id="subsec-Multiplication-2"><div class="para" id="subsec-Multiplication-2-1">There are many ways to think about multiplication, but one of the most common is to think of it as repeated addition. That way, we can define multiplication in a way that uses a concept that we have already talked about, namely addition.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Multiplication-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-Multiplication"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.5.8</span><span class="period">.</span>
 </h4>
-<p id="p-649">Let <span class="process-math">\(a,b \in \mathbb{N}_0\text{.}\)</span> We define <span class="process-math">\(a \times b\)</span> to be <span class="process-math">\(a\)</span> copies of <span class="process-math">\(b\)</span> added together. In the case where either <span class="process-math">\(a=0\)</span> or <span class="process-math">\(b=0\)</span> we define <span class="process-math">\(a \times b\)</span> to be <span class="process-math">\(0\text{.}\)</span></p>
-<p id="p-650">We can view this repeated addition. Consider the example <span class="process-math">\(4 \times 3\)</span> in the following diagram.</p>
-<p id="p-651"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/4x3Line.svg" class="contained"></div></p></article><p id="p-652">Another way of viewing the multiplication <span class="process-math">\(a \times b\)</span> is as an area or array. Really, this idea is very similar to the number line model, except each group of <span class="process-math">\(b\)</span> is directily to the right of the first group. Later, we will see that this model is an excellent one for thinking about multiplication of fractions and decimals too.</p>
-<p id="p-653">Again, let's model <span class="process-math">\(4 \times 3\text{:}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/4x3Area.svg" class="contained"></div></p></section><section class="subsubsection" id="subsubsec-Exponents"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">2.5.3.1</span> <span class="title">Exponents</span>
+<div class="para" id="def-Multiplication-1-1">Let <span class="process-math">\(a,b \in \mathbb{N}_0\text{.}\)</span> We define <span class="process-math">\(a \times b\)</span> to be <span class="process-math">\(a\)</span> copies of <span class="process-math">\(b\)</span> added together. In the case where either <span class="process-math">\(a=0\)</span> or <span class="process-math">\(b=0\)</span> we define <span class="process-math">\(a \times b\)</span> to be <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-Multiplication-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="def-Multiplication-2">We can view this repeated addition. Consider the example <span class="process-math">\(4 \times 3\)</span> in the following diagram.<div class="autopermalink" data-description="Paragraph"><a href="#def-Multiplication-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="def-Multiplication-3">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/4x3Line.svg" class="contained" alt="A number line model of 4 times 3"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-Multiplication-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.5.8"><a href="#def-Multiplication" title="Copy permalink for Definition 2.5.8">🔗</a></div></article><div class="para" id="subsec-Multiplication-2-3">Another way of viewing the multiplication <span class="process-math">\(a \times b\)</span> is as an area or array. Really, this idea is very similar to the number line model, except each group of <span class="process-math">\(b\)</span> is directily to the right of the first group. Later, we will see that this model is an excellent one for thinking about multiplication of fractions and decimals too.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Multiplication-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Multiplication-2-4">Again, let’s model <span class="process-math">\(4 \times 3\text{:}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/4x3Area.svg" class="contained" alt="Area model for 4 times 3"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Multiplication-2-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsubsection" id="subsubsec-Exponents"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.5.3.1</span><span class="space"> </span><span class="title">Exponents</span>
 </h4>
-<p id="p-654">MOVE SECTION TO AFTER PROPERTIES OF ARITHMETIC Just like how multiplication is a nice way of writing repeated addition, it's very useful to be able to have the idea of repeated multiplication. To write  <span class="process-math">\(a \times a \times a \times  \ldots \times a\text{,}\)</span> where <span class="process-math">\(a\)</span> is multiplied by itself <span class="process-math">\(b\)</span> times, we write <span class="process-math">\(a^b\text{,}\)</span> where we call <span class="process-math">\(a\)</span> the <dfn class="terminology">base</dfn> and <span class="process-math">\(b\)</span> the <dfn class="terminology">exponent.</dfn>.</p>
-<article class="example example-like" id="example-36"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-36"><h5 class="heading">
+<div class="para" id="subsubsec-Exponents-2">MOVE SECTION TO AFTER PROPERTIES OF ARITHMETIC Just like how multiplication is a nice way of writing repeated addition, it’s very useful to be able to have the idea of repeated multiplication. To write  <span class="process-math">\(a \times a \times a \times  \ldots \times a\text{,}\)</span> where <span class="process-math">\(a\)</span> is multiplied by itself <span class="process-math">\(b\)</span> times, we write <span class="process-math">\(a^b\text{,}\)</span> where we call <span class="process-math">\(a\)</span> the <dfn class="terminology">base</dfn> and <span class="process-math">\(b\)</span> the <dfn class="terminology">exponent.</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponents-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsubsec-Exponents-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.9</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-36"><article class="example example-like"><p id="p-655">We can write <span class="process-math">\(4 \times 4 \times 4\)</span> as <span class="process-math">\(4^3\)</span> since <span class="process-math">\(4\)</span> is multiplied by itself <span class="process-math">\(3\)</span> times.</p></article></div>
-<p id="p-656">It's clear that for any whole number <span class="process-math">\(a\)</span> we have <span class="process-math">\(0^a=0\text{.}\)</span> Also, for any whole number <span class="process-math">\(a\)</span> we say <span class="process-math">\(a^1 = a\)</span> and if <span class="process-math">\(a \neq 0\)</span> we say <span class="process-math">\(a^0=1\text{.}\)</span> Note that we leave <span class="process-math">\(0^0\)</span> undefined; as this causes a lot of trouble if we try and give this meaning. We will see why later.</p>
-<p id="p-657">Let's try and come up with some rules for multiplying exponents. What if we wanted to multiply <span class="process-math">\(3^2 \times 3^4? \text{.}\)</span> We could write</p>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="subsubsec-Exponents-3-1">We can write <span class="process-math">\(4 \times 4 \times 4\)</span> as <span class="process-math">\(4^3\)</span> since <span class="process-math">\(4\)</span> is multiplied by itself <span class="process-math">\(3\)</span> times.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponents-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.5.9"><a href="#subsubsec-Exponents-3" title="Copy permalink for Example 2.5.9">🔗</a></div></article></details><div class="para" id="subsubsec-Exponents-4">It’s clear that for any whole number <span class="process-math">\(a\)</span> we have <span class="process-math">\(0^a=0\text{.}\)</span> Also, for any whole number <span class="process-math">\(a\)</span> we say <span class="process-math">\(a^1 = a\)</span> and if <span class="process-math">\(a \neq 0\)</span> we say <span class="process-math">\(a^0=1\text{.}\)</span> Note that we leave <span class="process-math">\(0^0\)</span> undefined; as this causes a lot of trouble if we try and give this meaning. We will see why later.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponents-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-Exponents-5">
+<div class="para">Let’s try and come up with some rules for multiplying exponents. What if we wanted to multiply <span class="process-math">\(3^2 \times 3^4? \text{.}\)</span> We could write</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \quad 3^2 \times 3^4
@@ -243,17 +793,23 @@
 = (3 \times 3 \times 3 \times 3 \times 3 \times 3)
 = 3^6
 \end{equation*}
-</div></section></section><section class="subsection" id="subsec-Division"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.5.4</span> <span class="title">Division with Remainders</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Exponents-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 2.5.3.1: Exponents"><a href="#subsubsec-Exponents" title="Copy permalink for Subsubsection 2.5.3.1: Exponents">🔗</a></div></section><div class="autopermalink" data-description="Subsection 2.5.3: Multiplication"><a href="#subsec-Multiplication" title="Copy permalink for Subsection 2.5.3: Multiplication">🔗</a></div></section><section class="subsection" id="subsec-Division"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.4</span><span class="space"> </span><span class="title">Division with Remainders</span>
 </h3>
 <section class="subsubsection" id="subsubsec-IntroductionToDivision"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span> <span class="codenumber">2.5.4.1</span> <span class="title">Introduction To Division</span>
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.5.4.1</span><span class="space"> </span><span class="title">Introduction To Division</span>
 </h4>
-<p id="p-658">Now that we have the idea of multiplication as repeated addition, we can view its inverse operation, division, as repeated subtraction.</p>
-<p id="p-659">First, an example to see what we mean:</p>
-<article class="example example-like" id="example-37"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-37"><h5 class="heading">
+<div class="para" id="subsubsec-IntroductionToDivision-2">Now that we have the idea of multiplication as repeated addition, we can view its inverse operation, division, as repeated subtraction.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-IntroductionToDivision-3">First, an example to see what we mean:<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsubsec-IntroductionToDivision-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.10</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-37"><article class="example example-like"><p id="p-660">Let's say we wanted to do the division problem <span class="process-math">\(21 \div 5.\)</span> We can view this as counting the number of times we can subtract 5 from 21 until we're unable to anymore (without going in to negative numbers). We know</p>
+</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="subsubsec-IntroductionToDivision-4-1">
+<div class="para">Let’s say we wanted to do the division problem <span class="process-math">\(21 \div 5.\)</span> We can view this as counting the number of times we can subtract 5 from 21 until we’re unable to anymore (without going in to negative numbers). We know</div>
 <div class="displaymath process-math">
 \begin{equation*}
 21-5=16 
@@ -274,28 +830,68 @@
 6-5=1  
 \end{equation*}
 </div>
-<p class="continuation">and since 1 is less than 5 we cannot subtract 5 from 1 using our definition of subtraction. We were able to subtract 5 four times from 21, so we say that <span class="process-math">\(21 \div 5 = 4 \ R \ 1\)</span> since there is 1 remaning at the end of this repeated subtraction. Let's look at this in general:</p>
-<p id="p-661"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/21div5Line.svg" class="contained"></div></p></article></div>
-<article class="definition definition-like" id="def-Division"><h5 class="heading">
+<div class="para">and since 1 is less than 5 we cannot subtract 5 from 1 using our definition of subtraction. We were able to subtract 5 four times from 21, so we say that <span class="process-math">\(21 \div 5 = 4 \ R \ 1\)</span> since there is 1 remaning at the end of this repeated subtraction. Let’s look at this in general:</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-IntroductionToDivision-4-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/21div5Line.svg" class="contained" alt="Number line model of 21 divided by 5"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-4-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.5.10"><a href="#subsubsec-IntroductionToDivision-4" title="Copy permalink for Example 2.5.10">🔗</a></div></article></details><article class="definition definition-like" id="def-Division"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.5.11</span><span class="period">.</span>
 </h5>
-<p id="p-662">Let <span class="process-math">\(a,b, q, r\in \mathbb{N}_0\)</span> with <span class="process-math">\(b \neq 0\text{.}\)</span> Then we say that <span class="process-math">\(a \div b = q \ R \ r\)</span> if and only if there are unique numbers <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span>  where <span class="process-math">\(a = q \times b+r\)</span> and <span class="process-math">\(0 \leq r \leq (b-1)\text{.}\)</span></p></article><p id="p-663">We call <span class="process-math">\(a\)</span> the <dfn class="terminology">dividend</dfn>, <span class="process-math">\(b\)</span> the <dfn class="terminology">divisor</dfn>, <span class="process-math">\(q\)</span> the <dfn class="terminology">quotient</dfn>, and <span class="process-math">\(r\)</span> the remainder. As <span class="process-math">\(b \neq 0\)</span> is part of this defintion, we say the expression <span class="process-math">\(a \div 0\)</span> is <dfn class="terminology">undefined</dfn>; that is, the concept of division isn't defined when <span class="process-math">\(b = 0\text{.}\)</span></p>
-<p id="p-664">Note just like us defining subtraction in terms of something we already knew, we defined divison in terms of multiplication and addition. So we're on solid footing here; if we ever forget what division means, we just look up this definition which is in terms of multiplication and addition, which, if we forget, we can look up the definition of those too. This seems like it's overkill for such simple concepts (and it is in a way) but this is how mathematicians think about concepts so it's good practice to do this for easy and intuitive ideas like arithmetic.</p>
-<p id="p-665">We can also view the division <span class="process-math">\(a \div b\)</span> as the number of groups with <span class="process-math">\(b\)</span> elements you can make out of <span class="process-math">\(a\)</span> objects. This is called the <dfn class="terminology">measurement model of division.</dfn> Let's look at <span class="process-math">\(21 \div 5\text{.}\)</span></p>
-<p id="p-666"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/21div5Groups.svg" class="contained"></div></p>
-<p id="p-667">The division <span class="process-math">\(a \div b\)</span> can be viewed in another way as well; we can ask if we wish to partition <span class="process-math">\(a\)</span> objects into <span class="process-math">\(b\)</span> groups, how many objects are in each group? This is called the <dfn class="terminology">partitive model of division</dfn> (the word "partitive" being related to the idea of a partition). Again, we look at <span class="process-math">\(21 \div 5\)</span> using this model</p>
-<p id="p-668"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/21div5Grouping.svg" class="contained"></div></p>
-<article class="exercise exercise-like" id="exercise-33"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-33"><h5 class="heading">
+<div class="para" id="def-Division-1-1">Let <span class="process-math">\(a,b, q, r\in \mathbb{N}_0\)</span> with <span class="process-math">\(b \neq 0\text{.}\)</span> Then we say that <span class="process-math">\(a \div b = q \ R \ r\)</span> if and only if there are unique numbers <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span>  where <span class="process-math">\(a = q \times b+r\)</span> and <span class="process-math">\(0 \leq r \leq (b-1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-Division-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.5.11"><a href="#def-Division" title="Copy permalink for Definition 2.5.11">🔗</a></div></article><div class="para" id="subsubsec-IntroductionToDivision-6">We call <span class="process-math">\(a\)</span> the <dfn class="terminology">dividend</dfn>, <span class="process-math">\(b\)</span> the <dfn class="terminology">divisor</dfn>, <span class="process-math">\(q\)</span> the <dfn class="terminology">quotient</dfn>, and <span class="process-math">\(r\)</span> the remainder. As <span class="process-math">\(b \neq 0\)</span> is part of this defintion, we say the expression <span class="process-math">\(a \div 0\)</span> is <dfn class="terminology">undefined</dfn>; that is, the concept of division isn’t defined when <span class="process-math">\(b = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-IntroductionToDivision-7">Note just like us defining subtraction in terms of something we already knew, we defined divison in terms of multiplication and addition. So we’re on solid footing here; if we ever forget what division means, we just look up this definition which is in terms of multiplication and addition, which, if we forget, we can look up the definition of those too. This seems like it’s overkill for such simple concepts (and it is in a way) but this is how mathematicians think about concepts so it’s good practice to do this for easy and intuitive ideas like arithmetic.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-IntroductionToDivision-8">We can also view the division <span class="process-math">\(a \div b\)</span> as the number of groups with <span class="process-math">\(b\)</span> elements you can make out of <span class="process-math">\(a\)</span> objects. This is called the <dfn class="terminology">measurement model of division.</dfn> Let’s look at <span class="process-math">\(21 \div 5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-IntroductionToDivision-9">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/21div5Groups.svg" class="contained" alt="Dividing 21 into groups of size 5"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-IntroductionToDivision-10">The division <span class="process-math">\(a \div b\)</span> can be viewed in another way as well; we can ask if we wish to partition <span class="process-math">\(a\)</span> objects into <span class="process-math">\(b\)</span> groups, how many objects are in each group? This is called the <dfn class="terminology">partitive model of division</dfn> (the word "partitive" being related to the idea of a partition). Again, we look at <span class="process-math">\(21 \div 5\)</span> using this model<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-10" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-IntroductionToDivision-11">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/WholeNumbers/21div5Grouping.svg" class="contained" alt="21 divided into 5 equal groups"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-11" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsubsec-IntroductionToDivision-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.5.12</span><span class="period">.</span>
-</h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-33"><article class="exercise exercise-like"><p id="p-669">Which of the following is viewing division using the measurement model, and which is viewing division using the partitive model?</p>
-<ol class="decimal">
-<li id="li-218"><p id="p-670">You wish to divide <span class="process-math">\(43\)</span> students into <span class="process-math">\(4\)</span> equal sized groups? How many students are in each group, and how many students are left over?</p></li>
-<li id="li-219"><p id="p-671">You wish to divide <span class="process-math">\(43\)</span> students into groups of size <span class="process-math">\(4\text{.}\)</span> How many groups can you make, and how many students are left over?</p></li>
+</h5></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsubsec-IntroductionToDivision-12-1">Which of the following is viewing division using the measurement model, and which is viewing division using the partitive model?<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-12-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsubsec-IntroductionToDivision-12-2">
+<li id="subsubsec-IntroductionToDivision-12-2-1">
+<div class="para" id="subsubsec-IntroductionToDivision-12-2-1-1">You wish to divide <span class="process-math">\(43\)</span> students into <span class="process-math">\(4\)</span> equal sized groups? How many students are in each group, and how many students are left over?<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-12-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.12.1"><a href="#subsubsec-IntroductionToDivision-12-2-1" title="Copy permalink for Item 2.5.12.1">🔗</a></div>
+</li>
+<li id="subsubsec-IntroductionToDivision-12-2-2">
+<div class="para" id="subsubsec-IntroductionToDivision-12-2-2-1">You wish to divide <span class="process-math">\(43\)</span> students into groups of size <span class="process-math">\(4\text{.}\)</span> How many groups can you make, and how many students are left over?<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-12-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.5.12.2"><a href="#subsubsec-IntroductionToDivision-12-2-2" title="Copy permalink for Item 2.5.12.2">🔗</a></div>
+</li>
 </ol>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-44" id="solution-44"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-44"><div class="solution solution-like"><p id="p-672">This is partitive, since the size of the groups is unknown, but the number of groups is fixed.</p></div></div>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-45" id="solution-45"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-45"><div class="solution solution-like"><p id="p-673">This is measurement, since the size of the groups is fixed, but the number of groups is unknown.</p></div></div></article></div>
-<article class="assemblage assemblage-like" id="assemblage-DivUnique"><h5 class="heading"><span class="title">Notes for Additional Understanding.</span></h5>
-<p id="p-674">It's intuitive that every division problem <span class="process-math">\(a \div b\)</span> has one answer, that is one quotient <span class="process-math">\(q\)</span> and remainder <span class="process-math">\(r\)</span> that make the equation <span class="process-math">\(a=qb+r\)</span> true. However, this is something that really needs to be proved before we can say it for sure. We will revisit this in the section where we talk about divisibility of numbers.</p></article></section></section></section></div></main>
+<details id="subsubsec-IntroductionToDivision-12-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsubsec-IntroductionToDivision-12-3-1">This is partitive, since the size of the groups is unknown, but the number of groups is fixed.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-12-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.5.12.1"><a href="#subsubsec-IntroductionToDivision-12-3" title="Copy permalink for Solution 2.5.12.1">🔗</a></div>
+</div></details><details id="subsubsec-IntroductionToDivision-12-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsubsec-IntroductionToDivision-12-4-1">This is measurement, since the size of the groups is fixed, but the number of groups is unknown.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-IntroductionToDivision-12-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.5.12.2"><a href="#subsubsec-IntroductionToDivision-12-4" title="Copy permalink for Solution 2.5.12.2">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Checkpoint 2.5.12"><a href="#subsubsec-IntroductionToDivision-12" title="Copy permalink for Checkpoint 2.5.12">🔗</a></div></article></details><article class="assemblage assemblage-like" id="assemblage-DivUnique"><h5 class="heading"><span class="title">Notes for Additional Understanding.</span></h5>
+<div class="para" id="assemblage-DivUnique-2">It’s intuitive that every division problem <span class="process-math">\(a \div b\)</span> has one answer, that is one quotient <span class="process-math">\(q\)</span> and remainder <span class="process-math">\(r\)</span> that make the equation <span class="process-math">\(a=qb+r\)</span> true. However, this is something that really needs to be proved before we can say it for sure. We will revisit this in the section where we talk about divisibility of numbers.<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-DivUnique-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Summary: Notes for Additional Understanding"><a href="#assemblage-DivUnique" title="Copy permalink for Summary: Notes for Additional Understanding">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection 2.5.4.1: Introduction To Division"><a href="#subsubsec-IntroductionToDivision" title="Copy permalink for Subsubsection 2.5.4.1: Introduction To Division">🔗</a></div></section><div class="autopermalink" data-description="Subsection 2.5.4: Division with Remainders"><a href="#subsec-Division" title="Copy permalink for Subsection 2.5.4: Division with Remainders">🔗</a></div></section><div class="autopermalink" data-description="Section 2.5: Arithmetic Operations"><a href="#sec-ArithmeticOperations" title="Copy permalink for Section 2.5: Arithmetic Operations">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-NumberSystems.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-PropertiesOfArithmeticOperations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

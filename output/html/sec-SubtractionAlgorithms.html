@@ -1,228 +1,795 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-08-05T15:19:39-03:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Subtraction Algorithms</title>
-<meta name="Keywords" content="Authored in PreTeXt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Math For Elementary School Teachers">
 <meta property="book:author" content="Me">
-<script>window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    useLabelIds: true,
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
-  },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-  },
-  chtml: {
-    scale: 0.88,
-    mtextInheritFont: true
-  },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
-  },
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.8.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
-<body class="pretext-book ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers</span> <span class="subtitle"></span></a></h1>
+<p class="byline">Me</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-AdditionAlgorithms.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ArithmeticAlgorithms.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-MultiplicationAlgorithms.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers:</span> <span class="subtitle"></span></a></h1>
-<p class="byline">Me</p>
-</div>
-</div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-AdditionAlgorithms.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ArithmeticAlgorithms.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-MultiplicationAlgorithms.html" title="Next">Next</a></span>
-</div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-AdditionAlgorithms.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ArithmeticAlgorithms.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-MultiplicationAlgorithms.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
-<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
-<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
-<li><a href="preface.html" data-scroll="preface" class="internal">Preface</a></li>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="test.html" data-scroll="test" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a><ul>
-<li><a href="IntroToLogic.html" data-scroll="IntroToLogic" class="internal">Intro To Logic</a></li>
-<li><a href="sec-ConditionalStatements.html" data-scroll="sec-ConditionalStatements" class="internal">Conditional Statements</a></li>
-<li><a href="sec-Sets.html" data-scroll="sec-Sets" class="internal">Sets</a></li>
-<li><a href="section-4.html" data-scroll="section-4" class="internal">Supplemental Exercises</a></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="test.html" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IntroToLogic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Intro To Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-LogicObj" class="internal"><span class="codenumber">1.1.1</span> <span class="title">The Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-AndOrNot" class="internal"><span class="codenumber">1.1.2</span> <span class="title">And, Or, and Not</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-Quantifiers" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-QuantVenn" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Viewing Quantified Statements as a Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-EvenOdd" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Expressing Even and Odd Numbers Algebraically</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="WholeNumbers.html" data-scroll="WholeNumbers" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a><ul>
-<li><a href="sec-Equality.html" data-scroll="sec-Equality" class="internal">Equality</a></li>
-<li><a href="sec-ProblemSolving.html" data-scroll="sec-ProblemSolving" class="internal">Problem Solving</a></li>
-<li><a href="sec-2_1NumberSystemsAndPlaceValue.html" data-scroll="sec-2_1NumberSystemsAndPlaceValue" class="internal">NumberSystemsAndPlaceValueWhole Numbers</a></li>
-<li><a href="sec-NumberSystems.html" data-scroll="sec-NumberSystems" class="internal">Number Systems</a></li>
-<li><a href="sec-ArithmeticOperations.html" data-scroll="sec-ArithmeticOperations" class="internal">Arithmetic Operations</a></li>
-<li><a href="sec-PropertiesOfArithmeticOperations.html" data-scroll="sec-PropertiesOfArithmeticOperations" class="internal">Properties Of Arithmetic Operations</a></li>
-<li><a href="integers.html" data-scroll="integers" class="internal">Integers</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ConditionalStatements.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#sec-ConditionalStatements-2" class="internal"><span class="codenumber">1.2.1</span> <span class="title">What is a Conditional Statement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-JustifyingConditionalStatements" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Justifying Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-WhyProofsAreImportant" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Why Proofs Are Important</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-Counterexamples" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Counterexamples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-CondExist" class="internal"><span class="codenumber">1.2.5</span> <span class="title">The Relationship Between Conditional and Existential Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-OtherFormsCondSt" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Other Forms of Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-BiconditionalSentences" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Biconditional Sentences</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ArithmeticAlgorithms.html" data-scroll="ArithmeticAlgorithms" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a><ul>
-<li><a href="sec-AdditionAlgorithms.html" data-scroll="sec-AdditionAlgorithms" class="internal">Addition Algorithms</a></li>
-<li><a href="sec-SubtractionAlgorithms.html" data-scroll="sec-SubtractionAlgorithms" class="active">Subtraction Algorithms</a></li>
-<li><a href="sec-MultiplicationAlgorithms.html" data-scroll="sec-MultiplicationAlgorithms" class="internal">Multiplication Algorithms</a></li>
-<li><a href="sec-DivisionAlgorithms.html" data-scroll="sec-DivisionAlgorithms" class="internal">Division Algorithms</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-IntroToSets" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Intro To Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-CombiningSets" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Combining Sets</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="Fractions.html" data-scroll="Fractions" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a><ul>
-<li><a href="section-16.html" data-scroll="section-16" class="internal">Introduction to Fractions</a></li>
-<li><a href="section-17.html" data-scroll="section-17" class="internal">Arithmetic With Fractions</a></li>
-<li><a href="section-18.html" data-scroll="section-18" class="internal">Ratios, Rates, and Proportions</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="test-5.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Supplemental Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="Decimals.html" data-scroll="Decimals" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a><ul>
-<li><a href="decimals.html" data-scroll="decimals" class="internal">Introduction to Decimals</a></li>
-<li><a href="sec_operations_with_decimals.html" data-scroll="sec_operations_with_decimals" class="internal">Operations with Decimals</a></li>
-<li><a href="terminating-repeating-decimals.html" data-scroll="terminating-repeating-decimals" class="internal">Terminating and Repeating Decimals</a></li>
-<li><a href="percent-and-percent-change.html" data-scroll="percent-and-percent-change" class="internal">Percent and Percent Change</a></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="WholeNumbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Equality.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Equality.html#subsec-IntroToEquality" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Intro To Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Equality.html#subsec-PropertiesOfEquality" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Properties Of Equality</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SolvingOneEquation" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Solving One Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SystemsOfEquations" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Intro to Systems Of Equations</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Substitution" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Elimination" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Elimination</span></a></div></li></ul>
+</li>
 </ul>
 </li>
-<li class="link">
-<a href="Divisibility.html" data-scroll="Divisibility" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a><ul>
-<li><a href="sec-IntroductoryConcepts.html" data-scroll="sec-IntroductoryConcepts" class="internal">Introductory Concepts</a></li>
-<li><a href="divisibility-theorems-small-numbers.html" data-scroll="divisibility-theorems-small-numbers" class="internal">Divisibility Theorems for Small Numbers</a></li>
-<li><a href="sec-PrimeNumbers.html" data-scroll="sec-PrimeNumbers" class="internal">Prime Numbers</a></li>
-<li><a href="sec-FactorsAndMultiples.html" data-scroll="sec-FactorsAndMultiples" class="internal">Factors and Multiples</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2_1NumberSystemsAndPlaceValue.html" class="internal"><span class="codenumber">2.3</span> <span class="title">NumberSystemsAndPlaceValueWhole Numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-NumberSystems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#sec-NumberSystems-2" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Introduction to Number Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingFromBaseTen" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Converting From Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingToBaseTen" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Converting To Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-BaseTwelve" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-HistoricalNumberSystems" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Historical Number Systems</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="irrational_numbers.html" data-scroll="irrational_numbers" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a><ul>
-<li><a href="understanding_irrational_numbers.html" data-scroll="understanding_irrational_numbers" class="internal">Understanding Irrational Numbers</a></li>
-<li><a href="sec-SimpleRoots.html" data-scroll="sec-SimpleRoots" class="internal">Simple Roots and Irrationality</a></li>
-<li><a href="sec-OperationsWithIrrationalNumbers.html" data-scroll="sec-OperationsWithIrrationalNumbers" class="internal">Operations With Irrational Numbers</a></li>
-<li><a href="exponents_irrational_numbers.html" data-scroll="exponents_irrational_numbers" class="internal">Exponents and Irrational Numbers</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Addition" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Subtraction" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Inequality and Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Multiplication" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Multiplication</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-Exponents" class="internal"><span class="codenumber">2.5.3.1</span> <span class="title">Exponents</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Division" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Division with Remainders</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-IntroductionToDivision" class="internal"><span class="codenumber">2.5.4.1</span> <span class="title">Introduction To Division</span></a></div></li></ul>
+</li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
-<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
-<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
-<li class="link"><a href="appendix-1.html" data-scroll="appendix-1" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
-<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
-</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-SubtractionAlgorithms"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Subtraction Algorithms</span>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Properties Of Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-OrderOfOperations" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Order Of Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-PropertiesOfArithmetic" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Properties Of Arithmetic</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-ConsequencesofProperties" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Consequences of Properties</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-RelatedSubtractionandDivisionProblems" class="internal"><span class="codenumber">2.6.3.1</span> <span class="title">Related Subtraction and Division Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-MultiplicationandDivisionByZero" class="internal"><span class="codenumber">2.6.3.2</span> <span class="title">Multiplication By Zero</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-DivisionByZero" class="internal"><span class="codenumber">2.6.3.3</span> <span class="title">Division By Zero</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="integers.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-addition" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Visualizing Integer Addition</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-add-integers" class="internal"><span class="title">How to Add Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Properties of Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity" class="internal"><span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity" class="internal"><span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse" class="internal"><span class="title">Additive Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-identity" class="internal"><span class="title">Additive Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-subtraction" class="internal"><span class="codenumber">2.7.1.2</span> <span class="title">Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-subtraction" class="internal"><span class="title">Visualizing Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-subtract-integers" class="internal"><span class="title">How to Subtract Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-subtraction" class="internal"><span class="title">Properties of Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-subtraction" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse-subtraction" class="internal"><span class="title">Relationship to Additive Inverse</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-multiplication" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-multiplication" class="internal"><span class="codenumber">2.7.2.1</span> <span class="title">Visualizing Integer Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-multiply-integers" class="internal"><span class="codenumber">2.7.2.2</span> <span class="title">How to Multiply Integers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-multiplication" class="internal"><span class="codenumber">2.7.2.3</span> <span class="title">Proof: <span class="process-math">\((-a) = (-1) \times a\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-times-negative" class="internal"><span class="codenumber">2.7.2.4</span> <span class="title">Proof: <span class="process-math">\((-1) \times (-1) = 1\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-multiplication" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Properties of Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity-multiplication" class="internal"><span class="codenumber">2.7.3.1</span> <span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity-multiplication" class="internal"><span class="codenumber">2.7.3.2</span> <span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#distributivity-multiplication" class="internal"><span class="codenumber">2.7.3.3</span> <span class="title">Distributivity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-multiplication" class="internal"><span class="codenumber">2.7.3.4</span> <span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#multiplicative-identity" class="internal"><span class="codenumber">2.7.3.5</span> <span class="title">Multiplicative Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-division" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Integer Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-division" class="internal"><span class="codenumber">2.7.4.1</span> <span class="title">Visualizing Integer Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-divide-integers" class="internal"><span class="codenumber">2.7.4.2</span> <span class="title">How to Divide Integers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ArithmeticAlgorithms.html" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-AdditionAlgorithms.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Addition Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-TheStandardAdditionAlgorithm" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Standard Addition Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-PartialSums" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-SameChangeAddition" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-LatticeMethodAddition" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Lattice Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subtraction Algorithms</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-StandardSubtractionAlgorithm" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Standard Subtraction Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-PartialDifferences" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Partial Differences</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-SameChangeAlgorithm" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-EqualAdditionsAlgorithm" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Equal Additions Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationPreliminaries" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Multiplication Preliminaries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-PartialProducts" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Partial Products</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationInBaseTwelve" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Multiplication In Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplication" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Russian Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-ProsAndConsOfMultiplicationAlgorithms" class="internal"><span class="codenumber">3.3.6</span> <span class="title">Pros And Cons Of Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-PartialProductsAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">PartialProductsAlgorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-GridMethod" class="internal"><span class="codenumber">3.3.6.2</span> <span class="title">Grid Method</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">Russian Multiplication Algorithm</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DivisionAlgorithms.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Division Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivision" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Long Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivisionBaseTwelve" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Long Division Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-ShortDivision" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Short Division</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Fractions.html" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-2.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-8" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Examples of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#subsec-MakingSenseOfFractions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Making Sense Of Fractions and Division of Whole Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-10" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Equivalent Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingFractions" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Comparing Fractions Using a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingMultipleFractions" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Comparing Multiple Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#DensityOfFractions" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Density of Fractions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-3.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Arithmetic With Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#AddingSubtractingFractions" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Adding and Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#MixedFractions" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Mixed Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#ImproperToFractions" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Converting Improper Fractions to Mixed Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#subsec-MultiplicationOfFractions" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Multiplication of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#Fractions-3-6" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Division of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="Fractions-3.html#negative-exponents-fractions" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Negative Exponents and Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="Fractions-3.html#simplify-compound-fraction" class="internal"><span class="codenumber">4.2.6.1</span> <span class="title">Simplifying Compound Fractions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-4.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Ratios, Rates, and Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Ratios</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Proportions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Decimals.html" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="decimals.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction to Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="decimals.html#decimal-fractions" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Decimal Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="decimals.html#decimal-fractions-2" class="internal"><span class="codenumber">5.1.1.1</span> <span class="title">Decimal Fractions and Their Relationship to Whole Numbers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#decimal-representation" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#pictorial-representation" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Pictorial Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#comparing-decimals" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Comparing Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_operations_with_decimals.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Operations with Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_add_subtract_decimals" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Addition and Subtraction with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_multiply_decimals" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Multiplication with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_divide_decimals" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Division with Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Terminating and Repeating Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#terminating-decimals" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Terminating Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-long-division" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Expressing a Fraction as a Repeating Decimal Using Long Division</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-as-rational-numbers" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Representing All Repeating Decimals as Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#CanRepeatingDecimalsEqual1" class="internal"><span class="codenumber">5.3.3.1</span> <span class="title">Can Repeating Decimals Equal 1?</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repetend-and-period" class="internal"><span class="codenumber">5.3.3.2</span> <span class="title">Repetend and Period of a Repeated Decimal</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#converting-repeating-decimal-to-fraction" class="internal"><span class="codenumber">5.3.3.3</span> <span class="title">Converting a Repeating Decimal to a Fraction</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="percent-and-percent-change.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percent and Percent Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="percent-and-percent-change.html#introduction-to-percent" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Introduction to Percent</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-ratios-to-percents" class="internal"><span class="codenumber">5.4.1.1</span> <span class="title">Converting Ratios to Percents</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-fractions-to-percents" class="internal"><span class="codenumber">5.4.1.2</span> <span class="title">Converting Fractions to Percents</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#visualizing-percents" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Visualizing Percents Using a Bar Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-vs-percent-change" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Percent vs. Percent Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-change-vs-percentage-point-change" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Percent Change vs. Percentage Point Change</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Divisibility.html" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Introductory Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility2" class="internal"><span class="codenumber">6.1.1.1</span> <span class="title">Intro to Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TransitivityAndDivisibility" class="internal"><span class="codenumber">6.1.1.2</span> <span class="title">Transitivity And Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-properties" class="internal"><span class="codenumber">6.1.1.3</span> <span class="title">Divisibility Properties of 0, 1, and a Number with Itself</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-theorems" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Divisibility Theorems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem1" class="internal"><span class="codenumber">6.1.2.1</span> <span class="title">Theorem 1</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem2" class="internal"><span class="codenumber">6.1.2.2</span> <span class="title">Theorem 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem3" class="internal"><span class="codenumber">6.1.2.3</span> <span class="title">Theorem 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TheOtherCase" class="internal"><span class="codenumber">6.1.2.4</span> <span class="title">TheOtherCase</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Theorems for Small Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-IntroductionDivThms" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2-4-8" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Divisibility Rules for 2, 4, and 8</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2" class="internal"><span class="codenumber">6.2.2.1</span> <span class="title">Divisibility Rule for 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-4" class="internal"><span class="codenumber">6.2.2.2</span> <span class="title">Divisibility Rule for 4</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-8" class="internal"><span class="codenumber">6.2.2.3</span> <span class="title">Divisibility Rule for 8</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-DivisibilityRuleforHigherPowersof2" class="internal"><span class="codenumber">6.2.2.4</span> <span class="title">Divisibility Rule for Higher Powers of 2</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Rule For 5</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRulesFor3And9" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Rules For 3 And 9</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor11" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Divisibility Rule For 11</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-CompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Compound Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-WhenCompundDivisibilityRulesWork" class="internal"><span class="codenumber">6.2.6.1</span> <span class="title">When Compund Divisibility Rules Work</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-SomeCommonCompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6.2</span> <span class="title">Some Common Compound Divisibility Rules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8" class="internal"><span class="codenumber">6.2.7</span> <span class="title">Iterative Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-4" class="internal"><span class="codenumber">6.2.7.1</span> <span class="title">Divisibility by 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-5" class="internal"><span class="codenumber">6.2.7.2</span> <span class="title">Divisibility by 9</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-6" class="internal"><span class="codenumber">6.2.7.3</span> <span class="title">Divisibility by 11</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-MakingDivisibilityRules" class="internal"><span class="codenumber">6.2.8</span> <span class="title">MakingDivisibilityRules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PrimeNumbers.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-FindingPrimeNumbers" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Finding Prime Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowManyPrimeNumbersExist" class="internal"><span class="codenumber">6.3.2</span> <span class="title">How Many Prime Numbers Exist</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowToDetermineIfaNumberisPrime" class="internal"><span class="codenumber">6.3.3</span> <span class="title">How To Determine If a Number is Prime</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Factors and Multiples</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-PrimesAsBuildingBlocks" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Primes As Building Blocks</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-HowManyFactorsDoesANumberHave" class="internal"><span class="codenumber">6.4.2</span> <span class="title">How Many Factors Does A Number Have?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsubsec-PuttingItAllTogether" class="internal"><span class="codenumber">6.4.2.1</span> <span class="title">Putting It All Together</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_lcm_intro" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Greatest Common Divisor and Least Common Multiple</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#understanding_gcd_lcm" class="internal"><span class="codenumber">6.4.3.1</span> <span class="title">Unraveling the Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_prime_factorization" class="internal"><span class="title">Understanding GCD Through Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_concept" class="internal"><span class="title">Least Common Multiple (LCM)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_example" class="internal"><span class="title">Exploring LCM with an Example</span></a></div></li></ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#word_problems_gcd_lcm" class="internal"><span class="codenumber">6.4.4</span> <span class="title">Word Problems: GCD and LCM in Practice</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem1_gcd" class="internal"><span class="codenumber">6.4.4.1</span> <span class="title">Problem 1: Distributing Items in Boxes</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem2_lcm" class="internal"><span class="codenumber">6.4.4.2</span> <span class="title">Problem 2: Buying Ingredients for Burgers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#venn_diagrams_gcd_lcm" class="internal"><span class="codenumber">6.4.4.3</span> <span class="title">Visualizing GCD and LCM with Venn Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Understanding the Euclidean Algorithm</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_basics" class="internal"><span class="codenumber">6.4.5.1</span> <span class="title">Basic Principles</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_procedure" class="internal"><span class="codenumber">6.4.5.2</span> <span class="title">Applying the Euclidean Algorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_examples" class="internal"><span class="codenumber">6.4.5.3</span> <span class="title">Additional Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="irrational_numbers.html" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="understanding_irrational_numbers.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Understanding Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#examples_of_irrational_numbers" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Examples of Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-TypesOfIrrationalNumbers" class="internal"><span class="codenumber">7.1.2</span> <span class="title">TypesOfIrrationalNumbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-FunctionsBriefly" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Functions Briefly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SimpleRoots.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Simple Roots and Irrationality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-PrincipalRoots" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Principal Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-nthPowers" class="internal"><span class="codenumber">7.2.2</span> <span class="title">nth Powers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-ProvingIrrationalityofnthRoots" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Proving Irrationality of nth Roots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Operations With Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#addition_subtraction_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Addition and Subtraction with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#multiplication_division_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Multiplication and Division with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#more_elaborate_examples_irrationality" class="internal"><span class="codenumber">7.3.2</span> <span class="title">More Elaborate Examples of Irrationality</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="exponents_irrational_numbers.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exponents and Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#nth_root_exponent" class="internal"><span class="codenumber">7.4.1</span> <span class="title">nth Root as Exponent 1/n</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#multiplying_dividing_roots" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Multiplying and Dividing nth Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying-principal-roots" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Simplifying <span class="process-math">\(n\)</span>th Principal Roots by Factoring Out <span class="process-math">\(n\)</span>th Powers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#quotient-remainder-theorem" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Using the Quotient Remainder Theorem</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#more-examples" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Additional Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying_fractional_powers" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Simplifying Expressions with Fractional Powers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-SubtractionAlgorithms"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.2</span><span class="space"> </span><span class="title">Subtraction Algorithms</span>
 </h2>
-<section class="introduction" id="introduction-7"><p id="p-908">In the previous subsection we talked about different algorithms for adding. In some sense, all of the algorithms we talked about were the same, or at least very similar. It turns out that common subtraction algorithms actually differ from each other quite a bit.</p>
-<p id="p-909">First, we'll talk about the "standard" algorithm that you most likely learned when doing subtraction, and explain why it works the way it does. Then we'll discuss some more (once very common) algorithms for subtraction that rely on the property that addition is the opposite operation of subtraction. Finally, we will study a partial difference algorithm, much like the partial sum algorithm above.</p>
-<p id="p-910">We'll need some notation to easily talk about subtraction. In the subtraction problem <span class="process-math">\(a-b=c\)</span> we will call <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> the <dfn class="terminology">top number</dfn> and <dfn class="terminology">botto, number</dfn>, respectively, and we call <span class="process-math">\(c\)</span> the <dfn class="terminology">difference</dfn>.  Note that some (mostly antiquated) sources call the top number the subtrahend and the bottom number the minuend. We will avoid this archaic language, as it's rarely seen or used.</p>
-<p id="p-911">Standard Algorithm - Include Block Diagrams For All (reference: An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Textbooks and Cyphering Books An Investigation of Subtraction Algorithms from the 18th and 19th Centuriesup An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Definitions and Algorithms Author(s): Nicole M. Wessman-Enzinger (Illinois State University))</p></section><section class="subsection" id="subsec-StandardSubtractionAlgorithm"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">Standard Subtraction Algorithm</span>
+<section class="introduction" id="sec-SubtractionAlgorithms-2"><div class="para" id="sec-SubtractionAlgorithms-2-1">In the previous subsection we talked about different algorithms for adding. In some sense, all of the algorithms we talked about were the same, or at least very similar. It turns out that common subtraction algorithms actually differ from each other quite a bit.<div class="autopermalink" data-description="Paragraph"><a href="#sec-SubtractionAlgorithms-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-SubtractionAlgorithms-2-2">First, we’ll talk about the "standard" algorithm that you most likely learned when doing subtraction, and explain why it works the way it does. Then we’ll discuss some more (once very common) algorithms for subtraction that rely on the property that addition is the opposite operation of subtraction. Finally, we will study a partial difference algorithm, much like the partial sum algorithm above.<div class="autopermalink" data-description="Paragraph"><a href="#sec-SubtractionAlgorithms-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-SubtractionAlgorithms-2-3">We’ll need some notation to easily talk about subtraction. In the subtraction problem <span class="process-math">\(a-b=c\)</span> we will call <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> the <dfn class="terminology">top number</dfn> and <dfn class="terminology">botto, number</dfn>, respectively, and we call <span class="process-math">\(c\)</span> the <dfn class="terminology">difference</dfn>.  Note that some (mostly antiquated) sources call the top number the subtrahend and the bottom number the minuend. We will avoid this archaic language, as it’s rarely seen or used.<div class="autopermalink" data-description="Paragraph"><a href="#sec-SubtractionAlgorithms-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-SubtractionAlgorithms-2-4">Standard Algorithm - Include Block Diagrams For All (reference: An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Textbooks and Cyphering Books An Investigation of Subtraction Algorithms from the 18th and 19th Centuriesup An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Definitions and Algorithms Author(s): Nicole M. Wessman-Enzinger (Illinois State University))<div class="autopermalink" data-description="Paragraph"><a href="#sec-SubtractionAlgorithms-2-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-StandardSubtractionAlgorithm"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="space"> </span><span class="title">Standard Subtraction Algorithm</span>
 </h3>
-<p id="p-912">The idea behind the standard subtraction algorithm is that you subtract place-by-place from right to left, that is smallest to largest place value, and if you are unable to subtract that particular place, "ungrouping" or "borrowing"  one of the places to the left and including those to the right.</p>
-<p id="p-913">Like the standard addition algorithm, let's list the steps for this algorithm too. Note that this is quite complicated compared to addition.</p>
-<ol class="decimal">
-<li id="li-242"><p id="p-914">Write one number below the other so that each place value is in its own column. Now begin at the rightmost column.</p></li>
-<li id="li-243"><p id="p-derived-li-243"><ol class="lower-alpha">
-<li id="li-244"><p id="p-915">If the top digit (or digit plus regrouping) is larger than or equal to the bottom digit, subtract and put the difference below in the same column.</p></li>
-<li id="li-245"><p id="p-916">If the top digit is smaller than the bottom digit, determine the first digit in the top number to the left of the current place that is non-zero. Decrease that place by 1, (if there are any) change the 0 digits between that digit and our current place to 9s (or whatever the largest digit in your base is, if you are subtracting in a non-ten base), and add 10 to the current top digit.</p></li>
-</ol></p></li>
-<li id="li-246"><p id="p-917">If there are no non-zero digits in any column to the left, you are done. Otherwise move to the next column to the left and go to Step 2.</p></li>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-2">The idea behind the standard subtraction algorithm is that you subtract place-by-place from right to left, that is smallest to largest place value, and if you are unable to subtract that particular place, "ungrouping" or "borrowing"  one of the places to the left and including those to the right.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-3">Like the standard addition algorithm, let’s list the steps for this algorithm too. Note that this is quite complicated compared to addition.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-StandardSubtractionAlgorithm-4">
+<li id="subsec-StandardSubtractionAlgorithm-4-1">
+<div class="para" id="subsec-StandardSubtractionAlgorithm-4-1-1">Write one number below the other so that each place value is in its own column. Now begin at the rightmost column.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-StandardSubtractionAlgorithm-4-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-StandardSubtractionAlgorithm-4-2">
+<div class="para" id="p-derived-subsec-StandardSubtractionAlgorithm-4-2"><ol class="lower-alpha lower-alpha-level-1" id="subsec-StandardSubtractionAlgorithm-4-2-1">
+<li id="subsec-StandardSubtractionAlgorithm-4-2-1-1">
+<div class="para" id="subsec-StandardSubtractionAlgorithm-4-2-1-1-1">If the top digit (or digit plus regrouping) is larger than or equal to the bottom digit, subtract and put the difference below in the same column.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-4-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#subsec-StandardSubtractionAlgorithm-4-2-1-1" title="Copy permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="subsec-StandardSubtractionAlgorithm-4-2-1-2">
+<div class="para" id="subsec-StandardSubtractionAlgorithm-4-2-1-2-1">If the top digit is smaller than the bottom digit, determine the first digit in the top number to the left of the current place that is non-zero. Decrease that place by 1, (if there are any) change the 0 digits between that digit and our current place to 9s (or whatever the largest digit in your base is, if you are subtracting in a non-ten base), and add 10 to the current top digit.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-4-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#subsec-StandardSubtractionAlgorithm-4-2-1-2" title="Copy permalink for Item 2.b">🔗</a></div>
+</li>
+</ol></div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-StandardSubtractionAlgorithm-4-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-StandardSubtractionAlgorithm-4-3">
+<div class="para" id="subsec-StandardSubtractionAlgorithm-4-3-1">If there are no non-zero digits in any column to the left, you are done. Otherwise move to the next column to the left and go to Step 2.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-4-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-StandardSubtractionAlgorithm-4-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
 </ol>
-<p id="p-918">To make sure we understand what is happening, we will do an example along with pictoral blocks showing our subtraction.</p>
-<article class="example example-like" id="example-67"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-67"><h4 class="heading">
+<div class="para" id="subsec-StandardSubtractionAlgorithm-5">To make sure we understand what is happening, we will do an example along with pictoral blocks showing our subtraction.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-StandardSubtractionAlgorithm-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-67"><article class="example example-like"><p id="p-919">Let's subtract <span class="process-math">\(4052-2457\text{.}\)</span> We first write the numbers aligned vertically, and view each number in terms of place value blocks:</p>
-<p id="p-920"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457a.svg" class="contained"></div></p>
-<p id="p-921">Now let's subtract the rightmost place. Note that the top 2 is smaller than the bottom digit, so we must borrow. The the place directly to the left has a non-zero top digit, so we regroup 1 of this place (tens) to make 10 of our current place (ones) and thus decrease the digit in that place by 1. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457b.svg" class="contained"></div> Now we have <span class="process-math">\(2+10=12\)</span> ones and we do the subtraction <span class="process-math">\(12-7=5\text{.}\)</span></p>
-<p id="p-922"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457c.svg" class="contained"></div></p>
-<p id="p-923">Now we move to the next place to the left; the tens place. Note that the top digit is now a 4, so it is smaller than the bottom digit 5. So again, we must borrow.</p>
-<p id="p-924">We have a zero immediately to the left of the (what was a 5 but is now a) 4, so we move to the left one more time (to the thousands place) since there is a non-zero digit in the top number there. We borrow one thousand, thus decreasing the thousands digit by 1 and increasing the hundreds by 10. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457d.svg" class="contained"></div> Then we ungroup that into 9 hundreds and 10 tens. In our calculation, this means changing the zero in the hundreds place in the top number to a 9, and the 4 in the tens place to a 14.</p>
-<p id="p-925"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457e.svg" class="contained"></div></p>
-<p id="p-926">Now we have 14 tens and we do the subtraction in the tens column <span class="process-math">\(14-5=9\)</span> . Similarly, the top number in the hundreds and thousands place is smaller so we do those subtractions as well: <span class="process-math">\(9-4=5\)</span> and <span class="process-math">\(3-2 = 1\)</span> respectively.</p>
-<p id="p-927"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457f.svg" class="contained"></div></p>
-<p id="p-928">As we have no non-zero digits to the left of the thousands place, we are finished and we know <span class="process-math">\(4052-2457=1595.\)</span></p></article></div>
-<p id="p-929">We can perform the same algorithm in other bases too (remember, there is nothing special about base ten!). Let's try a calculation in base four:</p>
-<article class="example example-like" id="example-68"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-68"><h4 class="heading">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-StandardSubtractionAlgorithm-6-1">Let’s subtract <span class="process-math">\(4052-2457\text{.}\)</span> We first write the numbers aligned vertically, and view each number in terms of place value blocks:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-6-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457a.svg" class="contained" alt="(for accessibility)"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-6-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-6-3">Now let’s subtract the rightmost place. Note that the top 2 is smaller than the bottom digit, so we must borrow. The the place directly to the left has a non-zero top digit, so we regroup 1 of this place (tens) to make 10 of our current place (ones) and thus decrease the digit in that place by 1. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457b.svg" class="contained" alt="(for accessibility)"></div> Now we have <span class="process-math">\(2+10=12\)</span> ones and we do the subtraction <span class="process-math">\(12-7=5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-6-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-6-4">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457c.svg" class="contained" alt="(for accessibility)"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-6-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-6-5">Now we move to the next place to the left; the tens place. Note that the top digit is now a 4, so it is smaller than the bottom digit 5. So again, we must borrow.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-6-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-6-6">We have a zero immediately to the left of the (what was a 5 but is now a) 4, so we move to the left one more time (to the thousands place) since there is a non-zero digit in the top number there. We borrow one thousand, thus decreasing the thousands digit by 1 and increasing the hundreds by 10. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457d.svg" class="contained" alt="(for accessibility)"></div> Then we ungroup that into 9 hundreds and 10 tens. In our calculation, this means changing the zero in the hundreds place in the top number to a 9, and the 4 in the tens place to a 14.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-6-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-6-7">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457e.svg" class="contained" alt="(for accessibility)"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-6-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-6-8">Now we have 14 tens and we do the subtraction in the tens column <span class="process-math">\(14-5=9\)</span> . Similarly, the top number in the hundreds and thousands place is smaller so we do those subtractions as well: <span class="process-math">\(9-4=5\)</span> and <span class="process-math">\(3-2 = 1\)</span> respectively.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-6-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-6-9">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/4052-2457f.svg" class="contained" alt="(for accessibility)"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-6-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-6-10">As we have no non-zero digits to the left of the thousands place, we are finished and we know <span class="process-math">\(4052-2457=1595.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-6-10" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.1"><a href="#subsec-StandardSubtractionAlgorithm-6" title="Copy permalink for Example 3.2.1">🔗</a></div></article></details><div class="para" id="subsec-StandardSubtractionAlgorithm-7">We can perform the same algorithm in other bases too (remember, there is nothing special about base ten!). Let’s try a calculation in base four:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-StandardSubtractionAlgorithm-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-68"><article class="example example-like"><p id="p-930">Let's calculate <span class="process-math">\(2201_{four} - 1332_{four}\)</span> and since we are still getting used to arithmetic in other bases, let's draw some base four blocks to represent our calculation.</p>
-<p id="p-931">INSERT PIC OF THE STANDARD SETUP AND BLOCKS REPRESENTING THE SITUATION</p>
-<p id="p-932">We start from the ones digit on the right. Since the top digit is smaller than the bottom digit, we must borrow. The first non-zero digit to the left is the 2 (in the squares, or sixteens, place). We ungroup <span class="process-math">\(1_{four}\)</span> sixteen (square) to <span class="process-math">\(3_{four}\)</span> fours (longs) and <span class="process-math">\(10_{four}\)</span> ones (remember that <span class="process-math">\(10_{four}\)</span> represents the number "four"). We can see this since <span class="process-math">\(16 = 3 \times 4 + 4 \times 1\text{,}\)</span> similar to our situation in the previous example in base ten. Thus we decrease the squares digit in the top number by 1 and replace the 0 in the longs place by a 3, and thus we have <span class="process-math">\(11_{four}\)</span> ones (which, in base four, is five ones).</p>
-<p id="p-933">INSERT PIC OF THIS</p>
-<p id="p-934">Now, we can do the subtraction in the ones place <span class="process-math">\(11_{four} - 2_{four} = 3_{four} \text{,}\)</span> since we can see that <span class="process-math">\(2_{four}+3_{four} = 11_{four}\text{.}\)</span> We can subtract the longs digit as well: <span class="process-math">\(3_{four} - 3_{four} = 0 _{four}\text{.}\)</span> We write these down in our calculation.</p>
-<p id="p-935">INSERT PIC OF THIS</p>
-<p id="p-936">Now, in the squares place, the digit 1 in the top number is smaller than the 3 in the bottom number, so we need to borrow again. We ungroup <span class="process-math">\(1_{four}\)</span> cube (or sixty-four) to <span class="process-math">\(10_{four}\)</span> squares, decreasing our 2 cubes to 1 cube.</p>
-<p id="p-937">INSERT PIC OF THIS</p>
-<p id="p-938">Thus we now have <span class="process-math">\(10_{four}+1_{four} = 11_{four}\)</span> squares and can now do our subtraction <span class="process-math">\(11_{four}-3_{four} = 2_{four}\text{.}\)</span> We can also do the subtraction in the cubes place: <span class="process-math">\(1_{four}-1_{four} = 0_{four}\text{.}\)</span> We now have our final difference: <span class="process-math">\(2201_{four} - 1332_{four} = 203_{four}.\text{.}\)</span></p>
-<p id="p-939">INSERT PIC OF THIS</p></article></div>
-<article class="exercise exercise-like" id="exercise-SubtractionDifferentBases"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-SubtractionDifferentBases"><h4 class="heading">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-StandardSubtractionAlgorithm-8-1">Let’s calculate <span class="process-math">\(2201_{four} - 1332_{four}\)</span> and since we are still getting used to arithmetic in other bases, let’s draw some base four blocks to represent our calculation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-8-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-8-2">INSERT PIC OF THE STANDARD SETUP AND BLOCKS REPRESENTING THE SITUATION<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-8-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-8-3">We start from the ones digit on the right. Since the top digit is smaller than the bottom digit, we must borrow. The first non-zero digit to the left is the 2 (in the squares, or sixteens, place). We ungroup <span class="process-math">\(1_{four}\)</span> sixteen (square) to <span class="process-math">\(3_{four}\)</span> fours (longs) and <span class="process-math">\(10_{four}\)</span> ones (remember that <span class="process-math">\(10_{four}\)</span> represents the number "four"). We can see this since <span class="process-math">\(16 = 3 \times 4 + 4 \times 1\text{,}\)</span> similar to our situation in the previous example in base ten. Thus we decrease the squares digit in the top number by 1 and replace the 0 in the longs place by a 3, and thus we have <span class="process-math">\(11_{four}\)</span> ones (which, in base four, is five ones).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-8-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-8-4">INSERT PIC OF THIS<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-8-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-8-5">Now, we can do the subtraction in the ones place <span class="process-math">\(11_{four} - 2_{four} = 3_{four} \text{,}\)</span> since we can see that <span class="process-math">\(2_{four}+3_{four} = 11_{four}\text{.}\)</span> We can subtract the longs digit as well: <span class="process-math">\(3_{four} - 3_{four} = 0 _{four}\text{.}\)</span> We write these down in our calculation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-8-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-8-6">INSERT PIC OF THIS<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-8-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-8-7">Now, in the squares place, the digit 1 in the top number is smaller than the 3 in the bottom number, so we need to borrow again. We ungroup <span class="process-math">\(1_{four}\)</span> cube (or sixty-four) to <span class="process-math">\(10_{four}\)</span> squares, decreasing our 2 cubes to 1 cube.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-8-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-8-8">INSERT PIC OF THIS<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-8-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-8-9">Thus we now have <span class="process-math">\(10_{four}+1_{four} = 11_{four}\)</span> squares and can now do our subtraction <span class="process-math">\(11_{four}-3_{four} = 2_{four}\text{.}\)</span> We can also do the subtraction in the cubes place: <span class="process-math">\(1_{four}-1_{four} = 0_{four}\text{.}\)</span> We now have our final difference: <span class="process-math">\(2201_{four} - 1332_{four} = 203_{four}.\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-8-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-StandardSubtractionAlgorithm-8-10">INSERT PIC OF THIS<div class="autopermalink" data-description="Paragraph"><a href="#subsec-StandardSubtractionAlgorithm-8-10" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.2"><a href="#subsec-StandardSubtractionAlgorithm-8" title="Copy permalink for Example 3.2.2">🔗</a></div></article></details><details id="exercise-SubtractionDifferentBases" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-SubtractionDifferentBases"><article class="exercise exercise-like"><p id="p-940">Perform the following subtractions in the indicated bases. Check your answer with addition:</p>
-<ol class="decimal">
-<li id="li-247"><p id="p-941"><span class="process-math">\(\displaystyle 65_{eight}-46_{eight}\)</span></p></li>
-<li id="li-248"><p id="p-942"><span class="process-math">\(\displaystyle 403_{five} -123_{five}\)</span></p></li>
-<li id="li-249"><p id="p-943"><span class="process-math">\(\displaystyle 540A8_{twelve} - 3B74A_{twelve}\)</span></p></li>
-<li id="li-250"><p id="p-944"><span class="process-math">\(\displaystyle 10010101_{two}-1101110_{two}\)</span></p></li>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="exercise-SubtractionDifferentBases-1">Perform the following subtractions in the indicated bases. Check your answer with addition:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-SubtractionDifferentBases-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="exercise-SubtractionDifferentBases-2">
+<li id="exercise-SubtractionDifferentBases-2-1">
+<div class="para" id="exercise-SubtractionDifferentBases-2-1-1">
+<span class="process-math">\(\displaystyle 65_{eight}-46_{eight}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-SubtractionDifferentBases-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.3.1"><a href="#exercise-SubtractionDifferentBases-2-1" title="Copy permalink for Item 3.2.3.1">🔗</a></div>
+</li>
+<li id="exercise-SubtractionDifferentBases-2-2">
+<div class="para" id="exercise-SubtractionDifferentBases-2-2-1">
+<span class="process-math">\(\displaystyle 403_{five} -123_{five}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-SubtractionDifferentBases-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.3.2"><a href="#exercise-SubtractionDifferentBases-2-2" title="Copy permalink for Item 3.2.3.2">🔗</a></div>
+</li>
+<li id="exercise-SubtractionDifferentBases-2-3">
+<div class="para" id="exercise-SubtractionDifferentBases-2-3-1">
+<span class="process-math">\(\displaystyle 540A8_{twelve} - 3B74A_{twelve}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-SubtractionDifferentBases-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.3.3"><a href="#exercise-SubtractionDifferentBases-2-3" title="Copy permalink for Item 3.2.3.3">🔗</a></div>
+</li>
+<li id="exercise-SubtractionDifferentBases-2-4">
+<div class="para" id="exercise-SubtractionDifferentBases-2-4-1">
+<span class="process-math">\(\displaystyle 10010101_{two}-1101110_{two}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-SubtractionDifferentBases-2-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.3.4"><a href="#exercise-SubtractionDifferentBases-2-4" title="Copy permalink for Item 3.2.3.4">🔗</a></div>
+</li>
 </ol>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-54" id="solution-54"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-54"><div class="solution solution-like"><p id="p-945"><span class="process-math">\(17_{eight}\)</span></p></div></div>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-55" id="solution-55"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-55"><div class="solution solution-like"><p id="p-946"><span class="process-math">\(230_{five}\)</span></p></div></div>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-56" id="solution-56"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-56"><div class="solution solution-like"><p id="p-947"><span class="process-math">\(1455A_{twelve}\)</span></p></div></div>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-57" id="solution-57"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-57"><div class="solution solution-like"><p id="p-948"><span class="process-math">\(100111_{two}\)</span></p></div></div></article></div></section><section class="subsection" id="subsec-PartialDifferences"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.2.2</span> <span class="title">Partial Differences</span>
+<details id="exercise-SubtractionDifferentBases-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercise-SubtractionDifferentBases-3-1">
+<span class="process-math">\(17_{eight}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-SubtractionDifferentBases-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.1"><a href="#exercise-SubtractionDifferentBases-3" title="Copy permalink for Solution 3.2.3.1">🔗</a></div>
+</div></details><details id="exercise-SubtractionDifferentBases-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercise-SubtractionDifferentBases-4-1">
+<span class="process-math">\(230_{five}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-SubtractionDifferentBases-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.2"><a href="#exercise-SubtractionDifferentBases-4" title="Copy permalink for Solution 3.2.3.2">🔗</a></div>
+</div></details><details id="exercise-SubtractionDifferentBases-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercise-SubtractionDifferentBases-5-1">
+<span class="process-math">\(1455A_{twelve}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-SubtractionDifferentBases-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.3"><a href="#exercise-SubtractionDifferentBases-5" title="Copy permalink for Solution 3.2.3.3">🔗</a></div>
+</div></details><details id="exercise-SubtractionDifferentBases-6" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exercise-SubtractionDifferentBases-6-1">
+<span class="process-math">\(100111_{two}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-SubtractionDifferentBases-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.4"><a href="#exercise-SubtractionDifferentBases-6" title="Copy permalink for Solution 3.2.3.4">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Checkpoint 3.2.3"><a href="#exercise-SubtractionDifferentBases" title="Copy permalink for Checkpoint 3.2.3">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 3.2.1: Standard Subtraction Algorithm"><a href="#subsec-StandardSubtractionAlgorithm" title="Copy permalink for Subsection 3.2.1: Standard Subtraction Algorithm">🔗</a></div></section><section class="subsection" id="subsec-PartialDifferences"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="space"> </span><span class="title">Partial Differences</span>
 </h3>
-<p id="p-949">Similar to partial sums, we can find the partial differences of each place value, and then combine these partial differences at the end to obtain our final difference. Note that this method involves being comfortable with negative numbers, and therefore integer operations.</p>
-<article class="example example-like" id="example-69"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-69"><h4 class="heading">
+<div class="para" id="subsec-PartialDifferences-2">Similar to partial sums, we can find the partial differences of each place value, and then combine these partial differences at the end to obtain our final difference. Note that this method involves being comfortable with negative numbers, and therefore integer operations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialDifferences-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-PartialDifferences-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-69"><article class="example example-like"><p id="p-950">Let's subtract <span class="process-math">\(4052-2457\)</span> again. Like before, we line up the numbers vertically by place value. In terms of blocks, we can view each place as a separate subtraction calculation with blocks of the same place value.</p>
-<p id="p-951">INCLUDE PIC HERE</p>
-<p id="p-952">Order isn't important in this algorithm, so let's start from left and go right. Subtracting the thousands place, we know that <span class="process-math">\(4000-2000 = 2000\text{.}\)</span> We write this partial difference in our calculation.</p>
-<p id="p-953">INCLUDE PIC HERE</p>
-<p id="p-954">Now, for the hundreds place, we have <span class="process-math">\(000-400=-400.\)</span> (note that writing 0 as <span class="process-math">\(000\)</span> is to remind you that we have <span class="process-math">\(0\)</span> hundreds.) So we mark down <span class="process-math">\(-400\)</span> in our calculation. Similarly, we have <span class="process-math">\(50-50=0\)</span> and <span class="process-math">\(2-7=-5\text{.}\)</span> We write these down in our calculation as well.</p>
-<p id="p-955">INCLUDE PIC HERE</p>
-<p id="p-956">So we must combine our partial differences to obtain the difference we are looking for. We have <span class="process-math">\(2000-400+0-5\text{.}\)</span> Working from left to right we obtain.</p>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-PartialDifferences-3-1">Let’s subtract <span class="process-math">\(4052-2457\)</span> again. Like before, we line up the numbers vertically by place value. In terms of blocks, we can view each place as a separate subtraction calculation with blocks of the same place value.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialDifferences-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PartialDifferences-3-2">INCLUDE PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialDifferences-3-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PartialDifferences-3-3">Order isn’t important in this algorithm, so let’s start from left and go right. Subtracting the thousands place, we know that <span class="process-math">\(4000-2000 = 2000\text{.}\)</span> We write this partial difference in our calculation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialDifferences-3-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PartialDifferences-3-4">INCLUDE PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialDifferences-3-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PartialDifferences-3-5">Now, for the hundreds place, we have <span class="process-math">\(000-400=-400.\)</span> (note that writing 0 as <span class="process-math">\(000\)</span> is to remind you that we have <span class="process-math">\(0\)</span> hundreds.) So we mark down <span class="process-math">\(-400\)</span> in our calculation. Similarly, we have <span class="process-math">\(50-50=0\)</span> and <span class="process-math">\(2-7=-5\text{.}\)</span> We write these down in our calculation as well.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialDifferences-3-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PartialDifferences-3-6">INCLUDE PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialDifferences-3-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PartialDifferences-3-7">So we must combine our partial differences to obtain the difference we are looking for. We have <span class="process-math">\(2000-400+0-5\text{.}\)</span> Working from left to right we obtain.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialDifferences-3-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
 1600+0-5
@@ -233,61 +800,139 @@
 =1595.
 \end{equation*}
 </div>
-<p id="p-957">And we have our final answer.</p>
-<p id="p-958">INCLUDE PIC HERE</p></article></div></section><section class="subsection" id="subsec-SameChangeAlgorithm"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.2.3</span> <span class="title">Same Change Algorithm</span>
+<div class="para" id="subsec-PartialDifferences-3-10">And we have our final answer.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialDifferences-3-10" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-PartialDifferences-3-11">INCLUDE PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialDifferences-3-11" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.4"><a href="#subsec-PartialDifferences-3" title="Copy permalink for Example 3.2.4">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 3.2.2: Partial Differences"><a href="#subsec-PartialDifferences" title="Copy permalink for Subsection 3.2.2: Partial Differences">🔗</a></div></section><section class="subsection" id="subsec-SameChangeAlgorithm"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="space"> </span><span class="title">Same Change Algorithm</span>
 </h3>
-<p id="p-959">This algorithm relies on two important concepts:</p>
-<ol class="decimal">
-<li id="li-251"><p id="p-960">Addition is easier than subtraction</p></li>
-<li id="li-252"><p id="p-961">For any number <span class="process-math">\(a, a-0=a\)</span></p></li>
-<li id="li-253"><p id="p-962">For any numbers <span class="process-math">\(a,b,c, a-b = (a+c) - (b+c)\)</span></p></li>
+<div class="para" id="subsec-SameChangeAlgorithm-2">This algorithm relies on two important concepts:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-SameChangeAlgorithm-3">
+<li id="subsec-SameChangeAlgorithm-3-1">
+<div class="para" id="subsec-SameChangeAlgorithm-3-1-1">Addition is easier than subtraction<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-SameChangeAlgorithm-3-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-SameChangeAlgorithm-3-2">
+<div class="para" id="subsec-SameChangeAlgorithm-3-2-1">For any number <span class="process-math">\(a, a-0=a\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-SameChangeAlgorithm-3-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-SameChangeAlgorithm-3-3">
+<div class="para" id="subsec-SameChangeAlgorithm-3-3-1">For any numbers <span class="process-math">\(a,b,c, a-b = (a+c) - (b+c)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-3-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-SameChangeAlgorithm-3-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
 </ol>
-<p id="p-963">The final concept says that if you add a quantity to the top number of a subtraction problem, you can add that quantity to the bottom number and not change the difference.</p>
-<p id="p-964">We will call a digit <span class="process-math">\(d\)</span> the <dfn class="terminology">same-change opposite digit</dfn>  of another digit <span class="process-math">\(e\)</span> if and only if <span class="process-math">\(d+e=10\text{.}\)</span> We will shorten this to <dfn class="terminology">opposite digit</dfn> if there would be no confusion. For example, the opposite digit of <span class="process-math">\(8\)</span> is <span class="process-math">\(2\)</span> since <span class="process-math">\(8+2=10\text{.}\)</span> Also note that <span class="process-math">\(5\)</span> is its own opposite digit, since <span class="process-math">\(5+5=10\text{.}\)</span> Note that this definition is applicable for other bases beside base ten too!</p>
-<p id="p-965">The algorithm is as follows.</p>
-<ol class="decimal">
-<li id="li-254"><p id="p-966">Write the subtraction vertically (as usual) with place values aligned in columns. Start at the rightmost column.</p></li>
-<li id="li-255"><p id="p-967">If the top digit in this place is less than the bottom digit, add the opposite digit number of places of the bottom digit to both numbers to make a new equivalent subtraction problem (this makes the bottom digit a 0, for easy subtraction). If the top digit in this place is not less than the bottom digit, do nothing.</p></li>
-<li id="li-256"><p id="p-968">If there are non-zero digits in any place to the left of this place, move to the left one place and go to step 2. Otherwise, go to the next step.</p></li>
-<li id="li-257"><p id="p-969">Each top digit should be greater than or equal to the bottom digit in its respective place. Subtract the digits in each place to obtain your final answer.</p></li>
+<div class="para" id="subsec-SameChangeAlgorithm-4">The final concept says that if you add a quantity to the top number of a subtraction problem, you can add that quantity to the bottom number and not change the difference.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAlgorithm-5">We will call a digit <span class="process-math">\(d\)</span> the <dfn class="terminology">same-change opposite digit</dfn>  of another digit <span class="process-math">\(e\)</span> if and only if <span class="process-math">\(d+e=10\text{.}\)</span> We will shorten this to <dfn class="terminology">opposite digit</dfn> if there would be no confusion. For example, the opposite digit of <span class="process-math">\(8\)</span> is <span class="process-math">\(2\)</span> since <span class="process-math">\(8+2=10\text{.}\)</span> Also note that <span class="process-math">\(5\)</span> is its own opposite digit, since <span class="process-math">\(5+5=10\text{.}\)</span> Note that this definition is applicable for other bases beside base ten too!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAlgorithm-6">The algorithm is as follows.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-SameChangeAlgorithm-7">
+<li id="subsec-SameChangeAlgorithm-7-1">
+<div class="para" id="subsec-SameChangeAlgorithm-7-1-1">Write the subtraction vertically (as usual) with place values aligned in columns. Start at the rightmost column.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-7-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-SameChangeAlgorithm-7-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-SameChangeAlgorithm-7-2">
+<div class="para" id="subsec-SameChangeAlgorithm-7-2-1">If the top digit in this place is less than the bottom digit, add the opposite digit number of places of the bottom digit to both numbers to make a new equivalent subtraction problem (this makes the bottom digit a 0, for easy subtraction). If the top digit in this place is not less than the bottom digit, do nothing.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-7-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-SameChangeAlgorithm-7-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-SameChangeAlgorithm-7-3">
+<div class="para" id="subsec-SameChangeAlgorithm-7-3-1">If there are non-zero digits in any place to the left of this place, move to the left one place and go to step 2. Otherwise, go to the next step.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-7-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-SameChangeAlgorithm-7-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+<li id="subsec-SameChangeAlgorithm-7-4">
+<div class="para" id="subsec-SameChangeAlgorithm-7-4-1">Each top digit should be greater than or equal to the bottom digit in its respective place. Subtract the digits in each place to obtain your final answer.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-7-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#subsec-SameChangeAlgorithm-7-4" title="Copy permalink for Item 4">🔗</a></div>
+</li>
 </ol>
-<p id="p-970">This sounds more complicated than it actually is, so we will show an example to see this algorithm in action.</p>
-<article class="example example-like" id="example-70"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-70"><h4 class="heading">
+<div class="para" id="subsec-SameChangeAlgorithm-8">This sounds more complicated than it actually is, so we will show an example to see this algorithm in action.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-SameChangeAlgorithm-9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-70"><article class="example example-like"><p id="p-971">Let's subtract <span class="process-math">\(4052-2457\)</span> using the same change algorithm. We line up the two numbers as usual (and we'll keep block representations along with our calculation to see the process in a pictoral way)</p>
-<p id="p-972">INSERT PIC HERE</p>
-<p id="p-973">Starting at the ones place, we notice that the top digit is smaller than the bottom digit, we add 3 to both the top and bottom numbers (<span class="process-math">\((4052+3)-(2457+3))\)</span>) to obtain the new subtraction problem <span class="process-math">\(4055-2460\text{.}\)</span> Notice that the bottom digit is now 0, so this will eventually make subtraction easy (at the cost of doing a bit of addition)</p>
-<p id="p-974">INSERT PIC HERE INCLUDING NEW SUBTRACTION PROBLEM</p>
-<p id="p-975">Now we move left to the tens place. As before, we notice that the top digit is less than the bottom digit, so add the opposite digit number of tens to both numbers. Since the opposite of <span class="process-math">\(6\)</span> is <span class="process-math">\(4\)</span> we add <span class="process-math">\(40\)</span> to both numbers (<span class="process-math">\((4055+40)-(2460+40)\)</span>) to make the new subtraction problem <span class="process-math">\(4095-2500.\)</span></p>
-<p id="p-976">INSERT PIC OF THIS</p>
-<p id="p-977">Moving to the hundreds place, since the top digit is less than the bottom digit, we add the opposite number of hundreds, that is <span class="process-math">\(500\text{,}\)</span> to both numbers to obtain the new subtraction problem <span class="process-math">\(4595-3000\text{.}\)</span></p>
-<p id="p-978">Moving left to the thousands place, we notice that the top digit is greater than or equal to (in this case, greater than) the bottom digit, so we do nothing. Also, there are no non-zero digits in any places to our left (thousands is the largest place in our numbers) so we can now easily subtract place by place to obtain our final answer <span class="process-math">\(4595-3000=1595.\)</span></p>
-<p id="p-979">INSERT PIC OF THIS</p></article></div></section><section class="subsection" id="subsec-EqualAdditionsAlgorithm"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.2.4</span> <span class="title">Equal Additions Algorithm</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-SameChangeAlgorithm-9-1">Let’s subtract <span class="process-math">\(4052-2457\)</span> using the same change algorithm. We line up the two numbers as usual (and we’ll keep block representations along with our calculation to see the process in a pictoral way)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-9-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAlgorithm-9-2">INSERT PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-9-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAlgorithm-9-3">Starting at the ones place, we notice that the top digit is smaller than the bottom digit, we add 3 to both the top and bottom numbers (<span class="process-math">\((4052+3)-(2457+3))\)</span>) to obtain the new subtraction problem <span class="process-math">\(4055-2460\text{.}\)</span> Notice that the bottom digit is now 0, so this will eventually make subtraction easy (at the cost of doing a bit of addition)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-9-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAlgorithm-9-4">INSERT PIC HERE INCLUDING NEW SUBTRACTION PROBLEM<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-9-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAlgorithm-9-5">Now we move left to the tens place. As before, we notice that the top digit is less than the bottom digit, so add the opposite digit number of tens to both numbers. Since the opposite of <span class="process-math">\(6\)</span> is <span class="process-math">\(4\)</span> we add <span class="process-math">\(40\)</span> to both numbers (<span class="process-math">\((4055+40)-(2460+40)\)</span>) to make the new subtraction problem <span class="process-math">\(4095-2500.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-9-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAlgorithm-9-6">INSERT PIC OF THIS<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-9-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAlgorithm-9-7">Moving to the hundreds place, since the top digit is less than the bottom digit, we add the opposite number of hundreds, that is <span class="process-math">\(500\text{,}\)</span> to both numbers to obtain the new subtraction problem <span class="process-math">\(4595-3000\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-9-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAlgorithm-9-8">Moving left to the thousands place, we notice that the top digit is greater than or equal to (in this case, greater than) the bottom digit, so we do nothing. Also, there are no non-zero digits in any places to our left (thousands is the largest place in our numbers) so we can now easily subtract place by place to obtain our final answer <span class="process-math">\(4595-3000=1595.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-9-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAlgorithm-9-9">INSERT PIC OF THIS<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAlgorithm-9-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.5"><a href="#subsec-SameChangeAlgorithm-9" title="Copy permalink for Example 3.2.5">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 3.2.3: Same Change Algorithm"><a href="#subsec-SameChangeAlgorithm" title="Copy permalink for Subsection 3.2.3: Same Change Algorithm">🔗</a></div></section><section class="subsection" id="subsec-EqualAdditionsAlgorithm"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="space"> </span><span class="title">Equal Additions Algorithm</span>
 </h3>
-<p id="p-980">This algorithm is, in some sense, a combination between the standard subtraction algorithm and the same change algorithm. This is a "borrowing" algorithm, though instead of borrowing from the place to the left in the top number, we are "in debt" to the place to the left in the bottom number. Let's write down the algorithm and then do our usual example.</p>
-<ol class="decimal">
-<li id="li-258"><p id="p-981">Write the subtraction vertically (as usual) with place values aligned in columns. Start at the rightmost column.</p></li>
-<li id="li-259"><p id="p-982">If the digit in the top number is less than the digit in the bottom number (including additional ones if one is there), add ten of that place to the top digit (signified by a 1) while adding an additional 1 to the place to the left in the bottom number. Then subtract the bottom number from the top number in that place. If the digit in the top number is greater than the digit in the bottom number, do the place subtraction without any borrowing.</p></li>
-<li id="li-260"><p id="p-983">If there are any non-zero digits in any places to the left of the current place, move one place to the left and go to step 2. Otherwise you are finished.</p></li>
+<div class="para" id="subsec-EqualAdditionsAlgorithm-2">This algorithm is, in some sense, a combination between the standard subtraction algorithm and the same change algorithm. This is a "borrowing" algorithm, though instead of borrowing from the place to the left in the top number, we are "in debt" to the place to the left in the bottom number. Let’s write down the algorithm and then do our usual example.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-EqualAdditionsAlgorithm-3">
+<li id="subsec-EqualAdditionsAlgorithm-3-1">
+<div class="para" id="subsec-EqualAdditionsAlgorithm-3-1-1">Write the subtraction vertically (as usual) with place values aligned in columns. Start at the rightmost column.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-EqualAdditionsAlgorithm-3-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-EqualAdditionsAlgorithm-3-2">
+<div class="para" id="subsec-EqualAdditionsAlgorithm-3-2-1">If the digit in the top number is less than the digit in the bottom number (including additional ones if one is there), add ten of that place to the top digit (signified by a 1) while adding an additional 1 to the place to the left in the bottom number. Then subtract the bottom number from the top number in that place. If the digit in the top number is greater than the digit in the bottom number, do the place subtraction without any borrowing.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-EqualAdditionsAlgorithm-3-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-EqualAdditionsAlgorithm-3-3">
+<div class="para" id="subsec-EqualAdditionsAlgorithm-3-3-1">If there are any non-zero digits in any places to the left of the current place, move one place to the left and go to step 2. Otherwise you are finished.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-3-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-EqualAdditionsAlgorithm-3-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
 </ol>
-<article class="example example-like" id="example-71"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-71"><h4 class="heading">
+<details id="subsec-EqualAdditionsAlgorithm-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-71"><article class="example example-like"><p id="p-984">Let's subtract <span class="process-math">\(4052-2457\)</span> using the equal addition algorithm. As usual we line up our numbers so digits of the same place value are in the same column, but this time we will have just a little bit of space between the bottom number and our difference (for any borrowed 1's that will appear). And, as usual, we will include blocks for added pictoral understanding.</p>
-<p id="p-985">INSERT PIC HERE</p>
-<p id="p-986">Starting with the ones place, we see that the digit <span class="process-math">\(2\)</span> in the top number is less than the digit <span class="process-math">\(7\)</span> in the bottom. So we "borrow" 10 ones, but unlike the standard subtraction algorithm we are "in debt" 1 ten to the bottom number. Thus, we have <span class="process-math">\((10+2)-7=12-7=5\)</span> ones in our difference. We mark this, and our additional debt of 1 ten, in our calculation:</p>
-<p id="p-987">INSERT PIC HERE</p>
-<p id="p-988">Now we move to the tens place. We see that the <span class="process-math">\(5\)</span> in the top number is less than the <span class="process-math">\(5+1\)</span> in the bottom number, so we "borrow" 10 tens from 1 hundred in the same way as the previous step to have <span class="process-math">\((10+5)-(5+1)=15-6=9\)</span> tens in our difference.  We mark this, and our additional debt of 1 hundred, in our calculation:</p>
-<p id="p-989">INCLUDE PIC HERE</p>
-<p id="p-990">Now we move to the hundreds place. We see that the <span class="process-math">\(0\)</span> in the top number is less than the <span class="process-math">\(4+1\)</span> in the bottom number, so we "borrow" 10 hundreds from 1 thousand in the same way as our previous two steps to have <span class="process-math">\((10+0)-(4+1)=10-5=5\)</span> hundreds in our difference. We mark this, and our additional debt of 1 thousand, in our calculation:</p>
-<p id="p-991">INCLUDE PIC HERE</p>
-<p id="p-992">Finally we move to the thousands place. We see that <span class="process-math">\(4\)</span> in the top number is greater than the <span class="process-math">\(2+1\)</span> in the bottom number, so we subtract without borrowing: <span class="process-math">\(4-(2+1)=4-3=1\)</span> and write this in our answer. As there are no more non-zero digits to the left (that is; no larger places than thousands in our numbers,) we are finished, and we have calculated <span class="process-math">\(4052-2457=1595.\)</span></p>
-<p id="p-993">INSERT PIC OF THIS</p></article></div>
-<article class="exercise exercise-like" id="exercise-39"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-39"><h4 class="heading">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-EqualAdditionsAlgorithm-4-1">Let’s subtract <span class="process-math">\(4052-2457\)</span> using the equal addition algorithm. As usual we line up our numbers so digits of the same place value are in the same column, but this time we will have just a little bit of space between the bottom number and our difference (for any borrowed 1’s that will appear). And, as usual, we will include blocks for added pictoral understanding.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EqualAdditionsAlgorithm-4-2">INSERT PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-4-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EqualAdditionsAlgorithm-4-3">Starting with the ones place, we see that the digit <span class="process-math">\(2\)</span> in the top number is less than the digit <span class="process-math">\(7\)</span> in the bottom. So we "borrow" 10 ones, but unlike the standard subtraction algorithm we are "in debt" 1 ten to the bottom number. Thus, we have <span class="process-math">\((10+2)-7=12-7=5\)</span> ones in our difference. We mark this, and our additional debt of 1 ten, in our calculation:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-4-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EqualAdditionsAlgorithm-4-4">INSERT PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-4-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EqualAdditionsAlgorithm-4-5">Now we move to the tens place. We see that the <span class="process-math">\(5\)</span> in the top number is less than the <span class="process-math">\(5+1\)</span> in the bottom number, so we "borrow" 10 tens from 1 hundred in the same way as the previous step to have <span class="process-math">\((10+5)-(5+1)=15-6=9\)</span> tens in our difference.  We mark this, and our additional debt of 1 hundred, in our calculation:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-4-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EqualAdditionsAlgorithm-4-6">INCLUDE PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-4-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EqualAdditionsAlgorithm-4-7">Now we move to the hundreds place. We see that the <span class="process-math">\(0\)</span> in the top number is less than the <span class="process-math">\(4+1\)</span> in the bottom number, so we "borrow" 10 hundreds from 1 thousand in the same way as our previous two steps to have <span class="process-math">\((10+0)-(4+1)=10-5=5\)</span> hundreds in our difference. We mark this, and our additional debt of 1 thousand, in our calculation:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-4-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EqualAdditionsAlgorithm-4-8">INCLUDE PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-4-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EqualAdditionsAlgorithm-4-9">Finally we move to the thousands place. We see that <span class="process-math">\(4\)</span> in the top number is greater than the <span class="process-math">\(2+1\)</span> in the bottom number, so we subtract without borrowing: <span class="process-math">\(4-(2+1)=4-3=1\)</span> and write this in our answer. As there are no more non-zero digits to the left (that is; no larger places than thousands in our numbers,) we are finished, and we have calculated <span class="process-math">\(4052-2457=1595.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-4-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-EqualAdditionsAlgorithm-4-10">INSERT PIC OF THIS<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-4-10" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.6"><a href="#subsec-EqualAdditionsAlgorithm-4" title="Copy permalink for Example 3.2.6">🔗</a></div></article></details><details id="subsec-EqualAdditionsAlgorithm-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-39"><article class="exercise exercise-like"><p id="p-994">Try to use the same change and equal additions algorithms to do subtraction in other bases by redo-ing the calculations in Exercise <a href="" class="xref" data-knowl="./knowl/exercise-SubtractionDifferentBases.html" title="Checkpoint 3.2.3">Checkpoint 3.2.3</a></p></article></div>
-<p id="p-995">Discussion of pros-cons of each and relationships. NEED TO DO THIS!!!</p></section></section></div></main>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-EqualAdditionsAlgorithm-5-1">Try to use the same change and equal additions algorithms to do subtraction in other bases by redo-ing the calculations in Exercise <a href="sec-SubtractionAlgorithms.html#exercise-SubtractionDifferentBases" class="xref" data-knowl="./knowl/xref/exercise-SubtractionDifferentBases.html" data-reveal-label="Reveal" data-close-label="Close" title="Checkpoint 3.2.3">Checkpoint 3.2.3</a><div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.2.7"><a href="#subsec-EqualAdditionsAlgorithm-5" title="Copy permalink for Checkpoint 3.2.7">🔗</a></div></article></details><div class="para" id="subsec-EqualAdditionsAlgorithm-6">Discussion of pros-cons of each and relationships. NEED TO DO THIS!!!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-EqualAdditionsAlgorithm-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.2.4: Equal Additions Algorithm"><a href="#subsec-EqualAdditionsAlgorithm" title="Copy permalink for Subsection 3.2.4: Equal Additions Algorithm">🔗</a></div></section><div class="autopermalink" data-description="Section 3.2: Subtraction Algorithms"><a href="#sec-SubtractionAlgorithms" title="Copy permalink for Section 3.2: Subtraction Algorithms">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-AdditionAlgorithms.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-MultiplicationAlgorithms.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

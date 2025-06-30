@@ -1,0 +1,16 @@
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext init --refresh` to produce a compatible file.
+INFO    : Building target html
+ERROR   : XInclude Error caused build to fail:
+ERROR   : /workspaces/MathForElementarySchoolTeachers/source/ArithmeticAlgorithms.ptx:644:26:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 642 and li
+/workspaces/MathForElementarySchoolTeachers/source/ArithmeticAlgorithms.ptx:649:33:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: li line 645 and p
+/workspaces/MathForElementarySchoolTeachers/source/main.ptx:34:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load /workspaces/MathForElementarySchoolTeachers/source/ArithmeticAlgorithms.ptx, and no fallback was found
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

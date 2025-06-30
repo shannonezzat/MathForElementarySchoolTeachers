@@ -1,2 +1,5 @@
-file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/main.ptx:11:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element include there
-file:/C:/Users/Shannon/Documents/MathForElementarySchoolTeachers/MathForElementarySchoolTeachers/source/main.ptx:11:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element pretext has extra content: include
+/workspaces/MathForElementarySchoolTeachers/source/main.ptx:18:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element idx, got subtitle
+/workspaces/MathForElementarySchoolTeachers/source/main.ptx:18:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element subtitle there
+/workspaces/MathForElementarySchoolTeachers/source/main.ptx:15:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
+/workspaces/MathForElementarySchoolTeachers/source/main.ptx:8:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext
+/workspaces/MathForElementarySchoolTeachers/source/main.ptx:8:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element pretext there

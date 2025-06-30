@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Arithmetic With Fractions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math For Elementary School Teachers">
+<meta property="book:author" content="Me">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.8.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers</span> <span class="subtitle"></span></a></h1>
+<p class="byline">Me</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="Fractions-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Fractions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="Fractions-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="test.html" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IntroToLogic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Intro To Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-LogicObj" class="internal"><span class="codenumber">1.1.1</span> <span class="title">The Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-AndOrNot" class="internal"><span class="codenumber">1.1.2</span> <span class="title">And, Or, and Not</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-Quantifiers" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-QuantVenn" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Viewing Quantified Statements as a Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-EvenOdd" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Expressing Even and Odd Numbers Algebraically</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ConditionalStatements.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#sec-ConditionalStatements-2" class="internal"><span class="codenumber">1.2.1</span> <span class="title">What is a Conditional Statement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-JustifyingConditionalStatements" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Justifying Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-WhyProofsAreImportant" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Why Proofs Are Important</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-Counterexamples" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Counterexamples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-CondExist" class="internal"><span class="codenumber">1.2.5</span> <span class="title">The Relationship Between Conditional and Existential Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-OtherFormsCondSt" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Other Forms of Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-BiconditionalSentences" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Biconditional Sentences</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-IntroToSets" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Intro To Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-CombiningSets" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Combining Sets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="test-5.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Supplemental Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="WholeNumbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Equality.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Equality.html#subsec-IntroToEquality" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Intro To Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Equality.html#subsec-PropertiesOfEquality" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Properties Of Equality</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SolvingOneEquation" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Solving One Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SystemsOfEquations" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Intro to Systems Of Equations</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Substitution" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Elimination" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Elimination</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2_1NumberSystemsAndPlaceValue.html" class="internal"><span class="codenumber">2.3</span> <span class="title">NumberSystemsAndPlaceValueWhole Numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-NumberSystems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#sec-NumberSystems-2" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Introduction to Number Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingFromBaseTen" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Converting From Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingToBaseTen" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Converting To Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-BaseTwelve" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-HistoricalNumberSystems" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Historical Number Systems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Addition" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Subtraction" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Inequality and Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Multiplication" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Multiplication</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-Exponents" class="internal"><span class="codenumber">2.5.3.1</span> <span class="title">Exponents</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Division" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Division with Remainders</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-IntroductionToDivision" class="internal"><span class="codenumber">2.5.4.1</span> <span class="title">Introduction To Division</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Properties Of Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-OrderOfOperations" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Order Of Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-PropertiesOfArithmetic" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Properties Of Arithmetic</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-ConsequencesofProperties" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Consequences of Properties</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-RelatedSubtractionandDivisionProblems" class="internal"><span class="codenumber">2.6.3.1</span> <span class="title">Related Subtraction and Division Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-MultiplicationandDivisionByZero" class="internal"><span class="codenumber">2.6.3.2</span> <span class="title">Multiplication By Zero</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-DivisionByZero" class="internal"><span class="codenumber">2.6.3.3</span> <span class="title">Division By Zero</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="integers.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-addition" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Visualizing Integer Addition</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-add-integers" class="internal"><span class="title">How to Add Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Properties of Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity" class="internal"><span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity" class="internal"><span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse" class="internal"><span class="title">Additive Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-identity" class="internal"><span class="title">Additive Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-subtraction" class="internal"><span class="codenumber">2.7.1.2</span> <span class="title">Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-subtraction" class="internal"><span class="title">Visualizing Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-subtract-integers" class="internal"><span class="title">How to Subtract Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-subtraction" class="internal"><span class="title">Properties of Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-subtraction" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse-subtraction" class="internal"><span class="title">Relationship to Additive Inverse</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-multiplication" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-multiplication" class="internal"><span class="codenumber">2.7.2.1</span> <span class="title">Visualizing Integer Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-multiply-integers" class="internal"><span class="codenumber">2.7.2.2</span> <span class="title">How to Multiply Integers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-multiplication" class="internal"><span class="codenumber">2.7.2.3</span> <span class="title">Proof: <span class="process-math">\((-a) = (-1) \times a\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-times-negative" class="internal"><span class="codenumber">2.7.2.4</span> <span class="title">Proof: <span class="process-math">\((-1) \times (-1) = 1\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-multiplication" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Properties of Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity-multiplication" class="internal"><span class="codenumber">2.7.3.1</span> <span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity-multiplication" class="internal"><span class="codenumber">2.7.3.2</span> <span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#distributivity-multiplication" class="internal"><span class="codenumber">2.7.3.3</span> <span class="title">Distributivity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-multiplication" class="internal"><span class="codenumber">2.7.3.4</span> <span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#multiplicative-identity" class="internal"><span class="codenumber">2.7.3.5</span> <span class="title">Multiplicative Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-division" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Integer Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-division" class="internal"><span class="codenumber">2.7.4.1</span> <span class="title">Visualizing Integer Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-divide-integers" class="internal"><span class="codenumber">2.7.4.2</span> <span class="title">How to Divide Integers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ArithmeticAlgorithms.html" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-AdditionAlgorithms.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Addition Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-TheStandardAdditionAlgorithm" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Standard Addition Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-PartialSums" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-SameChangeAddition" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-LatticeMethodAddition" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Lattice Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subtraction Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-StandardSubtractionAlgorithm" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Standard Subtraction Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-PartialDifferences" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Partial Differences</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-SameChangeAlgorithm" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-EqualAdditionsAlgorithm" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Equal Additions Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationPreliminaries" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Multiplication Preliminaries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-PartialProducts" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Partial Products</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationInBaseTwelve" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Multiplication In Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplication" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Russian Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-ProsAndConsOfMultiplicationAlgorithms" class="internal"><span class="codenumber">3.3.6</span> <span class="title">Pros And Cons Of Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-PartialProductsAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">PartialProductsAlgorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-GridMethod" class="internal"><span class="codenumber">3.3.6.2</span> <span class="title">Grid Method</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">Russian Multiplication Algorithm</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DivisionAlgorithms.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Division Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivision" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Long Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivisionBaseTwelve" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Long Division Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-ShortDivision" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Short Division</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="Fractions.html" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-2.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-8" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Examples of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#subsec-MakingSenseOfFractions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Making Sense Of Fractions and Division of Whole Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-10" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Equivalent Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingFractions" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Comparing Fractions Using a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingMultipleFractions" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Comparing Multiple Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#DensityOfFractions" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Density of Fractions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="Fractions-3.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Arithmetic With Fractions</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#AddingSubtractingFractions" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Adding and Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#MixedFractions" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Mixed Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#ImproperToFractions" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Converting Improper Fractions to Mixed Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#subsec-MultiplicationOfFractions" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Multiplication of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#Fractions-3-6" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Division of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="Fractions-3.html#negative-exponents-fractions" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Negative Exponents and Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="Fractions-3.html#simplify-compound-fraction" class="internal"><span class="codenumber">4.2.6.1</span> <span class="title">Simplifying Compound Fractions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-4.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Ratios, Rates, and Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Ratios</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Proportions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Decimals.html" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="decimals.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction to Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="decimals.html#decimal-fractions" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Decimal Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="decimals.html#decimal-fractions-2" class="internal"><span class="codenumber">5.1.1.1</span> <span class="title">Decimal Fractions and Their Relationship to Whole Numbers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#decimal-representation" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#pictorial-representation" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Pictorial Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#comparing-decimals" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Comparing Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_operations_with_decimals.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Operations with Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_add_subtract_decimals" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Addition and Subtraction with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_multiply_decimals" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Multiplication with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_divide_decimals" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Division with Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Terminating and Repeating Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#terminating-decimals" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Terminating Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-long-division" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Expressing a Fraction as a Repeating Decimal Using Long Division</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-as-rational-numbers" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Representing All Repeating Decimals as Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#CanRepeatingDecimalsEqual1" class="internal"><span class="codenumber">5.3.3.1</span> <span class="title">Can Repeating Decimals Equal 1?</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repetend-and-period" class="internal"><span class="codenumber">5.3.3.2</span> <span class="title">Repetend and Period of a Repeated Decimal</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#converting-repeating-decimal-to-fraction" class="internal"><span class="codenumber">5.3.3.3</span> <span class="title">Converting a Repeating Decimal to a Fraction</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="percent-and-percent-change.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percent and Percent Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="percent-and-percent-change.html#introduction-to-percent" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Introduction to Percent</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-ratios-to-percents" class="internal"><span class="codenumber">5.4.1.1</span> <span class="title">Converting Ratios to Percents</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-fractions-to-percents" class="internal"><span class="codenumber">5.4.1.2</span> <span class="title">Converting Fractions to Percents</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#visualizing-percents" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Visualizing Percents Using a Bar Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-vs-percent-change" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Percent vs. Percent Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-change-vs-percentage-point-change" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Percent Change vs. Percentage Point Change</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Divisibility.html" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Introductory Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility2" class="internal"><span class="codenumber">6.1.1.1</span> <span class="title">Intro to Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TransitivityAndDivisibility" class="internal"><span class="codenumber">6.1.1.2</span> <span class="title">Transitivity And Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-properties" class="internal"><span class="codenumber">6.1.1.3</span> <span class="title">Divisibility Properties of 0, 1, and a Number with Itself</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-theorems" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Divisibility Theorems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem1" class="internal"><span class="codenumber">6.1.2.1</span> <span class="title">Theorem 1</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem2" class="internal"><span class="codenumber">6.1.2.2</span> <span class="title">Theorem 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem3" class="internal"><span class="codenumber">6.1.2.3</span> <span class="title">Theorem 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TheOtherCase" class="internal"><span class="codenumber">6.1.2.4</span> <span class="title">TheOtherCase</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Theorems for Small Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-IntroductionDivThms" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2-4-8" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Divisibility Rules for 2, 4, and 8</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2" class="internal"><span class="codenumber">6.2.2.1</span> <span class="title">Divisibility Rule for 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-4" class="internal"><span class="codenumber">6.2.2.2</span> <span class="title">Divisibility Rule for 4</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-8" class="internal"><span class="codenumber">6.2.2.3</span> <span class="title">Divisibility Rule for 8</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-DivisibilityRuleforHigherPowersof2" class="internal"><span class="codenumber">6.2.2.4</span> <span class="title">Divisibility Rule for Higher Powers of 2</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Rule For 5</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRulesFor3And9" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Rules For 3 And 9</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor11" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Divisibility Rule For 11</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-CompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Compound Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-WhenCompundDivisibilityRulesWork" class="internal"><span class="codenumber">6.2.6.1</span> <span class="title">When Compund Divisibility Rules Work</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-SomeCommonCompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6.2</span> <span class="title">Some Common Compound Divisibility Rules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8" class="internal"><span class="codenumber">6.2.7</span> <span class="title">Iterative Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-4" class="internal"><span class="codenumber">6.2.7.1</span> <span class="title">Divisibility by 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-5" class="internal"><span class="codenumber">6.2.7.2</span> <span class="title">Divisibility by 9</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-6" class="internal"><span class="codenumber">6.2.7.3</span> <span class="title">Divisibility by 11</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-MakingDivisibilityRules" class="internal"><span class="codenumber">6.2.8</span> <span class="title">MakingDivisibilityRules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PrimeNumbers.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-FindingPrimeNumbers" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Finding Prime Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowManyPrimeNumbersExist" class="internal"><span class="codenumber">6.3.2</span> <span class="title">How Many Prime Numbers Exist</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowToDetermineIfaNumberisPrime" class="internal"><span class="codenumber">6.3.3</span> <span class="title">How To Determine If a Number is Prime</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Factors and Multiples</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-PrimesAsBuildingBlocks" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Primes As Building Blocks</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-HowManyFactorsDoesANumberHave" class="internal"><span class="codenumber">6.4.2</span> <span class="title">How Many Factors Does A Number Have?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsubsec-PuttingItAllTogether" class="internal"><span class="codenumber">6.4.2.1</span> <span class="title">Putting It All Together</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_lcm_intro" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Greatest Common Divisor and Least Common Multiple</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#understanding_gcd_lcm" class="internal"><span class="codenumber">6.4.3.1</span> <span class="title">Unraveling the Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_prime_factorization" class="internal"><span class="title">Understanding GCD Through Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_concept" class="internal"><span class="title">Least Common Multiple (LCM)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_example" class="internal"><span class="title">Exploring LCM with an Example</span></a></div></li></ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#word_problems_gcd_lcm" class="internal"><span class="codenumber">6.4.4</span> <span class="title">Word Problems: GCD and LCM in Practice</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem1_gcd" class="internal"><span class="codenumber">6.4.4.1</span> <span class="title">Problem 1: Distributing Items in Boxes</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem2_lcm" class="internal"><span class="codenumber">6.4.4.2</span> <span class="title">Problem 2: Buying Ingredients for Burgers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#venn_diagrams_gcd_lcm" class="internal"><span class="codenumber">6.4.4.3</span> <span class="title">Visualizing GCD and LCM with Venn Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Understanding the Euclidean Algorithm</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_basics" class="internal"><span class="codenumber">6.4.5.1</span> <span class="title">Basic Principles</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_procedure" class="internal"><span class="codenumber">6.4.5.2</span> <span class="title">Applying the Euclidean Algorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_examples" class="internal"><span class="codenumber">6.4.5.3</span> <span class="title">Additional Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="irrational_numbers.html" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="understanding_irrational_numbers.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Understanding Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#examples_of_irrational_numbers" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Examples of Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-TypesOfIrrationalNumbers" class="internal"><span class="codenumber">7.1.2</span> <span class="title">TypesOfIrrationalNumbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-FunctionsBriefly" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Functions Briefly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SimpleRoots.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Simple Roots and Irrationality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-PrincipalRoots" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Principal Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-nthPowers" class="internal"><span class="codenumber">7.2.2</span> <span class="title">nth Powers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-ProvingIrrationalityofnthRoots" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Proving Irrationality of nth Roots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Operations With Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#addition_subtraction_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Addition and Subtraction with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#multiplication_division_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Multiplication and Division with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#more_elaborate_examples_irrationality" class="internal"><span class="codenumber">7.3.2</span> <span class="title">More Elaborate Examples of Irrationality</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="exponents_irrational_numbers.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exponents and Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#nth_root_exponent" class="internal"><span class="codenumber">7.4.1</span> <span class="title">nth Root as Exponent 1/n</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#multiplying_dividing_roots" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Multiplying and Dividing nth Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying-principal-roots" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Simplifying <span class="process-math">\(n\)</span>th Principal Roots by Factoring Out <span class="process-math">\(n\)</span>th Powers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#quotient-remainder-theorem" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Using the Quotient Remainder Theorem</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#more-examples" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Additional Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying_fractional_powers" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Simplifying Expressions with Fractional Powers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="Fractions-3"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.2</span><span class="space"> </span><span class="title">Arithmetic With Fractions</span>
+</h2>
+<section class="subsection" id="AddingSubtractingFractions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="space"> </span><span class="title">Adding and Subtracting Fractions</span>
+</h3>
+<div class="para" id="AddingSubtractingFractions-2">In this subsection, we will discuss adding and subtracting fractions, starting with fractions with the same denominator and then moving on to fractions with unlike denominators. Adding and subtracting fractions is similar to adding and subtracting units, like apples or other objects, but instead, we are working with parts of a whole.<div class="autopermalink" data-description="Paragraph"><a href="#AddingSubtractingFractions-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="AddingSubtractingFractions-3">First, let’s discuss adding and subtracting fractions with the same denominator.<div class="autopermalink" data-description="Paragraph"><a href="#AddingSubtractingFractions-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="AddingSubtractingFractions-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Adding and Subtracting Fractions with the Same Denominator.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="AddingSubtractingFractions-4-2">Suppose we have two fractions <span class="process-math">\(\frac{3}{8}\)</span> and <span class="process-math">\(\frac{5}{8}\)</span> that we want to add. Since both fractions have the same denominator of 8, we can think of the numerators as the number of "eighths" we have. To add these two fractions, we simply add the numerators and keep the same denominator:<div class="autopermalink" data-description="Paragraph"><a href="#AddingSubtractingFractions-4-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{3}{8} + \frac{5}{8} = \frac{3 + 5}{8} = \frac{8}{8}
+\end{equation*}
+</div>
+<div class="para" id="AddingSubtractingFractions-4-4">Similarly, if we want to subtract the fractions, we subtract the numerators and keep the same denominator:<div class="autopermalink" data-description="Paragraph"><a href="#AddingSubtractingFractions-4-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{3}{8} - \frac{5}{8} = \frac{3 - 5}{8} = \frac{-2}{8}
+\end{equation*}
+</div>
+<div class="para" id="AddingSubtractingFractions-4-6">This is like adding or subtracting units: if we have 3 apples and add 5 more apples, we end up with 8 apples. The same goes for subtraction.<div class="autopermalink" data-description="Paragraph"><a href="#AddingSubtractingFractions-4-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.2.1: Adding and Subtracting Fractions with the Same Denominator"><a href="#AddingSubtractingFractions-4" title="Copy permalink for Example 4.2.1: Adding and Subtracting Fractions with the Same Denominator">🔗</a></div></article></details><div class="para" id="AddingSubtractingFractions-5">Now let’s discuss adding and subtracting fractions with unlike denominators. To do this, we will use the concept of equivalent fractions, which we have explored earlier when comparing fractions.<div class="autopermalink" data-description="Paragraph"><a href="#AddingSubtractingFractions-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="AddingSubtractingFractions-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Adding and Subtracting Fractions with Unlike Denominators.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="AddingSubtractingFractions-6-2">Let’s say we want to add the fractions <span class="process-math">\(\frac{3}{4}\)</span> and <span class="process-math">\(\frac{5}{6}\text{.}\)</span> First, we need to find equivalent fractions with a common denominator, which in this case is the least common denominator (LCD) of 4 and 6. The LCD is 12, so we will find equivalent fractions with a denominator of 12:<div class="autopermalink" data-description="Paragraph"><a href="#AddingSubtractingFractions-6-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{3 \times 3}{4 \times 3} = \frac{9}{12}, \quad \frac{5 \times 2}{6 \times 2} = \frac{10}{12}
+\end{equation*}
+</div>
+<div class="para" id="AddingSubtractingFractions-6-4">Now that we have equivalent fractions with the same denominator, we can add them just as we did in the previous example:<div class="autopermalink" data-description="Paragraph"><a href="#AddingSubtractingFractions-6-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{9}{12} + \frac{10}{12} = \frac{9 + 10}{12} = \frac{19}{12}
+\end{equation*}
+</div>
+<div class="para" id="AddingSubtractingFractions-6-6">Similarly, if we want to subtract the fractions, we can do so by subtracting the numerators while keeping the same denominator:<div class="autopermalink" data-description="Paragraph"><a href="#AddingSubtractingFractions-6-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{9}{12} - \frac{10}{12} = \frac{9 - 10}{12} = \frac{-1}{12}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 4.2.2: Adding and Subtracting Fractions with Unlike Denominators"><a href="#AddingSubtractingFractions-6" title="Copy permalink for Example 4.2.2: Adding and Subtracting Fractions with Unlike Denominators">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.2.1: Adding and Subtracting Fractions"><a href="#AddingSubtractingFractions" title="Copy permalink for Subsection 4.2.1: Adding and Subtracting Fractions">🔗</a></div></section><section class="subsection" id="MixedFractions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="space"> </span><span class="title">Mixed Fractions</span>
+</h3>
+<div class="para" id="MixedFractions-2">In this subsection, we will discuss mixed fractions and how to convert between mixed and improper fractions. We give definitions of these concepts below. In all of thee definitions we let <span class="process-math">\(a,b,c \in \mathbb{N}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MixedFractions-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-ProperFraction"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="def-ProperFraction-1-1">A <dfn class="terminology">proper fraction</dfn> is a fraction where the numerator is less than the denominator, that is, <span class="process-math">\(\frac{a}{b}\)</span> is a proper fraction if <span class="process-math">\(a &lt; b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-ProperFraction-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.2.3"><a href="#def-ProperFraction" title="Copy permalink for Definition 4.2.3">🔗</a></div></article><article class="definition definition-like" id="def-ImproperFraction"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="def-ImproperFraction-1-1">An <dfn class="terminology">improper fraction</dfn> is a fraction where the numerator is equal to or greater than the denominator, that is, <span class="process-math">\(\frac{a}{b}\)</span> is an improper fraction if <span class="process-math">\(a \geq b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-ImproperFraction-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.2.4"><a href="#def-ImproperFraction" title="Copy permalink for Definition 4.2.4">🔗</a></div></article><article class="definition definition-like" id="def-MixedNumber"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="def-MixedNumber-1-1">A <dfn class="terminology">mixed number</dfn> is a number that is represented as the sum of a whole number and a proper fraction. It is usually written in the form <span class="process-math">\(a\left(\frac{b}{c}\right)\)</span> which really means <span class="process-math">\(a + \frac{b}{c}\)</span> but written without the addition sign between the whole number and fraction, where <span class="process-math">\(a\)</span> is a whole number, and <span class="process-math">\(\frac{b}{c}\)</span> is a proper fraction, meaning <span class="process-math">\(b &lt; c\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-MixedNumber-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.2.5"><a href="#def-MixedNumber" title="Copy permalink for Definition 4.2.5">🔗</a></div></article><div class="para" id="MixedFractions-6">Mixed fractions are usually written in the form <span class="process-math">\(a\left(\frac{b}{c}\right)\text{,}\)</span> . To convert a mixed fraction to an improper fraction, we can convert the whole number part <span class="process-math">\(a\)</span> to the fraction <span class="process-math">\(\frac{a}{1}\)</span> and then use equivalent fractions and addition of fractions.<div class="autopermalink" data-description="Paragraph"><a href="#MixedFractions-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="MixedFractions-7">To convert a mixed fraction to an improper fraction, follow these steps:<div class="autopermalink" data-description="Paragraph"><a href="#MixedFractions-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="MixedFractions-8">
+<li id="MixedFractions-8-1">
+<div class="para" id="p-derived-MixedFractions-8-1">Convert the whole number part <span class="process-math">\(a\)</span> to the fraction <span class="process-math">\(\frac{a}{1}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#MixedFractions-8-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="MixedFractions-8-2">
+<div class="para" id="p-derived-MixedFractions-8-2">Find equivalent fractions for <span class="process-math">\(\frac{a}{1}\)</span> and <span class="process-math">\(\frac{b}{c}\)</span> with a common denominator.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#MixedFractions-8-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="MixedFractions-8-3">
+<div class="para" id="p-derived-MixedFractions-8-3">Add the numerators of the equivalent fractions, and keep the common denominator.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#MixedFractions-8-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<details id="MixedFractions-9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Converting a Mixed Fraction to an Improper Fraction.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="MixedFractions-9-2">Let’s convert the mixed fraction <span class="process-math">\(3\left(\frac{2}{5}\right)\)</span> to an improper fraction. First, we convert the whole number part 3 to the fraction <span class="process-math">\(\frac{3}{1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MixedFractions-9-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="MixedFractions-9-3">Now, we need to find equivalent fractions for <span class="process-math">\(\frac{3}{1}\)</span> and <span class="process-math">\(\frac{2}{5}\)</span> with a common denominator. In this case, the least common denominator is 5. We multiply the numerator and denominator of <span class="process-math">\(\frac{3}{1}\)</span> by 5 to get the equivalent fraction <span class="process-math">\(\frac{15}{5}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MixedFractions-9-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="MixedFractions-9-4">Now, we can add the numerators of the equivalent fractions: <span class="process-math">\(15 + 2 = 17\text{.}\)</span> Keeping the common denominator, we get the improper fraction <span class="process-math">\(\frac{17}{5}\text{.}\)</span> So, <span class="process-math">\(3\left(\frac{2}{5}\right) = \frac{17}{5}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MixedFractions-9-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.2.6: Converting a Mixed Fraction to an Improper Fraction"><a href="#MixedFractions-9" title="Copy permalink for Example 4.2.6: Converting a Mixed Fraction to an Improper Fraction">🔗</a></div></article></details><details id="MixedFractions-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Converting a Mixed Fraction to an Improper Fraction.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="MixedFractions-10-2">Let’s convert the mixed fraction <span class="process-math">\(4\left(\frac{3}{8}\right)\)</span> to an improper fraction. First, we convert the whole number part 4 to the fraction <span class="process-math">\(\frac{4}{1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MixedFractions-10-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="MixedFractions-10-3">Now, we need to find equivalent fractions for <span class="process-math">\(\frac{4}{1}\)</span> and <span class="process-math">\(\frac{3}{8}\)</span> with a common denominator. In this case, the least common denominator is 8. We multiply the numerator and denominator of <span class="process-math">\(\frac{4}{1}\)</span> by 8 to get the equivalent fraction <span class="process-math">\(\frac{32}{8}\text{.}\)</span> Since both the numerator and denominator are divisible by 8 we can reduce this fraction to <span class="process-math">\(\frac{4}{1} = 4.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#MixedFractions-10-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.2.7: Converting a Mixed Fraction to an Improper Fraction"><a href="#MixedFractions-10" title="Copy permalink for Example 4.2.7: Converting a Mixed Fraction to an Improper Fraction">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.2.2: Mixed Fractions"><a href="#MixedFractions" title="Copy permalink for Subsection 4.2.2: Mixed Fractions">🔗</a></div></section><section class="subsection" id="ImproperToFractions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="space"> </span><span class="title">Converting Improper Fractions to Mixed Numbers</span>
+</h3>
+<div class="para" id="ImproperToFractions-2">In many situations, it is more convenient to represent improper fractions as mixed numbers. A mixed number is a whole number plus a proper fraction (a fraction where the numerator is less than the denominator).<div class="autopermalink" data-description="Paragraph"><a href="#ImproperToFractions-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ImproperToFractions-3">To convert an improper fraction to a mixed number, follow these steps:<div class="autopermalink" data-description="Paragraph"><a href="#ImproperToFractions-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="ImproperToFractions-4">
+<li id="ImproperToFractions-4-1">
+<div class="para" id="p-derived-ImproperToFractions-4-1">Divide the numerator by the denominator. This gives you the whole number part of the mixed number.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#ImproperToFractions-4-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="ImproperToFractions-4-2">
+<div class="para" id="p-derived-ImproperToFractions-4-2">The remainder of the division becomes the numerator of the fractional part of the mixed number.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#ImproperToFractions-4-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="ImproperToFractions-4-3">
+<div class="para" id="p-derived-ImproperToFractions-4-3">The denominator remains the same in the fractional part of the mixed number.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#ImproperToFractions-4-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<details id="ImproperToFractions-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Converting an Improper Fraction to a Mixed Number.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ImproperToFractions-5-2">Let’s convert the improper fraction <span class="process-math">\(\frac{23}{5}\)</span> to a mixed number. First, divide the numerator 23 by the denominator 5. This gives us 4 with a remainder of 3. So, the whole number part of the mixed number is 4, and the numerator of the fractional part is 3.<div class="autopermalink" data-description="Paragraph"><a href="#ImproperToFractions-5-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ImproperToFractions-5-3">The denominator remains the same in the fractional part of the mixed number. So, the fractional part is <span class="process-math">\(\frac{3}{5}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ImproperToFractions-5-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ImproperToFractions-5-4">Thus, the improper fraction <span class="process-math">\(\frac{23}{5}\)</span> is equal to the mixed number <span class="process-math">\(4\left(\frac{3}{5}\right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ImproperToFractions-5-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.2.8: Converting an Improper Fraction to a Mixed Number"><a href="#ImproperToFractions-5" title="Copy permalink for Example 4.2.8: Converting an Improper Fraction to a Mixed Number">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.2.3: Converting Improper Fractions to Mixed Numbers"><a href="#ImproperToFractions" title="Copy permalink for Subsection 4.2.3: Converting Improper Fractions to Mixed Numbers">🔗</a></div></section><section class="subsection" id="subsec-MultiplicationOfFractions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.4</span><span class="space"> </span><span class="title">Multiplication of Fractions</span>
+</h3>
+<div class="para" id="subsec-MultiplicationOfFractions-2">Let’s delve into the concept of multiplication of fractions. This operation may appear more complex than addition or subtraction of fractions, but it is fundamentally straightforward. To illustrate, let’s consider a few examples.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MultiplicationOfFractions-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-MultiplicationOfFractions1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.9</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-MultiplicationOfFractions1-1-1">What is <span class="process-math">\(\frac{1}{2} \times 3\text{,}\)</span> or in other words, half of 3?<div class="autopermalink" data-description="Paragraph"><a href="#ex-MultiplicationOfFractions1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-MultiplicationOfFractions1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-MultiplicationOfFractions1-2-1">If we take three units and split everything in half, we essentially have three halfs, or <span class="process-math">\(\frac{3}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-MultiplicationOfFractions1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.2.9.1"><a href="#ex-MultiplicationOfFractions1-2" title="Copy permalink for Solution 4.2.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.2.9"><a href="#ex-MultiplicationOfFractions1" title="Copy permalink for Example 4.2.9">🔗</a></div></article></details><details id="ex-MultiplicationOfFractions2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.10</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-MultiplicationOfFractions2-1-1">What is half of <span class="process-math">\(\frac{2}{3}\text{,}\)</span> or in other words, <span class="process-math">\(\frac{1}{2} \times \frac{2}{3}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-MultiplicationOfFractions2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-MultiplicationOfFractions2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-MultiplicationOfFractions2-2-1">If we take two thirds and divide them in half, we get <span class="process-math">\(\frac{1}{3}\text{.}\)</span> Therefore, half of <span class="process-math">\(\frac{2}{3}\)</span> is <span class="process-math">\(\frac{1}{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-MultiplicationOfFractions2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.2.10.1"><a href="#ex-MultiplicationOfFractions2-2" title="Copy permalink for Solution 4.2.10.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.2.10"><a href="#ex-MultiplicationOfFractions2" title="Copy permalink for Example 4.2.10">🔗</a></div></article></details><details id="ex-MultiplicationOfFractions3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.11</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-MultiplicationOfFractions3-1-1">What is $\frac{2}{5}$ times $\frac{2}{3}$, or in other words, two-fifths of two-thirds?<div class="autopermalink" data-description="Paragraph"><a href="#ex-MultiplicationOfFractions3-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-MultiplicationOfFractions3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-MultiplicationOfFractions3-2-1">If we take two thirds and divide them into fifths, and then take two of those fifths, we essentially have $\frac{4}{15}$.<div class="autopermalink" data-description="Paragraph"><a href="#ex-MultiplicationOfFractions3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.2.11.1"><a href="#ex-MultiplicationOfFractions3-2" title="Copy permalink for Solution 4.2.11.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.2.11"><a href="#ex-MultiplicationOfFractions3" title="Copy permalink for Example 4.2.11">🔗</a></div></article></details><div class="para" id="subsec-MultiplicationOfFractions-6">The examples above illustrate how multiplication of fractions works. Essentially, we multiply the numerators to get the numerator of the result, and multiply the denominators to get the denominator of the result. For instance, for any fractions $\frac{a}{b}$ and $\frac{c}{d}$, $\frac{a}{b}$ times $\frac{c}{d}$ equals $\frac{a \times c}{b \times d}$. This operation breaks up our units into $b \times d$ equal pieces, and we have $a \times c$ of these pieces.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MultiplicationOfFractions-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-Reciprocal"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="def-Reciprocal-1-1">The <dfn class="terminology">reciprocal</dfn> of a fraction $\frac{a}{b}$, where $a$ and $b$ are both nonzero, is $\frac{b}{a}$ - essentially, we swap the numerator and the denominator.<div class="autopermalink" data-description="Paragraph"><a href="#def-Reciprocal-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.2.12"><a href="#def-Reciprocal" title="Copy permalink for Definition 4.2.12">🔗</a></div></article><details id="ex-Reciprocal" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.13</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-Reciprocal-1-1">What is the reciprocal of $\frac{4}{5}$?<div class="autopermalink" data-description="Paragraph"><a href="#ex-Reciprocal-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-Reciprocal-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="ex-Reciprocal-2-1">The reciprocal of $\frac{4}{5}$ is $\frac{5}{4}$.<div class="autopermalink" data-description="Paragraph"><a href="#ex-Reciprocal-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.2.13.1"><a href="#ex-Reciprocal-2" title="Copy permalink for Solution 4.2.13.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.2.13"><a href="#ex-Reciprocal" title="Copy permalink for Example 4.2.13">🔗</a></div></article></details><div class="para" id="subsec-MultiplicationOfFractions-9">Note that a non-zero fraction multiplied by its reciprocal always equals one. This is because $\frac{a}{b}$ times $\frac{b}{a}$ equals $\frac{a \times b}{b \times a}$. Since $a \times b$ equals $b \times a$, this simplifies to $\frac{1}{1}$, which equals 1.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-MultiplicationOfFractions-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 4.2.4: Multiplication of Fractions"><a href="#subsec-MultiplicationOfFractions" title="Copy permalink for Subsection 4.2.4: Multiplication of Fractions">🔗</a></div></section><section class="subsection" id="Fractions-3-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.5</span><span class="space"> </span><span class="title">Division of Fractions</span>
+</h3>
+<div class="para" id="Fractions-3-6-2">Dividing fractions is a concept that, like addition and subtraction, can be visualized using the denominator of fractions as some unit or object. Let’s consider an example where we have 13 apples divided into groups of 4 apples. We take the 13 apples, group them into sets of 4, and get 3 groups with 1 apple left over. This can be represented as 3 and a quarter groups (using mixed number notation), where the 1 apple left over is a quarter of a group. ADD PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#Fractions-3-6-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Fractions-3-6-3">Now, if we consider a fraction like thirteen-fifths divided by four-fifths, the principle is the same. We group them into sets of four fifths and find that we have 3 groups of four fifths with one fifth left over. This also gives us 3 and a quarter groups, or in other terms, thirteen quarters. ADD PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#Fractions-3-6-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Fractions-3-6-4">The key idea here is that the two problems above are fundamentally the same problem, as we are dividing thirteen units into groups of four units; whether the units are apples or fifths, or something else does not make a difference to our solution. So, fundamentally if we understand the idea of division of whole numbers, we understand the idea of division of fractions.<div class="autopermalink" data-description="Paragraph"><a href="#Fractions-3-6-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Fractions-3-6-5">This leads us to the general rule of dividing fractions: if we have $a/c$ divided by $b/c$ (where $a, b, c$ are any whole numbers where <span class="process-math">\(c \neq 0\)</span>), our result will be $a/b$. The important thing to note is that our units (the things we’re grouping) are the same, which allows us to simply divide the first number by the second number. ADD PIC HERE<div class="autopermalink" data-description="Paragraph"><a href="#Fractions-3-6-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Fractions-3-6-6">However, it’s not always the case that we have fractions with common denominators to divide. For this, we need to know how to divide fractions with any denominators. The rule here is that $a/b$ divided by $c/d$ is equal to $a/b$ times the reciprocal of $c/d$, which is $d/c$.<div class="autopermalink" data-description="Paragraph"><a href="#Fractions-3-6-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Fractions-3-6-7">You have most likely learned in school that to divide to fractions, you multiply the first fraction by the reciprocal of the second fraction; for example <span class="process-math">\(\frac{2}{3} \div {4}{5} = \frac{2}{3} \times {5}{4}.\)</span> Of course this is correct, but as we are in the business of understanding why these ideas are correct, let’s look more closely at why this idea is true.<div class="autopermalink" data-description="Paragraph"><a href="#Fractions-3-6-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Fractions-3-6-8">Consider the division <span class="process-math">\(\frac{a}{b} \div \frac{c}{d}\text{.}\)</span> We know how to divide fractions with the same denominator, so let’s find equivalent fractions to these two with the denominator of <span class="process-math">\(bd\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Fractions-3-6-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{b} = \frac{ad}{bd} \qquad \frac{c}{d} = \frac{bc}{bd}.
+\end{equation*}
+</div>
+<div class="para" id="Fractions-3-6-10">Now, we are dividing <span class="process-math">\(ad\)</span> <span class="process-math">\(bd\)</span>ths into groups of size <span class="process-math">\(bc\)</span> <span class="process-math">\(bd\)</span>ths. From our discussion above we know that <span class="process-math">\(\frac{ad}{bd} \div \frac{bc}{bd} = \frac{ad}{bc}\text{.}\)</span> But we can express this as the multiplication of two fractions: <span class="process-math">\(\frac{ad}{bc} = \frac{a}{b} \times \frac{d}{c}\)</span> which is indeed the multiplication by the reciplocal result we wanted to show.<div class="autopermalink" data-description="Paragraph"><a href="#Fractions-3-6-10" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Fractions-3-6-11">In addition, it’s important to note that all the properties that hold for integers under addition also hold for fractions. Because we can convert any division operation to a multiplication operation (by multiplying by the reciprocal), we can think of dealing with fractions as only involving addition and multiplication. This allows us to use the commutative, associative, and distributive properties as needed to simplify expressions involving fractions.<div class="autopermalink" data-description="Paragraph"><a href="#Fractions-3-6-11" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="example-fraction-operations" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.14</span><span class="period">.</span><span class="space"> </span><span class="title">Adding, Subtracting, Multiplying, and Dividing Fractions.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-fraction-operations-2-1">Let’s perform multiple operations on fractions in one problem. Consider the expression:<div class="autopermalink" data-description="Paragraph"><a href="#example-fraction-operations-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{3}{4} - \frac{1}{2} + \frac{5}{6} \cdot \frac{2}{3} ÷ \frac{4}{5}.
+\end{equation*}
+</div>
+<div class="solutions"><details id="example-fraction-operations-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-fraction-operations-3-1">To simplify the expression, we follow the order of operations (BEMDAS): Brackets, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).<div class="autopermalink" data-description="Paragraph"><a href="#example-fraction-operations-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-fraction-operations-3-2">First, we handle the division by changing the operation to multiplication by the reciprocal of the divisor:<div class="autopermalink" data-description="Paragraph"><a href="#example-fraction-operations-3-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{5}{6} \times \frac{2}{3} ÷ \frac{4}{5} = \frac{5}{6} \times \frac{2}{3} \cdot \frac{5}{4}.
+\end{equation*}
+</div>
+<div class="para" id="example-fraction-operations-3-4">Multiplying these fractions and redicing to equivalent fractions where possible:<div class="autopermalink" data-description="Paragraph"><a href="#example-fraction-operations-3-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{5}{6} \times \frac{2}{3} \cdot \frac{5}{4} = \frac{10}{18} \times \frac{5}{4} =  \frac{5}{9} \times {5}{4} = \frac{25}{36}.
+\end{equation*}
+</div>
+<div class="para" id="example-fraction-operations-3-6">So the original expression is equivalent to<div class="autopermalink" data-description="Paragraph"><a href="#example-fraction-operations-3-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{3}{4}-\frac{1}{2}+\frac{25}{36}
+\end{equation*}
+</div>
+<div class="para" id="example-fraction-operations-3-8">We have dealt with all of the multiplication and division. Now we can add and subtract from left to right. Noting that <span class="process-math">\(\frac{3}{4}-\frac{1}{2} = \frac{1}{4}\)</span> and then having a common denominator of 36 we have<div class="autopermalink" data-description="Paragraph"><a href="#example-fraction-operations-3-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{4} + \frac{25}{36} = \frac{9}{36} + \frac{25}{36}= \frac{9 + 25}{24} = \frac{34}{36} = \frac{17}{18}.
+\end{equation*}
+</div>
+<div class="para" id="example-fraction-operations-3-10">Thus, the simplified result of the given expression is <span class="process-math">\(\frac{17}{18}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-fraction-operations-3-10" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.2.14.1"><a href="#example-fraction-operations-3" title="Copy permalink for Solution 4.2.14.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.2.14: Adding, Subtracting, Multiplying, and Dividing Fractions"><a href="#example-fraction-operations" title="Copy permalink for Example 4.2.14: Adding, Subtracting, Multiplying, and Dividing Fractions">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.2.5: Division of Fractions"><a href="#Fractions-3-6" title="Copy permalink for Subsection 4.2.5: Division of Fractions">🔗</a></div></section><section class="subsection" id="negative-exponents-fractions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.6</span><span class="space"> </span><span class="title">Negative Exponents and Fractions</span>
+</h3>
+<div class="para" id="negative-exponents-fractions-2">Let’s consider some important rules about negative exponents. Remember from the previous section on exponents, we had that, for a base <span class="process-math">\(a \in \mathbb{R}\)</span> and exponents <span class="process-math">\(b,c \in \mathbb{N}\)</span> we have that <span class="process-math">\(a^b \times a^c=a^{b+c}.\)</span> We would like to extend this idea to having negative integers as our exponents. Now that we have developed the idea of fractions, we can indeed define what a negative exponent would mean.<div class="autopermalink" data-description="Paragraph"><a href="#negative-exponents-fractions-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="negative-exponents-fractions-3">Suppose we have a number <span class="process-math">\(a\)</span> and we are indeed curious about what <span class="process-math">\(a\)</span> raised to a negative exponent would mean. We want to keep the same rules that we’ve used before, where if you have the same base and different exponents, you add them. This would imply that <span class="process-math">\(a^1 \cdot a^{-1}\)</span> should equal <span class="process-math">\(a^{1+(-1)}\text{,}\)</span> which is <span class="process-math">\(a^0\text{.}\)</span> And anything raised to the power of zero is one. So what could we multiply <span class="process-math">\(a\)</span> by to get one? The answer is <span class="process-math">\(\frac{1}{a}\text{.}\)</span> Hence, whenever we see a negative exponent like this, it implies the reciprocal of the base raised to the corresponding positive exponent. In general, <span class="process-math">\(a^{-n} = \frac{1}{a^n}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#negative-exponents-fractions-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<aside class="aside aside-like" id="negative-exponent-rule"><h4 class="heading"><span class="title">Negative Exponent Rule.</span></h4>
+<div class="para" id="negative-exponent-rule-2">For any nonzero real number <span class="process-math">\(a\)</span> and positive integer <span class="process-math">\(n\text{,}\)</span> we have: <span class="process-math">\(a^{-n} = \frac{1}{a^n}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#negative-exponent-rule-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div></aside><div class="para" id="negative-exponents-fractions-5">Another rule deals with fractions raised to an exponent. The exponent means we multiply the base, in this case our base is the fraction <span class="process-math">\(\frac{a}{b}\text{,}\)</span> by itself the exponent number of times. Since we multiply fractions by multiplying the numerators and denominators together, respectively, this means that <span class="process-math">\((\frac{a}{b})^n\)</span> equals <span class="process-math">\(\frac{a^n}{b^n}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#negative-exponents-fractions-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<aside class="aside aside-like" id="fraction-exponent-rule"><h4 class="heading"><span class="title">Exponent of a Fraction Rule.</span></h4>
+<div class="para" id="fraction-exponent-rule-2">For any nonzero real number <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\)</span> and positive integer <span class="process-math">\(n\text{,}\)</span> we have: <span class="process-math">\((\frac{a}{b})^n = \frac{a^n}{b^n}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#fraction-exponent-rule-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div></aside><div class="para" id="negative-exponents-fractions-7">Now, what happens when we have a negative exponent of a fraction? Let’s consider <span class="process-math">\((\frac{a}{b})^{-1}\text{.}\)</span> If we multiply <span class="process-math">\(\frac{a}{b}^{-1} \cdot \frac{a}{b}^{1}\text{,}\)</span> we’d like that to be <span class="process-math">\(\frac{a}{b}^{0}\text{,}\)</span> and anything raised to the power of 0 is 1. So what can we multiply <span class="process-math">\(\frac{a}{b}\)</span> by to get 1? The answer is <span class="process-math">\(\frac{b}{a}\text{.}\)</span> So, this means that <span class="process-math">\((\frac{a}{b})^{-1} = \frac{b}{a}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#negative-exponents-fractions-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<aside class="aside aside-like" id="negative-fraction-exponent-rule"><h4 class="heading"><span class="title">Negative Exponent of a Fraction Rule.</span></h4>
+<div class="para" id="negative-fraction-exponent-rule-2">For any nonzero real numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> we have: <span class="process-math">\((\frac{a}{b})^{-1} = \frac{b}{a}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#negative-fraction-exponent-rule-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div></aside><div class="para" id="negative-exponents-fractions-9">We will now explore some examples to further solidify our understanding of these concepts.<div class="autopermalink" data-description="Paragraph"><a href="#negative-exponents-fractions-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsubsection" id="simplify-compound-fraction"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">4.2.6.1</span><span class="space"> </span><span class="title">Simplifying Compound Fractions</span>
+</h4>
+<div class="para" id="simplify-compound-fraction-2">A compound fraction, also known as a complex fraction, is a fraction where the numerator, the denominator, or both are fractions themselves. For example, <span class="process-math">\(\frac{a}{b}/\frac{c}{d}\)</span> is a compound fraction. To simplify such fractions, we follow the principle of dividing fractions which states that dividing by a fraction is the same as multiplying by its reciprocal. Hence, <span class="process-math">\(\frac{a}{b}/\frac{c}{d}\)</span> simplifies to <span class="process-math">\(\frac{a}{b} \cdot \frac{d}{c}\)</span> which further simplifies to <span class="process-math">\(\frac{ad}{bc}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#simplify-compound-fraction-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<aside class="aside aside-like" id="compound-fraction-rule"><h5 class="heading"><span class="title">Compound Fraction Rule.</span></h5>
+<div class="para" id="compound-fraction-rule-2">For any nonzero real numbers <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(d\text{,}\)</span> we have: <span class="process-math">\(\frac{a}{b}/\frac{c}{d} = \frac{ad}{bc}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#compound-fraction-rule-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div></aside><div class="para" id="simplify-compound-fraction-4">Let’s now consider an example that combines the ideas of positive and negative exponents, positive and negative exponents of fractions, the exponent 0, and compound fractions.<div class="autopermalink" data-description="Paragraph"><a href="#simplify-compound-fraction-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="complex-fraction-exponent-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.15</span><span class="period">.</span><span class="space"> </span><span class="title">Simplifying a Complex Fraction with Exponents.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="para" id="complex-fraction-exponent-example-2-1">Simplify the compound fraction <span class="process-math">\(\frac{2^{3} \cdot 3^{-1} \cdot 5^{2}}{(3^{2} \cdot 5^{-2})/ (2^{-4} \cdot 3^{4}/(3^{4} \cdot 5^{4}))}\)</span> and express the result such that there are no negative exponents anywhere.<div class="autopermalink" data-description="Paragraph"><a href="#complex-fraction-exponent-example-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="complex-fraction-exponent-example-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="complex-fraction-exponent-example-3-1">First, we simplify the denominator using the compound fraction rule: <span class="process-math">\((3^{2} \cdot 5^{-2})/ (2^{-4} \cdot 3^{4}/(3^{4} \cdot 5^{4})) = (3^{2} \cdot 5^{-2}) \cdot (3^{4} \cdot 5^{4}/2^{-4} \cdot 3^{4})\text{.}\)</span> This simplifies further to <span class="process-math">\(3^{4} \cdot 5^{2} \cdot 2^{4}\text{.}\)</span> Now our expression becomes <span class="process-math">\(\frac{2^{3} \cdot 3^{-1} \cdot 5^{2}}{3^{4} \cdot 5^{2} \cdot 2^{4}}\text{.}\)</span> We use the rules of exponents to simplify this to <span class="process-math">\(2^{3-4} \cdot 3^{-1-4} \cdot 5^{2-2} = 2^{-1} \cdot 3^{-5}\text{.}\)</span> Finally, applying the negative exponent rule, we get <span class="process-math">\(\frac{1}{2^{1} \cdot 3^{5}} = \frac{1}{2 \cdot 243} = \frac{1}{486}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#complex-fraction-exponent-example-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.2.15.1"><a href="#complex-fraction-exponent-example-3" title="Copy permalink for Solution 4.2.15.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.2.15: Simplifying a Complex Fraction with Exponents"><a href="#complex-fraction-exponent-example" title="Copy permalink for Example 4.2.15: Simplifying a Complex Fraction with Exponents">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection 4.2.6.1: Simplifying Compound Fractions"><a href="#simplify-compound-fraction" title="Copy permalink for Subsubsection 4.2.6.1: Simplifying Compound Fractions">🔗</a></div></section><div class="autopermalink" data-description="Subsection 4.2.6: Negative Exponents and Fractions"><a href="#negative-exponents-fractions" title="Copy permalink for Subsection 4.2.6: Negative Exponents and Fractions">🔗</a></div></section><div class="autopermalink" data-description="Section 4.2: Arithmetic With Fractions"><a href="#Fractions-3" title="Copy permalink for Section 4.2: Arithmetic With Fractions">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="Fractions-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="Fractions-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

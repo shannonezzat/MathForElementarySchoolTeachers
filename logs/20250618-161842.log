@@ -1,0 +1,540 @@
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext init --refresh` to produce a compatible file.
+INFO    : Building target html
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : converting latex-image pictures from /workspaces/MathForElementarySchoolTeachers/source/main.ptx to svg graphics for placement in /workspaces/MathForElementarySchoolTeachers/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /workspaces/MathForElementarySchoolTeachers/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'cli.version': '2.19', 'publisher': '/workspaces/MathForElementarySchoolTeachers/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /workspaces/MathForElementarySchoolTeachers/source
+INFO    : verifying and expanding input directory: /workspaces/MathForElementarySchoolTeachers/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/MathForElementarySchoolTeachers/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/MathForElementarySchoolTeachers/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/MathForElementarySchoolTeachers/assets
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/extract-latex-image.xsl
+INFO    : messages from the log for XSL processing:
+ERROR   : * PTX:ERROR: the @xml:id value "objectives-structures" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "objectives-structures" (xml:id), "Logic" (title)
+INFO    : *              located within: "objectives-structures" (xml:id)
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/extract-latex-image.xsl
+WARNING : PTX:ERROR: cannot locate executable with configuration name `LatexEngine.XELATEX` as command `xelatex`
+***  Edit the configuration file  ("pretext.cfg" or "project.ptx") and/or install  ***
+***  the necessary program and/or make sure the executable is on your PATH         ***
+ERROR   : Unable to generate some latex-image assets:
+ LaTeX compilation failed for 1 "latex-image"(s).
+Review the log for error messages, and LaTeX transcripts.
+Images are:
+  fraction-1-over-2.png.tex
+INFO    : Removing temporary directory /tmp/ptx-i53ao3z_
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/MathForElementarySchoolTeachers/output/html.
+INFO    : discovering source file's directory name: /workspaces/MathForElementarySchoolTeachers/source
+INFO    : verifying and expanding input directory: /workspaces/MathForElementarySchoolTeachers/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/MathForElementarySchoolTeachers/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/MathForElementarySchoolTeachers/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/MathForElementarySchoolTeachers/assets
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.8.1
+INFO    : Downloading Runestone Services, version 7.8.1
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-default-modern
+INFO    : converting /workspaces/MathForElementarySchoolTeachers/source/main.ptx to HTML in /tmp/ptx-8uclsei_
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+ERROR   : * PTX:ERROR: the @xml:id value "objectives-structures" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "objectives-structures" (xml:id), "Logic" (title)
+INFO    : *              located within: "objectives-structures" (xml:id)
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:  development bug, new level does not match old level for "subsection"
+INFO    : *              located within: "addition_subtraction_irrational_numbers" (xml:id), "Addition and Subtraction with Irrational Numbers" (title)
+ERROR   : * PTX:ERROR:      The @xml:id "fraction-1-over-2.png" is invalid.  Use only letters, numbers, hyphens and underscores.
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "sec-ProblemSolving" (xml:id), "Problem Solving" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "integers" (xml:id), "Integers" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "Introduction to Fractions" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "Ratios, Rates, and Proportions" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "percent-and-percent-change" (xml:id), "Percent and Percent Change" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "understanding_irrational_numbers" (xml:id), "Understanding Irrational Numbers" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "integer-addition" (xml:id), "Integer Addition" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "integer-multiplication" (xml:id), "Integer Multiplication" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "properties-of-integer-multiplication" (xml:id), "Properties of Integer Multiplication" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "integer-division" (xml:id), "Integer Division" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "subsec-ProsAndConsOfMultiplicationAlgorithms" (xml:id), "Pros And Cons Of Multiplication Algorithms" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "negative-exponents-fractions" (xml:id), "Negative Exponents and Fractions" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "introduction-to-percent" (xml:id), "Introduction to Percent" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "divisibility-theorems" (xml:id), "Divisibility Theorems" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "divisibility-rule-2-4-8" (xml:id), "Divisibility Rules for 2, 4, and 8" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "Iterative Divisibility Rules" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "subsec-HowManyFactorsDoesANumberHave" (xml:id), "How Many Factors Does A Number Have?" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "word_problems_gcd_lcm" (xml:id), "Word Problems: GCD and LCM in Practice" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "euclidean_algorithm" (xml:id), "Understanding the Euclidean Algorithm" (title)
+WARNING : * PTX:DEPRECATE: (2023-08-08) a "website" element with "address" and "name" children has changed.  Continue to use the "website" element as before, but replace the "address" and "name" children with a single "url" element, which is more flexible and reliable.  We will try to honor your intent, but you may prefer your own adjustments. (1 time)
+INFO    : *              located within: "frontmatter" (xml:id)
+INFO    : * --------------
+WARNING : * PTX:DEPRECATE: (2024-10-08) elements previously included in a "titlepage" element inside the "frontmatter" (author, editor, credit, date, and event) should now be placed in "frontmatter/bibinfo".  To ensure a title page is created, put only the empty element "titlepage-items" inside "titlepage".  Until you move these elements, we will try to honor your intent. (1 time)
+INFO    : *              located within: "frontmatter" (xml:id)
+INFO    : * --------------
+WARNING : * PTX:DEPRECATE: (2024-10-08) elements previously included in a "colophon" element inside the "frontmatter" (credit, copyright, edition, and website) should now be placed in "frontmatter/bibinfo". To produce a "colophon", include only the empty element "colophon-items" inside "colophon" Until you move these elements, we will try to honor your intent. (1 time)
+INFO    : *              located within: "frontmatter" (xml:id)
+INFO    : * --------------
+ERROR   : * PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "subsec-Substitution" (xml:id), "Substitution" (title)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "subsubsec-TransitivityAndDivisibility" (xml:id), "Transitivity And Divisibility" (title)
+ERROR   : * PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "subsec-SolvingOneEquation" (xml:id), "Solving One Equation" (title)
+ERROR   : * PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "subsec-SolvingOneEquation" (xml:id), "Solving One Equation" (title)
+ERROR   : * PTX:ERROR:   width (200) should be given as a percentage (such as "40%"), or as the string "auto"
+INFO    : *              located within: "fraction-1-over-2.png" (xml:id)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:BUG:  development bug, new level does not match old level for "subsubsection"
+INFO    : *              located within: "cross-multiplication" (xml:id), "Cross Multiplication for Solving Equal Proportions" (title)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:BUG:  development bug, new level does not match old level for "subsubsection"
+INFO    : *              located within: "cross-multiplication" (xml:id), "Cross Multiplication for Solving Equal Proportions" (title)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:BUG:  development bug, new level does not match old level for "subsubsection"
+INFO    : *              located within: "cross-multiplication" (xml:id), "Cross Multiplication for Solving Equal Proportions" (title)
+ERROR   : * PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "subsubsec-TransitivityAndDivisibility" (xml:id), "Transitivity And Divisibility" (title)
+ERROR   : * PTX:ERROR:   An object (exercise) lacks a structure number, search output for "[STRUCT]"
+INFO    : *              located within: "subsubsec-TransitivityAndDivisibility" (xml:id), "Transitivity And Divisibility" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "assemblage-TestForPrimality") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "subsubsec-PuttingItAllTogether" (xml:id), "Putting It All Together" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:  development bug, new level does not match old level for "subsection"
+INFO    : *              located within: "addition_subtraction_irrational_numbers" (xml:id), "Addition and Subtraction with Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:  development bug, new level does not match old level for "subsection"
+INFO    : *              located within: "addition_subtraction_irrational_numbers" (xml:id), "Addition and Subtraction with Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:  development bug, new level does not match old level for "subsection"
+INFO    : *              located within: "addition_subtraction_irrational_numbers" (xml:id), "Addition and Subtraction with Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-8uclsei_
+INFO    : Removing temporary directory /tmp/ptx-eouylesw
+INFO    : 
+Success! Run `pretext view html` to see the results.
+
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

@@ -641,12 +641,13 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     <li>
                         <p>
                             <m>540A8_{twelve} - 3B74A_{twelve}</m>
-                        </p>
+                            </p>
+                        
                     </li>
                     <li>
                         <p>
                             <m>10010101_{two}-1101110_{two}</m>
-                        </p>
+                    </p>
                     </li>
                 </ol>
                 <solution>
@@ -889,14 +890,15 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     Thinking about place values as powers of ten, we can use our expoent rules to help us here. First of all, we can think of powers of ten, say <m>10^n</m>, as "a 1 followed by <m>n</m> zeroes". So, for example, <m>10^5 = 100,000.</m>.  
                 </p>
                 <p>
-                    Using our exponent rules we know <m>10^n \times 10^m = 10^{n+m}</m>. For example, <m>10^3 \times 10^5 = 10^8</m>. Or, written as numbers, <m>1000 \times 100,000 = 100,000,000</m>. 
+                    Using our exponent rules we know <m>10^n \times 10^m = 10^{n+m}</m>. For example, <m>10^3 \times 10^5 = 10^{3+5}=10^8</m>. Or, written as numbers, <m>1000 \times 100,000 = 100,000,000</m>. 
                 </p>
                 <p>
                     Moving on to multiplying single digits together, we *could* calculate these using, for example, the repeated addition model of multiplication every time, but single digit multiplication comes up so often its much better to know these off the top of our heads. It is indeed worth memorizing all single digit multiplications if you haven't yet.
                 </p>
-                <p>
-                    INSERT PIC OF MULTIPLICATION TABLE
-                </p>
+                 <p>
+                    <image source="ArithmeticAlgorithms/base_ten_multiplication_table_final.svg">
+                        <shortdescription>Base Ten Multiplication Table</shortdescription>
+                       </image> </p>
                 <p>
                     We can put the previous two ideas together to multiply numbers like <m>9000 \times 400,</m> using associativity and commutativity of multiplication:
                 </p>
@@ -1581,9 +1583,9 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <subsection xml:id="subsec-LongDivision">
             <title>Long Division</title>
             <p>
-               Consider the division problem <m>a \div b</m> where <m>a,b \in mathbb{N}.</m> The idea behind <term>long division</term> uses the partitive mode of division along with the idea of place value. Starting with the largest place value of the dividend <m>a</m>, we group as many of those place into <m>b</m> groups. Any of that place value remaining we ungroup into the next largest place value. 
+               Consider the division problem <m>a \div b</m> where <m>a,b \in \mathbb{N}.</m> The idea behind <term>long division</term> uses the partitive mode of division along with the idea of place value. Starting with the largest place value of the dividend <m>a</m>, we group as many of those place into <m>b</m> groups. Any of that place value remaining we ungroup into the next largest place value. 
                
-               A quick note: remember from the Quotient Remainder Theorem that remainders are always between <m>0</m> and <m>b-1</m> (inclusive) so we know each remainder in our calculation, which we will call a <m>place remainder</m>, must be within this range. 
+               A quick note: remember from the Quotient Remainder Theorem that remainders are always between <m>0</m> and <m>b-1</m> (inclusive) so we know each remainder in our calculation, which we will call a <term>place remainder</term>, must be within this range. 
                
                Let's write the above as an algorithm:
             </p>
@@ -1642,7 +1644,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     INSERT PIC OF THIS
                 </p>
                 <p>
-                    We "ungroup" the <m>2</m> tens into <m>20</m> longs giving us <m>20+7 = 27 </m> longs. We write this in our calculation.
+                    We "ungroup" the <m>2</m> tens into <m>20</m> ones giving us <m>20+7 = 27 </m> ones. We write this in our calculation.
                 </p>
                 <p>
                     INSERT PIC OF THIS

@@ -1,183 +1,680 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2024-08-05T15:19:37-03:00       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Addition Algorithms</title>
-<meta name="Keywords" content="Authored in PreTeXt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Math For Elementary School Teachers">
 <meta property="book:author" content="Me">
-<script>window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    useLabelIds: true,
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
-  },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-  },
-  chtml: {
-    scale: 0.88,
-    mtextInheritFont: true
-  },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
-  },
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.8.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
-<body class="pretext-book ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers</span> <span class="subtitle"></span></a></h1>
+<p class="byline">Me</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ArithmeticAlgorithms.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ArithmeticAlgorithms.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-SubtractionAlgorithms.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="my-great-book.html"><span class="title">Math For Elementary School Teachers:</span> <span class="subtitle"></span></a></h1>
-<p class="byline">Me</p>
-</div>
-</div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ArithmeticAlgorithms.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ArithmeticAlgorithms.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-SubtractionAlgorithms.html" title="Next">Next</a></span>
-</div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ArithmeticAlgorithms.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ArithmeticAlgorithms.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-SubtractionAlgorithms.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
-<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
-<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
-<li><a href="preface.html" data-scroll="preface" class="internal">Preface</a></li>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="test.html" data-scroll="test" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a><ul>
-<li><a href="IntroToLogic.html" data-scroll="IntroToLogic" class="internal">Intro To Logic</a></li>
-<li><a href="sec-ConditionalStatements.html" data-scroll="sec-ConditionalStatements" class="internal">Conditional Statements</a></li>
-<li><a href="sec-Sets.html" data-scroll="sec-Sets" class="internal">Sets</a></li>
-<li><a href="section-4.html" data-scroll="section-4" class="internal">Supplemental Exercises</a></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="test.html" class="internal"><span class="codenumber">1</span> <span class="title">Sample Chapter: The Language of Mathematics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IntroToLogic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Intro To Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-LogicObj" class="internal"><span class="codenumber">1.1.1</span> <span class="title">The Basics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-AndOrNot" class="internal"><span class="codenumber">1.1.2</span> <span class="title">And, Or, and Not</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-Quantifiers" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-QuantVenn" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Viewing Quantified Statements as a Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IntroToLogic.html#subsec-EvenOdd" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Expressing Even and Odd Numbers Algebraically</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="WholeNumbers.html" data-scroll="WholeNumbers" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a><ul>
-<li><a href="sec-Equality.html" data-scroll="sec-Equality" class="internal">Equality</a></li>
-<li><a href="sec-ProblemSolving.html" data-scroll="sec-ProblemSolving" class="internal">Problem Solving</a></li>
-<li><a href="sec-2_1NumberSystemsAndPlaceValue.html" data-scroll="sec-2_1NumberSystemsAndPlaceValue" class="internal">NumberSystemsAndPlaceValueWhole Numbers</a></li>
-<li><a href="sec-NumberSystems.html" data-scroll="sec-NumberSystems" class="internal">Number Systems</a></li>
-<li><a href="sec-ArithmeticOperations.html" data-scroll="sec-ArithmeticOperations" class="internal">Arithmetic Operations</a></li>
-<li><a href="sec-PropertiesOfArithmeticOperations.html" data-scroll="sec-PropertiesOfArithmeticOperations" class="internal">Properties Of Arithmetic Operations</a></li>
-<li><a href="integers.html" data-scroll="integers" class="internal">Integers</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ConditionalStatements.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#sec-ConditionalStatements-2" class="internal"><span class="codenumber">1.2.1</span> <span class="title">What is a Conditional Statement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-JustifyingConditionalStatements" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Justifying Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-WhyProofsAreImportant" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Why Proofs Are Important</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-Counterexamples" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Counterexamples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-CondExist" class="internal"><span class="codenumber">1.2.5</span> <span class="title">The Relationship Between Conditional and Existential Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-OtherFormsCondSt" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Other Forms of Conditional Statements</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ConditionalStatements.html#subsec-BiconditionalSentences" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Biconditional Sentences</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ArithmeticAlgorithms.html" data-scroll="ArithmeticAlgorithms" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a><ul>
-<li><a href="sec-AdditionAlgorithms.html" data-scroll="sec-AdditionAlgorithms" class="active">Addition Algorithms</a></li>
-<li><a href="sec-SubtractionAlgorithms.html" data-scroll="sec-SubtractionAlgorithms" class="internal">Subtraction Algorithms</a></li>
-<li><a href="sec-MultiplicationAlgorithms.html" data-scroll="sec-MultiplicationAlgorithms" class="internal">Multiplication Algorithms</a></li>
-<li><a href="sec-DivisionAlgorithms.html" data-scroll="sec-DivisionAlgorithms" class="internal">Division Algorithms</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Sets.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-IntroToSets" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Intro To Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Sets.html#subsec-CombiningSets" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Combining Sets</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="Fractions.html" data-scroll="Fractions" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a><ul>
-<li><a href="section-16.html" data-scroll="section-16" class="internal">Introduction to Fractions</a></li>
-<li><a href="section-17.html" data-scroll="section-17" class="internal">Arithmetic With Fractions</a></li>
-<li><a href="section-18.html" data-scroll="section-18" class="internal">Ratios, Rates, and Proportions</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="test-5.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Supplemental Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="Decimals.html" data-scroll="Decimals" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a><ul>
-<li><a href="decimals.html" data-scroll="decimals" class="internal">Introduction to Decimals</a></li>
-<li><a href="sec_operations_with_decimals.html" data-scroll="sec_operations_with_decimals" class="internal">Operations with Decimals</a></li>
-<li><a href="terminating-repeating-decimals.html" data-scroll="terminating-repeating-decimals" class="internal">Terminating and Repeating Decimals</a></li>
-<li><a href="percent-and-percent-change.html" data-scroll="percent-and-percent-change" class="internal">Percent and Percent Change</a></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="WholeNumbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Whole Numbers and Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Equality.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Equality.html#subsec-IntroToEquality" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Intro To Equality</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Equality.html#subsec-PropertiesOfEquality" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Properties Of Equality</span></a></div></li></ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SolvingOneEquation" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Solving One Equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SystemsOfEquations" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Intro to Systems Of Equations</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Substitution" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Substitution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Elimination" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Elimination</span></a></div></li></ul>
+</li>
 </ul>
 </li>
-<li class="link">
-<a href="Divisibility.html" data-scroll="Divisibility" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a><ul>
-<li><a href="sec-IntroductoryConcepts.html" data-scroll="sec-IntroductoryConcepts" class="internal">Introductory Concepts</a></li>
-<li><a href="divisibility-theorems-small-numbers.html" data-scroll="divisibility-theorems-small-numbers" class="internal">Divisibility Theorems for Small Numbers</a></li>
-<li><a href="sec-PrimeNumbers.html" data-scroll="sec-PrimeNumbers" class="internal">Prime Numbers</a></li>
-<li><a href="sec-FactorsAndMultiples.html" data-scroll="sec-FactorsAndMultiples" class="internal">Factors and Multiples</a></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2_1NumberSystemsAndPlaceValue.html" class="internal"><span class="codenumber">2.3</span> <span class="title">NumberSystemsAndPlaceValueWhole Numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-NumberSystems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#sec-NumberSystems-2" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Introduction to Number Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingFromBaseTen" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Converting From Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-ConvertingToBaseTen" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Converting To Base Ten</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-BaseTwelve" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-NumberSystems.html#subsec-HistoricalNumberSystems" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Historical Number Systems</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="irrational_numbers.html" data-scroll="irrational_numbers" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a><ul>
-<li><a href="understanding_irrational_numbers.html" data-scroll="understanding_irrational_numbers" class="internal">Understanding Irrational Numbers</a></li>
-<li><a href="sec-SimpleRoots.html" data-scroll="sec-SimpleRoots" class="internal">Simple Roots and Irrationality</a></li>
-<li><a href="sec-OperationsWithIrrationalNumbers.html" data-scroll="sec-OperationsWithIrrationalNumbers" class="internal">Operations With Irrational Numbers</a></li>
-<li><a href="exponents_irrational_numbers.html" data-scroll="exponents_irrational_numbers" class="internal">Exponents and Irrational Numbers</a></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Addition" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Subtraction" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Inequality and Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Multiplication" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Multiplication</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-Exponents" class="internal"><span class="codenumber">2.5.3.1</span> <span class="title">Exponents</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsec-Division" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Division with Remainders</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ArithmeticOperations.html#subsubsec-IntroductionToDivision" class="internal"><span class="codenumber">2.5.4.1</span> <span class="title">Introduction To Division</span></a></div></li></ul>
+</li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
-<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
-<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></li>
-<li class="link"><a href="appendix-1.html" data-scroll="appendix-1" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
-<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
-</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-AdditionAlgorithms"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Addition Algorithms</span>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Properties Of Arithmetic Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-OrderOfOperations" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Order Of Operations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-PropertiesOfArithmetic" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Properties Of Arithmetic</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsec-ConsequencesofProperties" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Consequences of Properties</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-RelatedSubtractionandDivisionProblems" class="internal"><span class="codenumber">2.6.3.1</span> <span class="title">Related Subtraction and Division Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-MultiplicationandDivisionByZero" class="internal"><span class="codenumber">2.6.3.2</span> <span class="title">Multiplication By Zero</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-PropertiesOfArithmeticOperations.html#subsubsec-DivisionByZero" class="internal"><span class="codenumber">2.6.3.3</span> <span class="title">Division By Zero</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="integers.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-addition" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Visualizing Integer Addition</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-add-integers" class="internal"><span class="title">How to Add Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-addition" class="internal"><span class="codenumber">2.7.1.1</span> <span class="title">Properties of Integer Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity" class="internal"><span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity" class="internal"><span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse" class="internal"><span class="title">Additive Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-identity" class="internal"><span class="title">Additive Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-subtraction" class="internal"><span class="codenumber">2.7.1.2</span> <span class="title">Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="integers.html#visualizing-integer-subtraction" class="internal"><span class="title">Visualizing Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-subtract-integers" class="internal"><span class="title">How to Subtract Integers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-subtraction" class="internal"><span class="title">Properties of Integer Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-subtraction" class="internal"><span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#additive-inverse-subtraction" class="internal"><span class="title">Relationship to Additive Inverse</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-multiplication" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-multiplication" class="internal"><span class="codenumber">2.7.2.1</span> <span class="title">Visualizing Integer Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-multiply-integers" class="internal"><span class="codenumber">2.7.2.2</span> <span class="title">How to Multiply Integers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-multiplication" class="internal"><span class="codenumber">2.7.2.3</span> <span class="title">Proof: <span class="process-math">\((-a) = (-1) \times a\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#proof-of-negative-times-negative" class="internal"><span class="codenumber">2.7.2.4</span> <span class="title">Proof: <span class="process-math">\((-1) \times (-1) = 1\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#properties-of-integer-multiplication" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Properties of Integer Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#commutativity-multiplication" class="internal"><span class="codenumber">2.7.3.1</span> <span class="title">Commutativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#associativity-multiplication" class="internal"><span class="codenumber">2.7.3.2</span> <span class="title">Associativity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#distributivity-multiplication" class="internal"><span class="codenumber">2.7.3.3</span> <span class="title">Distributivity</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#closure-multiplication" class="internal"><span class="codenumber">2.7.3.4</span> <span class="title">Closure</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#multiplicative-identity" class="internal"><span class="codenumber">2.7.3.5</span> <span class="title">Multiplicative Identity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="integers.html#integer-division" class="internal"><span class="codenumber">2.7.4</span> <span class="title">Integer Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#visualizing-integer-division" class="internal"><span class="codenumber">2.7.4.1</span> <span class="title">Visualizing Integer Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="integers.html#how-to-divide-integers" class="internal"><span class="codenumber">2.7.4.2</span> <span class="title">How to Divide Integers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ArithmeticAlgorithms.html" class="internal"><span class="codenumber">3</span> <span class="title">Arithmetic Algorithms</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-AdditionAlgorithms.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Addition Algorithms</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-TheStandardAdditionAlgorithm" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Standard Addition Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-PartialSums" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Partial Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-SameChangeAddition" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-AdditionAlgorithms.html#subsec-LatticeMethodAddition" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Lattice Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Subtraction Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-StandardSubtractionAlgorithm" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Standard Subtraction Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-PartialDifferences" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Partial Differences</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-SameChangeAlgorithm" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Same Change Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SubtractionAlgorithms.html#subsec-EqualAdditionsAlgorithm" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Equal Additions Algorithm</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationPreliminaries" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Multiplication Preliminaries</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-PartialProducts" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Partial Products</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-MultiplicationInBaseTwelve" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Multiplication In Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplication" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Russian Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-ProsAndConsOfMultiplicationAlgorithms" class="internal"><span class="codenumber">3.3.6</span> <span class="title">Pros And Cons Of Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-PartialProductsAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">PartialProductsAlgorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-GridMethod" class="internal"><span class="codenumber">3.3.6.2</span> <span class="title">Grid Method</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsubsec-StandardMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.3</span> <span class="title">Standard Multiplication Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-MultiplicationAlgorithms.html#subsec-RussianMultiplicationAlgorithm" class="internal"><span class="codenumber">3.3.6.1</span> <span class="title">Russian Multiplication Algorithm</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-DivisionAlgorithms.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Division Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivision" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Long Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-LongDivisionBaseTwelve" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Long Division Base Twelve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-DivisionAlgorithms.html#subsec-ShortDivision" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Short Division</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Fractions.html" class="internal"><span class="codenumber">4</span> <span class="title">Fractions and Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-2.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-8" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Examples of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#subsec-MakingSenseOfFractions" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Making Sense Of Fractions and Division of Whole Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#Fractions-2-10" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Equivalent Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingFractions" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Comparing Fractions Using a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#ComparingMultipleFractions" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Comparing Multiple Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-2.html#DensityOfFractions" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Density of Fractions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-3.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Arithmetic With Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#AddingSubtractingFractions" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Adding and Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#MixedFractions" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Mixed Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#ImproperToFractions" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Converting Improper Fractions to Mixed Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#subsec-MultiplicationOfFractions" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Multiplication of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-3.html#Fractions-3-6" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Division of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="Fractions-3.html#negative-exponents-fractions" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Negative Exponents and Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="Fractions-3.html#simplify-compound-fraction" class="internal"><span class="codenumber">4.2.6.1</span> <span class="title">Simplifying Compound Fractions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Fractions-4.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Ratios, Rates, and Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Ratios</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Fractions-4.html#Fractions-4-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Proportions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Decimals.html" class="internal"><span class="codenumber">5</span> <span class="title">Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="decimals.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction to Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="decimals.html#decimal-fractions" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Decimal Fractions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="decimals.html#decimal-fractions-2" class="internal"><span class="codenumber">5.1.1.1</span> <span class="title">Decimal Fractions and Their Relationship to Whole Numbers</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#decimal-representation" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#pictorial-representation" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Pictorial Representation of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="decimals.html#comparing-decimals" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Comparing Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_operations_with_decimals.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Operations with Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_add_subtract_decimals" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Addition and Subtraction with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_multiply_decimals" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Multiplication with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_operations_with_decimals.html#subsec_divide_decimals" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Division with Decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Terminating and Repeating Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#terminating-decimals" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Terminating Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-long-division" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Expressing a Fraction as a Repeating Decimal Using Long Division</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="terminating-repeating-decimals.html#repeating-decimals-as-rational-numbers" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Representing All Repeating Decimals as Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#CanRepeatingDecimalsEqual1" class="internal"><span class="codenumber">5.3.3.1</span> <span class="title">Can Repeating Decimals Equal 1?</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#repetend-and-period" class="internal"><span class="codenumber">5.3.3.2</span> <span class="title">Repetend and Period of a Repeated Decimal</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="terminating-repeating-decimals.html#converting-repeating-decimal-to-fraction" class="internal"><span class="codenumber">5.3.3.3</span> <span class="title">Converting a Repeating Decimal to a Fraction</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="percent-and-percent-change.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percent and Percent Change</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="percent-and-percent-change.html#introduction-to-percent" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Introduction to Percent</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-ratios-to-percents" class="internal"><span class="codenumber">5.4.1.1</span> <span class="title">Converting Ratios to Percents</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#converting-fractions-to-percents" class="internal"><span class="codenumber">5.4.1.2</span> <span class="title">Converting Fractions to Percents</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#visualizing-percents" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Visualizing Percents Using a Bar Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-vs-percent-change" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Percent vs. Percent Change</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="percent-and-percent-change.html#percent-change-vs-percentage-point-change" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Percent Change vs. Percentage Point Change</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Divisibility.html" class="internal"><span class="codenumber">6</span> <span class="title">Divisibility and Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Introductory Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility2" class="internal"><span class="codenumber">6.1.1.1</span> <span class="title">Intro to Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TransitivityAndDivisibility" class="internal"><span class="codenumber">6.1.1.2</span> <span class="title">Transitivity And Divisibility</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-properties" class="internal"><span class="codenumber">6.1.1.3</span> <span class="title">Divisibility Properties of 0, 1, and a Number with Itself</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#divisibility-theorems" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Divisibility Theorems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem1" class="internal"><span class="codenumber">6.1.2.1</span> <span class="title">Theorem 1</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem2" class="internal"><span class="codenumber">6.1.2.2</span> <span class="title">Theorem 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#theorem3" class="internal"><span class="codenumber">6.1.2.3</span> <span class="title">Theorem 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-IntroductoryConcepts.html#subsubsec-TheOtherCase" class="internal"><span class="codenumber">6.1.2.4</span> <span class="title">TheOtherCase</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Theorems for Small Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-IntroductionDivThms" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2-4-8" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Divisibility Rules for 2, 4, and 8</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-2" class="internal"><span class="codenumber">6.2.2.1</span> <span class="title">Divisibility Rule for 2</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-4" class="internal"><span class="codenumber">6.2.2.2</span> <span class="title">Divisibility Rule for 4</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-rule-8" class="internal"><span class="codenumber">6.2.2.3</span> <span class="title">Divisibility Rule for 8</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-DivisibilityRuleforHigherPowersof2" class="internal"><span class="codenumber">6.2.2.4</span> <span class="title">Divisibility Rule for Higher Powers of 2</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Rule For 5</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRulesFor3And9" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Rules For 3 And 9</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-DivisibilityRuleFor11" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Divisibility Rule For 11</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-CompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Compound Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-WhenCompundDivisibilityRulesWork" class="internal"><span class="codenumber">6.2.6.1</span> <span class="title">When Compund Divisibility Rules Work</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsubsec-SomeCommonCompoundDivisibilityRules" class="internal"><span class="codenumber">6.2.6.2</span> <span class="title">Some Common Compound Divisibility Rules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8" class="internal"><span class="codenumber">6.2.7</span> <span class="title">Iterative Divisibility Rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-4" class="internal"><span class="codenumber">6.2.7.1</span> <span class="title">Divisibility by 3</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-5" class="internal"><span class="codenumber">6.2.7.2</span> <span class="title">Divisibility by 9</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#divisibility-theorems-small-numbers-8-6" class="internal"><span class="codenumber">6.2.7.3</span> <span class="title">Divisibility by 11</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="divisibility-theorems-small-numbers.html#subsec-MakingDivisibilityRules" class="internal"><span class="codenumber">6.2.8</span> <span class="title">MakingDivisibilityRules</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-PrimeNumbers.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Prime Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-FindingPrimeNumbers" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Finding Prime Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowManyPrimeNumbersExist" class="internal"><span class="codenumber">6.3.2</span> <span class="title">How Many Prime Numbers Exist</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-PrimeNumbers.html#subsec-HowToDetermineIfaNumberisPrime" class="internal"><span class="codenumber">6.3.3</span> <span class="title">How To Determine If a Number is Prime</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Factors and Multiples</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-PrimesAsBuildingBlocks" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Primes As Building Blocks</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsec-HowManyFactorsDoesANumberHave" class="internal"><span class="codenumber">6.4.2</span> <span class="title">How Many Factors Does A Number Have?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#subsubsec-PuttingItAllTogether" class="internal"><span class="codenumber">6.4.2.1</span> <span class="title">Putting It All Together</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_lcm_intro" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Greatest Common Divisor and Least Common Multiple</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#understanding_gcd_lcm" class="internal"><span class="codenumber">6.4.3.1</span> <span class="title">Unraveling the Concepts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_prime_factorization" class="internal"><span class="title">Understanding GCD Through Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_concept" class="internal"><span class="title">Least Common Multiple (LCM)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_example" class="internal"><span class="title">Exploring LCM with an Example</span></a></div></li></ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#word_problems_gcd_lcm" class="internal"><span class="codenumber">6.4.4</span> <span class="title">Word Problems: GCD and LCM in Practice</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem1_gcd" class="internal"><span class="codenumber">6.4.4.1</span> <span class="title">Problem 1: Distributing Items in Boxes</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#problem2_lcm" class="internal"><span class="codenumber">6.4.4.2</span> <span class="title">Problem 2: Buying Ingredients for Burgers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#venn_diagrams_gcd_lcm" class="internal"><span class="codenumber">6.4.4.3</span> <span class="title">Visualizing GCD and LCM with Venn Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Understanding the Euclidean Algorithm</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_basics" class="internal"><span class="codenumber">6.4.5.1</span> <span class="title">Basic Principles</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_procedure" class="internal"><span class="codenumber">6.4.5.2</span> <span class="title">Applying the Euclidean Algorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#euclidean_algorithm_examples" class="internal"><span class="codenumber">6.4.5.3</span> <span class="title">Additional Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="irrational_numbers.html" class="internal"><span class="codenumber">7</span> <span class="title">Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="understanding_irrational_numbers.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Understanding Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#examples_of_irrational_numbers" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Examples of Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-TypesOfIrrationalNumbers" class="internal"><span class="codenumber">7.1.2</span> <span class="title">TypesOfIrrationalNumbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="understanding_irrational_numbers.html#subsec-FunctionsBriefly" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Functions Briefly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SimpleRoots.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Simple Roots and Irrationality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-PrincipalRoots" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Principal Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-nthPowers" class="internal"><span class="codenumber">7.2.2</span> <span class="title">nth Powers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SimpleRoots.html#subsec-ProvingIrrationalityofnthRoots" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Proving Irrationality of nth Roots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Operations With Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#addition_subtraction_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Addition and Subtraction with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#multiplication_division_irrational_numbers" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Multiplication and Division with Irrational Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-OperationsWithIrrationalNumbers.html#more_elaborate_examples_irrationality" class="internal"><span class="codenumber">7.3.2</span> <span class="title">More Elaborate Examples of Irrationality</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="exponents_irrational_numbers.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exponents and Irrational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#nth_root_exponent" class="internal"><span class="codenumber">7.4.1</span> <span class="title">nth Root as Exponent 1/n</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#multiplying_dividing_roots" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Multiplying and Dividing nth Roots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying-principal-roots" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Simplifying <span class="process-math">\(n\)</span>th Principal Roots by Factoring Out <span class="process-math">\(n\)</span>th Powers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#quotient-remainder-theorem" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Using the Quotient Remainder Theorem</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#more-examples" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Additional Examples</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="exponents_irrational_numbers.html#simplifying_fractional_powers" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Simplifying Expressions with Fractional Powers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-AdditionAlgorithms"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.1</span><span class="space"> </span><span class="title">Addition Algorithms</span>
 </h2>
 <section class="subsection" id="subsec-TheStandardAdditionAlgorithm"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.1.1</span> <span class="title">The Standard Addition Algorithm</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="space"> </span><span class="title">The Standard Addition Algorithm</span>
 </h3>
-<p id="p-834">The vast majority of students who learn arithmetic in North America lean to add using the following algorithm. As it's so common, it usually gets named the <dfn class="terminology">standard addition algorithm</dfn>. In short, starting from the smallest place value to the largest (that is, from right to left) we add the place values of our numbers separately, and regroup (or "carry") any groups of the next largest place value (so the place value directly to the left) as we go.</p>
-<p id="p-835">We can write this algorithmically (as a series of steps) as follows. Also note that these steps are written in language appropriate for university students, so teachers would have to adapt the wording appropriately for their audience of students:</p>
-<ol class="decimal">
-<li id="li-224"><p id="p-836">Write one number below the other so that each place value is in its own column. Now begin at the rightmost column.</p></li>
-<li id="li-225"><p id="p-837">Add the digits together (including any regroupings). If the sum is 10 or larger, write a 1 above the column to the left (this signifies that we regrouped 10 of the current place value to one of the place value to the left.)</p></li>
-<li id="li-226"><p id="p-838">If there are no non-zero digits in any column to the left, you are done. Otherwise move to the next column to the left and go to Step 2.</p></li>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-2">The vast majority of students who learn arithmetic in North America lean to add using the following algorithm. As it’s so common, it usually gets named the <dfn class="terminology">standard addition algorithm</dfn>. In short, starting from the smallest place value to the largest (that is, from right to left) we add the place values of our numbers separately, and regroup (or "carry") any groups of the next largest place value (so the place value directly to the left) as we go.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-3">We can write this algorithmically (as a series of steps) as follows. Also note that these steps are written in language appropriate for university students, so teachers would have to adapt the wording appropriately for their audience of students:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-TheStandardAdditionAlgorithm-4">
+<li id="subsec-TheStandardAdditionAlgorithm-4-1">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-4-1-1">Write one number below the other so that each place value is in its own column. Now begin at the rightmost column.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-TheStandardAdditionAlgorithm-4-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-TheStandardAdditionAlgorithm-4-2">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-4-2-1">Add the digits together (including any regroupings). If the sum is 10 or larger, write a 1 above the column to the left (this signifies that we regrouped 10 of the current place value to one of the place value to the left.)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-TheStandardAdditionAlgorithm-4-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-TheStandardAdditionAlgorithm-4-3">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-4-3-1">If there are no non-zero digits in any column to the left, you are done. Otherwise move to the next column to the left and go to Step 2.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-4-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-TheStandardAdditionAlgorithm-4-3" title="Copy permalink for Item 3">🔗</a></div>
+</li>
 </ol>
-<article class="example example-like" id="example-62"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-62"><h4 class="heading">
+<details id="subsec-TheStandardAdditionAlgorithm-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-62"><article class="example example-like"><p id="p-839">Let's add <span class="process-math">\(447+629\)</span> slowly and carefully using this algorithm and visualize it using blocks.</p>
-<p id="p-840">First, let's view the two numbers in terms of blocks:</p>
-<p id="p-841"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629a.svg" class="contained"></div></p>
-<p id="p-842">First we add the ones place. Note tha we have <span class="process-math">\(7+9 = 16\)</span> ones. We can regroup ten (10) of those to make one of the next place value, that is, one ten. We write that regrouping as a 1 above, and we are still left with 6 ones, so we can write that down:</p>
-<p id="p-843"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629b.svg" class="contained"></div></p>
-<p id="p-844">We now move on to the next place; the tens. We have <span class="process-math">\(4+2+1\)</span> tens (the additional 1 being the regrouping from the last step). So we have 7 tens. Note that as we're working in our usual base ten, we do not have enough tens to regroup, so we simply write that we have 7 tens. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629c.svg" class="contained"></div></p>
-<p id="p-845">Now let's move on to the next place; the hundreds. We have <span class="process-math">\(4+6=10\)</span> hundreds. We can group all ten of those (with 0 left over after regrouping) to make one of the next place value, that is, one thousand. As this is the final place that our numbers contain, we don't need to mark a regrouping and simply write down that we have 1 thousand and 0 hundreds.</p>
-<p id="p-846">Thus we finally have that <span class="process-math">\(447+629=1076\text{.}\)</span></p>
-<p id="p-847"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629d.svg" class="contained"></div></p>
-<p id="p-848">If we think about this carefully, the addition algorithm above relies on the properties of associativity and commutativity in addition to place value. We are using these propertie when we add each place value separately and regroup any "carries" with the place value to the left. Let's write out what the standard addition algorithm is doing in the example above in a little more detail.</p>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-TheStandardAdditionAlgorithm-5-1">Let’s add <span class="process-math">\(447+629\)</span> slowly and carefully using this algorithm and visualize it using blocks.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-5-2">First, let’s view the two numbers in terms of blocks:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-5-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-5-3">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629a.svg" class="contained" alt="447 and 629 in blocks"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-5-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-5-4">First we add the ones place. Note tha we have <span class="process-math">\(7+9 = 16\)</span> ones. We can regroup ten (10) of those to make one of the next place value, that is, one ten. We write that regrouping as a 1 above, and we are still left with 6 ones, so we can write that down:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-5-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-5-5">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629b.svg" class="contained" alt="447 and 629 in blocks adding ones"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-5-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-5-6">We now move on to the next place; the tens. We have <span class="process-math">\(4+2+1\)</span> tens (the additional 1 being the regrouping from the last step). So we have 7 tens. Note that as we’re working in our usual base ten, we do not have enough tens to regroup, so we simply write that we have 7 tens. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629c.svg" class="contained" alt="447 and 629 in blocks adding tens"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-5-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-5-7">Now let’s move on to the next place; the hundreds. We have <span class="process-math">\(4+6=10\)</span> hundreds. We can group all ten of those (with 0 left over after regrouping) to make one of the next place value, that is, one thousand. As this is the final place that our numbers contain, we don’t need to mark a regrouping and simply write down that we have 1 thousand and 0 hundreds.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-5-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-5-8">Thus we finally have that <span class="process-math">\(447+629=1076\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-5-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-5-9">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629d.svg" class="contained" alt="447 and 629 in blocks adding hundreds"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-5-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-5-10">If we think about this carefully, the addition algorithm above relies on the properties of associativity and commutativity in addition to place value. We are using these propertie when we add each place value separately and regroup any "carries" with the place value to the left. Let’s write out what the standard addition algorithm is doing in the example above in a little more detail.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-5-10" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
 447+629 = (400+40+7) + (600+20+9) \text{ explanded place value representation}
@@ -222,93 +719,249 @@
 \begin{equation*}
 = 1076 \text{ addition}
 \end{equation*}
-</div></article></div>
-<p id="p-849">We won't go into as much detail with all algorithms in this section, but note that underpinning all of the algorithms are the arithmetic properties from SECTION REFERENCE</p>
-<p id="p-850">Note that the pictoral/block representation becomes difficult after thousands (as we run out of dimensions, as discussed above) but the idea behind the algorithm still applies for numbers with any place values.</p>
-<article class="exercise exercise-like" id="exercise-35"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-35"><h4 class="heading">
+</div>
+<div class="autopermalink" data-description="Example 3.1.1"><a href="#subsec-TheStandardAdditionAlgorithm-5" title="Copy permalink for Example 3.1.1">🔗</a></div></article></details><div class="para" id="subsec-TheStandardAdditionAlgorithm-6">We won’t go into as much detail with all algorithms in this section, but note that underpinning all of the algorithms are the arithmetic properties from SECTION REFERENCE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-7">Note that the pictoral/block representation becomes difficult after thousands (as we run out of dimensions, as discussed above) but the idea behind the algorithm still applies for numbers with any place values.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-TheStandardAdditionAlgorithm-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-35"><article class="exercise exercise-like"><p id="p-851">Add the following numbers using the standard algorithm. Draw blocks as we did above and make sure to note the place values of any regroupings/carries you do:</p>
-<ol class="decimal">
-<li id="li-227"><p id="p-852"><span class="process-math">\(\displaystyle 45+58\)</span></p></li>
-<li id="li-228"><p id="p-853"><span class="process-math">\(\displaystyle 208+737\)</span></p></li>
-<li id="li-229"><p id="p-854"><span class="process-math">\(\displaystyle 9997+839\)</span></p></li>
-</ol></article></div>
-<p id="p-855">Of course, there is nothing special about base ten; we can add numbers in any base we wish! Let's look at two examples in other bases. Note that we will not have the "addition facts" of adding single digits in other bases memorized, so we have to be careful when adding. If needed we can do a little side calculation, or draw a diagram to help us.</p>
-<p id="p-856">Also, so we don't get confused with the language of tens/hundreds/thousands/etc, we refer to the place value to the left of the ones the "longs" place, the next one to the left the "squares" place, and the next one to the left of that the "cubes" place.</p>
-<article class="example example-like" id="example-63"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-63"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-63"><article class="example example-like"><p id="p-857">Using the standard addition algorithm, let's add <span class="process-math">\(435_{seven}+43_{seven}.\)</span> The algorithm remains the same, except now we regroup whenever we have seven of one place.</p>
-<p id="p-858"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43a.svg" class="contained"></div></p>
-<p id="p-859">We start by adding the ones. We have <span class="process-math">\(5_{seven}+3_{seven} = 11_{seven}\)</span> as we regroup seven of the eight ones to get 1 long (made up of seven ones) and 1 one. We write down the one remaining:</p>
-<p id="p-860"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43b.svg" class="contained"></div></p>
-<p id="p-861">Now we move on to add the longs place. We have <span class="process-math">\(3_{seven}+4_{seven}+1_{seven}=10_{seven}\text{.}\)</span> Thus we regroup seven longs to make one square, adn we have one long left over. We write this down in our working:</p>
-<p id="p-862"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43c.svg" class="contained"></div></p>
-<p id="p-863">Finally we add the squares place. We have <span class="process-math">\(4_{seven}+1_{seven}=5_{seven}\)</span> squares, nothing that the bottom addend has no squares. Thus we write this down:</p>
-<p id="p-864"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43d.svg" class="contained"></div></p>
-<p id="p-865">Thus we have that <span class="process-math">\(435_{seven}+43_{seven} = 511_{seven}\)</span> and we have finished.</p></article></div>
-<p id="p-866">Let's now work in base twelve. Remember we *do not* regroup when we have ten or eleven of one place, and we use the symbols <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> to denote these quantities, respectively.</p>
-<article class="example example-like" id="example-64"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-64"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-64"><article class="example example-like"><p id="p-867">Let's find the sum <span class="process-math">\(6A3_{twelve}+90B_{twelve}\text{.}\)</span> First of all, it will be helpful to view these as blocks:</p>
-<p id="p-868"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Ba.svg" class="contained"></div></p>
-<p id="p-869">Let's start with the ones place. We have <span class="process-math">\(3_{twelve}+B_{twelve} = 12_{twelve} \)</span> ones (think three + eleven ones is fourteen ones), where we regrouped twelve ones to make 1 long (containing twelve ones) with 2 ones remaining. We "carry" our one long, and write down our 2 ones:</p>
-<p id="p-870"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Bb.svg" class="contained"></div></p>
-<p id="p-871">Now we add our longs place. We have <span class="process-math">\(A_{twelve}+0_{twelve}+1_{twelve} = B_{twelve}\)</span> longs. Since eleven longs is not enough to regroup in base twelve, we simply write this down.</p>
-<p id="p-872"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Bc.svg" class="contained"></div></p>
-<p id="p-873">Now we add our squares place. We have <span class="process-math">\(6_{twelve}+9_{twelve} = 13_{twelve}\)</span> squares, where twelve squares are regrouped to make one of the next place value (cubes) and we have 3 squares remaining. (Do this calculation on the side to make sure that you understand it). Since we are "out" of places in our numbers we simply write this down in our algorithm:</p>
-<p id="p-874"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Bd.svg" class="contained"></div></p>
-<p id="p-875">We have just calculated that <span class="process-math">\(6A3_{twelve}+90B_{twelve} = 13B2_{twelve}\)</span> and we are finished.</p></article></div>
-<article class="exercise exercise-like" id="exercise-36"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-36"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-36"><article class="exercise exercise-like"><p id="p-876">Add the following using pictures/blocks as a guide if needed. If you do, try to make sure you understand how the blocks correspond to steps in the algorithm:</p>
-<ol class="decimal">
-<li id="li-230"><p id="p-877"><span class="process-math">\(\displaystyle 45_{eight} + 71_{eight}\)</span></p></li>
-<li id="li-231"><p id="p-878"><span class="process-math">\(\displaystyle 210_{three}+221_{three}\)</span></p></li>
-<li id="li-232"><p id="p-879"><span class="process-math">\(\displaystyle 54A_{twelve}+BA7_{twelve}\)</span></p></li>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-TheStandardAdditionAlgorithm-8-1">Add the following numbers using the standard algorithm. Draw blocks as we did above and make sure to note the place values of any regroupings/carries you do:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-8-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-TheStandardAdditionAlgorithm-8-2">
+<li id="subsec-TheStandardAdditionAlgorithm-8-2-1">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-8-2-1-1">
+<span class="process-math">\(\displaystyle 45+58\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-8-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.2.1"><a href="#subsec-TheStandardAdditionAlgorithm-8-2-1" title="Copy permalink for Item 3.1.2.1">🔗</a></div>
+</li>
+<li id="subsec-TheStandardAdditionAlgorithm-8-2-2">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-8-2-2-1">
+<span class="process-math">\(\displaystyle 208+737\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-8-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.2.2"><a href="#subsec-TheStandardAdditionAlgorithm-8-2-2" title="Copy permalink for Item 3.1.2.2">🔗</a></div>
+</li>
+<li id="subsec-TheStandardAdditionAlgorithm-8-2-3">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-8-2-3-1">
+<span class="process-math">\(\displaystyle 9997+839\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-8-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.2.3"><a href="#subsec-TheStandardAdditionAlgorithm-8-2-3" title="Copy permalink for Item 3.1.2.3">🔗</a></div>
+</li>
 </ol>
-<p id="p-880">For these, do not draw pictures. Add them using only the standard addition algorithm:</p>
-<ol class="decimal">
-<li id="li-233"><p id="p-881"><span class="process-math">\(\displaystyle 552_{six}+25_{six}\)</span></p></li>
-<li id="li-234"><p id="p-882"><span class="process-math">\(101101_{two}+110111_{two}\)</span> (remember you only need two of a place to regroup, and the digit set base two is <span class="process-math">\(D=\{0,1\}\)</span>).</p></li>
-<li id="li-235"><p id="p-883"><span class="process-math">\(\displaystyle 4A095_{twelve}+3BB78_{twelve}\)</span></p></li>
-<li id="li-236"><p id="p-884"><span class="process-math">\(422_{five}+344_{five}+43_{five}+141_{five}\)</span> (you may have to regroup more that one grouping in some places)</p></li>
-</ol></article></div></section><section class="subsection" id="subsec-PartialSums"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.1.2</span> <span class="title">Partial Sums</span>
+<div class="autopermalink" data-description="Checkpoint 3.1.2"><a href="#subsec-TheStandardAdditionAlgorithm-8" title="Copy permalink for Checkpoint 3.1.2">🔗</a></div></article></details><div class="para" id="subsec-TheStandardAdditionAlgorithm-9">Of course, there is nothing special about base ten; we can add numbers in any base we wish! Let’s look at two examples in other bases. Note that we will not have the "addition facts" of adding single digits in other bases memorized, so we have to be careful when adding. If needed we can do a little side calculation, or draw a diagram to help us.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-10">Also, so we don’t get confused with the language of tens/hundreds/thousands/etc, we refer to the place value to the left of the ones the "longs" place, the next one to the left the "squares" place, and the next one to the left of that the "cubes" place.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-10" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-TheStandardAdditionAlgorithm-11" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-TheStandardAdditionAlgorithm-11-1">Using the standard addition algorithm, let’s add <span class="process-math">\(435_{seven}+43_{seven}.\)</span> The algorithm remains the same, except now we regroup whenever we have seven of one place.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-11-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-11-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43a.svg" class="contained" alt="435+43 base 7 in blocks"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-11-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-11-3">We start by adding the ones. We have <span class="process-math">\(5_{seven}+3_{seven} = 11_{seven}\)</span> as we regroup seven of the eight ones to get 1 long (made up of seven ones) and 1 one. We write down the one remaining:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-11-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-11-4">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43b.svg" class="contained" alt="435+43 base 7 in blocks adding ones"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-11-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-11-5">Now we move on to add the longs place. We have <span class="process-math">\(3_{seven}+4_{seven}+1_{seven}=10_{seven}\text{.}\)</span> Thus we regroup seven longs to make one square, adn we have one long left over. We write this down in our working:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-11-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-11-6">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43c.svg" class="contained" alt="435+43 base 7 in blocks adding longs"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-11-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-11-7">Finally we add the squares place. We have <span class="process-math">\(4_{seven}+1_{seven}=5_{seven}\)</span> squares, nothing that the bottom addend has no squares. Thus we write this down:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-11-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-11-8">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/435+43d.svg" class="contained" alt="435+43 base 7 in blocks adding squares"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-11-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-11-9">Thus we have that <span class="process-math">\(435_{seven}+43_{seven} = 511_{seven}\)</span> and we have finished.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-11-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.1.3"><a href="#subsec-TheStandardAdditionAlgorithm-11" title="Copy permalink for Example 3.1.3">🔗</a></div></article></details><div class="para" id="subsec-TheStandardAdditionAlgorithm-12">Let’s now work in base twelve. Remember we *do not* regroup when we have ten or eleven of one place, and we use the symbols <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> to denote these quantities, respectively.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-12" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-TheStandardAdditionAlgorithm-13" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-TheStandardAdditionAlgorithm-13-1">Let’s find the sum <span class="process-math">\(6A3_{twelve}+90B_{twelve}\text{.}\)</span> First of all, it will be helpful to view these as blocks:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-13-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-13-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Ba.svg" class="contained" alt="6A3+90B base 12 in blocks"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-13-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-13-3">Let’s start with the ones place. We have <span class="process-math">\(3_{twelve}+B_{twelve} = 12_{twelve} \)</span> ones (think three + eleven ones is fourteen ones), where we regrouped twelve ones to make 1 long (containing twelve ones) with 2 ones remaining. We "carry" our one long, and write down our 2 ones:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-13-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-13-4">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Bb.svg" class="contained" alt="6A3+90B base 12 in blocks adding ones"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-13-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-13-5">Now we add our longs place. We have <span class="process-math">\(A_{twelve}+0_{twelve}+1_{twelve} = B_{twelve}\)</span> longs. Since eleven longs is not enough to regroup in base twelve, we simply write this down.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-13-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-13-6">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Bc.svg" class="contained" alt="6A3+90B base 12 in blocks adding longs"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-13-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-13-7">Now we add our squares place. We have <span class="process-math">\(6_{twelve}+9_{twelve} = 13_{twelve}\)</span> squares, where twelve squares are regrouped to make one of the next place value (cubes) and we have 3 squares remaining. (Do this calculation on the side to make sure that you understand it). Since we are "out" of places in our numbers we simply write this down in our algorithm:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-13-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-13-8">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/6A3+90Bd.svg" class="contained" alt="6A3+90B base 12 in blocks adding squares"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-13-8" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-13-9">We have just calculated that <span class="process-math">\(6A3_{twelve}+90B_{twelve} = 13B2_{twelve}\)</span> and we are finished.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-13-9" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.1.4"><a href="#subsec-TheStandardAdditionAlgorithm-13" title="Copy permalink for Example 3.1.4">🔗</a></div></article></details><details id="subsec-TheStandardAdditionAlgorithm-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para logical" id="subsec-TheStandardAdditionAlgorithm-14-1">
+<div class="para">Add the following using pictures/blocks as a guide if needed. If you do, try to make sure you understand how the blocks correspond to steps in the algorithm:</div>
+<ol class="decimal" id="subsec-TheStandardAdditionAlgorithm-14-1-1">
+<li id="subsec-TheStandardAdditionAlgorithm-14-1-1-1">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-14-1-1-1-1">
+<span class="process-math">\(\displaystyle 45_{eight} + 71_{eight}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-14-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.5.1"><a href="#subsec-TheStandardAdditionAlgorithm-14-1-1-1" title="Copy permalink for Item 3.1.5.1">🔗</a></div>
+</li>
+<li id="subsec-TheStandardAdditionAlgorithm-14-1-1-2">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-14-1-1-2-1">
+<span class="process-math">\(\displaystyle 210_{three}+221_{three}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-14-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.5.2"><a href="#subsec-TheStandardAdditionAlgorithm-14-1-1-2" title="Copy permalink for Item 3.1.5.2">🔗</a></div>
+</li>
+<li id="subsec-TheStandardAdditionAlgorithm-14-1-1-3">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-14-1-1-3-1">
+<span class="process-math">\(\displaystyle 54A_{twelve}+BA7_{twelve}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-14-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.5.3"><a href="#subsec-TheStandardAdditionAlgorithm-14-1-1-3" title="Copy permalink for Item 3.1.5.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-14-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-TheStandardAdditionAlgorithm-14-2">
+<div class="para">For these, do not draw pictures. Add them using only the standard addition algorithm:</div>
+<ol class="decimal" id="subsec-TheStandardAdditionAlgorithm-14-2-1">
+<li id="subsec-TheStandardAdditionAlgorithm-14-2-1-1">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-14-2-1-1-1">
+<span class="process-math">\(\displaystyle 552_{six}+25_{six}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-14-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.5.1"><a href="#subsec-TheStandardAdditionAlgorithm-14-2-1-1" title="Copy permalink for Item 3.1.5.1">🔗</a></div>
+</li>
+<li id="subsec-TheStandardAdditionAlgorithm-14-2-1-2">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-14-2-1-2-1">
+<span class="process-math">\(101101_{two}+110111_{two}\)</span> (remember you only need two of a place to regroup, and the digit set base two is <span class="process-math">\(D=\{0,1\}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-14-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.5.2"><a href="#subsec-TheStandardAdditionAlgorithm-14-2-1-2" title="Copy permalink for Item 3.1.5.2">🔗</a></div>
+</li>
+<li id="subsec-TheStandardAdditionAlgorithm-14-2-1-3">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-14-2-1-3-1">
+<span class="process-math">\(\displaystyle 4A095_{twelve}+3BB78_{twelve}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-14-2-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.5.3"><a href="#subsec-TheStandardAdditionAlgorithm-14-2-1-3" title="Copy permalink for Item 3.1.5.3">🔗</a></div>
+</li>
+<li id="subsec-TheStandardAdditionAlgorithm-14-2-1-4">
+<div class="para" id="subsec-TheStandardAdditionAlgorithm-14-2-1-4-1">
+<span class="process-math">\(422_{five}+344_{five}+43_{five}+141_{five}\)</span> (you may have to regroup more that one grouping in some places)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-14-2-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.5.4"><a href="#subsec-TheStandardAdditionAlgorithm-14-2-1-4" title="Copy permalink for Item 3.1.5.4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-TheStandardAdditionAlgorithm-14-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.1.5"><a href="#subsec-TheStandardAdditionAlgorithm-14" title="Copy permalink for Checkpoint 3.1.5">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 3.1.1: The Standard Addition Algorithm"><a href="#subsec-TheStandardAdditionAlgorithm" title="Copy permalink for Subsection 3.1.1: The Standard Addition Algorithm">🔗</a></div></section><section class="subsection" id="subsec-PartialSums"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="space"> </span><span class="title">Partial Sums</span>
 </h3>
-<p id="p-885">In the standard algorithm, we added our regrouping to the next place value as we went. Instead, we could add each place value separately without dealing with the regroupsing and then the regroupings to each place value as our final step. This is called the <dfn class="terminology">partial sum algorithm</dfn>, as you are finding the sums of each place value (these are the partial sums) and then adding these together to obtain the final answer. Let's take a look at an example, and in fact let's look at the same problem that we did previously with the standard addition algorithm:</p>
-<article class="example example-like" id="example-65"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-65"><h4 class="heading">
+<div class="para" id="subsec-PartialSums-2">In the standard algorithm, we added our regrouping to the next place value as we went. Instead, we could add each place value separately without dealing with the regroupsing and then the regroupings to each place value as our final step. This is called the <dfn class="terminology">partial sum algorithm</dfn>, as you are finding the sums of each place value (these are the partial sums) and then adding these together to obtain the final answer. Let’s take a look at an example, and in fact let’s look at the same problem that we did previously with the standard addition algorithm:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialSums-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-PartialSums-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-65"><article class="example example-like"><p id="p-886">Let's add <span class="process-math">\(447+629\)</span> slowly and carefully using partial sums and visualize it using blocks.</p> First we add our ones and find that we have <span class="process-math">\(7+9=16\)</span> ones, noticing that we can regroup 10 ones into a long. <p id="p-887"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629bPartial.svg" class="contained"></div></p> Then, we add the tens and hundreds separately: <span class="process-math">\(40+20=60\)</span><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629cPartial.svg" class="contained"></div> and then <span class="process-math">\(400+600=1000\text{.}\)</span>  We add this to our calculation above to obtain the final answer. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629dPartial.svg" class="contained"></div></article></div>
-<p id="p-888">We note that this is not *that* different to the standard addition algorithm, as the "carries" are added at the end rather than as we go.</p></section><section class="subsection" id="subsec-SameChangeAddition"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.1.3</span> <span class="title">Same Change Algorithm</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-PartialSums-3-1">Let’s add <span class="process-math">\(447+629\)</span> slowly and carefully using partial sums and visualize it using blocks.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialSums-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<span class="process-math">\(7+9=16\)</span><div class="para" id="subsec-PartialSums-3-3">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629bPartial.svg" class="contained" alt="447+629 in blocks adding ones using partial sums"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialSums-3-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<span class="process-math">\(40+20=60\)</span><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629cPartial.svg" class="contained" alt="447+629 in blocks adding longs using partial sums"></div>
+<span class="process-math">\(400+600=1000\text{.}\)</span><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629dPartial.svg" class="contained" alt="447+629 in blocks adding squares using partial sums"></div>
+<div class="autopermalink" data-description="Example 3.1.6"><a href="#subsec-PartialSums-3" title="Copy permalink for Example 3.1.6">🔗</a></div></article></details><div class="para" id="subsec-PartialSums-4">We note that this is not *that* different to the standard addition algorithm, as the "carries" are added at the end rather than as we go.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-PartialSums-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.1.2: Partial Sums"><a href="#subsec-PartialSums" title="Copy permalink for Subsection 3.1.2: Partial Sums">🔗</a></div></section><section class="subsection" id="subsec-SameChangeAddition"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="space"> </span><span class="title">Same Change Algorithm</span>
 </h3>
-<p id="p-889">Let's now discuss the <dfn class="terminology">same change</dfn> algorithm. To help us illustate the idea (any why it's useful to know) we start with an example. Let's add <span class="process-math">\(998+314\)</span> in our heads. Try doing this now.</p>
-<p id="p-890">I'm sure that most people reading this book did not mentally perform the standard algorithm for this calculation. In fact, I can imagine that many people noticed that 998 was 2 smaller than 1000, so they added 2 to 1000 and, to "balance" out, they subtracted 2 from 314. Step 1: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314a.svg" class="contained"></div> Step 2: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314b.svg" class="contained"></div> Step 3: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314c.svg" class="contained"></div> Then adding <span class="process-math">\(1000+312\)</span> is very easy in your head. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314d.svg" class="contained"></div> In fact, you can use this idea to add any two numbers.</p>
-<p id="p-891">In general, we are using the fact that if <span class="process-math">\(a,b, \in \mathbb{N}_0\)</span> we know that <span class="process-math">\(a+b = (a+c)+(b-c)\)</span> since we can use associativity and commutativity to rearrange the RHS to <span class="process-math">\(a+b+(c-c) = a+b+0 = a+b\text{.}\)</span> In fact, since this holds for *any* whole numbers <span class="process-math">\(a,b,c\)</span> we can indeed use this idea to judiciously choose the <span class="process-math">\(c\)</span> in the calculation to make our computation easier.</p>
-<p id="p-892">In the first example we chose <span class="process-math">\(c=2\)</span> so that our addition step in each place value was as easy as possible; adding 0 in fact does nothing. Thus, we turned our calculation into <span class="process-math">\((998+2)+(314-2) = 1000+312 = 1312.\)</span></p>
-<p id="p-893">Note that this idea doesn't necessarily make the calculation easier and other than a few cases like the above, where one number is "close" to a round number, it's not very useful. However, we bring this up because there is a related algorithm for subtraction that is very useful!</p></section><section class="subsection" id="subsec-LatticeMethodAddition"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.1.4</span> <span class="title">Lattice Algorithm</span>
+<div class="para" id="subsec-SameChangeAddition-2">Let’s now discuss the <dfn class="terminology">same change</dfn> algorithm. To help us illustate the idea (any why it’s useful to know) we start with an example. Let’s add <span class="process-math">\(998+314\)</span> in our heads. Try doing this now.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAddition-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAddition-3">I’m sure that most people reading this book did not mentally perform the standard algorithm for this calculation. In fact, I can imagine that many people noticed that 998 was 2 smaller than 1000, so they added 2 to 1000 and, to "balance" out, they subtracted 2 from 314. Step 1: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314a.svg" class="contained" alt="998+314 Same Change"></div> Step 2: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314b.svg" class="contained" alt="998+314 Same Change adding and subtracting"></div> Step 3: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314c.svg" class="contained" alt="998+314 changed to 1000+312"></div> Then adding <span class="process-math">\(1000+312\)</span> is very easy in your head. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/998+314d.svg" class="contained" alt="998+314 changed to 1000+312 final result"></div> In fact, you can use this idea to add any two numbers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAddition-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAddition-4">In general, we are using the fact that if <span class="process-math">\(a,b, \in \mathbb{N}_0\)</span> we know that <span class="process-math">\(a+b = (a+c)+(b-c)\)</span> since we can use associativity and commutativity to rearrange the RHS to <span class="process-math">\(a+b+(c-c) = a+b+0 = a+b\text{.}\)</span> In fact, since this holds for *any* whole numbers <span class="process-math">\(a,b,c\)</span> we can indeed use this idea to judiciously choose the <span class="process-math">\(c\)</span> in the calculation to make our computation easier.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAddition-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAddition-5">In the first example we chose <span class="process-math">\(c=2\)</span> so that our addition step in each place value was as easy as possible; adding 0 in fact does nothing. Thus, we turned our calculation into <span class="process-math">\((998+2)+(314-2) = 1000+312 = 1312.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAddition-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-SameChangeAddition-6">Note that this idea doesn’t necessarily make the calculation easier and other than a few cases like the above, where one number is "close" to a round number, it’s not very useful. However, we bring this up because there is a related algorithm for subtraction that is very useful!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SameChangeAddition-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.1.3: Same Change Algorithm"><a href="#subsec-SameChangeAddition" title="Copy permalink for Subsection 3.1.3: Same Change Algorithm">🔗</a></div></section><section class="subsection" id="subsec-LatticeMethodAddition"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="space"> </span><span class="title">Lattice Algorithm</span>
 </h3>
-<p id="p-894">Another common method is the lattice algorithm. This is very similar to the partial sums algorithm except regroupings are displayed slightly differently. In this algorithm, each place value has a box divided into two diagonally; one section for the place value itself, and one for the next larger place value for the regroupings. This regrouping section looks connected to the diagonal section of the box to the left which contains the same place value. Like partial sums, each place value is then added separately to obtain the final sum. Again, let's look at our usual example. Note that we won't draw the blocks again for this example, as the regrouping is the same as for the other algorthims we've covered:</p>
-<article class="example example-like" id="example-66"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-66"><h4 class="heading">
+<div class="para" id="subsec-LatticeMethodAddition-2">Another common method is the lattice algorithm. This is very similar to the partial sums algorithm except regroupings are displayed slightly differently. In this algorithm, each place value has a box divided into two diagonally; one section for the place value itself, and one for the next larger place value for the regroupings. This regrouping section looks connected to the diagonal section of the box to the left which contains the same place value. Like partial sums, each place value is then added separately to obtain the final sum. Again, let’s look at our usual example. Note that we won’t draw the blocks again for this example, as the regrouping is the same as for the other algorthims we’ve covered:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-LatticeMethodAddition-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-66"><article class="example example-like"><p id="p-895">Let's add <span class="process-math">\(447+629\text{.}\)</span> We align our two numbers as usual, and then draw a box for each place value split into two sections by a diagonal line, and just for teaching purposes, we will indicate the place value of each section of each box.</p>
-<p id="p-896"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629aLattice.svg" class="contained"></div></p>
-<p id="p-897">We now add each place value separately. Starting with the ones place we add <span class="process-math">\(7+9=16\)</span> ones, which we regroup into <span class="process-math">\(1\)</span> ten and <span class="process-math">\(6\)</span> ones. We write this in the leftmost box.</p>
-<p id="p-898"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629bLattice.svg" class="contained"></div></p>
-<p id="p-899">We continue with the other two places similarly. Note that we do not need to regroup any tens, so we leave the hundreds section of that box blank (or we can put a <span class="process-math">\(0\)</span> there). Thus are final partial sum should look like this:</p>
-<p id="p-900"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629cLattice.svg" class="contained"></div></p>
-<p id="p-901">Finally, we add the box sections diagonally to obtain our final sum of <span class="process-math">\(1076\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629dLattice.svg" class="contained"></div></p></article></div>
-<article class="exercise exercise-like" id="exercise-37"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-37"><h4 class="heading">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-LatticeMethodAddition-3-1">Let’s add <span class="process-math">\(447+629\text{.}\)</span> We align our two numbers as usual, and then draw a box for each place value split into two sections by a diagonal line, and just for teaching purposes, we will indicate the place value of each section of each box.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LatticeMethodAddition-3-2">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629aLattice.svg" class="contained" alt="The lattice algorithm setup"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-3-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LatticeMethodAddition-3-3">We now add each place value separately. Starting with the ones place we add <span class="process-math">\(7+9=16\)</span> ones, which we regroup into <span class="process-math">\(1\)</span> ten and <span class="process-math">\(6\)</span> ones. We write this in the leftmost box.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-3-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LatticeMethodAddition-3-4">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629bLattice.svg" class="contained" alt="The lattice algorithm adding ones"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-3-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LatticeMethodAddition-3-5">We continue with the other two places similarly. Note that we do not need to regroup any tens, so we leave the hundreds section of that box blank (or we can put a <span class="process-math">\(0\)</span> there). Thus are final partial sum should look like this:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-3-5" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LatticeMethodAddition-3-6">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629cLattice.svg" class="contained" alt="The lattice algorithm adding longs and squares"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-3-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-LatticeMethodAddition-3-7">Finally, we add the box sections diagonally to obtain our final sum of <span class="process-math">\(1076\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/ArithmeticAlgorithms/447+629dLattice.svg" class="contained" alt="The lattice algorithm final answer"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-3-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.1.7"><a href="#subsec-LatticeMethodAddition-3" title="Copy permalink for Example 3.1.7">🔗</a></div></article></details><details id="subsec-LatticeMethodAddition-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.1.8</span><span class="period">.</span>
-</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-37"><article class="exercise exercise-like"><p id="p-902">Think about the following questions about the algorithms above:</p>
-<ol class="decimal">
-<li id="li-237"><p id="p-903">For which algorithms is direction important? Do you need to add right-to-left, or can you add any place values in any order?</p></li>
-<li id="li-238"><p id="p-904">Which algorithms are easiest to explain using blocks? Which are most difficult?</p></li>
-<li id="li-239"><p id="p-905">Which algorithms are the quickest? Are they the quickest in all cases?</p></li>
-<li id="li-240"><p id="p-906">Which algorithms take up the least amount of space on your paper? Which take up the most?</p></li>
-<li id="li-241"><p id="p-907">For each algorithm, determine a situation where that algorithm is the best to use. The situation could be adding particular numbers efficiently, or needing to teach addition in the classroom, or some other situation!</p></li>
-</ol></article></div></section></section></div></main>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-LatticeMethodAddition-4-1">Think about the following questions about the algorithms above:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-LatticeMethodAddition-4-2">
+<li id="subsec-LatticeMethodAddition-4-2-1">
+<div class="para" id="subsec-LatticeMethodAddition-4-2-1-1">For which algorithms is direction important? Do you need to add right-to-left, or can you add any place values in any order?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-4-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.8.1"><a href="#subsec-LatticeMethodAddition-4-2-1" title="Copy permalink for Item 3.1.8.1">🔗</a></div>
+</li>
+<li id="subsec-LatticeMethodAddition-4-2-2">
+<div class="para" id="subsec-LatticeMethodAddition-4-2-2-1">Which algorithms are easiest to explain using blocks? Which are most difficult?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-4-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.8.2"><a href="#subsec-LatticeMethodAddition-4-2-2" title="Copy permalink for Item 3.1.8.2">🔗</a></div>
+</li>
+<li id="subsec-LatticeMethodAddition-4-2-3">
+<div class="para" id="subsec-LatticeMethodAddition-4-2-3-1">Which algorithms are the quickest? Are they the quickest in all cases?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-4-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.8.3"><a href="#subsec-LatticeMethodAddition-4-2-3" title="Copy permalink for Item 3.1.8.3">🔗</a></div>
+</li>
+<li id="subsec-LatticeMethodAddition-4-2-4">
+<div class="para" id="subsec-LatticeMethodAddition-4-2-4-1">Which algorithms take up the least amount of space on your paper? Which take up the most?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-4-2-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.8.4"><a href="#subsec-LatticeMethodAddition-4-2-4" title="Copy permalink for Item 3.1.8.4">🔗</a></div>
+</li>
+<li id="subsec-LatticeMethodAddition-4-2-5">
+<div class="para" id="subsec-LatticeMethodAddition-4-2-5-1">For each algorithm, determine a situation where that algorithm is the best to use. The situation could be adding particular numbers efficiently, or needing to teach addition in the classroom, or some other situation!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-LatticeMethodAddition-4-2-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1.8.5"><a href="#subsec-LatticeMethodAddition-4-2-5" title="Copy permalink for Item 3.1.8.5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Checkpoint 3.1.8"><a href="#subsec-LatticeMethodAddition-4" title="Copy permalink for Checkpoint 3.1.8">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 3.1.4: Lattice Algorithm"><a href="#subsec-LatticeMethodAddition" title="Copy permalink for Subsection 3.1.4: Lattice Algorithm">🔗</a></div></section><div class="autopermalink" data-description="Section 3.1: Addition Algorithms"><a href="#sec-AdditionAlgorithms" title="Copy permalink for Section 3.1: Addition Algorithms">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ArithmeticAlgorithms.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-SubtractionAlgorithms.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>
