@@ -22,7 +22,7 @@
             </p>
             <definition xml:id="linear-equation-solution">
               <p>
-                Let <m>a, b, c \in \mathbb{Z}</m>, where <m>\mathbb{Z}</m> represents the set of integers, and <m>b \neq 0</m>. A fraction <m> \dfrac{a}{b}</m> is a solution to the linear equation <m>bx = a</m>. 
+                Let <m>a, b \in \mathbb{Z}</m>, where <m>\mathbb{Z}</m> represents the set of integers, and <m>b \neq 0</m>. A fraction <m> \dfrac{a}{b}</m> is a solution to the linear equation <m>bx = a</m>. 
               </p>
             </definition>
             <p>The definition above allows us to build the idea of fractions from ideas that we've developed before, namely arithmetic of integers.</p>
@@ -33,7 +33,7 @@
               <title>Examples of Fractions</title>
               <example xml:id="fraction-example-1">
                 <p>
-                  Consider the fraction $\displaystyle \frac{1}{2}$. This represents one part of a whole that is divided into two equal parts. 
+                  Consider the fraction <m>\dfrac{1}{2}</m>. This represents one part of a whole that is divided into two equal parts. 
                 </p>
                 <figure>
                   <image xml:id="fraction-1-over-2.png" width="200" height="100">
@@ -51,7 +51,7 @@
               </example>
               <example xml:id="fraction-example-2">
                 <p>
-                  Now, consider the fraction $\displaystyle \frac{3}{4}$. This represents three parts of a whole that is divided into four equal parts.
+                  Now, consider the fraction <m>>\dfrac{3}{4}</m>. This represents three parts of a whole that is divided into four equal parts.
                 </p>
                 
               </example>
@@ -71,18 +71,18 @@
               </p>
               <definition xml:id="equivalent-fractions">
                 <p>
-                  Two fractions $\displaystyle \frac{a}{b}$ and $\displaystyle \frac{c}{d}$ are called <term>equivalent fractions</term> if $ad = bc$. In other words, they represent the same quantity or part of a whole. In fact, you can see that we can take a fractional representation and either "chop" each piece into <m>n</m> equal sized pieces, which corresponds to multiplying both the numerator and denominator by <m>n</m>, or "gluing" <m>n</m> equal pieces together to make a larger equal piece, which corresponds to dividing the numerator and denominator by <m>n</m>. Note that in the second case, you need to be able to make equal groups of size <m>n</m>, so this means that both the numerator and denominator must be divisible by <m>n</m>. ADD PIC HERE
+                  Two fractions <m> \dfrac{a}{b}</m> and <m> \dfrac{c}{d}</m> are called <term>equivalent fractions</term> if <m>ad = bc</m>. In other words, they represent the same quantity or part of a whole. In fact, you can see that we can take a fractional representation and either "chop" each piece into <m>n</m> equal sized pieces, which corresponds to multiplying both the numerator and denominator by <m>n</m>, or "gluing" <m>n</m> equal pieces together to make a larger equal piece, which corresponds to dividing the numerator and denominator by <m>n</m>. Note that in the second case, you need to be able to make equal groups of size <m>n</m>, so this means that both the numerator and denominator must be divisible by <m>n</m>. ADD PIC HERE
                 </p>
               </definition>
               <example xml:id="equivalent-fraction-example-1">
                 <p>
-                  Consider the fractions $\displaystyle \frac{2}{3}$ and $\displaystyle \frac{4}{6}$. These fractions are equivalent because $2 \times 6 = 3 \times 4$. Equivalently, since we can multiply each of <m>2</m> and <m>3</m> by <m>2</m> to get <m>4</m> and <m>6</m> (or divide <m>4</m> and <m>6</m> by <m>2</m>, conversely), you can see that these are equivalent fractions.
+                  Consider the fractions <m> \dfrac{2}{3}</m> and <m> \dfrac{4}{6}</m>. These fractions are equivalent because <m>2 \times 6 = 3 \times 4</m>. Equivalently, since we can multiply each of <m>2</m> and <m>3</m> by <m>2</m> to get <m>4</m> and <m>6</m> (or divide <m>4</m> and <m>6</m> by <m>2</m>, conversely), you can see that these are equivalent fractions.
                 </p>
                 
               </example>
               <example xml:id="equivalent-fraction-example-2">
                 <p>
-                  Consider the fractions <m>\frac{3}{5}$ and $\displaystyle \frac{6}{10}</m>. These fractions are equivalent because <m>3 \times 10 = 5 \times 6</m>.
+                  Consider the fractions <m>\dfrac{3}{5}</m> and <m> \dfrac{6}{10}</m>. These fractions are equivalent because <m>3 \times 10 = 5 \times 6</m>.
                 </p>
                 
               </example>
@@ -96,7 +96,7 @@
   <example>
     <title>Comparing Fractions with the Same Denominator</title>
     <p>
-      Let's say we want to compare the fractions <m>\frac{3}{5}</m> and <m>\frac{2}{5}</m>. Since both fractions have the same denominator of 5 (remember that "fifths" denote the units of which we have 2 and 3 of, respectively), we can simply compare the numerators. In this case, 3 is greater than 2, so <m>\frac{3}{5} > \frac{2}{5}</m>. ADD PIC HERE
+      Let's say we want to compare the fractions <m>\dfrac{3}{5}</m> and <m>\dfrac{2}{5}</m>. Since both fractions have the same denominator of 5 (remember that "fifths" denote the units of which we have 2 and 3 of, respectively), we can simply compare the numerators. In this case, 3 is greater than 2, so <m>\dfrac{3}{5} > \dfrac{2}{5}</m>. ADD PIC HERE
     </p>
   </example>
   
@@ -109,12 +109,17 @@
     <p>
       As a reminder, two fractions are considered equivalent if they represent the same value. This can be determined by cross-multiplying the fractions and checking if the resulting products are equal. In other words, two fractions <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are equivalent if <m>ad = bc</m>.
     </p>
-  </definition>
-  
+  </definition> \title
+ 
   <p>
-    To compare two fractions with different denominators, we can find equivalent fractions that have the same denominator. The way to do this so that the denominators are as small as possible is by finding least common denominator (LCD), which is the smallest multiple of both denomnators. More precisely, if <m>b</m> and <m>d</m> are two denominators, then the <term>least common denominator</term> is smallest number <m>f</m> such that <m>f=xb=yd</m> for some <m>x,y \in \mathbb{N}</m>. Thus, if we wanted <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> to have a common denominator, we multiply the top and bottom of the first fraction by <m>x</m> and the second fraction by <m>y</m> to get <m>\frac{ax}{bx}=\frac{ax}{f}</m> and <m>\frac{cy}{dy}=\frac{cy}{f}</m>. Now both quantities are fractions that have the same denominator.</p>
-    <p> Another way to do this, but which might end up with fractions with larger integers making up the numerators and denominators, is to multiply the numerator and denominator of a fraction by the denominator of the other, and vice versa. Thus, if we wanted <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> to have a common denominator, we multiply the top and bottom of the first fraction by <m>d</m> and the second fraction by <m>b</m> to get <m>\frac{ad}{bd}</m> and <m>\frac{bc}{bd}</m>. Now both quantities are fractions that have the same denominator.</p> <p> Once we have the equivalent fractions, we can compare them as we did in the first example.
+    To compare two fractions with different denominators, we can find equivalent fractions that have the same denominator. The way to do this so that the denominators are as small as possible is by finding least common denominator (LCD), which is the smallest multiple of both denomnators.</p> <p> More precisely, if <m>b</m> and <m>d</m> are two denominators, then the <term>least common denominator</term> is smallest number <m>f</m> such that <m>f=xb=yd</m> for some <m>x,y \in \mathbb{N}</m>. Thus, if we wanted <m>\dfrac{a}{b}</m> and <m>\dfrac{c}{d}</m> to have a common denominator, we multiply the top and bottom of the first fraction by <m>x</m> and the second fraction by <m>y</m> to get <m>\dfrac{ax}{bx}=\dfrac{ax}{f}</m> and <m>\dfrac{cy}{dy}=\dfrac{cy}{f}</m>. Now both quantities are fractions that have the same denominator.</p>
+    <p> For example, fractions equivalent to  <m> \dfrac{5}{6} </m> and <m> \dfrac{3}{10} </m> would be <m> \dfrac{25}{30}</m> and <m> \dfrac{9}{30}</m> since <m>30</m> is the smallest multiple of both <m> 6\</m> and <m> 10 </m>. We multiply the numerator and denominator of <m> \dfrac{5}{6} </m> by <m>5</m> since <m> 30=6 \times 5</m> and we multiply the numerator and denominator of <m> \dfrac{3}{10} </m> by <m>3</m> since <m> 30=3 \times 10</m>.</p>
+    <p> INSERT PIC HERE </p>
+    <p> Another way to do this, but which might end up with fractions with larger integers making up the numerators and denominators, is to multiply the numerator and denominator of a fraction by the denominator of the other, and vice versa. Thus, if we wanted <m>\dfrac{a}{b}</m> and <m>\dfrac{c}{d}</m> to have a common denominator, we multiply the top and bottom of the first fraction by <m>d</m> and the second fraction by <m>b</m> to get <m>\frac{ad}{bd}</m> and <m>\frac{bc}{bd}</m>. Now both quantities are fractions that have the same denominator.</p> <p> Once we have the equivalent fractions, we can compare them as we did in the first example. Note that using this method, the fractions might not have the least common denominator.
   </p>
+  <p> For example, if we want fractions equivalent to <m>\dfrac{1}{4} </m> and <m>\dfrac{3}{10} </m> we can multiply the numerator and denominator of the first fraction by <m>10</m> and the second by <m>4</m> to obtain  <m>\dfrac{10}{40} </m> and <m>\dfrac{12}{40}.  </m> We can think of this using an area model for fractions as well: </p>
+  <p>INSERT PIC HERE </p>
+
   
   <example>
     <title>Comparing Fractions with Different Denominators</title>
@@ -159,6 +164,8 @@
       So, <m>\frac{2}{3}</m> is equivalent to <m>\frac{24}{36}</m>, the fraction <m>\frac{5}{9}</m> is equivalent to <m>\frac{20}{36}</m>, and <m>\frac{7}{12}</m> is equivalent to <m>\frac{21}{36}</m>. Comparing the numerators of these equivalent fractions, we have <m>20 &lt; 21 &lt; 24</m>. Thus, the order of the fractions from smallest to largest is: <m>\frac{5}{9} &lt; \frac{7}{12} &lt; \frac{2}{3}</m>. ADD PIC HERE
     </p>
   </example>
+  <p> Note that since we can always compare the sizes of two fractions we can place these on a number line, just like we did for whole numbers. </p>
+  <p> ADD PIC HERE </p>
 </subsection>
 
 <subsection xml:id="DensityOfFractions">
@@ -226,11 +233,11 @@
     <title>Lemma: Between Two Even Integers</title>
     <statement>
       <p>
-        Let <m>a, b \in \mathbb{Z}</m> be even integers such that <m>a &lt; b</m>. Then, there exists an odd integer <m>a + 1</m> such that <m>a &lt; a + 1 &lt; b</m>.
+        Let <m>a, b \in \mathbb{Z}</m> be even integers such that <m>a &lt; b</m>. Then <m>a &lt; a + 1 &lt; b</m>.
       </p>
     </statement>
     <proof>
-      <p> Since <m>a</m> and <m>b</m> are even integers and <m>a &lt; b</m>
+      <p> Since <m>a</m> is even we know that <m> a=2k</m> for some whole number <m>k</m>. We also know the next largest even number is <m>2(k+1)=2k+2=a+2 </m>. Since <m>b</m> is an even integer and <m>a &lt; b</m> then <m>a+2 \leq b </m>. Clearly <m>a+1 &lt; a+2 </m> and thus putting it all together, <m>a &lt; a+1 &lt; b.</m>
        </p>
     </proof>
   </lemma>
