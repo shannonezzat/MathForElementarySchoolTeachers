@@ -355,13 +355,13 @@
 <definition xml:id="def-MixedNumber">
     <statement>
         <p>
-            A <term>mixed number</term> is a number that is represented as the sum of a whole number and a proper fraction. It is usually written in the form <m>a\left(\frac{b}{c}\right)</m> which really means <m>a + \frac{b}{c}</m> but written without the addition sign between the whole number and fraction, where <m>a</m> is a whole number, and <m>\frac{b}{c}</m> is a proper fraction, meaning <m>b &lt; c</m>. 
+            A <term>mixed number</term> is a number that is represented as the sum of a whole number and a proper fraction. It is usually written in the form <m>a\frac{b}{c}</m> which really means <m>a + \frac{b}{c}</m> but written without the addition sign between the whole number and fraction, where <m>a</m> is a whole number, and <m>\frac{b}{c}</m> is a proper fraction, meaning <m>b &lt; c</m>. 
         </p>
     </statement>
 </definition>
   
   <p>
-    Mixed fractions are usually written in the form <m>a\left(\frac{b}{c}\right)</m>, . To convert a mixed fraction to an improper fraction, we can convert the whole number part <m>a</m> to the fraction <m>\frac{a}{1}</m> and then use equivalent fractions and addition of fractions.
+    Mixed fractions are usually written in the form <m>a\frac{b}{c}</m>, . To convert a mixed fraction to an improper fraction, we can convert the whole number part <m>a</m> to the fraction <m>\frac{a}{1}</m> and then use equivalent fractions and addition of fractions.
   </p>
   
   <p>
@@ -377,20 +377,20 @@
   <example>
     <title>Converting a Mixed Fraction to an Improper Fraction</title>
     <p>
-      Let's convert the mixed fraction <m>3\left(\frac{2}{5}\right)</m> to an improper fraction. First, we convert the whole number part 3 to the fraction <m>\frac{3}{1}</m>.
+      Let's convert the mixed fraction <m>3\frac{2}{5}</m> to an improper fraction. First, we convert the whole number part 3 to the fraction <m>\frac{3}{1}</m>.
     </p>
     <p>
       Now, we need to find equivalent fractions for <m>\frac{3}{1}</m> and <m>\frac{2}{5}</m> with a common denominator. In this case, the least common denominator is 5. We multiply the numerator and denominator of <m>\frac{3}{1}</m> by 5 to get the equivalent fraction <m>\frac{15}{5}</m>.
     </p>
     <p>
-      Now, we can add the numerators of the equivalent fractions: <m>15 + 2 = 17</m>. Keeping the common denominator, we get the improper fraction <m>\frac{17}{5}</m>. So, <m>3\left(\frac{2}{5}\right) = \frac{17}{5}</m>.
+      Now, we can add the numerators of the equivalent fractions: <m>15 + 2 = 17</m>. Keeping the common denominator, we get the improper fraction <m>\frac{17}{5}</m>. So, <m>3\frac{2}{5} = \frac{17}{5}</m>.
     </p>
   </example>
   
   <example>
     <title>Converting a Mixed Fraction to an Improper Fraction</title>
     <p>
-      Let's convert the mixed fraction <m>4\left(\frac{3}{8}\right)</m> to an improper fraction. First, we convert the whole number part 4 to the fraction <m>\frac{4}{1}</m>.
+      Let's convert the mixed fraction <m>4\frac{3}{8}</m> to an improper fraction. First, we convert the whole number part 4 to the fraction <m>\frac{4}{1}</m>.
     </p>
     <p>
       Now, we need to find equivalent fractions for <m>\frac{4}{1}</m> and <m>\frac{3}{8}</m> with a common denominator. In this case, the least common denominator is 8. We multiply the numerator and denominator of <m>\frac{4}{1}</m> by 8 to get the equivalent fraction <m>\frac{32}{8}</m>. Since both the numerator and denominator are divisible by 8 we can reduce this fraction to <m>\frac{4}{1} = 4.</m>
