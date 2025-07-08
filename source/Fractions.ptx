@@ -502,7 +502,7 @@
 
     </exercise>
     <p>
-        Note that a non-zero fraction multiplied by its reciprocal always equals one. This is because $\frac{a}{b}$ times $\frac{b}{a}$ equals $\frac{a \times b}{b \times a}$. Since $a \times b$ equals $b \times a$, this simplifies to $\frac{1}{1}$, which equals 1. In fact, you can use this as the definition of the reciprocal of a fraction instead of the definition above.
+        Note that a non-zero fraction multiplied by its reciprocal always equals one. This is because <m>\frac{a}{b} \times \frac{b}{a} = \frac{a \times b}{b \times a}</m>. Since <m>a \times b</m> equals <m>b \times a</m>, this simplifies to <m>\frac{1}{1}</m>, which of course equals 1. In fact, you can use this as the definition of the reciprocal of a fraction instead of the definition above.
     </p>
 </subsection>
 <subsection>
