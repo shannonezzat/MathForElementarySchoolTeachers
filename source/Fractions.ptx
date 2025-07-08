@@ -462,20 +462,20 @@
     <example xml:id="ex-MultiplicationOfFractions3">
         <statement>
             <p>
-                What is $\frac{2}{5}$ times $\frac{2}{3}$, or in other words, two-fifths of two-thirds?
+                What is <m>\frac{2}{5} \times \frac{2}{3} </m>, or in other words, two-fifths of two-thirds?
             </p>
         </statement>
         <solution>
             <p>
-                If we take two thirds and divide them into fifths, and then take two of those fifths, we essentially have $\frac{4}{15}$. 
+                If we take two thirds and divide them into fifths, and then take two of those fifths, we essentially have <m>\frac{4}{15}</m>. 
             </p>
         </solution>
     </example>
     
     <p>
-        The examples above illustrate how multiplication of fractions works. Essentially, we multiply the numerators to get the numerator of the result, and multiply the denominators to get the denominator of the result. For instance, for any fractions $\frac{a}{b}$ and $\frac{c}{d}$, $\frac{a}{b}$ times $\frac{c}{d}$ equals $\frac{a \times c}{b \times d}$. This operation breaks up our units into $b \times d$ equal pieces, and we have $a \times c$ of these pieces.
+        The examples above illustrate how multiplication of fractions works. Essentially, we multiply the numerators to get the numerator of the result, and multiply the denominators to get the denominator of the result. As you can see by the diagrams, the area model of multiplication is a good lens in which to view this idea. If we are multiplying <m>\dfrac{a}{b} \times \dfrac{c}{d}</m>, the denominator of the product is the product of the denominators of each fraction (the unit is broken up  vertically into <m>d</m> equal pieces and horizontally into <m>b</m> equal pieces, and the numerator is the number of these equal pieces you have, so <m>a \times c</m> equal pieces. So, for any fractions <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>, <m>\frac{a}{b} \times \frac{c}{d} = \frac{a \times c}{b \times d} </m>. This operation breaks up our units into $b \times d$ equal pieces, and we have $a \times c$ of these pieces.
     </p>
-    
+     <p> To help us with division, we will need the concept of a fraction with the numerator and denominator "flipped". Like how the idea integers helped us turn all subtraction problems into addition problems (that is <m> a - b = a + (-b))</m>, this idea of the reciprocal helps us turn division problems into multiplication problems.
     <definition xml:id="def-Reciprocal">
         <statement>
             <p>
@@ -496,9 +496,13 @@
             </p>
         </solution>
     </example>
-    
+    <exercise>
+<ol>
+<li> <p> Why does both the numerator and denominator have to be non-zero to meaningfully talk about a reciprocal?<p> </li>
+
+    </exercise>
     <p>
-        Note that a non-zero fraction multiplied by its reciprocal always equals one. This is because $\frac{a}{b}$ times $\frac{b}{a}$ equals $\frac{a \times b}{b \times a}$. Since $a \times b$ equals $b \times a$, this simplifies to $\frac{1}{1}$, which equals 1.
+        Note that a non-zero fraction multiplied by its reciprocal always equals one. This is because $\frac{a}{b}$ times $\frac{b}{a}$ equals $\frac{a \times b}{b \times a}$. Since $a \times b$ equals $b \times a$, this simplifies to $\frac{1}{1}$, which equals 1. In fact, you can use this as the definition of the reciprocal of a fraction instead of the definition above.
     </p>
 </subsection>
 <subsection>
