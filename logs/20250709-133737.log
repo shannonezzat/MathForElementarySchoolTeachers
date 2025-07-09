@@ -1,0 +1,6 @@
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext init --refresh` to produce a compatible file.
+INFO    : Found server at localhost:8128
+INFO    : Server is already available at https://fuzzy-trout-pjp7wjrp96w3969j-8128.app.github.dev
+INFO    : Now opening browser for target `html` at https://fuzzy-trout-pjp7wjrp96w3969j-8128.app.github.dev/output/html
+INFO    : 

@@ -1,0 +1,129 @@
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext init --refresh` to produce a compatible file.
+INFO    : Found entry no longer exists 7892
+INFO    : Now preparing local server to preview your project directory `/workspaces/MathForElementarySchoolTeachers`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : Running in a codespace, so using a subprocess server.
+INFO    : Starting the server
+INFO    : There are 10 or more servers on file. Cleaning up ...
+INFO    : Found entry no longer exists 7892
+INFO    : Terminating 7892
+INFO    : Terminate failed for 7892.
+ERROR   : process PID not found (pid=7892)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=7892)
+INFO    : Found entry no longer exists 8416
+INFO    : Terminating 8416
+INFO    : Terminate failed for 8416.
+ERROR   : process PID not found (pid=8416)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=8416)
+INFO    : Found entry no longer exists 6131
+INFO    : Terminating 6131
+INFO    : Terminate failed for 6131.
+ERROR   : process PID not found (pid=6131)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=6131)
+INFO    : Found entry no longer exists 30847
+INFO    : Terminating 30847
+INFO    : Terminate failed for 30847.
+ERROR   : process PID not found (pid=30847)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=30847)
+INFO    : Found entry no longer exists 51373
+INFO    : Terminating 51373
+INFO    : Terminate failed for 51373.
+ERROR   : process PID not found (pid=51373)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=51373)
+INFO    : Found entry no longer exists 9250
+INFO    : Terminating 9250
+INFO    : Terminate failed for 9250.
+ERROR   : process PID not found (pid=9250)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=9250)
+INFO    : Found entry no longer exists 2671
+INFO    : Terminating 2671
+INFO    : Terminate failed for 2671.
+ERROR   : process PID not found (pid=2671)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=2671)
+INFO    : Found entry no longer exists 15185
+INFO    : Terminating 15185
+INFO    : Terminate failed for 15185.
+ERROR   : process PID not found (pid=15185)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=15185)
+INFO    : Found server at localhost:8128
+INFO    : Found process 33649 no longer listening on specified port 8129
+INFO    : Terminating 33649
+INFO    : Added server entry f4b0ef1c60 33649 8129 localhost
+
+INFO    : Server will soon be available at https://fuzzy-trout-pjp7wjrp96w3969j-8129.app.github.dev
+INFO    : Opening browser for target `html` at https://fuzzy-trout-pjp7wjrp96w3969j-8129.app.github.dev/output/html
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
