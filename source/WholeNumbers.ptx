@@ -819,7 +819,11 @@
       <p>Elimination also works for systems that have three or more equations and variables. By combining equations to remove one variable at a time, you can reduce a large system to a single-variable equation and then "back-substitute" one equation at a time to find the remaining unknowns. Those techniques are very powerful for handling larger systems, but we will not develop them further in this text. </p>      
             
        
-        
+    <subsection><title>How Many Solutions Does a System of Equations Have</title>   
+            <p>TALK ABOUT ONE SOLUTION AND HOW OPERATIONS DON'T CHANGE THE NUMBER OF SOLUTIONS</p>
+            <p>INFINITELY MANY: SCALED EQUATION</p>
+            <p>NO SOLUTIONS: EQUATIONS WITH DIFFERENT CONSTANTS</p>
+    </subsection>
         
 
         
@@ -830,9 +834,7 @@
     
     
     
-    <p>
-        How many solutions? One, none, infinitely many? How to tell.
-    </p>
+    
     <p>
         What if the equation is more complicated? Ideas? Trial and error/factoring/etc.
     </p>
