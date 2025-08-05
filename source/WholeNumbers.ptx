@@ -29,7 +29,7 @@
                 </li>
                 <li>
                     <p>
-                        Another important and common example is equality of fractions. We will explore this more later in the book, but we know that <m>/frac{1}{2} = \frac{2}{4}</m>.
+                        Another important and common example is equality of fractions. We will explore this more later in the book, but we know that <m>\frac{1}{2} = \frac{2}{4}</m>.
                     </p>
                 </li>
                 <li>
@@ -348,8 +348,9 @@
            We could just memorize the formula above, but there are so many different situations that arise in mathematics that it isn't feasable to remember everything. However, if you have a strong knowledge of the ideas behind equality and arithmetic of equations, you can recreate this when the need arises. 
        </p>
        <example>
-           <p>
-               Let's solve <m>x+5=8</m>. The easiest way to view this is asking "what number can I add to 5 to get 8". We can formally solve for <m>x</m> here by subtracting 5 from both sides:
+        <p> What number can we substitute in for <m>x</m> to solve the equation <m>x+5=8</m>? </p>
+           <solution>
+              <p> Let's solve <m>x+5=8</m>. The easiest way to view this is asking "what number can I add to 5 to get 8". We can formally solve for <m>x</m> here by subtracting 5 from both sides:
                <me>
                    x+5-5=8-5
                </me>
@@ -357,9 +358,11 @@
                    \rightarrow x = 3.
                </me>
                We can solve this using the general algorithm above by viewing the equation as <m>x+5=0x+8</m>. Then <m>x = \dfrac{8-5}{1-0} = 3.</m>
+               </p>
                
-               
-           </p>
+            </solution>
+            <p> What number can we substitute in for <m>a</m> to solve the equation <m>7(a-4)=4-(4-3a)</m>? </p>
+            <solution>
            <p>
                We can solve <m>7(a-4)=4-(4-3a)</m> by first expanding out the brackets and then combining like terms so that the equation is in the standard form given in the algorithm:
                <me>
@@ -372,6 +375,7 @@
                
                
            </p>
+
            <p>
                We can check our answers by substituting our solution for the variable and making sure that equality holds. For the second equation we have <me>7(7-4) \mathop{=}\limits^? 4-(4-3(7))</me>
                <me>
@@ -387,7 +391,8 @@
                
                
            </p>
-
+</solution>
+</example>
            <exercise>
                <p>
                    Solve the following linear equations. Check your work by substituting your answer into the original equation and checking that equality holds.
@@ -454,14 +459,14 @@
                </solution>
            </exercise>
 
-       </example>
+       
    </subsection>
     <subsection xml:id="subsec-SystemsOfEquations">
         <title>Intro to Systems Of Equations</title>
         <p>
             In many scenarios, we are given two (or more) relationships between two (or more) unknown quantities and we need to use these to find the unknown quantities that satisfy these relationships. 
         </p>
-        <example>
+        <example xml:id="ex-2var2eq">
         <p>
             A typical problem might look like this:
         </p>
@@ -514,10 +519,10 @@
     <subsection xml:id="subsec-Substitution">
         <title>Substitution</title>
         <p>
-            We can use the ideas of equality to help us solve systems of equations. Remember from REFERENCE, when two expressions equal, we can substitute one for the other whenever it is convenient. The idea is that since we know how to solve one equation with one variable, so we want to convert a 2 by 2 system of equations into one equation with one variable via <term>substitution.</term> Let's look at the example in the previous section:
+            We can use the ideas of equality to help us solve systems of equations. Remember from <xref xml:id="def-PropertiesOfEquality"/>, when two expressions equal, we can substitute one for the other whenever it is convenient. The idea is that since we know how to solve one equation with one variable, so we want to convert a 2 by 2 system of equations into one equation with one variable via <term>substitution.</term> Let's look at <xref ref="ex-2var2eq"/> in the previous section:
         </p>
         <p>
-            REFERENCE
+            
         </p>
         <p>
             We have the system
@@ -611,12 +616,14 @@
             </li>
             <li>
                 <p>
-                    Substitute this into the second equation for the solved variable. You now have one equation with at most one variable. If you have no variables left, you either have infinitely many solutions or no solutions (we will be able to tell which later in the chapter).
+                    Substitute this into the second equation for the solved variable</p>
+                    
+                <p> Simplify this equation. You now have one equation with at most one variable. If you have no variables left, you either have infinitely many solutions or no solutions (we will be able to tell which later in the chapter) and you are done.
                 </p>
             </li>
             <li>
                 <p>
-                    If it still exists, solve this equation for the variable. You should have some number. If there are no variables left, go to REFERENCE.
+                    If it still exists, solve this equation for the variable. You should have some number.
                 </p>
             </li>
             <li>
@@ -626,7 +633,7 @@
             </li>
             <li>
                 <p>
-                    Check your work by substituting the solved values for both variables into the other equation from the previous part. If you do indeed have equality, your solution is a soloution for the system of equations.
+                    Check your work by substituting the solved values for both variables into the equation not used in the previous sttep. If you do indeed have equality, your solution is a soloution for the system of equations.
                 </p>
             </li>
             <exercise>
@@ -658,8 +665,7 @@
         
         
         
-        
-        
+</subsection>        
         <subsection xml:id="subsec-Elimination">
             <title>Elimination</title>
             <p>
@@ -730,11 +736,11 @@
             <p>
                 Thus, we have subtracted Equation II from Equation I and showed thar the idea of elimination makes sense.
             </p>
-            <exercise>
+<exercise>
                 <p>
                     Use the above explanation as a guide to justify that if <m>L_1 = R_1</m> and <m>L_2 = R_2</m> then <m>L_1 + L_2 = R_1 + R_2</m>.
                 </p>
-            </exercise>
+</exercise>
             <p>
                 A few notes:
                 <ol>
@@ -755,9 +761,64 @@
                     </li>
                 </ol>
             </p>
+
+<example>
+  <p>
+    Let's solve the system
+  </p>
+  <me>  
+    2C + 3P = 13  
+  </me>
+  <me>  
+    4C - P = 5  
+  </me>
+  <p>
+    We will eliminate the variable <m>P</m>.  Note that in Equation I the coefficient of <m>P</m> is 3, and in Equation II it is -1.  To make them opposites, we multiply Equation II by 3:
+  </p>
+  <me>
+    [3 \times II] → 3(4C - P) = 3·5
+  </me>
+  <me>
+    \rightarrow 12C - 3P = 15
+  </me>
+  <p>
+    Now Equation I is <m>2C + 3P = 13</m> and our new equation is <m>12C - 3P = 15</m>.  If we add them, the <m>P</m>-terms cancel:
+  </p>
+  <me>
+    [I + (3 \times II)] → (2C + 3P) + (12C - 3P) = 13 + 15
+  </me>
+  <me>
+    \rightarrow 14C + 0·P = 28
+  </me>
+  <me>
+    \rightarrow 14C = 28
+  </me>
+  <me>
+    \rightarrow C = 2
+  </me>
+  <p>
+    Having found <m>C = 2</m>, we substitute into either original equation.  Using Equation II:
+  </p>
+  <me>
+    4(2) - P = 5
+  </me>
+  <me>
+    \rightarrow 8 - P = 5
+  </me>
+  <me>
+    \rightarrow -P = -3
+  </me>
+  <me>
+    \rightarrow P = 3
+  </me>
+  <p>
+    Therefore, the solution is <m>(C,P) = (2,3)</m>.  Each step used only arithmetic operations on both sides of the equations and the fact that adding or subtracting equal quantities preserves equality—so the “elimination” of <m>P</m> left us with a single-variable equation.
+  </p>
+</example>
+
+      <p>Elimination also works for systems that have three or more equations and variables. By combining equations to remove one variable at a time, you can reduce a large system to a single-variable equation and then "back-substitute" one equation at a time to find the remaining unknowns. Those techniques are very powerful for handling larger systems, but we will not develop them further in this text. </p>      
             
-            
-        </subsection>
+       
         
         
 
@@ -766,16 +827,9 @@
         
         
         
-    </subsection>
-    <p>
-        Solving a system of linear equations (using substitution and elimination) - Focus on 2x2 examples, but note that elimination is good for larger systems (that's why it's good to know it!)
-    </p>
-    <p>
-        Substitution - solve one equation for one variable, and then substitute that in to the other equation.
-    </p>
-    <p>
-        Elimination - idea: if <m>A = B</m> and <m>C = D</m> we can subtract <m>C</m> from both sides of <m>A=B</m> to get <m>A-C = B-C</m>. But since <m>C=D</m> we can say <m>A-C = B-D</m>. Thus we can do arithmetic with "sides" of an equation. + and - are most useful.
-    </p>
+    
+    
+    
     <p>
         How many solutions? One, none, infinitely many? How to tell.
     </p>
@@ -800,6 +854,7 @@
     <p>
         Open ended problems: going from examples to conjecture to "proof". HIGHLIGHT MANY WAYS OF PROVING!
     </p>
+     </subsection>
 </section>
             <section xml:id="sec-2_1NumberSystemsAndPlaceValue">
                 <title>NumberSystemsAndPlaceValue</title>

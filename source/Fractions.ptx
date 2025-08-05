@@ -236,12 +236,13 @@
         Let <m>a, b \in \mathbb{Z}</m> be even integers such that <m>a &lt; b</m>. Then <m>a &lt; a + 1 &lt; b</m>.
       </p>
     </statement>
+    <p> Before we prove this, let's talk about the idea. Since two even numbers differ by at least 2, we can take one more than the smallest even number, and that will be between both. Try and draw a diagram that clearly shows this.</p> 
     <proof>
       <p> Since <m>a</m> is even we know that <m> a=2k</m> for some whole number <m>k</m>. We also know the next largest even number is <m>2(k+1)=2k+2=a+2 </m>. Since <m>b</m> is an even integer and <m>a &lt; b</m> then <m>a+2 \leq b </m>. Clearly <m>a+1 &lt; a+2 </m> and thus putting it all together, <m>a &lt; a+1 &lt; b.</m>
        </p>
     </proof>
   </lemma>
-
+<p> If two fractions have the same denominator, we can easily compare numerators to determine which is bigger. Further, if we know both numerators are even, we can use the lemma above to find a fraction in between both. Luckily, we can use the idea of equivalent fractions to let us do this. In fact, we did this in the previous example. Let's now show we can do this for every two fractions. </p>
   <theorem>
     <title>Theorem: Fraction Between Two Fractions</title>
     <statement>
@@ -281,9 +282,11 @@
   </p>
 
   <p>
-    First, let's discuss adding and subtracting fractions with the same denominator.
+    First, let's discuss adding and subtracting fractions with the same denominator. If we understand that the denominator tells us how large each equal part is, we already know how to do this.
   </p>
-
+<exercise>
+<p> Consider adding 3 apples and 5 apples. How many apples do you have? What about 3 pens and 5 pens. What about 3 eighths and 5 eighths? How many eighths do you have? </p>
+</exercise>
   <example>
     <title>Adding and Subtracting Fractions with the Same Denominator</title>
     <p>
@@ -299,12 +302,12 @@
       \dfrac{3}{8} - \dfrac{5}{8} = \dfrac{3 - 5}{8} = \dfrac{-2}{8}
     </me>
     <p>
-      This is like adding or subtracting units: if we have 3 apples and add 5 more apples, we end up with 8 apples. The same goes for subtraction.
+      Again, this is like adding or subtracting units: if we have 3 apples and add 5 more apples, we end up with 8 apples. The same goes for subtraction.
     </p>
   </example>
 
   <p>
-    Now let's discuss adding and subtracting fractions with unlike denominators. To do this, we will use the concept of equivalent fractions, which we have explored earlier when comparing fractions.
+    Now let's discuss adding and subtracting fractions with unlike denominators. To do this, we remind ourselves that we can find equivalent fractions with the same denominator. Note that below we do use the least common denominator, but we can indeed do this with any common denominator of the two fractions.
   </p>
 
   <example>
@@ -332,7 +335,7 @@
     <subsection xml:id="MixedFractions">
   <title>Mixed Fractions</title>
   <p>
-    In this subsection, we will discuss mixed fractions and how to convert between mixed and improper fractions. We give definitions of these concepts below. In all of thee definitions we let <m>a,b,c \in \mathbb{N}.</m>
+    Many times, we want to make as many wholes from fractions as possible. This is especially useful when we want to easily estimate the place of a fraction on a number line, or equivalently the size of a fraction compared to integers. We call these numbers with both whole and fractional parts <term> mixed fractions.</term> In this subsection, we will discuss mixed fractions and how to convert between mixed and fractions where the numerator is larger in magnitude than the denominator, called <term> improper fractions</term>. We give definitions of these concepts below. In all of thee definitions we let <m>a,b,c \in \mathbb{N}.</m>
   </p>
 
   
@@ -365,7 +368,7 @@
   </p>
   
   <p>
-    To convert a mixed fraction to an improper fraction, follow these steps:
+    To convert a mixed fraction to an improper fraction, we can use the idea of turning a whole number into a fraction with a denominator of 1, and the use the idea of equivalent fractions with the same denominator that we can easily add:
   </p>
   
   <ol>
@@ -400,12 +403,10 @@
   <subsection xml:id="ImproperToFractions">
   <title>Converting Improper Fractions to Mixed Numbers</title>
   
-  <p>
-    In many situations, it is more convenient to represent improper fractions as mixed numbers. A mixed number is a whole number plus a proper fraction (a fraction where the numerator is less than the denominator).
-  </p>
+  
 
   <p>
-    To convert an improper fraction to a mixed number, follow these steps:
+    To convert an improper fraction to a mixed number, we need to make as many wholes (or units) from the number of equal sized pieces of the whole that we have. For example, if we have 4 thirds, three thirds makes one whole and we have one third left ungrouped. So we have that <m> \dfrac{4}{3}=1\dfrac{1}{3}.</m> We can do this via the following algorithm:
   </p>
   
   <ol>

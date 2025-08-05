@@ -102,15 +102,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.4';
+eBookConfig.runestone_version = '7.9.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -202,10 +202,8 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SolvingOneEquation" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Solving One Equation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-SystemsOfEquations" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Intro to Systems Of Equations</span></a></div></li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Substitution" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Substitution</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Elimination" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Elimination</span></a></div></li></ul>
-</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Substitution" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ProblemSolving.html#subsec-Elimination" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Elimination</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-2_1NumberSystemsAndPlaceValue.html" class="internal"><span class="codenumber">2.3</span> <span class="title">NumberSystemsAndPlaceValueWhole Numbers</span></a></div></li>
@@ -712,7 +710,10 @@ x = \dfrac{(d-b)}{(a-c)}.
 </div>
 <details id="subsec-SolvingOneEquation-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="subsec-SolvingOneEquation-6-1">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-SolvingOneEquation-6-1">What number can we substitute in for <span class="process-math">\(x\)</span> to solve the equation <span class="process-math">\(x+5=8\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-SolvingOneEquation-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-SolvingOneEquation-6-2-1">
 <div class="para">Let’s solve <span class="process-math">\(x+5=8\text{.}\)</span> The easiest way to view this is asking "what number can I add to 5 to get 8". We can formally solve for <span class="process-math">\(x\)</span> here by subtracting 5 from both sides:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -726,9 +727,13 @@ x+5-5=8-5
 </div>
 <div class="para">We can solve this using the general algorithm above by viewing the equation as <span class="process-math">\(x+5=0x+8\text{.}\)</span> Then <span class="process-math">\(x = \dfrac{8-5}{1-0} = 3.\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-6-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-SolvingOneEquation-6-2">
+<div class="autopermalink" data-description="Solution 2.2.5.1"><a href="#subsec-SolvingOneEquation-6-2" title="Copy permalink for Solution 2.2.5.1">🔗</a></div>
+</div></details><div class="para" id="subsec-SolvingOneEquation-6-3">What number can we substitute in for <span class="process-math">\(a\)</span> to solve the equation <span class="process-math">\(7(a-4)=4-(4-3a)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-6-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-SolvingOneEquation-6-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-SolvingOneEquation-6-4-1">
 <div class="para">We can solve <span class="process-math">\(7(a-4)=4-(4-3a)\)</span> by first expanding out the brackets and then combining like terms so that the equation is in the standard form given in the algorithm:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -742,9 +747,9 @@ x+5-5=8-5
 </div>
 <div class="para">Noting that we can view the RHS of the equation as <span class="process-math">\(3a+0\text{,}\)</span> we can now use our algorithm above, giving us <span class="process-math">\(a = \dfrac{0-(-28)}{7-3} = \dfrac{28}{4} = 7.\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-6-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-6-4-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-SolvingOneEquation-6-3">
+<div class="para logical" id="subsec-SolvingOneEquation-6-4-2">
 <div class="para">We can check our answers by substituting our solution for the variable and making sure that equality holds. For the second equation we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -767,29 +772,102 @@ x+5-5=8-5
 \end{equation*}
 </div>
 <div class="para">Since we do indeed have equality our solution is correct.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-6-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-6-4-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-SolvingOneEquation-6-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link">
-               
-               
-                   
-                   
-                   
-                   
-               
-               <span class="type">Solution</span><span class="period">.</span>
-           </summary><article class="exercise exercise-like knowl__content"><div class="autopermalink" data-description="Checkpoint [STRUCT].5"><a href="#subsec-SolvingOneEquation-6-4" title="Copy permalink for Checkpoint [STRUCT].5">🔗</a></div></article></details><div class="autopermalink" data-description="Example 2.2.5"><a href="#subsec-SolvingOneEquation-6" title="Copy permalink for Example 2.2.5">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.2.1: Solving One Equation"><a href="#subsec-SolvingOneEquation" title="Copy permalink for Subsection 2.2.1: Solving One Equation">🔗</a></div></section><section class="subsection" id="subsec-SystemsOfEquations"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Solution 2.2.5.2"><a href="#subsec-SolvingOneEquation-6-4" title="Copy permalink for Solution 2.2.5.2">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Example 2.2.5"><a href="#subsec-SolvingOneEquation-6" title="Copy permalink for Example 2.2.5">🔗</a></div></article></details><details id="subsec-SolvingOneEquation-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-SolvingOneEquation-7-1">Solve the following linear equations. Check your work by substituting your answer into the original equation and checking that equality holds.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-7-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal" id="subsec-SolvingOneEquation-7-2">
+<li id="subsec-SolvingOneEquation-7-2-1">
+<div class="para logical" id="subsec-SolvingOneEquation-7-2-1-1">
+<div class="displaymath process-math">
+\begin{equation*}
+7x=91
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-7-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.2.6.1"><a href="#subsec-SolvingOneEquation-7-2-1" title="Copy permalink for Item 2.2.6.1">🔗</a></div>
+</li>
+<li id="subsec-SolvingOneEquation-7-2-2">
+<div class="para logical" id="subsec-SolvingOneEquation-7-2-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+5k-6=-79
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-7-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.2.6.2"><a href="#subsec-SolvingOneEquation-7-2-2" title="Copy permalink for Item 2.2.6.2">🔗</a></div>
+</li>
+<li id="subsec-SolvingOneEquation-7-2-3">
+<div class="para logical" id="subsec-SolvingOneEquation-7-2-3-1">
+<div class="displaymath process-math">
+\begin{equation*}
+-3y+1 = 7y-8
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-7-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.2.6.3"><a href="#subsec-SolvingOneEquation-7-2-3" title="Copy permalink for Item 2.2.6.3">🔗</a></div>
+</li>
+<li id="subsec-SolvingOneEquation-7-2-4">
+<div class="para logical" id="subsec-SolvingOneEquation-7-2-4-1">
+<div class="displaymath process-math">
+\begin{equation*}
+4t+2(4-3t) = 2-6(t-1)+3t
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-7-2-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.2.6.4"><a href="#subsec-SolvingOneEquation-7-2-4" title="Copy permalink for Item 2.2.6.4">🔗</a></div>
+</li>
+</ol>
+<details id="subsec-SolvingOneEquation-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-SolvingOneEquation-7-3-1">
+<ol class="decimal" id="subsec-SolvingOneEquation-7-3-1-1">
+<li id="subsec-SolvingOneEquation-7-3-1-1-1">
+<div class="para" id="subsec-SolvingOneEquation-7-3-1-1-1-1">
+<span class="process-math">\(\displaystyle x=13\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-7-3-1-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.2.6.1"><a href="#subsec-SolvingOneEquation-7-3-1-1-1" title="Copy permalink for Item 2.2.6.1">🔗</a></div>
+</li>
+<li id="subsec-SolvingOneEquation-7-3-1-1-2">
+<div class="para" id="subsec-SolvingOneEquation-7-3-1-1-2-1">
+<span class="process-math">\(\displaystyle x=-17\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-7-3-1-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.2.6.2"><a href="#subsec-SolvingOneEquation-7-3-1-1-2" title="Copy permalink for Item 2.2.6.2">🔗</a></div>
+</li>
+<li id="subsec-SolvingOneEquation-7-3-1-1-3">
+<div class="para" id="subsec-SolvingOneEquation-7-3-1-1-3-1">
+<span class="process-math">\(\displaystyle y=\dfrac{9}{10}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-7-3-1-1-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.2.6.3"><a href="#subsec-SolvingOneEquation-7-3-1-1-3" title="Copy permalink for Item 2.2.6.3">🔗</a></div>
+</li>
+<li id="subsec-SolvingOneEquation-7-3-1-1-4">
+<div class="para" id="subsec-SolvingOneEquation-7-3-1-1-4-1">
+<span class="process-math">\(\displaystyle t=0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-7-3-1-1-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.2.6.4"><a href="#subsec-SolvingOneEquation-7-3-1-1-4" title="Copy permalink for Item 2.2.6.4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SolvingOneEquation-7-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.6.1"><a href="#subsec-SolvingOneEquation-7-3" title="Copy permalink for Solution 2.2.6.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Checkpoint 2.2.6"><a href="#subsec-SolvingOneEquation-7" title="Copy permalink for Checkpoint 2.2.6">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.2.1: Solving One Equation"><a href="#subsec-SolvingOneEquation" title="Copy permalink for Subsection 2.2.1: Solving One Equation">🔗</a></div></section><section class="subsection" id="subsec-SystemsOfEquations"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="space"> </span><span class="title">Intro to Systems Of Equations</span>
 </h3>
 <div class="para" id="subsec-SystemsOfEquations-2">In many scenarios, we are given two (or more) relationships between two (or more) unknown quantities and we need to use these to find the unknown quantities that satisfy these relationships.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SystemsOfEquations-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-SystemsOfEquations-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-SystemsOfEquations-3-1">A typical problem might look like this:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SystemsOfEquations-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<details id="ex-2var2eq" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-2var2eq-1">A typical problem might look like this:<div class="autopermalink" data-description="Paragraph"><a href="#ex-2var2eq-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-SystemsOfEquations-3-2">On Monday, you spend <span class="process-math">\(\$ 9\)</span> to buy two medium coffees and one pizza burger. On Tuesday, you spend <span class="process-math">\(\$ 15.50\)</span> to buy three medium coffees and two pizza burgers. How much is one medium coffee, and how much is one pizza burger?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SystemsOfEquations-3-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-2var2eq-2">On Monday, you spend <span class="process-math">\(\$ 9\)</span> to buy two medium coffees and one pizza burger. On Tuesday, you spend <span class="process-math">\(\$ 15.50\)</span> to buy three medium coffees and two pizza burgers. How much is one medium coffee, and how much is one pizza burger?<div class="autopermalink" data-description="Paragraph"><a href="#ex-2var2eq-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-SystemsOfEquations-3-3">Let’s define <span class="process-math">\(C:=\)</span> the price of a medium coffee (dollars) and <span class="process-math">\(P:=\)</span> the price of a pizza burger (dollars). We can translate the two sentences above to the equations<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SystemsOfEquations-3-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-2var2eq-3">Let’s define <span class="process-math">\(C:=\)</span> the price of a medium coffee (dollars) and <span class="process-math">\(P:=\)</span> the price of a pizza burger (dollars). We can translate the two sentences above to the equations<div class="autopermalink" data-description="Paragraph"><a href="#ex-2var2eq-3" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -801,7 +879,7 @@ x+5-5=8-5
 3C + 2P = 15.5.
 \end{equation*}
 </div>
-<div class="para" id="subsec-SystemsOfEquations-3-6">Here, we can check that if a medium coffee is $2.50 and a pizza burger is $4, that is <span class="process-math">\(C=2.5\)</span> and <span class="process-math">\(P=4\text{,}\)</span> both equations are satisfied, and thus both of the sentences above are true:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SystemsOfEquations-3-6" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="ex-2var2eq-6">Here, we can check that if a medium coffee is $2.50 and a pizza burger is $4, that is <span class="process-math">\(C=2.5\)</span> and <span class="process-math">\(P=4\text{,}\)</span> both equations are satisfied, and thus both of the sentences above are true:<div class="autopermalink" data-description="Paragraph"><a href="#ex-2var2eq-6" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -813,34 +891,33 @@ x+5-5=8-5
 3(2.5)+2(4) = 15.5
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Example 2.2.6"><a href="#subsec-SystemsOfEquations-3" title="Copy permalink for Example 2.2.6">🔗</a></div></article></details><div class="para" id="subsec-SystemsOfEquations-4">In this section, we will learn some methods of solving problems like finding these quantities in the example above. Note that we will limit our study to situations with <span class="process-math">\(2\)</span> linear equations and <span class="process-math">\(2\)</span> variables (which we call "2 by 2 systems of equations") but these methods can be expanded to solve larger systems.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SystemsOfEquations-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 2.2.7"><a href="#ex-2var2eq" title="Copy permalink for Example 2.2.7">🔗</a></div></article></details><div class="para" id="subsec-SystemsOfEquations-4">In this section, we will learn some methods of solving problems like finding these quantities in the example above. Note that we will limit our study to situations with <span class="process-math">\(2\)</span> linear equations and <span class="process-math">\(2\)</span> variables (which we call "2 by 2 systems of equations") but these methods can be expanded to solve larger systems.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SystemsOfEquations-4" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-SystemsOfEquations-5">First of all, let’s define a system of equations. Note that unless otherwise stated, all equations are linear equations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-SystemsOfEquations-5" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-SystemOfEquations"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
 </h4>
 <div class="para" id="def-SystemOfEquations-1-1">A <dfn class="terminology">system of equations</dfn> is a set of equations where equality holds in each of these simultaneously; that is, all equations are true at the same time.<div class="autopermalink" data-description="Paragraph"><a href="#def-SystemOfEquations-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <details id="def-SystemOfEquations-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span>
 </h5></summary><article class="example example-like knowl__content"><div class="para" id="def-SystemOfEquations-2-1">The two equations in the previous example are a system of equations. We know that two coffees and two pizza burgers coming to $9 is true, and we also know that similarly for the other equation. So both equations are true simultaneously.<div class="autopermalink" data-description="Paragraph"><a href="#def-SystemOfEquations-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 2.2.8"><a href="#def-SystemOfEquations-2" title="Copy permalink for Example 2.2.8">🔗</a></div></article></details><div class="autopermalink" data-description="Definition 2.2.7"><a href="#def-SystemOfEquations" title="Copy permalink for Definition 2.2.7">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.2.2: Intro to Systems Of Equations"><a href="#subsec-SystemsOfEquations" title="Copy permalink for Subsection 2.2.2: Intro to Systems Of Equations">🔗</a></div></section><section class="subsection" id="subsec-Substitution"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Example 2.2.9"><a href="#def-SystemOfEquations-2" title="Copy permalink for Example 2.2.9">🔗</a></div></article></details><div class="autopermalink" data-description="Definition 2.2.8"><a href="#def-SystemOfEquations" title="Copy permalink for Definition 2.2.8">🔗</a></div></article><div class="autopermalink" data-description="Subsection 2.2.2: Intro to Systems Of Equations"><a href="#subsec-SystemsOfEquations" title="Copy permalink for Subsection 2.2.2: Intro to Systems Of Equations">🔗</a></div></section><section class="subsection" id="subsec-Substitution"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="space"> </span><span class="title">Substitution</span>
 </h3>
-<div class="para" id="subsec-Substitution-2">We can use the ideas of equality to help us solve systems of equations. Remember from REFERENCE, when two expressions equal, we can substitute one for the other whenever it is convenient. The idea is that since we know how to solve one equation with one variable, so we want to convert a 2 by 2 system of equations into one equation with one variable via <dfn class="terminology">substitution.</dfn> Let’s look at the example in the previous section:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Substitution-2">We can use the ideas of equality to help us solve systems of equations. Remember from <span>(((xref without ref, first/last, or provisional attribute (check spelling))))</span>, when two expressions equal, we can substitute one for the other whenever it is convenient. The idea is that since we know how to solve one equation with one variable, so we want to convert a 2 by 2 system of equations into one equation with one variable via <dfn class="terminology">substitution.</dfn> Let’s look at <a href="sec-ProblemSolving.html#ex-2var2eq" class="xref" data-knowl="./knowl/xref/ex-2var2eq.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.7">Example 2.2.7</a> in the previous section:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-Substitution-3">REFERENCE<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-3" title="Copy permalink for Paragraph">🔗</a></div>
-</div>
+<div class="para" id="subsec-Substitution-3"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-3" title="Copy permalink for Paragraph">🔗</a></div></div>
 <div class="para" id="subsec-Substitution-4">We have the system<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-4" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 2C + P = 9
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 3C + 2P = 15.5.
 \end{equation*}
@@ -849,78 +926,78 @@ x+5-5=8-5
 </div>
 <div class="para" id="subsec-Substitution-8">There isn’t a "correct" choice of variable to solve for (any will indeed do!) we notice it seems easiest to solve for <span class="process-math">\(P\)</span> in the fist equation, as it has a coefficient of <span class="process-math">\(1\text{,}\)</span> so we do not have to divide at the end to solve for <span class="process-math">\(P\text{.}\)</span> Solving for <span class="process-math">\(P\)</span> in the first equation we have<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-8" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 P = 9-2C.
 \end{equation*}
 </div>
 <div class="para" id="subsec-Substitution-10">Now any time we see a <span class="process-math">\(P\)</span> in an equation we can replace, or "substitute"  it with <span class="process-math">\(9-2C\text{.}\)</span> Let’s do this substitution in the second equation:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-10" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 3C+2(9-2C) = 15.5.
 \end{equation*}
 </div>
 <div class="para" id="subsec-Substitution-12">Here we have one equation with the one variable <span class="process-math">\(C\text{,}\)</span> so we can use the steps to solve this from the previous section:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-12" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 3C+18-4C = 15.5
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 -C+18 = 15.5
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 -C=-2.5
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 C = 2.5.
 \end{equation*}
 </div>
 <details id="subsec-Substitution-17" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-Substitution-17-1">Describe the steps in each line of the previous part of this example.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-17-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Checkpoint 2.2.9"><a href="#subsec-Substitution-17" title="Copy permalink for Checkpoint 2.2.9">🔗</a></div></article></details><div class="para" id="subsec-Substitution-18">Now that we know <span class="process-math">\(C = 2.5\)</span> we can substitute this in to either equation to solve for our other unknown, <span class="process-math">\(P.\)</span> We will substitute this into the first equation:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-18" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 2.2.10"><a href="#subsec-Substitution-17" title="Copy permalink for Checkpoint 2.2.10">🔗</a></div></article></details><div class="para" id="subsec-Substitution-18">Now that we know <span class="process-math">\(C = 2.5\)</span> we can substitute this in to either equation to solve for our other unknown, <span class="process-math">\(P.\)</span> We will substitute this into the first equation:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-18" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 2(2.5)+P = 9
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 5 +P=9
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 P = 4.
 \end{equation*}
 </div>
 <details id="subsec-Substitution-22" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span>
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-Substitution-22-1">Describe the steps in each line of the previous part of this example.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-22-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Checkpoint 2.2.10"><a href="#subsec-Substitution-22" title="Copy permalink for Checkpoint 2.2.10">🔗</a></div></article></details><div class="para" id="subsec-Substitution-23">Now that we have values for all of our variables, we have solved this system of equations. We can check our work by substituting both values into the other equation to make sure equality does indeed hold (as we want both equations to be true simultaneously.)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-23" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 2.2.11"><a href="#subsec-Substitution-22" title="Copy permalink for Checkpoint 2.2.11">🔗</a></div></article></details><div class="para" id="subsec-Substitution-23">Now that we have values for all of our variables, we have solved this system of equations. We can check our work by substituting both values into the other equation to make sure equality does indeed hold (as we want both equations to be true simultaneously.)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-23" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 3(2.5) + 2(4) \mathop{=}\limits^?  15.5
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 7.5+ 8 \mathop{=}\limits^?  15.5
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/ex-2var2eq.html">
 \begin{equation*}
 15.5=15.5.
 \end{equation*}
@@ -941,12 +1018,14 @@ P = 4.
 <div class="autopermalink" data-description="Item 2"><a href="#subsec-Substitution-29-2" title="Copy permalink for Item 2">🔗</a></div>
 </li>
 <li id="subsec-Substitution-29-3">
-<div class="para" id="subsec-Substitution-29-3-1">Substitute this into the second equation for the solved variable. You now have one equation with at most one variable. If you have no variables left, you either have infinitely many solutions or no solutions (we will be able to tell which later in the chapter).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-29-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Substitution-29-3-1">Substitute this into the second equation for the solved variable<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-29-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Substitution-29-3-2">Simplify this equation. You now have one equation with at most one variable. If you have no variables left, you either have infinitely many solutions or no solutions (we will be able to tell which later in the chapter) and you are done.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-29-3-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 3"><a href="#subsec-Substitution-29-3" title="Copy permalink for Item 3">🔗</a></div>
 </li>
 <li id="subsec-Substitution-29-4">
-<div class="para" id="subsec-Substitution-29-4-1">If it still exists, solve this equation for the variable. You should have some number. If there are no variables left, go to REFERENCE.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-29-4-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Substitution-29-4-1">If it still exists, solve this equation for the variable. You should have some number.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-29-4-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 4"><a href="#subsec-Substitution-29-4" title="Copy permalink for Item 4">🔗</a></div>
 </li>
@@ -956,19 +1035,19 @@ P = 4.
 <div class="autopermalink" data-description="Item 5"><a href="#subsec-Substitution-29-5" title="Copy permalink for Item 5">🔗</a></div>
 </li>
 <li id="subsec-Substitution-29-6">
-<div class="para" id="subsec-Substitution-29-6-1">Check your work by substituting the solved values for both variables into the other equation from the previous part. If you do indeed have equality, your solution is a soloution for the system of equations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-29-6-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Substitution-29-6-1">Check your work by substituting the solved values for both variables into the equation not used in the previous sttep. If you do indeed have equality, your solution is a soloution for the system of equations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Substitution-29-6-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 6"><a href="#subsec-Substitution-29-6" title="Copy permalink for Item 6">🔗</a></div>
 </li>
 </ol>
-<section class="subsection" id="subsec-Elimination"><h4 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3.1</span><span class="space"> </span><span class="title">Elimination</span>
-</h4>
+<div class="autopermalink" data-description="Subsection 2.2.3: Substitution"><a href="#subsec-Substitution" title="Copy permalink for Subsection 2.2.3: Substitution">🔗</a></div></section><section class="subsection" id="subsec-Elimination"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="space"> </span><span class="title">Elimination</span>
+</h3>
 <div class="para" id="subsec-Elimination-2">There is another method for solving systems of equations that involves cleverly adding or subtracting multiples of one equation from another. We will explore why this method works, but first we will see the method in action:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-Elimination-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para" id="subsec-Elimination-3-1">Let’s look at the same example as in the previous sections; that is, the system of equations<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+<details id="subsec-Elimination-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-Elimination-3-1">Let’s look at the same example as in the previous sections; that is, the system of equations<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-3-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1004,7 +1083,7 @@ P = 4.
 </div>
 <div class="para" id="subsec-Elimination-3-9">Now that we know <span class="process-math">\(C=2.5\)</span> we can substitute that in to either equation and solve for <span class="process-math">\(P\text{,}\)</span> similarly to the previous example. Thus we have <span class="process-math">\(P = 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-3-9" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 2.2.11"><a href="#subsec-Elimination-3" title="Copy permalink for Example 2.2.11">🔗</a></div></article></details><div class="para" id="subsec-Elimination-4">As you can see, both methods give the same answer (which is a good thing, of course!). But why does this method work? We will give an example in the case of subtraction, but any operation will work. Note that in practice, addition and subtraction are the most useful in these scenarios.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 2.2.12"><a href="#subsec-Elimination-3" title="Copy permalink for Example 2.2.12">🔗</a></div></article></details><div class="para" id="subsec-Elimination-4">As you can see, both methods give the same answer (which is a good thing, of course!). But why does this method work? We will give an example in the case of subtraction, but any operation will work. Note that in practice, addition and subtraction are the most useful in these scenarios.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-4" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-Elimination-5">Imagine we had a system of two equations. We will call the left hand sides of the first and second equation <span class="process-math">\(L_1\)</span> and <span class="process-math">\(L_2\text{,}\)</span> repsctively. Similarly, we will call the right hand sides <span class="process-math">\(R_1\)</span> and <span class="process-math">\(R_2\text{.}\)</span> (Note that in our previous example <span class="process-math">\(L_1 = 2C+P\)</span> and <span class="process-math">\(R_1 = 9\)</span>). We can view the system in general as<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-5" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
@@ -1038,11 +1117,11 @@ L_1 - L_2 = R_1 - R_2
 </div>
 <div class="para" id="subsec-Elimination-10">Thus, we have subtracted Equation II from Equation I and showed thar the idea of elimination makes sense.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-10" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-Elimination-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span>
-</h5></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-Elimination-11-1">Use the above explanation as a guide to justify that if <span class="process-math">\(L_1 = R_1\)</span> and <span class="process-math">\(L_2 = R_2\)</span> then <span class="process-math">\(L_1 + L_2 = R_1 + R_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-11-1" title="Copy permalink for Paragraph">🔗</a></div>
+<details id="subsec-Elimination-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.13</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-Elimination-11-1">Use the above explanation as a guide to justify that if <span class="process-math">\(L_1 = R_1\)</span> and <span class="process-math">\(L_2 = R_2\)</span> then <span class="process-math">\(L_1 + L_2 = R_1 + R_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-11-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Checkpoint 2.2.12"><a href="#subsec-Elimination-11" title="Copy permalink for Checkpoint 2.2.12">🔗</a></div></article></details><div class="para logical" id="subsec-Elimination-12">
+<div class="autopermalink" data-description="Checkpoint 2.2.13"><a href="#subsec-Elimination-11" title="Copy permalink for Checkpoint 2.2.13">🔗</a></div></article></details><div class="para logical" id="subsec-Elimination-12">
 <div class="para">A few notes:</div>
 <ol class="decimal" id="subsec-Elimination-12-1">
 <li id="subsec-Elimination-12-1-1">
@@ -1063,28 +1142,96 @@ L_1 - L_2 = R_1 - R_2
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-12" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 2.2.3.1: Elimination"><a href="#subsec-Elimination" title="Copy permalink for Subsection 2.2.3.1: Elimination">🔗</a></div></section><div class="autopermalink" data-description="Subsection 2.2.3: Substitution"><a href="#subsec-Substitution" title="Copy permalink for Subsection 2.2.3: Substitution">🔗</a></div></section><div class="para" id="sec-ProblemSolving-6">Solving a system of linear equations (using substitution and elimination) - Focus on 2x2 examples, but note that elimination is good for larger systems (that’s why it’s good to know it!)<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-6" title="Copy permalink for Paragraph">🔗</a></div>
+<details id="subsec-Elimination-13" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.14</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-Elimination-13-1">Let’s solve the system<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-13-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-ProblemSolving-7">Substitution - solve one equation for one variable, and then substitute that in to the other equation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-7" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="displaymath process-math">
+\begin{equation*}
+2C + 3P = 13  
+\end{equation*}
 </div>
-<div class="para" id="sec-ProblemSolving-8">Elimination - idea: if <span class="process-math">\(A = B\)</span> and <span class="process-math">\(C = D\)</span> we can subtract <span class="process-math">\(C\)</span> from both sides of <span class="process-math">\(A=B\)</span> to get <span class="process-math">\(A-C = B-C\text{.}\)</span> But since <span class="process-math">\(C=D\)</span> we can say <span class="process-math">\(A-C = B-D\text{.}\)</span> Thus we can do arithmetic with "sides" of an equation. + and - are most useful.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-8" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="displaymath process-math">
+\begin{equation*}
+4C - P = 5  
+\end{equation*}
 </div>
-<div class="para" id="sec-ProblemSolving-9">How many solutions? One, none, infinitely many? How to tell.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-9" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Elimination-13-4">We will eliminate the variable <span class="process-math">\(P\text{.}\)</span>  Note that in Equation I the coefficient of <span class="process-math">\(P\)</span> is 3, and in Equation II it is -1.  To make them opposites, we multiply Equation II by 3:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-13-4" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-ProblemSolving-10">What if the equation is more complicated? Ideas? Trial and error/factoring/etc.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-10" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="displaymath process-math">
+\begin{equation*}
+[3 \times II] → 3(4C - P) = 3·5
+\end{equation*}
 </div>
-<div class="para" id="sec-ProblemSolving-11">Using technology.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-11" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow 12C - 3P = 15
+\end{equation*}
 </div>
-<div class="para" id="sec-ProblemSolving-12">The "work" in solving a problem is setting it up correctly (usually in the language of algebra, but other ways too)<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-12" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Elimination-13-7">Now Equation I is <span class="process-math">\(2C + 3P = 13\)</span> and our new equation is <span class="process-math">\(12C - 3P = 15\text{.}\)</span>  If we add them, the <span class="process-math">\(P\)</span>-terms cancel:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-13-7" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-ProblemSolving-13"><div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-13" title="Copy permalink for Paragraph">🔗</a></div></div>
-<div class="para" id="sec-ProblemSolving-14">Some problem solving strategies and techniques. Try to find something "better" than Polya. Include some problems to solve, of course, and try to include problems of a similar difficulty throughout. Discussion on patterns (with reference to if-then statements). INCLUDE EXPLORATION, TRANSLATING INTO ALGEBRA, SHOWING MULTIPLE METHODS.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-14" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="displaymath process-math">
+\begin{equation*}
+[I + (3 \times II)] → (2C + 3P) + (12C - 3P) = 13 + 15
+\end{equation*}
 </div>
-<div class="para" id="sec-ProblemSolving-15">Translating. Focus on testing with simple examples, defining your variables. Using equality to substitute. Exploration to find formula for situation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-15" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow 14C + 0·P = 28
+\end{equation*}
 </div>
-<div class="para" id="sec-ProblemSolving-16">Open ended problems: going from examples to conjecture to "proof". HIGHLIGHT MANY WAYS OF PROVING!<div class="autopermalink" data-description="Paragraph"><a href="#sec-ProblemSolving-16" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow 14C = 28
+\end{equation*}
 </div>
-<div class="autopermalink" data-description="Section 2.2: Problem Solving"><a href="#sec-ProblemSolving" title="Copy permalink for Section 2.2: Problem Solving">🔗</a></div></section></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow C = 2
+\end{equation*}
+</div>
+<div class="para" id="subsec-Elimination-13-12">Having found <span class="process-math">\(C = 2\text{,}\)</span> we substitute into either original equation.  Using Equation II:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-13-12" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+4(2) - P = 5
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow 8 - P = 5
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow -P = -3
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rightarrow P = 3
+\end{equation*}
+</div>
+<div class="para" id="subsec-Elimination-13-17">Therefore, the solution is <span class="process-math">\((C,P) = (2,3)\text{.}\)</span>  Each step used only arithmetic operations on both sides of the equations and the fact that adding or subtracting equal quantities preserves equality—so the “elimination” of <span class="process-math">\(P\)</span> left us with a single-variable equation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-13-17" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.2.14"><a href="#subsec-Elimination-13" title="Copy permalink for Example 2.2.14">🔗</a></div></article></details><div class="para" id="subsec-Elimination-14">Elimination also works for systems that have three or more equations and variables. By combining equations to remove one variable at a time, you can reduce a large system to a single-variable equation and then "back-substitute" one equation at a time to find the remaining unknowns. Those techniques are very powerful for handling larger systems, but we will not develop them further in this text.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-14" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Elimination-15">How many solutions? One, none, infinitely many? How to tell.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-15" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Elimination-16">What if the equation is more complicated? Ideas? Trial and error/factoring/etc.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-16" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Elimination-17">Using technology.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-17" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Elimination-18">The "work" in solving a problem is setting it up correctly (usually in the language of algebra, but other ways too)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-18" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Elimination-19"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-19" title="Copy permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="subsec-Elimination-20">Some problem solving strategies and techniques. Try to find something "better" than Polya. Include some problems to solve, of course, and try to include problems of a similar difficulty throughout. Discussion on patterns (with reference to if-then statements). INCLUDE EXPLORATION, TRANSLATING INTO ALGEBRA, SHOWING MULTIPLE METHODS.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-20" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Elimination-21">Translating. Focus on testing with simple examples, defining your variables. Using equality to substitute. Exploration to find formula for situation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-21" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-Elimination-22">Open ended problems: going from examples to conjecture to "proof". HIGHLIGHT MANY WAYS OF PROVING!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-Elimination-22" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.2.4: Elimination"><a href="#subsec-Elimination" title="Copy permalink for Subsection 2.2.4: Elimination">🔗</a></div></section><div class="autopermalink" data-description="Section 2.2: Problem Solving"><a href="#sec-ProblemSolving" title="Copy permalink for Section 2.2: Problem Solving">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-Equality.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-2_1NumberSystemsAndPlaceValue.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
