@@ -773,7 +773,7 @@
     4C - P = 5  
   </me>
   <p>
-    We will eliminate the variable <m>P</m>.  Note that in Equation I the coefficient of <m>P</m> is 3, and in Equation II it is -1.  To make them opposites, we multiply Equation II by 3:
+    We will eliminate the variable <m>P</m>.  Note that in Equation I the coefficient of <m>P</m> is 3, and in Equation II it is -1.  We want to eliminate this variable, so we need to multiply our equation by a number so that the coefficients of <m>P</m> in both equations are of opposite sign. To make them opposites, we can multiply Equation II by 3:
   </p>
   <me>
     [3 \times II] → 3(4C - P) = 3·5
@@ -785,19 +785,21 @@
     Now Equation I is <m>2C + 3P = 13</m> and our new equation is <m>12C - 3P = 15</m>.  If we add them, the <m>P</m>-terms cancel:
   </p>
   <me>
-    [I + (3 \times II)] → (2C + 3P) + (12C - 3P) = 13 + 15
+    [I] + [3 \times II] → (2C + 3P) + (12C - 3P) = 13 + 15
   </me>
+  <p>Note that we need to add both the left hand sides </p>
   <me>
     \rightarrow 14C + 0·P = 28
   </me>
   <me>
     \rightarrow 14C = 28
   </me>
+  <p>Now we can solve this equation using our usual methods for one equation and one variable.</p>
   <me>
     \rightarrow C = 2
   </me>
   <p>
-    Having found <m>C = 2</m>, we substitute into either original equation.  Using Equation II:
+    Having found <m>C = 2</m>, we can now substitute into either original equation.  Using Equation II:
   </p>
   <me>
     4(2) - P = 5
@@ -812,17 +814,26 @@
     \rightarrow P = 3
   </me>
   <p>
-    Therefore, the solution is <m>(C,P) = (2,3)</m>.  Each step used only arithmetic operations on both sides of the equations and the fact that adding or subtracting equal quantities preserves equality—so the “elimination” of <m>P</m> left us with a single-variable equation.
+    Therefore, the solution is <m>(C,P) = (2,3)</m>.  Each step used only arithmetic operations on both sides of the equations and the fact that adding or subtracting equal quantities preserves equality—so the “elimination” of <m>P</m> left us with a single-variable equation. We could have eliminated <m>C</m> instead and we would, of course, find the same solution to this system.
   </p>
 </example>
 
-      <p>Elimination also works for systems that have three or more equations and variables. By combining equations to remove one variable at a time, you can reduce a large system to a single-variable equation and then "back-substitute" one equation at a time to find the remaining unknowns. Those techniques are very powerful for handling larger systems, but we will not develop them further in this text. </p>      
+      <p>Elimination also works for systems that have three or more equations and variables. By combining equations to remove one variable at a time, you can reduce a large system to a single-variable equation and then "back-substitute" one equation at a time to find the remaining unknowns. Those techniques are very powerful for handling larger systems, but we will not go further here. </p>      
             
        
     <subsection><title>How Many Solutions Does a System of Equations Have</title>   
-            <p>TALK ABOUT ONE SOLUTION AND HOW OPERATIONS DON'T CHANGE THE NUMBER OF SOLUTIONS</p>
-            <p>INFINITELY MANY: SCALED EQUATION</p>
-            <p>NO SOLUTIONS: EQUATIONS WITH DIFFERENT CONSTANTS</p>
+            <p>In systems of equations, there are three possibilities of the number of solutions there are; either the system has exactly one solution, exactly zero solutions, or infinitely many solutions. The last two situations happen in somewhat special cases, so we will look at these cases first. </p>
+
+            <example> <p> Consider the following system: </p> <me>2x-3y=7</me> <me> -4x+6y=4.</me>
+            <p>Solve this system using either substitution or elimination. What do you notice?</p>
+            <solution> <p>Did you see that both of the variables are eliminated at the same time? In fact, you'll end up with some nonsense equation like <m>0=3</m> or <m>1=-4</m> or some other obvious nonsense (depending on how you tried to solve the system). For what values of <m>x,y</m> does your nonsense equation hold? None! So in this case there are exactly no solutions.</p>
+            <p>In fact, you may have noticed that if we divided Equation II by -2 we obtain the system <me>2x-3y=7</me> <me> 2x-3y=-2.</me> There is no way that <m>2x-3y</m> can equal both 7 and -2 at the same time. </p>
+            
+            </solution>
+            
+            
+            </example>
+            <exercise> <p>Make two different systems of two equations with two variables that have no solutions. Try to solve them using both substitution and elimination to see what happens.</p></exercise>
     </subsection>
         
 
