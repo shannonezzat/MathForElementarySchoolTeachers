@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="lemma theorem-like"><h4 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.3.9</span><span class="period">.</span>
+</h4>
+<div class="para">Let <span class="process-math">\(n \in \mathbb{N}\text{.}\)</span> If <span class="process-math">\(n=a\times b\)</span> for some <span class="process-math">\(a,b \in \mathbb{N}\)</span> where, say, <span class="process-math">\(a \geq b\text{,}\)</span> then <span class="process-math">\(a \geq \sqrt{n}\)</span> and <span class="process-math">\(b \leq \sqrt{n}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#lem-FactorizationSquareRoot-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Lemma 6.3.9"><a href="#lem-FactorizationSquareRoot" title="Copy permalink for Lemma 6.3.9">🔗</a></div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para">We are going to show this result is true using a <dfn class="terminology">proof by contradiction</dfn>. As in part 3 of <a href="sec-ConditionalStatements.html#subsec-JustifyingConditionalStatements" class="internal" title="Subsection 1.2.2: Justifying Conditional Statements">Subsection 1.2.2</a>, we are going to pretend that there is a counterexample to our conditional statement (that is, the only situation where <span class="process-math">\(P \to Q\)</span> is false; when <span class="process-math">\(P\)</span> is true and <span class="process-math">\(Q\)</span> is false.) We will show that if we are in this case, then mathematics "breaks" and we end up with something that is never true. This means that there are no counterexamples to our statement, so it must always be true. In our case, we will end up with showing that <span class="process-math">\(n &gt; n\text{,}\)</span> which is always false; of course, no number is strictly greater than itself!. The idea will be that if we multiply two number bigger than <span class="process-math">\(\sqrt{n}\)</span> together, we must get a number bigger than <span class="process-math">\(n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#lem-FactorizationSquareRoot-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Assuming that the if-part is true, let <span class="process-math">\(n=ab\)</span> be a factorization of <span class="process-math">\(n\)</span> into two factors, where <span class="process-math">\(a \geq b\text{.}\)</span> Let’s also assume that the then-part is false; that either both</div>
+<ol class="decimal" id="lem-FactorizationSquareRoot-2-2-4">
+<li>
+<div class="para">
+<span class="process-math">\(a,b &gt; \sqrt{n}\)</span> or<div class="autopermalink" data-description="Paragraph"><a href="#lem-FactorizationSquareRoot-2-2-4-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#lem-FactorizationSquareRoot-2-2-4-1" title="Copy permalink for Item 1">🔗</a></div>
+</li>
+<li>
+<div class="para">
+<span class="process-math">\(a,b &lt; \sqrt{n}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#lem-FactorizationSquareRoot-2-2-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#lem-FactorizationSquareRoot-2-2-4-2" title="Copy permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">There are two cases here. We will do the first case, and leave the second case as an exercise for you.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#lem-FactorizationSquareRoot-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">By the definition of a square root, we can write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n = (\sqrt{n})(\sqrt{n})\text{.}
+\end{equation*}
+</div>
+<div class="para">Since we’re assuming <span class="process-math">\(a &gt; \sqrt{n}\text{,}\)</span> if we replace one of the <span class="process-math">\(\sqrt{n}\)</span> in the first expression with <span class="process-math">\(a\)</span> we will obtain a larger product, so</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n = (\sqrt{n})(\sqrt{n}) &gt; a(\sqrt{n}) \text{.}
+\end{equation*}
+</div>
+<div class="para">Similarly, we’re also assuming <span class="process-math">\(b &gt; \sqrt{n}\text{,}\)</span> if we replace the other <span class="process-math">\(\sqrt{n}\)</span> in the new expression with <span class="process-math">\(b\)</span> we will obtain a larger product, so</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n = (\sqrt{n})(\sqrt{n}) &gt; a(\sqrt{n}) &gt; ab \text{.}
+\end{equation*}
+</div>
+<div class="para">But we know that <span class="process-math">\(n=ab\)</span> so we can replace the <span class="process-math">\(ab\)</span> on the right hand side by <span class="process-math">\(n\text{.}\)</span> So</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n = (\sqrt{n})(\sqrt{n}) &gt; a(\sqrt{n}) &gt; ab = n.
+\end{equation*}
+</div>
+<div class="para">So if we look at the (in)equation above, we have just showed that <span class="process-math">\(n &gt; n\text{.}\)</span> Since this is never true, then there are no counterexamples to our original statement (at least in the first case). <div class="para">The case where we assume that <span class="process-math">\(a,b &lt; \sqrt{n}\)</span> is very similar, and is left as an exercise to you. See if you can modify the case above to be a proof for this case.<div class="autopermalink" data-description="Paragraph"><a href="#lem-FactorizationSquareRoot-2-3-15" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <div class="para">Combining the two cases, we know that there are no counterexamples to our conditional statement, so it is always true.<div class="autopermalink" data-description="Paragraph"><a href="#lem-FactorizationSquareRoot-2-3-16" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#lem-FactorizationSquareRoot-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 6.3.9.1"><a href="#lem-FactorizationSquareRoot-2" title="Copy permalink for Proof 6.3.9.1">🔗</a></div></article></details><span class="incontext"><a class="internal" href="sec-PrimeNumbers.html#lem-FactorizationSquareRoot">in-context</a></span>
+</body>
+</html>
