@@ -1,0 +1,73 @@
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext init --refresh` to produce a compatible file.
+INFO    : Since no target was supplied, we will use "html".
+
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : converting latex-image pictures from /workspaces/MathForElementarySchoolTeachers/source/main.ptx to svg graphics for placement in /workspaces/MathForElementarySchoolTeachers/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /workspaces/MathForElementarySchoolTeachers/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'publisher': '/workspaces/MathForElementarySchoolTeachers/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /workspaces/MathForElementarySchoolTeachers/source
+INFO    : verifying and expanding input directory: /workspaces/MathForElementarySchoolTeachers/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/MathForElementarySchoolTeachers/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/MathForElementarySchoolTeachers/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/MathForElementarySchoolTeachers/assets
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/extract-latex-image.xsl
+INFO    : messages from the log for XSL processing:
+ERROR   : * PTX:ERROR: the @xml:id value "def-PropertiesOfEquality" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "def-PropertiesOfEquality" (xml:id)
+INFO    : *              located within: "def-PropertiesOfEquality" (xml:id)
+ERROR   : * PTX:ERROR: the @xml:id value "objectives-structures" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "objectives-structures" (xml:id), "Logic" (title)
+INFO    : *              located within: "objectives-structures" (xml:id)
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/extract-latex-image.xsl
+WARNING : PTX:ERROR: cannot locate executable with configuration name `LatexEngine.XELATEX` as command `xelatex`
+***  Edit the configuration file  ("pretext.cfg" or "project.ptx") and/or install  ***
+***  the necessary program and/or make sure the executable is on your PATH         ***
+ERROR   : Unable to generate some latex-image assets:
+ LaTeX compilation failed for 1 "latex-image"(s).
+Review the log for error messages, and LaTeX transcripts.
+Images are:
+  fraction-1-over-2.png.tex
+INFO    : Removing temporary directory /tmp/ptx-mwod6iub
+INFO    : Finished generating assets.
+
+INFO    : Finished generating assets.
+
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

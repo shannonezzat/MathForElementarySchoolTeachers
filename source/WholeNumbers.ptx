@@ -241,8 +241,8 @@
        
     </subsection>
     </section>
-<section xml:id="sec-ProblemSolving">
-    <title>Problem Solving</title>
+<section xml:id="sec-SolvingEquations">
+    <title>Solving Equations</title>
 <introduction>
      <p>
         In order to solve problems, it helps to be comfortable solving algebraic equations. In this section we will first talk about solving algebraic equations of a certain type (called linear equations), solving multiple linear equations at the same time, and then talking about some problem solving strategies that you can use to try and get a handle on a problem where the answer and/or approach isn't immediately obvious. 
@@ -820,9 +820,9 @@
 
       <p>Elimination also works for systems that have three or more equations and variables. By combining equations to remove one variable at a time, you can reduce a large system to a single-variable equation and then "back-substitute" one equation at a time to find the remaining unknowns. Those techniques are very powerful for handling larger systems, but we will not go further here. </p>      
             
-       
+</subsection>       
     <subsection><title>How Many Solutions Does a System of Equations Have</title>   
-            <p>In systems of equations, there are three possibilities of the number of solutions there are; either the system has exactly one solution, exactly zero solutions, or infinitely many solutions. The last two situations happen in somewhat special cases, so we will look at these cases first. </p>
+            <p>In systems of equations, there are three possibilities of the number of solutions there are; either the system has exactly one solution, exactly zero solutions, or infinitely many solutions. We've seen what happens when a system has exactly one solution, so we will now look at cases where there are either no or infinitely many solutions. </p>
 
             <example> <p> Consider the following system: </p> <me>2x-3y=7</me> <me> -4x+6y=4.</me>
             <p>Solve this system using either substitution or elimination. What do you notice?</p>
@@ -834,14 +834,36 @@
             
             </example>
             <exercise> <p>Make two different systems of two equations with two variables that have no solutions. Try to solve them using both substitution and elimination to see what happens.</p></exercise>
+
+            <example><p> Consider the following system: </p> <me>6a-b=1</me> <me> 12a+2b=2.</me>
+            <p>Solve this system using either substitution or elimination. What do you notice?</p>
+        <solution> <p> Like the previous example, both variables are eliminated at the same time. However, unlike the example above, here we're left with an equation that is always true, like <m>0=0</m> or <m>1=1</m> or something similar. This means that introducing the second equation did not reduce the number of solutions for this system. In fact, we're free to choose one of <m>a</m> or <m>b</m> and then we can determine the other. For example if <m>a=1</m> then you can check that <m>b=-5</m>. So we have <term>infinitely many</term> pairs of numbers that solve this system.</p> 
+        
+        <p>Can you find three other pairs of numbers <m>(a,b)</m> that are solutions?</p>
+    <p>In fact, you may have noticed that if we divided Equation II by 2 we obtain the system <me>6a-b=1</me> <me>6a-b=1.</me> Of course, this is just two copies of the same equation! </p>
+    </solution></example>
+
+    <exercise> <p>Make two different systems of two equations with two variables that have infinitely many solutions. Try to solve them using both substitution and elimination to see what happens. Then find at least two different solutions for each system you made.</p></exercise>
+
+    <p>Putting this all together, a 2x2 system of equations has:
+        <ol>
+            <li> No solutions if, when solving the system, you obtain a "nonsense" equation without variables, for example <m>0=1</m>. </li>
+            <li> Infinitely many solutions if, when solving the system, you obtain an  equation without variables that is always true, for example <m>0=0</m>. </li>
+            <li>Exactly one solution in every other case.</li>
+
+        </ol>
+
+    </p>
+
+        
     </subsection>
         
 
         
         
-        
-        
-        
+</section>       
+ <section xml:id="FutureIdeas">       
+        <title> Future Section Ideas </title>
     
     
     
@@ -867,16 +889,16 @@
     <p>
         Open ended problems: going from examples to conjecture to "proof". HIGHLIGHT MANY WAYS OF PROVING!
     </p>
-     </subsection>
+     
 </section>
             <section xml:id="sec-2_1NumberSystemsAndPlaceValue">
-                <title>NumberSystemsAndPlaceValue</title>
+                <title>Number Systems And PlaceValue</title>
                     <objectives permid="dEf" xml:id="objectives-structures">
 
                                    
                     </objectives>
                     
-  <title>Whole Numbers</title>
+  
 
   <p>
     Place value is a very important concept that allows us to write down very large (and very small) numbers in a small amount of space. If we didn't have the concept of place value, we would simply use the number of "ticks" we wanted to write down to represent that number. For example, if we wanted to write down "twenty" we would do something like the following:
@@ -903,9 +925,7 @@
   </p>
 
 
-</section>
-<section xml:id="sec-NumberSystems">
-    <title>Number Systems</title>
+
     <subsection>
     <title>Introduction to Number Systems</title>
     
@@ -1343,6 +1363,7 @@
                Though we're taking addition to be our "axiom" that we are using to define all other operations, mathematicians usually build up the ideas of whole numbers and addition from sets themselves. This approach, while more fundamental, is a bit beyond the scope of what teachers need to understand. 
             </p>
         </assemblage>
+        
     </subsection>
     <subsection xml:id="subsec-Subtraction">
         <title>Inequality and Subtraction </title>
@@ -1459,6 +1480,8 @@
             <p>
     INCLUDE SECTION ON a-b=c IFF a-c=b, EITHER HERE OR IN PROPERTIES OF ARITHMETIC SECTION
 </p>
+<video youtube="nrS1VEiVOhk"/>
+<video youtube="On5EaTP0UEY" />
     </subsection>
     <subsection xml:id="subsec-Multiplication">
         <title>Multiplication</title>
@@ -1520,6 +1543,7 @@
             </p>
             
         </subsubsection>
+        <video youtube="lfLOFIlx3Bg" />
     </subsection>
     <subsection xml:id="subsec-Division">
         <title>Division with Remainders</title>
@@ -1610,7 +1634,7 @@
            </p>
        </assemblage>
        </subsubsection>
-       
+       <video youtube="f667-6l8hMI" />
 
     </subsection>
 </section>
@@ -2070,7 +2094,7 @@
         </example>
         
     </subsubsection>
-    
+    <video youtube="3wCt173Qkas"/>
     
     </subsection>
 </section>
