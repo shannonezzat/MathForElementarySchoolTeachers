@@ -5,6 +5,22 @@
     
         <section>
           <title>Introduction to Fractions</title>
+          <objectives xml:id="objectives-fractions">
+  <title>Learning Objectives</title>
+  <introduction>
+    <p>
+      This chapter aims to develop a deep and flexible understanding of fractions by exploring their definitions, visualizations, and arithmetic properties.
+    </p>
+  </introduction>
+  <ol>
+    <li>Recognize fractions as representations of equal parts of a whole and as solutions to linear equations.</li>
+    <li>Interpret the components of a fraction and use visual models to make sense of fractional quantities.</li>
+    <li>Identify and generate equivalent fractions through multiplication and division of numerator and denominator.</li>
+    <li>Compare fractions by finding a common denominator and using equivalent forms.</li>
+    <li>Understand and apply the concept of density of rational numbers to identify fractions between two given values.</li>
+  </ol>
+</objectives>
+
           <p>
             In this chapter, we will explore the concept of fractions and rational numbers, which are vital in understanding many mathematical concepts and applications. As future elementary school teachers, it is essential to have a firm grasp of fractions to effectively teach students and build a strong foundation in mathematics.
           </p>
@@ -275,6 +291,23 @@
         </section>
       <section>
         <title>Arithmetic With Fractions</title>
+<objectives xml:id="objectives-arithmetic-fractions">
+  <title>Learning Objectives</title>
+  <introduction>
+    <p>
+      In this chapter, you will learn how to perform all the standard arithmetic operations on fractions and mixed numbers, supported by visual reasoning, precise definitions, and general rules.
+    </p>
+  </introduction>
+  <ol>
+    <li>Add and subtract fractions with like and unlike denominators using equivalent fractions and common denominators.</li>
+    <li>Convert between mixed numbers and improper fractions using systematic procedures.</li>
+    <li>Multiply fractions and explain the operation using area models and the product of numerators and denominators.</li>
+    <li>Divide fractions by interpreting the operation as grouping and applying the rule of multiplying by reciprocals.</li>
+    <li>Simplify compound fractions and expressions involving exponents, including negative and fractional bases.</li>
+  </ol>
+</objectives>
+
+
       <subsection xml:id="AddingSubtractingFractions">
   <title>Adding and Subtracting Fractions</title>
   <p>
@@ -682,6 +715,22 @@ Finally, applying the negative exponent rule, we get <m>\dfrac{1}{2^{1} \cdot 3^
 
   <section>
   <title>Ratios, Rates, and Proportions</title>
+  <objectives xml:id="objectives-ratios-rates-proportions">
+  <title>Learning Objectives</title>
+  <introduction>
+    <p>
+      In this section, you will explore how ratios, rates, and proportions can be used to represent and solve a wide variety of mathematical and real-world problems.
+    </p>
+  </introduction>
+  <ol>
+    <li>Differentiate between ratios, rates, and proportions, and identify their appropriate contexts.</li>
+    <li>Simplify ratios and calculate unit rates from real-world data.</li>
+    <li>Set up and solve proportions using equivalent ratios or cross multiplication.</li>
+    <li>Use proportions to solve problems involving percentages, recipes, speed, grading, and scale.</li>
+    <li>Apply rate-based reasoning to combined work problems and other compound applications.</li>
+  </ol>
+</objectives>
+
   <p>
     Ratios, rates, and proportions are fundamental concepts in mathematics, and they appear in Chapter 5.4 of your book. Let's start by examining what each term means and how they are used in real-life scenarios.
   </p>

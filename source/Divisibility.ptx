@@ -42,7 +42,7 @@
 
         </p>
         <p>
-            INSERT PIC OF THIS DIVISBILITY
+            INSERT PIC OF THIS DIVISIBILITY
         </p>
         <p>
             Now that we've shown this, we can use it to help up study divisibility of many numbers. We'll do many rules in the next subsection, but if we look at the example at the beginning of this section, we see that this shows the following:
@@ -118,7 +118,7 @@
                        
         </p>
         <p>
-            We will talk about <term>relation</term> between two objects, like numbers, or polygons, or sets, or other things. Basically a relation between two objects is any statement involving two obects that is either TRUE or FALSE.
+            We will talk about <term>relation</term> between two objects, like numbers, or polygons, or sets, or other things. Basically a relation between two objects is any statement involving two objects that is either TRUE or FALSE.
         </p>
         <p>
             For example, if our objects are sets, then <m>\in</m> is a relation between them. For example, let <m>A:=\{1,2\}, \quad B:=\{1,\{1,2\},3\}, \quad C:= \{1,2,3,4\}</m>. Under the relation <m>\in</m>, <m>A</m> is related to <m>B</m> since <m>A \in B</m>, but <m>A</m> is not related to <m>C</m> since <m>A \notin C</m>. Divisibility is also a relation. We can say that under divisibility <m>3</m> is related to <m>12</m> since <m>3 \mid 12</m> but <m>3</m> is not related to <m>10</m> since <m>3 \nmid 10</m>.
@@ -211,7 +211,7 @@
             </statement>
             <proof>
                 <p>
-                    We'll only prove the case for addition, and leave the case for subtraction as an exercise later. Assuming the if-part is true, assume that <m>b=ax</m> and <m>c=ay</m> for some natural numbers <m>x,y</m>. We need to show that <m>b+c=a(   )</m> where the bracket is some natural numbber. Adding both equations together, 
+                    We'll only prove the case for addition, and leave the case for subtraction as an exercise later. Assuming the if-part is true, assume that <m>b=ax</m> and <m>c=ay</m> for some natural numbers <m>x,y</m>. We need to show that <m>b+c=a(   )</m> where the bracket is some natural number. Adding both equations together, 
                     <me>
                         b+c=ax+ay.
                     </me>
@@ -245,7 +245,7 @@
             INSERT HIDDEN PIC HERE, MAYBE BY AN EXERCISE OR SOMETHING.
         </p>
         <p>
-          It looks like when you "glue" the two rectangle-like objects together, the remainder that doesn't make a full row in the non-divisible number is still there when the ojects are added. This is essentially the entire idea.  
+          It looks like when you "glue" the two rectangle-like objects together, the remainder that doesn't make a full row in the non-divisible number is still there when the objects are added. This is essentially the entire idea.  
         </p>
         <p>
             <theorem xml:id="thm-thm3">
@@ -306,7 +306,7 @@
                 </li>
                 <li>
                     <p>
-                        Do the same thing for subtraction now. Pick different values besides <m>a=4</m> and <m>b=7</m> and find values for <m>c</m> where the sum is, and is not, divisibile by <m>a</m>. Make a conjecture about when each case happens.
+                        Do the same thing for subtraction now. Pick different values besides <m>a=4</m> and <m>b=7</m> and find values for <m>c</m> where the sum is, and is not, divisible by <m>a</m>. Make a conjecture about when each case happens.
                     </p>
                 </li>
             </ol>
@@ -329,7 +329,7 @@
         To facilitate our discussion, we will use underline notation in LaTeX to indicate a number by its place value digits. For example, a four-digit number <m>ABCD</m> can be represented as <m>\underline{ABCD} = A \times 1000 + B \times 100 + C \times 10 + D</m>. This notation will allow us to break down the number into its constituent parts and analyze its divisibility properties. Since we are using variables to represent unknown digits, we need this new notation, since if we write <m>ABCD</m> this usually means <m>A \times B \times C \times D</m>. However, if we write actual digits like <m>1234</m> without an underline, we still mean <m>1000+200+30+4</m>.
     </p>
     <p>
-        In essence, the idea of divisibilty rules is to turn a question about divisibility of a large number into a question about divisibility of a smaller number. In some cases, that number will have a fixed number of digits, and in other cases the number of digits won't be fixed, but it will be a smaller number.
+        In essence, the idea of divisibility rules is to turn a question about divisibility of a large number into a question about divisibility of a smaller number. In some cases, that number will have a fixed number of digits, and in other cases the number of digits won't be fixed, but it will be a smaller number.
     </p>
    
 </subsection>
@@ -341,7 +341,7 @@
     <subsubsection xml:id="divisibility-rule-2">
         <title>Divisibility Rule for 2</title>
         <p>
-            Most people reading this will know the divisilbity rule for <m>2</m>. It is one of the first patterns that elementary students notice, and of course it extends to being able to check if any number has 2 as a factor. The rule is as follows; we will prove it after showing examples of the rule showing both divisibility and non-divisibility.
+            Most people reading this will know the divisibility rule for <m>2</m>. It is one of the first patterns that elementary students notice, and of course it extends to being able to check if any number has 2 as a factor. The rule is as follows; we will prove it after showing examples of the rule showing both divisibility and non-divisibility.
         </p>
         <assemblage xml:id="assemblage-DivisibilityIfAndOnlyIf">
             <title>Reminder</title>
@@ -392,7 +392,7 @@
     <subsubsection xml:id="divisibility-rule-4">
         <title>Divisibility Rule for 4</title>
         <p>
-            The divisibility rule for 4 is very similar to the divisibility rule for 2. For the previous rule, we knew that <m>2</m> was a factor of every power of ten <m>10^e</m> with <m>e \geq 1</m>. It is a good idea to see if you can modify the work from the divisbility rule for 2 to develop a divisibility rule for 4. Try this yourself before reading on. 
+            The divisibility rule for 4 is very similar to the divisibility rule for 2. For the previous rule, we knew that <m>2</m> was a factor of every power of ten <m>10^e</m> with <m>e \geq 1</m>. It is a good idea to see if you can modify the work from the divisibility rule for 2 to develop a divisibility rule for 4. Try this yourself before reading on. 
         </p>
         <p>
             Again, we state the rule and give some examples and non-examples before we prove that the rule always works.
@@ -432,7 +432,7 @@
     <subsubsection xml:id="divisibility-rule-8">
         <title>Divisibility Rule for 8</title>
         <p>
-            Looking at the above rules, you may have started to notice a pattern emerging. We can view <m>2</m> as <m>2^1</m> and note that to check divisibility by 2 we only need to check whether the number formed by the last digit is divisibile by 2. For <m>4=2^2</m>, we need to check if the number formed by the last *two* digits is divisible by <m>4</m>. Let's check if the pattern has a chance of holding for <m>8=2^3:</m>
+            Looking at the above rules, you may have started to notice a pattern emerging. We can view <m>2</m> as <m>2^1</m> and note that to check divisibility by 2 we only need to check whether the number formed by the last digit is divisible by 2. For <m>4=2^2</m>, we need to check if the number formed by the last *two* digits is divisible by <m>4</m>. Let's check if the pattern has a chance of holding for <m>8=2^3:</m>
         </p>
         <example>
             <p>
@@ -507,12 +507,12 @@
                 </li>
                 <li>
                     <p>
-                        Using the ideas above, conjecture a divisibility rule for when a number is divisibile by <m>2^k</m>. What do you have to check?
+                        Using the ideas above, conjecture a divisibility rule for when a number is divisible by <m>2^k</m>. What do you have to check?
                     </p>
                 </li>
                 <li>
                     <p>
-                        Let's say you have an <m>n</m>-digit number <m>\underline{A_{10^{n-1}}A_{10^{n-2}}\ldots A_{10}A_1}</m> where the subscript of each digit is its place vaue. Using the proofs for <m>2,4,</m> and <m>8</m> as a blueprint, prove the conjecture you made above.
+                        Let's say you have an <m>n</m>-digit number <m>\underline{A_{10^{n-1}}A_{10^{n-2}}\ldots A_{10}A_1}</m> where the subscript of each digit is its place value. Using the proofs for <m>2,4,</m> and <m>8</m> as a blueprint, prove the conjecture you made above.
                     </p>
                 </li>
             </ol>
@@ -523,7 +523,7 @@
 <subsection xml:id="subsec-DivisibilityRuleFor5">
     <title>Divisibility Rule For 5</title>
     <p>
-        The divisibility rule for 5 is also incredibly well known. Most people reading this should know that you only need to check whether the last digit of the number is either 5 or 0. However, like the divisibility rule for 2, it will be more advantageous to think the rule as the last digit being divisible by <m>5</m>. Note that the rule for divisibility by 2 relies on the fact that <m>10=2\times5</m>, since all multiples of <m>10</m>, including powers of <m>10</m>, are also divisbile by <m>2</m>. Since <m>10=2 \times 5,</m> the exact same idea should work for <m>5</m> as well as <m>2</m>. In fact, we should be able to write down the exact same argument for divisibility by 5 as divisibility by 2, with all the 2's replaced by 5:
+        The divisibility rule for 5 is also incredibly well known. Most people reading this should know that you only need to check whether the last digit of the number is either 5 or 0. However, like the divisibility rule for 2, it will be more advantageous to think the rule as the last digit being divisible by <m>5</m>. Note that the rule for divisibility by 2 relies on the fact that <m>10=2\times5</m>, since all multiples of <m>10</m>, including powers of <m>10</m>, are also divisible by <m>2</m>. Since <m>10=2 \times 5,</m> the exact same idea should work for <m>5</m> as well as <m>2</m>. In fact, we should be able to write down the exact same argument for divisibility by 5 as divisibility by 2, with all the 2's replaced by 5:
     </p>
     <p>
         <theorem xml:id="thm-DivBy5">
@@ -546,7 +546,7 @@
     </example>
     <example>
         <p>
-            Consider the number <m>2345</m>. Since <m>5 \mid 5</m>, we know that <m>5 \mid 2345</m>. Again, you can cehck this via long division.
+            Consider the number <m>2345</m>. Since <m>5 \mid 5</m>, we know that <m>5 \mid 2345</m>. Again, you can check this via long division.
         </p>
     </example>
     <exercise>
@@ -561,11 +561,11 @@
         
     
     <p>
-        In the last section, we were able to develop divisibility rules for powers of <m>2</m> and <m>5</m> since powers of <m>10</m> are divisible by <m>2</m> and <m>5</m>. We could use this commonality between each power of <m>10</m>, and thus each place value in a number, to come up with a simplified rule for determining divisibility of these powers of <m>2</m> and <m>5</m>. In this section, we will look for another consistant commonality between powers of 10 being divided by <m>3</m> and <m>9</m> that will allow us to develop divisibility rules for these numbers. The next example will walk you through noticing the pattern.
+        In the last section, we were able to develop divisibility rules for powers of <m>2</m> and <m>5</m> since powers of <m>10</m> are divisible by <m>2</m> and <m>5</m>. We could use this commonality between each power of <m>10</m>, and thus each place value in a number, to come up with a simplified rule for determining divisibility of these powers of <m>2</m> and <m>5</m>. In this section, we will look for another consistent commonality between powers of 10 being divided by <m>3</m> and <m>9</m> that will allow us to develop divisibility rules for these numbers. The next example will walk you through noticing the pattern.
     </p>
     <example>
         <p>
-            In this example we will develop an intution for a divisibility rule for <m>3</m> and <m>9</m>.
+            In this example we will develop an intuition for a divisibility rule for <m>3</m> and <m>9</m>.
         </p>
         <ol>
             <li>
@@ -585,7 +585,7 @@
             </li>
             <li>
                 <p>
-                    Using the above as a guide, descibe a way to determine if a number is divisible by <m>3</m>.
+                    Using the above as a guide, describe a way to determine if a number is divisible by <m>3</m>.
                 </p>
             </li>
             <li>
@@ -668,7 +668,7 @@
       </p>
       <example>
         <p>
-            A student wrote down the following ten digit number: <m>1,435,3k7,451</m>, where <m>k</m> is some digit that was too messy in their notes to make it out. However, the student does know that the number is divisible by 3 but not divisibile by 9. What are the possible choices for the digit <m>k</m>?
+            A student wrote down the following ten digit number: <m>1,435,3k7,451</m>, where <m>k</m> is some digit that was too messy in their notes to make it out. However, the student does know that the number is divisible by 3 but not divisible by 9. What are the possible choices for the digit <m>k</m>?
         </p>
         <solution>
             <p>
@@ -748,8 +748,8 @@
 </subsection>
 <subsection xml:id="subsec-CompoundDivisibilityRules">
     <title>Compound Divisibility Rules</title>
-    <subsubsection xml:id="subsubsec-WhenCompundDivisibilityRulesWork">
-        <title>When Compund Divisibility Rules Work</title>
+    <subsubsection xml:id="subsubsec-WhenCompoundDivisibilityRulesWork">
+        <title>When Compound Divisibility Rules Work</title>
         
     
     <p>
@@ -794,7 +794,7 @@
             In the above example you probably have seen that if <m>a</m> and <m>b</m> have no common factors, then <m>a \times b</m> is necessarily a factor of any number where both <m>a</m> and <m>b</m> are factors. Let's try and prove this.
         </p>
         <p>
-            <theorem xml:id="thm-CompundDivisibility">
+            <theorem xml:id="thm-CompoundDivisibility">
                 <statement>
                     <p>
                         Let <m>a,b</m> be numbers with no common factors (that is, <m>\text{GCD}(a,b)=1</m>), and let <m>n</m> be another number. Then <m>ab \mid n </m> if and only if <m>a \mid n</m> and <m>b \mid n</m>.
@@ -858,7 +858,7 @@
     <title>Some Common Compound Divisibility Rules</title>
 
     <p>
-        From the subsection above, we know that as long as two numbers share no common factors, we can indeed combine their divisibility rules to determine if a number is divisibile by their product. Let's list a few of these for small numbers, and give an example and non example for each.
+        From the subsection above, we know that as long as two numbers share no common factors, we can indeed combine their divisibility rules to determine if a number is divisible by their product. Let's list a few of these for small numbers, and give an example and non example for each.
     </p>
     
     <ol>
@@ -925,7 +925,7 @@
     <title>Iterative Divisibility Rules</title>
     <introduction>
       <p>
-        Sometimes, to determine if a number is divisible by another, we can use an iterative approach. This means applying the divisibility rule repeatedly until we get a number that we can easily determine its divisibility. This method is particularly useful for large numbers and for certain divisibility rules like those for 3, 9, and 11, which turn the problem of checcking divisibility of a large number into checking divisibility of a smaller number. 
+        Sometimes, to determine if a number is divisible by another, we can use an iterative approach. This means applying the divisibility rule repeatedly until we get a number that we can easily determine its divisibility. This method is particularly useful for large numbers and for certain divisibility rules like those for 3, 9, and 11, which turn the problem of checking divisibility of a large number into checking divisibility of a smaller number. 
       </p>
     </introduction>
   
@@ -1014,7 +1014,7 @@
     <subsection xml:id="subsec-FindingPrimeNumbers">
         <title>Finding Prime Numbers</title>
         <p>
-            Let's try and come up with a list of all prime numbers less than <m>100</m>. We could do this for all primes below any number, but we choosse 100 for space reasons.
+            Let's try and come up with a list of all prime numbers less than <m>100</m>. We could do this for all primes below any number, but we choose 100 for space reasons.
         </p>
         <p>
             Let's list all numbers up to 100, and we'll cross off any numbers that we determine are not prime (so are composite, or the number <m>1</m>).
@@ -1041,7 +1041,7 @@
             INSERT UPDATED PIC
         </p>
         <p>
-            This process is very old, and in fact is called the <term>sieve of Erotosthenes</term>, after the Greek mathematician Erotosthenes of Cyrene, of whom this method is attributed to.
+            This process is very old, and in fact is called the <term>sieve of Eratosthenes</term>, after the Greek mathematician Eratosthenes of Cyrene, of whom this method is attributed to.
         </p>
         <exercise>
             <p>
@@ -1138,7 +1138,7 @@
                 </li>
                 <li>
                     <p>
-                        We then repear the procedure with the new <m>A</m> to obtain <m>a=2\times 3\times 7+1 = 43</m>, which itself is prime, so we include it in our set as well; <m>A=\{2,3,7,43\}</m>.
+                        We then repeat the procedure with the new <m>A</m> to obtain <m>a=2\times 3\times 7+1 = 43</m>, which itself is prime, so we include it in our set as well; <m>A=\{2,3,7,43\}</m>.
                     </p>
                 </li>
                 <li>
@@ -1362,7 +1362,7 @@
                     </p>
                 
                     <p>
-                        3. Congratuations! Your number <m>n</m> is prime!
+                        3. Congratulations! Your number <m>n</m> is prime!
                     </p>
                
         </assemblage>
@@ -1396,7 +1396,7 @@
                     11: Since <m>11 \nmid 4-0+3</m>, we know <m>11 \nmid 403</m>
                 </p>
                 <p>
-                    13: By division, we know that <m>403 \div 13 = 31</m>. So indeed <m>13 \mid 403</m> and <m>403=13 \times 31</m>. We have foudn a prime factor of <m>403</m> and thus by our test for primality, <m>403</m> is not prime (and we have a factorization of it too!)
+                    13: By division, we know that <m>403 \div 13 = 31</m>. So indeed <m>13 \mid 403</m> and <m>403=13 \times 31</m>. We have found a prime factor of <m>403</m> and thus by our test for primality, <m>403</m> is not prime (and we have a factorization of it too!)
                 </p>
                 <p>
                     Note that once we find a prime that divides our number <m>n</m>, we do not need to test the other primes; we already know that <m>n</m> is composite.
@@ -1433,7 +1433,7 @@
                     11: Since <m>11 \nmid (2-9+3)</m>, we know <m>11 \nmid 293</m>.
                 </p>
                 <p>
-                    13: By division we know that <m>293 \div 13 = 22R7</m>. Since we have a non-zero remiander, we know <m>13 \nmid 293</m>.
+                    13: By division we know that <m>293 \div 13 = 22R7</m>. Since we have a non-zero remainder, we know <m>13 \nmid 293</m>.
                 </p>
                 <p>
                     17: By division we know that <m>293 \div 17 = 17R4</m>. Since we have a non-zero remainder we know that <m>17 \nmid 293</m>.
@@ -1465,7 +1465,7 @@
             </me> Now all of our factors in our factorization are prime! Since multiplication is commutative and associative, we can regroup our factors so all of the <m>2</m>'s and <m>3</m>'s are together: <me>
                 72=(2\times 2 \times 2) \times (3 \times 3) = 2^3 3^2.
             </me>
-            We call this factorization of <m>72</m> a <term>prime factorization</term>. Let's definte this more carefully:
+            We call this factorization of <m>72</m> a <term>prime factorization</term>. Let's define this more carefully:
             
             
         </p>
@@ -1789,7 +1789,7 @@
                 </p>
                 <solution>
                     <p>
-                        Since we don't have the prime factorization of <m>n</m> we need to factor it completely into its prime factorization. There are many ways of doing this, but we can usse our divisibility tests to determine some small factors, and then once our divisibility tests fail, we can use trial division to determine other prime factors. 
+                        Since we don't have the prime factorization of <m>n</m> we need to factor it completely into its prime factorization. There are many ways of doing this, but we can use our divisibility tests to determine some small factors, and then once our divisibility tests fail, we can use trial division to determine other prime factors. 
                     </p>
                     <p>
                         First, it's worth noting that by our divisibility test for <m>3</m> we know that <m>3 \nmid n</m>.
@@ -1801,7 +1801,7 @@
                         Next we may notice that <m>1-5+0-8+8-7=-11</m> so <m>11 | 150,887</m>. By division we see that <m>150887=11 \times 13717</m>. We then notice that <m>1-3+7-1+7=11</m> so <m>11 | 13717</m> and, again by division, <m>13717=11 \times  1247</m>. Putting this together we have <m>n =(2^3 \times 5^2 \times 11^2) \times 1247.</m>
                     </p>
                     <p>
-                        We can check all of our divisiblity tests and find that <m>1247</m> fails all of them. So by <xref ref="assemblage-TestForPrimality"/>we need to determine if <m>1247</m> has any prime factors great than 11. We note that <m>31^2 = 961</m> and <m>37^2 = 1369</m> and that <m>31</m> and <m>37</m> are consecutive primes so <m>31 &lt; \sqrt{1247} &lt; 37</m> so we need to check all prime numbers of size <m>31</m> and smaller. We've already checked <m>2,3,5,11</m> so we need to check <m>7,13,17,19,23,29,31</m> by trial division. 
+                        We can check all of our divisibility tests and find that <m>1247</m> fails all of them. So by <xref ref="assemblage-TestForPrimality"/>we need to determine if <m>1247</m> has any prime factors great than 11. We note that <m>31^2 = 961</m> and <m>37^2 = 1369</m> and that <m>31</m> and <m>37</m> are consecutive primes so <m>31 &lt; \sqrt{1247} &lt; 37</m> so we need to check all prime numbers of size <m>31</m> and smaller. We've already checked <m>2,3,5,11</m> so we need to check <m>7,13,17,19,23,29,31</m> by trial division. 
                     </p>
                     <p>
                         Using this trial division, we see that <m>1247 \div 29=43</m>, so we know that <m>29</m> is a factor of <m>n</m>. And since <m>43</m> is also prime, we have decomposed <m>n</m> into its prime factorization: <m>n = 2^3 \times 5^2 \times 11^2 \times 29 \times 43</m>. Thus by <xref ref="thm-NumberOfFactors"/> we see that <m>n</m> has <m>(3+1)(2+1)(2+1)(1+1)(1+1)=144</m> total factors. Of these factors, <m>5</m> are prime, <m>1</m> is the number <m>1</m>, and <m>138</m> are composite.
@@ -2023,7 +2023,7 @@
             Let's explore another example: finding the GCD of <m>785</m> and <m>554</m> using the Euclidean Algorithm.
           </p>
           <p>
-            Following the same process, we calcualte the GCD of these numbers to be <m>1</m>. This means that the numbers are coprime, since they have no common prime factors.
+            Following the same process, we calculate the GCD of these numbers to be <m>1</m>. This means that the numbers are coprime, since they have no common prime factors.
           </p>
 
           <p>

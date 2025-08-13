@@ -1282,6 +1282,27 @@
 </section>
 <section xml:id="integers">
     <title>Integers</title>
+
+    <objectives permid="abc" xml:id="objectives-integers">
+  <title>Integers</title>
+  <introduction>
+    <p>
+      In this section, we will expand our understanding of numbers to include negative values, 
+      explore the four basic operations with integers, and study their properties. 
+      We will connect these concepts to real-world contexts and provide multiple ways to 
+      visualize and reason about integer arithmetic.
+    </p>
+  </introduction>
+  <ol>
+    <li>Define integers and explain how they extend whole numbers to include negative numbers.</li>
+    <li>Understand and apply the rules for adding, subtracting, multiplying, and dividing integers.</li>
+    <li>Use number lines and counters to visualize integer operations.</li>
+    <li>Recognize and use the properties of integer addition and multiplication, including commutativity, associativity, distributivity, closure, identity, and inverses.</li>
+    <li>Explain subtraction in terms of adding the additive inverse.</li>
+    <li>Apply integer arithmetic to solve word problems involving gains, losses, debts, and other real-world contexts.</li>
+    <li>Prove key results about integer multiplication, such as <m>-a = (-1) \times a</m> and <m>(-1) \times (-1) = 1</m>.</li>
+  </ol>
+</objectives>
     <p>
       Integers are a fundamental concept in mathematics, extending the idea of whole numbers to include negative numbers. An integer can be understood as a solution to the equation <m>x + a = 0</m> for natural numbers <m>a</m>. This means that for any natural number <m>a</m>, there exists an integer <m>x</m> such that when <m>a</m> is added to <m>x</m>, the result is zero. This concept introduces the idea of negative numbers, allowing us to perform arithmetic operations in a more comprehensive number system.
     </p>

@@ -43,6 +43,22 @@
     </introduction>
     <section xml:id="sec-AdditionAlgorithms">
         <title>Addition Algorithms</title>
+        <objectives permid="addalg" xml:id="objectives-AdditionAlgorithms">
+  <title>Addition Algorithms</title>
+  <introduction>
+    <p>
+      This section introduces and analyzes several addition algorithms, highlighting how they rely on place value and the properties of addition. You will also examine how these algorithms apply across different bases and compare their features in practical and instructional contexts.
+    </p>
+  </introduction>
+  <ol>
+    <li>Apply the standard addition algorithm with regrouping and explain its mathematical justification.</li>
+    <li>Use and compare alternative algorithms, including partial sums, same change, and lattice methods.</li>
+    <li>Translate between pictorial block representations and algorithmic steps.</li>
+    <li>Adapt each algorithm to addition in non-decimal bases with appropriate notation and regrouping.</li>
+    <li>Evaluate the relative advantages and limitations of each algorithm in various settings.</li>
+  </ol>
+</objectives>
+
         
         <subsection xml:id="subsec-TheStandardAdditionAlgorithm">
             <title>The Standard Addition Algorithm</title>
@@ -468,6 +484,22 @@
     </section>
     <section xml:id="sec-SubtractionAlgorithms">
         <title>Subtraction Algorithms</title>
+        <objectives permid="subalg" xml:id="objectives-SubtractionAlgorithms">
+  <title>Subtraction Algorithms</title>
+  <introduction>
+    <p>
+      This section explores a variety of subtraction algorithms, examining how they work, how they relate to each other, and how they use place value and properties of operations. You will analyze each method both procedurally and conceptually, including through representations in other bases.
+    </p>
+  </introduction>
+  <ol>
+    <li>Explain and perform the standard subtraction algorithm using place value and regrouping.</li>
+    <li>Interpret and apply the partial differences method and compare it with other approaches.</li>
+    <li>Understand the logical basis of the same change and equal additions algorithms.</li>
+    <li>Translate between visual block representations and algorithmic procedures.</li>
+    <li>Generalize subtraction algorithms to non-decimal bases with appropriate notation and regrouping.</li>
+  </ol>
+</objectives>
+
         <introduction>
             <p>
                 In the previous subsection we talked about different algorithms for adding. In some sense, all of the algorithms we talked about were the same, or at least very similar. It turns out that common subtraction algorithms actually differ from each other quite a bit.
@@ -878,6 +910,22 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
     </section>
     <section xml:id="sec-MultiplicationAlgorithms">
         <title>Multiplication Algorithms</title>
+        <objectives permid="multalg" xml:id="objectives-MultiplicationAlgorithms">
+  <title>Multiplication Algorithms</title>
+  <introduction>
+    <p>
+      This section develops several algorithms for multiplying whole numbers, all grounded in place value and the distributive property. You will examine both standard and alternative methods, including their application in other bases and their mathematical foundations.
+    </p>
+  </introduction>
+  <ol>
+    <li>Use place value and exponent rules to multiply single-digit numbers and powers of ten.</li>
+    <li>Perform and interpret the partial products algorithm, including its area model representation.</li>
+    <li>Carry out the standard multiplication algorithm with regrouping and explain its relationship to partial products.</li>
+    <li>Apply multiplication algorithms in bases other than ten, including base twelve.</li>
+    <li>Analyze the Russian multiplication algorithm and its connection to base two representations.</li>
+  </ol>
+</objectives>
+
         <introduction>
             <p>
                 The way we multiply by hand is intrinsically based on both the ideas of place value, and the property of distributivity. In all of the following algorithms, both ideas will be important. Before we begin talking about how to multiply, we need to know how to do two things well; multiply powers of ten together, and how to multiply two single digits together. The first of these is very easy. The second is easy too, but there are a lot of different cases.
@@ -1575,6 +1623,22 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
     </section>
     <section xml:id="sec-DivisionAlgorithms">
         <title>Division Algorithms</title>
+        <objectives permid="divalg" xml:id="objectives-DivisionAlgorithms">
+  <title>Division Algorithms</title>
+  <introduction>
+    <p>
+      In this section, we examine long division and related methods through the lens of place value and the partitive model of division. We also explore how the algorithm adapts across number bases and mental arithmetic contexts.
+    </p>
+  </introduction>
+  <ol>
+    <li>Describe and perform the long division algorithm using place value and partial quotients.</li>
+    <li>Interpret each step of long division using the partitive model and the Quotient Remainder Theorem.</li>
+    <li>Apply estimation strategies in long division when the divisor is greater than a single digit.</li>
+    <li>Adapt long division to other bases, including base twelve.</li>
+    <li>Compare long division with short division, identifying how partial remainders are managed differently.</li>
+  </ol>
+</objectives>
+
             <introduction>
                <p>
             In this section, we will predominantly talk about only one algorithm, commonly called long division. We will talk about a few other algorithms that are minor variations of the well known long division.
