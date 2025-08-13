@@ -30,6 +30,7 @@
     <!--<xi:include href="./ch_first-chapter.ptx" />
     <xi:include href="./ch_empty.ptx"/> -->
     <xi:include href="./IntroToLogic.ptx" />
+    <xi:include href="./Equality.ptx" />
     <xi:include href="./WholeNumbers.ptx" />
     <xi:include href="./ArithmeticAlgorithms.ptx" />
     <xi:include href="./Fractions.ptx" />

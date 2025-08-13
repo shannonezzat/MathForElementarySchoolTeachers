@@ -701,6 +701,37 @@ When we talk about mathematical ideas, we want to express how many objects they 
 
 <section xml:id="sec-ConditionalStatements">
     <title>Conditional Statements</title>
+    <objectives permid="sec-conditional-objs" xml:id="objectives-ConditionalStatements">
+  <title>Conditional Statements</title>
+  <introduction>
+    <p>
+      In this section we’ll get comfortable with “if–then” statements and how to work with them.
+    </p>
+  </introduction>
+  <ol>
+    <li xml:id="obj-cond-meet">
+      introduce if–then, or conditional, statements: name the parts (P, Q) and write them in symbols with a clear domain
+    </li>
+    <li xml:id="obj-cond-truth">
+      decide when “if P then Q” is true or false (including vacuous truth) using a truth table or a quick counterexample
+    </li>
+    <li xml:id="obj-cond-prove">
+      prove conditionals three ways—direct, by contrapositive, or by contradiction
+    </li>
+    <li xml:id="obj-cond-related">
+      tell apart converse, inverse, and contrapositive; know which ones are equivalent and when a converse fails
+    </li>
+    <li xml:id="obj-cond-apply">
+      apply logic to real rules (check P-cases and not-Q cases) and avoid common pitfalls with negations and scope
+    </li>
+  </ol>
+  <conclusion>
+    <p>
+      By the end, you’ll understand, test, and prove “if–then” (and simple “iff”) statements with confidence.
+    </p>
+  </conclusion>
+</objectives>
+
     <subsection>
     <title>What is a Conditional Statement</title>
     
@@ -1527,6 +1558,37 @@ select all those cards, but only those cards, which you would have to turn over 
 </section>
 <section xml:id="sec-Sets">
     <title>Sets</title>
+    <objectives permid="sec-sets-objs" xml:id="objectives-Sets">
+  <title>Sets</title>
+  <introduction>
+    <p>
+      This section introduces foundational set theory and its connection to logical reasoning.
+    </p>
+  </introduction>
+  <ol>
+    <li xml:id="obj-sets-notation">
+      Define sets and elements; interpret and use symbols such as <m>\in</m>, <m>\notin</m>, <m>\subseteq</m>, <m>\emptyset</m>, and <m>|A|</m>; understand that sets ignore order and repetition
+    </li>
+    <li xml:id="obj-sets-representation">
+      Represent sets using list, verbal, and set-builder notation, with appropriate domain restrictions and logical conditions
+    </li>
+    <li xml:id="obj-sets-subsets-equality">
+      Determine subset and equality relationships between sets; use quantified definitions and their negations to construct or disprove subset claims
+    </li>
+    <li xml:id="obj-sets-operations">
+      Perform basic set operations (union, intersection, difference, complement) and relate them to logical operations (and, or, not) with respect to a specified universe
+    </li>
+    <li xml:id="obj-sets-standard-sets">
+      Recognize and use standard number sets (<m>\mathbb{N}</m>, <m>\mathbb{Z}</m>, <m>\mathbb{Q}</m>, <m>\mathbb{R}</m>) and describe inclusion relationships among them
+    </li>
+  </ol>
+  <conclusion>
+    <p>
+      By the end of this section, you will be able to describe, manipulate, and reason about sets and their relationships using formal notation.
+    </p>
+  </conclusion>
+</objectives>
+
     <subsection xml:id="subsec-IntroToSets">
         <title>Intro To Sets</title>
         

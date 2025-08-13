@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="EquationsAndProblemSolving">
+    <title>Equations And Problem Solving</title>
+
+
+        <section xml:id="sec-Equality">
+    <title>Equality</title>
+    <objectives permid="sec-equality-objs" xml:id="objectives-Equality">
+  <title>Equality</title>
+  <introduction>
+    <p>
+      This section develops a formal understanding of equality and its role in solving equations.
+    </p>
+  </introduction>
+  <ol>
+    <li xml:id="obj-eq-meaning">
+      define equality of numbers as identity of quantity, regardless of form; interpret the equals sign as a statement that two expressions represent the same value
+    </li>
+    <li xml:id="obj-eq-properties">
+      state and apply the reflexive, symmetric, and transitive properties of equality; recognize these as defining features of an equivalence relation
+    </li>
+    <li xml:id="obj-eq-substitution">
+      use the substitution property to replace equal expressions within equations and expressions, including in algebraic contexts
+    </li>
+    <li xml:id="obj-eq-arithmetic">
+      apply arithmetic operations (addition, subtraction, multiplication, division) to both sides of an equation while preserving equality, with attention to domain restrictions
+    </li>
+    <li xml:id="obj-eq-modeling">
+      solve contextual problems by setting up and solving equations using the above properties, including translating verbal relationships into algebraic equalities
+    </li>
+  </ol>
+  <conclusion>
+    <p>
+      By the end of this section, students will interpret, manipulate, and solve equalities using formal properties and reasoning grounded in substitution and arithmetic operations.
+    </p>
+  </conclusion>
+</objectives>
+
+    <subsection xml:id="subsec-IntroToEquality">
+        <title>Intro To Equality</title>
+        <p>
+        In our mathematical career we have used the equals symbol "=" countless times. In this section, we talk about what it actually means and its implications. We'll focus on equality of numbers, but know that equality is a concept that is used in many different concepts in mathematics; for example, two sets can be equal, or two polygons can be equal.
+    </p>
+    <definition xml:id="def-Equality">
+        <statement>
+            <p>
+                We say that two numbers <m>a</m> and <m>b</m> are <term>equal</term>, and write <m>a=b</m>, if and only if they are the same quantity. Note that they may be expressed in different ways. 
+            </p>
+                    </statement>
+    </definition>
+     <example>
+        <p>
+        Here are a few examples stating what we mean. 
+            <ol>
+                <li>
+                    <p>
+                        <m>2+3=1+4</m>. This means that these two expressions are the same number (in this case <m>5</m>) written in different ways.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Another important and common example is equality of fractions. We will explore this more later in the book, but we know that <m>\frac{1}{2} = \frac{2}{4}</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If we write <m>x=7</m>, this means that whenever we see the quantity <m>x</m> again in our problem, we can say that it is the same as the number <m>7</m>. Thus we can "substitute" <m>7</m> for <m>x</m> whenever we like.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </example>
+
+    <p>
+        A good idea is to think of equality as a balance. If both sides are equal, then the balance will be balanced; neither side will be heavier than the other.
+    </p>
+    <p>
+        <image source="WholeNumbers/BalanceModelE.svg">
+            <shortdescription>A balance showing equality and both sides of the balance at the same height</shortdescription>
+        </image>
+    </p>
+    <p>
+        If one side of the equation, then we have an <term>inequality</term> since the two sides do not equal each other. If the left hand side (LHS) is the heavier side then we say that the LHS <term>is greater than</term> the right hand side (RHS). If the RHS is larger, than we say that the LHS <term>is less than</term> the RHS. Note that the symbol to denote either greater than <m>&gt;</m> and less than <m>&lt;</m> has the more open side toward the larger quantity, somewhat matching up with the idea of the balance. 
+    </p>
+    <p>
+        Using the balance analogy greater than looks like:
+        <image source="WholeNumbers/BalanceModelG.svg">
+            <shortdescription>Greater than balance model</shortdescription>
+        </image>
+        and less than looks like:
+        <image source="WholeNumbers/BalanceModelL.svg">
+            <shortdescription>Less than balance model</shortdescription>
+        </image>
+    </p>
+    <subsection xml:id="subsec-PropertiesOfEquality">
+        <title>Properties Of Equality</title>
+    <p>
+        There are a few properties of equality that are important and intuitive, but for completeness we write them down here:
+    </p>
+
+   
+    <assemblage xml:id="assemblage-PropertiesOfEquality">
+        <title>Properties of Equality</title>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Reflexivity: for all numbers <m>a</m>, <m>a = a</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Symmetry: if <m>a = b</m> then <m>b = a</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Transitivity: if <m>a = b</m> and <m>b=c</m> then <m>a = c</m>
+                    </p>
+                </li>
+               
+            </ol>
+        </p>
+    </assemblage>
+    <assemblage xml:id="assemblage-EquivalenceRelation">
+        <title>Notes for Additional Understanding</title>
+        <p>
+            Note that the three properties above are used to define another, more general, concept in mathematics called an <term>equivalence relation</term>. Informally, this is a type of relation, but it calls objects equaivalent if they behave the same way in only ways that you are interested in working with. For more information, see any discrete mathematics textbook.
+        </p>
+    </assemblage>
+
+    </subsection>
+    
+        <p>
+            The most important property of equality when doing mathematics is that you can always <term>substitute</term> one expression for another equal to it. In fact, this is how many algebraic equations are solved, and arithmetic expressions simplified. We regularly do this whenever we simplify an arithmetic expression, but many of us do not realize we are doing a substitution when we do it! For example, if we are calculating the expression <m>4 \times 7 - 3</m>, we know that <m>4 \times 7 = 28</m>. Since these two quantities equal each other, we can substitute <m>28</m> any time we see the expression <m>4 \times 7</m>. Doing this, we get <m>28-3</m>, and we know that <m>28-3=25.</m> So, putting it all together we have that <m>4 \times 7 -3 = 25</m>. We can view this idea using the balance model descibed above: 
+        </p>
+        <p>
+            <image source="WholeNumbers/BalanceModelSub1.svg">
+                <shortdescription>Balance model of 4*7-3=25</shortdescription>
+            </image>
+        </p>
+        <p>
+            We use this idea when solving equations as well. Suppose we know that <m>x=9</m> and we're asked to calculate <m>3x-16</m>. Since <m>x</m> and <m>9</m> are indeed equal we can substitude a <m>9</m> where ever we see the variable <m>x</m>. Doing so we obtain <m>3(9)-16</m>. Similarly to above we can simplify this to <m>27-16=11</m>. And thus <m>3x-16=11</m> when <m>x=9</m>. Again, we can use a balance model to show this process:
+        </p>
+         <p>
+            <image source="WholeNumbers/BalanceModelSub2.svg">
+                <shortdescription>Balance model of 3x-16=11 when x=9</shortdescription>
+            </image>
+        </p>
+        <p>
+            Another important property to equality is that two expressions remain equal when we do the same arithmetic operations to them. For example, if we know <m>a=b</m> we can subtract 5 from both of these and the resulting expressions equal: <m>a-5=b-5</m>. </p> 
+            <p> <image source="WholeNumbers/BalanceModelSub3.svg">
+                <shortdescription>Balance model of a-5=b-5 when a=b</shortdescription>
+            </image> </p>
+            <p> Or for another example, we could divide both sides by 2, and then <m>a \div 2 = b \div 2</m>. </p> 
+            <p><image source="WholeNumbers/BalanceModelSub4.svg">
+                <shortdescription>Balance model of a/2=b/2 when a=b</shortdescription>
+            </image></p> 
+            <p> This is an incredibly powerful idea that allows us to solve equations for a unknown quantities.
+        </p>
+        <p>
+            Let's define these more precisely so we can refer to them later.
+        </p>
+        <definition xml:id="def-PropertiesOfEquality">
+            <statement>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                If <m>F_s</m> is some mathematical expression involving the symbol <m>s</m>, and <m>F_t</m> is the same expression as <m>F_s</m> with all <m>s</m>'s' replaced with <m>t</m>'s. If <m>s=t</m> then <m>F_s=F_t</m>. We call this the principle of <term>substitution.</term>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                               If <m>L=R</m> is an equation, and <m>c</m> is any number (or variable that represents a number) then 
+                               <ol>
+                                <li>
+                                    <p>
+                                        <m>L+c = R+c</m>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <m>L-c = R-c</m>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <m>L \times c = R \times c</m>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <m>L \div c = R \div c</m> as long as <m>c \neq 0.</m>
+                                    </p>
+                                </li>
+                               </ol>
+                               We call this the property of <term>arithmetic equality.</term>
+                            </p>
+                            
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </definition>
+        <p>
+            The next example will talk about how the above properties of equality allow us to solve equations using two methods. 
+        </p>
+
+      <example>
+          <p>
+              Suppose we know that Angela is thirty years younger than her father. Also, that in ten years, Angela will be half the age of her father at that time. Let's determine Angela's current age, and her father's current age.          </p>
+
+              <p>
+                  First, we ask "what quantities are we interested in, but are unknown?". In this example, we are interested in Angela's current age and her father's current age. To help us write these algebraically, let's give these quantities variable names (and we need to be specific about what these variables stand for, so that readers, and ourselves, do not get confused.)
+              </p>
+              <p>
+                  Let <m>A := </m> Angela's current age (in years), and let <m>F := </m> Angela's father's current age (in years).
+              </p>
+              <p>
+                  Since Angela is thirty year's younger than her father, we need to think about how to translate this to an algebraic statement. We can think of trying to reword this sentence to have the concept of equality in it. For example, we could say "Angela's age plus thirty years is the same age as her father" or "If you subtract thirty years from her father's age, it will be Angela's age" or something else. Using the first rewording, we can make the algebraic equation
+              </p>
+              <me>
+                  A+30 = F.
+              </me>
+              <p>
+                  For the second sentence, we need to be careful; remember that this holds in ten years time. So Angela's age in ten years is <m>A+10</m> and her father's is <m>F+10</m>. Now we know that in ten years, Angela will be half the age of her father, which means if you double her age then, it will be equal to her father's age. So we can write
+              </p>
+              <me>
+                  2 \times (A+10) = F+10.
+              </me>
+
+              <p>
+                  Now, in our problem both equations are things that are true, so we can use both at the same time. Here we can use substitution to replace the <m>F</m> in the second equation with <m>A+30</m> since these quantities equal in the first equation. This way, we will end up with an equation with only one unknown/variable, which we can solve using the properties of arithmetic of equal expressions.
+              </p>
+              <me>
+                  2 \times (A+10) = (A+30)
+              </me>
+              <p>
+                  Expanding the bracket on the left hand side:
+              </p>
+              <me>
+                  2A+20 = A+30
+              </me>
+              <p>
+                  Subtracting <m>A</m> and <m>20</m> from both sides (this will have our variable only on one side and our constants only on the other)
+              </p>
+              <me>
+                  A = 10
+              </me>
+              <p>
+                  So we know that Angela's current age is <m>10</m> years old. We can then use the first equation to find her father's current age using substitution again:
+              </p>
+              <me>
+                  (10) + 30 = F
+              </me>
+              <me>
+                  40 = F
+              </me>
+              <p>
+                  and thus Angela's father's current age is <m>40</m> years old.
+              </p>
+              
+              
+              
+              
+              
+              
+              
+      </example>
+       
+    </subsection>
+    </section>
+<section xml:id="sec-SolvingEquations">
+    <title>Solving Equations</title>
+    <objectives permid="sec-solvingeqs-objs" xml:id="objectives-SolvingEquations">
+  <title>Solving Equations</title>
+  <introduction>
+    <p>
+      This section introduces linear equations and systems of equations, along with formal methods for solving them using algebraic reasoning grounded in equality.
+    </p>
+  </introduction>
+  <ol>
+    <li xml:id="obj-eqs-definitions">
+      define expressions, terms, coefficients, constants, and linear equations; distinguish linear from non-linear equations using structure
+    </li>
+    <li xml:id="obj-eqs-solve1">
+      solve linear equations in one variable using arithmetic operations and properties of equality; verify solutions by substitution
+    </li>
+    <li xml:id="obj-eqs-system-def-methods">
+      define a system of equations as a collection of simultaneous equalities and solve 2-by-2 linear systems using substitution and elimination methods
+    </li>
+    <li xml:id="obj-eqs-justify-methods">
+      explain why the substitution and elimination methods preserve equality using the substitution and arithmetic properties of equality
+    </li>
+    <li xml:id="obj-eqs-solutions">
+      determine the number of solutions to a system (none, one, or infinitely many) based on the resulting equations during solving
+    </li>
+  </ol>
+  <conclusion>
+    <p>
+      By the end of this section, students will solve and interpret linear equations and systems using formal reasoning, substitution, elimination, and analysis of solution types.
+    </p>
+  </conclusion>
+</objectives>
+
+<introduction>
+     <p>
+        In order to solve problems, it helps to be comfortable solving algebraic equations. In this section we will first talk about solving algebraic equations of a certain type (called linear equations), solving multiple linear equations at the same time, and then talking about some problem solving strategies that you can use to try and get a handle on a problem where the answer and/or approach isn't immediately obvious. 
+    </p>
+<p>
+    First, let's give somewhat careful definitions of the objects we care about in equations, and the types of equations we wish to solve. For this section, all coefficients of variables will be integers (that is, positive or negative whole numbers) but some of the solutions to our equations may be rational numbers. In general, these techniques will work with any real numbers in most situations.
+</p>
+
+<definition xml:id="def-TermsEtc">
+    <statement>
+        <p>
+            An <term>expression</term> is a combination of mathematical symbols without a relational symbol (e.g. <m>=, \leq</m>) symbol relating it to another combination of mathematical symbols. A <term>term</term> is an expression that does not include a addition or subtraction operation (outside of necessary brackets). </p><p> A <term>coefficient</term> of a term that includes a variable is the number that variable is multiplied by. </p><p> Terms only containing numbers are called <term>constants.</term> </p><p> </p><p> An <term>equation</term> is two equal expressions with an equal sign between them. </p><p> To <term>solve</term> an equation for a variable <m>x</m> means to perform arithemtic operations on both sides of the equation (while maintaining equality) so that the equation is now in the form <m>x = \ldots</m>. Note that if there is only one variable, specifying the variable is usually omitted.
+        </p>
+
+    </statement>
+    <example>
+        <p>
+            Consider the equation <m>3x+4= 5-6x</m> which is made of two expressions, <m>3x+4</m> and <m>5-6x</m> . In the term <m>3x</m> on the left hand side (or LHS) of the coefficient is <m>3</m>, and in the term <m>-6x</m> on the right hand side (or RHS) of the equation the coefficient is <m>-6</m> (here, we are viewing <m>5-6x</m> as <m>5+(-6)x</m>. We will be more precise about this later in the book.)
+        </p>
+        <p>
+            Sometimes we can have unknown coefficients even in terms with variables, but we specify that these are indeed coefficients. For example, we could have the expression <m>ax+by</m> where we are thinking of <m>x,y</m> as our variables and <m>a,b \in \mathbb{N}</m> as our coefficients.
+        </p>
+    </example>
+</definition>
+
+
+
+
+
+
+   
+
+    
+
+
+<definition xml:id="def-LinearEquation">
+    <statement>
+        <p>
+            An equation over one (or more) variables is called a <term>linear equation</term> exactly when every term of the equation has at most one variable in it, and that variable has an exponent of <m>1</m>.
+        </p>
+        
+    </statement>
+
+    <example>
+            <p>
+                <m>3x+4 = 6x-7</m> is a linear equation since each term has (at most) one copy of <m>x</m>.
+            </p>
+            <p>
+                Similarly, <m>3x+4y=7</m> is another linear equation since both <m>3x</m> and <m>4y</m> have exactly one copy of <m>x,y</m> in them, and <m>7</m> has no <m>x</m>'s or <m>y</m>'s.
+            </p>
+            <p>
+                Now a non-example: <m>3xy-4x^2=6</m> is *not* a linear equation. Here there are two problems (onte that just one is enough to disqualify it from being a linear equation): the first term has two variables in it, <m>x</m> and <m>y</m>. Also the second term has two copies of <m>x</m> multiplied together, since by the definition of exponents <m>x^2 = x \times x.</m>
+            </p>
+        </example>
+</definition>
+
+</introduction>
+   <subsection xml:id="subsec-SolvingOneEquation">
+       <title>Solving One Equation</title>
+       <p>
+          Before we get into the idea of translating a "real world" problem into the language of mathematics, we'll go over some very important skills to solve many of these problems, which is solving linear equations (or systems of equations). Let's start with the simplest of cases: solving one equation with one variable.  
+       </p>
+
+       <p>
+           Let <m>x</m> be the symbol for our variable, and let <m>a,b,c,d \in \mathbb{Z}</m> be our coefficients. After collecting like terms, any linear equation can be written in the form <m>ax+b=cx+d</m>. As long as <m>a \neq c</m> we can follow these following steps (called an algorithm) to solve for our variable <m>x</m>.
+       </p>
+       <ol>
+           <li>
+               <p>
+                   Subtract <m>cx</m> and <m>b</m> from both sides of the equation. This gives us 
+                   <me>
+                       ax+b -cx-b = cx+d -cx - b
+                   </me>
+                   <me>
+                        \rightarrow ax-cx  = d-b 
+                   </me>
+                   <me>
+                       \rightarrow (a-c)x=d-b
+                   </me>
+                   
+                   
+                   
+               </p>
+           </li>
+           <li>
+               <p>
+                   Divide everything on both sides by the coefficient <m>a-c</m>. This gives us
+               </p>
+               <me>
+                   \dfrac{(a-c)x}{(a-c)} = \dfrac{(d-b)}{(a-c)}.
+               </me>
+               <p>
+                   Cancelling out the <m>a-c</m> we have
+               </p>
+               <me>
+                   x = \dfrac{(d-b)}{(a-c)}.
+               </me>
+               
+               
+           </li>
+       </ol>
+       <p>
+           We could just memorize the formula above, but there are so many different situations that arise in mathematics that it isn't feasable to remember everything. However, if you have a strong knowledge of the ideas behind equality and arithmetic of equations, you can recreate this when the need arises. 
+       </p>
+       <example>
+        <p> What number can we substitute in for <m>x</m> to solve the equation <m>x+5=8</m>? </p>
+           <solution>
+              <p> Let's solve <m>x+5=8</m>. The easiest way to view this is asking "what number can I add to 5 to get 8". We can formally solve for <m>x</m> here by subtracting 5 from both sides:
+               <me>
+                   x+5-5=8-5
+               </me>
+               <me>
+                   \rightarrow x = 3.
+               </me>
+               We can solve this using the general algorithm above by viewing the equation as <m>x+5=0x+8</m>. Then <m>x = \dfrac{8-5}{1-0} = 3.</m>
+               </p>
+               
+            </solution>
+            <p> What number can we substitute in for <m>a</m> to solve the equation <m>7(a-4)=4-(4-3a)</m>? </p>
+            <solution>
+           <p>
+               We can solve <m>7(a-4)=4-(4-3a)</m> by first expanding out the brackets and then combining like terms so that the equation is in the standard form given in the algorithm:
+               <me>
+                   \rightarrow 7a-28 = 4-4+3a
+               </me>
+               <me>
+                   \rightarrow 7a -28 = 3a.
+               </me>
+               Noting that we can view the RHS of the equation as <m>3a+0</m>, we can now use our algorithm above, giving us <m>a = \dfrac{0-(-28)}{7-3} = \dfrac{28}{4} = 7.</m>
+               
+               
+           </p>
+
+           <p>
+               We can check our answers by substituting our solution for the variable and making sure that equality holds. For the second equation we have <me>7(7-4) \mathop{=}\limits^? 4-(4-3(7))</me>
+               <me>
+                   \rightarrow 7(3) \mathop{=}\limits^? 4-(4-21)
+               </me>
+               <me>
+                   \rightarrow 21 \mathop{=}\limits^? 4-(-17)
+               </me>
+               <me>
+                   \rightarrow 21 = 21.
+               </me>
+               Since we do indeed have equality our solution is correct.
+               
+               
+           </p>
+</solution>
+</example>
+           <exercise>
+               <p>
+                   Solve the following linear equations. Check your work by substituting your answer into the original equation and checking that equality holds.
+               </p>
+               <ol>
+                   <li>
+                       <p>
+                           <me>
+                               7x=91
+                           </me>
+                           
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           <me>
+                               5k-6=-79
+                           </me>
+                           
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           <me>
+                               -3y+1 = 7y-8
+                           </me>
+                           
+                       </p>
+                   </li>
+                   <li>
+                       <p>
+                           <me>
+                               4t+2(4-3t) = 2-6(t-1)+3t
+                           </me>
+                           
+                       </p>
+                   </li>
+               </ol>
+               <solution>
+                   <p>
+                       <ol>
+                           <li>
+                               <p>
+                                  <m>x=13</m> 
+                               </p>
+                           </li>
+                           <li>
+                               <p>
+                                   <m>x=-17</m>
+                               </p>
+                           </li>
+                           <li>
+                               <p>
+                                   <m>y=\dfrac{9}{10}</m>
+                               </p>
+                           </li>
+                           <li>
+                               <p>
+                                   <m>t=0</m>
+                               </p>
+                           </li>
+                       </ol>
+                   </p>
+               </solution>
+           </exercise>
+
+       
+   </subsection>
+    <subsection xml:id="subsec-SystemsOfEquations">
+        <title>Intro to Systems Of Equations</title>
+        <p>
+            In many scenarios, we are given two (or more) relationships between two (or more) unknown quantities and we need to use these to find the unknown quantities that satisfy these relationships. 
+        </p>
+        <example xml:id="ex-2var2eq">
+        <p>
+            A typical problem might look like this:
+        </p>
+            <p>
+                On Monday, you spend <m>\$ 9</m> to buy two medium coffees and one pizza burger. On Tuesday, you spend <m>\$ 15.50</m> to buy three medium coffees and two pizza burgers. How much is one medium coffee, and how much is one pizza burger?
+            </p>
+        <p>
+            Let's define <m>C:=</m> the price of a medium coffee (dollars) and <m>P:=</m> the price of a pizza burger (dollars). We can translate the two sentences above to the equations
+        </p>
+        <me>
+            2C + P = 9
+        </me>
+        <me>
+            3C + 2P = 15.5.
+        </me>
+        <p>
+            Here, we can check that if a medium coffee is $2.50 and a pizza burger is $4, that is <m>C=2.5</m> and <m>P=4</m>, both equations are satisfied, and thus both of the sentences above are true:
+         </p>
+         <me>2(2.5)+4 = 9</me>
+         <me>
+             3(2.5)+2(4) = 15.5
+         </me>
+        
+         
+        
+            
+        </example>
+            <p>
+                In this section, we will learn some methods of solving problems like finding these quantities in the example above. Note that we will limit our study to situations with <m>2</m> linear equations and <m>2</m> variables (which we call "2 by 2 systems of equations") but these methods can be expanded to solve larger systems.
+            </p>
+            <p>
+                First of all, let's define a system of equations. Note that unless otherwise stated, all equations are linear equations.
+            </p>
+            <definition xml:id="def-SystemOfEquations">
+                <statement>
+                    <p>
+                        A <term>system of equations</term> is a set of equations where equality holds in each of these simultaneously; that is, all equations are true at the same time.
+                    </p>
+                </statement>
+                <example>
+                    <p>
+                        The two equations in the previous example are a system of equations. We know that two coffees and two pizza burgers coming to $9 is true, and we also know that similarly for the other equation. So both equations are true simultaneously.
+                    </p>
+                </example>
+            </definition>
+
+
+        
+    </subsection>
+    <subsection xml:id="subsec-Substitution">
+        <title>Substitution</title>
+        <p>
+            We can use the ideas of equality to help us solve systems of equations. Remember from <xref xml:id="def-PropertiesOfEquality"/>, when two expressions equal, we can substitute one for the other whenever it is convenient. The idea is that since we know how to solve one equation with one variable, so we want to convert a 2 by 2 system of equations into one equation with one variable via <term>substitution.</term> Let's look at <xref ref="ex-2var2eq"/> in the previous section:
+        </p>
+        <p>
+            
+        </p>
+        <p>
+            We have the system
+        </p>
+        <me>
+            2C + P = 9
+        </me>
+        <me>
+            3C + 2P = 15.5.
+        </me>
+        <p>
+            Notice that both equations have the variables <m>C</m> and <m>P</m> in them. If we could "substitute out" one of the variables in terms of the other by first solving one of the equations for one of the variables, then we would be in a familiar situation with one equation and one variable. This will be our goal.
+        </p>
+        <p>
+            There isn't a "correct" choice of variable to solve for (any will indeed do!) we notice it seems easiest to solve for <m>P</m> in the fist equation, as it has a coefficient of <m>1</m>, so we do not have to divide at the end to solve for <m>P</m>. Solving for <m>P</m> in the first equation we have
+        </p>
+        <me>
+            P = 9-2C.
+        </me>
+        <p>
+            Now any time we see a <m>P</m> in an equation we can replace, or "substitute"  it with <m>9-2C</m>. Let's do this substitution in the second equation:
+        </p>
+        <me>
+            3C+2(9-2C) = 15.5.
+        </me>
+        <p>
+            Here we have one equation with the one variable <m>C</m>, so we can use the steps to solve this from the previous section:
+        </p>
+        <me>
+            3C+18-4C = 15.5
+        </me>
+        <me>
+            -C+18 = 15.5
+        </me>
+        <me>
+            -C=-2.5
+        </me>
+        <me>
+            C = 2.5.
+        </me>
+        <exercise>
+            <p>
+                Describe the steps in each line of the previous part of this example.
+            </p>
+        </exercise>
+        <p>
+            Now that we know <m>C = 2.5</m> we can substitute this in to either equation to solve for our other unknown, <m>P.</m> We will substitute this into the first equation:
+        </p>
+        <me>
+            2(2.5)+P = 9
+        </me>
+        <me>
+            5 +P=9
+        </me>
+        <me>
+            P = 4.
+        </me>
+        <exercise>
+            <p>
+                Describe the steps in each line of the previous part of this example.
+            </p>
+        </exercise>
+        <p>
+            Now that we have values for all of our variables, we have solved this system of equations. We can check our work by substituting both values into the other equation to make sure equality does indeed hold (as we want both equations to be true simultaneously.)
+        </p>
+        <me>
+            3(2.5) + 2(4) \mathop{=}\limits^?  15.5
+        </me>
+        <me>
+            7.5+ 8 \mathop{=}\limits^?  15.5
+        </me>
+        <me>
+            15.5=15.5.
+        </me>
+        <p>
+            Since we do indeed achieve equality in both equations, we have our solution.
+        </p>
+        <p>
+            Let's write these steps as an algorithm:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Choose one of the variables in one of the equations.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Solve the equation for this variable.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Substitute this into the second equation for the solved variable</p>
+                    
+                <p> Simplify this equation. You now have one equation with at most one variable. If you have no variables left, you either have infinitely many solutions or no solutions (we will be able to tell which later in the chapter) and you are done.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If it still exists, solve this equation for the variable. You should have some number.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Substitute this number into either equation and solve for the remaining variable.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Check your work by substituting the solved values for both variables into the equation not used in the previous sttep. If you do indeed have equality, your solution is a soloution for the system of equations.
+                </p>
+            </li>
+            <exercise>
+                Solve the following systems of equations. Check your work to make sure the solution is correct:
+                <ol>
+                    <li>
+                        <me>
+                            5X-2Y = 15
+                        </me>
+                        <me>
+                            3X-Y=9
+                        </me>
+                        
+                    </li>
+                    <li>
+                        <me>
+                            a-3b=7
+                        </me>
+                        <me>
+                            2a-5b = 12
+                        </me>
+                        
+                        
+                    </li>
+                </ol>
+            </exercise>
+
+        </ol>
+        
+        
+        
+</subsection>        
+        <subsection xml:id="subsec-Elimination">
+            <title>Elimination</title>
+            <p>
+                There is another method for solving systems of equations that involves cleverly adding or subtracting multiples of one equation from another. We will explore why this method works, but first we will see the method in action:
+            </p>
+            <example>
+                <p>
+                    Let's look at the same example as in the previous sections; that is, the system of equations
+                </p>
+                 <me>
+            2C + P = 9
+        </me>
+        <me>
+            3C + 2P = 15.5.
+        </me>
+        <p>
+            Let's subtract two times the first equation from the second equation (we'll write this as II - 2I, where I is the first equation and II is the second) by performing the operations on either side of the equals sign separately; when we do that, we will "eliminate" the variable <m>P</m> from the second equation, and then we'll be left with one equation with one variable:
+        </p>
+
+        <me>
+            [II - 2I] \rightarrow [3C+2P - 2(2C+P) = 15.5-2(9)]
+        </me>
+        <me>
+            \rightarrow 3C+2P - 4C - 2P = 15.5-18
+        </me>
+        <me>
+           \rightarrow -C = -2.5
+        </me>
+        <me>
+            \rightarrow C = 2.5.
+        </me>
+
+        <p>
+            Now that we know <m>C=2.5</m> we can substitute that in to either equation and solve for <m>P</m>, similarly to the previous example. Thus we have <m>P = 4</m>.
+        </p>
+        
+        
+        
+            </example>
+
+            <p>
+                As you can see, both methods give the same answer (which is a good thing, of course!). But why does this method work? We will give an example in the case of subtraction, but any operation will work. Note that in practice, addition and subtraction are the most useful in these scenarios.
+            </p>
+            <p>
+                Imagine we had a system of two equations. We will call the left hand sides of the first and second equation <m>L_1</m> and <m>L_2</m>, repsctively. Similarly, we will call the right hand sides <m>R_1</m> and <m>R_2</m>. (Note that in our previous example <m>L_1 = 2C+P</m> and <m>R_1 = 9</m>). We can view the system in general as
+            </p>
+            <me>
+                L_1 = R_1
+            </me>
+            and
+            <me>
+                L_2 = R_2.
+            </me>
+            <p>
+                By the property of arithmetic equality, we can subtract <m>L_2</m> from both sides of Equation I. Thus:
+                <me>
+                    L_1-L2 = R_1-L_2
+                </me>
+                
+            </p>
+            <p>
+                Now since <m>L_2 = R_2</m> we can use the property of substitution to substitute <m>R_2</m> for <m>L_2</m> in the right hand side:
+                <me>
+                    L_1 - L_2 = R_1 - R_2
+                </me>
+                
+            </p>
+            <p>
+                Thus, we have subtracted Equation II from Equation I and showed thar the idea of elimination makes sense.
+            </p>
+<exercise>
+                <p>
+                    Use the above explanation as a guide to justify that if <m>L_1 = R_1</m> and <m>L_2 = R_2</m> then <m>L_1 + L_2 = R_1 + R_2</m>.
+                </p>
+</exercise>
+            <p>
+                A few notes:
+                <ol>
+                    <li>
+                        <p>
+                            The method of elimination is more useful when you have larger systems of equations with more equations and/or more variables. In the <m>2 \times 2</m> case, substitution is generally easy enough to do. However, it is good practice to be able to us the elimination method, as it is extremely more efficient and useful than substitution in these larger systems.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            You can eliminate any variable using any equation in your system that you want. It's usually a good idea to choose a variable with small/easy-to-work-with coefficients, but if you choose another variable, you will still get the correct result.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Once you choose a variable to eliminate, a common and useful technique is to multiply each equation by the cofficent of the variable in the other equation, and then add or subtract to eliminate that vaariable.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+
+<example>
+  <p>
+    Let's solve the system
+  </p>
+  <me>  
+    2C + 3P = 13  
+  </me>
+  <me>  
+    4C - P = 5  
+  </me>
+  <p>
+    We will eliminate the variable <m>P</m>.  Note that in Equation I the coefficient of <m>P</m> is 3, and in Equation II it is -1.  We want to eliminate this variable, so we need to multiply our equation by a number so that the coefficients of <m>P</m> in both equations are of opposite sign. To make them opposites, we can multiply Equation II by 3:
+  </p>
+  <me>
+    [3 \times II] → 3(4C - P) = 3·5
+  </me>
+  <me>
+    \rightarrow 12C - 3P = 15
+  </me>
+  <p>
+    Now Equation I is <m>2C + 3P = 13</m> and our new equation is <m>12C - 3P = 15</m>.  If we add them, the <m>P</m>-terms cancel:
+  </p>
+  <me>
+    [I] + [3 \times II] → (2C + 3P) + (12C - 3P) = 13 + 15
+  </me>
+  <p>Note that we need to add both the left hand sides </p>
+  <me>
+    \rightarrow 14C + 0·P = 28
+  </me>
+  <me>
+    \rightarrow 14C = 28
+  </me>
+  <p>Now we can solve this equation using our usual methods for one equation and one variable.</p>
+  <me>
+    \rightarrow C = 2
+  </me>
+  <p>
+    Having found <m>C = 2</m>, we can now substitute into either original equation.  Using Equation II:
+  </p>
+  <me>
+    4(2) - P = 5
+  </me>
+  <me>
+    \rightarrow 8 - P = 5
+  </me>
+  <me>
+    \rightarrow -P = -3
+  </me>
+  <me>
+    \rightarrow P = 3
+  </me>
+  <p>
+    Therefore, the solution is <m>(C,P) = (2,3)</m>.  Each step used only arithmetic operations on both sides of the equations and the fact that adding or subtracting equal quantities preserves equality—so the “elimination” of <m>P</m> left us with a single-variable equation. We could have eliminated <m>C</m> instead and we would, of course, find the same solution to this system.
+  </p>
+</example>
+
+      <p>Elimination also works for systems that have three or more equations and variables. By combining equations to remove one variable at a time, you can reduce a large system to a single-variable equation and then "back-substitute" one equation at a time to find the remaining unknowns. Those techniques are very powerful for handling larger systems, but we will not go further here. </p>      
+            
+</subsection>       
+    <subsection><title>How Many Solutions Does a System of Equations Have</title>   
+            <p>In systems of equations, there are three possibilities of the number of solutions there are; either the system has exactly one solution, exactly zero solutions, or infinitely many solutions. We've seen what happens when a system has exactly one solution, so we will now look at cases where there are either no or infinitely many solutions. </p>
+
+            <example> <p> Consider the following system: </p> <me>2x-3y=7</me> <me> -4x+6y=4.</me>
+            <p>Solve this system using either substitution or elimination. What do you notice?</p>
+            <solution> <p>Did you see that both of the variables are eliminated at the same time? In fact, you'll end up with some nonsense equation like <m>0=3</m> or <m>1=-4</m> or some other obvious nonsense (depending on how you tried to solve the system). For what values of <m>x,y</m> does your nonsense equation hold? None! So in this case there are exactly no solutions.</p>
+            <p>In fact, you may have noticed that if we divided Equation II by -2 we obtain the system <me>2x-3y=7</me> <me> 2x-3y=-2.</me> There is no way that <m>2x-3y</m> can equal both 7 and -2 at the same time. </p>
+            
+            </solution>
+            
+            
+            </example>
+            <exercise> <p>Make two different systems of two equations with two variables that have no solutions. Try to solve them using both substitution and elimination to see what happens.</p></exercise>
+
+            <example><p> Consider the following system: </p> <me>6a-b=1</me> <me> 12a+2b=2.</me>
+            <p>Solve this system using either substitution or elimination. What do you notice?</p>
+        <solution> <p> Like the previous example, both variables are eliminated at the same time. However, unlike the example above, here we're left with an equation that is always true, like <m>0=0</m> or <m>1=1</m> or something similar. This means that introducing the second equation did not reduce the number of solutions for this system. In fact, we're free to choose one of <m>a</m> or <m>b</m> and then we can determine the other. For example if <m>a=1</m> then you can check that <m>b=-5</m>. So we have <term>infinitely many</term> pairs of numbers that solve this system.</p> 
+        
+        <p>Can you find three other pairs of numbers <m>(a,b)</m> that are solutions?</p>
+    <p>In fact, you may have noticed that if we divided Equation II by 2 we obtain the system <me>6a-b=1</me> <me>6a-b=1.</me> Of course, this is just two copies of the same equation! </p>
+    </solution></example>
+
+    <exercise> <p>Make two different systems of two equations with two variables that have infinitely many solutions. Try to solve them using both substitution and elimination to see what happens. Then find at least two different solutions for each system you made.</p></exercise>
+
+    <p>Putting this all together, a 2x2 system of equations has:
+        <ol>
+            <li> No solutions if, when solving the system, you obtain a "nonsense" equation without variables, for example <m>0=1</m>. </li>
+            <li> Infinitely many solutions if, when solving the system, you obtain an  equation without variables that is always true, for example <m>0=0</m>. </li>
+            <li>Exactly one solution in every other case.</li>
+
+        </ol>
+
+    </p>
+
+        
+    </subsection>
+        
+
+        
+        
+</section>       
+ <section xml:id="FutureIdeas">       
+        <title> Future Section Ideas </title>
+    
+    
+    
+    
+    <p>
+        What if the equation is more complicated? Ideas? Trial and error/factoring/etc.
+    </p>
+    <p>
+        Using technology. 
+    </p>
+    <p>
+        The "work" in solving a problem is setting it up correctly (usually in the language of algebra, but other ways too)
+    </p>
+    <p>
+        
+    </p>
+    <p>
+        Some problem solving strategies and techniques. Try to find something "better" than Polya. Include some problems to solve, of course, and try to include problems of a similar difficulty throughout. Discussion on patterns (with reference to if-then statements). INCLUDE EXPLORATION, TRANSLATING INTO ALGEBRA, SHOWING MULTIPLE METHODS.
+    </p>
+    <p>
+        Translating. Focus on testing with simple examples, defining your variables. Using equality to substitute. Exploration to find formula for situation.
+    </p>
+    <p>
+        Open ended problems: going from examples to conjecture to "proof". HIGHLIGHT MANY WAYS OF PROVING!
+    </p>
+     
+</section>
+</chapter>
