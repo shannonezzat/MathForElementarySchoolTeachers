@@ -16,10 +16,10 @@
         </statement>
     </definition>
     <p>
-        There are countless algorithms for solving arithmetic problems for whole numbers (which we can use to solve arithmetic problems in larger sets of numbers, like integers, rational numbers, or real numnbers). We will discuss a few of the most common algorithms that are used, discuss the pros and cons of each, and also discuss some non-algorithmic and ad-hoc methods that are widely used, especially when it comes to mental arithmetic. </p>
+        There are countless algorithms for solving arithmetic problems for whole numbers (which we can use to solve arithmetic problems in larger sets of numbers, like integers, rational numbers, or real numbers). We will discuss a few of the most common algorithms that are used, discuss the pros and cons of each, and also discuss some non-algorithmic and ad-hoc methods that are widely used, especially when it comes to mental arithmetic. </p>
 
         <p>
-            Most, if not all, of the following algorithms use the fact that we write numbers in a place-value system to break the computation into easier parts that we can put together at the end. It is incredibly important to have a solid understaning of this concept from  <xref ref="sec-NumberSystems"/> in order to understand the reasons why our algorithms work the way that they do.</p>
+            Most, if not all, of the following algorithms use the fact that we write numbers in a place-value system to break the computation into easier parts that we can put together at the end. It is incredibly important to have a solid understanding of this concept from  <xref ref="sec-NumberSystems"/> in order to understand the reasons why our algorithms work the way that they do.</p>
 
             <p>
                 Additionally, our algorithms predominantly feature adding or multiplying each place value separately. If we instinctively know all sums and products of one-digit numbers by heart, we can quickly perform these computations without too much problem solving and thought. It is an excellent idea to work on being able to recall all single digit sums and products quickly.
@@ -30,7 +30,7 @@
             Is there a "best" algorithm for each arithmetic operation? Depending on what you care about (speed, efficiency, ease of understanding, consistency in all cases), a different algorithm can be "better" than others. Regarding understanding, the most understandable algorithm may differ from student to student, and from teacher to teacher. So it is a very hard (and in some cases impossible) task to exclusively recommend one algorithm over another.
         </p>
         <p>
-            It is important to study multiple algorithms for many reasons. Forst of all, understanding the details of an algorithm allows a teacher to explain how and why an algorithm works, as opposed to simply relying on some authoritative explanation like "follow these steps because they are the ones that work". Also, this understanding allows teachers to be able to find student's conceptual errors in arithmetic. Not only can they find mistakes, they can, along with discussions with the students, also determine the conceptual reasons behind these mistakes. Knowing the underpinnings of multiple algorithms allows a teacher to have many algorithmic tools in their toolbox. They can use their professional judgement for what is the most appropriate algorithm to use and/or teach depending on the needs of their students. </p>
+            It is important to study multiple algorithms for many reasons. First of all, understanding the details of an algorithm allows a teacher to explain how and why an algorithm works, as opposed to simply relying on some authoritative explanation like "follow these steps because they are the ones that work". Also, this understanding allows teachers to be able to find student's conceptual errors in arithmetic. Not only can they find mistakes, they can, along with discussions with the students, also determine the conceptual reasons behind these mistakes. Knowing the underpinnings of multiple algorithms allows a teacher to have many algorithmic tools in their toolbox. They can use their professional judgement for what is the most appropriate algorithm to use and/or teach depending on the needs of their students. </p>
             
             <p>Also, studying multiple algorithms allows teachers the opportunity to understand arithmetic through many lenses, thus increasing their overall understanding of the operations themselves. It is relatively commonplace for curricula to suggest that students develop their own personal algorithms for arithmetic. Studying multiple algorithms gives a future teacher practice in evaluating and interpreting the algorithms that students are indeed discovering (and perhaps inventing) themselves.
         </p>
@@ -38,7 +38,7 @@
             Part of our study of these algorithms will involve being able to "picture" what is happening using blocks. Teachers could indeed use manipulatives so students can get a feel for the underpinnings of each algorithm that we will study. However, the author believes that students should not rely on the manipulatives to perform these algorithms. For many reasons, including speed and working with students towards the ideas of abstraction, being able to use the algorithms, while still being able to explain why they work as they do, is the best approach.  
         </p>
         <p>
-            Note that we will also learn how to use these algorithms to do arithmetic in other bases, as discussined in INSERT SECTION REFERENCE. Even though it may be unlikely that you will need to teach students how to do arithmetic in other bases, this will allow us to turn off our "muscle memory" of doing arithmetic in base ten, as we are so comfortable with many of these algorithms that it is incredibly difficult to this muscle memory off to think deeply about the algorithmeic underpinnings. As an added bonus, we will get to experience, in a small way, the struggles that your future students will have when learning about performing arithmetic for the first time. 
+            Note that we will also learn how to use these algorithms to do arithmetic in other bases, as discussed in INSERT SECTION REFERENCE. Even though it may be unlikely that you will need to teach students how to do arithmetic in other bases, this will allow us to turn off our "muscle memory" of doing arithmetic in base ten, as we are so comfortable with many of these algorithms that it is incredibly difficult to this muscle memory off to think deeply about the algorithmic underpinnings. As an added bonus, we will get to experience, in a small way, the struggles that your future students will have when learning about performing arithmetic for the first time. 
         </p>
     </introduction>
     <section xml:id="sec-AdditionAlgorithms">
@@ -115,10 +115,10 @@
           
 
            <p>
-               If we think about this carefully, the addition algorithm above relies on the properties of associativity and commutativity in addition to place value. We are using these propertie when we add each place value separately and regroup any "carries" with the place value to the left. Let's write out what the standard addition algorithm is doing in the example above in a little more detail. 
+               If we think about this carefully, the addition algorithm above relies on the properties of associativity and commutativity in addition to place value. We are using these properties when we add each place value separately and regroup any "carries" with the place value to the left. Let's write out what the standard addition algorithm is doing in the example above in a little more detail. 
            </p>
            <me>
-               447+629 = (400+40+7) + (600+20+9) \text{ explanded place value representation}
+               447+629 = (400+40+7) + (600+20+9) \text{ expanded place value representation}
            </me>
            <me>
                = (400+600) + (40+20) + (7+9) \text{ associativity and commutativity}
@@ -156,7 +156,7 @@
            
            
            <p>
-               Note that the pictoral/block representation becomes difficult after thousands (as we run out of dimensions, as discussed above) but the idea behind the algorithm still applies for numbers with any place values.
+               Note that the pictorial/block representation becomes difficult after thousands (as we run out of dimensions, as discussed above) but the idea behind the algorithm still applies for numbers with any place values.
            </p>
            <exercise>
                <p>
@@ -316,7 +316,7 @@
             <title>Partial Sums</title>
             
         <p>
-            In the standard algorithm, we added our regrouping to the next place value as we went. Instead, we could add each place value separately without dealing with the regroupsing and then the regroupings to each place value as our final step. This is called the <term>partial sum algorithm</term>, as you are finding the sums of each place value (these are the partial sums) and then adding these together to obtain the final answer. Let's take a look at an example, and in fact let's look at the same problem that we did previously with the standard addition algorithm:
+            In the standard algorithm, we added our regrouping to the next place value as we went. Instead, we could add each place value separately without dealing with the regrouping and then the regroupings to each place value as our final step. This is called the <term>partial sum algorithm</term>, as you are finding the sums of each place value (these are the partial sums) and then adding these together to obtain the final answer. Let's take a look at an example, and in fact let's look at the same problem that we did previously with the standard addition algorithm:
         </p>
 <example>
     <p>
@@ -355,7 +355,7 @@
             
         
         <p>
-            Let's now discuss the <term>same change</term> algorithm. To help us illustate the idea (any why it's useful to know) we start with an example. Let's add <m>998+314</m> in our heads. Try doing this now.
+            Let's now discuss the <term>same change</term> algorithm. To help us illustrate the idea (any why it's useful to know) we start with an example. Let's add <m>998+314</m> in our heads. Try doing this now.
         </p>
 
         <p>
@@ -394,7 +394,7 @@
             
         
         <p>
-            Another common method is the lattice algorithm. This is very similar to the partial sums algorithm except regroupings are displayed slightly differently. In this algorithm, each place value has a box divided into two diagonally; one section for the place value itself, and one for the next larger place value for the regroupings. This regrouping section looks connected to the diagonal section of the box to the left which contains the same place value. Like partial sums, each place value is then added separately to obtain the final sum. Again, let's look at our usual example. Note that we won't draw the blocks again for this example, as the regrouping is the same as for the other algorthims we've covered:
+            Another common method is the lattice algorithm. This is very similar to the partial sums algorithm except regroupings are displayed slightly differently. In this algorithm, each place value has a box divided into two diagonally; one section for the place value itself, and one for the next larger place value for the regroupings. This regrouping section looks connected to the diagonal section of the box to the left which contains the same place value. Like partial sums, each place value is then added separately to obtain the final sum. Again, let's look at our usual example. Note that we won't draw the blocks again for this example, as the regrouping is the same as for the other algorithms we've covered:
         </p>
         <example>
             <p>
@@ -477,13 +477,13 @@
             </p>
 
             <p>
-                We'll need some notation to easily talk about subtraction. In the subtraction problem <m>a-b=c</m> we will call <m>a</m> and <m>b</m> the <term>top number</term> and <term>botto, number</term>, respectively, and we call <m>c</m> the <term>difference</term>.  Note that some (mostly antiquated) sources call the top number the subtrahend and the bottom number the minuend. We will avoid this archaic language, as it's rarely seen or used.
+                We'll need some notation to easily talk about subtraction. In the subtraction problem <m>a-b=c</m> we will call <m>a</m> and <m>b</m> the <term>top number</term> and <term>bottom number</term>, respectively, and we call <m>c</m> the <term>difference</term>.  Note that some (mostly antiquated) sources call the top number the subtrahend and the bottom number the minuend. We will avoid this archaic language, as it's rarely seen or used.
             </p>
         
         
         <p>
             Standard Algorithm - Include Block Diagrams For All (reference: An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Textbooks and Cyphering Books
- An Investigation of Subtraction Algorithms from the 18th and 19th Centuriesup
+ An Investigation of Subtraction Algorithms from the 18th and 19th Centuries
 An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Definitions and Algorithms 
 Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
 </p>
@@ -529,7 +529,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
             </ol>
 
             <p>
-                To make sure we understand what is happening, we will do an example along with pictoral blocks showing our subtraction.
+                To make sure we understand what is happening, we will do an example along with pictorial blocks showing our subtraction.
             </p>
             <example>
                 <p>
@@ -784,7 +784,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         </p>
         <example>
             <p>
-                Let's subtract <m>4052-2457</m> using the same change algorithm. We line up the two numbers as usual (and we'll keep block representations along with our calculation to see the process in a pictoral way)
+                Let's subtract <m>4052-2457</m> using the same change algorithm. We line up the two numbers as usual (and we'll keep block representations along with our calculation to see the process in a pictorial way)
             </p>
             <p>
                 INSERT PIC HERE
@@ -835,7 +835,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
             </li>
         </ol>
         <example>
-          <p> Let's subtract <m>4052-2457</m> using the equal addition algorithm. As usual we line up our numbers so digits of the same place value are in the same column, but this time we will have just a little bit of space between the bottom number and our difference (for any borrowed 1's that will appear). And, as usual, we will include blocks for added pictoral understanding. </p>
+          <p> Let's subtract <m>4052-2457</m> using the equal addition algorithm. As usual we line up our numbers so digits of the same place value are in the same column, but this time we will have just a little bit of space between the bottom number and our difference (for any borrowed 1's that will appear). And, as usual, we will include blocks for added pictorial understanding. </p>
           <p>
               INSERT PIC HERE
           </p>
@@ -887,7 +887,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
             <title>Multiplication Preliminaries</title>
             
                 <p>
-                    Thinking about place values as powers of ten, we can use our expoent rules to help us here. First of all, we can think of powers of ten, say <m>10^n</m>, as "a 1 followed by <m>n</m> zeroes". So, for example, <m>10^5 = 100,000.</m>.  
+                    Thinking about place values as powers of ten, we can use our exponent rules to help us here. First of all, we can think of powers of ten, say <m>10^n</m>, as "a 1 followed by <m>n</m> zeroes". So, for example, <m>10^5 = 100,000.</m>.  
                 </p>
                 <p>
                     Using our exponent rules we know <m>10^n \times 10^m = 10^{n+m}</m>. For example, <m>10^3 \times 10^5 = 10^{3+5}=10^8</m>. Or, written as numbers, <m>1000 \times 100,000 = 100,000,000</m>. 
@@ -981,11 +981,11 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 </li>
             </ol>
             <p>
-                Let's do an example. Along with this example, we will include both an algebraic and pictoral representation , using the area model of multiplication, of the process.
+                Let's do an example. Along with this example, we will include both an algebraic and pictorial representation , using the area model of multiplication, of the process.
             </p>
             <example>
                 <p>
-                    Let's multiply <m>348 \times 97</m>. First, we write the numbers lined up by place value, but we are thinking of these numbers in expanded form: <m>(300 + 40 + 8) \times (90 + 7). </m> Pictorally, we can view this as breaking up a rectangle with side lengths <m>348</m> and <m>97</m> units into sub rectangles where the side lengths are the terms in each expanded form.
+                    Let's multiply <m>348 \times 97</m>. First, we write the numbers lined up by place value, but we are thinking of these numbers in expanded form: <m>(300 + 40 + 8) \times (90 + 7). </m> Pictorially, we can view this as breaking up a rectangle with side lengths <m>348</m> and <m>97</m> units into sub rectangles where the side lengths are the terms in each expanded form.
                 </p>
                 <p>
                     INSERT PIC OF THIS
@@ -998,7 +998,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     </p>
                     <p>
                     
-                    Algebraically, we can view this in the following way. Note that the order the terms will be first the "natual" order that one would do using distributivity, and then reordered (in fact reversed, as it's usual to perform the algorithm from right to left and bottom to top) to match the partial products algorithm:
+                    Algebraically, we can view this in the following way. Note that the order the terms will be first the "natural" order that one would do using distributivity, and then reordered (in fact reversed, as it's usual to perform the algorithm from right to left and bottom to top) to match the partial products algorithm:
                 </p>
                 <me>
                     (300+ 40 + 8) \times (90+ 7) 
@@ -1013,14 +1013,14 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     = 56 + 280 + 2100 + 720 + 3600 + 27,000
                 </me>
                 <p>
-                    Pictorally, we can view this as "sub-areas" of each rectangle:
+                    Pictorially, we can view this as "sub-areas" of each rectangle:
                 </p>
                 
                 <p>
                     INSERT PIC HERE
                 </p>
                 <p>
-                    Finally, we sum the partial products together to get our final product. We'll do this using the standard addition algorithm. Pictorally, we are adding all sub-areas together, and algebraically we are simply adding:
+                    Finally, we sum the partial products together to get our final product. We'll do this using the standard addition algorithm. Pictorially, we are adding all sub-areas together, and algebraically we are simply adding:
                 </p>
                 <me>
                     = 56 + 280 + 2100 + 720 + 3600 + 27,000 = 33756
@@ -1035,7 +1035,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
             </example>
 
         <p>
-            Note that some people consider the pictoral representation of the partial products method its own algorithm as well. It's sometimes called the <term>grid method.</term>
+            Note that some people consider the pictorial representation of the partial products method its own algorithm as well. It's sometimes called the <term>grid method.</term>
         </p>
         </subsection>
        <subsection xml:id="subsec-StandardMultiplicationAlgorithm">
@@ -1089,11 +1089,11 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 </li>
             </ol>
             <p>
-                As usual, we compute the same example so we can see the commonalities and diffrences between algorithms. Also, we will have a pictoral representation alongside our calculation.
+                As usual, we compute the same example so we can see the commonalities and differences between algorithms. Also, we will have a pictorial representation alongside our calculation.
             </p>
             <example>
                 <p>
-                    Let's multiply <m>348 \times 97</m>. First, we write the numbers lined up by place value, but we are thinking of the bottom number in expanded form: <m>(349) \times (90 + 7). </m> Pictorally, we can view this as breaking up a rectangle with side lengths <m>348</m> and <m>97</m> units into sub rectangles where the side length of <m>97</m> are the terms in the expanded form. 
+                    Let's multiply <m>348 \times 97</m>. First, we write the numbers lined up by place value, but we are thinking of the bottom number in expanded form: <m>(349) \times (90 + 7). </m> Pictorially, we can view this as breaking up a rectangle with side lengths <m>348</m> and <m>97</m> units into sub rectangles where the side length of <m>97</m> are the terms in the expanded form. 
                 </p>
                 <p>
                     INCLUDE PICTURE HERE
@@ -1151,7 +1151,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
            </p>
 
            <p>
-               A quick reminder that in base twelve, we ony regroup when we have twleve of one place. We represent ten of a place by the symbol <m>A</m> and eleven of a place by the symbol <m>B</m>. Also, note that in this section we will assume all calculations are in base twelve, even if we do not note the base for each number; that is, for example, we'll write <m>3A \times 15</m> to mean <m>3A_{twelve} \times 15_{twelve}</m>. 
+               A quick reminder that in base twelve, we ony regroup when we have twelve of one place. We represent ten of a place by the symbol <m>A</m> and eleven of a place by the symbol <m>B</m>. Also, note that in this section we will assume all calculations are in base twelve, even if we do not note the base for each number; that is, for example, we'll write <m>3A \times 15</m> to mean <m>3A_{twelve} \times 15_{twelve}</m>. 
            </p>
 
            <p>
@@ -1161,7 +1161,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                INSERT BLANK TIMES TABLE
            </p>
            <p>
-               By the property of multiplicative identity, we know that <m>1 \times 5 = 5</m> and we know that <m>2 \times 5 = 5 + 5 = A</m>, since we have ten ones (not enough to regoup). We can determine <m>3 \times 5</m> by adding <m>5</m> to <m>2 \times 5</m>. Thus we have <m>3 \times 5 = 2 \times 5 +5 = A+5 = 13</m>. We can input these into our times table in both the 5 row and 5 column since multiplication is commutative: <m>5 \times n = n \times 5</m> for any number <m>n</m>.
+               By the property of multiplicative identity, we know that <m>1 \times 5 = 5</m> and we know that <m>2 \times 5 = 5 + 5 = A</m>, since we have ten ones (not enough to regroup). We can determine <m>3 \times 5</m> by adding <m>5</m> to <m>2 \times 5</m>. Thus we have <m>3 \times 5 = 2 \times 5 +5 = A+5 = 13</m>. We can input these into our times table in both the 5 row and 5 column since multiplication is commutative: <m>5 \times n = n \times 5</m> for any number <m>n</m>.
            </p>
            <p>
                INSERT PIC HERE
@@ -1174,7 +1174,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
            </p>
 
            <p>
-               We can use the same idea for every other digit in base twelve to complete our entire multiplication table in base twelve for single digits. We'll leave this as an exerise:
+               We can use the same idea for every other digit in base twelve to complete our entire multiplication table in base twelve for single digits. We'll leave this as an exercise:
            </p> 
 
            <exercise>
@@ -1273,7 +1273,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                </li>
            </ol>
            <p>
-               If you haven't seen this algorithm before, it may look a lot different than what you're used to. Let's do an example to make sure we understand it. We'll use the same compuatation as the other algorithms.
+               If you haven't seen this algorithm before, it may look a lot different than what you're used to. Let's do an example to make sure we understand it. We'll use the same computation as the other algorithms.
            </p>
            <example>
                <p>Let's multiply <m>348 \times 97</m>. Since <m>97</m> is the smaller number, we will write this on the left.
@@ -1311,7 +1311,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                <ol>
                    <li>
                        <p>
-                           As a warmup, draw some dots or an area diagram to convince yourself of the fact that <m>(a \div 2) \times (b \times 2) = a \times b</m>. Start with <m>a = 4</m> and <m>b=5</m>, and then do a few other examples (for now, pick even numbers for <m>a</m>). What equivalent multiplication problem have you converted <m>4 \times 5</m> to? Explain why both diagrams have the same numer of dots/same area. 
+                           As a warmup, draw some dots or an area diagram to convince yourself of the fact that <m>(a \div 2) \times (b \times 2) = a \times b</m>. Start with <m>a = 4</m> and <m>b=5</m>, and then do a few other examples (for now, pick even numbers for <m>a</m>). What equivalent multiplication problem have you converted <m>4 \times 5</m> to? Explain why both diagrams have the same number of dots/same area. 
                        </p>
                    </li>
                    <li>
@@ -1393,7 +1393,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                            The idea of distribution of place value is very clear.
                        </p>
                        <p>
-                           Each multiplication step is one straightforward calculation that will only invlove multiplication of powers of ten and multiplication of single digit numbers.
+                           Each multiplication step is one straightforward calculation that will only involve multiplication of powers of ten and multiplication of single digit numbers.
                        </p>
                    </li>
                    <li>
@@ -1435,7 +1435,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    <li>
                        <p>
                            
-                           Each multiplication step is one straightforward calculation that will only invlove multiplication of powers of ten and multiplication of single digit numbers.
+                           Each multiplication step is one straightforward calculation that will only involve multiplication of powers of ten and multiplication of single digit numbers.
                        
                        </p>
                    </li>
@@ -1494,12 +1494,12 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 <ol>
                     <li>
                         <p>
-                            Each row of the algorithm is a fairly complex multiplication, invloving carrying over to the next place value.
+                            Each row of the algorithm is a fairly complex multiplication, involving carrying over to the next place value.
                         </p>
                     </li>
                     <li>
                         <p>
-                            The idea of place value isn't as obvious in the top number, thus losing somet of the idea of distributivity in the calculation.
+                            The idea of place value isn't as obvious in the top number, thus losing some of the idea of distributivity in the calculation.
                         </p>
                     </li>
                     <li>
@@ -1557,7 +1557,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </li>
                    <li>
                        <p>
-                           The number of rows to add together changes based on the base two representation, which isn't obvious at forst glance. For example, if <m>129</m> is the left number, you would need to add two numbers. However, if <m>127</m> is the left number, you would need to add seven numbers.
+                           The number of rows to add together changes based on the base two representation, which isn't obvious at first glance. For example, if <m>129</m> is the left number, you would need to add two numbers. However, if <m>127</m> is the left number, you would need to add seven numbers.
                        </p>
                    </li>
                    
@@ -1606,7 +1606,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 </li>
                 <li>
                     <p>
-                        Subtract the number you were able to group from the total of that place value to determine your palce remainder. Do this subtraction below the dividend.
+                        Subtract the number you were able to group from the total of that place value to determine your place remainder. Do this subtraction below the dividend.
                     </p>
                 </li>
                 <li>
@@ -1662,7 +1662,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
            </p>
            <example>
                <p>
-                   Let's do <m>986 \div 23</m>. Now, we don't know our <m>23</m> times tables, so we are going to have to estimate. Let's write our calculation in the correct long divison form, and note that we won't include the block representation here, but it is worth using this representation if we need some visual guidance:
+                   Let's do <m>986 \div 23</m>. Now, we don't know our <m>23</m> times tables, so we are going to have to estimate. Let's write our calculation in the correct long division form, and note that we won't include the block representation here, but it is worth using this representation if we need some visual guidance:
                </p>
             <p>
                 INSERT PIC OF THIS
@@ -1698,7 +1698,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    INCLUDE BASE TWELVE TIMES TABLE
                </p>
                <p>
-                   We write down our dividend and divisor in the appropraite locations. Now we perform the algorithm. We start at the <m>10^4_{twelve}</m> place (a long made of cubes) and ask "if we have 5 of this place, how many can be evenly divided among ten groups." We do not have enough to put any in the groups, so we put a zero in the quotient above this place (however, we don't need to explicity write it since we do not write whole numbers starting with a zero). We have grouped <m>0 \times A = 0 </m> of this place, and have <m>5-0=0</m> remaining.
+                   We write down our dividend and divisor in the appropriate locations. Now we perform the algorithm. We start at the <m>10^4_{twelve}</m> place (a long made of cubes) and ask "if we have 5 of this place, how many can be evenly divided among ten groups." We do not have enough to put any in the groups, so we put a zero in the quotient above this place (however, we don't need to explicitly write it since we do not write whole numbers starting with a zero). We have grouped <m>0 \times A = 0 </m> of this place, and have <m>5-0=0</m> remaining.
                </p>
                <p>
                    INSERT PIC OF THIS
@@ -1737,10 +1737,10 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <subsection xml:id="subsec-ShortDivision">
             <title>Short Division</title>
             <p>
-                There is another, slighly more encapsulated method of doing division. Essentially it is the same as long division, except we do the subtractions in our head and put the partial remainders above the digit in the place to the right. This gets a bit cumbersome if we have a large divisor (even greater than a single digit divisor can get tricky unless you're very comfortable with mental arithmetic). However, it's great for single digit divisors. We call this <term>short division</term>.
+                There is another, slightly more encapsulated method of doing division. Essentially it is the same as long division, except we do the subtractions in our head and put the partial remainders above the digit in the place to the right. This gets a bit cumbersome if we have a large divisor (even greater than a single digit divisor can get tricky unless you're very comfortable with mental arithmetic). However, it's great for single digit divisors. We call this <term>short division</term>.
             </p>
             <p>
-                Rather than explaining short division in any depth, doing our previous long division problem using short division, aling with the preceding explanation, should be instructive enough.
+                Rather than explaining short division in any depth, doing our previous long division problem using short division, along with the preceding explanation, should be instructive enough.
             </p>
             <example>
                 <p>

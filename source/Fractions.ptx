@@ -112,7 +112,7 @@
   </definition> \title
  
   <p>
-    To compare two fractions with different denominators, we can find equivalent fractions that have the same denominator. The way to do this so that the denominators are as small as possible is by finding least common denominator (LCD), which is the smallest multiple of both denomnators.</p> <p> More precisely, if <m>b</m> and <m>d</m> are two denominators, then the <term>least common denominator</term> is smallest number <m>f</m> such that <m>f=xb=yd</m> for some <m>x,y \in \mathbb{N}</m>. Thus, if we wanted <m>\dfrac{a}{b}</m> and <m>\dfrac{c}{d}</m> to have a common denominator, we multiply the top and bottom of the first fraction by <m>x</m> and the second fraction by <m>y</m> to get <m>\dfrac{ax}{bx}=\dfrac{ax}{f}</m> and <m>\dfrac{cy}{dy}=\dfrac{cy}{f}</m>. Now both quantities are fractions that have the same denominator.</p>
+    To compare two fractions with different denominators, we can find equivalent fractions that have the same denominator. The way to do this so that the denominators are as small as possible is by finding least common denominator (LCD), which is the smallest multiple of both denominators.</p> <p> More precisely, if <m>b</m> and <m>d</m> are two denominators, then the <term>least common denominator</term> is smallest number <m>f</m> such that <m>f=xb=yd</m> for some <m>x,y \in \mathbb{N}</m>. Thus, if we wanted <m>\dfrac{a}{b}</m> and <m>\dfrac{c}{d}</m> to have a common denominator, we multiply the top and bottom of the first fraction by <m>x</m> and the second fraction by <m>y</m> to get <m>\dfrac{ax}{bx}=\dfrac{ax}{f}</m> and <m>\dfrac{cy}{dy}=\dfrac{cy}{f}</m>. Now both quantities are fractions that have the same denominator.</p>
     <p> For example, fractions equivalent to  <m> \dfrac{5}{6} </m> and <m> \dfrac{3}{10} </m> would be <m> \dfrac{25}{30}</m> and <m> \dfrac{9}{30}</m> since <m>30</m> is the smallest multiple of both <m> 6\</m> and <m> 10 </m>. We multiply the numerator and denominator of <m> \dfrac{5}{6} </m> by <m>5</m> since <m> 30=6 \times 5</m> and we multiply the numerator and denominator of <m> \dfrac{3}{10} </m> by <m>3</m> since <m> 30=3 \times 10</m>.</p>
     <p> INSERT PIC HERE </p>
     <p> Another way to do this, but which might end up with fractions with larger integers making up the numerators and denominators, is to multiply the numerator and denominator of a fraction by the denominator of the other, and vice versa. Thus, if we wanted <m>\dfrac{a}{b}</m> and <m>\dfrac{c}{d}</m> to have a common denominator, we multiply the top and bottom of the first fraction by <m>d</m> and the second fraction by <m>b</m> to get <m>\dfrac{ad}{bd}</m> and <m>\dfrac{bc}{bd}</m>. Now both quantities are fractions that have the same denominator.</p> <p> Once we have the equivalent fractions, we can compare them as we did in the first example. Note that using this method, the fractions might not have the least common denominator.
@@ -124,7 +124,7 @@
   <example>
     <title>Comparing Fractions with Different Denominators</title>
     <p>
-      Let's compare the fractions <m>\dfrac{3}{4}</m> and <m>\dfrac{5}{6}</m>. Using the fisrt method above, we need to find the LCD, which is the smallest multiple that both denominators (4 and 6) can divide into. In this case, the LCD is 12. So, using the notation above, <m>x=3</m> and <m>y=2</m> since <m>12=3\times 4 = 2 \times 6.</m>
+      Let's compare the fractions <m>\dfrac{3}{4}</m> and <m>\dfrac{5}{6}</m>. Using the first method above, we need to find the LCD, which is the smallest multiple that both denominators (4 and 6) can divide into. In this case, the LCD is 12. So, using the notation above, <m>x=3</m> and <m>y=2</m> since <m>12=3\times 4 = 2 \times 6.</m>
     </p>
     <p>
       Now, we need to find equivalent fractions for <m>\dfrac{3}{4}</m> and <m>\dfrac{5}{6}</m> with a denominator of 12. We can do this by multiplying the numerator and denominator of each fraction by the same number, such that the denominator becomes 12:
@@ -442,7 +442,7 @@
         </statement>
         <solution>
             <p>
-                If we take three units and split everything in half, we essentially have three halfs, or <m>\dfrac{3}{2}</m>.  
+                If we take three units and split everything in half, we essentially have three halves, or <m>\dfrac{3}{2}</m>.  
             </p>
         </solution>
     </example>
@@ -533,7 +533,7 @@
       \dfrac{a}{b} = \dfrac{ad}{bd} \qquad \dfrac{c}{d} = \dfrac{bc}{bd}.
     </me>
     <p>
-    Now, we are dividing <m>ad</m> <m>bd</m>ths into groups of size <m>bc</m> <m>bd</m>ths. From our discussion above we know that <m>\dfrac{ad}{bd} \div \dfrac{bc}{bd} = \dfrac{ad}{bc}</m>. But we can express this as the multiplication of two fractions: <m>\dfrac{ad}{bc} = \dfrac{a}{b} \times \dfrac{d}{c}</m> which is indeed the multiplication by the reciplocal result we wanted to show.
+    Now, we are dividing <m>ad</m> <m>bd</m>ths into groups of size <m>bc</m> <m>bd</m>ths. From our discussion above we know that <m>\dfrac{ad}{bd} \div \dfrac{bc}{bd} = \dfrac{ad}{bc}</m>. But we can express this as the multiplication of two fractions: <m>\dfrac{ad}{bc} = \dfrac{a}{b} \times \dfrac{d}{c}</m> which is indeed the multiplication by the reciprocal result we wanted to show.
     </p>
     <p>
     In addition, it's important to note that all the properties that hold for integers under addition also hold for fractions. Because we can convert any division operation to a multiplication operation (by multiplying by the reciprocal), we can think of dealing with fractions as only involving addition and multiplication. This allows us to use the commutative, associative, and distributive properties as needed to simplify expressions involving fractions.
@@ -552,7 +552,7 @@
   </statement>
   <solution>
     <p>
-      To simplify the expression, we follow the order of operations (BEMDAS): Brackets, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).
+      To simplify the expression, we follow the order of operations (BEDMAS): Brackets, Exponents, Multiplication and Division (from left to right), Addition and Subtraction (from left to right).
     </p>
     
     <p>
@@ -562,7 +562,7 @@
       \dfrac{5}{6} \times \dfrac{2}{3} ÷ \dfrac{4}{5} = \dfrac{5}{6} \times \dfrac{2}{3} \cdot \dfrac{5}{4}.
     </me>
     <p>
-      Multiplying these fractions and redicing to equivalent fractions where possible:
+      Multiplying these fractions and reducing to equivalent fractions where possible:
     </p>
     <me>
       \dfrac{5}{6} \times \dfrac{2}{3} \cdot \dfrac{5}{4} = \dfrac{10}{18} \times \dfrac{5}{4} =  \dfrac{5}{9} \times {5}{4} = \dfrac{25}{36}.

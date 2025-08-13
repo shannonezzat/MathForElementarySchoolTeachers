@@ -9,7 +9,7 @@
         <title>Decimal Fractions</title>
         <subsubsection>
             <title>Decimal Fractions and Their Relationship to Whole Numbers</title>
-    <p>We're going to move on and start discussing decimals. Now, decimals really are fractions, and this section will help us understand why and how. We use decimal notation since the behaviour of decimal fractions is very similar to the behaviour of integers in our base ten nuber system.</p>
+    <p>We're going to move on and start discussing decimals. Now, decimals really are fractions, and this section will help us understand why and how. We use decimal notation since the behaviour of decimal fractions is very similar to the behaviour of integers in our base ten number system.</p>
 
     
         <p>A <term>decimal fraction</term> is a fraction where the denominator is a power of 10. More formally, a decimal fraction is a rational number <m>\frac{a}{b} \in \mathbb{R}</m> where <m>b=10^k</m> for some <m>k \in \mathbb{N}_0</m>. This means the denominators of these fractions are all multiples of 10, which makes them behave a lot like the way our place values to the left of the decimal point operate. In base 10, a <term>unit decimal fraction</term> has 1 as the numerator.</p>

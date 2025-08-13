@@ -43,7 +43,7 @@
       Not every polynomial equation has solutions that are real numbers. For example, <m>x^2+1=0</m> has no real solutions, since in order for this equation to be true we need that <m>x^2 &lt; 0,</m> and we know that squaring real numbers gives us a positive number. We could expand our number system to include solutions to equations such as these (called the complex numbers) but this is beyond the scope of the course.
     </p>
     <p>
-      Some famous trancendental numbers are <m>\pi</m>, which is the ratio of the circumference of any circle to its diameter, and <m>e,</m> which is a number that is very important in calculus; in short and impresicely, it is a number related to exponential growth, and in fact the function <m>e^x</m> is the only non-zero type of function where the growth rate is always equal to the actual growth. 
+      Some famous transcendental numbers are <m>\pi</m>, which is the ratio of the circumference of any circle to its diameter, and <m>e,</m> which is a number that is very important in calculus; in short and imprecisely, it is a number related to exponential growth, and in fact the function <m>e^x</m> is the only non-zero type of function where the growth rate is always equal to the actual growth. 
     </p>
 
     
@@ -52,7 +52,7 @@
     <title>Functions Briefly</title>
 
     <p>
-      In order to talk about simple roots, we need to understand a little bit about functions. A <term>function</term> is a rule that turns an input element into eactly one output element. For example, the rule "add one to a number" can be expressed in the following way: <me>
+      In order to talk about simple roots, we need to understand a little bit about functions. A <term>function</term> is a rule that turns an input element into exactly one output element. For example, the rule "add one to a number" can be expressed in the following way: <me>
         f(x)=x+1.
       </me>
       Here, we name the function "add 1 to a number" with the letter <m>f</m>, and <m>x</m> is  the variable we're using to describe the rule using algebra. So if we wanted to add 1 to, say, 5, then we would write <m>f(5)=5+1=6</m>, where we are substituting <m>x=5</m> in to our function <m>f</m>.  
@@ -63,7 +63,7 @@
     </p>
     <example>
       <p>
-        Let's say the rule we want as a function is "multiply a number by itself and add one". If we want to name this rule <m>m</m> we can write <m>m(x)=x^2+1</m>. Here, the function makes sense for any realnumber as an input, so its implied domain is all of <m>\mathbb{R}</m>. Noting that <m>x^2</m> is never negative, and only <m>0</m> when <m>x=0,</m> we can say that the smallest number our function can output is when <m>x=0</m> which makes <m>m(0)=0^2+1=1</m>. So our range is all real numbers greater than or equal to <m>1</m>, or in set notation <m>\{x \in \mathbb{R} \ | \ x \geq 1 \}</m>. 
+        Let's say the rule we want as a function is "multiply a number by itself and add one". If we want to name this rule <m>m</m> we can write <m>m(x)=x^2+1</m>. Here, the function makes sense for any real number as an input, so its implied domain is all of <m>\mathbb{R}</m>. Noting that <m>x^2</m> is never negative, and only <m>0</m> when <m>x=0,</m> we can say that the smallest number our function can output is when <m>x=0</m> which makes <m>m(0)=0^2+1=1</m>. So our range is all real numbers greater than or equal to <m>1</m>, or in set notation <m>\{x \in \mathbb{R} \ | \ x \geq 1 \}</m>. 
       </p>
     </example>
     <exercise>
@@ -195,7 +195,7 @@
       </example>
 
       <p>
-        Indeed, this example basically shows the only behaviour that odd roots have; there is exacly one odd root for any <m>a \in \mathbb{R}</m>. The next exercise will get you to show this always holds for cube roots, and then extended to all odd roots.
+        Indeed, this example basically shows the only behaviour that odd roots have; there is exactly one odd root for any <m>a \in \mathbb{R}</m>. The next exercise will get you to show this always holds for cube roots, and then extended to all odd roots.
       </p>
       <exercise>
         <p>
@@ -261,7 +261,7 @@
       In this chapter we will work towards showing that the only <m>n</m>th roots that are not irrational are those that are <m>n</m>th powers. We'll show that every other <m>n</m>th root cannot be written as a rational number by contradiction; we'll try to, and then show that two quantities that should be equal cannot be.
     </p>
     <p>
-      In order to show this, we'll first have to prove a property about <m>n</m>th powers; indeed, that they are exacly numbers where each prime in its prime factorization has an exponent with a factor of <m>n</m>. Let's do some examples to illustrate this:
+      In order to show this, we'll first have to prove a property about <m>n</m>th powers; indeed, that they are exactly numbers where each prime in its prime factorization has an exponent with a factor of <m>n</m>. Let's do some examples to illustrate this:
     </p>
     
 
@@ -300,11 +300,11 @@
       </p>
      
     </exercise>
-    <p> Remember that if we have a conditional statement "if P then Q" it is logically equivalent to its contrapositiveL "if not Q then not P". Thus we can express a biconditional as "If P then Q *and* if not P then not Q". We can rewite the result in the exercise above to be the following theorem that will be very useful for us:
+    <p> Remember that if we have a conditional statement "if P then Q" it is logically equivalent to its contrapositiveL "if not Q then not P". Thus we can express a biconditional as "If P then Q *and* if not P then not Q". We can rewrite the result in the exercise above to be the following theorem that will be very useful for us:
     <theorem xml:id="thm-nthPower">
       <statement>
         <p>
-          Let <m>m</m> be a natural number. If <m>m</m> is an <m>n</m>th power then each exponent in its prime factorization has a factor of <m>n</m>. If <m>m</m> is not an <m>n</m>th power, then there is a prime number in its prime factorization whith an exponent with no factor of <m>n</m>.
+          Let <m>m</m> be a natural number. If <m>m</m> is an <m>n</m>th power then each exponent in its prime factorization has a factor of <m>n</m>. If <m>m</m> is not an <m>n</m>th power, then there is a prime number in its prime factorization with an exponent with no factor of <m>n</m>.
         </p>
       </statement>
     </theorem>
@@ -344,7 +344,7 @@
         
       </p>
       <p>
-        Let's count the number of factors of <m>p_*</m> on both sides of the equation. On the RHS, by <xref ref="thm-nthPower"/> we know that <m>a^2</m> has an even number of <m>p_*</m>, and thus the exponent <m>e</m> of <m>p_*</m> in the prime factorization of <m>b^2</m> is a factor of <m>2</m>, so say <m>e=2r</m> for some natural numnber <m>r</m>. So <m>b^2=p_*^{2r}j</m> where <m>j</m> are the "rest" of the factors of <m>n</m>.
+        Let's count the number of factors of <m>p_*</m> on both sides of the equation. On the RHS, by <xref ref="thm-nthPower"/> we know that <m>a^2</m> has an even number of <m>p_*</m>, and thus the exponent <m>e</m> of <m>p_*</m> in the prime factorization of <m>b^2</m> is a factor of <m>2</m>, so say <m>e=2r</m> for some natural number <m>r</m>. So <m>b^2=p_*^{2r}j</m> where <m>j</m> are the "rest" of the factors of <m>n</m>.
       </p>
       <p>
         However, on the LHS, by <xref ref="thm-nthPower"/> we also know that <m>b^2</m> has an even exponent for <m>p_*</m> in it's prime factorization, say <m>2s</m> for some natural number <m>s</m> and similarly to <m>a^2</m> we can say <m>b^2=p_*^{2s}\ell</m> for some integer <m>ell</m>, while <m>n</m> itself has an odd exponent for <m>p_*</m>. Thus 
@@ -600,7 +600,7 @@
         It is important to note that while the product of a finite number of rational numbers is rational, the product of infinitely many rational numbers can be irrational. This can be understood by considering the Wallis product for <m>\pi</m>. 
       </p>
       <p>
-        The Wallis product for <m>\pi</m> is an infinite product of rational numbers that converges to the irrational number <m>\pi</m>. Showing that the product below converges to <m>\pi</m> is slightly beyond the scope of this book, but you can explore this yourself by looking at "partial" products and continuing to multiply by succesive terms. You should notice that these partial products get closer and closer to <m>\pi</m>:
+        The Wallis product for <m>\pi</m> is an infinite product of rational numbers that converges to the irrational number <m>\pi</m>. Showing that the product below converges to <m>\pi</m> is slightly beyond the scope of this book, but you can explore this yourself by looking at "partial" products and continuing to multiply by successive terms. You should notice that these partial products get closer and closer to <m>\pi</m>:
       </p>
       <p>
         <m>\frac{\pi}{2} = \prod_{n=1}^{\infty} \frac{2n}{2n-1}\times \frac{2n}{2n+1} = \left(\frac{2}{1} \times \frac{2}{3}\right) \times \left(\frac{4}{3} \times \frac{4}{5}\right) \times \left(\frac{6}{5} \times \frac{6}{7}\right) \times \ldots</m>
