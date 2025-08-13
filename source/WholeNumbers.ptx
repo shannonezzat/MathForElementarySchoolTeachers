@@ -164,7 +164,7 @@
 
 
 <p>
-    A good question is "is there anything special about regrouping in units of ten ?" or in the language of number systems "why do we use base ten?" The answer to this is no! We can indeed have a base of any counting number we like (say in base <m>b</m>) and then regoup once we have <m>b</m> of any place. 
+    A good question is "is there anything special about regrouping in units of ten ?" or in the language of number systems "why do we use base ten?" The answer to this is no! We can indeed have a base of any counting number we like (say in base <m>b</m>) and then regroup once we have <m>b</m> of any place. 
 </p>
 <p>
     Let's try writing "thirteen" in a few different bases so that you get a feel for what is happening:
@@ -250,7 +250,7 @@
             We have divided the 77 ones into 15 groups of five (longs) with 2 remaining. 
         </p>
         <p>
-            Now we group our 15 longss into groups of five, giving us groups of twenty-five, or squares:
+            Now we group our 15 longs into groups of five, giving us groups of twenty-five, or squares:
         </p>
         <p>
             <image source="WholeNumbers/Example 4.3 - 2.svg">
@@ -416,9 +416,9 @@
               </p>
           </example>
           <example>
-             <p> Now let's convert a base twleve number to base ten. Let's try <m>13A09_{twelve}</m>. Using the algorithm above:
+             <p> Now let's convert a base twelve number to base ten. Let's try <m>13A09_{twelve}</m>. Using the algorithm above:
               <me>
-                  13A09_{twleve} = 1 \times 12^4 + 3 \times 12^3+ 10 \times 12^2 + 0 \times 12^1 + 9 \times 1
+                  13A09_{twelve} = 1 \times 12^4 + 3 \times 12^3+ 10 \times 12^2 + 0 \times 12^1 + 9 \times 1
                   
               </me>
               <me>
@@ -477,7 +477,7 @@
     <subsection xml:id="subsec-Addition">
         <title>Addition</title>
         <p>
-            Addition is an operation that we usually have an intuitive grasp of. There are two common ways of viewing addtion (called addition models); the "set model," where we combine two sets (with no elements in common; that is, and empty intersection) into one set, and the "number line model", where we start at one number on the umber line, and add additional spaces according to the number we're adding to the first one. 
+            Addition is an operation that we usually have an intuitive grasp of. There are two common ways of viewing addition (called addition models); the "set model," where we combine two sets (with no elements in common; that is, and empty intersection) into one set, and the "number line model", where we start at one number on the umber line, and add additional spaces according to the number we're adding to the first one. 
         </p>
         <p>
             Here is the set model:
@@ -553,7 +553,7 @@
             </ol>
             <solution>
                 <p>
-                    You probably drew a diagram that shows either the set model of addtion or the number line model, maybe something like the following if <m>a=7</m>:
+                    You probably drew a diagram that shows either the set model of addition or the number line model, maybe something like the following if <m>a=7</m>:
                 </p>
                 <p>
                     <image source="WholeNumbers/GreaterThanLine.svg">
@@ -605,7 +605,7 @@
                 
             </exercise>
             <p>
-                Now that we have the idea of comparing numbers, we can develop a definiton of subtraction of whole numbers. Before looking at the definition, see if you can take the "greater than or equal to" definition and modify it to a definition for subtraction.
+                Now that we have the idea of comparing numbers, we can develop a definition of subtraction of whole numbers. Before looking at the definition, see if you can take the "greater than or equal to" definition and modify it to a definition for subtraction.
             </p>
             <definition xml:id="def-subtraction">
                 <statement>
@@ -619,7 +619,7 @@
             </p>
             <example>
                 <p>
-                    Let's let <m>a=7</m> and <m>b=2</m>. Since <m>7 &gt; 2</m> we can talk about <m>7-2</m> using our defintion. We know <m>7-2=5</m> since <m>5</m> is the unique number such that <m>7=2+5</m>. So in the definiton above, we have that <m>c=5</m> We can view this subtraction via the following diagram.
+                    Let's let <m>a=7</m> and <m>b=2</m>. Since <m>7 &gt; 2</m> we can talk about <m>7-2</m> using our definition. We know <m>7-2=5</m> since <m>5</m> is the unique number such that <m>7=2+5</m>. So in the definition above, we have that <m>c=5</m> We can view this subtraction via the following diagram.
                 </p>
                 <p>
                     <image source="WholeNumbers/7-2Line.svg">
@@ -663,7 +663,7 @@
         </definition>
 
         <p>
-            Another way of viewing the multiplication <m>a \times b</m> is as an area or array. Really, this idea is very similar to the number line model, except each group of <m>b</m> is directily to the right of the first group. Later, we will see that this model is an excellent one for thinking about multiplication of fractions and decimals too. 
+            Another way of viewing the multiplication <m>a \times b</m> is as an area or array. Really, this idea is very similar to the number line model, except each group of <m>b</m> is directly to the right of the first group. Later, we will see that this model is an excellent one for thinking about multiplication of fractions and decimals too. 
         </p>
         <p>
             Again, let's model <m>4 \times 3</m>:
@@ -719,7 +719,7 @@
                  <me>16-5=11 </me>
                   <me> 11-5=6 </me>
                   <me> 6-5=1  </me>
-               and since 1 is less than 5 we cannot subtract 5 from 1 using our definition of subtraction. We were able to subtract 5 four times from 21, so we say that <m>21 \div 5 = 4 \ R \ 1</m> since there is 1 remaning at the end of this repeated subtraction. Let's look at this in general:
+               and since 1 is less than 5 we cannot subtract 5 from 1 using our definition of subtraction. We were able to subtract 5 four times from 21, so we say that <m>21 \div 5 = 4 \ R \ 1</m> since there is 1 remaining at the end of this repeated subtraction. Let's look at this in general:
                
            </p>
            <p>
@@ -737,8 +737,8 @@
            </statement>
        </definition>
        <p>
-           We call <m>a</m> the <term>dividend</term>, <m>b</m> the <term>divisor</term>, <m>q</m> the <term>quotient</term>, and <m>r</m> the remainder. As <m>b \neq 0</m> is part of this defintion, we say the expression <m>a \div 0</m> is <term>undefined</term>; that is, the concept of division isn't defined when <m>b = 0</m>.</p> 
-           <p>Note just like us defining subtraction in terms of something we already knew, we defined divison in terms of multiplication and addition. So we're on solid footing here; if we ever forget what division means, we just look up this definition which is in terms of multiplication and addition, which, if we forget, we can look up the definition of those too. This seems like it's overkill for such simple concepts (and it is in a way) but this is how mathematicians think about concepts so it's good practice to do this for easy and intuitive ideas like arithmetic. 
+           We call <m>a</m> the <term>dividend</term>, <m>b</m> the <term>divisor</term>, <m>q</m> the <term>quotient</term>, and <m>r</m> the remainder. As <m>b \neq 0</m> is part of this definition, we say the expression <m>a \div 0</m> is <term>undefined</term>; that is, the concept of division isn't defined when <m>b = 0</m>.</p> 
+           <p>Note just like us defining subtraction in terms of something we already knew, we defined division in terms of multiplication and addition. So we're on solid footing here; if we ever forget what division means, we just look up this definition which is in terms of multiplication and addition, which, if we forget, we can look up the definition of those too. This seems like it's overkill for such simple concepts (and it is in a way) but this is how mathematicians think about concepts so it's good practice to do this for easy and intuitive ideas like arithmetic. 
        </p>
        <p>
            We can also view the division <m>a \div b</m> as the number of groups with <m>b</m> elements you can make out of <m>a</m> objects. This is called the <term>measurement model of division.</term> Let's look at <m>21 \div 5</m>.
@@ -849,7 +849,7 @@
                 </li>
             </ol>
             
-            You have probabily heard the expression BEDMAS as a reminder of the order. More precisely, it should read BE(DM)(AS), as we think of division and multiplication, and addition and subtraction, as pairs of the same operations (as each member of the pair is the inverse operation of the other member.)
+            You have probably heard the expression BEDMAS as a reminder of the order. More precisely, it should read BE(DM)(AS), as we think of division and multiplication, and addition and subtraction, as pairs of the same operations (as each member of the pair is the inverse operation of the other member.)
         </p>
 
         <example>
@@ -889,7 +889,7 @@
         </statement>
         <example>
             <p>
-                In <m>\mathbb{N}</m>, addition and multiplication are commutative. For example, <m>4+11 = 11+4</m> and <m>3 \times 7 = 7 \times 3</m>. We can view these pictorally:
+                In <m>\mathbb{N}</m>, addition and multiplication are commutative. For example, <m>4+11 = 11+4</m> and <m>3 \times 7 = 7 \times 3</m>. We can view these pictorially:
             </p>
             <p>
                 <image source="WholeNumbers/CommutativeLine.svg">
@@ -912,7 +912,7 @@
         </statement>
         <example>
             <p>
-                In <m>\mathbb{N}</m>, addition and multiplication are associative. For example, <m>(3 \times 2) \times 4 = 3 \times (2 \times 4)</m> and <m>(3 + 7)=4 = 3+ (7 +4)</m>. We can view these pictorally:
+                In <m>\mathbb{N}</m>, addition and multiplication are associative. For example, <m>(3 \times 2) \times 4 = 3 \times (2 \times 4)</m> and <m>(3 + 7)=4 = 3+ (7 +4)</m>. We can view these pictorially:
             </p>
             <p>
                 <image source="WholeNumbers/AssociativeLine.svg">
@@ -970,7 +970,7 @@
                 </statement>
             </definition>
             <p>
-                Using the idea of identities, we can talk about inverse elements for each pair of related operations. In laster sections when we discuss integers and rational numbers, we will talk about how we can turn every sutraction problem into an addtion problem, and (almost) every division problem into a multiplication problem. In this sense, we can think of subtraction as being the "same" operation as addition, and division being the "same" operation as multiplication.  </p>
+                Using the idea of identities, we can talk about inverse elements for each pair of related operations. In laster sections when we discuss integers and rational numbers, we will talk about how we can turn every subtraction problem into an addition problem, and (almost) every division problem into a multiplication problem. In this sense, we can think of subtraction as being the "same" operation as addition, and division being the "same" operation as multiplication.  </p>
 
             <definition xml:id="def-AdditiveInverse">
                 <statement>
@@ -983,7 +983,7 @@
                         <p>In the set of integers, <m>(-2)</m> is the negative of <m>2</m> since <m>(-2)+2=0</m>. This also means that <m>2</m> is the negative of <m>(-2)</m>.</p>
                     </example>
                     <example>
-                        <p>However, <m>2</m> has no negaive in the set of whole numbers, since there is no <m>b \in \mathbb{N}_0</m> such that <m>2+b=0</m>. So depending on the set you are working with, negatives may or may not exist.</p>
+                        <p>However, <m>2</m> has no negative in the set of whole numbers, since there is no <m>b \in \mathbb{N}_0</m> such that <m>2+b=0</m>. So depending on the set you are working with, negatives may or may not exist.</p>
                     </example>
             </definition>
             <definition xml:id="def-MultiplicativeInverse">
@@ -1001,7 +1001,7 @@
             </definition>
             
             <p>
-                The last property we will discuss invloves how multiplication and addition "play" together. 
+                The last property we will discuss involves how multiplication and addition "play" together. 
             </p>
             <definition xml:id="def-Distributivity">
                 <statement>
@@ -1027,7 +1027,7 @@
                         </image>
                     </p>
                     <p>
-                        This idea represents the idea behind distributivity. Note that distrivutivity is *very* important when we start discussing methods for multiplying in a later section.
+                        This idea represents the idea behind distributivity. Note that distributivity is *very* important when we start discussing methods for multiplying in a later section.
                     </p>
                 </example>
             </definition>
@@ -1234,7 +1234,7 @@
         
     
     <p>
-        Does it have to be the case that multiplication by zero always gives and answer of zero, or is that something we just decided because it works (more specifically, do we need to make an axoim covering multiplication by zero)? In fact, it's somthing that *must* follow from previous properties we've discussed. An important result that can be proved from axioms or previous results is called a <term>theorem</term>. Let's write this as a theorem, and then prove it. We have to be careful here, since we may be tempted to simplify <m>a \times 0 = 0</m>, but we need to put ourselves in the mindset of the first person ever to think about this; we have no idea what it could equal, so we need to solve for it using some properties that we know.
+        Does it have to be the case that multiplication by zero always gives and answer of zero, or is that something we just decided because it works (more specifically, do we need to make an axiom covering multiplication by zero)? In fact, it's something that *must* follow from previous properties we've discussed. An important result that can be proved from axioms or previous results is called a <term>theorem</term>. Let's write this as a theorem, and then prove it. We have to be careful here, since we may be tempted to simplify <m>a \times 0 = 0</m>, but we need to put ourselves in the mindset of the first person ever to think about this; we have no idea what it could equal, so we need to solve for it using some properties that we know.
     </p>
     <example>
         
@@ -1249,7 +1249,7 @@
             Let <m>a</m> be a number and let's consider <m>a \times 0</m>, which is our unknown expression; this is what we need to solve for. Remember, we *cannot* simplify this. The key to this is trying to come up with a way of finding something equal to <m>a \times 0</m> and then using some algebra to solve for our unknown expression. 
         </p>
         <p>
-            One way of doing this is remembering the multiplicitave identity and additive indentity properties. Let's be very precise here, and make sure we label all of the properties we are using. By the multiplicative identity property we know <me> a \times 1 = a</me> and by the additive identity property we know <me> 1+0 = 1 </me>. Using substitution of equal expressions we can write <me>a \times (1+0) = 1 </me>. Now using distributivity we can say that <me> a \times 1 + a\times 0 = a</me>. Again, by multiplicitive identity we can simplify this to <me>a + a\times 0 = a </me>. Finally ,by arithmetic of equal expressions we can subtract <m>a</m> from both sides to have <m>a \times 0 = 0</m>.           
+            One way of doing this is remembering the multiplicative identity and additive identity properties. Let's be very precise here, and make sure we label all of the properties we are using. By the multiplicative identity property we know <me> a \times 1 = a</me> and by the additive identity property we know <me> 1+0 = 1 </me>. Using substitution of equal expressions we can write <me>a \times (1+0) = 1 </me>. Now using distributivity we can say that <me> a \times 1 + a\times 0 = a</me>. Again, by multiplicative identity we can simplify this to <me>a + a\times 0 = a </me>. Finally ,by arithmetic of equal expressions we can subtract <m>a</m> from both sides to have <m>a \times 0 = 0</m>.           
         </p>
        
         
@@ -1257,7 +1257,7 @@
         </theorem>
 
          <p>
-            Keep in mind what this is saying; if we want 1 to be the multiplicitave identity, 0 to be the additive identity, and the properties of equality and distributivity to hold, it *must* be the case that <m>a \times 0 = 0</m>. So this is a consequence of these properties; if we want to live in a mathematical world where these properties hold, then multiplying by zero *must* give you an answer of zero.
+            Keep in mind what this is saying; if we want 1 to be the multiplicative identity, 0 to be the additive identity, and the properties of equality and distributivity to hold, it *must* be the case that <m>a \times 0 = 0</m>. So this is a consequence of these properties; if we want to live in a mathematical world where these properties hold, then multiplying by zero *must* give you an answer of zero.
         </p>
         
 

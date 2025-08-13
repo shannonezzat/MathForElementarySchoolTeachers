@@ -74,7 +74,7 @@ An <term> open sentence </term> is a sentence with a variable such that the sent
       <ol>
           <li>
               <p>
-                  In open sentences, we usually restrict the allowable inputs for variables. The set of allowable inputs is called the <term>domain</term>. In the first example above, it's implicit that we only want <m>X</m> to be a number, and not, say, a colour, or telephone, or anything else! If it's not enitrely clear what the domiain of an open sentence is, we should tell people what the domain is.  
+                  In open sentences, we usually restrict the allowable inputs for variables. The set of allowable inputs is called the <term>domain</term>. In the first example above, it's implicit that we only want <m>X</m> to be a number, and not, say, a colour, or telephone, or anything else! If it's not entirely clear what the domain of an open sentence is, we should tell people what the domain is.  
               </p>
           </li>
           <li>
@@ -203,7 +203,7 @@ An <term> open sentence </term> is a sentence with a variable such that the sent
 
 <definition>
 <p>
-    If <m>P</m> is a statement, then the <term>negation</term> of <m>P</m>, written <m>\sim P</m> is a statment with the opposite truth value of <m>P</m> (but with the same context). If <m>P</m> is an open sentence, then <m>\sim P</m> is an open sentence with the opposite truth value for each variable input.
+    If <m>P</m> is a statement, then the <term>negation</term> of <m>P</m>, written <m>\sim P</m> is a statement with the opposite truth value of <m>P</m> (but with the same context). If <m>P</m> is an open sentence, then <m>\sim P</m> is an open sentence with the opposite truth value for each variable input.
 
 </p>
 <example>
@@ -312,7 +312,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
 </example>
 </definition>
 
-<p>You may have noticed that these quantified statements are a combination of a quantifier (universal or existental) and an open sentence, thought sometimes when written in English the variable can be hidden. For example, "there is an odd integer" can be reworded to "there is an integer <m>x</m> such that <m>x</m> is odd." </p>
+<p>You may have noticed that these quantified statements are a combination of a quantifier (universal or existential) and an open sentence, thought sometimes when written in English the variable can be hidden. For example, "there is an odd integer" can be reworded to "there is an integer <m>x</m> such that <m>x</m> is odd." </p>
 
 <exercise>
     <p>
@@ -388,7 +388,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
             </li>
             <li>
                 <p>
-                    Other than vacuously true statements, if a universally quantified statement is true so is the "extentially" quantified version. For example, "all polygons have at least three sides" is true, so "some polygons have at least three sides" is true too! Remember, existential quantifiers only care of an object exists, not how many. 
+                    Other than vacuously true statements, if a universally quantified statement is true so is the "existentially" quantified version. For example, "all polygons have at least three sides" is true, so "some polygons have at least three sides" is true too! Remember, existential quantifiers only care of an object exists, not how many. 
                 </p>
             </li>
         </ol>
@@ -738,7 +738,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     
     <introduction>
         <p>
-            One of the most important type of statements in mathematics is the <term>conditional statements</term> or, more colloqually, <term>if-then statement</term>. These statements are of the form "if P then Q". We call P the <term>condition</term> and Q the <term>conclusion</term> of the conditional statement, or simply the if-part and then-part. We want to know when these statements are true or false, so let's explore this now:
+            One of the most important type of statements in mathematics is the <term>conditional statements</term> or, more colloquially, <term>if-then statement</term>. These statements are of the form "if P then Q". We call P the <term>condition</term> and Q the <term>conclusion</term> of the conditional statement, or simply the if-part and then-part. We want to know when these statements are true or false, so let's explore this now:
         </p>
     </introduction>
 
@@ -771,7 +771,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
         </p>
     <solution>
         <p>
-           The only situation where your professor is lying to you is in situaion 2. Situaion 1 is obviously true, and the statement does not really apply to situations 3 and 4 as the if-part isn't satisfied. We call the statement <term>vacuously true</term> in these two situations.
+           The only situation where your professor is lying to you is in situation 2. Situation 1 is obviously true, and the statement does not really apply to situations 3 and 4 as the if-part isn't satisfied. We call the statement <term>vacuously true</term> in these two situations.
         </p>
     </solution>
     
@@ -795,7 +795,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     
 
 <p>
-    In math, we're more concerned with if-then statements where both the if-part and then-part are open sentences with variables. For example "if <m>n</m> is an odd integer then <m>n^2</m> is also odd." In these cases, there's an assumed universal quantifier before these: "for all integers <m>n</m> if <m>n</m> is odd then <m>n^2</m> is odd." We don't usually write the quantifier, but it's there in the background. Since it's a universially quantified statement, we want it to be true for all inputs into our variables. 
+    In math, we're more concerned with if-then statements where both the if-part and then-part are open sentences with variables. For example "if <m>n</m> is an odd integer then <m>n^2</m> is also odd." In these cases, there's an assumed universal quantifier before these: "for all integers <m>n</m> if <m>n</m> is odd then <m>n^2</m> is odd." We don't usually write the quantifier, but it's there in the background. Since it's a universally quantified statement, we want it to be true for all inputs into our variables. 
 </p>
     
 <p>
@@ -818,7 +818,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
         </li>
         <li>
             <p>
-                Assume that there is an input that gives the "dreaded case" (where the if-part is true and the thenn-part is false) and show that some sort of contradition arises where mathemathics "breaks".
+                Assume that there is an input that gives the "dreaded case" (where the if-part is true and the then-part is false) and show that some sort of contradiction arises where mathematics "breaks".
             </p>
         </li>
     </ol>
@@ -1005,13 +1005,13 @@ When we talk about mathematical ideas, we want to express how many objects they 
 <subsection xml:id="subsec-WhyProofsAreImportant">
     <title>Why Proofs Are Important</title>
     <p>
-        A good question that you have probably thought about is "why do we even need to prove results like in the previous section?" and "If I show a few examples is that emough to prove a result?" Let's explore these ideas:
+        A good question that you have probably thought about is "why do we even need to prove results like in the previous section?" and "If I show a few examples is that enough to prove a result?" Let's explore these ideas:
     </p>
 
 
 <example>
     <p>
-        Is the conditional statement "if <m>n</m> is a whole number then <m>n^2+n+11</m> is a prime number" always true? Remember, a prime number is a number divisibile by exactly two numbers, 1 and itself.
+        Is the conditional statement "if <m>n</m> is a whole number then <m>n^2+n+11</m> is a prime number" always true? Remember, a prime number is a number divisible by exactly two numbers, 1 and itself.
     </p>
     <solution>
         <p>
@@ -1126,7 +1126,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
         </li>
     </ol>
     <p>
-        Intuitively, most people know that you would need to check the person drinking beer, and the 16 year old. The person drinking a beer may be under 19, and the 16 year old may be drinking alcohol. Let's analyse this using the idea of a counterexample:
+        Intuitively, most people know that you would need to check the person drinking beer, and the 16 year old. The person drinking a beer may be under 19, and the 16 year old may be drinking alcohol. Let's analyze this using the idea of a counterexample:
     </p>
     <ol>
         <li>
@@ -1141,7 +1141,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
         </li>
         <li>
             <p>
-                The person drinking water satisfies "if-part false". Just like with 1, there is no possibility thay they can be a counterexample.
+                The person drinking water satisfies "if-part false". Just like with 1, there is no possibility that they can be a counterexample.
             </p>
         </li>
         <li>
@@ -1153,7 +1153,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
 </example>
 
 <p>
-    Even though this was an easy question when you're familliar with the context, many people find reasoning like this *very* challenging to do. Try the next exercise using the same technique as the previous example.
+    Even though this was an easy question when you're familiar with the context, many people find reasoning like this *very* challenging to do. Try the next exercise using the same technique as the previous example.
 </p>
 <exercise>
     <p>
@@ -1210,7 +1210,7 @@ select all those cards, but only those cards, which you would have to turn over 
        <p> Note that the three distinct areas in that diagram represent one of the true possibilities of the conditional statement. The area that does *not* appear is the "dreaded row;" when the if-part is true and the then-part is false. This illustrates that there are no counterexamples for conditional statements that are always true.</p>
        <exercise>
            <p>
-               Reword each conditional statement as a universally quantified statement. Then draw a Venn diagram representing each conditional statement as a universally quantified statement, indentify each of the regions, and give an example of an element in each region:
+               Reword each conditional statement as a universally quantified statement. Then draw a Venn diagram representing each conditional statement as a universally quantified statement, identify each of the regions, and give an example of an element in each region:
            </p>
            <ol>
                <li>
@@ -1220,7 +1220,7 @@ select all those cards, but only those cards, which you would have to turn over 
                </li>
                <li>
                    <p>
-                       If <m>\frac{a}{b}</m> is a fraction with the numerator <m>a=1</m> then <m>\frac{a}{b}</m> cannot be reduced (i.e. is already in least terms as there is no common factor of <m>a</m> and <m>b</m>) (domiain: all fractions with counting number numerators and denominators)
+                       If <m>\frac{a}{b}</m> is a fraction with the numerator <m>a=1</m> then <m>\frac{a}{b}</m> cannot be reduced (i.e. is already in least terms as there is no common factor of <m>a</m> and <m>b</m>) (domain: all fractions with counting number numerators and denominators)
                    </p>
                </li>
                <li>
@@ -1471,7 +1471,7 @@ select all those cards, but only those cards, which you would have to turn over 
             </image>
         </p>
         <p>
-            In the second example, we know there are numbers with ones-digit that aren't 2 or 4 that are still even, so we can think of numbers that do have a ones-digit of 2 or 4 as only a part (later we'll call it a <term>subest</term>) of the even numbers. For example, 10 is a counterexample to "If Q then P" for this example.</p> 
+            In the second example, we know there are numbers with ones-digit that aren't 2 or 4 that are still even, so we can think of numbers that do have a ones-digit of 2 or 4 as only a part (later we'll call it a <term>subset</term>) of the even numbers. For example, 10 is a counterexample to "If Q then P" for this example.</p> 
             <p>Looking at the first example, we want both Venn diagrams to be true. The only way for this to be possible is if both circles are actually the same circle! That's because the two ideas of polygons with three sides and triangles are really the same thing. 
 
                 <image source="Section2.7b2.svg">
@@ -1637,7 +1637,7 @@ select all those cards, but only those cards, which you would have to turn over 
             </li>
             <li>
                <p>
-                   Decribe the elements using mathematical notation; e.g. <m>\{ \text{whole numbers } n \ | \ 1 \leq n \leq 5 \}</m>
+                   Describe the elements using mathematical notation; e.g. <m>\{ \text{whole numbers } n \ | \ 1 \leq n \leq 5 \}</m>
                </p>
            </li>
        </ol>
@@ -1846,7 +1846,7 @@ select all those cards, but only those cards, which you would have to turn over 
           </p>
           <p>
               <image source="Checkpoint3.7.svg">
-                <shortdescription>Inclusiong diagram for A, B, and C above</shortdescription>
+                <shortdescription>Inclusion diagram for A, B, and C above</shortdescription>
               </image>
           </p>
 
@@ -2018,7 +2018,7 @@ select all those cards, but only those cards, which you would have to turn over 
                    </p>
                    <p> A possible example of an element in this set is a triangle with one angle of 100 degrees:
                        <image source="Checkpoint3.15a.svg">
-                        <shortdescription>An obtuse traingle</shortdescription>
+                        <shortdescription>An obtuse triangle</shortdescription>
                        </image>
                        An possible example of an element not in this set is a square:
                        <image source="square_diagram_same_size.svg">

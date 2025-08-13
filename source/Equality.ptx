@@ -126,14 +126,14 @@
     <assemblage xml:id="assemblage-EquivalenceRelation">
         <title>Notes for Additional Understanding</title>
         <p>
-            Note that the three properties above are used to define another, more general, concept in mathematics called an <term>equivalence relation</term>. Informally, this is a type of relation, but it calls objects equaivalent if they behave the same way in only ways that you are interested in working with. For more information, see any discrete mathematics textbook.
+            Note that the three properties above are used to define another, more general, concept in mathematics called an <term>equivalence relation</term>. Informally, this is a type of relation, but it calls objects equivalent if they behave the same way in only ways that you are interested in working with. For more information, see any discrete mathematics textbook.
         </p>
     </assemblage>
 
     </subsection>
     
         <p>
-            The most important property of equality when doing mathematics is that you can always <term>substitute</term> one expression for another equal to it. In fact, this is how many algebraic equations are solved, and arithmetic expressions simplified. We regularly do this whenever we simplify an arithmetic expression, but many of us do not realize we are doing a substitution when we do it! For example, if we are calculating the expression <m>4 \times 7 - 3</m>, we know that <m>4 \times 7 = 28</m>. Since these two quantities equal each other, we can substitute <m>28</m> any time we see the expression <m>4 \times 7</m>. Doing this, we get <m>28-3</m>, and we know that <m>28-3=25.</m> So, putting it all together we have that <m>4 \times 7 -3 = 25</m>. We can view this idea using the balance model descibed above: 
+            The most important property of equality when doing mathematics is that you can always <term>substitute</term> one expression for another equal to it. In fact, this is how many algebraic equations are solved, and arithmetic expressions simplified. We regularly do this whenever we simplify an arithmetic expression, but many of us do not realize we are doing a substitution when we do it! For example, if we are calculating the expression <m>4 \times 7 - 3</m>, we know that <m>4 \times 7 = 28</m>. Since these two quantities equal each other, we can substitute <m>28</m> any time we see the expression <m>4 \times 7</m>. Doing this, we get <m>28-3</m>, and we know that <m>28-3=25.</m> So, putting it all together we have that <m>4 \times 7 -3 = 25</m>. We can view this idea using the balance model described above: 
         </p>
         <p>
             <image source="WholeNumbers/BalanceModelSub1.svg">
@@ -141,7 +141,7 @@
             </image>
         </p>
         <p>
-            We use this idea when solving equations as well. Suppose we know that <m>x=9</m> and we're asked to calculate <m>3x-16</m>. Since <m>x</m> and <m>9</m> are indeed equal we can substitude a <m>9</m> where ever we see the variable <m>x</m>. Doing so we obtain <m>3(9)-16</m>. Similarly to above we can simplify this to <m>27-16=11</m>. And thus <m>3x-16=11</m> when <m>x=9</m>. Again, we can use a balance model to show this process:
+            We use this idea when solving equations as well. Suppose we know that <m>x=9</m> and we're asked to calculate <m>3x-16</m>. Since <m>x</m> and <m>9</m> are indeed equal we can substitute a <m>9</m> where ever we see the variable <m>x</m>. Doing so we obtain <m>3(9)-16</m>. Similarly to above we can simplify this to <m>27-16=11</m>. And thus <m>3x-16=11</m> when <m>x=9</m>. Again, we can use a balance model to show this process:
         </p>
          <p>
             <image source="WholeNumbers/BalanceModelSub2.svg">
@@ -316,7 +316,7 @@
 <definition xml:id="def-TermsEtc">
     <statement>
         <p>
-            An <term>expression</term> is a combination of mathematical symbols without a relational symbol (e.g. <m>=, \leq</m>) symbol relating it to another combination of mathematical symbols. A <term>term</term> is an expression that does not include a addition or subtraction operation (outside of necessary brackets). </p><p> A <term>coefficient</term> of a term that includes a variable is the number that variable is multiplied by. </p><p> Terms only containing numbers are called <term>constants.</term> </p><p> </p><p> An <term>equation</term> is two equal expressions with an equal sign between them. </p><p> To <term>solve</term> an equation for a variable <m>x</m> means to perform arithemtic operations on both sides of the equation (while maintaining equality) so that the equation is now in the form <m>x = \ldots</m>. Note that if there is only one variable, specifying the variable is usually omitted.
+            An <term>expression</term> is a combination of mathematical symbols without a relational symbol (e.g. <m>=, \leq</m>) symbol relating it to another combination of mathematical symbols. A <term>term</term> is an expression that does not include a addition or subtraction operation (outside of necessary brackets). </p><p> A <term>coefficient</term> of a term that includes a variable is the number that variable is multiplied by. </p><p> Terms only containing numbers are called <term>constants.</term> </p><p> </p><p> An <term>equation</term> is two equal expressions with an equal sign between them. </p><p> To <term>solve</term> an equation for a variable <m>x</m> means to perform arithmetic operations on both sides of the equation (while maintaining equality) so that the equation is now in the form <m>x = \ldots</m>. Note that if there is only one variable, specifying the variable is usually omitted.
         </p>
 
     </statement>
@@ -356,7 +356,7 @@
                 Similarly, <m>3x+4y=7</m> is another linear equation since both <m>3x</m> and <m>4y</m> have exactly one copy of <m>x,y</m> in them, and <m>7</m> has no <m>x</m>'s or <m>y</m>'s.
             </p>
             <p>
-                Now a non-example: <m>3xy-4x^2=6</m> is *not* a linear equation. Here there are two problems (onte that just one is enough to disqualify it from being a linear equation): the first term has two variables in it, <m>x</m> and <m>y</m>. Also the second term has two copies of <m>x</m> multiplied together, since by the definition of exponents <m>x^2 = x \times x.</m>
+                Now a non-example: <m>3xy-4x^2=6</m> is *not* a linear equation. Here there are two problems (note that just one is enough to disqualify it from being a linear equation): the first term has two variables in it, <m>x</m> and <m>y</m>. Also the second term has two copies of <m>x</m> multiplied together, since by the definition of exponents <m>x^2 = x \times x.</m>
             </p>
         </example>
 </definition>
@@ -407,7 +407,7 @@
            </li>
        </ol>
        <p>
-           We could just memorize the formula above, but there are so many different situations that arise in mathematics that it isn't feasable to remember everything. However, if you have a strong knowledge of the ideas behind equality and arithmetic of equations, you can recreate this when the need arises. 
+           We could just memorize the formula above, but there are so many different situations that arise in mathematics that it isn't feasible to remember everything. However, if you have a strong knowledge of the ideas behind equality and arithmetic of equations, you can recreate this when the need arises. 
        </p>
        <example>
         <p> What number can we substitute in for <m>x</m> to solve the equation <m>x+5=8</m>? </p>
@@ -695,7 +695,7 @@
             </li>
             <li>
                 <p>
-                    Check your work by substituting the solved values for both variables into the equation not used in the previous sttep. If you do indeed have equality, your solution is a soloution for the system of equations.
+                    Check your work by substituting the solved values for both variables into the equation not used in the previous step. If you do indeed have equality, your solution is a solution for the system of equations.
                 </p>
             </li>
             <exercise>
@@ -772,7 +772,7 @@
                 As you can see, both methods give the same answer (which is a good thing, of course!). But why does this method work? We will give an example in the case of subtraction, but any operation will work. Note that in practice, addition and subtraction are the most useful in these scenarios.
             </p>
             <p>
-                Imagine we had a system of two equations. We will call the left hand sides of the first and second equation <m>L_1</m> and <m>L_2</m>, repsctively. Similarly, we will call the right hand sides <m>R_1</m> and <m>R_2</m>. (Note that in our previous example <m>L_1 = 2C+P</m> and <m>R_1 = 9</m>). We can view the system in general as
+                Imagine we had a system of two equations. We will call the left hand sides of the first and second equation <m>L_1</m> and <m>L_2</m>, respectively. Similarly, we will call the right hand sides <m>R_1</m> and <m>R_2</m>. (Note that in our previous example <m>L_1 = 2C+P</m> and <m>R_1 = 9</m>). We can view the system in general as
             </p>
             <me>
                 L_1 = R_1
@@ -818,7 +818,7 @@
                     </li>
                     <li>
                         <p>
-                            Once you choose a variable to eliminate, a common and useful technique is to multiply each equation by the cofficent of the variable in the other equation, and then add or subtract to eliminate that vaariable.
+                            Once you choose a variable to eliminate, a common and useful technique is to multiply each equation by the coefficient of the variable in the other equation, and then add or subtract to eliminate that variable.
                         </p>
                     </li>
                 </ol>
