@@ -6,7 +6,32 @@
         <title>Whole Numbers and Integers</title>
             <section xml:id="sec-2_1NumberSystemsAndPlaceValue">
                 <title>Number Systems And Place Value</title>
-                    
+                <objectives xml:id="objectives-number-systems">
+  <title>Learning Objectives</title>
+  <introduction>
+    <p>
+      In this section, you will explore how different number systems represent quantities and how place value enables efficient computation and understanding of large and small numbers.
+    </p>
+  </introduction>
+  <ol>
+    <li>
+      Explain the role of numerals, digits, and place value in representing quantities.
+    </li>
+    <li>
+      Describe how base systems work, including regrouping in different bases.
+    </li>
+    <li>
+      Convert numbers between base ten and other bases.
+    </li>
+    <li>
+      Express numbers in expanded form using powers of the base.
+    </li>
+    <li>
+      Understand the historical development and choices behind different numeration systems.
+    </li>
+  </ol>
+</objectives>
+    
                     
   
 
@@ -406,17 +431,38 @@
           </example>
           <video youtube="1AAIDjg8q90"/>
       </subsection>
-      <subsection xml:id="subsec-HistoricalNumberSystems">
-          <title>Historical Number Systems</title>
-          <p>
-              INCLUDE SECTION HERE! 
-          </p>
-      </subsection>
+     
   
    
 </section>
 <section xml:id="sec-ArithmeticOperations">
     <title>Arithmetic Operations</title>
+    <objectives xml:id="objectives-arithmetic-operations">
+  <title>Learning Objectives</title>
+  <introduction>
+    <p>
+      In this section, you will study the four fundamental operations on whole numbers—addition, subtraction, multiplication, and division—by defining each in terms of simpler operations, exploring multiple representations, and examining their mathematical properties.
+    </p>
+  </introduction>
+  <ol>
+    <li>
+      Understand addition as a foundational operation, including set and number line models.
+    </li>
+    <li>
+      Define subtraction in terms of addition and use this to develop inequality and comparison statements.
+    </li>
+    <li>
+      Interpret multiplication as repeated addition and model it using arrays and number lines.
+    </li>
+    <li>
+      Define division in terms of multiplication and addition, and distinguish between measurement and partitive models.
+    </li>
+    <li>
+      Recognize the limitations of each operation in the whole number system and the rationale for extending the number system.
+    </li>
+  </ol>
+</objectives>
+
     <introduction>
         <p>
             In this section, we will talk about the four main operations of arithmetic of whole numbers; addition, subtraction, multiplication, and division. The idea is that we will start with the idea of addition, and "build" the others from that. Indeed, mathematicians like to start with as little as possible, and making as many results and ideas out of this starting place as we can.
@@ -750,6 +796,32 @@
 </section>
 <section xml:id="sec-PropertiesOfArithmeticOperations">
     <title>Properties Of Arithmetic Operations</title>
+    <objectives xml:id="objectives-properties-of-arithmetic">
+  <title>Learning Objectives</title>
+  <introduction>
+    <p>
+      In this section, you will study the structural properties of arithmetic operations and understand how they support efficient computation and deeper mathematical reasoning.
+    </p>
+  </introduction>
+  <ol>
+    <li>
+      Recall and apply the conventional order of operations when evaluating expressions.
+    </li>
+    <li>
+      Identify whether an operation is closed, commutative, or associative over a given set.
+    </li>
+    <li>
+      Understand the roles of identity and inverse elements in addition and multiplication, and recognize when inverses do or do not exist.
+    </li>
+    <li>
+      Use the distributive property to break apart or simplify arithmetic expressions and multiplication problems.
+    </li>
+    <li>
+      Analyze and prove consequences of arithmetic properties, including multiplication by zero, division by zero, and relationships between related subtraction and division problems.
+    </li>
+  </ol>
+</objectives>
+
     <subsection xml:id="subsubsec-OrderOfOperations">
         <title>Order Of Operations</title>
         <p>
