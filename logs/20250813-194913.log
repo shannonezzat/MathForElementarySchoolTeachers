@@ -1,0 +1,294 @@
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext init --refresh` to produce a compatible file.
+INFO    : Building target pdf
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : downloading YouTube thumbnails from /workspaces/MathForElementarySchoolTeachers/source/main.ptx for placement in /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/extract-youtube.xsl
+INFO    : messages from the log for XSL processing:
+ERROR   : * PTX:ERROR: the @xml:id value "def-PropertiesOfEquality" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "def-PropertiesOfEquality" (xml:id)
+INFO    : *              located within: "def-PropertiesOfEquality" (xml:id)
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/extract-youtube.xsl
+INFO    : downloading http://i.ytimg.com/vi/F4eG0HzKZeU/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/Test.jpg...
+INFO    : downloading http://i.ytimg.com/vi/bzYlcDAWf2g/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-Quantifiers-13.jpg...
+INFO    : downloading http://i.ytimg.com/vi/FEaFz5En32w/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-QuantVenn-8.jpg...
+INFO    : downloading http://i.ytimg.com/vi/Uuwc2hjlfAw/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-QuantVenn-9.jpg...
+INFO    : downloading http://i.ytimg.com/vi/aofNN-ZGf4I/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/EvenOddVid-2.jpg...
+INFO    : downloading http://i.ytimg.com/vi/if-mYn20MZw/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/vid-ConditionalStatements-2.jpg...
+INFO    : downloading http://i.ytimg.com/vi/ioS1_srvu4U/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-WhyProofsAreImportant-6-1.jpg...
+INFO    : downloading http://i.ytimg.com/vi/WNS3ML-xQsM/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-Counterexamples-10-1.jpg...
+INFO    : downloading http://i.ytimg.com/vi/5ZTKEPcYwEM/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-BiconditionalSentences-12-1.jpg...
+INFO    : downloading http://i.ytimg.com/vi/Si2K4M3s5qc/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/assemblage-Sets-3.jpg...
+INFO    : downloading http://i.ytimg.com/vi/x53Fqvr3T_E/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-CombiningSets-13.jpg...
+INFO    : downloading http://i.ytimg.com/vi/OXG0Mj5DbI8/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/sec-2_1NumberSystemsAndPlaceValue-9-33.jpg...
+INFO    : downloading http://i.ytimg.com/vi/1AAIDjg8q90/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-BaseTwelve-8.jpg...
+INFO    : downloading http://i.ytimg.com/vi/nrS1VEiVOhk/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-Subtraction-11.jpg...
+INFO    : downloading http://i.ytimg.com/vi/On5EaTP0UEY/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-Subtraction-12.jpg...
+INFO    : downloading http://i.ytimg.com/vi/lfLOFIlx3Bg/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-Multiplication-4.jpg...
+INFO    : downloading http://i.ytimg.com/vi/f667-6l8hMI/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-Division-3.jpg...
+INFO    : downloading http://i.ytimg.com/vi/3wCt173Qkas/default.jpg as /workspaces/MathForElementarySchoolTeachers/generated-assets/youtube/subsec-ConsequencesofProperties-5.jpg...
+INFO    : YouTube thumbnail download complete
+INFO    : Generating generic video preview, aka "play button" into /workspaces/MathForElementarySchoolTeachers/generated-assets/play-button
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : discovering source file's directory name: /workspaces/MathForElementarySchoolTeachers/source
+INFO    : verifying and expanding input directory: /workspaces/MathForElementarySchoolTeachers/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/MathForElementarySchoolTeachers/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/MathForElementarySchoolTeachers/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/MathForElementarySchoolTeachers/assets
+INFO    : manufacturing QR codes from /workspaces/MathForElementarySchoolTeachers/source/main.ptx for placement in /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/extract-qrcode.xsl
+INFO    : messages from the log for XSL processing:
+ERROR   : * PTX:ERROR: the @xml:id value "def-PropertiesOfEquality" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "def-PropertiesOfEquality" (xml:id)
+INFO    : *              located within: "def-PropertiesOfEquality" (xml:id)
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/extract-qrcode.xsl
+INFO    : creating URL with content "https://www.youtube.com/watch?v=F4eG0HzKZeU" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/Test.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=bzYlcDAWf2g" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-Quantifiers-13.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=FEaFz5En32w" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-QuantVenn-8.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=Uuwc2hjlfAw" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-QuantVenn-9.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=aofNN-ZGf4I" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/EvenOddVid-2.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=if-mYn20MZw" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/vid-ConditionalStatements-2.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=ioS1_srvu4U" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-WhyProofsAreImportant-6-1.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=WNS3ML-xQsM" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-Counterexamples-10-1.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=5ZTKEPcYwEM" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-BiconditionalSentences-12-1.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=Si2K4M3s5qc" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/assemblage-Sets-3.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=x53Fqvr3T_E" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-CombiningSets-13.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=OXG0Mj5DbI8" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/sec-2_1NumberSystemsAndPlaceValue-9-33.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=1AAIDjg8q90" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-BaseTwelve-8.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=nrS1VEiVOhk" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-Subtraction-11.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=On5EaTP0UEY" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-Subtraction-12.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=lfLOFIlx3Bg" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-Multiplication-4.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=f667-6l8hMI" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-Division-3.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=3wCt173Qkas" as /workspaces/MathForElementarySchoolTeachers/generated-assets/qrcode/subsec-ConsequencesofProperties-5.png...
+INFO    : QR code creation complete
+INFO    : Removing temporary directory /tmp/ptx-3_hcdm85
+INFO    : Removing temporary directory /tmp/ptx-knuhk18d
+INFO    : Removing temporary directory /tmp/ptx-4_oulild
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/MathForElementarySchoolTeachers/output/pdf.
+INFO    : discovering source file's directory name: /workspaces/MathForElementarySchoolTeachers/source
+INFO    : verifying and expanding input directory: /workspaces/MathForElementarySchoolTeachers/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/MathForElementarySchoolTeachers/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/MathForElementarySchoolTeachers/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/MathForElementarySchoolTeachers/assets
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : converting /workspaces/MathForElementarySchoolTeachers/source/main.ptx to LaTeX as /tmp/ptx-i70jk8f9/main.tex
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/pretext-latex.xsl
+INFO    : messages from the log for XSL processing:
+ERROR   : * PTX:ERROR: the @xml:id value "def-PropertiesOfEquality" should be unique, but is authored multiple times.
+INFO    : *            Results will be unpredictable, and likely incorrect.  Information on the locations follows:
+INFO    : *              located within: "def-PropertiesOfEquality" (xml:id)
+INFO    : *              located within: "def-PropertiesOfEquality" (xml:id)
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+ERROR   : * PTX:ERROR:      The @xml:id "fraction-1-over-2.png" is invalid.  Use only letters, numbers, hyphens and underscores.
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "sec-2_1NumberSystemsAndPlaceValue" (xml:id), "Number Systems And Place Value" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "integers" (xml:id), "Integers" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "Introduction to Fractions" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "Ratios, Rates, and Proportions" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "percent-and-percent-change" (xml:id), "Percent and Percent Change" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "understanding_irrational_numbers" (xml:id), "Understanding Irrational Numbers" (title)
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "integer-addition" (xml:id), "Integer Addition" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "integer-multiplication" (xml:id), "Integer Multiplication" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "properties-of-integer-multiplication" (xml:id), "Properties of Integer Multiplication" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "integer-division" (xml:id), "Integer Division" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "subsec-ProsAndConsOfMultiplicationAlgorithms" (xml:id), "Pros And Cons Of Multiplication Algorithms" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "negative-exponents-fractions" (xml:id), "Negative Exponents and Fractions" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "introduction-to-percent" (xml:id), "Introduction to Percent" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "divisibility-theorems" (xml:id), "Divisibility Theorems" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "divisibility-rule-2-4-8" (xml:id), "Divisibility Rules for 2, 4, and 8" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "Iterative Divisibility Rules" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "subsec-HowManyFactorsDoesANumberHave" (xml:id), "How Many Factors Does A Number Have?" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "word_problems_gcd_lcm" (xml:id), "Word Problems: GCD and LCM in Practice" (title)
+WARNING : * PTX:WARNING: In a subsection containing subsubsections, any content that is not inside a subsubsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "euclidean_algorithm" (xml:id), "Understanding the Euclidean Algorithm" (title)
+WARNING : * PTX:DEPRECATE: (2024-10-08) elements previously included in a "titlepage" element inside the "frontmatter" (author, editor, credit, date, and event) should now be placed in "frontmatter/bibinfo".  To ensure a title page is created, put only the empty element "titlepage-items" inside "titlepage".  Until you move these elements, we will try to honor your intent. (1 time)
+INFO    : *              located within: "frontmatter" (xml:id)
+INFO    : * --------------
+WARNING : * PTX:DEPRECATE: (2024-10-08) elements previously included in a "colophon" element inside the "frontmatter" (credit, copyright, edition, and website) should now be placed in "frontmatter/bibinfo". To produce a "colophon", include only the empty element "colophon-items" inside "colophon" Until you move these elements, we will try to honor your intent. (1 time)
+INFO    : *              located within: "frontmatter" (xml:id)
+INFO    : * --------------
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+WARNING : * PTX:WARNING: A cross-reference (<xref>) must have a @ref attribute, a @first/@last attribute pair, or a @provisional attribute
+INFO    : *              located within: "def-PropertiesOfEquality" (xml:id)
+ERROR   : * PTX:ERROR:   a cross-reference ("xref") uses references [sec-NumberSystems] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+INFO    : *              located within: "ArithmeticAlgorithms" (xml:id), "Arithmetic Algorithms" (title)
+ERROR   : * PTX:ERROR:   width (200) should be given as a percentage (such as "40%"), or as the string "auto"
+INFO    : *              located within: "fraction-1-over-2.png" (xml:id)
+ERROR   : * PTX:BUG:   an element ("content") does not know its level
+INFO    : *              located within: "Proportions" (title)
+ERROR   : * PTX:BUG:  development bug, new level does not match old level for "subsubsection"
+INFO    : *              located within: "cross-multiplication" (xml:id), "Cross Multiplication for Solving Equal Proportions" (title)
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+WARNING : * PTX:WARNING: there appears to be an "xref" by number to an item (of type "assemblage") without a number (or there is a bug).  The "xref" is
+INFO    : *              located within: "subsubsec-PuttingItAllTogether" (xml:id), "Putting It All Together" (title)
+INFO    : *              The target is
+INFO    : *              located within: "assemblage-TestForPrimality" (xml:id), "Teat For Primality" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "assemblage-TestForPrimality") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "subsubsec-PuttingItAllTogether" (xml:id), "Putting It All Together" (title)
+WARNING : * PTX:WARNING: there appears to be an "xref" by number to an item (of type "assemblage") without a number (or there is a bug).  The "xref" is
+INFO    : *              located within: "subsubsec-PuttingItAllTogether" (xml:id), "Putting It All Together" (title)
+INFO    : *              The target is
+INFO    : *              located within: "assemblage-TestForPrimality" (xml:id), "Teat For Primality" (title)
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:BUG:  development bug, new level does not match old level for "subsection"
+INFO    : *              located within: "addition_subtraction_irrational_numbers" (xml:id), "Addition and Subtraction with Irrational Numbers" (title)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic block number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic figure number computation is out-of-bounds (NaN)
+ERROR   : * PTX:BUG:   an element ("p") does not know its level
+INFO    : *              located within: "sec-OperationsWithIrrationalNumbers" (xml:id), "Operations With Irrational Numbers" (title)
+ERROR   : * PTX:ERROR: Subtree level for atomic exercise number computation is out-of-bounds (NaN)
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/pretext-latex.xsl
+INFO    : XSL conversion of /workspaces/MathForElementarySchoolTeachers/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+CRITICAL: PTX:ERROR: cannot locate executable with configuration name `LatexEngine.PDFLATEX` as command `pdflatex`
+***  Edit the configuration file  ("pretext.cfg" or "project.ptx") and/or install  ***
+***  the necessary program and/or make sure the executable is on your PATH         ***
+INFO    : ------------------------
+CRITICAL: Failed to build.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
