@@ -168,7 +168,10 @@
                     <ol>
                         <li>
                             <p>
-                                If <m>F_s</m> is some mathematical expression involving the symbol <m>s</m>, and <m>F_t</m> is the same expression as <m>F_s</m> with all <m>s</m>'s' replaced with <m>t</m>'s. If <m>s=t</m> then <m>F_s=F_t</m>. We call this the principle of <term>substitution.</term>
+                                <p>
+                                    Let <m>s</m> and <m>t</m> be expressions with <m>s=t</m>. For any expression <m>F(x)</m> with a single placeholder “<m>x</m>”, write <m>F(s)</m> for the result of uniformly replacing every <em>free</em> occurrence of the placeholder by <m>s</m>, and similarly for <m>F(t)</m>. Then <me>s=t \implies F(s)=F(t).</me>
+                                    For example, f <m>2+3=5</m>, then <m>(2+3)^2+5=5^2+5</m> where <m>F(x)=x^2+5</m>.
+                                </p>
                             </p>
                         </li>
                         <li>
@@ -922,7 +925,7 @@
         
 
         
-        
+    <video youtube="RtxSKLEvWCk" />    
 </section>       
  <section xml:id="FutureIdeas">       
         <title> Future Section Ideas </title>

@@ -102,6 +102,7 @@
                 </p>
                 
               </example>
+              <video youtube="pFhez_t_O4o" />
             </subsection>
           <subsection xml:id="ComparingFractions">
   <title>Comparing Fractions Using a Common Denominator</title>
@@ -182,6 +183,7 @@
   </example>
   <p> Note that since we can always compare the sizes of two fractions we can place these on a number line, just like we did for whole numbers. </p>
   <p> ADD PIC HERE </p>
+  <video youtube="2CegRyLPPgM" />
 </subsection>
 
 <subsection xml:id="DensityOfFractions">
@@ -284,7 +286,7 @@
   <p>
     The theorem above demonstrates the density of fractions because it shows that given any two distinct fractions <m>\dfrac{a}{b}</m> and <m>\dfrac{c}{d}</m>, we can always find another fraction <m>\dfrac{2ad + 1}{2bd}</m> that lies between them. This property holds true for any choice of <m>a, b, c,</m> and <m>d</m>, as long as <m>b, d &gt; 0</m>. Consequently, no matter how close together two fractions might be, there will always be another fraction in between them, illustrating that the set of fractions is dense.
   </p>
- 
+ <video youtube="rJy3zqaw5zA" />
 </subsection>
 
 
@@ -460,6 +462,7 @@
       Thus, the improper fraction <m>\dfrac{23}{5}</m> is equal to the mixed number <m>4\left(\dfrac{3}{5}\right)</m>.
     </p>
   </example>
+  <video youtube="Ny8IxEdiQYo" />
 </subsection>
 <subsection xml:id="subsec-MultiplicationOfFractions">
     <title>Multiplication of Fractions</title>
@@ -538,6 +541,7 @@
     <p>
         Note that a non-zero fraction multiplied by its reciprocal always equals one. This is because <m>\dfrac{a}{b} \times \dfrac{b}{a} = \dfrac{a \times b}{b \times a}</m>. Since <m>a \times b</m> equals <m>b \times a</m>, this simplifies to <m>\dfrac{1}{1}</m>, which of course equals 1. In fact, you can use this as the definition of the reciprocal of a fraction instead of the definition above.
     </p>
+    <video youtube="IYEdG-c54J4" />
 </subsection>
 <subsection>
     <title>Division of Fractions</title>
@@ -619,7 +623,7 @@
     </p>
   </solution>
 </example>
-
+<video youtube="ybAxDh7RT4g" />
 </subsection>
 <subsection xml:id="negative-exponents-fractions">
 <title>Negative Exponents and Fractions</title>
@@ -705,7 +709,7 @@ Finally, applying the negative exponent rule, we get <m>\dfrac{1}{2^{1} \cdot 3^
 </solution>
 </example>
 </subsubsection>
-
+<video youtube="93z7vT1ZA00" />
 
 </subsection>
 
@@ -924,7 +928,7 @@ Finally, applying the negative exponent rule, we get <m>\dfrac{1}{2^{1} \cdot 3^
 </exercise>
 
 </subsection>
-
+<video youtube="j0FlibVbmc" />
 </section>
         
 </chapter>

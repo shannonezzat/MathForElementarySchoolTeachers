@@ -636,7 +636,7 @@
             <p>
     INCLUDE SECTION ON a-b=c IFF a-c=b, EITHER HERE OR IN PROPERTIES OF ARITHMETIC SECTION
 </p>
-<video youtube="nrS1VEiVOhk"/>
+
 <video youtube="On5EaTP0UEY" />
     </subsection>
     <subsection xml:id="subsec-Multiplication">
@@ -1279,6 +1279,7 @@
     <video youtube="3wCt173Qkas"/>
     
     </subsection>
+    <video youtube="nrS1VEiVOhk"/>
 </section>
 <section xml:id="integers">
     <title>Integers</title>
@@ -1503,6 +1504,7 @@
         </subsubsection>
       </subsection>
     </subsection>
+    <video youtube="4zEGRXtdrcU"/>
   </subsection>
   <subsection xml:id="integer-multiplication">
     <title>Integer Multiplication</title>
@@ -1747,6 +1749,7 @@
           </solution>
         </example>
       </subsubsection>
+      <video youtube="Y9kVUUbvpKs" />
     </subsection>
   </section>
   
