@@ -2092,161 +2092,419 @@ select all those cards, but only those cards, which you would have to turn over 
 </section>
    <section>
     <title>Supplemental Exercises</title>
+    <subsection xml:id="logic-problems">
+  <title>Logic Questions</title>
+  <exercises>
+  
     <exercise>
-        <p>
-            Joe says "Dolphins are mammals or live primarily underwater." Is his statement true?
-        </p>
-    </exercise>
-    <exercise>
-        <p>
-            Which of the following are statements?
-        </p>
-        <ol>
-            <li>
-                <p>
-                    It rained yesterday. 
-                </p>
-            </li>
-            <li>
-                <p>
-                    All cars have engines. 
-                </p>
-            </li>
-            <li>
-                <p>
-                    Did you see the game last night?
-                </p>
-            </li>
-            <li>
-                <p>
-                    All dogs go to Heaven. 
-                </p>
-            </li>
-            <li>
-                <p>
-                    This statement is false.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Come visit sometime.  
-                </p>
-            </li>
+      <statement>
+        <p>Which of the following are statements?</p>
+        <ol marker="a">
+          <li>It rained yesterday.</li>
+          <li>All cars have engines.</li>
+          <li>Did you see the game last night?</li>
+          <li>All dogs go to Heaven.</li>
+          <li>This statement is false.</li>
+          <li>Come visit sometime.</li>
         </ol>
+      </statement>
     </exercise>
+    
     <exercise>
-        <p>
-            Which of the following are open sentences? For each open sentence, identify its domain.
-        </p>
-        <ol>
-            <li>
-                <p>
-                    <m> x+3 \leq 5 </m>
-                </p>
-            </li>
-            <li>
-                <p>
-                    Dog D is a mastiff.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Vitamin C helps prevent scurvy.
-                </p>
-            </li>
-            <li>
-                <p>
-                    The statement P is both true and false.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Some countries have kings.
-                </p>
-            </li>
-            <li>
-                <p>
-                    No one lives in a house.
-                </p>
-            </li>
+      <statement>
+        <p>Joe says "Dolphins are mammals or live primarily underwater." Is his statement true?</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Given each truth table below, provide a statement it represents (that is, define P and Q and determine the relationship between them).</p>
+        <ol marker="a">
+          <li>
+            <tabular>
+              <row><cell>P</cell><cell>Q</cell><cell/></row>
+              <row><cell>T</cell><cell>T</cell><cell>T</cell></row>
+              <row><cell>F</cell><cell>T</cell><cell>F</cell></row>
+              <row><cell>T</cell><cell>F</cell><cell>F</cell></row>
+              <row><cell>F</cell><cell>F</cell><cell>F</cell></row>
+            </tabular>
+          </li>
+          <li>
+            <tabular>
+              <row><cell>P</cell><cell>Q</cell><cell/></row>
+              <row><cell>T</cell><cell>T</cell><cell>T</cell></row>
+              <row><cell>F</cell><cell>T</cell><cell>T</cell></row>
+              <row><cell>T</cell><cell>F</cell><cell>T</cell></row>
+              <row><cell>F</cell><cell>F</cell><cell>F</cell></row>
+            </tabular>
+          </li>
+          <li>
+            <tabular>
+              <row><cell>P</cell><cell>Q</cell><cell/></row>
+              <row><cell>T</cell><cell>T</cell><cell>F</cell></row>
+              <row><cell>F</cell><cell>T</cell><cell>F</cell></row>
+              <row><cell>T</cell><cell>F</cell><cell>F</cell></row>
+              <row><cell>F</cell><cell>F</cell><cell>T</cell></row>
+            </tabular>
+          </li>
+          <li>
+            <tabular>
+              <row><cell>P</cell><cell>Q</cell><cell/></row>
+              <row><cell>T</cell><cell>T</cell><cell>T</cell></row>
+              <row><cell>F</cell><cell>T</cell><cell>T</cell></row>
+              <row><cell>T</cell><cell>F</cell><cell>T</cell></row>
+              <row><cell>F</cell><cell>F</cell><cell>T</cell></row>
+            </tabular>
+          </li>
         </ol>
-        <p>For each open sentence above, give a value of the variable that makes the statement true.</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Which of the following are open sentences? For each open sentence, identify its domain.</p>
+        <ol marker="a">
+          <li><m>x+3&lt;5</m></li>
+          <li>Dog <m>D</m> is a mastiff.</li>
+          <li>Vitamin C helps prevent scurvy.</li>
+          <li>The statement <m>P</m> is both true and false.</li>
+          <li>Some countries have kings.</li>
+          <li>No one lives in a house.</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>For each open sentence in the previous question, give a value of the variable that makes the statement true.</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Layla says "Statement <m>P</m> is false." How does the truth value of this open sentence depend on the truth value of the variable <m>P</m>?</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Draw a truth table for each of the following.</p>
+        <ol marker="a">
+          <li>The cow is awake and the pig is asleep.</li>
+          <li>Stores accept cash or credit as payment.</li>
+          <li>Education prepares you for a career or is a poor way to spend your time.</li>
+          <li>Anna and Jordan are not happy.</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Write a negation of each of the following.</p>
+        <ol marker="a">
+          <li>Gravity is not a force.</li>
+          <li>City <m>C</m> has a population of at least 10 million.</li>
+          <li>Harold ate a burger and fries for lunch.</li>
+          <li>There is at least one penguin that has never seen Antarctica.</li>
+          <li>Everyone on campus is a student or a staff-member.</li>
+          <li>No beverage is hot and sweet.</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>For each of the following statements, give a logically equivalent statement with the same domain.</p>
+        <ol marker="a">
+          <li>Peter is not unhappy.</li>
+          <li>Not all books are informative or interesting.</li>
+          <li>All sculptures are not made of marble.</li>
+          <li>No film has sound.</li>
+          <li><m>n-2=9</m></li>
+          <li>Some buses have 4 tires.</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Draw (and label) a Venn diagram to illustrate each of the following quantified statements.</p>
+        <ol marker="a">
+          <li>All parrots are birds.</li>
+          <li>Some widgets are gizmos.</li>
+          <li>No mountains are volcanoes.</li>
+          <li>Songs are not all classical.</li>
+          <li>At least one article has no sources.</li>
+          <li>Not all athletes have strict diets and exercise every day.</li>
+          <li>Some vegans eat honey, but no vegans eat chicken.</li>
+          <li>All mammals breathe oxygen, but not all oxygen-breathers are mammals.</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Please note: a compound statement made up of three statements (P, Q, R) has a truth table of the following form:</p>
+        <tabular>
+          <row><cell>P</cell><cell>Q</cell><cell>R</cell><cell/></row>
+          <row><cell>T</cell><cell>T</cell><cell>T</cell><cell/></row>
+          <row><cell>F</cell><cell>T</cell><cell>T</cell><cell/></row>
+          <row><cell>T</cell><cell>F</cell><cell>T</cell><cell/></row>
+          <row><cell>F</cell><cell>F</cell><cell>T</cell><cell/></row>
+          <row><cell>T</cell><cell>T</cell><cell>F</cell><cell/></row>
+          <row><cell>F</cell><cell>T</cell><cell>F</cell><cell/></row>
+          <row><cell>T</cell><cell>F</cell><cell>F</cell><cell/></row>
+          <row><cell>F</cell><cell>F</cell><cell>F</cell><cell/></row>
+        </tabular>
+        <ol marker="a">
+          <li>How many rows would be required to construct a truth table for "P and Q or R or S"?</li>
+          <li>Construct a truth table for "(P or Q) and R."</li>
+          <li>Is "(P or R) and Q" logically equivalent to "(P or Q) and R"? Why or why not?</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+  </exercises>
+</subsection>
+
+<subsection xml:id="conditional-problems">
+  <title>Conditional Questions</title>
+  <exercises>
+  
+    <exercise>
+      <statement>
+        <p>Which of the following are conditional statements?</p>
+        <ol marker="a">
+          <li>When it rains, it pours.</li>
+          <li>If you have any snacks left over, can I have them?</li>
+          <li>If the stock market crashes, the economy will enter a recession.</li>
+          <li><m>c+d</m> is even if <m>c</m> and <m>d</m> are both multiples of 3.</li>
+          <li>Let someone else hold your phone if you're scared of dropping it.</li>
+          <li>If you want to cross the street, then make sure to look both ways for traffic first.</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Is the following a valid direct proof of “if <m>n</m> is even then <m>n^3</m> is even”? How do you know?</p>
+        <p>
+          Assume <m>n=2</m>.<br/>
+          Then, <m>n^3=8</m>.<br/>
+          Since 2 and 8 are even, we have shown “if <m>n</m> is even then <m>n^3</m> is even” to be true.
+        </p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>For each of the following conditional statements, write a contrapositive.</p>
+        <ol marker="a">
+          <li>If the Blue Jays win the World Series, I will eat my hat.</li>
+          <li>Sharks die if they stop moving.</li>
+          <li>When the weather is cold, the roads are slippery.</li>
+          <li>If <m>n</m> is odd, then it can be written as the sum of an even number and an odd number.</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>For each of the following conditional statements, determine its truth value. If it is false, make it true by limiting its domain.</p>
+        <ol marker="a">
+          <li>If <m>p</m> is prime, then <m>p^2</m> is odd.</li>
+          <li>If <m>Q</m> is a polygon, then the sum of its interior angles is at least <m>360^\circ</m>.</li>
+          <li>If person <m>A</m> speaks both official languages of Canada, then they are bilingual.</li>
+          <li>[intentionally left blank in original source]</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Prove that if <m>a, b, c, d</m> are all odd, then their sum or their product is odd.</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Which of the following are biconditional statements?</p>
+        <ol marker="a">
+          <li>If the sky is clear at night, you can see the stars.</li>
+          <li>You will excel academically if and only if you study diligently.</li>
+          <li><m>2n</m> is even exactly when <m>n</m> is an integer.</li>
+          <li>If <m>x</m> is an integer, then there is exactly one solution to <m>x^4=1</m>.</li>
+          <li>If an animal is a bird then it has feathers, and if an animal has feathers then it is a bird.</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>For each of the following statements, determine whether or not the given value of the variable is a counterexample. If not, find a value that is, and prove that it is a counterexample.</p>
+      </statement>
+    </exercise>
+    
+  </exercises>
+</subsection>
+
+<subsection xml:id="sets-problems">
+  <title>Set Theory Questions</title>
+  <exercises>
+  
+    <exercise>
+      <statement>
+        <p>For each of the following sets, state a possible universe.</p>
+        <ol marker="a">
+          <li>{a, b, c, d, e, f}</li>
+          <li><m>{1, 2, 3, 5, 1, 4}</m></li>
+          <li>{Cats, dogs, parrots, goldfish, snakes}</li>
+          <li><m>{x ∈ ℤ ∣ x \text{ is prime}}</m></li>
+          <li>{I want to go to the park.}</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Rewrite each of the following sets by listing their members.</p>
+        <ol marker="a">
+          <li>{All egg-laying mammals}</li>
+          <li>{All Canadian provinces}</li>
+          <li><m>∅</m></li>
+          <li>{All prime numbers between 10 and 30}</li>
+          <li><m>{x ∈ ℚ ∣ |x| &lt; 4}</m></li>
+          <li>{Three NHL teams}</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Using the following sets, write the resulting set of each of the set operations below:</p>
+        <p><m>A = {1, 2, 3, 7, 8}</m><br/>
+           <m>B = {4, 9, 1, 0}</m><br/>
+           <m>C = {1^4, 2^2, (7-2), 10}</m><br/>
+           <m>D = {6}</m></p>
+        <ol marker="a">
+          <li><m>A ∪ B</m></li>
+          <li><m>B ∩ C</m></li>
+          <li><m>A ∩ B ∩ C</m></li>
+          <li><m>B - A</m></li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Create a set with cardinality 20 in the universe <m>ℕ₀</m>.</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Within the universe <m>ℤ</m>, find <m>∼ℕ</m>.</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Prove that for any two sets <m>A, B</m>, <m>A ∩ B</m> is a subset of both <m>A</m> and <m>B</m>. Is the same true of <m>A ∪ B</m>? If so, prove it. If not, provide a counterexample.</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>If <m>A - B = {x = 2n ∣ n ∈ ℕ₀}</m>, then for each of the following values of <m>A</m>, find <m>B</m>.</p>
+        <ol marker="a">
+          <li><m>A = ℤ</m></li>
+          <li><m>A = \mathbb{N}_0</m> …</li>
+          <li><m>A = \mathbb{N}</m> …</li>
+          <li><m>A = \mathbb{Q}</m> …</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>What is the cardinality of each of the following sets?</p>
+        <ol marker="a">
+          <li><m>\{corn, peas, carrots, potatoes, tomatoes, pumpkins\}</m></li>
+          <li><m>\{x ∣ x \text{ is a perfect square and } x ≤ 100\}</m></li>
+          <li> <m>\{x \ | \ x \text{is a two digit natural number with no digit being 7 and } x \leq 100 \}</m> </li>
+          <li><m>\{40, 45, 50, 55, \ldots, 375, 380, 385 \} </m></li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    
+    
+  </exercises>
+</subsection>
+<subsection xml:id="explanatory-questions">
+  <title>Explanatory and Critical Thinking Questions</title>
+  <exercises>
+
+    <!-- Logic -->
+    <exercise>
+      <statement>
+        <p>A student says: “The sentence ‘This statement is false’ must be false, because it says so.”  
+        Do you agree? Explain what makes this sentence different from other statements in logic.</p>
+      </statement>
     </exercise>
 
     <exercise>
-        <p>
-            Layla says "Statement P is false." How does the truth value of this open sentence depend on the truth value of the variable P?
-        </p>
-
-
+      <statement>
+        <p>Another student argues: “Questions and commands are not statements, because they don’t have truth values.  
+        But they are still useful in logic because we can always assign them ‘true’ or ‘false.’”  
+        Identify the flaw in this reasoning.</p>
+      </statement>
     </exercise>
-    <exercise>
-<p>
-    Draw a truth table for each of the following.
-</p>
-<ol>
-    <li>
-        <p>
-            The cow is awake and the pig is asleep.
-        </p>
-    </li>
-    <li>
-        <p>
-            Stores accept cash or credit as payment.
-        </p>
-    </li>
-    <li>
-        <p>
-            Education prepares you for a career or is a poor way to spend your time.
-        </p>
-    </li>
-    <li>
-        <p>
-            Anna and Jordan are not happy.
-        </p>
-    </li>
-</ol>
 
+    <!-- Conditionals -->
+    <exercise>
+      <statement>
+        <p>A student claims: “The contrapositive of ‘If a shape is a square, then it has four sides’ is  
+        ‘If a shape is not a square, then it does not have four sides.’”  
+        Is this correct? If not, explain why and give the correct contrapositive.</p>
+      </statement>
     </exercise>
 
     <exercise>
-<p>
-    Write a negation of each of the following.
-</p>
-<ol>
-    <li>
-        <p>
-            Gravity is not a force.
-        </p>
-    </li>
-    <li>
-        <p>
-            City C has a population of at least 10 million.
-        </p>
-    </li>
-    <li>
-        <p>
-            Harold ate a burger and fries for lunch.
-        </p>
-    </li>
-    <li>
-        <p>
-            There is at least one penguin that has never seen Antarctica.
-        </p>
-    </li>
-    <li>
-        <p>
-            Everyone on campus is a student or a staff-member.
-        </p>
-    </li>
-    <li>
-        <p>
-            No beverage is hot and sweet.
-        </p>
-    </li>
-</ol>
-
+      <statement>
+        <p>Consider the statement: “If n is even, then n² is divisible by 4.”  
+        A student says: “This is true because 2² = 4 and 4 is divisible by 4.”  
+        Critique the student’s reasoning. What mistake are they making, and how should the statement be proved?</p>
+      </statement>
     </exercise>
+
+    <!-- Sets -->
+    <exercise>
+      <statement>
+        <p>A student writes: “The set {1, 2, 2, 3} has four elements.”  
+        Explain why this is incorrect, and clarify how sets treat repeated elements.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Another student argues: “The empty set must contain something — otherwise, how would we know it exists?”  
+        Do you agree or disagree? Explain carefully.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Suppose a student claims: “Since A ∩ B is always a subset of A and B, then A ∪ B must always be a subset of both as well.”  
+        Explain why this reasoning is flawed, and give a counterexample.</p>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+
+
+
     
 
 

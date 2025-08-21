@@ -956,4 +956,390 @@
     </p>
      
 </section>
+<section> <title>Supplementary Exercises</title>
+
+    <subsection xml:id="equality-problems">
+  <title>Equality Questions</title>
+  <exercises>
+  
+    <exercise>
+      <statement>
+        <p>Given the following equations, show <m>x=y</m>. For each step in the process, state the property of equality you are using.</p>
+        <p><m> \; </m></p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Is the equality true? Explain.</p>
+        <ol marker="a">
+          <li><m>2^0 = 63^0</m></li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>For the next two questions, consider the following relationships: let <m>x=2</m>, <m>y=x+b</m>, <m>z=c-y+a</m>.</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+  <statement>
+    <p>In the following process, label each step with the property of equality used to reach it.</p>
+    <p>
+      <md>
+        <mrow>d \amp = x - y + z</mrow>
+        <mrow>  \amp = 2 - (x + b) + c - y + a</mrow>
+        <mrow>  \amp = 2 - x - b + c - y + a</mrow>
+        <mrow>  \amp = 2 - 2 - b + c - (x + b) + a</mrow>
+        <mrow>  \amp = -b + c - x - b + a</mrow>
+        <mrow>  \amp = a - 2b + c - x</mrow>
+        <mrow>  \amp = a - 2b + c - 2</mrow>
+      </md>
+    </p>
+  </statement>
+</exercise>
+
+    
+    <exercise>
+      <statement>
+        <p>If <m>a=3b-4</m>, <m>b=15-3(2)</m>, <m>c=a+14</m>, find <m>d</m> as defined above.</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Prove that all three properties of equality hold for the biconditional statement "<m>A</m> if and only if <m>B</m>."</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Prove that set equality is reflexive, transitive, and symmetric.</p>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Which properties (of reflexive, transitive, symmetric) hold for the following relations? Do they always hold, never hold, or only hold for some inputs?</p>
+        <ol marker="a">
+          <li><m>&lt;</m></li>
+          <li><m>&gt;</m></li>
+          <li><m>\leq</m></li>
+          <li><m>\geq</m></li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+      <statement>
+        <p>Formulate a relationship that exhibits the given property, but neither of the other two.</p>
+        <ol marker="a">
+          <li>Reflexivity.</li>
+          <li>Transitivity.</li>
+          <li>Symmetry.</li>
+        </ol>
+      </statement>
+    </exercise>
+    
+    <exercise>
+  <statement>
+    <p>Determine whether each set equality is true or not.</p>
+    <ol marker="a">
+      <li><m>\{a/b ∣ a,b ∈ ℤ, a&lt;b\} = \{x ∈ ℚ ∣ x&lt;1, \; |x|&lt;1\}</m></li>
+      <li><m>\{1,2,3\} ∪ \{3,4\} = \{1,2,3,4\}</m></li>
+      <li><m>(\{1,2,3\} ∩ \{2,3,4\}) ∪ \{5\} = \{2,3,5\}</m></li>
+      <li><m>\{x ∈ ℤ ∣ x \text{ is even}\} = \{2n ∣ n ∈ ℤ\}</m></li>
+      <li><m>\{x ∈ ℝ ∣ x^2 &lt; 4\} = \{-2,2\}</m></li>
+      <li><m>\{x ∈ ℤ ∣ x^2 \leq 9\} = \{-3,-2,-1,0,1,2,3\}</m></li>
+      <li><m>\{x ∈ ℕ ∣ x \text{ is prime and \} x&lt;10} = \{2,3,5,7\}</m></li>
+    </ol>
+  </statement>
+</exercise>
+
+    
+    
+    
+  </exercises>
+</subsection>
+<subsection xml:id="problem-solving-questions">
+  <title>Problem Solving Questions</title>
+
+  <!-- Worked example before the exercises -->
+  <example xml:id="ex-probsolv-graphing">
+    <title>Solving a system by graphing</title>
+    <p>
+      One way to solve systems of equations is to graph each equation on the same axes;
+      their intersection point(s) are common solutions to the system. The following example
+      illustrates this approach.
+    </p>
+
+    <p><em>Example 1.</em> Consider the system <m>5x + 7y = 69</m>, <m>9x - 4y = 8</m>.
+      We first solve each equation for the same variable (here, <m>y</m>) to make graphing straightforward.
+    </p>
+
+    <p>
+      <md>
+        <mrow>5x + 7y \amp = 69</mrow>
+        <mrow>7y \amp = -5x + 69</mrow>
+        <mrow>y \amp =  -\dfrac{5}{7}x + \dfrac{69}{7}</mrow>
+      </md>
+    </p>
+
+    <p>
+      <md>
+        <mrow>9x - 4y \amp = 8</mrow>
+        <mrow>-4y \amp = -9x + 8</mrow>
+        <mrow>y \amp = \dfrac{9}{4}x - 2</mrow>
+      </md>
+    </p>
+
+    <figure xml:id="fig-probsolv-graph">
+      <caption>The graphs of <m>y = -\dfrac{5}{7}x + \dfrac{69}{7}</m> and <m>y = \dfrac{9}{4}x - 2</m>.</caption>
+      <image source="Ch. 2 Numbers/images/desmos-graph.png"/>
+    </figure>
+
+    <p>
+      From the graph, the lines intersect at <m>(4,7)</m>, so the solution is <m>x=4</m>, <m>y=7</m>.
+      You can verify by substitution into the original equations. The choice to solve for <m>y</m> was
+      arbitrary—solving for <m>x</m> would lead to the same intersection point.
+    </p>
+
+    <p>
+      Conceptually, solving a system means finding values that satisfy all equations simultaneously.
+      Points on a graph represent solutions to their respective equations; intersections represent common solutions.
+      While graphing gives geometric insight, algebraic methods (substitution or elimination) are usually faster,
+      especially for systems with more than two variables.
+    </p>
+  </example>
+
+  <exercises>
+
+    <exercise xml:id="ps-given-list">
+      <statement>
+        <p>For Questions 1–4, use the following equations (with constants <m>a,b</m> and variables <m>x,y</m>):</p>
+        <p>
+          <md>
+            <mrow>x+4-2(3x-5) \amp = \dfrac{x+4}{3}</mrow>
+            <mrow>axy+bx+4+7y \amp = 46</mrow>
+            <mrow>3 \amp = 24 - c</mrow>
+            <mrow>x^2 + 33x + 33 \amp = 1</mrow>
+            <mrow>3 \amp = 4 - 1</mrow>
+          </md>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-identify-terms">
+      <statement>
+        <p>Identify the terms in each equation.</p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-identify-coeffs">
+      <statement>
+        <p>For each term involving a variable, identify the variable(s) and coefficient.</p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-identify-consts">
+      <statement>
+        <p>For each equation, identify the constant(s).</p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-linear-or-not">
+      <statement>
+        <p>For each equation, determine whether it is linear or not. Justify briefly.</p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-write-equations-from-words">
+      <statement>
+        <p>Define any necessary variables and write an equation to represent each word problem.</p>
+        <ol marker="a">
+          <li>Henry started with 7 barrels of maple syrup and receives 4 more every week. How many weeks until he has 63 barrels?</li>
+          <li>Zach spent \$219.80 on frozen pizzas; each costs \$7.85. How many pizzas did he buy?</li>
+          <li>Harris buys Rory’s (380 g, 47 pretzels per bag) and Pete’s (400 g, 39 pretzels per bag). He has 493 pretzels totaling 4240 g. How many bags of each?</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-coin-combos">
+      <statement>
+        <p>Blueberry muffins cost \$2 and chocolate chip muffins cost \$3 at Jolene’s bakery.
+          Chris spent \$27 buying only these muffins. How many different ordered pairs <m>(x,y)</m> of blueberry/chocolate chip
+          muffin counts are possible? How do you know you found them all?</p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-make-word-problems">
+      <statement>
+        <p>For each equation/system, write a word problem that would be solved by it.</p>
+        <ol marker="a">
+          <li><m>x + 36 = 180</m></li>
+          <li><m>3x + 50 = 200</m></li>
+          <li><m>18y - 3x = 90</m>, <m>10y + 5x = 72</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-elimination-solve">
+      <statement>
+        <p>Solve each system by elimination.</p>
+        <ol marker="a">
+          <li><m>2x+y=47</m>, <m>2x-3y=19</m></li>
+          <li><m>10x-3y+20=35</m>, <m>14y-8x=2</m></li>
+          <li><m>13x+2y=228</m>, <m>2y-3x=-44</m></li>
+          <li><m>3x=149-10y</m>, <m>11y=142+4x</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-identify-method">
+      <statement>
+        <p>By which process is the following system being solved? How do you know?</p>
+        <p><m>7x-2y=19,\; 3x+4y=149</m></p>
+        <p>
+          <md>
+            <mrow>7x-2y \amp = 19</mrow>
+            <mrow>7x \amp = 19 + 2y</mrow>
+            <mrow>x \amp = \dfrac{19}{7} + \dfrac{2}{7}y</mrow>
+          </md>
+        </p>
+        <p>
+          <md>
+            <mrow>3\!\left(\dfrac{19}{7} + \dfrac{2}{7}y\right) + 4y \amp = 149</mrow>
+            <mrow>\dfrac{57}{7} + \dfrac{6}{7}y + 4y \amp = 149</mrow>
+            <mrow>57 + 6y + 28y \amp = 1043</mrow>
+            <mrow>34y \amp = 986</mrow>
+            <mrow>y \amp = 29</mrow>
+          </md>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-solvability">
+      <statement>
+        <p>Determine whether each equation/system can be solved over the reals. If so, describe the solution set’s form (unique, none, or infinitely many). Explain how you know.</p>
+        <ol marker="a">
+          <li><m>3x + 2y = 20</m>, <m>8x + 7y = 65</m></li>
+          <li><m>x - 7y + 74 = 18z</m>, <m>10x - 32y = 120</m></li>
+          <li><m>3xy + 12y = 10</m>, <m>12x - 3y = 90</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-check-solution">
+      <statement>
+        <p>Jonah solved <m>19y=7x+27</m>, <m>3x-4y=5</m> and found <m>x=-\dfrac{2437}{2040}</m>, <m>y=\dfrac{116}{85}</m>.
+          How could he check his answer? Check it, and if incorrect, find the correct solution.</p>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-find-errors">
+      <statement>
+        <p>Identify the errors (if any) in each solution and find the correct solution.</p>
+        <ol marker="a">
+          <li>
+            <p>System: <m>4x + 3y = 45</m>, <m>14x = 2y + 20</m></p>
+            <p>
+              <md>
+                <mrow>2y + 20 \amp = 14x</mrow>
+                <mrow>2y \amp = 14x - 20</mrow>
+                <mrow>y \amp = 7x - 10 \quad \text{(watch the division by 2!)}</mrow>
+                <mrow>4x + 3(7x-10) \amp = 45</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p>System: <m>3z - 6w = 3</m>, <m>0 = 37 - z - 4w</m></p>
+            <p>
+              <md>
+                <mrow>37 - z - 4w \amp = 0</mrow>
+                <mrow>z \amp = 37 - 4w \quad \text{(isolate correctly)}</mrow>
+                <mrow>3(37 - 4w) - 6w \amp = 3</mrow>
+                <mrow>111 - 12w - 6w \amp = 3</mrow>
+                <mrow>111 - 18w \amp = 3</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise xml:id="ps-no-solution-graph">
+      <statement>
+        <p>The system <m>4x - 3y = 2</m>, <m>4x - 3y = 1</m> has no solutions. Explain graphically why.</p>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+
+<subsection xml:id="problem-solving-explanatory">
+  <title>Explanatory and Critical Thinking Questions</title>
+  <exercises>
+
+    <exercise>
+      <statement>
+        <p>A student says: “Graphing is always the best way to solve systems of equations, because you can see the answer directly.”  
+        Do you agree or disagree? Explain when graphing is helpful, and when other methods (substitution, elimination) are more practical.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Another student claims: “If two equations look different, then they must have different solution sets.”  
+        Give a counterexample, and explain why equations can look different but still represent the same line or same set of solutions.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Consider the system <m>3x + 2y = 6</m>, <m>6x + 4y = 12</m>.  
+        A student concludes that there is exactly one solution because the equations are not identical.  
+        Explain the flaw in this reasoning, and describe the actual solution set.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>A student is solving by elimination and subtracts one equation from another incorrectly, losing a variable in the process.  
+        How can you recognize when an algebraic error has happened, and how does checking with substitution into the original system help?</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Explain the difference between “an equation has no solution,” “a system has infinitely many solutions,” and “a system has exactly one solution.”  
+        Give an example of each, and explain how you would recognize it graphically and algebraically.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Consider the equation <m>2x + 5 = 2x + 7</m>.  
+        A student says: “We can solve this and find <m>x</m>.”  
+        Explain why this equation cannot be solved for a single <m>x</m>, and describe what it means for a system or equation to be inconsistent.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Word problems require translating between language and algebra.  
+        Take the sentence: “The sum of two numbers is 30, and one number is 4 greater than the other.”  
+        Explain how to define variables, write equations, and check that the system models the words correctly.</p>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+
+
+
+
+
+</section>
 </chapter>

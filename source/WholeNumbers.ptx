@@ -1751,8 +1751,899 @@
       </subsubsection>
       <video youtube="Y9kVUUbvpKs" />
     </subsection>
+
+
   </section>
-  
+  <section><title>Supplementary Exercises</title>
+<subsection xml:id="number-systems-problems">
+  <title>Number Systems Questions</title>
+  <exercises>
+
+    <!-- 1 -->
+    <exercise>
+      <statement>
+        <p>What is the value (in base ten) of the underlined digit in the following numbers?</p>
+        <ol marker="a">
+          <li><m>11\underline{1}00011_{two}</m></li>
+          <li><m>6\underline{3}72_{eleven}</m></li>
+          <li><m>320\underline{2}10_{four}</m></li>
+          <li><m>40\underline{8}063_{twelve}</m></li>
+          <li><m>\underline{5}025_{seven}</m></li>
+          <li><m>8100\underline{5}_{ten}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 2 -->
+    <exercise>
+      <statement>
+        <p><em>Roman numerals.</em> The symbols I, V, X, L, C, D, M represent 1, 5, 10, 50, 100, 500, 1000. Numerals are written from highest to lowest (left to right) and summed, except when a smaller numeral precedes a larger one, indicating subtraction (e.g., IV = 5 − 1 = 4). Convert to base ten:</p>
+        <ol marker="a">
+          <li>XV</li>
+          <li>CMLXXXVII</li>
+          <li>XXIX</li>
+          <li>XLIV</li>
+          <li>DCCLXVIII</li>
+          <li>MDCCCXII</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 3 -->
+    <exercise>
+      <statement>
+        <p>Convert each of the following to base ten.</p>
+        <ol marker="a">
+          <li><m>12_{eleven}</m></li>
+          <li><m>3122_{four}</m></li>
+          <li><m>615_{seven}</m></li>
+          <li><m>1005_{six}</m></li>
+          <li><m>2703_{nine}</m></li>
+          <li><m>110100_{two}</m></li>
+          <li><m>13A48_{twelve}</m></li>
+          <li><m>945_{twenty}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 4 -->
+    <exercise>
+      <statement>
+        <p>In each of the following groupings of twenty-five ones, identify the base used and write the number using that base’s numerals. <em>(Insert picture of groupings.)</em></p>
+      </statement>
+    </exercise>
+
+    <!-- 5 -->
+    <exercise>
+      <statement>
+        <p>Consider a time-like mixed-base system (seconds–minutes–hours–days). Use examples to demonstrate:</p>
+        <ul>
+          <li><m>60 = 10_{time}</m>, <m>3600 = 100_{time}</m>.</li>
+          <li><m>1234</m> meaning “1 day, 2 hours, 3 minutes, 4 seconds.” Convert this to a single base-ten count (seconds).</li>
+        </ul>
+      </statement>
+    </exercise>
+
+    <!-- 6 -->
+    <exercise>
+      <statement>
+        <p>Order each list from least to greatest.</p>
+        <ol marker="a">
+          <li><m>3_{nine},\; 11_{eight},\; 300_{six},\; 42_{five},\; 92_{eleven}</m></li>
+          <li><m>901_{five},\; 902_{four},\; 81_{eleven},\; 10002_{three},\; 450_{twelve}</m></li>
+          <li><m>61_{eleven},\; 122_{seven},\; 64_{ten},\; 111111_{two},\; 1002_{four}</m></li>
+          <li><m>1034_{five},\; 331_{seven},\; 121_{nine},\; 69_{twelve},\; 321_{six}</m></li>
+          <li><m>101111_{two},\; 38_{eleven},\; 45_{eight},\; 111_{six},\; 133_{four}</m></li>
+          <li><m>56_{eleven},\; 114_{five},\; 110100_{two},\; 43_{ten},\; 31_{eight}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 7 -->
+    <exercise>
+      <statement>
+        <p>Each list is ordered from least to greatest. Find a possible value for each missing base so the ordering is correct (bases are integers large enough to permit the shown digits).</p>
+        <ol marker="a">
+          <li><m>10_{three} \lt 12_{a} \lt 20_{five} \lt 24_{six}</m></li>
+          <li><m>101_{two} \lt 22_{b} \lt 24_{eight} \lt 30_{seven}</m></li>
+          <li><m>100_{four} \lt 1A_{eleven} \lt 33_{c} \lt 40_{nine}</m></li>
+          <li><m>1001_{two} \lt 210_{d} \lt 122_{five} \lt 51_{eight}</m></li>
+          <li><m>7_{ten} \lt 20_{e} \lt 111_{three} \lt 1A_{twelve}</m></li>
+          <li><m>222_{four} \lt 10000_{three} \lt 210_{seven} \lt 121_{f}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 8 -->
+    <exercise>
+      <statement>
+        <p>Fill in the missing symbol (<m>&lt;</m>, <m>&gt;</m>, or <m>=</m>) between each pair.</p>
+        <ol marker="a">
+          <li><m>56_{eight}\; \square \; 63_{seven}</m></li>
+          <li><m>1B_{twelve}\; \square \; 120_{four}</m></li>
+          <li><m>71_{nine}\; \square \; 144_{six}</m></li>
+          <li><m>90_{eleven}\; \square \; 1000110_{two}</m></li>
+          <li><m>2122_{three}\; \square \; 203_{five}</m></li>
+          <li><m>101010_{two}\; \square \; 2A_{sixteen}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 9 -->
+    <exercise>
+      <statement>
+        <p>Identify the missing base in each equation.</p>
+        <ol marker="a">
+          <li><m>9_{twelve} + 10_{four} = 21_{\square}</m></li>
+          <li><m>31_{five} + 17_{nine} = 200_{\square}</m></li>
+          <li><m>1020_{three} - 14_{eight} = 21_{\square}</m></li>
+          <li><m>82_{\square} + 35_{seven} = 400_{five}</m></li>
+          <li><m>57_{eight} - 30_{five} = 112_{\square}</m></li>
+          <li><m>46_{twelve} + 1203_{\square} = 12A_{eleven}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 10 -->
+    <exercise>
+      <statement>
+        <p>Is a “base one” number system possible? If so, describe it. If not, which place-value rules does it violate, and how might you adjust them to make a unary system usable?</p>
+      </statement>
+    </exercise>
+
+    <!-- 11 -->
+    <exercise>
+      <statement>
+        <p>Consider the following (non-standard) place-value system (places increase from right to left):</p>
+        <ul>
+          <li>1st place: ones;</li>
+          <li>2nd place: up to four 1st places (so one 2nd place = five 1st places);</li>
+          <li>3rd place: up to seven 2nd places (so one 3rd place = eight 2nd places);</li>
+          <li>4th place: up to ten 3rd places; and so on.</li>
+        </ul>
+        <p>Digits beyond 9 use uppercase letters: <m>A=10</m>, <m>B=11</m>, <m>C=12</m>, etc.</p>
+        <ol marker="a">
+          <li>
+            <p>Convert to base ten:</p>
+            <ol marker="i">
+              <li>23</li>
+              <li>5633</li>
+              <li>AB123</li>
+              <li>1B20A</li>
+            </ol>
+          </li>
+          <li>
+            <p>Convert the base-ten numbers to this system:</p>
+            <ol marker="i">
+              <li>97</li>
+              <li>2021</li>
+              <li>5000</li>
+            </ol>
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 12 -->
+    <exercise>
+      <statement>
+        <p>Do tally marks fit our definition of a place-value number system? Justify your answer.</p>
+      </statement>
+    </exercise>
+
+    <!-- 13 -->
+    <exercise>
+      <statement>
+        <p>Convert each number to the indicated base.</p>
+        <ol marker="a">
+          <li><m>345_{ten}</m> to base <m>7</m></li>
+          <li><m>1001101_{two}</m> to base <m>8</m></li>
+          <li><m>7A5_{sixteen}</m> to base <m>9</m></li>
+          <li><m>1234_{five}</m> to base <m>10</m></li>
+          <li><m>888_{nine}</m> to base <m>3</m></li>
+          <li><m>2024_{ten}</m> to base <m>12</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 14 -->
+    <exercise>
+      <statement>
+        <p>Create your own number system: specify the digit set, the place-value rule (fixed base or mixed-base), and demonstrate how to write and interpret at least five example numbers. Include one example of addition in your system.</p>
+      </statement>
+    </exercise>
+
+    <!-- 15 -->
+    <exercise>
+      <statement>
+        <p>Find <m>x</m> so that the equality is true (specify <m>x</m> in the named base).</p>
+        <ol marker="a">
+          <li><m>401_{ten} = x_{three}</m></li>
+          <li><m>2A_{sixteen} = x_{ten}</m></li>
+          <li><m>x_{five} = 324_{seven}</m></li>
+          <li><m>100000_{two} = x_{ten}</m></li>
+          <li><m>x_{twelve} = 999_{ten}</m></li>
+          <li><m>731_{eight} = x_{four}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 16 -->
+    <exercise>
+      <statement>
+        <p>Count on your fingers in base two. What is the largest number you can represent? What about base three? Base four?</p>
+      </statement>
+    </exercise>
+
+    <!-- 17 -->
+    <exercise>
+      <statement>
+        <p>Fill the blank with a number written in the indicated base so that the statement is true.</p>
+        <ol marker="a">
+          <li><m>100_{two} \lt \square_{three} \lt 22_{five}</m></li>
+          <li><m>17_{eight} \lt \square_{four} \lt 24_{seven}</m></li>
+          <li><m>2A_{twelve} \lt \square_{ten} \lt 1111_{two}</m></li>
+          <li><m>33_{six} \lt \square_{nine} \lt 40_{five}</m></li>
+          <li><m>1010_{two} \lt \square_{eight} \lt 31_{five}</m></li>
+          <li><m>90_{eleven} \lt \square_{sixteen} \lt 400_{seven}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+
+<subsection xml:id="arithmetic-operations-practice">
+  <title>Arithmetic Operations: Practice</title>
+  <exercises>
+
+    <!-- 1: Mental addition -->
+    <exercise>
+      <statement>
+        <p>Compute mentally.</p>
+        <ol marker="a">
+          <li><m>398 + 257</m></li>
+          <li><m>250 + 175 + 325</m></li>
+          <li><m>1{,}999 + 3{,}501</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 2: Same-change subtraction -->
+    <exercise>
+      <statement>
+        <p>Compute each difference (you may use a “same-change” strategy).</p>
+        <ol marker="a">
+          <li><m>1{,}000 - 398</m></li>
+          <li><m>10{,}003 - 4{,}999</m></li>
+          <li><m>5{,}004 - 2{,}997</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 3: Compare without full computation -->
+    <exercise>
+      <statement>
+        <p>Circle the larger value.</p>
+        <ol marker="a">
+          <li><m>37 \times 48</m>  or  <m>36 \times 49</m></li>
+          <li><m>501 - 248</m>  or  <m>500 - 249</m></li>
+          <li><m>25 \times 32</m> or <m>20 \times 37</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 4: Distributive property (procedural) -->
+    <exercise>
+      <statement>
+        <p>Compute using the distributive property (partial products).</p>
+        <ol marker="a">
+          <li><m>27 \times 16</m></li>
+          <li><m>304 \times 25</m></li>
+          <li><m>99 \times 48</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 5: Evaluate expressions (no property labeling) -->
+    <exercise>
+      <statement>
+        <p>Evaluate.</p>
+        <p>
+          <md>
+            <mrow>48 + (17 + 12)</mrow>
+            <mrow>(25 \times 4) \times 5</mrow>
+            <mrow>9 \times (a + b) \;\text{ with } a=6,\; b=8</mrow>
+            <mrow>64 + 0</mrow>
+            <mrow>0 \times 735</mrow>
+          </md>
+        </p>
+      </statement>
+    </exercise>
+
+    <!-- 6: Exponent computations -->
+    <exercise>
+      <statement>
+        <p>Compute.</p>
+        <ol marker="a">
+          <li><m>3^4 \times 3^2</m></li>
+          <li><m>10^3 + 10^3</m></li>
+          <li><m>5^0 + 4^0</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 7: Quotient and remainder -->
+    <exercise>
+      <statement>
+        <p>Find the quotient <m>q</m> and remainder <m>r</m> (so <m>a = bq + r</m> with <m>0 \le r &lt; b</m>).</p>
+        <ol marker="a">
+          <li><m>587 \div 23</m></li>
+          <li><m>127 \div 12</m></li>
+          <li><m>1{,}005 \div 32</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 8: Word problems (compute only) -->
+    <exercise>
+      <statement>
+        <p>A bus holds 42 students.</p>
+        <ol marker="a">
+          <li>There are 389 students. How many full buses are needed? How many students ride on the last bus?</li>
+          <li>If every bus must be either full or empty, how many buses are required for 389 students?</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 9: Distributive correction as a computation -->
+    <exercise>
+      <statement>
+        <p>Compute using the distributive property.</p>
+        <ol marker="a">
+          <li><m>25 \times (20 - 2)</m></li>
+          <li><m>(60 + 7)\times 14</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 10: Mental multiplication strategies -->
+    <exercise>
+      <statement>
+        <p>Compute mentally.</p>
+        <ol marker="a">
+          <li><m>125 \times 32</m></li>
+          <li><m>50 \times 47</m></li>
+          <li><m>24 \times 75</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 11: Estimation then exact -->
+    <exercise>
+      <statement>
+        <p>Estimate, then compute exactly.</p>
+        <ol marker="a">
+          <li><m>683 \times 29</m></li>
+          <li><m>1{,}497 \times 51</m></li>
+          <li><m>198 \times 203</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 12: Compute sums/products (grouping allowed) -->
+    <exercise>
+      <statement>
+        <p>Compute.</p>
+        <p>
+          <md>
+            <mrow>37 + 25 + 63 + 75</mrow>
+            <mrow>250 \times 16</mrow>
+            <mrow>(300 - 1)\times 48</mrow>
+          </md>
+        </p>
+      </statement>
+    </exercise>
+
+    <!-- 13: Missing number (related facts) -->
+    <exercise>
+      <statement>
+        <p>Find the missing number.</p>
+        <ol marker="a">
+          <li><m>\square + 47 = 123</m></li>
+          <li><m>9 \times \square = 468</m></li>
+          <li><m>\square \div 12 = 58 \text{ remainder } 7</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 14: Division algorithm practice -->
+    <exercise>
+      <statement>
+        <p>For each pair <m>(a,b)</m> with <m>b &gt; 0</m>, find integers <m>q</m> and <m>r</m> such that <m>a = bq + r</m> and <m>0 \le r &lt; b</m>.</p>
+        <ol marker="a">
+          <li><m>(a,b) = (1{,}375, 24)</m></li>
+          <li><m>(a,b) = (940, 45)</m></li>
+          <li><m>(a,b) = (2{,}019, 100)</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+
+<subsection xml:id="properties-of-arithmetic-practice">
+  <title>Properties of Arithmetic: Practice</title>
+  <exercises>
+
+    <!-- 1: Order of operations -->
+    <exercise>
+      <statement>
+        <p>Evaluate (use standard order of operations).</p>
+        <ol marker="a">
+          <li><m>3 + 4(5 - 2)</m></li>
+          <li><m>(18 - 6) \div 3 + 7</m></li>
+          <li><m>2(9 + 8) - 3^2</m></li>
+          <li><m>40 \div (5 \cdot 2) + 6</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 2: Closure -->
+    <exercise>
+      <statement>
+        <p>State whether the set is closed under the operation. If not, give a counterexample.</p>
+        <ol marker="a">
+          <li><m>\mathbb{N}_0</m> under subtraction</li>
+          <li><m>\mathbb{Z}</m> under division</li>
+          <li><m>\mathbb{Q}</m> under multiplication</li>
+          <li><m>\mathbb{N}_0</m> under addition</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 3: Commutative property (compute efficiently) -->
+    <exercise>
+      <statement>
+        <p>Use commutativity to compute mentally.</p>
+        <ol marker="a">
+          <li><m>27 + 58 = \square</m></li>
+          <li><m>58 + 27 = \square</m></li>
+          <li><m>14 \times 25 = \square</m></li>
+          <li><m>25 \times 14 = \square</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 4: Associative property (regroup to compute) -->
+    <exercise>
+      <statement>
+        <p>Regroup using associativity to make the computation easier.</p>
+        <ol marker="a">
+          <li><m>(37 + 63) + 25</m></li>
+          <li><m>8 \times (25 \times 4)</m></li>
+          <li><m>(125 + 275) + 600</m></li>
+          <li><m>(5 \times 12) \times 25</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 5: Identify the property -->
+    <exercise>
+      <statement>
+        <p>Name the property that justifies each equality (commutative, associative, distributive, identity, or zero property).</p>
+        <p>
+          <md>
+            <mrow>48 + (17 + 12) = (48 + 17) + 12</mrow>
+            <mrow>7 \times 0 = 0</mrow>
+            <mrow>9 \times (a + b) = 9a + 9b</mrow>
+            <mrow>64 + 0 = 64</mrow>
+            <mrow>3 \times 14 = 14 \times 3</mrow>
+          </md>
+        </p>
+      </statement>
+    </exercise>
+
+    <!-- 6: Distributive (expand) -->
+    <exercise>
+      <statement>
+        <p>Expand using the distributive property and simplify.</p>
+        <ol marker="a">
+          <li><m>7(30 + 6)</m></li>
+          <li><m>(200 + 4)\cdot 19</m></li>
+          <li><m>9(50 - 3)</m></li>
+          <li><m>(a + b)(c + d)</m> (expand to four terms)</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 7: Distributive (factor) -->
+    <exercise>
+      <statement>
+        <p>Factor using the distributive property.</p>
+        <ol marker="a">
+          <li><m>18x + 24x</m></li>
+          <li><m>35a + 14b</m></li>
+          <li><m>48 \cdot 25 + 2 \cdot 25</m></li>
+          <li><m>9m - 3n</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 8: Identities and inverses (within a set) -->
+    <exercise>
+      <statement>
+        <p>For the indicated set, give the identity element for the operation and the inverse of the given element (if it exists in the set).</p>
+        <ol marker="a">
+          <li>Set <m>\mathbb{Z}</m>, operation: addition; inverse of <m>19</m></li>
+          <li>Set <m>\mathbb{Q} \setminus \{0\}</m>, operation: multiplication; inverse of <m>\dfrac{3}{7}</m></li>
+          <li>Set <m>\mathbb{N}_0</m>, operation: addition; inverse of <m>5</m></li>
+          <li>Set <m>\mathbb{Q}</m>, operation: multiplication; inverse of <m>0</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 9: Zero and one behavior -->
+    <exercise>
+      <statement>
+        <p>Compute.</p>
+        <ol marker="a">
+          <li><m>0 \times 3{,}458</m></li>
+          <li><m>1 \times 3{,}458</m></li>
+          <li><m>(a+1) - a</m></li>
+          <li><m>0 \cdot (a + b + c)</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 10: Not commutative / not associative (construct examples) -->
+    <exercise>
+      <statement>
+        <p>Give whole-number examples showing that the property fails for the operation.</p>
+        <ol marker="a">
+          <li>Subtraction is not commutative.</li>
+          <li>Division is not commutative.</li>
+          <li>Subtraction is not associative.</li>
+          <li>Division is not associative.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 11: Related subtraction facts -->
+    <exercise>
+      <statement>
+        <p>Fill in the blanks so the statements are true (whole numbers).</p>
+        <ol marker="a">
+          <li><m>87 - \square = 29</m></li>
+          <li><m>\square - 45 = 18</m></li>
+          <li><m>a - b = c \;\Rightarrow\; a = \square + \square</m></li>
+          <li><m>a - c = b \;\Rightarrow\; a = \square + \square</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 12: Division with remainder (algorithm practice) -->
+    <exercise>
+      <statement>
+        <p>Write each as <m>a = bq + r</m> with <m>0 \le r &lt; b</m>.</p>
+        <ol marker="a">
+          <li><m>973 \div 24</m></li>
+          <li><m>1{,}406 \div 35</m></li>
+          <li><m>2{,}019 \div 100</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 13: Distribute to compute quickly -->
+    <exercise>
+      <statement>
+        <p>Compute using distribution or regrouping for efficiency.</p>
+        <ol marker="a">
+          <li><m>125 \times 32</m></li>
+          <li><m>(300 - 1)\times 48</m></li>
+          <li><m>49 \times 18</m></li>
+          <li><m>250 \times 16</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 14: True/false (properties quick check) -->
+    <exercise>
+      <statement>
+        <p>Mark each statement True or False (whole numbers). If false, give a counterexample.</p>
+        <ol marker="a">
+          <li><m>(a+b)+c = a+(b+c)</m></li>
+          <li><m>a - b = b - a</m></li>
+          <li><m>a(b+c) = ab + ac</m></li>
+          <li><m>a \div 0</m> is defined</li>
+          <li><m>0 \div a = 0</m> for <m>a \ne 0</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 15: Mixed practice (expand/factor/evaluate) -->
+    <exercise>
+      <statement>
+        <p>Perform the indicated operation.</p>
+        <ol marker="a">
+          <li>Expand: <m>(200 + 7)(30 + 6)</m></li>
+          <li>Factor: <m>54x + 36y</m></li>
+          <li>Evaluate: <m>(18 - 6) \div 3 + 7 \cdot 2</m></li>
+          <li>Simplify: <m>9(a+b) - 3(a+b)</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+<subsection xml:id="integers-practice-tailored">
+  <title>Integers: Practice</title>
+  <exercises>
+
+    <!-- Order and number line -->
+    <exercise>
+      <statement>
+        <p>Place on a number line and order from least to greatest.</p>
+        <ol marker="a">
+          <li><m>\{-4,\,7,\,-1,\,0,\,5\}</m></li>
+          <li><m>\{-12,\,-9,\,-15,\,-3\}</m></li>
+          <li><m>\{8,\,-2,\,8,\,-10,\,3\}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- Integer addition (number line or counters) -->
+    <exercise>
+      <statement>
+        <p>Compute. You may use a number-line or counter model.</p>
+        <ol marker="a">
+          <li><m>7 + (-3)</m></li>
+          <li><m>-8 + 5</m></li>
+          <li><m>-12 + (-9)</m></li>
+          <li><m>19 + (-19)</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- Subtraction as adding the opposite -->
+    <exercise>
+      <statement>
+        <p>Rewrite each difference as a sum, then compute.</p>
+        <ol marker="a">
+          <li><m>9 - 14</m></li>
+          <li><m>-6 - 7</m></li>
+          <li><m>-10 - (-3)</m></li>
+          <li><m>25 - (-12)</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- Additive identity & inverse -->
+    <exercise>
+      <statement>
+        <p>Fill in the integer that makes each true.</p>
+        <ol marker="a">
+          <li><m>a + \square = 0</m></li>
+          <li><m>\square + 0 = -23</m></li>
+          <li><m>-17 + \square = -5</m></li>
+          <li><m>\square + (-11) = 8</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- Multiplication sign rules -->
+    <exercise>
+      <statement>
+        <p>Compute.</p>
+        <ol marker="a">
+          <li><m>6\cdot(-7)</m></li>
+          <li><m>-8\cdot-9</m></li>
+          <li><m>-12\cdot0</m></li>
+          <li><m>-3\cdot15</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- Distributive property with integers -->
+    <exercise>
+      <statement>
+        <p>Use the distributive property to expand or factor.</p>
+        <ol marker="a">
+          <li><m>-7(12 - 3)</m></li>
+          <li><m>(-15 + 4)\cdot 9</m></li>
+          <li><m>-9x + 27x</m> (factor)</li>
+          <li><m>14a - 21b</m> (factor out a common integer)</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- Guided identity: (-a) = (-1)a -->
+    <exercise>
+      <statement>
+        <p>Complete the steps to show <m>(-a) = (-1)\,a</m> using distribution.</p>
+        <p>
+          <md>
+            <mrow>a + (-a) \amp = 0</mrow>
+            <mrow>-1\cdot\big(a + (-a)\big) \amp = -1\cdot 0</mrow>
+            <mrow>\big(-1\cdot a\big) + \big(-1\cdot(-a)\big) \amp = 0</mrow>
+            <mrow>\text{Therefore, } \; \square \amp = \square</mrow>
+          </md>
+        </p>
+      </statement>
+    </exercise>
+
+    <!-- Short proof: (-1)(-1)=1 (fill-in) -->
+    <exercise>
+      <statement>
+        <p>Fill in the blanks to show <m>(-1)(-1)=1</m>.</p>
+        <p>
+          <md>
+            <mrow>1 + (-1) \amp = 0</mrow>
+            <mrow>-1\cdot\big(1 + (-1)\big) \amp = -1\cdot 0</mrow>
+            <mrow>\big((-1)\cdot 1\big) + \big((-1)\cdot(-1)\big) \amp = 0</mrow>
+            <mrow>-1 + \square \amp = 0</mrow>
+            <mrow>\square \amp = 1</mrow>
+          </md>
+        </p>
+      </statement>
+    </exercise>
+
+    <!-- Properties check for multiplication -->
+    <exercise>
+      <statement>
+        <p>Verify each by computing both sides (commutative/associative/distributive).</p>
+        <p>
+          <md>
+            <mrow>(-4)\cdot 7 \amp = 7\cdot(-4)</mrow>
+            <mrow>\big((-3)\cdot 5\big)\cdot 2 \amp = (-3)\cdot\big(5\cdot 2\big)</mrow>
+            <mrow>6\cdot\big(8 + (-3)\big) \amp = 6\cdot 8 + 6\cdot(-3)</mrow>
+          </md>
+        </p>
+      </statement>
+    </exercise>
+
+    <!-- Integer division: sign and simple quotients -->
+    <exercise>
+      <statement>
+        <p>Compute the quotient (integers); if not an integer, write “not an integer.”</p>
+        <ol marker="a">
+          <li><m>84 \div -7</m></li>
+          <li><m>-96 \div -12</m></li>
+          <li><m>35 \div 6</m></li>
+          <li><m>-100 \div 25</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- Context problems matching chapter style -->
+    <exercise>
+      <statement>
+        <p>Answer each; show the integer arithmetic.</p>
+        <ol marker="a">
+          <li>At 6 AM it is <m>-4^\circ\text{C}</m> and the temperature rises <m>7^\circ</m> by noon. What is the noon temperature?</li>
+          <li>A hiker is at <m>-120</m> m and ascends <m>85</m> m. New elevation?</li>
+          <li>A company has a total loss of <m>\$60{,}000</m> over 12 months. What is the average monthly loss?</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- Mixed computation -->
+    <exercise>
+      <statement>
+        <p>Compute.</p>
+        <ol marker="a">
+          <li><m>(-18) - [\,7 + (-9)\,]</m></li>
+          <li><m>3\cdot(-12) + 5\cdot 6</m></li>
+          <li><m>-(2\cdot 11) + (4 - 19)</m></li>
+          <li><m>(-3)(-8) - (27 \div -3)</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+<subsection xml:id="whole-numbers-explanatory">
+  <title>Whole Numbers: Explanatory Questions</title>
+  <exercises>
+
+    <!-- Number Systems & Place Value -->
+    <exercise>
+      <statement>
+        <p>A student says, “The digit <m>8</m> always means eight.” Explain why this is not generally true by comparing <m>108_{ten}</m>, <m>108_{nine}</m>, and <m>108_{two}</m>. In each case, state the value contributed by the <em>8</em>-digit (or explain why it is not a valid digit).</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Explain why <m>302_{five}</m> and <m>32_{five}</m> represent different numbers. Describe a blocks/regrouping picture that makes the difference unavoidable, and compute both values in base ten.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>In base five, converting <m>77_{ten}</m> gives <m>302_{five}</m>. Explain in words why the “repeated division by 5 with remainders” algorithm produces the <em>same</em> digits you see when you regroup ones → longs → squares in a blocks picture.</p>
+      </statement>
+    </exercise>
+
+    <!-- Arithmetic Operations -->
+    <exercise>
+      <statement>
+        <p>“Same-change” subtraction: A student claims <m>1{,}000 - 398 = 1{,}002 - 400</m> because adding <m>2</m> to both numbers doesn’t change the answer. Do you agree? Explain why this strategy works (or when it doesn’t), using an equation or number-line argument.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Two students compute <m>27\times 16</m> in different ways:</p>
+        <p>
+          <md>
+            <mrow>\text{Student A: } 27\times(10+6)=270+162=432</mrow>
+            <mrow>\text{Student B: } (30-3)\times 16=480-48=432</mrow>
+          </md>
+        </p>
+        <p>Explain why both methods are valid and identify the properties used in each method.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Explain why doubling–halving keeps a product the same: show that <m>(2a)\times \dfrac{b}{2}=ab</m> whenever <m>b</m> is even, and discuss what changes if <m>b</m> is odd (give a specific example).</p>
+      </statement>
+    </exercise>
+
+    <!-- Properties of Arithmetic -->
+    <exercise>
+      <statement>
+        <p>What is the difference between an identity and an inverse for an operation? Why does every integer have an additive inverse but not every integer has a multiplicative inverse (within the integers)? Give examples that include <m>-5</m>, <m>0</m>, and <m>1</m>.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Use an area/array (“chocolate bar”) model to justify <m>a(b+c)=ab+ac</m>. Then extend your explanation to <m>(a+b)(c+d)=ac+ad+bc+bd</m> as “cuts” in two directions.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Consider <m>0\times n</m> and <m>n\div 0</m>. Explain why the first is always <m>0</m> (give a property or model) and the second is undefined (refer to what division would have to mean).</p>
+      </statement>
+    </exercise>
+
+    <!-- Integers -->
+    <exercise>
+      <statement>
+        <p>Two students disagree about <m>-12 - (-9)</m>. One says “subtract a negative means the answer is negative,” the other says “subtract a negative means add the positive.” Who is right? Explain with a model (number line or chips) and compute the result.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Complete a proof that <m>(-1)(-1)=1</m> using distribution. Fill in the blanks and explain each step in words.</p>
+        <p>
+          <md>
+            <mrow>1 + (-1) \amp = 0</mrow>
+            <mrow>-1\cdot\big(1 + (-1)\big) \amp = -1\cdot 0</mrow>
+            <mrow>\big((-1)\cdot 1\big) + \big((-1)\cdot(-1)\big) \amp = 0</mrow>
+            <mrow>-1 + \square \amp = 0</mrow>
+            <mrow>\square \amp = 1</mrow>
+          </md>
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>A classmate orders integers by absolute value and gets: <m>-12 &lt; -3 &lt; 2 &lt; 10</m> “because <m>12</m> is the largest absolute value.” Explain the mistake and give the correct ordering, justifying your answer.</p>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+
+
+
+</section>
     
   
 
