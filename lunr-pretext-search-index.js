@@ -691,61 +691,304 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Supplemental Exercises",
-  "body": " Supplemental Exercises   Joe says \"Dolphins are mammals or live primarily underwater.\" Is his statement true?    Which of the following are statements?    It rained yesterday.    All cars have engines.    Did you see the game last night?    All dogs go to Heaven.    This statement is false.    Come visit sometime.      Which of the following are open sentences? For each open sentence, identify its domain.         Dog D is a mastiff.    Vitamin C helps prevent scurvy.    The statement P is both true and false.    Some countries have kings.    No one lives in a house.    For each open sentence above, give a value of the variable that makes the statement true.    Layla says \"Statement P is false.\" How does the truth value of this open sentence depend on the truth value of the variable P?    Draw a truth table for each of the following.    The cow is awake and the pig is asleep.    Stores accept cash or credit as payment.    Education prepares you for a career or is a poor way to spend your time.    Anna and Jordan are not happy.      Write a negation of each of the following.    Gravity is not a force.    City C has a population of at least 10 million.    Harold ate a burger and fries for lunch.    There is at least one penguin that has never seen Antarctica.    Everyone on campus is a student or a staff-member.    No beverage is hot and sweet.     "
+  "body": " Supplemental Exercises   Logic Questions     Which of the following are statements?   It rained yesterday.  All cars have engines.  Did you see the game last night?  All dogs go to Heaven.  This statement is false.  Come visit sometime.       Joe says \"Dolphins are mammals or live primarily underwater.\" Is his statement true?      Given each truth table below, provide a statement it represents (that is, define P and Q and determine the relationship between them).     P Q  T T T  F T F  T F F  F F F      P Q  T T T  F T T  T F T  F F F      P Q  T T F  F T F  T F F  F F T      P Q  T T T  F T T  T F T  F F T         Which of the following are open sentences? For each open sentence, identify its domain.    Dog is a mastiff.  Vitamin C helps prevent scurvy.  The statement is both true and false.  Some countries have kings.  No one lives in a house.       For each open sentence in the previous question, give a value of the variable that makes the statement true.      Layla says \"Statement is false.\" How does the truth value of this open sentence depend on the truth value of the variable ?      Draw a truth table for each of the following.   The cow is awake and the pig is asleep.  Stores accept cash or credit as payment.  Education prepares you for a career or is a poor way to spend your time.  Anna and Jordan are not happy.       Write a negation of each of the following.   Gravity is not a force.  City has a population of at least 10 million.  Harold ate a burger and fries for lunch.  There is at least one penguin that has never seen Antarctica.  Everyone on campus is a student or a staff-member.  No beverage is hot and sweet.       For each of the following statements, give a logically equivalent statement with the same domain.   Peter is not unhappy.  Not all books are informative or interesting.  All sculptures are not made of marble.  No film has sound.   Some buses have 4 tires.       Draw (and label) a Venn diagram to illustrate each of the following quantified statements.   All parrots are birds.  Some widgets are gizmos.  No mountains are volcanoes.  Songs are not all classical.  At least one article has no sources.  Not all athletes have strict diets and exercise every day.  Some vegans eat honey, but no vegans eat chicken.  All mammals breathe oxygen, but not all oxygen-breathers are mammals.       Please note: a compound statement made up of three statements (P, Q, R) has a truth table of the following form:   P Q R  T T T  F T T  T F T  F F T  T T F  F T F  T F F  F F F    How many rows would be required to construct a truth table for \"P and Q or R or S\"?  Construct a truth table for \"(P or Q) and R.\"  Is \"(P or R) and Q\" logically equivalent to \"(P or Q) and R\"? Why or why not?        Conditional Questions     Which of the following are conditional statements?   When it rains, it pours.  If you have any snacks left over, can I have them?  If the stock market crashes, the economy will enter a recession.  is even if and are both multiples of 3.  Let someone else hold your phone if you're scared of dropping it.  If you want to cross the street, then make sure to look both ways for traffic first.       Is the following a valid direct proof of “if is even then is even”? How do you know?  Assume . Then, . Since 2 and 8 are even, we have shown “if is even then is even” to be true.      For each of the following conditional statements, write a contrapositive.   If the Blue Jays win the World Series, I will eat my hat.  Sharks die if they stop moving.  When the weather is cold, the roads are slippery.  If is odd, then it can be written as the sum of an even number and an odd number.       For each of the following conditional statements, determine its truth value. If it is false, make it true by limiting its domain.   If is prime, then is odd.  If is a polygon, then the sum of its interior angles is at least .  If person speaks both official languages of Canada, then they are bilingual.  [intentionally left blank in original source]       Prove that if are all odd, then their sum or their product is odd.      Which of the following are biconditional statements?   If the sky is clear at night, you can see the stars.  You will excel academically if and only if you study diligently.  is even exactly when is an integer.  If is an integer, then there is exactly one solution to .  If an animal is a bird then it has feathers, and if an animal has feathers then it is a bird.       For each of the following statements, determine whether or not the given value of the variable is a counterexample. If not, find a value that is, and prove that it is a counterexample.       Set Theory Questions     For each of the following sets, state a possible universe.   {a, b, c, d, e, f}   {Cats, dogs, parrots, goldfish, snakes}   {I want to go to the park.}       Rewrite each of the following sets by listing their members.   {All egg-laying mammals}  {All Canadian provinces}   {All prime numbers between 10 and 30}   {Three NHL teams}       Using the following sets, write the resulting set of each of the set operations below:                Create a set with cardinality 20 in the universe .      Within the universe , find .      Prove that for any two sets , is a subset of both and . Is the same true of ? If so, prove it. If not, provide a counterexample.      If , then for each of the following values of , find .    …  …  …       What is the cardinality of each of the following sets?               Explanatory and Critical Thinking Questions      A student says: “The sentence ‘This statement is false’ must be false, because it says so.” Do you agree? Explain what makes this sentence different from other statements in logic.      Another student argues: “Questions and commands are not statements, because they don’t have truth values. But they are still useful in logic because we can always assign them ‘true’ or ‘false.’” Identify the flaw in this reasoning.       A student claims: “The contrapositive of ‘If a shape is a square, then it has four sides’ is ‘If a shape is not a square, then it does not have four sides.’” Is this correct? If not, explain why and give the correct contrapositive.      Consider the statement: “If n is even, then n² is divisible by 4.” A student says: “This is true because 2² = 4 and 4 is divisible by 4.” Critique the student’s reasoning. What mistake are they making, and how should the statement be proved?       A student writes: “The set {1, 2, 2, 3} has four elements.” Explain why this is incorrect, and clarify how sets treat repeated elements.      Another student argues: “The empty set must contain something — otherwise, how would we know it exists?” Do you agree or disagree? Explain carefully.      Suppose a student claims: “Since A ∩ B is always a subset of A and B, then A ∪ B must always be a subset of both as well.” Explain why this reasoning is flawed, and give a counterexample.      "
 },
 {
-  "id": "test-5-2",
+  "id": "logic-problems-2-1",
   "level": "2",
-  "url": "test-5.html#test-5-2",
-  "type": "Checkpoint",
-  "number": "1.4.1",
+  "url": "test-5.html#logic-problems-2-1",
+  "type": "Exercise",
+  "number": "1.4.1.1",
   "title": "",
-  "body": " Joe says \"Dolphins are mammals or live primarily underwater.\" Is his statement true?  "
+  "body": "  Which of the following are statements?   It rained yesterday.  All cars have engines.  Did you see the game last night?  All dogs go to Heaven.  This statement is false.  Come visit sometime.    "
 },
 {
-  "id": "test-5-3",
+  "id": "logic-problems-2-2",
   "level": "2",
-  "url": "test-5.html#test-5-3",
-  "type": "Checkpoint",
-  "number": "1.4.2",
+  "url": "test-5.html#logic-problems-2-2",
+  "type": "Exercise",
+  "number": "1.4.1.2",
   "title": "",
-  "body": " Which of the following are statements?    It rained yesterday.    All cars have engines.    Did you see the game last night?    All dogs go to Heaven.    This statement is false.    Come visit sometime.    "
+  "body": "  Joe says \"Dolphins are mammals or live primarily underwater.\" Is his statement true?   "
 },
 {
-  "id": "test-5-4",
+  "id": "logic-problems-2-3",
   "level": "2",
-  "url": "test-5.html#test-5-4",
-  "type": "Checkpoint",
-  "number": "1.4.3",
+  "url": "test-5.html#logic-problems-2-3",
+  "type": "Exercise",
+  "number": "1.4.1.3",
   "title": "",
-  "body": " Which of the following are open sentences? For each open sentence, identify its domain.         Dog D is a mastiff.    Vitamin C helps prevent scurvy.    The statement P is both true and false.    Some countries have kings.    No one lives in a house.    For each open sentence above, give a value of the variable that makes the statement true.  "
+  "body": "  Given each truth table below, provide a statement it represents (that is, define P and Q and determine the relationship between them).     P Q  T T T  F T F  T F F  F F F      P Q  T T T  F T T  T F T  F F F      P Q  T T F  F T F  T F F  F F T      P Q  T T T  F T T  T F T  F F T      "
 },
 {
-  "id": "test-5-5",
+  "id": "logic-problems-2-4",
   "level": "2",
-  "url": "test-5.html#test-5-5",
-  "type": "Checkpoint",
-  "number": "1.4.4",
+  "url": "test-5.html#logic-problems-2-4",
+  "type": "Exercise",
+  "number": "1.4.1.4",
   "title": "",
-  "body": " Layla says \"Statement P is false.\" How does the truth value of this open sentence depend on the truth value of the variable P?  "
+  "body": "  Which of the following are open sentences? For each open sentence, identify its domain.    Dog is a mastiff.  Vitamin C helps prevent scurvy.  The statement is both true and false.  Some countries have kings.  No one lives in a house.    "
 },
 {
-  "id": "test-5-6",
+  "id": "logic-problems-2-5",
   "level": "2",
-  "url": "test-5.html#test-5-6",
-  "type": "Checkpoint",
-  "number": "1.4.5",
+  "url": "test-5.html#logic-problems-2-5",
+  "type": "Exercise",
+  "number": "1.4.1.5",
   "title": "",
-  "body": " Draw a truth table for each of the following.    The cow is awake and the pig is asleep.    Stores accept cash or credit as payment.    Education prepares you for a career or is a poor way to spend your time.    Anna and Jordan are not happy.    "
+  "body": "  For each open sentence in the previous question, give a value of the variable that makes the statement true.   "
 },
 {
-  "id": "test-5-7",
+  "id": "logic-problems-2-6",
   "level": "2",
-  "url": "test-5.html#test-5-7",
-  "type": "Checkpoint",
-  "number": "1.4.6",
+  "url": "test-5.html#logic-problems-2-6",
+  "type": "Exercise",
+  "number": "1.4.1.6",
   "title": "",
-  "body": " Write a negation of each of the following.    Gravity is not a force.    City C has a population of at least 10 million.    Harold ate a burger and fries for lunch.    There is at least one penguin that has never seen Antarctica.    Everyone on campus is a student or a staff-member.    No beverage is hot and sweet.    "
+  "body": "  Layla says \"Statement is false.\" How does the truth value of this open sentence depend on the truth value of the variable ?   "
+},
+{
+  "id": "logic-problems-2-7",
+  "level": "2",
+  "url": "test-5.html#logic-problems-2-7",
+  "type": "Exercise",
+  "number": "1.4.1.7",
+  "title": "",
+  "body": "  Draw a truth table for each of the following.   The cow is awake and the pig is asleep.  Stores accept cash or credit as payment.  Education prepares you for a career or is a poor way to spend your time.  Anna and Jordan are not happy.    "
+},
+{
+  "id": "logic-problems-2-8",
+  "level": "2",
+  "url": "test-5.html#logic-problems-2-8",
+  "type": "Exercise",
+  "number": "1.4.1.8",
+  "title": "",
+  "body": "  Write a negation of each of the following.   Gravity is not a force.  City has a population of at least 10 million.  Harold ate a burger and fries for lunch.  There is at least one penguin that has never seen Antarctica.  Everyone on campus is a student or a staff-member.  No beverage is hot and sweet.    "
+},
+{
+  "id": "logic-problems-2-9",
+  "level": "2",
+  "url": "test-5.html#logic-problems-2-9",
+  "type": "Exercise",
+  "number": "1.4.1.9",
+  "title": "",
+  "body": "  For each of the following statements, give a logically equivalent statement with the same domain.   Peter is not unhappy.  Not all books are informative or interesting.  All sculptures are not made of marble.  No film has sound.   Some buses have 4 tires.    "
+},
+{
+  "id": "logic-problems-2-10",
+  "level": "2",
+  "url": "test-5.html#logic-problems-2-10",
+  "type": "Exercise",
+  "number": "1.4.1.10",
+  "title": "",
+  "body": "  Draw (and label) a Venn diagram to illustrate each of the following quantified statements.   All parrots are birds.  Some widgets are gizmos.  No mountains are volcanoes.  Songs are not all classical.  At least one article has no sources.  Not all athletes have strict diets and exercise every day.  Some vegans eat honey, but no vegans eat chicken.  All mammals breathe oxygen, but not all oxygen-breathers are mammals.    "
+},
+{
+  "id": "logic-problems-2-11",
+  "level": "2",
+  "url": "test-5.html#logic-problems-2-11",
+  "type": "Exercise",
+  "number": "1.4.1.11",
+  "title": "",
+  "body": "  Please note: a compound statement made up of three statements (P, Q, R) has a truth table of the following form:   P Q R  T T T  F T T  T F T  F F T  T T F  F T F  T F F  F F F    How many rows would be required to construct a truth table for \"P and Q or R or S\"?  Construct a truth table for \"(P or Q) and R.\"  Is \"(P or R) and Q\" logically equivalent to \"(P or Q) and R\"? Why or why not?    "
+},
+{
+  "id": "conditional-problems-2-1",
+  "level": "2",
+  "url": "test-5.html#conditional-problems-2-1",
+  "type": "Exercise",
+  "number": "1.4.2.1",
+  "title": "",
+  "body": "  Which of the following are conditional statements?   When it rains, it pours.  If you have any snacks left over, can I have them?  If the stock market crashes, the economy will enter a recession.  is even if and are both multiples of 3.  Let someone else hold your phone if you're scared of dropping it.  If you want to cross the street, then make sure to look both ways for traffic first.    "
+},
+{
+  "id": "conditional-problems-2-2",
+  "level": "2",
+  "url": "test-5.html#conditional-problems-2-2",
+  "type": "Exercise",
+  "number": "1.4.2.2",
+  "title": "",
+  "body": "  Is the following a valid direct proof of “if is even then is even”? How do you know?  Assume . Then, . Since 2 and 8 are even, we have shown “if is even then is even” to be true.   "
+},
+{
+  "id": "conditional-problems-2-3",
+  "level": "2",
+  "url": "test-5.html#conditional-problems-2-3",
+  "type": "Exercise",
+  "number": "1.4.2.3",
+  "title": "",
+  "body": "  For each of the following conditional statements, write a contrapositive.   If the Blue Jays win the World Series, I will eat my hat.  Sharks die if they stop moving.  When the weather is cold, the roads are slippery.  If is odd, then it can be written as the sum of an even number and an odd number.    "
+},
+{
+  "id": "conditional-problems-2-4",
+  "level": "2",
+  "url": "test-5.html#conditional-problems-2-4",
+  "type": "Exercise",
+  "number": "1.4.2.4",
+  "title": "",
+  "body": "  For each of the following conditional statements, determine its truth value. If it is false, make it true by limiting its domain.   If is prime, then is odd.  If is a polygon, then the sum of its interior angles is at least .  If person speaks both official languages of Canada, then they are bilingual.  [intentionally left blank in original source]    "
+},
+{
+  "id": "conditional-problems-2-5",
+  "level": "2",
+  "url": "test-5.html#conditional-problems-2-5",
+  "type": "Exercise",
+  "number": "1.4.2.5",
+  "title": "",
+  "body": "  Prove that if are all odd, then their sum or their product is odd.   "
+},
+{
+  "id": "conditional-problems-2-6",
+  "level": "2",
+  "url": "test-5.html#conditional-problems-2-6",
+  "type": "Exercise",
+  "number": "1.4.2.6",
+  "title": "",
+  "body": "  Which of the following are biconditional statements?   If the sky is clear at night, you can see the stars.  You will excel academically if and only if you study diligently.  is even exactly when is an integer.  If is an integer, then there is exactly one solution to .  If an animal is a bird then it has feathers, and if an animal has feathers then it is a bird.    "
+},
+{
+  "id": "conditional-problems-2-7",
+  "level": "2",
+  "url": "test-5.html#conditional-problems-2-7",
+  "type": "Exercise",
+  "number": "1.4.2.7",
+  "title": "",
+  "body": "  For each of the following statements, determine whether or not the given value of the variable is a counterexample. If not, find a value that is, and prove that it is a counterexample.   "
+},
+{
+  "id": "sets-problems-2-1",
+  "level": "2",
+  "url": "test-5.html#sets-problems-2-1",
+  "type": "Exercise",
+  "number": "1.4.3.1",
+  "title": "",
+  "body": "  For each of the following sets, state a possible universe.   {a, b, c, d, e, f}   {Cats, dogs, parrots, goldfish, snakes}   {I want to go to the park.}    "
+},
+{
+  "id": "sets-problems-2-2",
+  "level": "2",
+  "url": "test-5.html#sets-problems-2-2",
+  "type": "Exercise",
+  "number": "1.4.3.2",
+  "title": "",
+  "body": "  Rewrite each of the following sets by listing their members.   {All egg-laying mammals}  {All Canadian provinces}   {All prime numbers between 10 and 30}   {Three NHL teams}    "
+},
+{
+  "id": "sets-problems-2-3",
+  "level": "2",
+  "url": "test-5.html#sets-problems-2-3",
+  "type": "Exercise",
+  "number": "1.4.3.3",
+  "title": "",
+  "body": "  Using the following sets, write the resulting set of each of the set operations below:             "
+},
+{
+  "id": "sets-problems-2-4",
+  "level": "2",
+  "url": "test-5.html#sets-problems-2-4",
+  "type": "Exercise",
+  "number": "1.4.3.4",
+  "title": "",
+  "body": "  Create a set with cardinality 20 in the universe .   "
+},
+{
+  "id": "sets-problems-2-5",
+  "level": "2",
+  "url": "test-5.html#sets-problems-2-5",
+  "type": "Exercise",
+  "number": "1.4.3.5",
+  "title": "",
+  "body": "  Within the universe , find .   "
+},
+{
+  "id": "sets-problems-2-6",
+  "level": "2",
+  "url": "test-5.html#sets-problems-2-6",
+  "type": "Exercise",
+  "number": "1.4.3.6",
+  "title": "",
+  "body": "  Prove that for any two sets , is a subset of both and . Is the same true of ? If so, prove it. If not, provide a counterexample.   "
+},
+{
+  "id": "sets-problems-2-7",
+  "level": "2",
+  "url": "test-5.html#sets-problems-2-7",
+  "type": "Exercise",
+  "number": "1.4.3.7",
+  "title": "",
+  "body": "  If , then for each of the following values of , find .    …  …  …    "
+},
+{
+  "id": "sets-problems-2-8",
+  "level": "2",
+  "url": "test-5.html#sets-problems-2-8",
+  "type": "Exercise",
+  "number": "1.4.3.8",
+  "title": "",
+  "body": "  What is the cardinality of each of the following sets?           "
+},
+{
+  "id": "explanatory-questions-2-1",
+  "level": "2",
+  "url": "test-5.html#explanatory-questions-2-1",
+  "type": "Exercise",
+  "number": "1.4.4.1",
+  "title": "",
+  "body": "  A student says: “The sentence ‘This statement is false’ must be false, because it says so.” Do you agree? Explain what makes this sentence different from other statements in logic.   "
+},
+{
+  "id": "explanatory-questions-2-2",
+  "level": "2",
+  "url": "test-5.html#explanatory-questions-2-2",
+  "type": "Exercise",
+  "number": "1.4.4.2",
+  "title": "",
+  "body": "  Another student argues: “Questions and commands are not statements, because they don’t have truth values. But they are still useful in logic because we can always assign them ‘true’ or ‘false.’” Identify the flaw in this reasoning.   "
+},
+{
+  "id": "explanatory-questions-2-3",
+  "level": "2",
+  "url": "test-5.html#explanatory-questions-2-3",
+  "type": "Exercise",
+  "number": "1.4.4.3",
+  "title": "",
+  "body": "  A student claims: “The contrapositive of ‘If a shape is a square, then it has four sides’ is ‘If a shape is not a square, then it does not have four sides.’” Is this correct? If not, explain why and give the correct contrapositive.   "
+},
+{
+  "id": "explanatory-questions-2-4",
+  "level": "2",
+  "url": "test-5.html#explanatory-questions-2-4",
+  "type": "Exercise",
+  "number": "1.4.4.4",
+  "title": "",
+  "body": "  Consider the statement: “If n is even, then n² is divisible by 4.” A student says: “This is true because 2² = 4 and 4 is divisible by 4.” Critique the student’s reasoning. What mistake are they making, and how should the statement be proved?   "
+},
+{
+  "id": "explanatory-questions-2-5",
+  "level": "2",
+  "url": "test-5.html#explanatory-questions-2-5",
+  "type": "Exercise",
+  "number": "1.4.4.5",
+  "title": "",
+  "body": "  A student writes: “The set {1, 2, 2, 3} has four elements.” Explain why this is incorrect, and clarify how sets treat repeated elements.   "
+},
+{
+  "id": "explanatory-questions-2-6",
+  "level": "2",
+  "url": "test-5.html#explanatory-questions-2-6",
+  "type": "Exercise",
+  "number": "1.4.4.6",
+  "title": "",
+  "body": "  Another student argues: “The empty set must contain something — otherwise, how would we know it exists?” Do you agree or disagree? Explain carefully.   "
+},
+{
+  "id": "explanatory-questions-2-7",
+  "level": "2",
+  "url": "test-5.html#explanatory-questions-2-7",
+  "type": "Exercise",
+  "number": "1.4.4.7",
+  "title": "",
+  "body": "  Suppose a student claims: “Since A ∩ B is always a subset of A and B, then A ∪ B must always be a subset of both as well.” Explain why this reasoning is flawed, and give a counterexample.   "
 },
 {
   "id": "sec-Equality",
@@ -1007,6 +1250,303 @@ var ptx_lunr_docs = [
   "number": "2.3",
   "title": "Future Section Ideas",
   "body": " Future Section Ideas  What if the equation is more complicated? Ideas? Trial and error\/factoring\/etc.  Using technology.  The \"work\" in solving a problem is setting it up correctly (usually in the language of algebra, but other ways too)    Some problem solving strategies and techniques. Try to find something \"better\" than Polya. Include some problems to solve, of course, and try to include problems of a similar difficulty throughout. Discussion on patterns (with reference to if-then statements). INCLUDE EXPLORATION, TRANSLATING INTO ALGEBRA, SHOWING MULTIPLE METHODS.  Translating. Focus on testing with simple examples, defining your variables. Using equality to substitute. Exploration to find formula for situation.  Open ended problems: going from examples to conjecture to \"proof\". HIGHLIGHT MANY WAYS OF PROVING!  "
+},
+{
+  "id": "EquationsAndProblemSolving-5",
+  "level": "1",
+  "url": "EquationsAndProblemSolving-5.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Supplementary Exercises",
+  "body": " Supplementary Exercises   Equality Questions     Given the following equations, show . For each step in the process, state the property of equality you are using.       Is the equality true? Explain.         For the next two questions, consider the following relationships: let , , .      In the following process, label each step with the property of equality used to reach it.         If , , , find as defined above.      Prove that all three properties of equality hold for the biconditional statement \" if and only if .\"      Prove that set equality is reflexive, transitive, and symmetric.      Which properties (of reflexive, transitive, symmetric) hold for the following relations? Do they always hold, never hold, or only hold for some inputs?            Formulate a relationship that exhibits the given property, but neither of the other two.   Reflexivity.  Transitivity.  Symmetry.       Determine whether each set equality is true or not.                Problem Solving Questions    Solving a system by graphing  One way to solve systems of equations is to graph each equation on the same axes; their intersection point(s) are common solutions to the system. The following example illustrates this approach.  Example 1. Consider the system , . We first solve each equation for the same variable (here, ) to make graphing straightforward.         The graphs of and .    From the graph, the lines intersect at , so the solution is , . You can verify by substitution into the original equations. The choice to solve for was arbitrary—solving for would lead to the same intersection point.  Conceptually, solving a system means finding values that satisfy all equations simultaneously. Points on a graph represent solutions to their respective equations; intersections represent common solutions. While graphing gives geometric insight, algebraic methods (substitution or elimination) are usually faster, especially for systems with more than two variables.      For Questions 1–4, use the following equations (with constants and variables ):         Identify the terms in each equation.      For each term involving a variable, identify the variable(s) and coefficient.      For each equation, identify the constant(s).      For each equation, determine whether it is linear or not. Justify briefly.      Define any necessary variables and write an equation to represent each word problem.   Henry started with 7 barrels of maple syrup and receives 4 more every week. How many weeks until he has 63 barrels?  Zach spent \\$219.80 on frozen pizzas; each costs \\$7.85. How many pizzas did he buy?  Harris buys Rory’s (380 g, 47 pretzels per bag) and Pete’s (400 g, 39 pretzels per bag). He has 493 pretzels totaling 4240 g. How many bags of each?       Blueberry muffins cost \\$2 and chocolate chip muffins cost \\$3 at Jolene’s bakery. Chris spent \\$27 buying only these muffins. How many different ordered pairs of blueberry\/chocolate chip muffin counts are possible? How do you know you found them all?      For each equation\/system, write a word problem that would be solved by it.     ,       Solve each system by elimination.   ,  ,  ,  ,       By which process is the following system being solved? How do you know?             Determine whether each equation\/system can be solved over the reals. If so, describe the solution set’s form (unique, none, or infinitely many). Explain how you know.   ,  ,  ,       Jonah solved , and found , . How could he check his answer? Check it, and if incorrect, find the correct solution.      Identify the errors (if any) in each solution and find the correct solution.    System: ,       System: ,           The system , has no solutions. Explain graphically why.       Explanatory and Critical Thinking Questions     A student says: “Graphing is always the best way to solve systems of equations, because you can see the answer directly.” Do you agree or disagree? Explain when graphing is helpful, and when other methods (substitution, elimination) are more practical.      Another student claims: “If two equations look different, then they must have different solution sets.” Give a counterexample, and explain why equations can look different but still represent the same line or same set of solutions.      Consider the system , . A student concludes that there is exactly one solution because the equations are not identical. Explain the flaw in this reasoning, and describe the actual solution set.      A student is solving by elimination and subtracts one equation from another incorrectly, losing a variable in the process. How can you recognize when an algebraic error has happened, and how does checking with substitution into the original system help?      Explain the difference between “an equation has no solution,” “a system has infinitely many solutions,” and “a system has exactly one solution.” Give an example of each, and explain how you would recognize it graphically and algebraically.      Consider the equation . A student says: “We can solve this and find .” Explain why this equation cannot be solved for a single , and describe what it means for a system or equation to be inconsistent.      Word problems require translating between language and algebra. Take the sentence: “The sum of two numbers is 30, and one number is 4 greater than the other.” Explain how to define variables, write equations, and check that the system models the words correctly.      "
+},
+{
+  "id": "equality-problems-2-1",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#equality-problems-2-1",
+  "type": "Exercise",
+  "number": "2.4.1.1",
+  "title": "",
+  "body": "  Given the following equations, show . For each step in the process, state the property of equality you are using.    "
+},
+{
+  "id": "equality-problems-2-2",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#equality-problems-2-2",
+  "type": "Exercise",
+  "number": "2.4.1.2",
+  "title": "",
+  "body": "  Is the equality true? Explain.      "
+},
+{
+  "id": "equality-problems-2-3",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#equality-problems-2-3",
+  "type": "Exercise",
+  "number": "2.4.1.3",
+  "title": "",
+  "body": "  For the next two questions, consider the following relationships: let , , .   "
+},
+{
+  "id": "equality-problems-2-4",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#equality-problems-2-4",
+  "type": "Exercise",
+  "number": "2.4.1.4",
+  "title": "",
+  "body": "  In the following process, label each step with the property of equality used to reach it.      "
+},
+{
+  "id": "equality-problems-2-5",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#equality-problems-2-5",
+  "type": "Exercise",
+  "number": "2.4.1.5",
+  "title": "",
+  "body": "  If , , , find as defined above.   "
+},
+{
+  "id": "equality-problems-2-6",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#equality-problems-2-6",
+  "type": "Exercise",
+  "number": "2.4.1.6",
+  "title": "",
+  "body": "  Prove that all three properties of equality hold for the biconditional statement \" if and only if .\"   "
+},
+{
+  "id": "equality-problems-2-7",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#equality-problems-2-7",
+  "type": "Exercise",
+  "number": "2.4.1.7",
+  "title": "",
+  "body": "  Prove that set equality is reflexive, transitive, and symmetric.   "
+},
+{
+  "id": "equality-problems-2-8",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#equality-problems-2-8",
+  "type": "Exercise",
+  "number": "2.4.1.8",
+  "title": "",
+  "body": "  Which properties (of reflexive, transitive, symmetric) hold for the following relations? Do they always hold, never hold, or only hold for some inputs?         "
+},
+{
+  "id": "equality-problems-2-9",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#equality-problems-2-9",
+  "type": "Exercise",
+  "number": "2.4.1.9",
+  "title": "",
+  "body": "  Formulate a relationship that exhibits the given property, but neither of the other two.   Reflexivity.  Transitivity.  Symmetry.    "
+},
+{
+  "id": "equality-problems-2-10",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#equality-problems-2-10",
+  "type": "Exercise",
+  "number": "2.4.1.10",
+  "title": "",
+  "body": "  Determine whether each set equality is true or not.            "
+},
+{
+  "id": "ex-probsolv-graphing",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ex-probsolv-graphing",
+  "type": "Example",
+  "number": "2.4.1",
+  "title": "Solving a system by graphing.",
+  "body": " Solving a system by graphing  One way to solve systems of equations is to graph each equation on the same axes; their intersection point(s) are common solutions to the system. The following example illustrates this approach.  Example 1. Consider the system , . We first solve each equation for the same variable (here, ) to make graphing straightforward.         The graphs of and .    From the graph, the lines intersect at , so the solution is , . You can verify by substitution into the original equations. The choice to solve for was arbitrary—solving for would lead to the same intersection point.  Conceptually, solving a system means finding values that satisfy all equations simultaneously. Points on a graph represent solutions to their respective equations; intersections represent common solutions. While graphing gives geometric insight, algebraic methods (substitution or elimination) are usually faster, especially for systems with more than two variables.  "
+},
+{
+  "id": "ps-given-list",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-given-list",
+  "type": "Exercise",
+  "number": "2.4.2.1",
+  "title": "",
+  "body": "  For Questions 1–4, use the following equations (with constants and variables ):      "
+},
+{
+  "id": "ps-identify-terms",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-identify-terms",
+  "type": "Exercise",
+  "number": "2.4.2.2",
+  "title": "",
+  "body": "  Identify the terms in each equation.   "
+},
+{
+  "id": "ps-identify-coeffs",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-identify-coeffs",
+  "type": "Exercise",
+  "number": "2.4.2.3",
+  "title": "",
+  "body": "  For each term involving a variable, identify the variable(s) and coefficient.   "
+},
+{
+  "id": "ps-identify-consts",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-identify-consts",
+  "type": "Exercise",
+  "number": "2.4.2.4",
+  "title": "",
+  "body": "  For each equation, identify the constant(s).   "
+},
+{
+  "id": "ps-linear-or-not",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-linear-or-not",
+  "type": "Exercise",
+  "number": "2.4.2.5",
+  "title": "",
+  "body": "  For each equation, determine whether it is linear or not. Justify briefly.   "
+},
+{
+  "id": "ps-write-equations-from-words",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-write-equations-from-words",
+  "type": "Exercise",
+  "number": "2.4.2.6",
+  "title": "",
+  "body": "  Define any necessary variables and write an equation to represent each word problem.   Henry started with 7 barrels of maple syrup and receives 4 more every week. How many weeks until he has 63 barrels?  Zach spent \\$219.80 on frozen pizzas; each costs \\$7.85. How many pizzas did he buy?  Harris buys Rory’s (380 g, 47 pretzels per bag) and Pete’s (400 g, 39 pretzels per bag). He has 493 pretzels totaling 4240 g. How many bags of each?    "
+},
+{
+  "id": "ps-coin-combos",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-coin-combos",
+  "type": "Exercise",
+  "number": "2.4.2.7",
+  "title": "",
+  "body": "  Blueberry muffins cost \\$2 and chocolate chip muffins cost \\$3 at Jolene’s bakery. Chris spent \\$27 buying only these muffins. How many different ordered pairs of blueberry\/chocolate chip muffin counts are possible? How do you know you found them all?   "
+},
+{
+  "id": "ps-make-word-problems",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-make-word-problems",
+  "type": "Exercise",
+  "number": "2.4.2.8",
+  "title": "",
+  "body": "  For each equation\/system, write a word problem that would be solved by it.     ,    "
+},
+{
+  "id": "ps-elimination-solve",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-elimination-solve",
+  "type": "Exercise",
+  "number": "2.4.2.9",
+  "title": "",
+  "body": "  Solve each system by elimination.   ,  ,  ,  ,    "
+},
+{
+  "id": "ps-identify-method",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-identify-method",
+  "type": "Exercise",
+  "number": "2.4.2.10",
+  "title": "",
+  "body": "  By which process is the following system being solved? How do you know?          "
+},
+{
+  "id": "ps-solvability",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-solvability",
+  "type": "Exercise",
+  "number": "2.4.2.11",
+  "title": "",
+  "body": "  Determine whether each equation\/system can be solved over the reals. If so, describe the solution set’s form (unique, none, or infinitely many). Explain how you know.   ,  ,  ,    "
+},
+{
+  "id": "ps-check-solution",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-check-solution",
+  "type": "Exercise",
+  "number": "2.4.2.12",
+  "title": "",
+  "body": "  Jonah solved , and found , . How could he check his answer? Check it, and if incorrect, find the correct solution.   "
+},
+{
+  "id": "ps-find-errors",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-find-errors",
+  "type": "Exercise",
+  "number": "2.4.2.13",
+  "title": "",
+  "body": "  Identify the errors (if any) in each solution and find the correct solution.    System: ,       System: ,        "
+},
+{
+  "id": "ps-no-solution-graph",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#ps-no-solution-graph",
+  "type": "Exercise",
+  "number": "2.4.2.14",
+  "title": "",
+  "body": "  The system , has no solutions. Explain graphically why.   "
+},
+{
+  "id": "problem-solving-explanatory-2-1",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#problem-solving-explanatory-2-1",
+  "type": "Exercise",
+  "number": "2.4.3.1",
+  "title": "",
+  "body": "  A student says: “Graphing is always the best way to solve systems of equations, because you can see the answer directly.” Do you agree or disagree? Explain when graphing is helpful, and when other methods (substitution, elimination) are more practical.   "
+},
+{
+  "id": "problem-solving-explanatory-2-2",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#problem-solving-explanatory-2-2",
+  "type": "Exercise",
+  "number": "2.4.3.2",
+  "title": "",
+  "body": "  Another student claims: “If two equations look different, then they must have different solution sets.” Give a counterexample, and explain why equations can look different but still represent the same line or same set of solutions.   "
+},
+{
+  "id": "problem-solving-explanatory-2-3",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#problem-solving-explanatory-2-3",
+  "type": "Exercise",
+  "number": "2.4.3.3",
+  "title": "",
+  "body": "  Consider the system , . A student concludes that there is exactly one solution because the equations are not identical. Explain the flaw in this reasoning, and describe the actual solution set.   "
+},
+{
+  "id": "problem-solving-explanatory-2-4",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#problem-solving-explanatory-2-4",
+  "type": "Exercise",
+  "number": "2.4.3.4",
+  "title": "",
+  "body": "  A student is solving by elimination and subtracts one equation from another incorrectly, losing a variable in the process. How can you recognize when an algebraic error has happened, and how does checking with substitution into the original system help?   "
+},
+{
+  "id": "problem-solving-explanatory-2-5",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#problem-solving-explanatory-2-5",
+  "type": "Exercise",
+  "number": "2.4.3.5",
+  "title": "",
+  "body": "  Explain the difference between “an equation has no solution,” “a system has infinitely many solutions,” and “a system has exactly one solution.” Give an example of each, and explain how you would recognize it graphically and algebraically.   "
+},
+{
+  "id": "problem-solving-explanatory-2-6",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#problem-solving-explanatory-2-6",
+  "type": "Exercise",
+  "number": "2.4.3.6",
+  "title": "",
+  "body": "  Consider the equation . A student says: “We can solve this and find .” Explain why this equation cannot be solved for a single , and describe what it means for a system or equation to be inconsistent.   "
+},
+{
+  "id": "problem-solving-explanatory-2-7",
+  "level": "2",
+  "url": "EquationsAndProblemSolving-5.html#problem-solving-explanatory-2-7",
+  "type": "Exercise",
+  "number": "2.4.3.7",
+  "title": "",
+  "body": "  Word problems require translating between language and algebra. Take the sentence: “The sum of two numbers is 30, and one number is 4 greater than the other.” Explain how to define variables, write equations, and check that the system models the words correctly.   "
 },
 {
   "id": "sec-2_1NumberSystemsAndPlaceValue",
@@ -1592,6 +2132,645 @@ var ptx_lunr_docs = [
   "number": "3.4.8",
   "title": "Example: Integer Division Word Problem.",
   "body": " Example: Integer Division Word Problem  A company made a loss of $60,000 over 12 months. What was the average monthly loss?   To find the average monthly loss, we need to divide the total loss by the number of months.   Therefore, the average monthly loss was $5000. This example shows how integer division can be used to calculate averages and distribute values evenly across different periods.   "
+},
+{
+  "id": "WholeNumbers-6",
+  "level": "1",
+  "url": "WholeNumbers-6.html",
+  "type": "Section",
+  "number": "3.5",
+  "title": "Supplementary Exercises",
+  "body": "Supplementary Exercises   Number Systems Questions      What is the value (in base ten) of the underlined digit in the following numbers?               Roman numerals. The symbols I, V, X, L, C, D, M represent 1, 5, 10, 50, 100, 500, 1000. Numerals are written from highest to lowest (left to right) and summed, except when a smaller numeral precedes a larger one, indicating subtraction (e.g., IV = 5 − 1 = 4). Convert to base ten:   XV  CMLXXXVII  XXIX  XLIV  DCCLXVIII  MDCCCXII        Convert each of the following to base ten.                 In each of the following groupings of twenty-five ones, identify the base used and write the number using that base’s numerals. (Insert picture of groupings.)       Consider a time-like mixed-base system (seconds–minutes–hours–days). Use examples to demonstrate:   , .  meaning “1 day, 2 hours, 3 minutes, 4 seconds.” Convert this to a single base-ten count (seconds).        Order each list from least to greatest.               Each list is ordered from least to greatest. Find a possible value for each missing base so the ordering is correct (bases are integers large enough to permit the shown digits).               Fill in the missing symbol ( , , or ) between each pair.               Identify the missing base in each equation.               Is a “base one” number system possible? If so, describe it. If not, which place-value rules does it violate, and how might you adjust them to make a unary system usable?       Consider the following (non-standard) place-value system (places increase from right to left):   1st place: ones;  2nd place: up to four 1st places (so one 2nd place = five 1st places);  3rd place: up to seven 2nd places (so one 3rd place = eight 2nd places);  4th place: up to ten 3rd places; and so on.   Digits beyond 9 use uppercase letters: , , , etc.    Convert to base ten:   23  5633  AB123  1B20A     Convert the base-ten numbers to this system:   97  2021  5000          Do tally marks fit our definition of a place-value number system? Justify your answer.       Convert each number to the indicated base.   to base  to base  to base  to base  to base  to base        Create your own number system: specify the digit set, the place-value rule (fixed base or mixed-base), and demonstrate how to write and interpret at least five example numbers. Include one example of addition in your system.       Find so that the equality is true (specify in the named base).               Count on your fingers in base two. What is the largest number you can represent? What about base three? Base four?       Fill the blank with a number written in the indicated base so that the statement is true.               Arithmetic Operations: Practice      Compute mentally.            Compute each difference (you may use a “same-change” strategy).            Circle the larger value.   or  or  or        Compute using the distributive property (partial products).            Evaluate.          Compute.            Find the quotient and remainder (so with ).            A bus holds 42 students.   There are 389 students. How many full buses are needed? How many students ride on the last bus?  If every bus must be either full or empty, how many buses are required for 389 students?        Compute using the distributive property.           Compute mentally.            Estimate, then compute exactly.            Compute.          Find the missing number.            For each pair with , find integers and such that and .            Properties of Arithmetic: Practice      Evaluate (use standard order of operations).             State whether the set is closed under the operation. If not, give a counterexample.   under subtraction  under division  under multiplication  under addition        Use commutativity to compute mentally.             Regroup using associativity to make the computation easier.             Name the property that justifies each equality (commutative, associative, distributive, identity, or zero property).          Expand using the distributive property and simplify.      (expand to four terms)        Factor using the distributive property.             For the indicated set, give the identity element for the operation and the inverse of the given element (if it exists in the set).   Set , operation: addition; inverse of  Set , operation: multiplication; inverse of  Set , operation: addition; inverse of  Set , operation: multiplication; inverse of        Compute.             Give whole-number examples showing that the property fails for the operation.   Subtraction is not commutative.  Division is not commutative.  Subtraction is not associative.  Division is not associative.        Fill in the blanks so the statements are true (whole numbers).             Write each as with .            Compute using distribution or regrouping for efficiency.             Mark each statement True or False (whole numbers). If false, give a counterexample.      is defined  for        Perform the indicated operation.   Expand:  Factor:  Evaluate:  Simplify:        Integers: Practice      Place on a number line and order from least to greatest.            Compute. You may use a number-line or counter model.             Rewrite each difference as a sum, then compute.             Fill in the integer that makes each true.             Compute.             Use the distributive property to expand or factor.     (factor)  (factor out a common integer)        Complete the steps to show using distribution.          Fill in the blanks to show .          Verify each by computing both sides (commutative\/associative\/distributive).          Compute the quotient (integers); if not an integer, write “not an integer.”             Answer each; show the integer arithmetic.   At 6 AM it is and the temperature rises by noon. What is the noon temperature?  A hiker is at m and ascends m. New elevation?  A company has a total loss of over 12 months. What is the average monthly loss?        Compute.             Whole Numbers: Explanatory Questions      A student says, “The digit always means eight.” Explain why this is not generally true by comparing , , and . In each case, state the value contributed by the 8 -digit (or explain why it is not a valid digit).      Explain why and represent different numbers. Describe a blocks\/regrouping picture that makes the difference unavoidable, and compute both values in base ten.      In base five, converting gives . Explain in words why the “repeated division by 5 with remainders” algorithm produces the same digits you see when you regroup ones → longs → squares in a blocks picture.       “Same-change” subtraction: A student claims because adding to both numbers doesn’t change the answer. Do you agree? Explain why this strategy works (or when it doesn’t), using an equation or number-line argument.      Two students compute in different ways:     Explain why both methods are valid and identify the properties used in each method.      Explain why doubling–halving keeps a product the same: show that whenever is even, and discuss what changes if is odd (give a specific example).       What is the difference between an identity and an inverse for an operation? Why does every integer have an additive inverse but not every integer has a multiplicative inverse (within the integers)? Give examples that include , , and .      Use an area\/array (“chocolate bar”) model to justify . Then extend your explanation to as “cuts” in two directions.      Consider and . Explain why the first is always (give a property or model) and the second is undefined (refer to what division would have to mean).       Two students disagree about . One says “subtract a negative means the answer is negative,” the other says “subtract a negative means add the positive.” Who is right? Explain with a model (number line or chips) and compute the result.      Complete a proof that using distribution. Fill in the blanks and explain each step in words.         A classmate orders integers by absolute value and gets: “because is the largest absolute value.” Explain the mistake and give the correct ordering, justifying your answer.      "
+},
+{
+  "id": "number-systems-problems-2-1",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-1",
+  "type": "Exercise",
+  "number": "3.5.1.1",
+  "title": "",
+  "body": "  What is the value (in base ten) of the underlined digit in the following numbers?           "
+},
+{
+  "id": "number-systems-problems-2-2",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-2",
+  "type": "Exercise",
+  "number": "3.5.1.2",
+  "title": "",
+  "body": "  Roman numerals. The symbols I, V, X, L, C, D, M represent 1, 5, 10, 50, 100, 500, 1000. Numerals are written from highest to lowest (left to right) and summed, except when a smaller numeral precedes a larger one, indicating subtraction (e.g., IV = 5 − 1 = 4). Convert to base ten:   XV  CMLXXXVII  XXIX  XLIV  DCCLXVIII  MDCCCXII    "
+},
+{
+  "id": "number-systems-problems-2-3",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-3",
+  "type": "Exercise",
+  "number": "3.5.1.3",
+  "title": "",
+  "body": "  Convert each of the following to base ten.             "
+},
+{
+  "id": "number-systems-problems-2-4",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-4",
+  "type": "Exercise",
+  "number": "3.5.1.4",
+  "title": "",
+  "body": "  In each of the following groupings of twenty-five ones, identify the base used and write the number using that base’s numerals. (Insert picture of groupings.)   "
+},
+{
+  "id": "number-systems-problems-2-5",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-5",
+  "type": "Exercise",
+  "number": "3.5.1.5",
+  "title": "",
+  "body": "  Consider a time-like mixed-base system (seconds–minutes–hours–days). Use examples to demonstrate:   , .  meaning “1 day, 2 hours, 3 minutes, 4 seconds.” Convert this to a single base-ten count (seconds).    "
+},
+{
+  "id": "number-systems-problems-2-6",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-6",
+  "type": "Exercise",
+  "number": "3.5.1.6",
+  "title": "",
+  "body": "  Order each list from least to greatest.           "
+},
+{
+  "id": "number-systems-problems-2-7",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-7",
+  "type": "Exercise",
+  "number": "3.5.1.7",
+  "title": "",
+  "body": "  Each list is ordered from least to greatest. Find a possible value for each missing base so the ordering is correct (bases are integers large enough to permit the shown digits).           "
+},
+{
+  "id": "number-systems-problems-2-8",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-8",
+  "type": "Exercise",
+  "number": "3.5.1.8",
+  "title": "",
+  "body": "  Fill in the missing symbol ( , , or ) between each pair.           "
+},
+{
+  "id": "number-systems-problems-2-9",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-9",
+  "type": "Exercise",
+  "number": "3.5.1.9",
+  "title": "",
+  "body": "  Identify the missing base in each equation.           "
+},
+{
+  "id": "number-systems-problems-2-10",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-10",
+  "type": "Exercise",
+  "number": "3.5.1.10",
+  "title": "",
+  "body": "  Is a “base one” number system possible? If so, describe it. If not, which place-value rules does it violate, and how might you adjust them to make a unary system usable?   "
+},
+{
+  "id": "number-systems-problems-2-11",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-11",
+  "type": "Exercise",
+  "number": "3.5.1.11",
+  "title": "",
+  "body": "  Consider the following (non-standard) place-value system (places increase from right to left):   1st place: ones;  2nd place: up to four 1st places (so one 2nd place = five 1st places);  3rd place: up to seven 2nd places (so one 3rd place = eight 2nd places);  4th place: up to ten 3rd places; and so on.   Digits beyond 9 use uppercase letters: , , , etc.    Convert to base ten:   23  5633  AB123  1B20A     Convert the base-ten numbers to this system:   97  2021  5000      "
+},
+{
+  "id": "number-systems-problems-2-12",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-12",
+  "type": "Exercise",
+  "number": "3.5.1.12",
+  "title": "",
+  "body": "  Do tally marks fit our definition of a place-value number system? Justify your answer.   "
+},
+{
+  "id": "number-systems-problems-2-13",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-13",
+  "type": "Exercise",
+  "number": "3.5.1.13",
+  "title": "",
+  "body": "  Convert each number to the indicated base.   to base  to base  to base  to base  to base  to base    "
+},
+{
+  "id": "number-systems-problems-2-14",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-14",
+  "type": "Exercise",
+  "number": "3.5.1.14",
+  "title": "",
+  "body": "  Create your own number system: specify the digit set, the place-value rule (fixed base or mixed-base), and demonstrate how to write and interpret at least five example numbers. Include one example of addition in your system.   "
+},
+{
+  "id": "number-systems-problems-2-15",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-15",
+  "type": "Exercise",
+  "number": "3.5.1.15",
+  "title": "",
+  "body": "  Find so that the equality is true (specify in the named base).           "
+},
+{
+  "id": "number-systems-problems-2-16",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-16",
+  "type": "Exercise",
+  "number": "3.5.1.16",
+  "title": "",
+  "body": "  Count on your fingers in base two. What is the largest number you can represent? What about base three? Base four?   "
+},
+{
+  "id": "number-systems-problems-2-17",
+  "level": "2",
+  "url": "WholeNumbers-6.html#number-systems-problems-2-17",
+  "type": "Exercise",
+  "number": "3.5.1.17",
+  "title": "",
+  "body": "  Fill the blank with a number written in the indicated base so that the statement is true.           "
+},
+{
+  "id": "arithmetic-operations-practice-2-1",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-1",
+  "type": "Exercise",
+  "number": "3.5.2.1",
+  "title": "",
+  "body": "  Compute mentally.        "
+},
+{
+  "id": "arithmetic-operations-practice-2-2",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-2",
+  "type": "Exercise",
+  "number": "3.5.2.2",
+  "title": "",
+  "body": "  Compute each difference (you may use a “same-change” strategy).        "
+},
+{
+  "id": "arithmetic-operations-practice-2-3",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-3",
+  "type": "Exercise",
+  "number": "3.5.2.3",
+  "title": "",
+  "body": "  Circle the larger value.   or  or  or    "
+},
+{
+  "id": "arithmetic-operations-practice-2-4",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-4",
+  "type": "Exercise",
+  "number": "3.5.2.4",
+  "title": "",
+  "body": "  Compute using the distributive property (partial products).        "
+},
+{
+  "id": "arithmetic-operations-practice-2-5",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-5",
+  "type": "Exercise",
+  "number": "3.5.2.5",
+  "title": "",
+  "body": "  Evaluate.      "
+},
+{
+  "id": "arithmetic-operations-practice-2-6",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-6",
+  "type": "Exercise",
+  "number": "3.5.2.6",
+  "title": "",
+  "body": "  Compute.        "
+},
+{
+  "id": "arithmetic-operations-practice-2-7",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-7",
+  "type": "Exercise",
+  "number": "3.5.2.7",
+  "title": "",
+  "body": "  Find the quotient and remainder (so with ).        "
+},
+{
+  "id": "arithmetic-operations-practice-2-8",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-8",
+  "type": "Exercise",
+  "number": "3.5.2.8",
+  "title": "",
+  "body": "  A bus holds 42 students.   There are 389 students. How many full buses are needed? How many students ride on the last bus?  If every bus must be either full or empty, how many buses are required for 389 students?    "
+},
+{
+  "id": "arithmetic-operations-practice-2-9",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-9",
+  "type": "Exercise",
+  "number": "3.5.2.9",
+  "title": "",
+  "body": "  Compute using the distributive property.       "
+},
+{
+  "id": "arithmetic-operations-practice-2-10",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-10",
+  "type": "Exercise",
+  "number": "3.5.2.10",
+  "title": "",
+  "body": "  Compute mentally.        "
+},
+{
+  "id": "arithmetic-operations-practice-2-11",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-11",
+  "type": "Exercise",
+  "number": "3.5.2.11",
+  "title": "",
+  "body": "  Estimate, then compute exactly.        "
+},
+{
+  "id": "arithmetic-operations-practice-2-12",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-12",
+  "type": "Exercise",
+  "number": "3.5.2.12",
+  "title": "",
+  "body": "  Compute.      "
+},
+{
+  "id": "arithmetic-operations-practice-2-13",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-13",
+  "type": "Exercise",
+  "number": "3.5.2.13",
+  "title": "",
+  "body": "  Find the missing number.        "
+},
+{
+  "id": "arithmetic-operations-practice-2-14",
+  "level": "2",
+  "url": "WholeNumbers-6.html#arithmetic-operations-practice-2-14",
+  "type": "Exercise",
+  "number": "3.5.2.14",
+  "title": "",
+  "body": "  For each pair with , find integers and such that and .        "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-1",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-1",
+  "type": "Exercise",
+  "number": "3.5.3.1",
+  "title": "",
+  "body": "  Evaluate (use standard order of operations).         "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-2",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-2",
+  "type": "Exercise",
+  "number": "3.5.3.2",
+  "title": "",
+  "body": "  State whether the set is closed under the operation. If not, give a counterexample.   under subtraction  under division  under multiplication  under addition    "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-3",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-3",
+  "type": "Exercise",
+  "number": "3.5.3.3",
+  "title": "",
+  "body": "  Use commutativity to compute mentally.         "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-4",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-4",
+  "type": "Exercise",
+  "number": "3.5.3.4",
+  "title": "",
+  "body": "  Regroup using associativity to make the computation easier.         "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-5",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-5",
+  "type": "Exercise",
+  "number": "3.5.3.5",
+  "title": "",
+  "body": "  Name the property that justifies each equality (commutative, associative, distributive, identity, or zero property).      "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-6",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-6",
+  "type": "Exercise",
+  "number": "3.5.3.6",
+  "title": "",
+  "body": "  Expand using the distributive property and simplify.      (expand to four terms)    "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-7",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-7",
+  "type": "Exercise",
+  "number": "3.5.3.7",
+  "title": "",
+  "body": "  Factor using the distributive property.         "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-8",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-8",
+  "type": "Exercise",
+  "number": "3.5.3.8",
+  "title": "",
+  "body": "  For the indicated set, give the identity element for the operation and the inverse of the given element (if it exists in the set).   Set , operation: addition; inverse of  Set , operation: multiplication; inverse of  Set , operation: addition; inverse of  Set , operation: multiplication; inverse of    "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-9",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-9",
+  "type": "Exercise",
+  "number": "3.5.3.9",
+  "title": "",
+  "body": "  Compute.         "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-10",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-10",
+  "type": "Exercise",
+  "number": "3.5.3.10",
+  "title": "",
+  "body": "  Give whole-number examples showing that the property fails for the operation.   Subtraction is not commutative.  Division is not commutative.  Subtraction is not associative.  Division is not associative.    "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-11",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-11",
+  "type": "Exercise",
+  "number": "3.5.3.11",
+  "title": "",
+  "body": "  Fill in the blanks so the statements are true (whole numbers).         "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-12",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-12",
+  "type": "Exercise",
+  "number": "3.5.3.12",
+  "title": "",
+  "body": "  Write each as with .        "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-13",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-13",
+  "type": "Exercise",
+  "number": "3.5.3.13",
+  "title": "",
+  "body": "  Compute using distribution or regrouping for efficiency.         "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-14",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-14",
+  "type": "Exercise",
+  "number": "3.5.3.14",
+  "title": "",
+  "body": "  Mark each statement True or False (whole numbers). If false, give a counterexample.      is defined  for    "
+},
+{
+  "id": "properties-of-arithmetic-practice-2-15",
+  "level": "2",
+  "url": "WholeNumbers-6.html#properties-of-arithmetic-practice-2-15",
+  "type": "Exercise",
+  "number": "3.5.3.15",
+  "title": "",
+  "body": "  Perform the indicated operation.   Expand:  Factor:  Evaluate:  Simplify:    "
+},
+{
+  "id": "integers-practice-tailored-2-1",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-1",
+  "type": "Exercise",
+  "number": "3.5.4.1",
+  "title": "",
+  "body": "  Place on a number line and order from least to greatest.        "
+},
+{
+  "id": "integers-practice-tailored-2-2",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-2",
+  "type": "Exercise",
+  "number": "3.5.4.2",
+  "title": "",
+  "body": "  Compute. You may use a number-line or counter model.         "
+},
+{
+  "id": "integers-practice-tailored-2-3",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-3",
+  "type": "Exercise",
+  "number": "3.5.4.3",
+  "title": "",
+  "body": "  Rewrite each difference as a sum, then compute.         "
+},
+{
+  "id": "integers-practice-tailored-2-4",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-4",
+  "type": "Exercise",
+  "number": "3.5.4.4",
+  "title": "",
+  "body": "  Fill in the integer that makes each true.         "
+},
+{
+  "id": "integers-practice-tailored-2-5",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-5",
+  "type": "Exercise",
+  "number": "3.5.4.5",
+  "title": "",
+  "body": "  Compute.         "
+},
+{
+  "id": "integers-practice-tailored-2-6",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-6",
+  "type": "Exercise",
+  "number": "3.5.4.6",
+  "title": "",
+  "body": "  Use the distributive property to expand or factor.     (factor)  (factor out a common integer)    "
+},
+{
+  "id": "integers-practice-tailored-2-7",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-7",
+  "type": "Exercise",
+  "number": "3.5.4.7",
+  "title": "",
+  "body": "  Complete the steps to show using distribution.      "
+},
+{
+  "id": "integers-practice-tailored-2-8",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-8",
+  "type": "Exercise",
+  "number": "3.5.4.8",
+  "title": "",
+  "body": "  Fill in the blanks to show .      "
+},
+{
+  "id": "integers-practice-tailored-2-9",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-9",
+  "type": "Exercise",
+  "number": "3.5.4.9",
+  "title": "",
+  "body": "  Verify each by computing both sides (commutative\/associative\/distributive).      "
+},
+{
+  "id": "integers-practice-tailored-2-10",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-10",
+  "type": "Exercise",
+  "number": "3.5.4.10",
+  "title": "",
+  "body": "  Compute the quotient (integers); if not an integer, write “not an integer.”         "
+},
+{
+  "id": "integers-practice-tailored-2-11",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-11",
+  "type": "Exercise",
+  "number": "3.5.4.11",
+  "title": "",
+  "body": "  Answer each; show the integer arithmetic.   At 6 AM it is and the temperature rises by noon. What is the noon temperature?  A hiker is at m and ascends m. New elevation?  A company has a total loss of over 12 months. What is the average monthly loss?    "
+},
+{
+  "id": "integers-practice-tailored-2-12",
+  "level": "2",
+  "url": "WholeNumbers-6.html#integers-practice-tailored-2-12",
+  "type": "Exercise",
+  "number": "3.5.4.12",
+  "title": "",
+  "body": "  Compute.         "
+},
+{
+  "id": "whole-numbers-explanatory-2-1",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-1",
+  "type": "Exercise",
+  "number": "3.5.5.1",
+  "title": "",
+  "body": "  A student says, “The digit always means eight.” Explain why this is not generally true by comparing , , and . In each case, state the value contributed by the 8 -digit (or explain why it is not a valid digit).   "
+},
+{
+  "id": "whole-numbers-explanatory-2-2",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-2",
+  "type": "Exercise",
+  "number": "3.5.5.2",
+  "title": "",
+  "body": "  Explain why and represent different numbers. Describe a blocks\/regrouping picture that makes the difference unavoidable, and compute both values in base ten.   "
+},
+{
+  "id": "whole-numbers-explanatory-2-3",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-3",
+  "type": "Exercise",
+  "number": "3.5.5.3",
+  "title": "",
+  "body": "  In base five, converting gives . Explain in words why the “repeated division by 5 with remainders” algorithm produces the same digits you see when you regroup ones → longs → squares in a blocks picture.   "
+},
+{
+  "id": "whole-numbers-explanatory-2-4",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-4",
+  "type": "Exercise",
+  "number": "3.5.5.4",
+  "title": "",
+  "body": "  “Same-change” subtraction: A student claims because adding to both numbers doesn’t change the answer. Do you agree? Explain why this strategy works (or when it doesn’t), using an equation or number-line argument.   "
+},
+{
+  "id": "whole-numbers-explanatory-2-5",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-5",
+  "type": "Exercise",
+  "number": "3.5.5.5",
+  "title": "",
+  "body": "  Two students compute in different ways:     Explain why both methods are valid and identify the properties used in each method.   "
+},
+{
+  "id": "whole-numbers-explanatory-2-6",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-6",
+  "type": "Exercise",
+  "number": "3.5.5.6",
+  "title": "",
+  "body": "  Explain why doubling–halving keeps a product the same: show that whenever is even, and discuss what changes if is odd (give a specific example).   "
+},
+{
+  "id": "whole-numbers-explanatory-2-7",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-7",
+  "type": "Exercise",
+  "number": "3.5.5.7",
+  "title": "",
+  "body": "  What is the difference between an identity and an inverse for an operation? Why does every integer have an additive inverse but not every integer has a multiplicative inverse (within the integers)? Give examples that include , , and .   "
+},
+{
+  "id": "whole-numbers-explanatory-2-8",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-8",
+  "type": "Exercise",
+  "number": "3.5.5.8",
+  "title": "",
+  "body": "  Use an area\/array (“chocolate bar”) model to justify . Then extend your explanation to as “cuts” in two directions.   "
+},
+{
+  "id": "whole-numbers-explanatory-2-9",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-9",
+  "type": "Exercise",
+  "number": "3.5.5.9",
+  "title": "",
+  "body": "  Consider and . Explain why the first is always (give a property or model) and the second is undefined (refer to what division would have to mean).   "
+},
+{
+  "id": "whole-numbers-explanatory-2-10",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-10",
+  "type": "Exercise",
+  "number": "3.5.5.10",
+  "title": "",
+  "body": "  Two students disagree about . One says “subtract a negative means the answer is negative,” the other says “subtract a negative means add the positive.” Who is right? Explain with a model (number line or chips) and compute the result.   "
+},
+{
+  "id": "whole-numbers-explanatory-2-11",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-11",
+  "type": "Exercise",
+  "number": "3.5.5.11",
+  "title": "",
+  "body": "  Complete a proof that using distribution. Fill in the blanks and explain each step in words.      "
+},
+{
+  "id": "whole-numbers-explanatory-2-12",
+  "level": "2",
+  "url": "WholeNumbers-6.html#whole-numbers-explanatory-2-12",
+  "type": "Exercise",
+  "number": "3.5.5.12",
+  "title": "",
+  "body": "  A classmate orders integers by absolute value and gets: “because is the largest absolute value.” Explain the mistake and give the correct ordering, justifying your answer.   "
 },
 {
   "id": "sec-AdditionAlgorithms",
