@@ -1819,5 +1819,694 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         </subsection>
         <video youtube="2P3okckFCAE" />
     </section>
+    
+    <section> 
+<title>Supplementary Exercises</title>
+<subsection xml:id="addition-algorithm-problems">
+  <title>Addition Algorithms: Practice</title>
+  <exercises>
+
+    <!-- 1 -->
+    <exercise>
+      <statement>
+        <p>Complete each sum using any method you like.</p>
+        <ol marker="a">
+          <li><m>555 + 777</m></li>
+          <li><m>13 + 23</m></li>
+          <li><m>467 + 809</m></li>
+          <li><m>88701 + 4097</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 2 -->
+    <exercise>
+      <statement>
+        <p>Construct an addition table for base four (digits <m>0,1,2,3</m>) up to and including <m>3_{four}</m>.</p>
+      </statement>
+    </exercise>
+
+    <!-- 3 -->
+    <exercise>
+      <statement>
+        <p>Construct an addition table for base eight (digits <m>0,1,\dots,7</m>) up to and including <m>7_{eight}</m>.</p>
+      </statement>
+    </exercise>
+
+    <!-- 4 -->
+    <exercise>
+      <statement>
+        <p>Construct an addition table for base twelve (digits <m>0,1,\dots,9,A,B</m>) up to and including <m>B_{twelve}</m>.</p>
+      </statement>
+    </exercise>
+
+    <!-- 5 -->
+    <exercise>
+      <statement>
+        <p>For each sum, <em>draw a place-value picture</em> (blocks or grouped dots) and compute the result, regrouping appropriately for the base.</p>
+        <ol marker="a">
+          <li><m>238_{ten} + 167_{ten}</m></li>
+          <li><m>132_{four} + 23_{four}</m></li>
+          <li><m>2B7_{twelve} + 59_{twelve}</m></li>
+          <li><m>675_{eight} + 47_{eight}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 6 -->
+    <exercise>
+      <statement>
+        <p>Using the <em>standard addition algorithm</em>, add and regroup appropriately for the base.</p>
+        <ol marker="a">
+          <li><m>152_{ten} + 146_{ten}</m></li>
+          <li><m>634_{ten} + 237_{ten}</m></li>
+          <li><m>245_{eight} + 367_{eight}</m></li>
+          <li><m>245_{twelve} + 367_{twelve}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 7 -->
+    <exercise>
+      <statement>
+        <p>Using the <em>partial sums algorithm</em>, add and regroup appropriately for the base.</p>
+        <ol marker="a">
+          <li><m>141_{ten} + 431_{ten}</m></li>
+          <li><m>416_{ten} + 235_{ten}</m></li>
+          <li><m>331_{four} + 231_{four}</m></li>
+          <li><m>472_{twelve} + 801_{twelve}</m></li>
+          <li><m>341_{eight} + 777_{eight}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 8 -->
+    <exercise>
+      <statement>
+        <p>Using the <em>lattice addition algorithm</em>, add and regroup appropriately for the base.</p>
+        <ol marker="a">
+          <li><m>934_{ten} + 374_{ten}</m></li>
+          <li><m>799_{ten} + 110_{ten}</m></li>
+          <li><m>333_{four} + 320_{four}</m></li>
+          <li><m>8A9_{twelve} + BBB_{twelve}</m></li>
+          <li><m>751_{eight} + 27_{eight}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 9 -->
+    <exercise>
+      <statement>
+        <p>For each sum, decide which algorithm (standard, partial sums, or lattice) is most appropriate and compute the total.</p>
+        <ol marker="a">
+          <li><m>1222_{ten} + 237_{ten}</m></li>
+          <li><m>BBB_{twelve} + 437_{twelve}</m></li>
+          <li><m>307_{eight} + 561_{eight}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 10 -->
+    <exercise>
+      <statement>
+        <p>Daniel is from Twelvesburg (base twelve). His friend is from Eightsville (base eight). Daniel counts <m>37</m> benches in his area and his friend counts <m>24</m>. Daniel says there are <m>5B</m> benches in total, while his friend says there are <m>63</m>. Are either of them correct? Explain clearly which base each numeral is in and justify your conclusion.</p>
+      </statement>
+    </exercise>
+
+    <!-- 11 -->
+    <exercise>
+      <statement>
+        <p>In base ten, investigate the <em>largest possible carry</em> when adding many numbers in a single column.</p>
+        <ol marker="a">
+          <li>When adding four addends, what is the largest carry from one column to the next?</li>
+          <li>Find the largest possible carry for 5, 6, and 7 addends. Describe any pattern you notice.</li>
+          <li>Does your pattern continue for more addends? If not, propose a corrected pattern.</li>
+          <li>How would this carry behavior change in other bases (e.g., base twelve)? Explain.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 12 -->
+    <exercise>
+      <statement>
+        <p>If you were teaching a child how to add, where would you start? Outline a short progression of practice problems (with numbers you choose) and say why each step prepares for the next.</p>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+
+<subsection xml:id="subtraction-algorithm-problems">
+  <title>Subtraction Algorithms: Practice</title>
+  <exercises>
+
+    <!-- 1: Standard algorithm -->
+    <exercise>
+      <statement>
+        <p>Using the <em>standard subtraction algorithm</em>, find each difference. Regroup appropriately for the stated base.</p>
+        <ol marker="a">
+          <li><m>158_{ten} - 146_{ten}</m></li>
+          <li><m>634_{ten} - 237_{ten}</m></li>
+          <li><m>745_{eight} - 367_{eight}</m></li>
+          <li><m>B45_{twelve} - 367_{twelve}</m></li>
+          <li><m>311_{four} - 302_{four}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 2: Partial differences -->
+    <exercise>
+      <statement>
+        <p>Using the <em>partial difference algorithm</em>, perform each subtraction. Regroup appropriately for the base.</p>
+        <ol marker="a">
+          <li><m>431_{ten} - 141_{ten}</m></li>
+          <li><m>416_{ten} - 235_{ten}</m></li>
+          <li><m>331_{four} - 123_{four}</m></li>
+          <li><m>B72_{twelve} - 801_{twelve}</m></li>
+          <li><m>341_{eight} - 77_{eight}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 3: Same-change subtraction -->
+    <exercise>
+      <statement>
+        <p>Using the <em>same change</em> strategy (add the same amount to both numbers to make the subtraction easier), compute each difference. Regroup appropriately for the base.</p>
+        <ol marker="a">
+          <li><m>449_{ten} - 277_{ten}</m></li>
+          <li><m>993_{ten} - 685_{ten}</m></li>
+          <li><m>860_{twelve} - 7B8_{twelve}</m></li>
+          <li><m>320_{four} - 133_{four}</m></li>
+          <li><m>567_{eight} - 373_{eight}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 4: Equal additions (complements) -->
+    <exercise>
+      <statement>
+        <p>Using the <em>equal additions</em> algorithm (adding a full base group to the subtrahend and minuend to avoid borrowing), perform each subtraction. Regroup appropriately for the base.</p>
+        <ol marker="a">
+          <li><m>934_{ten} - 374_{ten}</m></li>
+          <li><m>747_{ten} - 159_{ten}</m></li>
+          <li><m>100_{four} - 22_{four}</m></li>
+          <li><m>8A9_{twelve} - 7BB_{twelve}</m></li>
+          <li><m>751_{eight} - 27_{eight}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 5: Choose an algorithm -->
+    <exercise>
+      <statement>
+        <p>For each subtraction, choose the algorithm (standard, partial differences, same change, or equal additions) that you think is most efficient. Compute the result and briefly justify your choice.</p>
+        <ol marker="a">
+          <li><m>1222_{ten} - 237_{ten}</m></li>
+          <li><m>4370_{twelve} - BBB_{twelve}</m></li>
+          <li><m>707_{eight} - 561_{eight}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 6: Error spotting -->
+    <exercise>
+      <statement>
+        <p>Identify and explain the error(s) in each student’s subtraction setup (if any). Describe how to correct the work.</p>
+        <ol marker="a">
+          <li>
+            <p><m>508_{ten} - 479_{ten}</m></p>
+            <p>
+              <md>
+                <mrow>\phantom{-}\;{}^{4}\!5\;\;{}^{1}\!0\;\;{}^{1}\!8</mrow>
+                <mrow>- \;\;\;\;4\;\;\;\;7\;\;\;\;9</mrow>
+                <mrow>\phantom{-}\;\;\;\;\;\;\;3\;\;\;\;9</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p><m>546_{ten} - 309_{ten}</m></p>
+            <p>
+              <md>
+                <mrow>\phantom{-}\;5\;\;{}^{1}\!4\;\;{}^{1}\!6</mrow>
+                <mrow>- \;{}^{4}\!3\;\;{}^{10}\!0\;\;9</mrow>
+                <mrow>\phantom{-}\;\;1\;\;\;\;4\;\;\;\;7</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p><m>781_{twelve} - 434_{twelve}</m></p>
+            <p>
+              <md>
+                <mrow>\phantom{-}\;7\;\;8\;\;{}^{1}\!1</mrow>
+                <mrow>\phantom{-}\;4\;\;{}^{4}\!3\;\;4</mrow>
+                <mrow>\phantom{-}\;\;3\;\;\;4\;\;\;9</mrow>
+              </md>
+            </p>
+          </li>
+          <li>
+            <p><m>639_{ten} - 42_{ten}</m></p>
+            <p>
+              <md>
+                <mrow>\phantom{-}\;6\;\;{}^{1}\!3\;\;9</mrow>
+                <mrow>- \;\;\;\;\;4\;\;\;2</mrow>
+                <mrow>\phantom{-}\;6\;\;\;9\;\;\;7</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 7: When the subtrahend is larger -->
+    <exercise>
+      <statement>
+        <p>What if the number being subtracted is larger than the one you subtract from? Consider <m>456 - 567</m>.</p>
+        <ol marker="a">
+          <li>Compute <m>567 - 456</m>.</li>
+          <li>Compute <m>456 - 567</m> on a calculator. What do you notice? How could an algorithm produce the same result?</li>
+          <li>Let <m>a,b \in \mathbb{N}</m> with <m>a &gt; b</m>. Express <m>b - a</m> in terms of <m>a - b</m> and explain why this helps.</li>
+          <li>Write clear steps for handling cases with a negative result, using your preferred subtraction algorithm.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 8: Mixed-base business story -->
+    <exercise>
+      <statement>
+        <p>Dave’s company mixes bases in its books. Human Resources reports <m>12800_{twelve}</m> dollars in expenses; Marketing reports <m>20300_{four}</m> dollars in expenses.</p>
+        <ol marker="a">
+          <li>If revenue is <m>287804_{twelve}</m>, compute the profit (in base twelve). Show how you combined expenses from different bases.</li>
+          <li>Next year, expenses stay the same but revenue is <m>100000_{ten}</m>. Dave claims the profit is <m>A9014</m> (base twelve). Find the actual profit (state the base) and explain Dave’s error.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+
+<subsection xml:id="multiplication-algorithm-problems">
+  <title>Multiplication Algorithms: Practice</title>
+  <exercises>
+
+    <!-- 1: Exponent laws -->
+    <exercise>
+      <statement>
+        <p>Use exponent laws to simplify each product (same base: add exponents).</p>
+        <ol marker="a">
+          <li><m>10^8 \times 10^3</m></li>
+          <li><m>8^{17} \times 8^9</m></li>
+          <li><m>7^9 \times 7^7 \times 7^3</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 2: Assoc/commute to evaluate -->
+    <exercise>
+      <statement>
+        <p>Evaluate using associativity and commutativity of multiplication.</p>
+        <ol marker="a">
+          <li><m>300 \times 700</m></li>
+          <li><m>9 \times 3000</m></li>
+          <li><m>3400 \times 200</m></li>
+          <li><m>400 \times 20 \times 30</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 3: Partial products -->
+    <exercise>
+      <statement>
+        <p>Use the <em>partial products</em> method to evaluate.</p>
+        <ol marker="a">
+          <li><m>33 \times 68</m></li>
+          <li><m>450 \times 387</m></li>
+          <li><m>9500 \times 4567</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 4: Standard algorithm -->
+    <exercise>
+      <statement>
+        <p>Use the <em>standard multiplication algorithm</em> to evaluate.</p>
+        <ol marker="a">
+          <li><m>45 \times 80</m></li>
+          <li><m>608 \times 789</m></li>
+          <li><m>3249 \times 5213</m></li>
+          <li><m>399 \times 457 \times 68</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 5: Russian peasant (halving/doubling) -->
+    <exercise>
+      <statement>
+        <p>Use the <em>Russian multiplication</em> (halving/doubling, strike out even rows) algorithm.</p>
+        <ol marker="a">
+          <li><m>11 \times 47</m></li>
+          <li><m>730 \times 888</m></li>
+          <li><m>16 \times 543</m></li>
+          <li><m>32 \times 64 \times 435</m> (hint: group powers of two)</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 6: Algorithm fit -->
+    <exercise>
+      <statement>
+        <p>Briefly discuss: for what kinds of problems is each algorithm (partial products, standard, Russian) most convenient?</p>
+      </statement>
+    </exercise>
+
+    <!-- 7: Base-4 table -->
+    <exercise>
+      <statement>
+        <p>Create a multiplication table in base four (digits <m>0,1,2,3</m>) up to and including <m>3_{four}</m>.</p>
+      </statement>
+    </exercise>
+
+    <!-- 8: Base-8 table -->
+    <exercise>
+      <statement>
+        <p>Create a multiplication table in base eight (digits <m>0,1,\dots,7</m>) up to and including <m>7_{eight}</m>.</p>
+      </statement>
+    </exercise>
+
+    <!-- 9: Base-12 table -->
+    <exercise>
+      <statement>
+        <p>Create a multiplication table in base twelve (digits <m>0,1,\dots,9,A,B</m>) up to and including <m>B_{twelve}</m>.</p>
+      </statement>
+    </exercise>
+
+    <!-- 10: Base-specific products -->
+    <exercise>
+      <statement>
+        <p>Evaluate without converting bases (use your tables from the previous exercises).</p>
+        <ol marker="a">
+          <li><m>14_{twelve} \times 89_{twelve}</m></li>
+          <li><m>373_{eight} \times 762_{eight}</m></li>
+          <li><m>222_{four} \times 231_{four}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 11: Recover factors from partial products -->
+    <exercise>
+      <statement>
+        <p>Given the partial products from a standard-algorithm layout, determine the multiplicands.</p>
+        <ol marker="a">
+          <li>Top row shows <m>831</m>. The three partial products written beneath are <m>600</m>, <m>18{,}000</m>, and <m>4{,}800{,}000</m> (shifted by place). What was the other factor?</li>
+          <li>Top row shows <m>456</m>. The partial products include <m>18</m>, <m>150</m>, <m>1200</m>, <m>120</m>, <m>1000</m>, <m>8000</m>, <m>60</m>, <m>5000</m>, <m>40{,}000</m> (each appropriately shifted). What was the other factor?</li>
+          <li>Top row shows <m>139</m>. The partial products include <m>18</m>, <m>60</m>, <m>200</m>, <m>630</m>, <m>2100</m>, <m>7000</m>, <m>6300</m>, <m>21{,}000</m>, <m>70{,}000</m>. What was the other factor?</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 12: Error spotting in products -->
+    <exercise>
+      <statement>
+        <p>Identify and explain the error(s), if any, in each student product.</p>
+        <ol marker="a">
+          <li>For <m>954 \times 211</m>, a student lists nine one-digit lines (4, 5, 9, 4, 5, 9, 8, 10, 18) and sums to get <m>72</m>. What place-value mistake is being made?</li>
+          <li>For <m>761 \times 990</m>, a student treats <m>990</m> as <m>99</m> and forgets the trailing zero shift. Explain how place shifting should work and what the correct structure of partial products is.</li>
+          <li>For <m>750 \times 878</m>, the partial products mishandle multiples of <m>10</m> and <m>40</m>. Explain how to organize the computation so every tens/hundreds place is accounted for correctly.</li>
+          <li>For <m>634 \times 272</m>, a neatly organized set of shifted partial products leads to the correct total. State why this layout is valid (identify the properties used).</li>
+        </ol>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+<subsection xml:id="division-algorithm-problems">
+  <title>Division Algorithms: Practice</title>
+  <exercises>
+
+    <!-- 1: Long division -->
+    <exercise>
+      <statement>
+        <p>Solve each using <em>long division</em>. Give quotient and remainder where appropriate.</p>
+        <ol marker="a">
+          <li><m>402 \div 6</m></li>
+          <li><m>783 \div 9</m></li>
+          <li><m>565 \div 7</m></li>
+          <li><m>888 \div 10</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 2: Short division -->
+    <exercise>
+      <statement>
+        <p>Solve each using <em>short division</em>. Give quotient and remainder where appropriate.</p>
+        <ol marker="a">
+          <li><m>755 \div 5</m></li>
+          <li><m>988 \div 3</m></li>
+          <li><m>441 \div 4</m></li>
+          <li><m>653 \div 7</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 3: Mixed divisors (mental/structure) -->
+    <exercise>
+      <statement>
+        <p>Compute each quotient (use any method: long division, factor the divisor, or estimation plus correction). Report quotient and remainder.</p>
+        <ol marker="a">
+          <li><m>525 \div 15</m></li>
+          <li><m>481 \div 13</m></li>
+          <li><m>1836 \div 25</m></li>
+          <li><m>1670 \div 11</m></li>
+          <li><m>67894 \div 8</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 4: Division in other bases -->
+    <exercise>
+      <statement>
+        <p>Solve each division <em>without converting to base ten</em>. Work directly in the stated base (a multiplication table in that base may help). Give quotient and remainder in the same base.</p>
+        <ol marker="a">
+          <li><m>11113_{four} \div 13_{four}</m></li>
+          <li><m>10123_{four} \div 22_{four}</m></li>
+          <li><m>1524_{eight} \div 6_{eight}</m></li>
+          <li><m>21224_{eight} \div 11_{eight}</m></li>
+          <li><m>4A56_{twelve} \div 6_{twelve}</m></li>
+          <li><m>BB67_{twelve} \div 10_{twelve}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 5: Fair sharing & divisibility reasoning -->
+    <exercise>
+      <statement>
+        <p>Steve has <m>566</m> cookies and wants to share them fairly among six friends (equal whole-number amounts).</p>
+        <ol marker="a">
+          <li>How many whole cookies does each friend get, and how many are left over?</li>
+          <li>Consider instead sharing between two people. Decide if this is possible <em>without</em> carrying out the full division, and explain your test.</li>
+          <li>Is sharing <m>501</m> cookies among three people possible without division? Explain your reasoning clearly (hint: examine a quick test using the digits).</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 6: Arithmetic with embedded division -->
+    <exercise>
+      <statement>
+        <p>Compute each expression. Show intermediate quotients (and remainders, if any) you use.</p>
+        <ol marker="a">
+          <li><m>(1232 \div 8) + 776</m></li>
+          <li><m>(6399 \div 9) - 254</m></li>
+          <li><m>(1778 \div 7) - 2344</m></li>
+          <li><m>(1040 \div 13) + (345 \times 7670)</m></li>
+          <li><m>(12345 \div 15) - (565 \times 887)</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+<subsection xml:id="arithmetic-algorithms-explanatory">
+  <title>Arithmetic Algorithms: Deeper Explanations</title>
+  <exercises>
+
+    <!-- 1: Addition — why column addition works in any base -->
+    <exercise>
+      <statement>
+        <p>Explain why the standard <em>column addition</em> algorithm is correct in base <m>b\ge 2</m>.</p>
+        <ol marker="a">
+          <li>State precisely what a “carry” represents in base <m>b</m>, and why its value is always an integer between <m>0</m> and <m>b-1</m>.</li>
+          <li>Justify that adding the units column and writing the remainder “mod <m>b</m>” with a carry of <m>\left\lfloor \dfrac{\text{column sum}}{b}\right\rfloor</m> preserves the total value of the sum.</li>
+          <li>Connect the algorithm to <em>expanded form</em> (powers of <m>b</m>) showing equality of values before and after carrying.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 2: Addition — standard vs partial sums -->
+    <exercise>
+      <statement>
+        <p>Show that the <em>partial sums</em> algorithm always produces the same result as the standard algorithm.</p>
+        <p>
+          <md>
+            <mrow>\text{Example: } 347 + 586 = (300+40+7) + (500+80+6)</mrow>
+            <mrow>\text{Explain why summing by place then carrying at the end equals carrying along the way.}</mrow>
+          </md>
+        </p>
+      </statement>
+    </exercise>
+
+    <!-- 3: Subtraction — “same-change” and invariants -->
+    <exercise>
+      <statement>
+        <p>Explain the <em>same-change subtraction</em> idea: replacing <m>a-b</m> with <m>(a+k)-(b+k)</m>.</p>
+        <ol marker="a">
+          <li>Prove algebraically that the difference is unchanged.</li>
+          <li>Give a base-ten number line model and a base-eight blocks model to illustrate the invariant.</li>
+          <li>Discuss when same-change is especially helpful (e.g., making the subtrahend a round number such as <m>1000,\, 100_{eight},\, 1{,}00_{twelve}</m>).</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 4: Subtraction — equal additions/complements -->
+    <exercise>
+      <statement>
+        <p>Equal additions (a.k.a. complements) avoids borrowing by adding a full base unit to both minuend and subtrahend in a column.</p>
+        <ol marker="a">
+          <li>Explain why adding <m>b</m> to one column of both numbers preserves the overall difference.</li>
+          <li>Describe the relationship between equal additions in base ten and the <m>9</m>’s complement method; generalize to base <m>b</m> and <m>(b-1)</m>’s complements.</li>
+          <li>Give a worked example in base twelve and narrate each invariant you are using.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 5: Multiplication — distributive/area, partial products, standard -->
+    <exercise>
+      <statement>
+        <p>Connect three models of multiplication: area/array, partial products, and the standard algorithm.</p>
+        <ol marker="a">
+          <li>Using an area diagram, decompose <m>(a_1b + a_0)\times (c_1b + c_0)</m> and write the sum of four partial products.</li>
+          <li>Explain how the <em>shifts</em> in the standard algorithm correspond to multiplying by powers of <m>b</m>.</li>
+          <li>Why does the order of writing partial products not affect the final sum? Name the properties used.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 6: Multiplication — lattice addition/multiplication insight -->
+    <exercise>
+      <statement>
+        <p>Lattice methods reorganize partial products. Explain why lattice <em>addition</em> or <em>multiplication</em> produces the same result as the standard algorithm.</p>
+        <ol marker="a">
+          <li>Identify where each digit–digit product appears in the lattice and which place value it contributes to.</li>
+          <li>Explain the diagonal carries as “collecting equal powers of <m>b</m>.”</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 7: Multiplication — Russian peasant correctness -->
+    <exercise>
+      <statement>
+        <p>Russian (peasant) multiplication repeatedly halves one factor and doubles the other, summing only rows with odd halves.</p>
+        <ol marker="a">
+          <li>Explain why <m>a\times b = \sum 2^k \cdot (\text{odd-part contribution})</m> corresponds to the binary expansion of one factor.</li>
+          <li>Prove correctness by induction on the number of halving steps, or by writing <m>b</m> in base two.</li>
+          <li>Give an example where this method is faster than the standard algorithm and an example where it is slower, and explain why.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 8: Division — why long division works in base b -->
+    <exercise>
+      <statement>
+        <p>Justify the <em>long division</em> algorithm in base <m>b</m>.</p>
+        <ol marker="a">
+          <li>State what each quotient digit represents and why choosing the largest digit that “fits” is a greedy but correct step.</li>
+          <li>Explain why the remainder at each stage is strictly smaller than the divisor (in base <m>b</m> units), ensuring termination.</li>
+          <li>Relate the algorithm to writing the dividend as <m>q\cdot d + r</m> with <m>0\le r&lt;d</m> at each truncated place.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 9: Division — short division and factoring the divisor -->
+    <exercise>
+      <statement>
+        <p>Short division often tacitly factors the divisor or performs mental carries.</p>
+        <ol marker="a">
+          <li>Explain how dividing by <m>25</m> can be transformed into multiplying by <m>4</m> and dividing by <m>100</m>, and why place value makes this efficient.</li>
+          <li>Give an example where factoring the divisor into primes yields a faster mental computation than straight long division.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 10: Cross-base regrouping behaviors -->
+    <exercise>
+      <statement>
+        <p>Compare carrying/borrowing behavior across bases.</p>
+        <ol marker="a">
+          <li>Give the maximum possible carry from a single column when adding <m>k</m> <em>two-digit</em> base-<m>b</m> numbers (justify your bound in terms of <m>b</m> and <m>k</m>).</li>
+          <li>Describe a subtraction example in base eight where equal additions substantially reduces the number of borrows compared to the standard method; explain why.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 11: Choosing the “best” algorithm -->
+    <exercise>
+      <statement>
+        <p>Different algorithms shine in different situations. For each scenario, choose an algorithm and justify:</p>
+        <ol marker="a">
+          <li>Multiply <m>250\times 48</m>.</li>
+          <li>Subtract <m>10{,}000 - 4{,}997</m>.</li>
+          <li>Divide <m>1{,}836\div 25</m>.</li>
+          <li>Multiply <m>8A9_{twelve}\times BBB_{twelve}</m>.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 12: Diagnosing student work -->
+    <exercise>
+      <statement>
+        <p>Two students present work:</p>
+        <ol marker="a">
+          <li>Student A multiplies <m>340\times 206</m> and writes partial products <m>6{,}80{,}4</m> (digitwise) with no shifting. Identify the misconception and rewrite the computation correctly, explaining the role of place-value shifts.</li>
+          <li>Student B computes <m>7003 - 5687</m> by “same-change” as <m>7000 - 5684</m> and then subtracts to get <m>316</m>. Is the method valid? If so, state the invariant and fix any arithmetic mistakes; if not, explain the flaw.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 13: Prove-or-explain mini -->
+    <exercise>
+      <statement>
+        <p>Provide a concise proof or explanation:</p>
+        <ol marker="a">
+          <li>In any base <m>b\ge 2</m>, lattice multiplication is just the distributive law applied to expanded forms.</li>
+          <li>For integers, the remainder after division by <m>d\ne 0</m> is unique with <m>0\le r&lt;|d|</m>.</li>
+          <li>Partial sums and partial differences are both instances of associativity (grouping by like place values).</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 14: Estimation and bounds as error checks -->
+    <exercise>
+      <statement>
+        <p>Explain how to use estimation to catch algorithmic slips.</p>
+        <ol marker="a">
+          <li>Give an upper and lower bound for <m>608\times 789</m> using one-digit rounding, and explain how such bounds can reveal place-shift errors.</li>
+          <li>Give a bound check for <m>67894\div 8</m> that would flag a misplaced quotient digit.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <!-- 15: Division in other bases — greedy choice -->
+    <exercise>
+      <statement>
+        <p>In base twelve, outline how you would perform <m>4A56_{twelve}\div 6_{twelve}</m> and justify the first quotient digit <em>without</em> converting to base ten. What comparisons are you making between base-twelve multiples of <m>6</m> and the leading part of the dividend?</p>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+
+
+
+
+    </section>
 
 </chapter>

@@ -2,7 +2,7 @@
 
 
     <chapter xml:id="test">
-        <title>Sample Chapter: The Language of Mathematics</title>
+        <title>The Language of Mathematics</title>
             <section xml:id="IntroToLogic">
                 <title>Intro To Logic</title>
                     <objectives permid="dEf" xml:id="objectives-structures">

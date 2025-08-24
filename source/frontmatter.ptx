@@ -6,9 +6,9 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>Me</personname>
-      <department>My department</department>
-      <institution>My school</institution>
+      <personname>Shannon Ezzat</personname>
+      <department>Department of Mathematics Physics and Geology</department>
+      <institution>Cape Breton University</institution>
     </author>
     <date><today/></date>
   </titlepage>
@@ -24,7 +24,7 @@
       <!-- include a license, such as the cc-by-sa license shown below -->
       <!-- so people reading your book know how they can use it.       -->
       <year>2020<ndash/>2021</year>
-      <holder>Me</holder>
+      <holder>Shannon Ezzat</holder>
       <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
       <shortlicense>
         <!-- <image source="../images/by-sa.png" width="15%"/>  -->
@@ -64,4 +64,3 @@
 
   <!-- You can have more than one preface. -->
 </frontmatter>
-

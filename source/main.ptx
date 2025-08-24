@@ -14,8 +14,8 @@
   <!-- to some short (non-spaced) description of your book         -->
   <book xml:id="my-great-book">
     <!-- The book needs a title and can have a subtitle  -->
-    <title>Math For Elementary School Teachers</title>
-    <subtitle> </subtitle>
+    <title>A University-Level Understanding of Number</title>
+    <subtitle> with an eye towards elementary education</subtitle>
 
     <!-- Now we include files containing each main devision.       -->
 
