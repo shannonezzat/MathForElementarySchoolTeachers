@@ -715,7 +715,644 @@ Finally, applying the negative exponent rule, we get <m>\dfrac{1}{2^{1} \cdot 3^
 
 
 
-    </section>    
+    </section>   
+    
+    <section>
+<title>Proportional Reasoning</title>
+<subsection xml:id="subsec-RatioProportionIntro">
+    <title>Introduction to Ratios, Proportions, and Rates</title>
+
+    <objectives xml:id="objectives-ratios-rates-proportions">
+  <title>Learning Objectives</title>
+  <introduction>
+    <p>
+      In this section, you will explore how ratios, rates, and proportions can be used to represent and solve a wide variety of mathematical and real-world problems.
+    </p>
+  </introduction>
+  <ol>
+    <li>Differentiate between ratios, rates, and proportions, and identify their appropriate contexts.</li>
+    <li>Simplify ratios and calculate unit rates from real-world data.</li>
+    <li>Set up and solve proportions using equivalent ratios or cross multiplication.</li>
+    <li>Use proportions to solve problems involving percentages, recipes, speed, grading, and scale.</li>
+    <li>Apply rate-based reasoning to combined work problems and other compound applications.</li>
+  </ol>
+</objectives>
+    <p>
+        Ratios, proportions, and rates are ideas that connect numbers to the real world. They help us compare quantities, scale figures up or down, and describe how two measurements change together. For example, when we say that a recipe calls for <m>2</m> cups of flour for every <m>3</m> cups of sugar, we are describing a <term>ratio</term>. When we say that two such comparisons are equal, we are working with a <term>proportion</term>. And when we describe how one quantity changes compared to another with different units—such as kilometers per hour or dollars per item—we are describing a <term>rate</term>.
+    </p>
+    <p>
+        These ideas are important in many areas of mathematics and in everyday life. Students first meet them in elementary school when comparing objects ("there are twice as many squares as circles") or when learning about fractions. In middle school, they are used in scaling drawings, converting units, understanding percentages, and working with similar figures in geometry. Later, proportional reasoning becomes a foundation for algebra, functions, and modeling real-world problems.
+    </p>
+    <p>
+        Ratios, proportions, and rates also help us reason more flexibly about numbers. Instead of focusing only on exact counts, they let us focus on <em>relationships</em> between quantities. This relational thinking is central to mathematics: whether comparing sides of a triangle, predicting outcomes in probability, or interpreting slopes of lines in algebra, proportional reasoning is the bridge that connects different ideas.
+    </p>
+</subsection>
+
+<subsection xml:id="subsec-Ratios">
+    <title>Ratios</title>
+    <p>
+        A ratio is a way of comparing two quantities. Ratios tell us how much of one thing there is compared to another. For example, we might compare the number of apples to the number of oranges in a basket, or the number of boys to the number of girls in a class. Ratios are often written in one of three ways: with a colon (e.g. <m>3:4</m>), with the word “to” (e.g. <q>3 to 4</q>), or as a fraction (e.g. <m>\tfrac{3}{4}</m>).
+    </p>
+
+    <definition xml:id="def-Ratio">
+        <statement>
+            <p>
+                Given two quantities <m>a</m> and <m>b</m> (with <m>b \neq 0</m>), the <term>ratio</term> of <m>a</m> to <m>b</m> is written as <m>a:b</m>, and expresses how many parts of <m>a</m> there are for every part of <m>b</m>. A ratio can also be represented as the fraction <m>\tfrac{a}{b}</m>.
+            </p>
+        </statement>
+    </definition>
+
+    <example>
+        <p>Here are some examples to illustrate the meaning of a ratio:</p>
+        <ol>
+            <li>
+                <p>
+                    In a basket with <m>6</m> apples and <m>4</m> oranges, the ratio of apples to oranges is <m>6:4</m>. We can simplify this ratio, just as we do with fractions, to <m>3:2</m>. This means that for every 3 apples, there are 2 oranges.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If a class has 12 boys and 18 girls, the ratio of boys to girls is <m>12:18</m>. Simplifying gives <m>2:3</m>. We can interpret this as “for every 2 boys there are 3 girls.”
+                </p>
+            </li>
+            <li>
+                <p>
+                    Ratios can also compare a part to the whole. If the same class has 12 boys and 18 girls (for a total of 30 students), then the ratio of boys to the whole class is <m>12:30</m>, which simplifies to <m>2:5</m>. This tells us that 2 out of every 5 students are boys.
+                </p>
+            </li>
+        </ol>
+    </example>
+
+    <example>
+        <p>
+            Let’s look at a more involved real-world example. Suppose a drink mix calls for 2 cups of concentrate to be mixed with 5 cups of water. We want to make a large batch with 21 cups of water. How much concentrate is needed?
+        </p>
+        <p>
+            First, notice that the original recipe gives the ratio of concentrate to water as <m>2:5</m>. That means for every 5 cups of water, we need 2 cups of concentrate.
+        </p>
+        <p>
+            To scale up, we can compare the known amount of water to the ratio:
+        </p>
+        <me>
+            \frac{2}{5} = \frac{x}{21}
+        </me>
+        <p>
+            Here, <m>x</m> is the unknown number of cups of concentrate. Since these ratios must be equal, we can solve the equation using the property of equality:
+        </p>
+        <me>
+            5x = 2 \times 21
+        </me>
+        <me>
+            5x = 42
+        </me>
+        <me>
+            x = \tfrac{42}{5} = 8.4
+        </me>
+        <p>
+            Therefore, we need 8.4 cups of concentrate. In practical terms, this means about 8 and a half cups. Notice how the ratio guided us to scale up the recipe correctly.
+        </p>
+    </example>
+    <exercise>
+    <p>
+        Work with the following ratio problems. Simplify your answers when possible.
+    </p>
+    <ol>
+        <li>
+            <p>
+                A recipe uses 9 cups of flour and 12 cups of sugar. What is the ratio of flour to sugar?
+            </p>
+        </li>
+        <li>
+            <p>
+                In a class of 28 students, 12 are left-handed. What is the ratio of left-handed to right-handed students?
+            </p>
+        </li>
+        <li>
+            <p>
+                A box contains 15 red marbles and 25 blue marbles. What is the ratio of red marbles to the total number of marbles?
+            </p>
+        </li>
+        <li>
+            <p>
+                A car travels 180 km on 12 liters of gas. What is the ratio of kilometers to liters?
+            </p>
+        </li>
+    </ol>
+    <solution>
+        <ol>
+            <li>
+                <p><m>3:4</m></p>
+            </li>
+            <li>
+                <p><m>12:16 = 3:4</m></p>
+            </li>
+            <li>
+                <p><m>15:40 = 3:8</m></p>
+            </li>
+            <li>
+                <p><m>180:12 = 15:1</m></p>
+            </li>
+        </ol>
+    </solution>
+</exercise>
+
+<p>
+    Just as fractions can be simplified or scaled up, ratios can also be rewritten in different but equivalent forms. If we have a ratio <m>a:b</m>, then for any nonzero number <m>k</m> we can multiply both parts of the ratio by <m>k</m> and obtain <m>(ka):(kb)</m>. Since the fraction form of the ratio is <m>\tfrac{a}{b}</m>, and
+</p>
+<me>
+    \tfrac{a}{b} = \tfrac{ka}{kb} \quad \text{for any } k \neq 0,
+</me>
+<p>
+    both <m>a:b</m> and <m>(ka):(kb)</m> describe the same relationship between <m>a</m> and <m>b</m>. In the same way, dividing both parts of a ratio by a common factor gives a simpler equivalent ratio. This is why we often reduce ratios to their lowest terms, just as we do with fractions.
+</p>
+<p>
+    For example, the ratio <m>6:4</m> can be simplified by dividing both terms by 2, giving <m>3:2</m>. Both ratios represent the same relationship, because in each case the first quantity is one and a half times the second. The numbers may look different, but the comparison is unchanged.
+</p>
+
+<definition xml:id="def-EquivalentRatios">
+    <statement>
+        <p>
+            Two ratios <m>a:b</m> and <m>c:d</m> are called <term>equivalent ratios</term> if they represent the same relationship between the two quantities.  
+            In particular, for any nonzero number <m>k</m>, the ratios <m>a:b</m> and <m>(ka):(kb)</m> are equivalent.  
+            Equivalently, <m>a:b</m> and <m>c:d</m> are equivalent exactly when 
+        </p>
+        <me>
+            \tfrac{a}{b} = \tfrac{c}{d}.
+        </me>
+        <p>
+            This is why simplifying a ratio by dividing both terms by their greatest common factor produces an equivalent ratio in lowest terms.
+        </p>
+    </statement>
+    <example>
+        <p>
+            The ratio <m>8:12</m> can be simplified by dividing both terms by 4, giving <m>2:3</m>.  
+            Since <m>\tfrac{8}{12} = \tfrac{2}{3}</m>, these ratios are equivalent.
+        </p>
+        <p>
+            Similarly, multiplying both terms of <m>2:3</m> by 5 gives <m>10:15</m>, which is also equivalent.  
+            All three ratios — <m>8:12</m>, <m>2:3</m>, and <m>10:15</m> — describe the same relationship.
+        </p>
+    </example>
+</definition>
+
+
+
+</subsection>
+<subsection xml:id="subsec-PartComparisons">
+    <title>Part-to-Part and Part-to-Whole Comparisons</title>
+    <p>
+        Ratios can be used in two different but related ways: to compare one part of a group to another part, or to compare one part of a group to the whole. These are called <term>part-to-part</term> and <term>part-to-whole</term> comparisons. Understanding the difference is important, since both are common in real-world situations.
+    </p>
+
+    <definition xml:id="def-PartRatios">
+        <statement>
+            <p>
+                - A <term>part-to-part ratio</term> compares one subset of a group to another subset.  
+                - A <term>part-to-whole ratio</term> compares one subset of a group to the entire group.  
+            </p>
+        </statement>
+    </definition>
+
+    <example>
+        <p>Suppose a basket contains 12 apples and 8 oranges, for a total of 20 pieces of fruit.</p>
+        <ol>
+            <li>
+                <p>
+                    The ratio of apples to oranges is a <em>part-to-part</em> ratio: <m>12:8 = 3:2</m>.  
+                    This tells us that for every 3 apples there are 2 oranges.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The ratio of apples to the whole basket is a <em>part-to-whole</em> ratio: <m>12:20 = 3:5</m>.  
+                    This tells us that 3 out of every 5 fruits in the basket are apples.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Similarly, the ratio of oranges to the whole basket is <m>8:20 = 2:5</m>.  
+                    This means 2 out of every 5 fruits in the basket are oranges.
+                </p>
+            </li>
+        </ol>
+    </example>
+
+    <example>
+        <p>
+            In a class of 30 students, 18 are girls and 12 are boys.
+        </p>
+        <ul>
+            <li>
+                Part-to-part: the ratio of girls to boys is <m>18:12 = 3:2</m>.
+            </li>
+            <li>
+                Part-to-whole: the ratio of girls to the class is <m>18:30 = 3:5</m>, and the ratio of boys to the class is <m>12:30 = 2:5</m>.
+            </li>
+        </ul>
+        <p>
+            Notice that the two part-to-whole ratios always add up to 1 when written as fractions, because together they account for the entire group.
+        </p>
+    </example>
+
+    <exercise>
+        <p>
+            For each situation, write both a part-to-part and a part-to-whole ratio. Simplify when possible.
+        </p>
+        <ol>
+            <li>
+                <p>A bag contains 9 blue marbles and 6 green marbles.</p>
+            </li>
+            <li>
+                <p>A soccer team scored 15 goals in a season: 9 by forwards, 4 by midfielders, and 2 by defenders. Compare forwards to midfielders, and forwards to the whole team.</p>
+            </li>
+            <li>
+                <p>A survey of 50 people finds that 32 prefer tea and 18 prefer coffee.</p>
+            </li>
+        </ol>
+        <solution>
+            <ol>
+                <li>
+                    <p>Part-to-part: <m>9:6 = 3:2</m>. Part-to-whole: <m>9:15 = 3:5</m>, <m>6:15 = 2:5</m>.</p>
+                </li>
+                <li>
+                    <p>Part-to-part (forwards:midfielders): <m>9:4</m>. Part-to-whole (forwards:total): <m>9:15 = 3:5</m>.</p>
+                </li>
+                <li>
+                    <p>Part-to-part (tea:coffee): <m>32:18 = 16:9</m>. Part-to-whole: <m>32:50 = 16:25</m>, <m>18:50 = 9:25</m>.</p>
+                </li>
+            </ol>
+        </solution>
+    </exercise>
+    <p>
+    Ratios are closely connected to fractions. A part-to-whole ratio can always be written directly as a fraction, because it compares one subset to the entire set. For example, if 12 of the 30 students in a class are boys, the ratio of boys to the whole class is <m>12:30</m>, which corresponds to the fraction <m>\tfrac{12}{30} = \tfrac{2}{5}</m>. This fraction can also be interpreted as “two-fifths of the class are boys.” A part-to-part ratio, on the other hand, can be turned into a fraction by placing one part over the other. For instance, if the same class has 12 boys and 18 girls, the part-to-part ratio is <m>12:18</m>, or as a fraction <m>\tfrac{12}{18} = \tfrac{2}{3}</m>, meaning that there are two boys for every three girls. In both cases, fractions and ratios capture the same idea of comparing quantities, but part-to-whole ratios align naturally with the notion of fractions of a whole, while part-to-part ratios highlight the relative size of two categories within the whole.
+</p>
+<assemblage xml:id="assemblage-RatioFractionConnection">
+    <title>Notes for Additional Understanding</title>
+    <p>
+        The close connection between ratios and fractions explains why proportional reasoning is such an important skill in mathematics. 
+        Part-to-whole ratios naturally lead to fractions of a whole, which in turn form the basis for understanding percentages, probabilities, and measures like slope in algebra. 
+        Part-to-part ratios can also be converted into fractions, and these comparisons are essential in statistics (for example, comparing groups within a population) and in geometry (for example, comparing the sides of similar triangles). 
+        Recognizing that ratios and fractions are two different ways of describing the same relationships helps students see mathematics as a connected whole rather than a collection of separate topics.
+    </p>
+</assemblage>
+
+
+</subsection>
+
+<subsection xml:id="subsec-Proportions">
+    <title>Proportions</title>
+    <p>
+        A proportion is a statement that two ratios are equal. Proportions are especially useful because they allow us to find missing values when two quantities change in the same way. This is one of the most common uses of ratios in problem solving: scaling up or down while keeping the same relationship.
+    </p>
+
+    <definition xml:id="def-Proportion">
+        <statement>
+            <p>
+                A <term>proportion</term> is an equation of the form 
+                <me>\dfrac{a}{b} = \dfrac{c}{d}</me>
+                where <m>a,b,c,d</m> are numbers with <m>b \neq 0</m> and <m>d \neq 0</m>.  
+                If three of the numbers are known, the fourth can be found by solving the equation.  
+                This process is sometimes called “solving a proportion.”
+            </p>
+        </statement>
+    </definition>
+
+    <example>
+        <p>
+            Suppose we know that the ratio of cats to dogs in a shelter is 3:5. If there are 12 cats, how many dogs are there?
+        </p>
+        <p>
+            The ratio cats:dogs is <m>3:5</m>. Writing this as a proportion with the known value:
+        </p>
+        <me>
+            \dfrac{3}{5} = \dfrac{12}{x}
+        </me>
+        <p>
+            Multiplying both sides by 5x (cross-multiplication):
+        </p>
+        <me>
+            3x = 5 \times 12
+        </me>
+        <me>
+            3x = 60
+        </me>
+        <me>
+            x = 20
+        </me>
+        <p>
+            So there are 20 dogs in the shelter.
+        </p>
+    </example>
+
+    <example>
+        <p>
+            A map uses a scale where 1 cm represents 25 km in real life. If two towns are 7 cm apart on the map, how far apart are they in reality?
+        </p>
+        <p>
+            The ratio of map distance to real distance is <m>1:25</m>. Writing this as a proportion:
+        </p>
+        <me>
+            \dfrac{1}{25} = \dfrac{7}{x}
+        </me>
+        <p>
+            Cross-multiplying:
+        </p>
+        <me>
+            1 \cdot x = 25 \cdot 7
+        </me>
+        <me>
+            x = 175
+        </me>
+        <p>
+            Therefore, the towns are 175 km apart.
+        </p>
+    </example>
+
+    <example>
+        <p>
+            In a recipe, 2 cups of sugar are used with 3 cups of flour. If you want to use 10 cups of flour, how much sugar should you use?
+        </p>
+        <me>
+            \dfrac{2}{3} = \dfrac{x}{10}
+        </me>
+        <me>
+            3x = 20
+        </me>
+        <me>
+            x = \dfrac{20}{3} \approx 6.67
+        </me>
+        <p>
+            So you should use about 6 and 2/3 cups of sugar.
+        </p>
+    </example>
+
+    <exercise>
+        <p>
+            Solve the following proportions. Give your answers in simplest form.
+        </p>
+        <ol>
+            <li>
+                <p><m>\dfrac{4}{7} = \dfrac{x}{21}</m></p>
+            </li>
+            <li>
+                <p><m>\dfrac{9}{12} = \dfrac{15}{y}</m></p>
+            </li>
+            <li>
+                <p><m>\dfrac{5}{x} = \dfrac{20}{36}</m></p>
+            </li>
+            <li>
+                <p>A school has the same student-to-teacher ratio in two grades. If one grade has 120 students and 6 teachers, how many teachers are needed for 200 students?</p>
+            </li>
+        </ol>
+        <solution>
+            <ol>
+                <li>
+                    <p><m>x = 12</m></p>
+                </li>
+                <li>
+                    <p><m>y = 20</m></p>
+                </li>
+                <li>
+                    <p><m>x = 9</m></p>
+                </li>
+                <li>
+                    <p>10 teachers</p>
+                </li>
+            </ol>
+        </solution>
+    </exercise>
+    <p>
+        In the examples above we used <term>cross multiplication</term> to solve proportions. Let’s explain why this method works.
+    </p>
+   
+    
+    <p>
+        Suppose we have the proportion
+    </p>
+    <me>
+        \dfrac{a}{b} = \dfrac{c}{d}
+    </me>
+    <p>
+        with <m>b \neq 0</m> and <m>d \neq 0</m>. By the property of equality, we can multiply both sides of the equation by <m>bd</m> without changing the truth of the statement. Doing so gives:
+    </p>
+    <me>
+        bd \cdot \dfrac{a}{b} = bd \cdot \dfrac{c}{d}
+    </me>
+    <p>
+        Simplifying both sides:
+    </p>
+    <me>
+        d \cdot a = b \cdot c
+    </me>
+    <p>
+        or, written in the more familiar order,
+    </p>
+    <me>
+        a \cdot d = b \cdot c.
+    </me>
+    <p>
+        This is exactly the rule of cross multiplication: in any true proportion, the product of the means equals the product of the extremes.
+    </p>
+    <p>
+        Let’s check this with numbers. Suppose
+    </p>
+    <me>
+        \dfrac{2}{3} = \dfrac{10}{15}.
+    </me>
+    <p>
+        Cross multiplication says that <m>2 \times 15 = 3 \times 10</m>. Both sides equal 30, so the proportion is indeed true.
+    </p>
+    <p>
+        This shows why cross multiplication is not just a “trick,” but a direct consequence of the properties of equality.
+    </p>
+
+
+</subsection>
+<subsection xml:id="subsec-ProportionalReasoningCurriculum">
+    <title>Proportional Reasoning in the School Curriculum</title>
+    <p>
+        Proportional reasoning shows up throughout the school curriculum, often in ways that may not seem connected at first. Recognizing these connections helps students see mathematics as an integrated subject rather than as separate topics. Below we highlight some important areas where proportional reasoning is central, with explicit examples.
+    </p>
+
+    <example>
+        <p><strong>Changing Units:</strong></p>
+        <p>
+            Converting between measurement units always involves a proportion. For example, since <m>1 \text{ meter} = 100 \text{ centimeters}</m>, the ratio of meters to centimeters is <m>1:100</m>. If a board is 2.4 meters long, we can set up a proportion:
+        </p>
+        <me>
+            \dfrac{1}{100} = \dfrac{2.4}{x}
+        </me>
+        <p>
+            Cross multiplying gives <m>x = 240</m>, so the board is 240 centimeters long.
+        </p>
+    </example>
+
+    <example>
+        <p><strong>Percentages:</strong></p>
+        <p>
+            Percentages are part-to-whole ratios out of 100. For instance, if 30 out of 50 students passed a test, then
+        </p>
+        <me>
+            \dfrac{30}{50} = \dfrac{x}{100}.
+        </me>
+        <p>
+            Solving gives <m>x = 60</m>. Thus 60% of the students passed. Percentages are simply proportions where the denominator is fixed at 100.
+        </p>
+    </example>
+
+    <example>
+        <p><strong>Slope of a Line:</strong></p>
+        <p>
+            In algebra, the slope of a line is defined as the ratio of vertical change (“rise”) to horizontal change (“run”). For example, if a line passes through the points <m>(2,3)</m> and <m>(6,11)</m>, then the slope is
+        </p>
+        <me>
+            \dfrac{11-3}{6-2} = \dfrac{8}{4} = 2.
+        </me>
+        <p>
+            This tells us that for every 1 unit we move to the right, the line rises 2 units. Slope is therefore a constant ratio that describes the proportional relationship between changes in <m>x</m> and <m>y</m>.
+        </p>
+    </example>
+
+    <example>
+        <p><strong>Similar Figures in Geometry:</strong></p>
+        <p>
+            If two shapes are similar, their corresponding side lengths are proportional. For instance, suppose a small triangle has side lengths 3 cm, 4 cm, and 5 cm. A larger similar triangle has its shortest side equal to 9 cm. Since the scale factor is <m>9 \div 3 = 3</m>, the other sides must be <m>4 \times 3 = 12</m> cm and <m>5 \times 3 = 15</m> cm.
+        </p>
+    </example>
+
+    <example>
+        <p><strong>Probability:</strong></p>
+        <p>
+            Ratios are also at the heart of probability. If a bag contains 8 red marbles and 12 blue marbles, then the probability of drawing a red marble at random is the part-to-whole ratio
+        </p>
+        <me>
+            \dfrac{8}{20} = \dfrac{2}{5}.
+        </me>
+        <p>
+            This means that on average, 2 out of every 5 draws will be red.
+        </p>
+    </example>
+
+    <p>
+        These examples show that proportional reasoning connects many topics that students study across grade levels. Whether converting units, interpreting percentages, graphing lines, working with similar figures, or calculating probabilities, the underlying structure is the same: one quantity changes in a constant ratio with another.
+    </p>
+
+    <exercise>
+    <p>
+        Solve the following problems, each showing a different use of proportional reasoning.
+    </p>
+    <ol>
+        <li>
+            <p><strong>Unit Conversion:</strong> A rope is 3.5 meters long. How many centimeters is this?</p>
+        </li>
+        <li>
+            <p><strong>Percentage:</strong> A student answered 18 questions correctly out of 24. What percentage did the student get correct?</p>
+        </li>
+        <li>
+            <p><strong>Slope:</strong> Find the slope of the line passing through the points <m>(1,2)</m> and <m>(5,14)</m>.</p>
+        </li>
+        <li>
+            <p><strong>Similar Figures:</strong> A rectangle has side lengths 4 cm by 6 cm. A similar rectangle has its shorter side equal to 10 cm. What is the longer side length?</p>
+        </li>
+        <li>
+            <p><strong>Probability:</strong> A bag contains 5 green, 7 yellow, and 8 red candies. What is the probability of randomly selecting a yellow candy?</p>
+        </li>
+    </ol>
+    <solution>
+        <ol>
+            <li>
+                <p>350 cm</p>
+            </li>
+            <li>
+                <p>75%</p>
+            </li>
+            <li>
+                <p><m>3</m></p>
+            </li>
+            <li>
+                <p>15 cm</p>
+            </li>
+            <li>
+                <p><m>\tfrac{7}{20}</m> or 35%</p>
+            </li>
+        </ol>
+    </solution>
+</exercise>
+<example>
+  <p>
+    <strong>Final Grade via Proportional Reasoning:</strong> A student’s grade in a course is based on four components:
+    assignments worth 20%, midterm 1 worth 20%, midterm 2 worth 20%, and a final exam worth 40%. Suppose the student
+    earns 85% on assignments, 72% on midterm 1, 88% on midterm 2, and 91% on the final exam. What is the overall grade?
+  </p>
+
+  <p>
+    Each component contributes to the final grade in <em>proportion</em> to its weight. For example, assignments are worth
+    20% of the course, which is a part-to-whole ratio of <m>20:100</m>. Within this 20% of the course, the student has earned
+    85% of the possible points. So the proportion
+  </p>
+  <me>
+    \frac{C_{\text{A}}}{20} = \frac{85}{100}
+  </me>
+  <p>
+    compares the contribution <m>C_{\text{A}}</m> (in course percentage points) to the weight 20, just as the score compares
+    to 100. Solving the proportion gives
+  </p>
+  <me>
+    C_{\text{A}} = \frac{20 \cdot 85}{100} = 17.
+  </me>
+  <p>
+    Thus the student earns 17 percentage points from assignments.
+  </p>
+
+  <p>
+    We apply the same proportional reasoning to the other components. For midterm 1:
+  </p>
+  <me>
+    \frac{C_{\text{M1}}}{20} = \frac{72}{100} \quad\Rightarrow\quad C_{\text{M1}} = \frac{20 \cdot 72}{100} = 14.4.
+  </me>
+
+  <p>
+    For midterm 2:
+  </p>
+  <me>
+    \frac{C_{\text{M2}}}{20} = \frac{88}{100} \quad\Rightarrow\quad C_{\text{M2}} = \frac{20 \cdot 88}{100} = 17.6.
+  </me>
+
+  <p>
+    For the final exam, which has the greatest weight:
+  </p>
+  <me>
+    \frac{C_{\text{F}}}{40} = \frac{91}{100} \quad\Rightarrow\quad C_{\text{F}} = \frac{40 \cdot 91}{100} = 36.4.
+  </me>
+
+  <p>
+    Finally, we add the proportional contributions together:
+  </p>
+  <me>
+    17 + 14.4 + 17.6 + 36.4 = 85.4.
+  </me>
+
+  <p>
+    Therefore the student’s overall grade is 85.4%. Each step used a proportion: the student’s score out of 100 compared
+    to their contribution out of the component’s weight. Summing these proportional parts gives the whole course grade. Here is a picture showing this.
+  </p>
+
+  <figure xml:id="GradeProportion">
+        <caption>Grade Proportion Diagram</caption>
+        <image  source="Fractions/GradeProportion.png">
+            <description>Grade Proportion Diagram</description>
+            
+        </image>
+    </figure>
+</example>
+
+    
+</subsection>
+
+
+
+
+    </section>
 
   <section>
   <title>Ratios, Rates, and Proportions</title>
@@ -930,5 +1567,476 @@ Finally, applying the negative exponent rule, we get <m>\dfrac{1}{2^{1} \cdot 3^
 </subsection>
 <video youtube="j0FlibVbmc" />
 </section>
-        
+<section> <title>Supplementary Exercises</title>
+<subsection xml:id="intro-fractions-exercises">
+  <title>Practice: Fractions Across Bases</title>
+
+  <exercises>
+
+    <exercise>
+      <statement>
+        <p>Determine whether each pair (or triple) of fractions is equivalent.</p>
+        <ol marker="a">
+          <li><m>\dfrac{1}{4}</m> and <m>\dfrac{3}{12}</m></li>
+          <li><m>\dfrac{9}{21}</m> and <m>\dfrac{5}{35}</m></li>
+          <li><m>\dfrac{7}{8}</m> and <m>\dfrac{9}{10}</m></li>
+          <li><m>\dfrac{4}{12}</m>, <m>\dfrac{6}{8}</m>, and <m>\dfrac{3}{10}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Insert the correct symbol <m>&lt; </m>, <m>&gt;</m>, or <m>=</m> to make each statement true.</p>
+        <ol marker="a">
+          <li><m>\dfrac{1}{3}\;\square\;\dfrac{2}{3}</m></li>
+          <li><m>\dfrac{8}{13}\;\square\;\dfrac{24}{39}</m></li>
+          <li><m>\dfrac{5}{8}\;\square\;\dfrac{32}{64}</m></li>
+          <li><m>\dfrac{17}{20}\;\square\;\dfrac{13}{24}\;\square\;\dfrac{3}{7}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Find a fraction whose value lies strictly between the given pair.</p>
+        <ol marker="a">
+          <li><m>\dfrac{3}{5}</m> and <m>\dfrac{3}{4}</m></li>
+          <li><m>\dfrac{1}{2}</m> and <m>\dfrac{7}{8}</m></li>
+          <li><m>\dfrac{17}{33}</m> and <m>\dfrac{12}{27}</m></li>
+          <li><m>\dfrac{5}{41}</m> and <m>\dfrac{19}{113}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Julian and Frank share a watermelon. Frank asks for <m>\dfrac{10_{ten}}{21_{ten}}</m> of the whole. Julian gives <m>\dfrac{24_{eight}}{52_{eight}}</m> of the whole. Did Julian give the correct amount? Explain.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Find four distinct fractions strictly between <m>\dfrac{1}{3}</m> and <m>\dfrac{8}{9}</m>.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>In base twelve (with <m>A=10</m>, <m>B=11</m>), find four distinct fractions strictly between <m>\dfrac{A_{twelve}}{10_{twelve}}</m> and <m>\dfrac{B_{twelve}}{10_{twelve}}</m>.</p>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+<subsection xml:id="arithmetic-with-fractions-exercises">
+  <title>Practice: Arithmetic with Fractions</title>
+
+  <exercises>
+
+    <exercise>
+      <statement>
+        <p>Solve each subtraction. Express answers in lowest terms.</p>
+        <ol marker="a">
+          <li><m>\dfrac{3}{4}-\dfrac{1}{4}</m></li>
+          <li><m>\dfrac{7}{9}-\dfrac{4}{9}</m></li>
+          <li><m>\dfrac{3}{13}-\dfrac{7}{13}</m></li>
+          <li><m>\dfrac{134}{2778}-\dfrac{76}{2778}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Solve each addition. Express answers in lowest terms.</p>
+        <ol marker="a">
+          <li><m>\dfrac{3}{4}+\dfrac{1}{4}</m></li>
+          <li><m>\dfrac{7}{9}+\dfrac{4}{9}</m></li>
+          <li><m>\dfrac{3}{13}+\dfrac{7}{13}</m></li>
+          <li><m>\dfrac{134}{2778}+\dfrac{76}{2778}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Compute each expression. Express answers in lowest terms.</p>
+        <ol marker="a">
+          <li><m>\dfrac{3}{4}-\dfrac{1}{3}</m></li>
+          <li><m>\dfrac{6}{7}+\dfrac{1}{14}</m></li>
+          <li><m>\dfrac{7}{17}-\dfrac{1}{2}</m></li>
+          <li><m>\dfrac{8}{9}-\dfrac{25}{36}+\dfrac{7}{18}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Convert each improper fraction to a mixed number (in lowest terms).</p>
+        <ol marker="a">
+          <li><m>\dfrac{7}{4}</m></li>
+          <li><m>\dfrac{12}{7}</m></li>
+          <li><m>\dfrac{16}{4}</m></li>
+          <li><m>\dfrac{17}{3}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Convert each mixed number to an improper fraction (in lowest terms).</p>
+        <ol marker="a">
+          <li><m>3\dfrac{2}{4}</m></li>
+          <li><m>2\dfrac{7}{18}</m></li>
+          <li><m>5\dfrac{3}{7}</m></li>
+          <li><m>8\dfrac{10}{23}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Daniel and Lupita each have leftover slices from their own large pizzas. Daniel has 4 of 8 slices; Lupita has 3 of 5 slices.</p>
+        <ol marker="a">
+          <li>Who has more pizza?</li>
+          <li>Will all their slices fit into one pizza box if slices cannot be stacked? Justify.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Compute each product. Reduce answers to lowest terms; write improper results as mixed numbers.</p>
+        <ol marker="a">
+          <li><m>3\times \dfrac{4}{5}</m></li>
+          <li><m>\dfrac{3}{10}\times \dfrac{5}{6}</m></li>
+          <li><m>\dfrac{6}{9}\times \dfrac{10}{11}</m></li>
+          <li><m>\dfrac{72}{81}\times \dfrac{49}{56}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Compute each quotient. Reduce answers to lowest terms; write improper results as mixed numbers.</p>
+        <ol marker="a">
+          <li><m>3\div \dfrac{4}{5}</m></li>
+          <li><m>\dfrac{3}{10}\div \dfrac{5}{6}</m></li>
+          <li><m>\dfrac{6}{9}\div \dfrac{10}{11}</m></li>
+          <li><m>\dfrac{72}{81}\div \dfrac{49}{56}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Simplify each expression. Follow order of operations and reduce to lowest terms.</p>
+        <ol marker="a">
+          <li><m>\dfrac{8}{9}\times \dfrac{25}{35}+\dfrac{7}{18}</m></li>
+          <li><m>\dfrac{5}{6}\div \dfrac{3}{7}-\dfrac{8}{6}</m></li>
+          <li><m>\dfrac{3}{4}+\dfrac{7}{5}+\dfrac{3}{5}\times \dfrac{9}{8}</m></li>
+          <li><m>\dfrac{7}{3}\times 3\dfrac{2}{5}-2\dfrac{1}{5}\times \dfrac{11}{9}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Daniel now has 8 of 12 slices, and Lupita has 4 of 6 slices. They invite two friends to share.</p>
+        <ol marker="a">
+          <li>Can the four people share equally without cutting any slices? If not, what is the smallest number of cuts needed? Explain.</li>
+          <li>Would it be possible without cuts if Lupita had one more slice? If not, how many cuts would be needed?</li>
+          <li>With the amounts from Exercise 6 (4 of 8 and 3 of 5), can they share equally with exactly three cuts? Explain your strategy.</li>
+          <li>Describe a different scenario (choose slice counts, original partitions, number of friends) where they can share equally with exactly one cut. Explain.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Identify and explain the error(s) in each computation, then correct the result.</p>
+        <ol marker="a">
+          <li>
+            <m>
+              \dfrac{9}{6}\times \dfrac{3}{4}+\dfrac{1}{2}\div \dfrac{7}{9}
+              \;=\; \dfrac{9\cdot 4}{6\cdot 3}+ \dfrac{1\cdot 9}{2\cdot 7}
+              \;=\; \dfrac{36}{18}+ \dfrac{9}{14}
+              \;=\; 2\dfrac{9}{18}
+            </m>
+          </li>
+          <li>
+            <m>
+              \dfrac{3}{4}+ \dfrac{1}{4}\times \dfrac{7}{9}
+              \;=\; \dfrac{4}{4}\times \dfrac{7}{9}
+              \;=\; \dfrac{7}{9}
+            </m>
+          </li>
+          <li>
+            <m>
+              \dfrac{3_{\text{four}}}{10_{\text{four}}}\times \dfrac{2_{\text{four}}}{10_{\text{four}}}\div \dfrac{1_{\text{four}}}{30_{\text{four}}}
+              \;=\; \dfrac{3_{\text{four}}\cdot 2_{\text{four}}\cdot 30_{\text{four}}}{10_{\text{four}}\cdot 10_{\text{four}}\cdot 1_{\text{four}}}
+              \;=\; \dfrac{180_{\text{four}}}{100_{\text{four}}}
+              \;=\; \dfrac{18_{\text{four}}}{10_{\text{four}}}
+            </m>
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+<subsection xml:id="ratios-rates-proportions-exercises">
+  <title>Practice: Ratios, Rates, and Proportions</title>
+
+  <exercises>
+
+    <exercise>
+      <statement>
+        <p>Simplify each ratio.</p>
+        <ol marker="a">
+          <li><m>7:14</m></li>
+          <li><m>8:2</m></li>
+          <li><m>36:90</m></li>
+          <li><m>42:31</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Classify each situation as a <em>ratio</em>, <em>rate</em>, or <em>proportion</em>, and write it accordingly.</p>
+        <ol marker="a">
+          <li>There are 3 green marbles for every 4 blue marbles in the bag.</li>
+          <li>We have 20 marshmallows so we know there are 10 graham crackers.</li>
+          <li><m>150</m> grams of rice costs <m>3</m> dollars.</li>
+          <li>In a bucket of gravel, there are 15 granite rocks per 7 basalt rocks.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Determine whether each rate can be expressed as a unit rate (per 1). If not, simplify as far as possible. You may use decimals for unit rates.</p>
+        <ol marker="a">
+          <li><m>\dfrac{60\ \text{km}}{3\ \text{hr}}</m></li>
+          <li><m>\dfrac{82\ \text{\$}}{4\ \text{hr}}</m></li>
+          <li><m>\dfrac{177\ \text{ghosts}}{12\ \text{goblins}}</m></li>
+          <li><m>\dfrac{551\ \text{worlds}}{19\ \text{oysters}}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Form a proportion from each description and solve for the unknown. Simplify where appropriate.</p>
+        <ol marker="a">
+          <li><m>16:4 = x:8</m></li>
+          <li>There are 3 brown bears for every 1 black bear in the zoo. There are 7 black bears. How many brown bears?</li>
+          <li>Every shelf has 7 photos. There are 21 photos. How many shelves?</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Create your own scenario described by a ratio between two quantities, and specify a numerical request that is impossible because of that ratio. Explain why it is impossible.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>The ratio of blue to green gumballs in a surprise bag is <m>8:14</m>.</p>
+        <ol marker="a">
+          <li>If there are 16 blue gumballs, how many green gumballs are there?</li>
+          <li>A bag has 24 blue and 35 green gumballs. Is this consistent with the stated ratio? Explain.</li>
+          <li>Is it possible to have exactly 12 blue gumballs in a bag? Explain.</li>
+          <li>Is it possible to have exactly 6 blue gumballs in a bag? Explain.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Mike drives at a speed of <m>60\ \text{km/hr}</m>.</p>
+        <ol marker="a">
+          <li>Is Mike’s speed a ratio, a rate, or a proportion?</li>
+          <li>He arrives after 3 hours. What distance did he travel?</li>
+          <li>Mike’s friend claims Mike traveled 20 km. Describe the setup error that leads to this conclusion.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Pious is building a rectangular sheep pen with perimeter <m>80\,\text{m}</m>.</p>
+        <ol marker="a">
+          <li>Store A (Bucket O’ Hammers) sells <m>10\,\text{m}</m> of fencing for <m>200</m><m>\$</m>. Store B (Screws, Nails and Everything Lumber) sells <m>15\,\text{m}</m> for <m>285</m><m>\$</m>. Pious doesn’t mind leftovers—he wants the best value. Which store should he choose?</li>
+          <li>How much will the fence cost at the chosen store?</li>
+          <li>If Pious wants to minimize leftover fencing instead, does the choice change? What is the cost now?</li>
+          <li>Suppose instead he wants a rectangular pen of area <m>40\,\text{m}^2</m>. What is the minimum fencing required, and which store yields the lowest cost?</li>
+          <li>Describe the general relationship between the target perimeter and the better store choice, considering potential leftovers.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Ronald played basketball games with the following results.</p>
+        <ol marker="a">
+          <li>On Tuesday he played 3 games, scoring 5, 3, and 7 baskets. What was his overall rate (baskets per game) as a unit rate?</li>
+          <li>On Wednesday his average was <m>\dfrac{9\ \text{baskets}}{\text{game}}</m>. If he scored 45 baskets in total, how many games did he play?</li>
+          <li>The next day his overall rate was <m>\dfrac{10\ \text{baskets}}{\text{game}}</m> over 4 games. He scored 7, 8, and 12 in three of them. How many in the fourth?</li>
+          <li>Is it possible for Ronald to have 30 total baskets with a rate of <m>\dfrac{8\ \text{baskets}}{\text{game}}</m>? Explain.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>The payroll administrator at <em>Bland Media Conglomerate LLC.</em> reports wages and earnings in base twelve, while hours remain in base ten. Do <strong>not</strong> convert to base ten; work directly in the indicated bases.</p>
+        <ol marker="a">
+          <li>After working 35 hours at <m>\dfrac{20_{\text{twelve}}\ \text{\$}}{\text{hr}}</m>, Julie received <m>6A0_{\text{twelve}}</m><m>\$</m>. Was there an error? What should she have been paid?</li>
+          <li>Greg worked 40 regular hours and 10 overtime hours. Overtime is paid at twice his regular wage. He was paid <m>10A2_{\text{twelve}}</m><m>\$</m>. What is his hourly rate (in base twelve)?</li>
+          <li>Jerry was paid <m>1480_{\text{twelve}}</m><m>\$</m>. A fraction <m>\dfrac{7_{\text{twelve}}}{A_{\text{twelve}}}</m> of his hours were at regular pay and the remaining <m>\dfrac{3_{\text{twelve}}}{A_{\text{twelve}}}</m> were overtime. What is Jerry’s hourly wage (in base twelve)?</li>
+          <li>How many hours did Jerry work?</li>
+        </ol>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+<subsection xml:id="fractions-explanations">
+  <title>Explanatory Questions: Fractions</title>
+
+  <exercises>
+
+    <exercise>
+      <statement>
+        <p>Fractions can mean different things in different contexts (part–whole, quotient, ratio, operator, measure). For each meaning, give a short real-world example for <m>\tfrac{3}{4}</m> and explain why that meaning fits.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Two students claim that <m>\tfrac{6}{8}</m> and <m>\tfrac{3}{4}</m> are equivalent.</p>
+        <ol marker="a">
+          <li>Explain why this is true by describing a visual model (area or number-line) in words.</li>
+          <li>Explain why this is true using a numerical argument about common factors and why your argument works in any base, not just base ten.</li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>A student says: “Since <m>\tfrac{7}{12}</m> and <m>\tfrac{2}{3}</m> both have even numerators and denominators, <m>\tfrac{7}{12}&lt;\tfrac{2}{3}</m> because <m>7&lt;8</m> and <m>12&lt;12</m>.” Critique this reasoning carefully. Give a correct method to compare <m>\tfrac{7}{12}</m> and <m>\tfrac{2}{3}</m> and explain <em>why</em> it works.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>(Mediant reasoning) Suppose <m>\tfrac{a}{b}</m> and <m>\tfrac{c}{d}</m> are positive fractions with <m>\tfrac{a}{b}&lt;\tfrac{c}{d}</m>. Explain why the fraction <m>\tfrac{a+c}{\,b+d\,}</m> lies strictly between them. State any conditions you use (e.g., positivity) and justify in words and/or symbols.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Explain why there are infinitely many fractions between <m>\tfrac{1}{3}</m> and <m>\tfrac{1}{2}</m>. Give a method that generates <em>different</em> examples on demand and explain why it always stays in the interval.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>(Base-independence) A rule of simplification says: if <m>k\neq0</m>, then <m>\tfrac{ak}{bk}=\tfrac{a}{b}</m>. Explain why this statement is true regardless of the base used to <em>write</em> the digits of <m>a,b,k</m>. Your explanation should separate “the quantities” from “their written representations.”</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Error check: A learner writes</p>
+        <p>
+          <md>
+            <mrow>\dfrac{3}{5}+\dfrac{1}{4}=\dfrac{3+1}{5+4}=\dfrac{4}{9}.</mrow>
+          </md>
+        </p>
+        <p>Identify the exact step where a property is misused. Then show two correct explanations for adding these fractions: (i) common denominator, (ii) visual model (describe the picture you would draw).</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Explain why the rule “to convert a mixed number to an improper fraction, multiply the whole number by the denominator and add the numerator” is correct. Your explanation should work for an arbitrary <m>W+\tfrac{N}{D}</m>, and may use a diagram or algebraic reasoning.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Multiplying fractions: Without doing any simplification first, explain why <m>\tfrac{2}{3}\times\tfrac{3}{5}=\tfrac{2}{5}</m> using an area model. Describe clearly how each factor is represented and why the overlapping region has the stated fraction of the whole.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Dividing by a fraction: Explain, using a measurement or sharing interpretation, why <m>\tfrac{3}{4}\div\tfrac{2}{5}=\tfrac{15}{8}</m>. Your explanation should make it clear <em>why</em> “multiply by the reciprocal” matches the story.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Cross-multiplication for comparison: To decide whether <m>\tfrac{7}{11}</m> is greater than <m>\tfrac{5}{8}</m>, one method forms <m>7\cdot8</m> and <m>5\cdot11</m>. Explain why this method is valid and how it relates to rewriting both fractions with a common denominator without actually finding the common denominator first.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>(Betweeness via common denominators) Explain why, once two positive fractions are expressed with a common positive denominator, the one with the larger numerator is the larger fraction. Include a number-line interpretation that works even when the denominators are large.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>(Fractions across bases) Explain why the statement <m>\dfrac{10_{\text{four}}}{20_{\text{four}}}=\dfrac{1}{2}</m> is correct without converting any numbers into base ten. Describe the quantities each numeral represents in base four and how the equality follows from those quantities.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Least common denominator (LCD): A student always chooses the product of denominators as the common denominator. Explain when this is unnecessarily large, how to find a smaller LCD using prime factors, and why using the LCD can make computation and simplification clearer.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>(Equivalent-fraction generation) Give a principled way to generate <em>all</em> fractions equivalent to <m>\tfrac{9}{12}</m>. Explain why every fraction produced by your method is equivalent, and why any equivalent fraction must arise from your method.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>(Order of operations with fractions) Consider <m>\tfrac{3}{4}+\tfrac{1}{4}\times\tfrac{7}{9}</m>. Explain two correct solution paths—one emphasizing order of operations first, and one rewriting everything over a common denominator—and justify why both lead to the same result.</p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>(Reason about size) Without computing exact values, determine whether each expression is less than, equal to, or greater than <m>1</m>, and explain your reasoning.</p>
+        <ol marker="a">
+          <li><m>\dfrac{5}{6}+\dfrac{1}{7}</m></li>
+          <li><m>\dfrac{7}{8}\cdot\dfrac{9}{10}</m></li>
+          <li><m>\dfrac{5}{4}-\dfrac{6}{7}</m></li>
+        </ol>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>(Complex fractions) Explain a clear strategy for simplifying <m>\dfrac{\tfrac{3}{5}+\tfrac{1}{2}}{\tfrac{4}{3}-\tfrac{1}{6}}</m> that avoids arithmetic mistakes. Justify why your strategy works and describe how you would check your final answer for reasonableness.</p>
+      </statement>
+    </exercise>
+
+  </exercises>
+</subsection>
+
+
+
+</section>   
 </chapter>
