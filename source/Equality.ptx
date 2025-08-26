@@ -81,7 +81,7 @@
         </image>
     </p>
     <p>
-        If one side of the equation, then we have an <term>inequality</term> since the two sides do not equal each other. If the left hand side (LHS) is the heavier side then we say that the LHS <term>is greater than</term> the right hand side (RHS). If the RHS is larger, than we say that the LHS <term>is less than</term> the RHS. Note that the symbol to denote either greater than <m>&gt;</m> and less than <m>&lt;</m> has the more open side toward the larger quantity, somewhat matching up with the idea of the balance. 
+        If one side of the equation is larger than the other, then we have an <term>inequality</term> since the two sides do not equal each other. If the left hand side (LHS) is the heavier side then we say that the LHS <term>is greater than</term> the right hand side (RHS). If the RHS is larger, than we say that the LHS <term>is less than</term> the RHS. Note that the symbol to denote either greater than <m>&gt;</m> and less than <m>&lt;</m> has the more open side toward the larger quantity, somewhat matching up with the idea of the balance. 
     </p>
     <p>
         Using the balance analogy greater than looks like:
@@ -157,7 +157,7 @@
             <p><image source="WholeNumbers/BalanceModelSub4.svg">
                 <shortdescription>Balance model of a/2=b/2 when a=b</shortdescription>
             </image></p> 
-            <p> This is an incredibly powerful idea that allows us to solve equations for a unknown quantities.
+            <p> This is an incredibly powerful idea that allows us to solve equations for unknown quantities.
         </p>
         <p>
             Let's define these more precisely so we can refer to them later.
@@ -170,7 +170,7 @@
                             <p>
                                 <p>
                                     Let <m>s</m> and <m>t</m> be expressions with <m>s=t</m>. For any expression <m>F(x)</m> with a single placeholder “<m>x</m>”, write <m>F(s)</m> for the result of uniformly replacing every <em>free</em> occurrence of the placeholder by <m>s</m>, and similarly for <m>F(t)</m>. Then <me>s=t \implies F(s)=F(t).</me>
-                                    For example, f <m>2+3=5</m>, then <m>(2+3)^2+5=5^2+5</m> where <m>F(x)=x^2+5</m>.
+                                    For example, if <m>2+3=5</m>, then <m>(2+3)^2+5=5^2+5</m> where <m>F(x)=x^2+5</m>.
                                 </p>
                             </p>
                         </li>
@@ -222,7 +222,7 @@
                   Let <m>A := </m> Angela's current age (in years), and let <m>F := </m> Angela's father's current age (in years).
               </p>
               <p>
-                  Since Angela is thirty year's younger than her father, we need to think about how to translate this to an algebraic statement. We can think of trying to reword this sentence to have the concept of equality in it. For example, we could say "Angela's age plus thirty years is the same age as her father" or "If you subtract thirty years from her father's age, it will be Angela's age" or something else. Using the first rewording, we can make the algebraic equation
+                  Since Angela is thirty years younger than her father, we need to think about how to translate this to an algebraic statement. We can think of trying to reword this sentence to have the concept of equality in it. For example, we could say "Angela's age plus thirty years is the same age as her father" or "If you subtract thirty years from her father's age, it will be Angela's age" or something else. Using the first rewording, we can make the algebraic equation
               </p>
               <me>
                   A+30 = F.
@@ -584,7 +584,7 @@
     <subsection xml:id="subsec-Substitution">
         <title>Substitution</title>
         <p>
-            We can use the ideas of equality to help us solve systems of equations. Remember from <xref xml:id="def-PropertiesOfEquality"/>, when two expressions equal, we can substitute one for the other whenever it is convenient. The idea is that since we know how to solve one equation with one variable, so we want to convert a 2 by 2 system of equations into one equation with one variable via <term>substitution.</term> Let's look at <xref ref="ex-2var2eq"/> in the previous section:
+            We can use the ideas of equality to help us solve systems of equations. Remember from <xref ref="def-PropertiesOfEquality"/>, when two expressions equal, we can substitute one for the other whenever it is convenient. The idea is that since we know how to solve one equation with one variable, so we want to convert a 2 by 2 system of equations into one equation with one variable via <term>substitution.</term> Let's look at <xref ref="ex-2var2eq"/> in the previous section:
         </p>
         <p>
             
@@ -602,7 +602,7 @@
             Notice that both equations have the variables <m>C</m> and <m>P</m> in them. If we could "substitute out" one of the variables in terms of the other by first solving one of the equations for one of the variables, then we would be in a familiar situation with one equation and one variable. This will be our goal.
         </p>
         <p>
-            There isn't a "correct" choice of variable to solve for (any will indeed do!) we notice it seems easiest to solve for <m>P</m> in the fist equation, as it has a coefficient of <m>1</m>, so we do not have to divide at the end to solve for <m>P</m>. Solving for <m>P</m> in the first equation we have
+            There isn't a "correct" choice of variable to solve for (any will indeed do!) we notice it seems easiest to solve for <m>P</m> in the first equation, as it has a coefficient of <m>1</m>, so we do not have to divide at the end to solve for <m>P</m>. Solving for <m>P</m> in the first equation we have
         </p>
         <me>
             P = 9-2C.
@@ -799,7 +799,7 @@
                 
             </p>
             <p>
-                Thus, we have subtracted Equation II from Equation I and showed thar the idea of elimination makes sense.
+                Thus, we have subtracted Equation II from Equation I and showed that the idea of elimination makes sense.
             </p>
 <exercise>
                 <p>
@@ -811,7 +811,7 @@
                 <ol>
                     <li>
                         <p>
-                            The method of elimination is more useful when you have larger systems of equations with more equations and/or more variables. In the <m>2 \times 2</m> case, substitution is generally easy enough to do. However, it is good practice to be able to us the elimination method, as it is extremely more efficient and useful than substitution in these larger systems.
+                            The method of elimination is more useful when you have larger systems of equations with more equations and/or more variables. In the <m>2 \times 2</m> case, substitution is generally easy enough to do. However, it is good practice to be able to use the elimination method, as it is extremely more efficient and useful than substitution in these larger systems.
                         </p>
                     </li>
                     <li>
