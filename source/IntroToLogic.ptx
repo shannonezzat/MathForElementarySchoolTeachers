@@ -39,14 +39,14 @@
 </p>
 
 <definition>
-A <term> statement </term> is a sentence that is either always true or always false (but not both).
+<p>A <term> statement </term> is a sentence that is either always true or always false (but not both).</p>
 <example>
     <p>"Ottawa is the capital of Canada" is a true statement. </p> <p>"<m>4^2=10</m>" is a false statement.</p>
 </example>
 <example><title>Non-Examples</title>
 
-
-    "What time is it?" is a sentence that is not a statement. It is simply a question and cannot be given a truth value of true or false. Similarly, "Go do you homework" is a command, and not a statement.
+<p>
+    "What time is it?" is a sentence that is not a statement. It is simply a question and cannot be given a truth value of true or false. Similarly, "Go do you homework" is a command, and not a statement.</p>
 </example>
 </definition>
 
@@ -55,7 +55,7 @@ A <term> statement </term> is a sentence that is either always true or always fa
 </p>
 
 <definition>    
-An <term> open sentence </term> is a sentence with a variable such that the sentence becomes a statement when you fill in a value into the variable.
+<p>An <term> open sentence </term> is a sentence with a variable such that the sentence becomes a statement when you fill in a value into the variable.</p>
 <example>
     <p>
         "<m>X^2 = 1</m>" is an open sentence. It is true when <m>x=1</m> or <m>x=-1</m> and false for any other numbers.
@@ -105,7 +105,7 @@ An <term> open sentence </term> is a sentence with a variable such that the sent
         </li>
         <li>
             <p>
-                You can check a free bag if you are have elite status or you purchased a business class ticket.
+                You can check a free bag if you have elite status or you have purchased a business class ticket.
             </p>
         </li>
     </ol>
@@ -611,7 +611,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                Here we took 12 dots and organized them as 6 rows of 2. Since 12 can be grouped evenly into rows of 2, we know that 12 is even. Hence, we can write <m>12=2 \times 6.</m>
            </p>
            <p>
-               In general, the number of rows of 2 isn't particularly important to say that a number is even; it's the fact that we can group the number into *some amount* of rows of 2. Usually we'll express this as <m>k</m> rows of 2. So for a even whole number <m>n</m>, we know <m>n=2k</m> for some whole number <m>k</m>.
+               In general, the number of rows of 2 isn't particularly important to say that a number is even; it's the fact that we can group the number into *some amount* of rows of 2. Usually we'll express this as <m>k</m> rows of 2. So for an even whole number <m>n</m>, we know <m>n=2k</m> for some whole number <m>k</m>.
            </p>
            <p>
             <figure xml:id="gtgtg">
@@ -738,7 +738,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     
     <introduction>
         <p>
-            One of the most important type of statements in mathematics is the <term>conditional statements</term> or, more colloquially, <term>if-then statement</term>. These statements are of the form "if P then Q". We call P the <term>condition</term> and Q the <term>conclusion</term> of the conditional statement, or simply the if-part and then-part. We want to know when these statements are true or false, so let's explore this now:
+            One of the most important types of statements in mathematics is the <term>conditional statements</term> or, more colloquially, <term>if-then statement</term>. These statements are of the form "if P then Q". We call P the <term>condition</term> and Q the <term>conclusion</term> of the conditional statement, or simply the if-part and then-part. We want to know when these statements are true or false, so let's explore this now:
         </p>
     </introduction>
 
@@ -778,7 +778,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     </exercise>
 
     <p>
-        Of course, there is nothing special about the meaning of the if-part and then-part in the previous example. In general we can say that an if-then statement is false when the if-part is true and the then-part is false, and it is true otherwise. Now we can construct a truth table for "it P then Q":
+        Of course, there is nothing special about the meaning of the if-part and then-part in the previous example. In general we can say that an if-then statement is false when the if-part is true and the then-part is false, and it is true otherwise. Now we can construct a truth table for "if P then Q":
     </p>
 
     <figure xml:id="IfThenTruthTable">
@@ -1015,7 +1015,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     </p>
     <solution>
         <p>
-            It is not! However, it may take a while to find a counterexample. If we let <m>n=1,2, \dots, 9</m> we find that <m>n^2+n+11</m> is indeed prime. For example, if <m>n=6</m> then <m>6^2+6+11=53</m> and you can check that 53 is a prime number. However, when <m>n=10</m>, we have that <m>10^2+10+11=121</m> and <m>121=11 \times 11</m> so <m>11</m> is not a prime number. 
+            It is not! However, it may take a while to find a counterexample. If we let <m>n=1,2, \dots, 9</m> we find that <m>n^2+n+11</m> is indeed prime. For example, if <m>n=6</m> then <m>6^2+6+11=53</m> and you can check that 53 is a prime number. However, when <m>n=10</m>, we have that <m>10^2+10+11=121</m> and <m>121=11 \times 11,</m> so <m>11</m> is not a prime number. 
         </p>
         
     </solution>
@@ -1051,7 +1051,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
         <example>
             <p>The statement "if <m>n</m> and <m>m</m> are odd counting numbers then <m>n \times m</m> is even" is a false conditional statement since it has the counterexample <m>n=3</m> and <m>m=5</m>. Here, the if-part is true (both 3 and 5 are odd numbers) but the then-part is false (<m>3 \times 5 =15</m> is not an even number). Note that this is only one of many (in fact infinitely many counterexamples).</p>
             <p>
-                The statement "if <m>x</m> is an integer (positive or negative counting number, or zero)" then <m>x^2-1</m> is non-negative" is a false conditional statement. Here, <m>x=0</m> is a counterexample since <m>x</m> is an integer (if-part true) but <m>0^2-1=-1</m> (then-part false). Note that this is the only counterexample for this conditional statement.
+                The statement "if <m>x</m> is an integer (positive or negative counting number, or zero) then <m>x^2-1</m> is non-negative" is a false conditional statement. Here, <m>x=0</m> is a counterexample since <m>x</m> is an integer (if-part true) but <m>0^2-1=-1</m> (then-part false). Note that this is the only counterexample for this conditional statement.
             </p>
         </example>
         <p>
@@ -1406,7 +1406,7 @@ select all those cards, but only those cards, which you would have to turn over 
                 </li>
                 <li>
                     <p>
-                        If L a whole number with a ones-digit of 2 or 4, then L is even. 
+                        If L is a whole number with a ones-digit of 2 or 4, then L is even. 
                     </p>
                 </li>
             </ol>
@@ -1767,7 +1767,7 @@ select all those cards, but only those cards, which you would have to turn over 
        Another concept that is important to us is the number of elements in a set A, which we call the <term>cardinality</term> of A. We write this <m>|A|</m>.
    </p>
    <example>
-       Let's let A,B,C, and D be the sets above. Also let <m>E = \{ \text{all even counting numbers} \}.</m>. Then <m>|A| = 7,  \ |B| = 4, \ |C|= 4, \ |D| = 0, \ |E| = \infty</m>.
+       Let's let A,B,C, and D be the sets above. Also let <m>E = \{ \text{all even counting numbers} \}.</m> Then <m>|A| = 7,  \ |B| = 4, \ |C|= 4, \ |D| = 0, \ |E| = \infty</m>.
    </example>
 
    <assemblage xml:id="assemblage-Sets">
@@ -1829,7 +1829,7 @@ select all those cards, but only those cards, which you would have to turn over 
       <p>Let A,B,C be sets that aren't the empty set (so <m>A,B,C \neq \emptyset</m>). Show that if <m>A \subseteq B</m> and <m>B \subseteq C</m> then <m>A \subseteq C</m>. </p>
       <solution>
           <p>
-              Note the this is an if-then statement. So we need to show that it's never the case that the if-part is true and the then-part is false. But, in the definition of subsets we have additional if-then statements as well, so we have to be careful with these "nested" conditional statements.
+              Note that this is an if-then statement. So we need to show that it's never the case that the if-part is true and the then-part is false. But, in the definition of subsets we have additional if-then statements as well, so we have to be careful with these "nested" conditional statements.
           </p>
           <p>
               Let's assume the if-part is true: that <m>A \subseteq B</m> and <m>B \subseteq C</m>. So this means that if <m>x \in A</m> then <m>x \in B</m> (since A is a subset of B) and if <m>x \in B</m> then <m>x \in C</m> (since B is a subset of C).
@@ -1922,10 +1922,10 @@ select all those cards, but only those cards, which you would have to turn over 
                </p>
            </statement>
        </definition>
-       <definition xml:id="def-setcompliment">
+       <definition xml:id="def-setcomplement">
            <statement>
                <p>
-                   Let A be a set. We say the <term>set compliment</term>, written <m>\sim A</m>, is the set of all elements in the universe <m>U</m> not in A. In set notation, <m>\sim A = \{ x \in U \ | \ x \not \in A \}.</m>
+                   Let A be a set. We say the <term>set complement</term>, written <m>\sim A</m>, is the set of all elements in the universe <m>U</m> not in A. In set notation, <m>\sim A = \{ x \in U \ | \ x \not \in A \}.</m>
                </p>
            </statement>
        </definition>
@@ -2013,14 +2013,14 @@ select all those cards, but only those cards, which you would have to turn over 
                </ol>
                <solution>
                    <p>
-                       Since elements in an intersection need to satisfy *both* being a member of A and B, we have that <m>A \cap B = \{ \text{ obtuse triangles} \}</m>.
+                       Since elements in an intersection need to satisfy  being a member of *both* A and B, we have that <m>A \cap B = \{ \text{ obtuse triangles} \}</m>.
 
                    </p>
                    <p> A possible example of an element in this set is a triangle with one angle of 100 degrees:
                        <image source="Checkpoint3.15a.svg">
                         <shortdescription>An obtuse triangle</shortdescription>
                        </image>
-                       An possible example of an element not in this set is a square:
+                       A possible example of an element not in this set is a square:
                        <image source="square_diagram_same_size.svg">
                         <shortdescription>A square</shortdescription>
                        </image>
@@ -2028,7 +2028,7 @@ select all those cards, but only those cards, which you would have to turn over 
                </solution>
                <solution>
                    <p>
-                       Since elements in an intersection need to satisfy *either* being a member of A or B, we have that <m>A \cup C = \{ \text{ all polygons that are triangles or have at most 5 sides.} \}</m>. However, triangles are polygons of at most 5 sides (they have three), we have that <m>A \subseteq C</m> and thus we can express <m>A \cup C = \{ \text{ all polygons of at most 5 sides.} \}</m> and note <m>A \cup C = C</m>.
+                       Since elements in a union need to satisfy  being a member of *either* A or B (or both), we have that <m>A \cup C = \{ \text{ all polygons that are triangles or have at most 5 sides.} \}</m>. However, triangles are polygons of at most 5 sides (they have three). Thus we have that <m>A \subseteq C</m> and thus we can express <m>A \cup C = \{ \text{ all polygons of at most 5 sides.} \}</m> and note <m>A \cup C = C</m>.
 
                    </p>
                    <p>
