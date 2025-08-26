@@ -1522,7 +1522,7 @@ select all those cards, but only those cards, which you would have to turn over 
             When we want to prove the biconditional statement "P if and only if Q", we do it in two proofs: first, we prove "if P then Q"; second, we prove "if Q then P". Note that sometimes it's easier to use a logically equivalent form to prove a results (e.g. you can prove the inverse instead of the converse since they are logically equivalent).
         </p>
         <example>
-            Prove " a whole number <m>n</m> is even if and only if <m>n^2</m> is even."
+            <p>Prove " a whole number <m>n</m> is even if and only if <m>n^2</m> is even."</p>
             <solution>
                 <p>
                     Let's do "if <m>n</m> is even then <m>n^2</m> is even" first. Then we'll find that it's easier to prove the inverse statement "if <m>n</m> is odd then <m>n^2</m> is odd" than the converse.
