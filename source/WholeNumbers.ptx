@@ -87,7 +87,7 @@
         Note the difference between a numeral and a number: a number is the actual amount, whereas a numeral is some symbol that represents this amount.
     </p>
     <p>
-        Numerals, however important as they are to being able to work with and understand quantities, isn't enough. Just imagine if we had a completely unique symbol for every whole number there is, and there are infinitely many so this is impossible anyway. So, we use the idea of place to represent any number we like using a finite (and usually small) amount of symbols. 
+        Numerals, however important as they are to being able to work with and understand quantities, aren't enough. Just imagine if we had a completely unique symbol for every whole number there is, and there are infinitely many so this is impossible anyway. So, we use the idea of place to represent any number we like using a finite (and usually small) amount of symbols. 
     </p>
     <p>
         Think about why we write the number "eleven" with the numerals 11. What does this actually mean? We have two 1's, but they're playing different roles solely due to their location in the numeral. The leftmost 1 means "one ten" and the rightmost 1 means "one one". So, really, we read that number as "one ten and one one," whose number happens to have the name "eleven".
@@ -113,7 +113,7 @@
     Note that <m>|D|</m> is called the <term>base</term> of our number system. For example, our base ten number system has the digits <m>\{0,1,2,3,4,5,6,7,8,9\}</m> and any number larger than nine we can represent using the place of digits.
 </p>
 <p>
-    Note that in base <m>b</m>, <m>|D| = b</m> and <m>D = \{0,1,2, \ldots, b-1, b\}.</m> So, for example, in base <m>7</m> the digit set is <m>D=\{0,1,2,3,4,5,6\}</m>. Note that these are all the possible remainders when dividing whole numbers by 7.
+    Note that in base <m>b</m>, <m>|D| = b</m> and <m>D = \{0,1,2, \ldots, b-1\}.</m> So, for example, in base <m>7</m> the digit set is <m>D=\{0,1,2,3,4,5,6\}</m>. Note that these are all the possible remainders when dividing whole numbers by 7.
 </p>
 <p>
     How does place value work? Let's see what happens as we count up from one to twelve:
@@ -186,8 +186,9 @@
     We'll explore different bases as this chapter progresses. To have a solid understanding of place value, you should be able to understand numbers written in any base, and be able to work with other bases when doing arithmetic.
 </p>
 <p>
-    Note that in our examples, we group ones into "long" pieces, then we group "longs" into squares, then we group squares into cubes In base ten the longs are tens, the squares are hundreds, and the cubes are thousands. Note that the cube just looks like a "big" one, and thus is why we repeat tens, hundreds, thousands, when we do place value (REWORD THIS!)
+    Note that in our examples, we group ones into "long" pieces (1-dimensional), then group those longs into squares (2-dimensional), and then group squares into cubes (3-dimensional). In base ten the longs are tens, the squares are hundreds, and the cubes are thousands. A thousand can be thought of as a new kind of "one" in three dimensions—one cube of size ten. This helps explain why our place-value language repeats terms like ten, hundred, and thousand as we move up: ten thousand (a line of thousands), hundred thousand (a square of thousands), and million (a cube of thousands), and so on.
 </p>
+
 <p>
     The idea of expanded place form extends to any base too. For example, we can write <m>1537_{eight}</m> in its expanded place form: <m>1 \times 10^{3}_{eight}+5 \times 10^2_{eight}+3 \times 10^1_{eight}+ 7 \times 10^0_{eight}</m>. Remember we are thinking in base eight, so <m>10^{3}_{eight}</m> is the number <m>8 \times 8 \times 8 = 512</m> in base ten, <m>10^2_{eight}</m> is the number <m>64</m> in base ten, and so on. To avoid any confusion, we'll only use the words "tens", "hundreds", etc to refer to base ten, and block names like "longs", "squares", etc to refer to places in any base.
 </p>
@@ -258,7 +259,7 @@
             </image>
         </p>
         <p>
-            Now we have 3 squares, and 2 ones. Can we write this as <m>32_{five}</m>? No! Be careful here. We are missing a place; we have no fives, so we need to indicate that with the digit 0: so we should write <m>302_{five}</m>. Note that <m>32_{five}</m> is 3 fives and 2 ones, which is 17. This is why that 0 digit is important!
+            Now we have 3 squares, and 2 ones. Can we write this as <m>32_{five}</m>? No! Be careful here. We are missing a place; we have no fives, so we need to indicate that with the digit 0: so we should write <m>302_{five}</m>. Note that <m>32_{five}</m> is 3 fives and 2 ones, which is 17 (in base ten). This is why that 0 digit is important!
         </p>
         
     </example>
@@ -335,7 +336,7 @@
       </p>
       <example>
           <p>
-              Let's look at <m>2514_{six}</m>. What does this mean? Reading from right to left, we have 4 ones, 1 long, 5 squares, and 2 cubes. Longs are 6 ones, squares are <m>6 \times 6= 6^2 = 36</m> ones, and cubes are <m>6 \times 6 \times 6 = =6^3 = 216</m> ones. We can now add all of the ones and group in our usual base ten:
+              Let's look at <m>2514_{six}</m>. What does this mean? Reading from right to left, we have 4 ones, 1 long, 5 squares, and 2 cubes. Longs are 6 ones, squares are <m>6 \times 6= 6^2 = 36</m> ones, and cubes are <m>6 \times 6 \times 6 = 6^3 = 216</m> ones. We can now add all of the ones and group in our usual base ten:
               <me>
                   2 \times 6^3 + 5 \times 6^2 + 1 \times 6 + 4 \times 1 = 622
               </me>
@@ -477,7 +478,7 @@
     <subsection xml:id="subsec-Addition">
         <title>Addition</title>
         <p>
-            Addition is an operation that we usually have an intuitive grasp of. There are two common ways of viewing addition (called addition models); the "set model," where we combine two sets (with no elements in common; that is, and empty intersection) into one set, and the "number line model", where we start at one number on the umber line, and add additional spaces according to the number we're adding to the first one. 
+            Addition is an operation that we usually have an intuitive grasp of. There are two common ways of viewing addition (called addition models); the "set model," where we combine two sets (with no elements in common; that is, an empty intersection) into one set, and the "number line model", where we start at one number on the number line, and add additional spaces according to the number we're adding to the first one. 
         </p>
         <p>
             Here is the set model:
@@ -575,7 +576,7 @@
                     The key thing to realize is that all that matters is the *existence* of a number, say <m>c</m>, such that <m>a=b+c</m>. Thus we can write this as a conditional statement:
                 </p>
                 <p>
-                    If <m>a &gt; b</m> then there is a <m>c \ in \mathbb{N}</m> such that <m>a=b+c</m>.
+                    If <m>a &gt; b</m> then there is a <m>c \in \mathbb{N}</m> such that <m>a=b+c</m>.
                 </p>
             </solution>
                 
@@ -631,11 +632,43 @@
                 </p>
             </example>
             <example>
-                Now let's let <m>a=14</m> and <m>b=0</m>. Then <m>14-0=14</m> since <m>14=0+14</m>. So in the definition above <m>c=14</m>.
+                <p> Now let's let <m>a=14</m> and <m>b=0</m>. Then <m>14-0=14</m> since <m>14=0+14</m>. So in the definition above <m>c=14</m>. </p>
             </example>
-            <p>
-    INCLUDE SECTION ON a-b=c IFF a-c=b, EITHER HERE OR IN PROPERTIES OF ARITHMETIC SECTION
-</p>
+           
+    <subsubsection>
+  <title>Related Subtraction Problems</title>
+  <p>
+    Subtraction problems are often connected in useful ways. For example, if we know that 
+    <m>a - b = c</m>, then we can also conclude that <m>a - c = b</m>. In fact, these two 
+    statements are logically equivalent. That is, 
+    <m>a - b = c</m> <term>if and only if</term> <m>a - c = b</m>.
+  </p>
+  <p>
+    This biconditional tells us that a single subtraction fact always gives us a second, 
+    related subtraction fact. For example, if <m>9 - 4 = 5</m>, then we also know that 
+    <m>9 - 5 = 4</m>. Thinking in this way can make subtraction facts easier to remember, 
+    since each one automatically provides a pair.
+  </p>
+  <p>
+    Both of these subtraction facts are also tied to the corresponding addition fact 
+    <m>4 + 5 = 9</m>. In general, if <m>a - b = c</m>, then the associated addition problem is 
+    <m>b + c = a</m>. The two subtractions and the addition all express the same relationship 
+    among the three numbers, just in different ways.
+  </p>
+  <p>
+    Notice that this relationship is different from addition facts, where one equation such 
+    as <m>4 + 5 = 9</m> already contains its “partner” fact <m>5 + 4 = 9</m>. Subtraction 
+    requires us to be more careful, and the biconditional <m>a - b = c</m> if and only if 
+    <m>a - c = b</m> makes the connection precise, while the related addition fact 
+    <m>b + c = a</m> ties them all together.
+  </p>
+
+  <exercise><p>How can you express the two related subtraction problems above in terms of inequalities?  </p> </exercise>
+</subsubsection>
+
+
+
+
 
 <video youtube="On5EaTP0UEY" />
     </subsection>
@@ -676,7 +709,7 @@
         <subsubsection xml:id="subsubsec-Exponents">
             <title>Exponents</title>
             <p>
-                MOVE SECTION TO AFTER PROPERTIES OF ARITHMETIC Just like how multiplication is a nice way of writing repeated addition, it's very useful to be able to have the idea of repeated multiplication. To write  <m>a \times a \times a \times  \ldots \times a</m>, where <m>a</m> is multiplied by itself <m>b</m> times, we write <m>a^b</m>, where we call <m>a</m> the <term>base</term> and <m>b</m> the <term>exponent.</term>.
+                MOVE SECTION TO AFTER PROPERTIES OF ARITHMETIC Just like how multiplication is a nice way of writing repeated addition, it's very useful to be able to have the idea of repeated multiplication. To write  <m>a \times a \times a \times  \ldots \times a</m>, where <m>a</m> is multiplied by itself <m>b</m> times, we write <m>a^b</m>, where we call <m>a</m> the <term>base</term> and <m>b</m> the <term>exponent.</term>
             </p>
             <example>
                 <p>
@@ -688,7 +721,7 @@
                 It's clear that for any whole number <m>a</m> we have <m>0^a=0</m>. Also, for any whole number <m>a</m> we say <m>a^1 = a</m> and if <m>a \neq 0</m> we say <m>a^0=1</m>. Note that we leave <m>0^0</m> undefined; as this causes a lot of trouble if we try and give this meaning. We will see why later. 
             </p>
             <p>
-                Let's try and come up with some rules for multiplying exponents. What if we wanted to multiply <m>3^2 \times 3^4? </m>. We could write
+                Let's try and come up with some rules for multiplying exponents. What if we wanted to multiply <m>3^2 \times 3^4? </m> We could write
                 <me>
                     \quad 3^2 \times 3^4
                     = (3 \times 3) \times (3 \times 3 \times 3 \times 3).
@@ -854,7 +887,7 @@
 
         <example>
             <p>
-                Be careful when you see expressions like <m>3+4(5-2)</m>. It is a very common error to add the <m>3+4</m> first, which is incorrect as it does not follow our oder of operations. OF course, we should have <me>
+                Be careful when you see expressions like <m>3+4(5-2)</m>. It is a very common error to add the <m>3+4</m> first, which is incorrect as it does not follow our order of operations. Of course, we should have <me>
                     3+4(5-2) = 3+4(3) = 3+12 = 15.
                 </me>
                 
@@ -872,7 +905,7 @@
     <definition xml:id="def-Closure">
         <statement>
             <p>
-                Closure - We say a set <m>S</m> is <term>closed under the operation </term> <m>\square</m> exactly when it's the case that if <m>a.b \in S</m> then <m>(a \square b) \in S</m>.
+                Closure - We say a set <m>S</m> is <term>closed under the operation </term> <m>\square</m> exactly when it's the case that if both <m>a,b \in S</m> then <m>(a \square b) \in S</m>.
             </p>
         </statement>
         <example>
@@ -907,12 +940,12 @@
     <definition xml:id="def-Associativity">
         <statement>
             <p>
-               We say an operation <m>\square</m> is <term>associative</term> exactly when it's the case that when  <m>(a \square b) \square c =d</m> then <m>a (\square b \square c) =d</m>; that is, <m>(a \square b) \square c = a a\square (b \square c)</m>  (grouping performing the operation doesn't matter). 
+               We say an operation <m>\square</m> is <term>associative</term> exactly when it's the case that when  <m>(a \square b) \square c =d</m> then <m>a (\square b \square c) =d</m>; that is, <m>(a \square b) \square c = a\square (b \square c)</m>  (grouping performing the operation doesn't matter). 
             </p>
         </statement>
         <example>
             <p>
-                In <m>\mathbb{N}</m>, addition and multiplication are associative. For example, <m>(3 \times 2) \times 4 = 3 \times (2 \times 4)</m> and <m>(3 + 7)=4 = 3+ (7 +4)</m>. We can view these pictorially:
+                In <m>\mathbb{N}</m>, addition and multiplication are associative. For example, <m>(3 \times 2) \times 4 = 3 \times (2 \times 4)</m> and <m>(3 + 7)+4 = 3+ (7 +4)</m>. We can view these pictorially:
             </p>
             <p>
                 <image source="WholeNumbers/AssociativeLine.svg">
@@ -970,7 +1003,7 @@
                 </statement>
             </definition>
             <p>
-                Using the idea of identities, we can talk about inverse elements for each pair of related operations. In laster sections when we discuss integers and rational numbers, we will talk about how we can turn every subtraction problem into an addition problem, and (almost) every division problem into a multiplication problem. In this sense, we can think of subtraction as being the "same" operation as addition, and division being the "same" operation as multiplication.  </p>
+                Using the idea of identities, we can talk about inverse elements for each pair of related operations. In later sections when we discuss integers and rational numbers, we will talk about how we can turn every subtraction problem into an addition problem, and (almost) every division problem into a multiplication problem. In this sense, we can think of subtraction as being the "same" operation as addition, and division being the "same" operation as multiplication.  </p>
 
             <definition xml:id="def-AdditiveInverse">
                 <statement>
@@ -989,7 +1022,7 @@
             <definition xml:id="def-MultiplicativeInverse">
                 <statement>
                     <p>
-                        Let <m>a</m> be a number. Then <m>b</m> is the <term>multiplicative inverse</term> of <term>reciprocal</term> of <m>a</m> if and only if <m>a \times b = 1</m>.
+                        Let <m>a</m> be a number. Then <m>b</m> is the <term>multiplicative inverse</term> or <term>reciprocal</term> of <m>a</m> if and only if <m>a \times b = 1</m>.
                     </p>
                 </statement>
                 <example>
@@ -1023,7 +1056,7 @@
                     </p>
                     <p>
                         <image source="WholeNumbers/6x(3+5)Rectangle.svg">
-                            <shortdescription>Showing distributivity by braking a 6x8 rectangle into a 6x3 and a 6x5 rectangle.</shortdescription>
+                            <shortdescription>Showing distributivity by breaking a 6x8 rectangle into a 6x3 and a 6x5 rectangle.</shortdescription>
                         </image>
                     </p>
                     <p>
@@ -1202,7 +1235,7 @@
                        We wish to show that <m>a \div c=b</m>. Let's keep that in our mind so that we know where we are working to.
                    </p>
                    <p>
-                       Since we know that <m>a=b \times c</m>, using commutativity of multiplication we have that <m>a=c \times b</m>. By the definition of subtraction, this means that <m>a \div c=b</m>. Thus we have shown what we wanted to show.
+                       Since we know that <m>a=b \times c</m>, using commutativity of multiplication we have that <m>a=c \times b</m>. By the definition of division, this means that <m>a \div c=b</m>. Thus we have shown what we wanted to show.
                    </p>
                </proof>
            </theorem>
@@ -1249,7 +1282,7 @@
             Let <m>a</m> be a number and let's consider <m>a \times 0</m>, which is our unknown expression; this is what we need to solve for. Remember, we *cannot* simplify this. The key to this is trying to come up with a way of finding something equal to <m>a \times 0</m> and then using some algebra to solve for our unknown expression. 
         </p>
         <p>
-            One way of doing this is remembering the multiplicative identity and additive identity properties. Let's be very precise here, and make sure we label all of the properties we are using. By the multiplicative identity property we know <me> a \times 1 = a</me> and by the additive identity property we know <me> 1+0 = 1 </me>. Using substitution of equal expressions we can write <me>a \times (1+0) = 1 </me>. Now using distributivity we can say that <me> a \times 1 + a\times 0 = a</me>. Again, by multiplicative identity we can simplify this to <me>a + a\times 0 = a </me>. Finally ,by arithmetic of equal expressions we can subtract <m>a</m> from both sides to have <m>a \times 0 = 0</m>.           
+            One way of doing this is remembering the multiplicative identity and additive identity properties. Let's be very precise here, and make sure we label all of the properties we are using. By the multiplicative identity property we know <me> a \times 1 = a</me> and by the additive identity property we know <me> 1+0 = 1 </me>. Using substitution of equal expressions we can write <me>a \times (1+0) = 1 </me>. Now using distributivity we can say that <me> a \times 1 + a\times 0 = a</me>. Again, by multiplicative identity we can simplify this to <me>a + a\times 0 = a </me>. Finally, by arithmetic of equal expressions we can subtract <m>a</m> from both sides to have <m>a \times 0 = 0</m>.           
         </p>
        
         
