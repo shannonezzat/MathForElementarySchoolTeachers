@@ -86,9 +86,79 @@
     </p>
 </assemblage>
 
-<exercise>
-    Put exercise here
+<exercise xml:id="open-sentences-exercises">
+  <p>
+    Answer the following questions about <term>open sentences</term>. Recall that an open sentence is a mathematical statement containing one or more variables that becomes either true or false when specific values are substituted for the variables.
+  </p>
+  <ol>
+    <li>
+      <p>
+        Determine whether each of the following is an open sentence:
+      </p>
+      <ol marker="a">
+        <li><m>x+3=10</m></li>
+        <li><m>7-4=3</m></li>
+        <li><m>y^2=25</m></li>
+        <li><m>12 \gt 15</m></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        For each open sentence below, state whether it is true or false when the given value is substituted for the variable.
+      </p>
+      <ol marker="a">
+        <li><m>2x+5=11</m> when <m>x=3</m></li>
+        <li><m>n-7 \leq 2</m> when <m>n=10</m></li>
+        <li><m>3y=18</m> when <m>y=6</m></li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Write an open sentence that describes each situation:
+      </p>
+      <ol marker="a">
+        <li>The cost <m>C</m> of <m>t</m> tickets if each ticket costs $12.</li>
+        <li>The area <m>A</m> of a square with side length <m>s</m>.</li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Suppose <m>P(x)</m> is the open sentence “<m>x</m> is a prime number.” List three values of <m>x</m> that make <m>P(x)</m> true and three that make it false.
+      </p>
+    </li>
+  </ol>
+  <solution>
+    <ol>
+      <li>
+        <ol marker="a">
+          <li>Open</li>
+          <li>Not open(true)</li>
+          <li>Open</li>
+          <li>Not open (false)</li>
+        </ol>
+      </li>
+      <li>
+        <ol marker="a">
+          <li>True</li>
+          <li>False</li>
+          <li>True</li>
+        </ol>
+      </li>
+      <li>
+        <ol marker="a">
+          <li><m>C = 12t</m></li>
+          <li><m>A = s^2</m></li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          True examples: <m>x=2,3,5</m>. False examples: <m>x=1,4,6</m>.
+        </p>
+      </li>
+    </ol>
+  </solution>
 </exercise>
+
   </subsection>          
 <subsection xml:id="subsec-AndOrNot">
     <title>And, Or, and Not</title>
@@ -210,8 +280,8 @@
     If <m>P:=</m> "2 is a prime number" (which is true) then <m>\sim P = </m> "2 is not a prime number" (which is false).
 </example>
 <example>
-    If <m>P = "x &lt; 5"</m> over the domain of counting numbers (which is true when <m>= 1,2,3,4</m> and false otherwise) then <m>\sim P = "x \geq 5"</m> (which is false when <m>x=1,2,3,4</m> and true otherwise). You could also write <m>\sim P</m> as <m>"x > 4"</m>, or in many other logically equivalent ways.
-
+    <p>If <m>P = "x &lt; 5"</m> over the domain of counting numbers (which is true when <m>= 1,2,3,4</m> and false otherwise) then <m>\sim P = "x \geq 5"</m> (which is false when <m>x=1,2,3,4</m> and true otherwise). You could also write <m>\sim P</m> as <m>"x > 4"</m>, or in many other logically equivalent ways.
+</p>
 </example>
 </definition>
 <exercise>

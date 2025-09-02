@@ -626,31 +626,46 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     Let's calculate <m>2201_{four} - 1332_{four}</m> and since we are still getting used to arithmetic in other bases, let's draw some base four blocks to represent our calculation.
                 </p>
                 <p>
-                    INSERT PIC OF THE STANDARD SETUP AND BLOCKS REPRESENTING THE SITUATION
+                    
+                   <image source="ArithmeticAlgorithms/2201-1332a.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     We start from the ones digit on the right. Since the top digit is smaller than the bottom digit, we must borrow. The first non-zero digit to the left is the 2 (in the squares, or sixteens, place). We ungroup <m>1_{four}</m> sixteen (square) to <m>3_{four}</m> fours (longs) and <m>10_{four}</m> ones (remember that <m>10_{four}</m> represents the number "four"). We can see this since <m>16 = 3 \times 4 + 4 \times 1</m>, similar to our situation in the previous example in base ten. Thus we decrease the squares digit in the top number by 1 and replace the 0 in the longs place by a 3, and thus we have <m>11_{four}</m> ones (which, in base four, is five ones).
                 </p>
                 <p>
-                    INSERT PIC OF THIS
+                    
+                   <image source="ArithmeticAlgorithms/2201-1332b.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     Now, we can do the subtraction in the ones place <m>11_{four} - 2_{four} = 3_{four} </m>, since we can see that <m>2_{four}+3_{four} = 11_{four}</m>. We can subtract the longs digit as well: <m>3_{four} - 3_{four} = 0 _{four}</m>. We write these down in our calculation.
                 </p>
                 <p>
-                    INSERT PIC OF THIS
+                    
+                   <image source="ArithmeticAlgorithms/2201-1332c.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     Now, in the squares place, the digit 1 in the top number is smaller than the 3 in the bottom number, so we need to borrow again. We ungroup <m>1_{four}</m> cube (or sixty-four) to <m>10_{four}</m> squares, decreasing our 2 cubes to 1 cube.  
                 </p>
                 <p>
-                    INSERT PIC OF THIS
+                    
+                   <image source="ArithmeticAlgorithms/2201-1332d.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     Thus we now have <m>10_{four}+1_{four} = 11_{four}</m> squares and can now do our subtraction <m>11_{four}-3_{four} = 2_{four}</m>. We can also do the subtraction in the cubes place: <m>1_{four}-1_{four} = 0_{four}</m>. We now have our final difference: <m>2201_{four} - 1332_{four} = 203_{four}.</m>. 
                 </p>
-                <p>
-                    INSERT PIC OF THIS
+               <p>
+                    
+                   <image source="ArithmeticAlgorithms/2201-1332e.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
 
             </example>
@@ -719,21 +734,30 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                Let's subtract <m>4052-2457</m> again. Like before, we line up the numbers vertically by place value. In terms of blocks, we can view each place as a separate subtraction calculation with blocks of the same place value. 
            </p>
            <p>
-               INCLUDE PIC HERE
-           </p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
            <p>
                Order isn't important in this algorithm, so let's start from left and go right. Subtracting the thousands place, we know that <m>4000-2000 = 2000</m>. We write this partial difference in our calculation.
            </p>
 
-            <p>
-                INCLUDE PIC HERE
-            </p>
+          <p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457pda.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
             <p>
                 Now, for the hundreds place, we have <m>000-400=-400.</m> (note that writing 0 as <m>000</m> is to remind you that we have <m>0</m> hundreds.) So we mark down <m>-400</m> in our calculation. Similarly, we have <m>50-50=0</m> and <m>2-7=-5</m>. We write these down in our calculation as well.
             </p>
             <p>
-                INCLUDE PIC HERE
-            </p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457pdb.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
             <p>
                 So we must combine our partial differences to obtain the difference we are looking for. We have <m>2000-400+0-5</m>. Working from left to right we obtain.
             </p>
@@ -746,9 +770,12 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                  <p>
                      And we have our final answer.
                  </p> 
-                 <p>
-                     INCLUDE PIC HERE
-                 </p>          
+                <p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457pdc.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>        
                             
 
        </example>
@@ -818,30 +845,60 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
             <p>
                 Let's subtract <m>4052-2457</m> using the same change algorithm. We line up the two numbers as usual (and we'll keep block representations along with our calculation to see the process in a pictorial way)
             </p>
-            <p>
-                INSERT PIC HERE
-            </p>
+           <p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p> 
             <p>
                 Starting at the ones place, we notice that the top digit is smaller than the bottom digit, we add 3 to both the top and bottom numbers (<m>(4052+3)-(2457+3))</m>) to obtain the new subtraction problem <m>4055-2460</m>. Notice that the bottom digit is now 0, so this will eventually make subtraction easy (at the cost of doing a bit of addition)
             </p>
             <p>
-                INSERT PIC HERE INCLUDING NEW SUBTRACTION PROBLEM
-            </p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457sca.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p> 
+                 <p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457scb.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
             <p>
                 Now we move left to the tens place. As before, we notice that the top digit is less than the bottom digit, so add the opposite digit number of tens to both numbers. Since the opposite of <m>6</m> is <m>4</m> we add <m>40</m> to both numbers (<m>(4055+40)-(2460+40)</m>) to make the new subtraction problem <m>4095-2500.</m>
             </p>
             <p>
-                INSERT PIC OF THIS
-            </p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457scc.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p> 
+                 <p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457scd.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
             <p>
                 Moving to the hundreds place, since the top digit is less than the bottom digit, we add the opposite number of hundreds, that is <m>500</m>, to both numbers to obtain the new subtraction problem <m>4595-3000</m>.  
             </p>
+             <p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457sce.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
             <p>
                 Moving left to the thousands place, we notice that the top digit is greater than or equal to (in this case, greater than) the bottom digit, so we do nothing. Also, there are no non-zero digits in any places to our left (thousands is the largest place in our numbers) so we can now easily subtract place by place to obtain our final answer <m>4595-3000=1595.</m>
             </p>
             <p>
-                INSERT PIC OF THIS
-            </p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457scf.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
         </example>
     </subsection>
     <subsection xml:id="subsec-EqualAdditionsAlgorithm">
@@ -869,32 +926,47 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <example>
           <p> Let's subtract <m>4052-2457</m> using the equal addition algorithm. As usual we line up our numbers so digits of the same place value are in the same column, but this time we will have just a little bit of space between the bottom number and our difference (for any borrowed 1's that will appear). And, as usual, we will include blocks for added pictorial understanding. </p>
           <p>
-              INSERT PIC HERE
-          </p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
           <p>
               Starting with the ones place, we see that the digit <m>2</m> in the top number is less than the digit <m>7</m> in the bottom. So we "borrow" 10 ones, but unlike the standard subtraction algorithm we are "in debt" 1 ten to the bottom number. Thus, we have <m>(10+2)-7=12-7=5</m> ones in our difference. We mark this, and our additional debt of 1 ten, in our calculation: 
           </p>
-          <p>
-              INSERT PIC HERE
-          </p>
+           <p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457eaa.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
           <p>
               Now we move to the tens place. We see that the <m>5</m> in the top number is less than the <m>5+1</m> in the bottom number, so we "borrow" 10 tens from 1 hundred in the same way as the previous step to have <m>(10+5)-(5+1)=15-6=9</m> tens in our difference.  We mark this, and our additional debt of 1 hundred, in our calculation: 
           </p>
-          <p>
-              INCLUDE PIC HERE
-          </p>
+           <p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457eab.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
           <p>
               Now we move to the hundreds place. We see that the <m>0</m> in the top number is less than the <m>4+1</m> in the bottom number, so we "borrow" 10 hundreds from 1 thousand in the same way as our previous two steps to have <m>(10+0)-(4+1)=10-5=5</m> hundreds in our difference. We mark this, and our additional debt of 1 thousand, in our calculation:
           </p>
-          <p>
-              INCLUDE PIC HERE
-          </p>
+           <p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457eac.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
           <p>
               Finally we move to the thousands place. We see that <m>4</m> in the top number is greater than the <m>2+1</m> in the bottom number, so we subtract without borrowing: <m>4-(2+1)=4-3=1</m> and write this in our answer. As there are no more non-zero digits to the left (that is; no larger places than thousands in our numbers,) we are finished, and we have calculated <m>4052-2457=1595.</m>
           </p>
-          <p>
-              INSERT PIC OF THIS
-          </p>
+           <p>
+                    
+                   <image source="ArithmeticAlgorithms/4052-2457ead.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
         </example>
     <exercise>
         <p>
@@ -903,9 +975,9 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
     </exercise>
     
        
-        <p>
-           Discussion of pros-cons of each and relationships. NEED TO DO THIS!!!
-        </p>
+       <exercise>
+        <p>We have covered four different subtraction algorithms so far. Analyze each algorithm indicating what you think are the pros and cons of each.</p>
+       </exercise>
          </subsection> 
          <video youtube="G_FyRcT-tMo" />
     </section>
@@ -1036,15 +1108,16 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 <p>
                     Let's multiply <m>348 \times 97</m>. First, we write the numbers lined up by place value, but we are thinking of these numbers in expanded form: <m>(300 + 40 + 8) \times (90 + 7). </m> Pictorially, we can view this as breaking up a rectangle with side lengths <m>348</m> and <m>97</m> units into sub rectangles where the side lengths are the terms in each expanded form.
                 </p>
-                <p>
-                    INSERT PIC OF THIS
+                 <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97ppa.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     Now, using distributivity, we calculate each partial product: since there are 3 terms in the first expanded form and 3 in the second, we will have <m>3 \times 2 = 6</m> partial products to calculate. We can start anywhere we like, but usually one starts by multiplying the bottom ones place by every place in the top number. Then, working right to left, we multiply the tens place by every place in the top number. 
                     </p>
-                    <p>
-                        INSERT PIC HERE
-                    </p>
+                    
                     <p>
                     
                     Algebraically, we can view this in the following way. Note that the order the terms will be first the "natural" order that one would do using distributivity, and then reordered (in fact reversed, as it's usual to perform the algorithm from right to left and bottom to top) to match the partial products algorithm:
@@ -1065,8 +1138,11 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     Pictorially, we can view this as "sub-areas" of each rectangle:
                 </p>
                 
-                <p>
-                    INSERT PIC HERE
+               <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97ppb.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     Finally, we sum the partial products together to get our final product. We'll do this using the standard addition algorithm. Pictorially, we are adding all sub-areas together, and algebraically we are simply adding:
@@ -1075,7 +1151,10 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     = 56 + 280 + 2100 + 720 + 3600 + 27,000 = 33756
                 </me>
                 <p>
-                    INSERT PIC HERE
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97ppc.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 
                 
@@ -1094,14 +1173,19 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
            </p>
 
            <p>
-               INSERT PIC OF THIS
-           </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97saa.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
            <p>
-               Note that since multiplication is commutative, we know that <m>348 \times 97 = 97 \times 348</m>. However, the calculation will be different since we would be subdividing our rectangle in "the other direction" when we think of <m>97 \times (300+40+8)</m>. Indeed, we could use this as a "check" to make sure that we did the calculation correctly; both products should, of course, be the same           </p>:
-
-            <p>
-                INSERT PIC OF THIS
-            </p>
+               Note that since multiplication is commutative, we know that <m>348 \times 97 = 97 \times 348</m>. However, the calculation will be different since we would be subdividing our rectangle in "the other direction" when we think of <m>97 \times (300+40+8)</m>. Indeed, we could use this as a "check" to make sure that we did the calculation correctly; both products should, of course, be the same:  </p>         
+           <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97sab.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
 
             <p>
               Of course, multiplying a non-single-digit number (like <m>348</m>) by a single digit number isn't as easy as multiplying two single digit numbers together. We will still multiply place by place, but instead of writing down each individual place multiplication calculation, we will do them all at once, and keep track of any regroupings by "carries" above the digits in our top number.   
@@ -1145,44 +1229,65 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     Let's multiply <m>348 \times 97</m>. First, we write the numbers lined up by place value, but we are thinking of the bottom number in expanded form: <m>(349) \times (90 + 7). </m> Pictorially, we can view this as breaking up a rectangle with side lengths <m>348</m> and <m>97</m> units into sub rectangles where the side length of <m>97</m> are the terms in the expanded form. 
                 </p>
                 <p>
-                    INCLUDE PICTURE HERE
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97saa.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     We start at the right hand side of the bottom number, with our aim being to calculate <m>7 \times 348</m>. Since that digit is in the ones place, we do not write down any zeroes yet. We multiply it by each digit in the top number and add any regroupings to the next place: <m>7 \times 8 = 56</m> so we write down the <m>6</m> and "carry" the <m>5</m> to the tens place. 
                 </p>
                 <p>
-                    INSERT PIC HERE
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97sac.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     Next, we multiply the our ones digit by the tens place, and add the regrouping: <m>7 \times 4 + 5 =28 +5 = 33</m>. We write down the <m>3</m> to the  left of the <m>6</m> and carry the other three to the hundreds place.
                 </p>
                 <p>
-                    INSERT PIC HERE
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97sad.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     Now, we multiply the hundreds place: <m>7 \times 3 + 3 = 21+3=24</m>. As there is no (non-zero) digit to the left, we write both digits down to the left of the <m>3</m>. Thus we have calculated <m>7 \times 348 = 2436.</m>
                 </p>
                 <p>
-                    INSERT PIC HERE
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97sae.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     Now we move to the tens digit of the bottom number. Our aim is now to calculate <m>90 \times 348</m>. Since the <m>9</m> is in the tens place, we first write a <m>0</m> in the right-most spot (we know that <m>90 \times 348 = 10 \times (9 \times 348)</m> so this <m>0</m> signifies that we have taken out a factor of <m>10</m>.) </p>
                   <p>  We start with <m>9 \times 8 = 72</m>. So we write down the <m>2</m> and "carry" the <m>7</m> to the next place value. Note that this <m>7</m> actually signifies <m>7</m> hundreds since we are really calculating <m>90 \times 8 = 720</m>. Similar to the first digit of the bottom number, we have <m>9 \times 4 + 7 = 43</m> and <m>9 \times 3 + 4 = 31</m>. Thus we have calculated <m>90 \times 348 = 31320</m>
                 </p>
                 <p>
-                    INSERT PIC HERE
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97saf.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
-                    Now that we are out of non-zero digits in the bottom number, we simply add the two partial products we have calculated: <m>2436+31320 = 33756</m>
+                    Now that we are out of non-zero digits in the bottom number, we simply add the two partial products we have calculated; that is, the two pieces of the rectangle we started with: <m>2436+31320 = 33756</m>
                 </p>
                 <p>
-                    INSERT PIC HERE
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97sag.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 <p>
                     Note that our first partial sum is the same as the <m>56+280+2100</m> in the partial sum algorithm, and similarly <m>31320 = 720 + 3600 + 27,000 </m>. We can see this relationship in the diagram too
                 </p>
                 <p>
-                    INSERT PIC HERE
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97sah.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
             </example>
             
