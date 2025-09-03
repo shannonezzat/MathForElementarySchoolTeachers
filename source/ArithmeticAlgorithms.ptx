@@ -1311,21 +1311,24 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
            <p>
                First, it makes sense to develop a multiplication table for base twelve. The most straightforward way is using repeated addition for multiplication. Let's do one row/column, the 5's, to illustrate the process. Here is a blank times table for every digit in base twelve; you can copy and fill in yourself:
            </p>
-           <p>
-               INSERT BLANK TIMES TABLE
-           </p>
+            <p>
+                    
+                   <image source="ArithmeticAlgorithms/base_twelve_multiplication_table_header_only.svg">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
            <p>
                By the property of multiplicative identity, we know that <m>1 \times 5 = 5</m> and we know that <m>2 \times 5 = 5 + 5 = A</m>, since we have ten ones (not enough to regroup). We can determine <m>3 \times 5</m> by adding <m>5</m> to <m>2 \times 5</m>. Thus we have <m>3 \times 5 = 2 \times 5 +5 = A+5 = 13</m>. We can input these into our times table in both the 5 row and 5 column since multiplication is commutative: <m>5 \times n = n \times 5</m> for any number <m>n</m>.
            </p>
-           <p>
-               INSERT PIC HERE
-           </p>
-           <p>
+          
                We can continue in the same way, using our skills for addition in base twelve, to finish the rest of the "<m>5</m> times table":
-           </p>
+           
            <p>
-               INSERT PIC HERE
-           </p>
+                    
+                   <image source="ArithmeticAlgorithms/base_twelve_multiplication_table_five_filled.svg">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
 
            <p>
                We can use the same idea for every other digit in base twelve to complete our entire multiplication table in base twelve for single digits. We'll leave this as an exercise:
@@ -1336,9 +1339,12 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    Complete the entire multiplication table in base twelve for single digits.
                </p>
                <solution>
-                   <p>
-                       INSERT PIC HERE
-                   </p>
+                  <p>
+                    
+                   <image source="ArithmeticAlgorithms/base_twelve_multiplication_table_no_zero.svg">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
                </solution>
            </exercise>
 
@@ -1349,41 +1355,56 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     <p>
                         Let's calculate <m>6A0B \times 3B4</m> using the standard algorithm. Let's write the numbers aligned vertically by place value first:
                     </p>
-                    <p>
-                        INSERT PIC OF THIS
-                    </p>
+                   <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/6A0Bx3B4a.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
                     <p>
                         Starting with the <m>4</m> in the ones place of the bottom number, we look at our times table to determine that <m>4 \times B = 38</m> so we write down the <m>8</m> and "carry" the <m>3</m>. Now moving to the next place in the top number, <m>4 \times 0 + 3 =3</m>. We write this down and we do not need to regroup. Next, <m>4 \times A = 34</m> so we write down the <m>4</m> and carry the <m>3</m>. Finally, <m>4 \times 6+3 = 20+3 = 23</m>. Thus <m>6A0B \times 4 = 23438</m>. 
                     </p>
                     <p>
-                        INCLUDE PIC OF THIS
-                    </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/6A0Bx3B4b.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
                     <p>
                         Now we move on to the longs place (that is, the twelves place). We put a <m>0</m> in the rightmost entry of that row and we multiply. For this partial sum we will not be as explicit with the calculation as the previous one. We have that <m>B \times B =A1</m>, <m>B \times 0 +A =A</m>, <m>B \times A = 92</m>, and <m>B \times 6 + 9 = 63</m>. Thus, <m>6A0B \times B0 = 632A10</m>.
                     </p>
                     <p>
-                        INSERT PIC OF THIS
-                    </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/6A0Bx3B4c.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
                     <p>
                         Next, we move on to the squares place (that is, the one-hundred-forty-fours place, or "twelve squared place"). We put a <m>0</m> in the two rightmost entries of that row and we multiply. Using a similar method to above we get that <m>6A0B \times 3 = 1862900</m>. You should check that you obtain the same answer as this!
                     </p>
                     <p>
-                        INSERT PIC OF THIS
-                    </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/6A0Bx3B4d.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
                         <p>
                            Finally, we sum all of our partial products. We have that <m>23438+632A10+1862900 = 22B8B48</m>. 
                         </p>
-                    <p>
-                    INSERT PIC OF THIS
+                   <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/6A0Bx3B4e.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                 </p>
                 </example>
                 <p>
                     As you can see, the idea is the exact same as in base ten, and we simply have to remember that we are operating in a different base. 
                 </p>
-                
+        </subsection>
                 
 
-       </subsection>
+       
        <subsection xml:id="subsec-RussianMultiplication">
            <title>Russian Multiplication</title>
 
@@ -1433,29 +1454,47 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                <p>Let's multiply <m>348 \times 97</m>. Since <m>97</m> is the smaller number, we will write this on the left.
                </p>
                <p>
-                   INSERT PIC OF THIS
-               </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97rma.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
                <p>
                    Now, we divide the left number by two. Since <m>97 \div 2  = 48.5</m>, we round down to <m>48</m> and write this number below the left number. Also, we multiply the right number by two and write this below the right number.
                </p>
                <p>
-                   INSERT PIC OF THIS
-               </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97rmb.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
                <p>
                    We continue this process until we get to 1 on the left side. Note that <m>3 \div 2 = 1.5</m> so we round down to <m>1.</m>
                </p>
                <p>
-                   INSERT PIC OF THIS
-               </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97rmc.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
                <p>
                    Now, we cross out all rows that contain an even number on the left. That are the rows with the left number being <m>48, 24, 12,</m> and <m>6</m>. This leaves the rows with the left number being <m>97, 3,</m> and <m>1</m>. 
                </p>
-               <p>
-                   INSERT PIC OF THIS
-               </p>
+              <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97rmd.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
                <p>
                    We now sum the right numbers of the remaining rows: <m>348+11,136 + 22,272 = 33756.</m>
                </p>
+               <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/348x97rme.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
            </example>
            <p>
                Maybe surprisingly, we did get the product we expected, but using a calculation that is quite a bit different! Let's now explore why this algorithm works. We will lead you through the exploration below. You definitely should try this exercise before looking at the solutions!
@@ -1488,9 +1527,12 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    <p>
                        For <m>4 \times 5</m> you should have a similar diagram to this:
                    </p>
-                   <p>
-                       INSERT PIC HERE
-                   </p>
+                  <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/Russiana.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                </p>
                    <p>
                        One way of viewing this is that we are splitting our diagram in half and then adding the bottom half to the left hand side, thus turning this into the equivalent problem <m>2 \times 10</m>.
                    </p>
@@ -1499,8 +1541,11 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    <p>
                        You should have the following calculation and diagram:
                    </p>
-                   <p>
-                       INSERT PIC HERE
+                    <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/Russianb.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                    </p>
                    <p>
                        In this case, we have converted the calculation <m>8 \times 10</m> to the equivalent calculations <m>4 \times 20</m>, <m>2 \times 40</m>, and <m>1 \times 80</m>. So <m>8 \times 10 = 1 \times 80.</m>
@@ -1511,7 +1556,10 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                        Let's look at what changes from <m>9 \times 10</m> to the next line <m>4 \times 20</m>. If we didn't round down we would have <m>4.5 \times 20.</m> When we round down we are deleting area from our rectangle. We have <m>0.5 \times 20</m>, or equivalently <m>1 \times 10</m> less area than in the line above. And indeed, the amount of area we are deleting is the right-hand number of the line above. So we need to account for this missing area by adding it back in at the end.
                    </p>
                    <p>
-                       INSERT PIC DESCRIBING MISSING AREA
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.3/Russianc.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                    </p>
                    <p>
                        After this line, the calculation is the same as <m>8 \times 10</m>. So we have the product being the right hand number of the final line <m>1 \times 80</m> plus the "missing" area, which is accounted for in the right hand number of the line <m>9 \times 10</m>. Thus <m>9 \times 10 = 80+10 = 90.</m>
@@ -1667,6 +1715,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
 
                
            </subsubsection>
+           </subsection>
            <subsection xml:id="subsec-RussianMultiplicationAlgorithm">
                <title>Russian Multiplication Algorithm</title>
                <p>
@@ -1724,7 +1773,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                </exercise>
            </subsection>
            
-       </subsection>
+       
         <video youtube="PvdjlT_HJ5s" />
     </section>
     <section xml:id="sec-DivisionAlgorithms">
@@ -1766,8 +1815,11 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                         Write the division <m>a \div b</m> with the dividend <m>a</m> under the "long division" symbol, and the divisor <m>b</m> directly to the left.
                     </p>
                     <p>
-                        INSERT PIC OF THIS
-                    </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/Adivb.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
                 </li>
                 <li>
                     <p>
@@ -1793,38 +1845,56 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     Let's do the calculation <m>587 \div 4</m>. We write this using the long division symbol. We think of <m>4</m> as the number of groups we are making (using the partitive model of division). 
                 </p>
                 <p>
-                    INSERT PIC OF THIS, ALONG WITH BLOCKS TOO
-                </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/587div4a.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
                 <p>
                     Starting with the hundreds place, we find that we can group at most one hundred evenly into each of our four groups. We note this in the quotient by putting a <m>1</m> in the hundreds place. We have <m>5-4=1</m> hundred remaining.
                 </p>
                 <p>
-                    INSERT PIC OF THIS, ALONG WITH GROUPING
-                </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/587div4b.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
                 <p>
                     Now we "ungroup" our one hundred into 10 tens, giving us <m>10+8=18</m> tens. We note this in our calculation by "bringing down" the <m>8</m> tens in the dividend.
                 </p>
                 <p>
-                    INSERT PIC OF THIS
-                </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/587div4c.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
                 <p>
                     Now, we can evenly divide our <m>18</m> tens so that <m>4</m> are in each group, with <m>2</m> tens remaining (since <m>18=4 \times 4 +2</m>, or <m>18 \div 4 = 4R2</m>.) We write the <m>4</m> in the tens place of the quotient, and we have <m>18-4 \times 4=18-16=2</m> tens remaining. We write this down in our calculation.
                 </p>
                 <p>
-                    INSERT PIC OF THIS
-                </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/587div4d.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
                 <p>
                     We "ungroup" the <m>2</m> tens into <m>20</m> ones giving us <m>20+7 = 27 </m> ones. We write this in our calculation.
                 </p>
-                <p>
-                    INSERT PIC OF THIS
-                </p>
+               <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/587div4e.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
                 <p>
                     Finally, we can divide our <m>27</m> ones so that <m>6</m> are in each group of <m>4</m>. We write this in our quotient and since <m>27 \div 4 = 6R3</m> we have <m>3</m> ones remaining. Since we are at the ones place we are finished our calculation, and thus <m>587 \div 4 = 146R3</m>. Each group of <m>4</m> contains <m>146</m> with <m>3</m> ones unable to be grouped evenly.
                 </p>
                 <p>
-                    INSERT PIC OF THIS
-                </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/587div4f.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
             </example>
 
            <p>
@@ -1835,20 +1905,29 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    Let's do <m>986 \div 23</m>. Now, we don't know our <m>23</m> times tables, so we are going to have to estimate. Let's write our calculation in the correct long division form, and note that we won't include the block representation here, but it is worth using this representation if we need some visual guidance:
                </p>
             <p>
-                INSERT PIC OF THIS
-            </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/986div23a.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
             <p>
                 Now, we know that we cannot group <m>9</m> hundreds evenly among <m>23</m> groups, so we ungroup these into tens, giving us <m>94</m> tens in total. We know that <m>23</m> is close to <m>20</m>, so we can use multiples of <m>20</m> as an estimation for the correct hundreds quotient. We know <m>4 \times 20 = 80</m> and <m>5 \times 20 = 100</m>, so let's see if we can put at most <m>4</m> tens evenly in each of our <m>23</m> groups: <m>4 \times 23 = 92</m> and <m>5 \times 23 = 115</m>, so <m>4</m> is the correct partial quotient. Subtracting, we find that we have a remainder of <m>6</m>.
             </p>
             <p>
-                INSERT PIC OF THIS
-            </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/986div23b.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
             <p>
                 Ungrouping these <m>6</m> tens into ones gives us <m>66</m> ones in total. Using a similar procedure to before, we find that <m>2 \times 23 = 46</m> and <m>3 \times 23 = 69</m> so our ones quotient is <m>2</m> with a remainder of <m>66-46=20</m>. 
             </p>
             <p>
-                INSERT PIC OF THIS
-            </p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/986div23c.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
             <p>
                 Thus we have calculated that <m>986 \div 23 = 42R20</m>. 
             </p>
@@ -1865,38 +1944,56 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                <p> Let's do the base twelve division computation <m>54A87 \div A.</m>. Remember here that <m>A</m> is our symbol for "ten". Our base twelve multiplication table will help a lot, so we include it here for easy reference:
                </p>
                <p>
-                   INCLUDE BASE TWELVE TIMES TABLE
-               </p>
+                    
+                   <image source="ArithmeticAlgorithms/base_twelve_multiplication_table_no_zero.svg">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
                <p>
                    We write down our dividend and divisor in the appropriate locations. Now we perform the algorithm. We start at the <m>10^4_{twelve}</m> place (a long made of cubes) and ask "if we have 5 of this place, how many can be evenly divided among ten groups." We do not have enough to put any in the groups, so we put a zero in the quotient above this place (however, we don't need to explicitly write it since we do not write whole numbers starting with a zero). We have grouped <m>0 \times A = 0 </m> of this place, and have <m>5-0=0</m> remaining.
                </p>
-               <p>
-                   INSERT PIC OF THIS
-               </p>
+              <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/54A87divAa.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
+                   </p>
                <p>
                    Each of this place can be ungrouped to twelve (that is <m>10_{twelve}</m>) of the place to the right. So we ungroup these to have <m>5 \times 10 + 4 = 54</m> of the next place value, which is <m>10^3_{twelve}</m> (that is, cubes). Similarly we ask "if we have <m>54_{twelve}</m> of this place, how many can be evenly divided among ten groups?" Using our multiplication table we see that <m>6 \times A = 50</m> and <m>7 \times A = 5A</m> thus the most we can put in our groups is <m>6</m> cubes. Thus we have grouped <m>6 \times A = 50</m> and have <m>54-50 = 4</m> cubes remaining. 
                    </p>
-                   <p>
-                       INSERT PIC OF THIS
+                  <p>
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/54A87divAb.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                    </p>
                    <p>
                        We now ungroup these <m>4</m> cubes into forty-eight, or <m>40_{twelve}</m> squares and add these to the <m>A</m> squares we originally have. Similarly, since <m>5 \times A = 42</m> and <m>6 \times A = 50</m> we know that we can evenly put <m>5</m> squares in each of our <m>A</m> groups, and we have <m>4A-42=8</m> squares remaining.
                    </p>
                    <p>
-                       INSERT PIC OF THIS
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/54A87divAc.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                    </p>
                    <p>
                        We ungroup these <m>8</m> squares to make ninety-six (or <m>80_{twelve}</m>) longs. Adding our original <m>8</m> longs we have <m>80+8==88</m> longs. Similarly to the previous places, we know <m>A \times A = 84</m> and <m>B \times A = 92</m> so we can evenly put <m>A</m> longs in each of our <m>A</m> groups, and we have <m>88-84=4</m> remaining.
                    </p>
                    <p>
-                       INSERT PIC OF THIS
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/54A87divAd.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                    </p>
                    <p>
                        Finally, we ungroup these <m>4</m> longs to make <m>40_{twelve}</m> ones. Adding our original <m>7</m> ones we have <m>47</m> ones in total. Since <m>5 \times A = 42</m> and <m>6 \times A = 50</m> we know that we can evenly put <m>5</m> ones in each of our <m>A</m> groups, and we have <m>47-42=5</m> remaining. We have reached the ones place, so we are finished. Thus <m>54A87 \div A = 65A5R5.</m>
 
                    </p>
                    <p>
-                       INSERT PIC OF THIS
+                    
+                   <image source="ArithmeticAlgorithms/Section 3.4/54A87divAe.png">
+                    <shortdescription>(for accessibility)</shortdescription>
+                   </image>
                    </p>
             </example>
 
