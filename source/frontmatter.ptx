@@ -14,25 +14,22 @@
   </titlepage>
 
   <colophon>
-    <website>
-      <name><c>my-website.org</c></name>
-      <address>http://my.website.org</address>
-    </website>
+    
 
     <copyright>
       <!-- In addition to specifying the copyright holder, you should  -->
       <!-- include a license, such as the cc-by-sa license shown below -->
       <!-- so people reading your book know how they can use it.       -->
-      <year>2020<ndash/>2021</year>
+      <year>2021<ndash/>2025</year>
       <holder>Shannon Ezzat</holder>
       <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
       <shortlicense>
         <!-- <image source="../images/by-sa.png" width="15%"/>  -->
-        This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+        This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License .
         To view a copy of this license, visit
         <url 
-          href="http://creativecommons.org/licenses/by-sa/4.0/"
-          visual="creativecommons.org/licenses/by-sa/4.0">
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
+          visual="creativecommons.org/licenses/by-nc-sa/4.0/deed.en">
           CreativeCommons.org</url>
       </shortlicense>
 
@@ -40,27 +37,114 @@
 
   </colophon>
 
-  <dedication>
-    <p>
-      For ...
-    </p>
-  </dedication>
+  
 
   <acknowledgement>
     <p>
-      I would like to thank... TEST!!!
+      Much thanks goes to the students who have helped me work on this textbook. All pictures in Chapter 1, and many in Chapters 2 and 3 were created by Illya Kierkocz. Additional exercises were created by Griffin Bartlett, Luke Daley, and the author. For more exact details about who created which picture or question, please reach out to the author. 
     </p>
 
   </acknowledgement>
 
-  <preface xml:id="preface">
-    <!-- You should be a little careful about what you put here -->
-    <!-- Avoid elements that should have a number, for example  -->
-    <p>
-      About this book:
-    </p>
+  <preface>
+  <title>Preface</title>
 
-  </preface>
+  <p>
+    This book is written for pre-service elementary school teachers. Its purpose is straightforward: 
+    to help you practice the habits of mind that make mathematics work. These are the habits of stating things clearly, 
+    asking whether they are true, and justifying why they must be true. These are the same habits you will need to 
+    model and foster in your future classrooms.
+  </p>
+
+  <subsection>
+    <title>Why this book exists</title>
+    <p>
+      Too often, mathematics instruction focuses on procedures at the expense of reasons. Students learn to carry out steps 
+      but not to explain why those steps work. Teachers in turn may have had little formal opportunity to practice logical reasoning 
+      themselves, and so the cycle continues. This text is designed to help break that cycle. By putting logical reasoning at the center, 
+      we aim to equip you not just to "do the math" but to communicate it in ways that children can understand and question.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>What you will find here</title>
+    <p>
+      Each chapter follows a consistent structure that is meant to make reasoning explicit:
+    </p>
+    <ul>
+      <li><p><b>Objectives</b> at the start of sections so you always know what you are aiming for.</p></li>
+      <li><p><b>Definitions</b> presented alongside <b>examples and non-examples</b>, so that meanings are sharpened rather than left vague.</p></li>
+      <li><p><b>Exercises</b> that ask not only for answers and calculations but also for explanations, counterexamples, and critiques of reasoning.</p></li>
+      <li><p><b>Assemblages (Notes for Deeper Understanding)</b> that pause to examine subtleties, common mistakes, and extensions.</p></li>
+      <li><p><b>Visual tools and pictures</b> such as  Venn diagrams, and base-block diagrams to link mathematical ideas and mathematical notation.</p></li>
+      <li><p><b>Explanatory and critical thinking questions</b> that invite you to evaluate flawed arguments, revise imprecise statements, and supply justifications of your own.</p></li>
+    </ul>
+    <p>
+      These features are not add-ons. They are deliberately chosen to support the goal of learning mathematics 
+      through reasoning and communication.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>A note on this version</title>
+    <p>
+      This is a <b>beta version</b> of the textbook. That means it will continue to change. 
+      Typos will be corrected, explanations will be refined, and examples may be replaced or improved. 
+      In particular, pictures are still to be added for Section 5.3 onwards, as well as solutions for exercises that appear in the book.
+      Your feedback, whether as an instructor or as a student working through these materials, will be part of how this book changes and develops. 
+      
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-WhyLogic">
+  <title>Why Logical Reasoning Comes First</title>
+  <p>
+    A central design decision in this textbook is to foreground logical reasoning. Many existing resources for future teachers emphasize procedures or content knowledge while treating reasoning as a secondary concern. Yet a wide body of research shows that developing logical reasoning early and consistently improves not only students’ mathematical learning but also their ability to apply mathematics in science, teaching, and everyday contexts.
+  </p>
+
+  <p>
+    Studies have long demonstrated that reasoning ability is a strong predictor of achievement across STEM subjects. Johnson and Lawson (1998) showed that students with stronger logical reasoning outperformed peers in both expository and inquiry biology classes, regardless of prior content knowledge. Similarly, Bird (2010) found that logical reasoning ability predicted chemistry achievement, suggesting that such skills transfer across domains. These findings reinforce the idea that logical reasoning is not a luxury but a necessity for success in technical fields.
+  </p>
+
+  <p>
+    Within mathematics education, researchers emphasize reasoning as the backbone of authentic mathematical activity. Stylianides (2007) argues that proof and proving must be a central part of school mathematics, not an afterthought. Herbst and Chazan (2003) illustrate how teachers’ decisions about engaging students in proof reveal the practical challenges of classroom implementation, yet also the importance of giving students opportunities to reason mathematically. Without such experiences, students often rely on authority rather than argument when evaluating claims (Inglis, Mejía-Ramos, and Simpson, 2009).
+  </p>
+
+  <p>
+    Logical reasoning is also a foundation for learning advanced mathematics. Inglis and Simpson (2008) showed that conditional inference skills are strongly tied to success in advanced study, while Sweller’s (1988) cognitive load theory highlights that teaching reasoning explicitly reduces extraneous mental effort, freeing capacity for deeper understanding. Attridge and Inglis (2013) and related studies (e.g., Attridge, Doritou, and Inglis, 2015; Cresswell and Speelman, 2020) further demonstrate that sustained study of mathematics strengthens general reasoning skills, supporting the claim that teaching logic benefits students beyond mathematics itself.
+  </p>
+
+  <p>
+    These arguments are echoed in teacher education research. Ball, Thames, and Phelps (2008) describe how content knowledge for teaching is distinct from disciplinary knowledge, requiring the ability to explain, justify, and reason in ways accessible to learners. Boaler (2002) provides evidence that classrooms emphasizing reasoning and discussion lead to richer, longer-lasting understanding than traditional rote approaches. Professional organizations likewise stress reasoning: the National Council of Teachers of Mathematics (2014) lists it as a guiding principle for ensuring mathematical success for all.
+  </p>
+
+  <p>
+    For these reasons, this book begins not with rules for computation but with logic, quantified statements, and conditional reasoning. By making reasoning the entry point, we aim to give future teachers the tools to articulate, analyze, and justify mathematics for themselves and for their students.
+  </p>
+<p>References:</p>
+  <ul>
+      <li><p>Ball, D. L., Thames, M. H., &amp; Phelps, G. (2008). Content knowledge for teaching: What makes it special? <em>Journal of Teacher Education, 59</em>(5), 389–407.</p></li>
+      <li><p>Bird, L. (2010). Logical reasoning ability and student achievement in college chemistry. <em>Journal of Chemical Education, 87</em>(5), 541–546.</p></li>
+      <li><p>Boaler, J. (2002). <em>Experiencing School Mathematics</em> (Rev. ed.). Mahwah, NJ: Lawrence Erlbaum.</p></li>
+      <li><p>Herbst, P., &amp; Chazan, D. (2003). Exploring the practical rationality of mathematics teaching through conversations about videotaped episodes. <em>For the Learning of Mathematics, 23</em>(1), 2–14.</p></li>
+      <li><p>Inglis, M., &amp; Simpson, A. (2008). Conditional inference and advanced mathematical study. <em>Educational Studies in Mathematics, 67</em>(3), 187–204.</p></li>
+      <li><p>Inglis, M., Mejía-Ramos, J. P., &amp; Simpson, A. (2009). Modelling mathematical argumentation: The influence of authority on the evaluation of arguments. <em>Cognition and Instruction, 27</em>(1), 25–50.</p></li>
+      <li><p>Johnson, M. A., &amp; Lawson, A. E. (1998). What are the relative effects of reasoning ability and prior knowledge on biology achievement in expository and inquiry classes? <em>Journal of Research in Science Teaching, 35</em>(1), 89–103.</p></li>
+      <li><p>National Council of Teachers of Mathematics. (2014). <em>Principles to Actions: Ensuring Mathematical Success for All</em>. Reston, VA: NCTM.</p></li>
+      <li><p>Stylianides, A. J. (2007). Proof and proving in school mathematics. <em>Journal for Research in Mathematics Education, 38</em>(3), 289–321.</p></li>
+      <li><p>Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. <em>Cognitive Science, 12</em>(2), 257–285.</p></li>
+      <li><p>Attridge, N., &amp; Inglis, M. (2013). Advanced mathematics improves reasoning skills. <em>PLOS ONE, 8</em>(8), e68385.</p></li>
+      <li><p>Attridge, N., Doritou, M., &amp; Inglis, M. (2015). The effect of studying pure mathematics on students’ proof comprehension. <em>Research in Mathematics Education, 17</em>(1), 20–37.</p></li>
+      <li><p>Cresswell, C., &amp; Speelman, C. P. (2020). Does mathematics training lead to better logical thinking? <em>Psychonomic Bulletin &amp; Review, 27</em>(4), 784–793.</p></li>
+    </ul>
+  
+</subsection>
+
+
+
+
+</preface>
+
 
   <!-- You can have more than one preface. -->
 </frontmatter>

@@ -1,0 +1,138 @@
+<chapter>
+<title>Solutions to Supplementary Questions</title>
+    <section>  
+        <title>Chapter 1</title>
+        <subsection xml:id="logic-solutions">
+    <title>Chapter 1.1</title>
+    <ol>
+        <li>
+            a) Statement.<br/>
+            c) Not a statement. (A question)<br/>
+            e) Not a statement. (No truth value)
+        </li>
+
+        <li>
+            Yes, Joe's statement is true. In fact, dolphins are mammals and live primarily underwater. Since at least one of these statements is true, the "or" statement is true as well.
+        </li>
+
+        <li>
+            a) The rightmost column of the truth table represents "P and Q". Then let P="Turtles have shells", Q="Turtles are slow." So the truth table represents the statement "Turtles have shells and are slow." <br/>
+            c) The rightmost column of the truth table represents "not P and not Q". Then let P="Roses are red", Q="Violets are blue." So the truth table represents the statement "Roses are not red and violets are not blue."
+        </li>
+
+        <li>
+            a) Open sentence, real numbers (many answers are possible for this. Some others are the integers or whole numbers).<br/>
+            c) Not open.<br/>
+            e) Open sentence, countries.
+        </li>
+
+        <li>
+            a) <m>x=1</m><br/>
+            d) No statement is both true and false, so no value of <m>P</m> can make the full statement true.<br/>
+            e) Malaysia, for instance.
+        </li>
+
+        <li>
+            If <m>P</m> is false, Layla's statement is true. Otherwise, her statement is false.
+        </li>
+
+        <li>
+            a) Let P="The cow is awake", Q="The pig is asleep."
+            <tabular>
+                <row><cell>P</cell><cell>Q</cell><cell>P and Q</cell></row>
+                <row><cell>T</cell><cell>T</cell><cell>T</cell></row>
+                <row><cell>F</cell><cell>T</cell><cell>F</cell></row>
+                <row><cell>T</cell><cell>F</cell><cell>F</cell></row>
+                <row><cell>F</cell><cell>F</cell><cell>F</cell></row>
+            </tabular>
+            <br/>
+            c) Let P="Education prepares you for a career", Q="Education is a poor way to spend your time."
+            <tabular>
+                <row><cell>P</cell><cell>Q</cell><cell>P or Q</cell></row>
+                <row><cell>T</cell><cell>T</cell><cell>T</cell></row>
+                <row><cell>F</cell><cell>T</cell><cell>T</cell></row>
+                <row><cell>T</cell><cell>F</cell><cell>T</cell></row>
+                <row><cell>F</cell><cell>F</cell><cell>F</cell></row>
+            </tabular>
+        </li>
+
+        <li>
+            a) Gravity is a force.<br/>
+            c) Harold did not eat a burger or did not eat fries for lunch.<br/>
+            e) Someone on campus is not a student and not a staff-member.
+        </li>
+
+        <li>
+            a) Peter is happy.<br/>
+            c) No sculpture is made of marble.<br/>
+            e) <m>n=11</m>
+        </li>
+
+        <li>
+            a) <br/>
+            c) <br/>
+            e) <br/>
+            g)
+        </li>
+
+        <li>
+            a) There are four statements (P, Q, R, S), so the truth table would require 16 rows (to show all combinations of truth values).<br/>
+            b)
+            <tabular>
+                <row><cell>P</cell><cell>Q</cell><cell>R</cell><cell>P or Q</cell><cell>(P or Q) and R</cell></row>
+                <row><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
+                <row><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
+                <row><cell>T</cell><cell>F</cell><cell>T</cell><cell>T</cell><cell>T</cell></row>
+                <row><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell><cell>F</cell></row>
+                <row><cell>T</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell></row>
+                <row><cell>F</cell><cell>T</cell><cell>F</cell><cell>T</cell><cell>F</cell></row>
+                <row><cell>T</cell><cell>F</cell><cell>F</cell><cell>T</cell><cell>F</cell></row>
+                <row><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell><cell>F</cell></row>
+            </tabular>
+        </li>
+    </ol>
+</subsection>
+<subsection xml:id="solutions">
+    <title>Chapter 1.2</title>
+    <ol>
+        <li>
+            <ol>
+                <li>Conditional statement.</li>
+                <li>Not a conditional statement (a question).</li>
+                <li>Conditional statement.</li>
+                <li>Conditional statement.</li>
+                <li>Not a conditional statement (an order).</li>
+                <li>Not a conditional statement (an order).</li>
+            </ol>
+        </li>
+
+        <li>
+            The proof is not valid because we did not assume <m>n</m> was even (the if-part of the initial statement). 
+            Rather, we assumed <m>n</m> was one particular even number, so we only proved <m>2^3</m> is even. 
+            Or, as a conditional statement, "if <m>n=2</m>, then <m>n^3</m> is even."
+        </li>
+
+        <li>
+            <ol>
+                <li>If I don't eat my hat, the Blue Jays did not win the World Series.</li>
+                <li>If a shark is alive, it has not stopped moving.</li>
+                <li>When the roads are not slippery, the weather is not cold.</li>
+                <li>If <m>n</m> cannot be written as the sum of an even number and an odd number, then it is even.</li>
+            </ol>
+        </li>
+
+        <li>
+            <ol>
+                <li>
+                    False. 2 is prime and <m>2^2 = 4</m>, which is even. 
+                    But if <m>p</m> is a prime number greater than 2, then the statement holds true.
+                </li>
+                <li></li>
+            </ol>
+        </li>
+    </ol>
+</subsection>
+
+
+    </section>
+</chapter>

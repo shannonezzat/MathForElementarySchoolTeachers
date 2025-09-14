@@ -37,6 +37,7 @@
     <xi:include href="./Decimals.ptx" />
     <xi:include href="./Divisibility.ptx" />
     <xi:include href="./Irrational_Numbers.ptx" />
+    <xi:include href="./Solutions.ptx" />
     <!--  Of course you will want to add more chapters as you proceed-->
 
     <!-- The final chapter contains a wide variety of elements to  -->
