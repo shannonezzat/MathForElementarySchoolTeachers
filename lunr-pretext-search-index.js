@@ -2176,7 +2176,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.5",
   "title": "Supplementary Exercises",
-  "body": "Supplementary Exercises   Number Systems Questions      What is the value (in base ten) of the underlined digit in the following numbers?               Roman numerals. The symbols I, V, X, L, C, D, M represent 1, 5, 10, 50, 100, 500, 1000. Numerals are written from highest to lowest (left to right) and summed, except when a smaller numeral precedes a larger one, indicating subtraction (e.g., IV = 5 − 1 = 4). Convert to base ten:   XV  CMLXXXVII  XXIX  XLIV  DCCLXVIII  MDCCCXII        Convert each of the following to base ten.                 In each of the following groupings of twenty-five ones, identify the base used and write the number using that base’s numerals. (Insert picture of groupings.)       Consider a time-like mixed-base system (seconds–minutes–hours–days). Use examples to demonstrate:   , .  meaning “1 day, 2 hours, 3 minutes, 4 seconds.” Convert this to a single base-ten count (seconds).        Order each list from least to greatest.               Each list is ordered from least to greatest. Find a possible value for each missing base so the ordering is correct (bases are integers large enough to permit the shown digits).               Fill in the missing symbol ( , , or ) between each pair.               Identify the missing base in each equation.               Is a “base one” number system possible? If so, describe it. If not, which place-value rules does it violate, and how might you adjust them to make a unary system usable?       Consider the following (non-standard) place-value system (places increase from right to left):   1st place: ones;  2nd place: up to four 1st places (so one 2nd place = five 1st places);  3rd place: up to seven 2nd places (so one 3rd place = eight 2nd places);  4th place: up to ten 3rd places; and so on.   Digits beyond 9 use uppercase letters: , , , etc.    Convert to base ten:   23  5633  AB123  1B20A     Convert the base-ten numbers to this system:   97  2021  5000          Do tally marks fit our definition of a place-value number system? Justify your answer.       Convert each number to the indicated base.   to base  to base  to base  to base  to base  to base        Create your own number system: specify the digit set, the place-value rule (fixed base or mixed-base), and demonstrate how to write and interpret at least five example numbers. Include one example of addition in your system.       Find so that the equality is true (specify in the named base).               Count on your fingers in base two. What is the largest number you can represent? What about base three? Base four?       Fill the blank with a number written in the indicated base so that the statement is true.               Arithmetic Operations: Practice      Compute mentally.            Compute each difference (you may use a “same-change” strategy).            Circle the larger value.   or  or  or        Compute using the distributive property (partial products).            Evaluate.          Compute.            Find the quotient and remainder (so with ).            A bus holds 42 students.   There are 389 students. How many full buses are needed? How many students ride on the last bus?  If every bus must be either full or empty, how many buses are required for 389 students?        Compute using the distributive property.           Compute mentally.            Estimate, then compute exactly.            Compute.          Find the missing number.            For each pair with , find integers and such that and .            Properties of Arithmetic: Practice      Evaluate (use standard order of operations).             State whether the set is closed under the operation. If not, give a counterexample.   under subtraction  under division  under multiplication  under addition        Use commutativity to compute mentally.             Regroup using associativity to make the computation easier.             Name the property that justifies each equality (commutative, associative, distributive, identity, or zero property).          Expand using the distributive property and simplify.      (expand to four terms)        Factor using the distributive property.             For the indicated set, give the identity element for the operation and the inverse of the given element (if it exists in the set).   Set , operation: addition; inverse of  Set , operation: multiplication; inverse of  Set , operation: addition; inverse of  Set , operation: multiplication; inverse of        Compute.             Give whole-number examples showing that the property fails for the operation.   Subtraction is not commutative.  Division is not commutative.  Subtraction is not associative.  Division is not associative.        Fill in the blanks so the statements are true (whole numbers).             Write each as with .            Compute using distribution or regrouping for efficiency.             Mark each statement True or False (whole numbers). If false, give a counterexample.      is defined  for        Perform the indicated operation.   Expand:  Factor:  Evaluate:  Simplify:        Integers: Practice      Place on a number line and order from least to greatest.            Compute. You may use a number-line or counter model.             Rewrite each difference as a sum, then compute.             Fill in the integer that makes each true.             Compute.             Use the distributive property to expand or factor.     (factor)  (factor out a common integer)        Complete the steps to show using distribution.          Fill in the blanks to show .          Verify each by computing both sides (commutative\/associative\/distributive).          Compute the quotient (integers); if not an integer, write “not an integer.”             Answer each; show the integer arithmetic.   At 6 AM it is and the temperature rises by noon. What is the noon temperature?  A hiker is at m and ascends m. New elevation?  A company has a total loss of over 12 months. What is the average monthly loss?        Compute.             Whole Numbers: Explanatory Questions      A student says, “The digit always means eight.” Explain why this is not generally true by comparing , , and . In each case, state the value contributed by the 8 -digit (or explain why it is not a valid digit).      Explain why and represent different numbers. Describe a blocks\/regrouping picture that makes the difference unavoidable, and compute both values in base ten.      In base five, converting gives . Explain in words why the “repeated division by 5 with remainders” algorithm produces the same digits you see when you regroup ones → longs → squares in a blocks picture.       “Same-change” subtraction: A student claims because adding to both numbers doesn’t change the answer. Do you agree? Explain why this strategy works (or when it doesn’t), using an equation or number-line argument.      Two students compute in different ways:     Explain why both methods are valid and identify the properties used in each method.      Explain why doubling–halving keeps a product the same: show that whenever is even, and discuss what changes if is odd (give a specific example).       What is the difference between an identity and an inverse for an operation? Why does every integer have an additive inverse but not every integer has a multiplicative inverse (within the integers)? Give examples that include , , and .      Use an area\/array (“chocolate bar”) model to justify . Then extend your explanation to as “cuts” in two directions.      Consider and . Explain why the first is always (give a property or model) and the second is undefined (refer to what division would have to mean).       Two students disagree about . One says “subtract a negative means the answer is negative,” the other says “subtract a negative means add the positive.” Who is right? Explain with a model (number line or chips) and compute the result.      Complete a proof that using distribution. Fill in the blanks and explain each step in words.         A classmate orders integers by absolute value and gets: “because is the largest absolute value.” Explain the mistake and give the correct ordering, justifying your answer.      "
+  "body": "Supplementary Exercises   Number Systems Questions      What is the value (in base ten) of the underlined digit in the following numbers?               Roman numerals. The symbols I, V, X, L, C, D, M represent 1, 5, 10, 50, 100, 500, 1000. Numerals are written from highest to lowest (left to right) and summed, except when a smaller numeral precedes a larger one, indicating subtraction (e.g., IV = 5 − 1 = 4). Convert to base ten:   XV  CMLXXXVII  XXIX  XLIV  DCCLXVIII  MDCCCXII        Convert each of the following to base ten.                  Consider a time-like mixed-base system (seconds–minutes–hours–days). Use examples to demonstrate:   , .  meaning “1 day, 2 hours, 3 minutes, 4 seconds.” Convert this to a single base-ten count (seconds).        Order each list from least to greatest.               Each list is ordered from least to greatest. Find a possible value for each missing base so the ordering is correct (bases are integers large enough to permit the shown digits).               Fill in the missing symbol ( , , or ) between each pair.               Identify the missing base in each equation.               Is a “base one” number system possible? If so, describe it. If not, which place-value rules does it violate, and how might you adjust them to make a unary system usable?       Consider the following (non-standard) place-value system (places increase from right to left):   1st place: ones;  2nd place: up to four 1st places (so one 2nd place = five 1st places);  3rd place: up to seven 2nd places (so one 3rd place = eight 2nd places);  4th place: up to ten 3rd places; and so on.   Digits beyond 9 use uppercase letters: , , , etc.    Convert to base ten:   23  5633  AB123  1B20A     Convert the base-ten numbers to this system:   97  2021  5000          Do tally marks fit our definition of a place-value number system? Justify your answer.       Convert each number to the indicated base.   to base  to base  to base  to base  to base  to base        Create your own number system: specify the digit set, the place-value rule (fixed base or mixed-base), and demonstrate how to write and interpret at least five example numbers. Include one example of addition in your system.       Find so that the equality is true (specify in the named base).               Count on your fingers in base two. What is the largest number you can represent? What about base three? Base four?       Fill the blank with a number written in the indicated base so that the statement is true.               Arithmetic Operations: Practice      Compute mentally.            Compute each difference (you may use a “same-change” strategy).            Circle the larger value.   or  or  or        Compute using the distributive property (partial products).            Evaluate.          Compute.            Find the quotient and remainder (so with ).            A bus holds 42 students.   There are 389 students. How many full buses are needed? How many students ride on the last bus?  If every bus must be either full or empty, how many buses are required for 389 students?        Compute using the distributive property.           Compute mentally.            Estimate, then compute exactly.            Compute.          Find the missing number.            For each pair with , find integers and such that and .            Properties of Arithmetic: Practice      Evaluate (use standard order of operations).             State whether the set is closed under the operation. If not, give a counterexample.   under subtraction  under division  under multiplication  under addition        Use commutativity to compute mentally.             Regroup using associativity to make the computation easier.             Name the property that justifies each equality (commutative, associative, distributive, identity, or zero property).          Expand using the distributive property and simplify.      (expand to four terms)        Factor using the distributive property.             For the indicated set, give the identity element for the operation and the inverse of the given element (if it exists in the set).   Set , operation: addition; inverse of  Set , operation: multiplication; inverse of  Set , operation: addition; inverse of  Set , operation: multiplication; inverse of        Compute.             Give whole-number examples showing that the property fails for the operation.   Subtraction is not commutative.  Division is not commutative.  Subtraction is not associative.  Division is not associative.        Fill in the blanks so the statements are true (whole numbers).             Write each as with .            Compute using distribution or regrouping for efficiency.             Mark each statement True or False (whole numbers). If false, give a counterexample.      is defined  for        Perform the indicated operation.   Expand:  Factor:  Evaluate:  Simplify:        Integers: Practice      Place on a number line and order from least to greatest.            Compute. You may use a number-line or counter model.             Rewrite each difference as a sum, then compute.             Fill in the integer that makes each true.             Compute.             Use the distributive property to expand or factor.     (factor)  (factor out a common integer)        Complete the steps to show using distribution.          Fill in the blanks to show .          Verify each by computing both sides (commutative\/associative\/distributive).          Compute the quotient (integers); if not an integer, write “not an integer.”             Answer each; show the integer arithmetic.   At 6 AM it is and the temperature rises by noon. What is the noon temperature?  A hiker is at m and ascends m. New elevation?  A company has a total loss of over 12 months. What is the average monthly loss?        Compute.             Whole Numbers: Explanatory Questions      A student says, “The digit always means eight.” Explain why this is not generally true by comparing , , and . In each case, state the value contributed by the 8 -digit (or explain why it is not a valid digit).      Explain why and represent different numbers. Describe a blocks\/regrouping picture that makes the difference unavoidable, and compute both values in base ten.      In base five, converting gives . Explain in words why the “repeated division by 5 with remainders” algorithm produces the same digits you see when you regroup ones → longs → squares in a blocks picture.       “Same-change” subtraction: A student claims because adding to both numbers doesn’t change the answer. Do you agree? Explain why this strategy works (or when it doesn’t), using an equation or number-line argument.      Two students compute in different ways:     Explain why both methods are valid and identify the properties used in each method.      Explain why doubling–halving keeps a product the same: show that whenever is even, and discuss what changes if is odd (give a specific example).       What is the difference between an identity and an inverse for an operation? Why does every integer have an additive inverse but not every integer has a multiplicative inverse (within the integers)? Give examples that include , , and .      Use an area\/array (“chocolate bar”) model to justify . Then extend your explanation to as “cuts” in two directions.      Consider and . Explain why the first is always (give a property or model) and the second is undefined (refer to what division would have to mean).       Two students disagree about . One says “subtract a negative means the answer is negative,” the other says “subtract a negative means add the positive.” Who is right? Explain with a model (number line or chips) and compute the result.      Complete a proof that using distribution. Fill in the blanks and explain each step in words.         A classmate orders integers by absolute value and gets: “because is the largest absolute value.” Explain the mistake and give the correct ordering, justifying your answer.      "
 },
 {
   "id": "number-systems-problems-2-1",
@@ -2212,7 +2212,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.4",
   "title": "",
-  "body": "  In each of the following groupings of twenty-five ones, identify the base used and write the number using that base’s numerals. (Insert picture of groupings.)   "
+  "body": "  Consider a time-like mixed-base system (seconds–minutes–hours–days). Use examples to demonstrate:   , .  meaning “1 day, 2 hours, 3 minutes, 4 seconds.” Convert this to a single base-ten count (seconds).    "
 },
 {
   "id": "number-systems-problems-2-5",
@@ -2221,7 +2221,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.5",
   "title": "",
-  "body": "  Consider a time-like mixed-base system (seconds–minutes–hours–days). Use examples to demonstrate:   , .  meaning “1 day, 2 hours, 3 minutes, 4 seconds.” Convert this to a single base-ten count (seconds).    "
+  "body": "  Order each list from least to greatest.           "
 },
 {
   "id": "number-systems-problems-2-6",
@@ -2230,7 +2230,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.6",
   "title": "",
-  "body": "  Order each list from least to greatest.           "
+  "body": "  Each list is ordered from least to greatest. Find a possible value for each missing base so the ordering is correct (bases are integers large enough to permit the shown digits).           "
 },
 {
   "id": "number-systems-problems-2-7",
@@ -2239,7 +2239,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.7",
   "title": "",
-  "body": "  Each list is ordered from least to greatest. Find a possible value for each missing base so the ordering is correct (bases are integers large enough to permit the shown digits).           "
+  "body": "  Fill in the missing symbol ( , , or ) between each pair.           "
 },
 {
   "id": "number-systems-problems-2-8",
@@ -2248,7 +2248,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.8",
   "title": "",
-  "body": "  Fill in the missing symbol ( , , or ) between each pair.           "
+  "body": "  Identify the missing base in each equation.           "
 },
 {
   "id": "number-systems-problems-2-9",
@@ -2257,7 +2257,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.9",
   "title": "",
-  "body": "  Identify the missing base in each equation.           "
+  "body": "  Is a “base one” number system possible? If so, describe it. If not, which place-value rules does it violate, and how might you adjust them to make a unary system usable?   "
 },
 {
   "id": "number-systems-problems-2-10",
@@ -2266,7 +2266,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.10",
   "title": "",
-  "body": "  Is a “base one” number system possible? If so, describe it. If not, which place-value rules does it violate, and how might you adjust them to make a unary system usable?   "
+  "body": "  Consider the following (non-standard) place-value system (places increase from right to left):   1st place: ones;  2nd place: up to four 1st places (so one 2nd place = five 1st places);  3rd place: up to seven 2nd places (so one 3rd place = eight 2nd places);  4th place: up to ten 3rd places; and so on.   Digits beyond 9 use uppercase letters: , , , etc.    Convert to base ten:   23  5633  AB123  1B20A     Convert the base-ten numbers to this system:   97  2021  5000      "
 },
 {
   "id": "number-systems-problems-2-11",
@@ -2275,7 +2275,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.11",
   "title": "",
-  "body": "  Consider the following (non-standard) place-value system (places increase from right to left):   1st place: ones;  2nd place: up to four 1st places (so one 2nd place = five 1st places);  3rd place: up to seven 2nd places (so one 3rd place = eight 2nd places);  4th place: up to ten 3rd places; and so on.   Digits beyond 9 use uppercase letters: , , , etc.    Convert to base ten:   23  5633  AB123  1B20A     Convert the base-ten numbers to this system:   97  2021  5000      "
+  "body": "  Do tally marks fit our definition of a place-value number system? Justify your answer.   "
 },
 {
   "id": "number-systems-problems-2-12",
@@ -2284,7 +2284,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.12",
   "title": "",
-  "body": "  Do tally marks fit our definition of a place-value number system? Justify your answer.   "
+  "body": "  Convert each number to the indicated base.   to base  to base  to base  to base  to base  to base    "
 },
 {
   "id": "number-systems-problems-2-13",
@@ -2293,7 +2293,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.13",
   "title": "",
-  "body": "  Convert each number to the indicated base.   to base  to base  to base  to base  to base  to base    "
+  "body": "  Create your own number system: specify the digit set, the place-value rule (fixed base or mixed-base), and demonstrate how to write and interpret at least five example numbers. Include one example of addition in your system.   "
 },
 {
   "id": "number-systems-problems-2-14",
@@ -2302,7 +2302,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.14",
   "title": "",
-  "body": "  Create your own number system: specify the digit set, the place-value rule (fixed base or mixed-base), and demonstrate how to write and interpret at least five example numbers. Include one example of addition in your system.   "
+  "body": "  Find so that the equality is true (specify in the named base).           "
 },
 {
   "id": "number-systems-problems-2-15",
@@ -2311,7 +2311,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.1.15",
   "title": "",
-  "body": "  Find so that the equality is true (specify in the named base).           "
+  "body": "  Count on your fingers in base two. What is the largest number you can represent? What about base three? Base four?   "
 },
 {
   "id": "number-systems-problems-2-16",
@@ -2319,15 +2319,6 @@ var ptx_lunr_docs = [
   "url": "WholeNumbers-6.html#number-systems-problems-2-16",
   "type": "Exercise",
   "number": "3.5.1.16",
-  "title": "",
-  "body": "  Count on your fingers in base two. What is the largest number you can represent? What about base three? Base four?   "
-},
-{
-  "id": "number-systems-problems-2-17",
-  "level": "2",
-  "url": "WholeNumbers-6.html#number-systems-problems-2-17",
-  "type": "Exercise",
-  "number": "3.5.1.17",
   "title": "",
   "body": "  Fill the blank with a number written in the indicated base so that the statement is true.           "
 },
@@ -6283,13 +6274,1228 @@ var ptx_lunr_docs = [
   "body": " Simplify :  First, simplify each part of the expression separately:       :  Simplify the denominator:   Now the expression inside the parenthesis becomes:   Squaring this, we get:   Now combine all parts:   Simplify the multiplication:   Now combine the exponents:   "
 },
 {
-  "id": "my-great-book-12-2",
+  "id": "logic-problems-solutions",
   "level": "1",
-  "url": "my-great-book-12-2.html",
+  "url": "logic-problems-solutions.html",
   "type": "Section",
   "number": "9.1",
-  "title": "Chapter 1",
-  "body": " Chapter 1   Chapter 1.1   a) Statement. c) Not a statement. (A question) e) Not a statement. (No truth value)  Yes, Joe's statement is true. In fact, dolphins are mammals and live primarily underwater. Since at least one of these statements is true, the \"or\" statement is true as well.  a) The rightmost column of the truth table represents \"P and Q\". Then let P=\"Turtles have shells\", Q=\"Turtles are slow.\" So the truth table represents the statement \"Turtles have shells and are slow.\" c) The rightmost column of the truth table represents \"not P and not Q\". Then let P=\"Roses are red\", Q=\"Violets are blue.\" So the truth table represents the statement \"Roses are not red and violets are not blue.\"  a) Open sentence, real numbers (many answers are possible for this. Some others are the integers or whole numbers). c) Not open. e) Open sentence, countries.  a) d) No statement is both true and false, so no value of can make the full statement true. e) Malaysia, for instance.  If is false, Layla's statement is true. Otherwise, her statement is false.  a) Let P=\"The cow is awake\", Q=\"The pig is asleep.\"  P Q P and Q  T T T  F T F  T F F  F F F   c) Let P=\"Education prepares you for a career\", Q=\"Education is a poor way to spend your time.\"  P Q P or Q  T T T  F T T  T F T  F F F    a) Gravity is a force. c) Harold did not eat a burger or did not eat fries for lunch. e) Someone on campus is not a student and not a staff-member.  a) Peter is happy. c) No sculpture is made of marble. e)   a) c) e) g)  a) There are four statements (P, Q, R, S), so the truth table would require 16 rows (to show all combinations of truth values). b)  P Q R P or Q (P or Q) and R  T T T T T  F T T T T  T F T T T  F F T F F  T T F T F  F T F T F  T F F T F  F F F F F       Chapter 1.2     Conditional statement.  Not a conditional statement (a question).  Conditional statement.  Conditional statement.  Not a conditional statement (an order).  Not a conditional statement (an order).    The proof is not valid because we did not assume was even (the if-part of the initial statement). Rather, we assumed was one particular even number, so we only proved is even. Or, as a conditional statement, \"if , then is even.\"    If I don't eat my hat, the Blue Jays did not win the World Series.  If a shark is alive, it has not stopped moving.  When the roads are not slippery, the weather is not cold.  If cannot be written as the sum of an even number and an odd number, then it is even.      False. 2 is prime and , which is even. But if is a prime number greater than 2, then the statement holds true.       "
+  "title": "Chapter 1 Questions",
+  "body": " Chapter 1 Questions      (a) Statement. (b) Statement. (c) Not a statement (question). (d) Statement (truth may be disputed, but it’s truth-apt). (e) Not a (classical) statement (liar paradox; no consistent truth value). (f) Not a statement (command).      True. “Dolphins are mammals” is true and “dolphins live primarily underwater” is true; a disjunction is true if at least one disjunct is true.       (true only when both and are true).  (false only when both are false).  (NOR; true only when both are false).  A tautology (e.g., ).       Open sentences and domains: (a) Open; domain typically . (b) Open; domain: the set of dogs. (c) Statement. (d) Open; domain: propositions\/statements. (e) Statement. (f) Statement.      (a) works. (b) Choose to be any mastiff. (d) No value makes “ is both true and false” true in classical logic.      Its truth value is exactly : it is true when is false and false when is true.         P (cow awake) Q (pig asleep) P∧Q  T T T  F T F  T F F  F F F      P (accepts cash) Q (accepts credit) P∨Q  T T T  F T T  T F T  F F F      P (prepares career) Q (poor use of time) P∨Q  T T T  F T T  T F T  F F F      A (Anna happy) J (Jordan happy) ¬A ∧ ¬J  T T F  F T F  T F F  F F T          “Gravity is a force.”  “City has a population less than 10 million.”  “Harold did not eat a burger or did not eat fries for lunch.”  “Every penguin has seen Antarctica.”  “Someone on campus is neither a student nor a staff-member.”  “There exists a beverage that is hot and sweet.”        “Peter is happy.”  “There exists a book that is neither informative nor interesting.”  Equivalent reading: “No sculptures are made of marble.”  “All films are silent.”  .  “There exists a bus with four tires.”        Parrots are a subset of birds: the “parrots outside birds” region is empty.  Place an in the intersection of widgets and gizmos (nonempty intersection).  Shade the intersection of mountains and volcanoes to indicate emptiness.  Place an in the part of “songs” outside “classical” (∃ non-classical song).  Place an in “articles” outside “has sources”.  Use three sets (athletes, strict diet, exercises daily): put an in athletes outside the intersection of the last two.  With sets vegans, honey-eaters, chicken-eaters: put an in vegan∩honey; shade vegan∩chicken empty.  Mammals ⊂ oxygen-breathers; also place an in oxygen-breathers outside mammals.        rows (four propositional variables: ).    P Q R P∨Q (P∨Q)∧R  T T T T T  F T T T T  T F T T T  F F T F F  T T F T F  F T F T F  T F F T F  F F F F F    Not equivalent. For example, with we have while .        Solutions to “Conditional Questions”     Conditionals (truth-apt): (a), (c), (d). Items (b), (e), (f) are questions\/commands, hence not statements in classical logic.      Invalid. A direct proof of “for all even , is even” must begin with an arbitrary even and show is even. A single example ( ) does not prove the universal statement.       If I do not eat my hat, then the Blue Jays did not win the World Series.  If a shark does not die, then it did not stop moving.  If the roads are not slippery, then the weather is not cold.  If cannot be written as the sum of an even and an odd number, then is not odd.        False (counterexample: , then is even). True if restricted to odd primes.  False (triangle: ). True if restricted to polygons with at least four sides.  True (by definition of “bilingual”).  (No statement provided.)       Write . Then  for some integer , hence the product is odd. (The sum of four odd integers is even.) Thus “their sum or their product is odd” is true (indeed, the product is always odd).      Biconditionals: (b) and (e). Item (c) is not a sound biconditional as stated unless a domain is specified; with it becomes trivially true but uninformative. Items (a) and (d) are not biconditionals (and (d) is false: both solve over the integers).      No specific statements were provided, so no counterexamples can be evaluated here.       Solutions to “Set Theory Questions”      Universe: the Latin alphabet letters.  Universe: (natural numbers).  Universe: common household pets.  Universe: .  Universe: English sentences.        (the monotremes).  .  .  .  is infinite; a roster with ellipses: .  Any three, e.g., .       .   .  .  .  .       For example, (subset of ) has cardinality .      Within , (assuming ).      If , then and , so and . For unions, generally is not a subset of both. Counterexample: , ; then is not a subset of (nor of ). (In fact, and .)      Let .   .  (the odd nonnegative integers).  (the positive odd integers).  .        .  (squares of through ).  (there are two-digit numbers; contain a ).  (arithmetic progression step : ).        Solutions to “Explanatory and Critical Thinking Questions”     Disagree. “This statement is false” is self-referential and yields a contradiction under classical bivalence: if it’s true, it says it’s false; if it’s false, it must be true. Because it cannot be consistently assigned a truth value, it is not treated as a (well-formed) statement in classical logic.      The flaw is assuming questions\/commands can be given truth values without rephrasing. Truth values apply to propositions (declarative sentences). A question or command must first be converted into a proposition (e.g., “You will give me the snacks”) before truth evaluation is meaningful.      Not correct. The student stated the inverse . The correct contrapositive of “If square then four sides” is: “If a shape does not have four sides, then it is not a square.”      They used a single example ( ). A universal conditional must be proved for arbitrary even : write , then , which is divisible by 4.      Sets ignore multiplicity. , which has three elements, not four.      Disagree. The empty set is defined to have no elements; its existence is postulated (and unique) in standard set theory. Knowing it exists does not require it to contain anything.      The union collects elements that are in either set, so it generally cannot be a subset of both. Example: , ; then is not a subset of or of . By contrast, is always a subset of each.      "
+},
+{
+  "id": "logic-problems-solutions-2-1-1",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-1",
+  "type": "Exercise",
+  "number": "9.1.1.1",
+  "title": "",
+  "body": "  (a) Statement. (b) Statement. (c) Not a statement (question). (d) Statement (truth may be disputed, but it’s truth-apt). (e) Not a (classical) statement (liar paradox; no consistent truth value). (f) Not a statement (command).   "
+},
+{
+  "id": "logic-problems-solutions-2-1-2",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-2",
+  "type": "Exercise",
+  "number": "9.1.1.2",
+  "title": "",
+  "body": "  True. “Dolphins are mammals” is true and “dolphins live primarily underwater” is true; a disjunction is true if at least one disjunct is true.   "
+},
+{
+  "id": "logic-problems-solutions-2-1-3",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-3",
+  "type": "Exercise",
+  "number": "9.1.1.3",
+  "title": "",
+  "body": "   (true only when both and are true).  (false only when both are false).  (NOR; true only when both are false).  A tautology (e.g., ).    "
+},
+{
+  "id": "logic-problems-solutions-2-1-4",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-4",
+  "type": "Exercise",
+  "number": "9.1.1.4",
+  "title": "",
+  "body": "  Open sentences and domains: (a) Open; domain typically . (b) Open; domain: the set of dogs. (c) Statement. (d) Open; domain: propositions\/statements. (e) Statement. (f) Statement.   "
+},
+{
+  "id": "logic-problems-solutions-2-1-5",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-5",
+  "type": "Exercise",
+  "number": "9.1.1.5",
+  "title": "",
+  "body": "  (a) works. (b) Choose to be any mastiff. (d) No value makes “ is both true and false” true in classical logic.   "
+},
+{
+  "id": "logic-problems-solutions-2-1-6",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-6",
+  "type": "Exercise",
+  "number": "9.1.1.6",
+  "title": "",
+  "body": "  Its truth value is exactly : it is true when is false and false when is true.   "
+},
+{
+  "id": "logic-problems-solutions-2-1-7",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-7",
+  "type": "Exercise",
+  "number": "9.1.1.7",
+  "title": "",
+  "body": "     P (cow awake) Q (pig asleep) P∧Q  T T T  F T F  T F F  F F F      P (accepts cash) Q (accepts credit) P∨Q  T T T  F T T  T F T  F F F      P (prepares career) Q (poor use of time) P∨Q  T T T  F T T  T F T  F F F      A (Anna happy) J (Jordan happy) ¬A ∧ ¬J  T T F  F T F  T F F  F F T      "
+},
+{
+  "id": "logic-problems-solutions-2-1-8",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-8",
+  "type": "Exercise",
+  "number": "9.1.1.8",
+  "title": "",
+  "body": "   “Gravity is a force.”  “City has a population less than 10 million.”  “Harold did not eat a burger or did not eat fries for lunch.”  “Every penguin has seen Antarctica.”  “Someone on campus is neither a student nor a staff-member.”  “There exists a beverage that is hot and sweet.”    "
+},
+{
+  "id": "logic-problems-solutions-2-1-9",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-9",
+  "type": "Exercise",
+  "number": "9.1.1.9",
+  "title": "",
+  "body": "   “Peter is happy.”  “There exists a book that is neither informative nor interesting.”  Equivalent reading: “No sculptures are made of marble.”  “All films are silent.”  .  “There exists a bus with four tires.”    "
+},
+{
+  "id": "logic-problems-solutions-2-1-10",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-10",
+  "type": "Exercise",
+  "number": "9.1.1.10",
+  "title": "",
+  "body": "   Parrots are a subset of birds: the “parrots outside birds” region is empty.  Place an in the intersection of widgets and gizmos (nonempty intersection).  Shade the intersection of mountains and volcanoes to indicate emptiness.  Place an in the part of “songs” outside “classical” (∃ non-classical song).  Place an in “articles” outside “has sources”.  Use three sets (athletes, strict diet, exercises daily): put an in athletes outside the intersection of the last two.  With sets vegans, honey-eaters, chicken-eaters: put an in vegan∩honey; shade vegan∩chicken empty.  Mammals ⊂ oxygen-breathers; also place an in oxygen-breathers outside mammals.    "
+},
+{
+  "id": "logic-problems-solutions-2-1-11",
+  "level": "2",
+  "url": "logic-problems-solutions.html#logic-problems-solutions-2-1-11",
+  "type": "Exercise",
+  "number": "9.1.1.11",
+  "title": "",
+  "body": "   rows (four propositional variables: ).    P Q R P∨Q (P∨Q)∧R  T T T T T  F T T T T  T F T T T  F F T F F  T T F T F  F T F T F  T F F T F  F F F F F    Not equivalent. For example, with we have while .    "
+},
+{
+  "id": "conditional-problems-solutions-2-1",
+  "level": "2",
+  "url": "logic-problems-solutions.html#conditional-problems-solutions-2-1",
+  "type": "Exercise",
+  "number": "9.1.2.1",
+  "title": "",
+  "body": "  Conditionals (truth-apt): (a), (c), (d). Items (b), (e), (f) are questions\/commands, hence not statements in classical logic.   "
+},
+{
+  "id": "conditional-problems-solutions-2-2",
+  "level": "2",
+  "url": "logic-problems-solutions.html#conditional-problems-solutions-2-2",
+  "type": "Exercise",
+  "number": "9.1.2.2",
+  "title": "",
+  "body": "  Invalid. A direct proof of “for all even , is even” must begin with an arbitrary even and show is even. A single example ( ) does not prove the universal statement.   "
+},
+{
+  "id": "conditional-problems-solutions-2-3",
+  "level": "2",
+  "url": "logic-problems-solutions.html#conditional-problems-solutions-2-3",
+  "type": "Exercise",
+  "number": "9.1.2.3",
+  "title": "",
+  "body": "   If I do not eat my hat, then the Blue Jays did not win the World Series.  If a shark does not die, then it did not stop moving.  If the roads are not slippery, then the weather is not cold.  If cannot be written as the sum of an even and an odd number, then is not odd.    "
+},
+{
+  "id": "conditional-problems-solutions-2-4",
+  "level": "2",
+  "url": "logic-problems-solutions.html#conditional-problems-solutions-2-4",
+  "type": "Exercise",
+  "number": "9.1.2.4",
+  "title": "",
+  "body": "   False (counterexample: , then is even). True if restricted to odd primes.  False (triangle: ). True if restricted to polygons with at least four sides.  True (by definition of “bilingual”).  (No statement provided.)    "
+},
+{
+  "id": "conditional-problems-solutions-2-5",
+  "level": "2",
+  "url": "logic-problems-solutions.html#conditional-problems-solutions-2-5",
+  "type": "Exercise",
+  "number": "9.1.2.5",
+  "title": "",
+  "body": "  Write . Then  for some integer , hence the product is odd. (The sum of four odd integers is even.) Thus “their sum or their product is odd” is true (indeed, the product is always odd).   "
+},
+{
+  "id": "conditional-problems-solutions-2-6",
+  "level": "2",
+  "url": "logic-problems-solutions.html#conditional-problems-solutions-2-6",
+  "type": "Exercise",
+  "number": "9.1.2.6",
+  "title": "",
+  "body": "  Biconditionals: (b) and (e). Item (c) is not a sound biconditional as stated unless a domain is specified; with it becomes trivially true but uninformative. Items (a) and (d) are not biconditionals (and (d) is false: both solve over the integers).   "
+},
+{
+  "id": "conditional-problems-solutions-2-7",
+  "level": "2",
+  "url": "logic-problems-solutions.html#conditional-problems-solutions-2-7",
+  "type": "Exercise",
+  "number": "9.1.2.7",
+  "title": "",
+  "body": "  No specific statements were provided, so no counterexamples can be evaluated here.   "
+},
+{
+  "id": "sets-problems-solutions-2-1",
+  "level": "2",
+  "url": "logic-problems-solutions.html#sets-problems-solutions-2-1",
+  "type": "Exercise",
+  "number": "9.1.3.1",
+  "title": "",
+  "body": "   Universe: the Latin alphabet letters.  Universe: (natural numbers).  Universe: common household pets.  Universe: .  Universe: English sentences.    "
+},
+{
+  "id": "sets-problems-solutions-2-2",
+  "level": "2",
+  "url": "logic-problems-solutions.html#sets-problems-solutions-2-2",
+  "type": "Exercise",
+  "number": "9.1.3.2",
+  "title": "",
+  "body": "   (the monotremes).  .  .  .  is infinite; a roster with ellipses: .  Any three, e.g., .    "
+},
+{
+  "id": "sets-problems-solutions-2-3",
+  "level": "2",
+  "url": "logic-problems-solutions.html#sets-problems-solutions-2-3",
+  "type": "Exercise",
+  "number": "9.1.3.3",
+  "title": "",
+  "body": "  .   .  .  .  .    "
+},
+{
+  "id": "sets-problems-solutions-2-4",
+  "level": "2",
+  "url": "logic-problems-solutions.html#sets-problems-solutions-2-4",
+  "type": "Exercise",
+  "number": "9.1.3.4",
+  "title": "",
+  "body": "  For example, (subset of ) has cardinality .   "
+},
+{
+  "id": "sets-problems-solutions-2-5",
+  "level": "2",
+  "url": "logic-problems-solutions.html#sets-problems-solutions-2-5",
+  "type": "Exercise",
+  "number": "9.1.3.5",
+  "title": "",
+  "body": "  Within , (assuming ).   "
+},
+{
+  "id": "sets-problems-solutions-2-6",
+  "level": "2",
+  "url": "logic-problems-solutions.html#sets-problems-solutions-2-6",
+  "type": "Exercise",
+  "number": "9.1.3.6",
+  "title": "",
+  "body": "  If , then and , so and . For unions, generally is not a subset of both. Counterexample: , ; then is not a subset of (nor of ). (In fact, and .)   "
+},
+{
+  "id": "sets-problems-solutions-2-7",
+  "level": "2",
+  "url": "logic-problems-solutions.html#sets-problems-solutions-2-7",
+  "type": "Exercise",
+  "number": "9.1.3.7",
+  "title": "",
+  "body": "  Let .   .  (the odd nonnegative integers).  (the positive odd integers).  .    "
+},
+{
+  "id": "sets-problems-solutions-2-8",
+  "level": "2",
+  "url": "logic-problems-solutions.html#sets-problems-solutions-2-8",
+  "type": "Exercise",
+  "number": "9.1.3.8",
+  "title": "",
+  "body": "   .  (squares of through ).  (there are two-digit numbers; contain a ).  (arithmetic progression step : ).    "
+},
+{
+  "id": "explanatory-questions-solutions-2-1",
+  "level": "2",
+  "url": "logic-problems-solutions.html#explanatory-questions-solutions-2-1",
+  "type": "Exercise",
+  "number": "9.1.4.1",
+  "title": "",
+  "body": "  Disagree. “This statement is false” is self-referential and yields a contradiction under classical bivalence: if it’s true, it says it’s false; if it’s false, it must be true. Because it cannot be consistently assigned a truth value, it is not treated as a (well-formed) statement in classical logic.   "
+},
+{
+  "id": "explanatory-questions-solutions-2-2",
+  "level": "2",
+  "url": "logic-problems-solutions.html#explanatory-questions-solutions-2-2",
+  "type": "Exercise",
+  "number": "9.1.4.2",
+  "title": "",
+  "body": "  The flaw is assuming questions\/commands can be given truth values without rephrasing. Truth values apply to propositions (declarative sentences). A question or command must first be converted into a proposition (e.g., “You will give me the snacks”) before truth evaluation is meaningful.   "
+},
+{
+  "id": "explanatory-questions-solutions-2-3",
+  "level": "2",
+  "url": "logic-problems-solutions.html#explanatory-questions-solutions-2-3",
+  "type": "Exercise",
+  "number": "9.1.4.3",
+  "title": "",
+  "body": "  Not correct. The student stated the inverse . The correct contrapositive of “If square then four sides” is: “If a shape does not have four sides, then it is not a square.”   "
+},
+{
+  "id": "explanatory-questions-solutions-2-4",
+  "level": "2",
+  "url": "logic-problems-solutions.html#explanatory-questions-solutions-2-4",
+  "type": "Exercise",
+  "number": "9.1.4.4",
+  "title": "",
+  "body": "  They used a single example ( ). A universal conditional must be proved for arbitrary even : write , then , which is divisible by 4.   "
+},
+{
+  "id": "explanatory-questions-solutions-2-5",
+  "level": "2",
+  "url": "logic-problems-solutions.html#explanatory-questions-solutions-2-5",
+  "type": "Exercise",
+  "number": "9.1.4.5",
+  "title": "",
+  "body": "  Sets ignore multiplicity. , which has three elements, not four.   "
+},
+{
+  "id": "explanatory-questions-solutions-2-6",
+  "level": "2",
+  "url": "logic-problems-solutions.html#explanatory-questions-solutions-2-6",
+  "type": "Exercise",
+  "number": "9.1.4.6",
+  "title": "",
+  "body": "  Disagree. The empty set is defined to have no elements; its existence is postulated (and unique) in standard set theory. Knowing it exists does not require it to contain anything.   "
+},
+{
+  "id": "explanatory-questions-solutions-2-7",
+  "level": "2",
+  "url": "logic-problems-solutions.html#explanatory-questions-solutions-2-7",
+  "type": "Exercise",
+  "number": "9.1.4.7",
+  "title": "",
+  "body": "  The union collects elements that are in either set, so it generally cannot be a subset of both. Example: , ; then is not a subset of or of . By contrast, is always a subset of each.   "
+},
+{
+  "id": "equality-problems-solutions",
+  "level": "1",
+  "url": "equality-problems-solutions.html",
+  "type": "Section",
+  "number": "9.2",
+  "title": "",
+  "body": "  Chapter 2 Solutions”     Simplify both sides to the same expression, naming the property used at each step.        Therefore, and , so by the substitution (transitivity) property of equality.      True: (with the standard convention that for any nonzero base ).      Throughout, use the given definitions , , .             , , . From above, .      Let the relation be “logical equivalence” .   Reflexive:  is a tautology.  Symmetric:  is logically equivalent to .  Transitive: From and we get (e.g., by truth table or chaining equivalences).       By definition, iff and .   Reflexive:  , so .  Symmetric: If , then trivially .  Transitive: If and , then (subset inclusions chain).        : not reflexive (never ), not symmetric, transitive (always).  : not reflexive, not symmetric, transitive (always).  : reflexive and transitive (always); symmetry holds only in the special case (so not in general).  : reflexive and transitive (always); symmetry only when (so not in general).        Reflexive only: On , define iff or . Then reflexive holds; but not (not symmetric); and , but not (not transitive).  Transitive only: On , iff . Transitive; not reflexive; not symmetric.  Symmetric only: On , iff . Symmetric; not reflexive; not transitive (e.g., and but not ).        False. Choose , , then but which is not in .  True.  True.  True.  False; left set is , not just the endpoints.  True.  True: the primes less than 10 are .        Solutions to “Problem Solving Questions”     Equations (for reference):          Terms: LHS ; RHS .  Terms: LHS ; RHS .  Terms: LHS ; RHS .  Terms: LHS ; RHS .  Terms: LHS ; RHS .        Variable term coefficients: has coefficient on LHS and on RHS; inside the -term has coefficient after distribution.  has variables with (constant) coefficient ; has variable with coefficient ; has variable with coefficient .  has variable with coefficient .  has coefficient ; has coefficient .  No variable terms.        Constants: and after distribution; also on RHS.  Constants: , and (with declared constants).  Constants: .  Constants: (LHS) and (RHS).  Constants: .        Linear in (only first power; distribution preserves linearity).  Not linear in because of the product .  Linear in .  Not linear (quadratic in ).  No variables (a true numeric identity: ).        Let be weeks. Equation: so .  Let be number of pizzas. Equation: so .  Let =bags of Rory’s, =bags of Pete’s. Equations: , . Solution: .       Equation: with . Modulo , we need , so . With , , giving  (five ordered pairs). Completeness follows from the congruence condition.       “A straight angle measures . If one angle is , the other supplementary angle is : .”  “A base fare of plus per mile totals : .”  “Two products are blended: profit or resource constraints yield and (e.g., liters or dollars of two goods).”        , ⇒ subtract to get ⇒ , then .  , ⇒ combine to get ⇒ , .  From get . Substitute into ⇒ ⇒ , .  , ⇒ , .       Substitution: the first equation is solved for in terms of , then that expression is substituted into the second equation.       Unique solution (nonzero determinant: ).  Infinitely many real solutions (two equations in three variables; e.g., pick one free parameter, solve the others consistently).  Two real solutions: substitute into to get with positive discriminant ; hence two real , and then .       Check by substitution. Correct solution: from get . Substitute into to obtain , so , . Jonah’s pair is incorrect.       No algebra error: from we get ; then gives , .  Work is correct: from and we get , .       Both lines have the same slope and different intercepts: each is of the form . Parallel distinct lines do not intersect, so there is no solution.       Solutions to “Explanatory and Critical Thinking Questions”     Disagree. Graphing is useful for visual insight and approximate solutions, but exact intersections can be hard to read (non-integer, steep, or nearly parallel lines). Substitution\/elimination are more precise and scale to systems with more variables.      Counterexample: and look different but have exactly the same solution set (the first is twice the second). Different forms can represent the same line\/equation after scaling.      The equations are multiples: is . They represent the same line, so there are infinitely many solutions (all points on that line), not a unique one.      If algebraic steps produce an unexpected identity or contradiction at the wrong time, an error likely occurred. Substituting the found values back into both original equations verifies correctness; any failure indicates a mistake in the manipulation.      “No solution” (inconsistent): e.g., or parallel distinct lines; algebra gives a contradiction like . “Infinitely many”: identical equations (same line\/plane), giving an identity like . “Exactly one”: intersecting, nonparallel lines (nonzero determinant in a linear system).      Subtracting from both sides yields , a contradiction; there is no that satisfies it. An inconsistent equation\/system has no solutions because its conditions are mutually incompatible.      Let the numbers be and with and . Substituting gives , so and . Checking: and the difference is , matching the description.      "
+},
+{
+  "id": "equality-problems-solutions-1-2-1",
+  "level": "2",
+  "url": "equality-problems-solutions.html#equality-problems-solutions-1-2-1",
+  "type": "Exercise",
+  "number": "9.2.1.1",
+  "title": "",
+  "body": "  Simplify both sides to the same expression, naming the property used at each step.        Therefore, and , so by the substitution (transitivity) property of equality.   "
+},
+{
+  "id": "equality-problems-solutions-1-2-2",
+  "level": "2",
+  "url": "equality-problems-solutions.html#equality-problems-solutions-1-2-2",
+  "type": "Exercise",
+  "number": "9.2.1.2",
+  "title": "",
+  "body": "  True: (with the standard convention that for any nonzero base ).   "
+},
+{
+  "id": "equality-problems-solutions-1-2-3",
+  "level": "2",
+  "url": "equality-problems-solutions.html#equality-problems-solutions-1-2-3",
+  "type": "Exercise",
+  "number": "9.2.1.3",
+  "title": "",
+  "body": "  Throughout, use the given definitions , , .   "
+},
+{
+  "id": "equality-problems-solutions-1-2-4",
+  "level": "2",
+  "url": "equality-problems-solutions.html#equality-problems-solutions-1-2-4",
+  "type": "Exercise",
+  "number": "9.2.1.4",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "equality-problems-solutions-1-2-5",
+  "level": "2",
+  "url": "equality-problems-solutions.html#equality-problems-solutions-1-2-5",
+  "type": "Exercise",
+  "number": "9.2.1.5",
+  "title": "",
+  "body": "  , , . From above, .   "
+},
+{
+  "id": "equality-problems-solutions-1-2-6",
+  "level": "2",
+  "url": "equality-problems-solutions.html#equality-problems-solutions-1-2-6",
+  "type": "Exercise",
+  "number": "9.2.1.6",
+  "title": "",
+  "body": "  Let the relation be “logical equivalence” .   Reflexive:  is a tautology.  Symmetric:  is logically equivalent to .  Transitive: From and we get (e.g., by truth table or chaining equivalences).    "
+},
+{
+  "id": "equality-problems-solutions-1-2-7",
+  "level": "2",
+  "url": "equality-problems-solutions.html#equality-problems-solutions-1-2-7",
+  "type": "Exercise",
+  "number": "9.2.1.7",
+  "title": "",
+  "body": "  By definition, iff and .   Reflexive:  , so .  Symmetric: If , then trivially .  Transitive: If and , then (subset inclusions chain).    "
+},
+{
+  "id": "equality-problems-solutions-1-2-8",
+  "level": "2",
+  "url": "equality-problems-solutions.html#equality-problems-solutions-1-2-8",
+  "type": "Exercise",
+  "number": "9.2.1.8",
+  "title": "",
+  "body": "   : not reflexive (never ), not symmetric, transitive (always).  : not reflexive, not symmetric, transitive (always).  : reflexive and transitive (always); symmetry holds only in the special case (so not in general).  : reflexive and transitive (always); symmetry only when (so not in general).    "
+},
+{
+  "id": "equality-problems-solutions-1-2-9",
+  "level": "2",
+  "url": "equality-problems-solutions.html#equality-problems-solutions-1-2-9",
+  "type": "Exercise",
+  "number": "9.2.1.9",
+  "title": "",
+  "body": "   Reflexive only: On , define iff or . Then reflexive holds; but not (not symmetric); and , but not (not transitive).  Transitive only: On , iff . Transitive; not reflexive; not symmetric.  Symmetric only: On , iff . Symmetric; not reflexive; not transitive (e.g., and but not ).    "
+},
+{
+  "id": "equality-problems-solutions-1-2-10",
+  "level": "2",
+  "url": "equality-problems-solutions.html#equality-problems-solutions-1-2-10",
+  "type": "Exercise",
+  "number": "9.2.1.10",
+  "title": "",
+  "body": "   False. Choose , , then but which is not in .  True.  True.  True.  False; left set is , not just the endpoints.  True.  True: the primes less than 10 are .    "
+},
+{
+  "id": "ps-given-list-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-given-list-sol",
+  "type": "Exercise",
+  "number": "9.2.2.1",
+  "title": "",
+  "body": "  Equations (for reference):      "
+},
+{
+  "id": "ps-identify-terms-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-identify-terms-sol",
+  "type": "Exercise",
+  "number": "9.2.2.2",
+  "title": "",
+  "body": "   Terms: LHS ; RHS .  Terms: LHS ; RHS .  Terms: LHS ; RHS .  Terms: LHS ; RHS .  Terms: LHS ; RHS .    "
+},
+{
+  "id": "ps-identify-coeffs-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-identify-coeffs-sol",
+  "type": "Exercise",
+  "number": "9.2.2.3",
+  "title": "",
+  "body": "   Variable term coefficients: has coefficient on LHS and on RHS; inside the -term has coefficient after distribution.  has variables with (constant) coefficient ; has variable with coefficient ; has variable with coefficient .  has variable with coefficient .  has coefficient ; has coefficient .  No variable terms.    "
+},
+{
+  "id": "ps-identify-consts-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-identify-consts-sol",
+  "type": "Exercise",
+  "number": "9.2.2.4",
+  "title": "",
+  "body": "   Constants: and after distribution; also on RHS.  Constants: , and (with declared constants).  Constants: .  Constants: (LHS) and (RHS).  Constants: .    "
+},
+{
+  "id": "ps-linear-or-not-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-linear-or-not-sol",
+  "type": "Exercise",
+  "number": "9.2.2.5",
+  "title": "",
+  "body": "   Linear in (only first power; distribution preserves linearity).  Not linear in because of the product .  Linear in .  Not linear (quadratic in ).  No variables (a true numeric identity: ).    "
+},
+{
+  "id": "ps-write-equations-from-words-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-write-equations-from-words-sol",
+  "type": "Exercise",
+  "number": "9.2.2.6",
+  "title": "",
+  "body": "   Let be weeks. Equation: so .  Let be number of pizzas. Equation: so .  Let =bags of Rory’s, =bags of Pete’s. Equations: , . Solution: .    "
+},
+{
+  "id": "ps-coin-combos-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-coin-combos-sol",
+  "type": "Exercise",
+  "number": "9.2.2.7",
+  "title": "",
+  "body": "  Equation: with . Modulo , we need , so . With , , giving  (five ordered pairs). Completeness follows from the congruence condition.   "
+},
+{
+  "id": "ps-make-word-problems-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-make-word-problems-sol",
+  "type": "Exercise",
+  "number": "9.2.2.8",
+  "title": "",
+  "body": "   “A straight angle measures . If one angle is , the other supplementary angle is : .”  “A base fare of plus per mile totals : .”  “Two products are blended: profit or resource constraints yield and (e.g., liters or dollars of two goods).”    "
+},
+{
+  "id": "ps-elimination-solve-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-elimination-solve-sol",
+  "type": "Exercise",
+  "number": "9.2.2.9",
+  "title": "",
+  "body": "   , ⇒ subtract to get ⇒ , then .  , ⇒ combine to get ⇒ , .  From get . Substitute into ⇒ ⇒ , .  , ⇒ , .    "
+},
+{
+  "id": "ps-identify-method-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-identify-method-sol",
+  "type": "Exercise",
+  "number": "9.2.2.10",
+  "title": "",
+  "body": "  Substitution: the first equation is solved for in terms of , then that expression is substituted into the second equation.   "
+},
+{
+  "id": "ps-solvability-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-solvability-sol",
+  "type": "Exercise",
+  "number": "9.2.2.11",
+  "title": "",
+  "body": "   Unique solution (nonzero determinant: ).  Infinitely many real solutions (two equations in three variables; e.g., pick one free parameter, solve the others consistently).  Two real solutions: substitute into to get with positive discriminant ; hence two real , and then .    "
+},
+{
+  "id": "ps-check-solution-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-check-solution-sol",
+  "type": "Exercise",
+  "number": "9.2.2.12",
+  "title": "",
+  "body": "  Check by substitution. Correct solution: from get . Substitute into to obtain , so , . Jonah’s pair is incorrect.   "
+},
+{
+  "id": "ps-find-errors-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-find-errors-sol",
+  "type": "Exercise",
+  "number": "9.2.2.13",
+  "title": "",
+  "body": "   No algebra error: from we get ; then gives , .  Work is correct: from and we get , .    "
+},
+{
+  "id": "ps-no-solution-graph-sol",
+  "level": "2",
+  "url": "equality-problems-solutions.html#ps-no-solution-graph-sol",
+  "type": "Exercise",
+  "number": "9.2.2.14",
+  "title": "",
+  "body": "  Both lines have the same slope and different intercepts: each is of the form . Parallel distinct lines do not intersect, so there is no solution.   "
+},
+{
+  "id": "problem-solving-explanatory-solutions-2-1",
+  "level": "2",
+  "url": "equality-problems-solutions.html#problem-solving-explanatory-solutions-2-1",
+  "type": "Exercise",
+  "number": "9.2.3.1",
+  "title": "",
+  "body": "  Disagree. Graphing is useful for visual insight and approximate solutions, but exact intersections can be hard to read (non-integer, steep, or nearly parallel lines). Substitution\/elimination are more precise and scale to systems with more variables.   "
+},
+{
+  "id": "problem-solving-explanatory-solutions-2-2",
+  "level": "2",
+  "url": "equality-problems-solutions.html#problem-solving-explanatory-solutions-2-2",
+  "type": "Exercise",
+  "number": "9.2.3.2",
+  "title": "",
+  "body": "  Counterexample: and look different but have exactly the same solution set (the first is twice the second). Different forms can represent the same line\/equation after scaling.   "
+},
+{
+  "id": "problem-solving-explanatory-solutions-2-3",
+  "level": "2",
+  "url": "equality-problems-solutions.html#problem-solving-explanatory-solutions-2-3",
+  "type": "Exercise",
+  "number": "9.2.3.3",
+  "title": "",
+  "body": "  The equations are multiples: is . They represent the same line, so there are infinitely many solutions (all points on that line), not a unique one.   "
+},
+{
+  "id": "problem-solving-explanatory-solutions-2-4",
+  "level": "2",
+  "url": "equality-problems-solutions.html#problem-solving-explanatory-solutions-2-4",
+  "type": "Exercise",
+  "number": "9.2.3.4",
+  "title": "",
+  "body": "  If algebraic steps produce an unexpected identity or contradiction at the wrong time, an error likely occurred. Substituting the found values back into both original equations verifies correctness; any failure indicates a mistake in the manipulation.   "
+},
+{
+  "id": "problem-solving-explanatory-solutions-2-5",
+  "level": "2",
+  "url": "equality-problems-solutions.html#problem-solving-explanatory-solutions-2-5",
+  "type": "Exercise",
+  "number": "9.2.3.5",
+  "title": "",
+  "body": "  “No solution” (inconsistent): e.g., or parallel distinct lines; algebra gives a contradiction like . “Infinitely many”: identical equations (same line\/plane), giving an identity like . “Exactly one”: intersecting, nonparallel lines (nonzero determinant in a linear system).   "
+},
+{
+  "id": "problem-solving-explanatory-solutions-2-6",
+  "level": "2",
+  "url": "equality-problems-solutions.html#problem-solving-explanatory-solutions-2-6",
+  "type": "Exercise",
+  "number": "9.2.3.6",
+  "title": "",
+  "body": "  Subtracting from both sides yields , a contradiction; there is no that satisfies it. An inconsistent equation\/system has no solutions because its conditions are mutually incompatible.   "
+},
+{
+  "id": "problem-solving-explanatory-solutions-2-7",
+  "level": "2",
+  "url": "equality-problems-solutions.html#problem-solving-explanatory-solutions-2-7",
+  "type": "Exercise",
+  "number": "9.2.3.7",
+  "title": "",
+  "body": "  Let the numbers be and with and . Substituting gives , so and . Checking: and the difference is , matching the description.   "
+},
+{
+  "id": "supplementary-exercises-solutions",
+  "level": "1",
+  "url": "supplementary-exercises-solutions.html",
+  "type": "Section",
+  "number": "9.3",
+  "title": "Chapter 3 Solutions",
+  "body": " Chapter 3 Solutions   Solutions to “Number Systems Questions”       .  .  .  .  .  .         .  .  .  .  .  .         .  .  .  .  .  .  .  .         because 60 seconds = 1 minute (one “ten” in mixed radix); since 3600 seconds = 60 minutes = 1 hour.  (1 day, 2 h, 3 min, 4 s) in seconds: .        .  and are invalid (digits exceed base). Among valid: .  .  .  .  .         , , . Need with ⇒ any (e.g., ).  , , . Need , digits demand ⇒ (e.g., ).  , , . Need , digits demand ⇒ (e.g., ).  , , . Need , digits demand ⇒ works.  , , . Need , digits demand ⇒ (e.g., ).  , , . Need , digits demand ⇒ any (e.g., ).                                  No, there is no zero, and place does not mean anything (as for any natural number .       Interpretation (consistent mixed-radix): radices increase by 3 each level starting from 5, so weights are , , , , . Allowed digits: 1st: , 2nd: , 3rd: , 4th: , etc.     .  .  .  .      → .  → .  → .     Note. If one instead reads “4th place: up to ten 3rd places” literally (max digit 10), many numbers would become unrepresentable without the next place; the mixed-radix interpretation above ensures full coverage.       No. Tally marks are not positional: the value does not depend on place, only on count. Thus they are not a place-value system (though they form a unary counting system).        .  .  .  .  .  .        Example system: “Dozens-and-sixes” mixed radix. Digits allowed: 0–Z with . Places (right→left): ones ( ), sixes ( ones), dozens ( sixes = ones), grosses ( dozens), etc. Examples:  means ones. (i.e., ) means . means . equals one six: . equals one dozen of sixes: .  Addition example: (i.e., in base-ten).        .  .  .  .  ( ).  .        With 10 fingers and each finger as one “digit”: base two counts to ; base three to ; base four to (assuming you can reliably distinguish 2 or 3 or 4 states per finger).        Choose .  Choose .  Impossible as written since .  Impossible as written since .  Choose .  Choose .        Solutions to “Arithmetic Operations: Practice”                           (since ).  (since ).  (since ).         .  .  .                                   Full buses: with remainder students (last bus has 11).  All buses full or empty: need buses.         .  .         .  .  .         Estimate ; exact .  Estimate ; exact .  Estimate ; exact .        , , .                           Solutions to “Properties of Arithmetic: Practice”                  Not closed (e.g., ).  Not closed (e.g., ).  Closed (product of rationals is rational).  Closed.                    .  .  .  .        Associative; Zero property; Distributive; Identity; Commutative.        .  .  .  .         (or ).  .  .  .         Identity: . Inverse of is .  Identity: . Inverse of is .  Identity: . No additive inverse of lies in .  Identity: . has no multiplicative inverse in .                    .  .  .  .                    .  .  .         .  .  .  .         True.  False (e.g., ).  True.  False (undefined).  True (for ).         .  .  .  .        Solutions to “Integers: Practice”       .  .  .                    .  .  .  .                               .  .  .  .        Therefore, .       Fill-ins: , hence .       All equalities hold: , , .          not an integer          .  .  dollars per month (average loss).                   Solutions to “Whole Numbers: Explanatory Questions”      Place matters. In , the contributes . In , it contributes as well, but the is so the whole value differs. In the digit is invalid (base two allows only 0 and 1). Thus the same glyph “8” can mean different things—or be illegal—depending on base.       Blocks: in base five, a “long” is 5 ones. means 3 longs of longs (i.e., ), 0 longs, 2 ones → . means 3 longs and 2 ones → . Regrouping pictures cannot turn three 25-blocks into three 5-blocks.       Dividing by 5 with remainders peels off the least-significant base-five digit: the remainder is how many ones remain after forming groups of 5; the quotient counts how many groups. Repeating with the quotient mirrors regrouping ones→longs→squares: each step counts how many blocks of the next place you can make, producing the same digits in reverse order.       Agree: . On a number line, shifting both endpoints right by the same amount preserves the distance (difference). This works for adding the same number to both terms (or subtracting the same number), but not for arbitrary unequal changes.       Both use distributivity: A expands . B uses . Commutativity\/associativity justify rearrangements; each yields .       If is even, by associativity. If is odd, halving leaves a fraction (e.g., ), so in integer-only contexts you must adjust differently (e.g., double one factor and “almost” halve the other using distributivity).       An identity leaves elements unchanged ( for addition; for multiplication). An inverse “undoes” an element: additive inverse of is ; of is ; of is . Multiplicative inverses within exist only for (e.g., has none in , while in its inverse is ).       Partition a rectangle of height into widths and . The total area equals the sum of the two sub-rectangles . With two cuts, one vertical (at \/ ) and one horizontal (at = ), the big rectangle splits into four: .       because repeated addition of zero gives zero (and by distributivity). Division would require a number with , impossible unless ; hence undefined.       “Subtract a negative” means “add the opposite”: . On a number line, start at and move 9 to the right to reach .       Distribute over : . Since , we have , so . Each step uses identity, distributive property, and additive inverse.       Ordering by absolute value ignores sign. On the number line, larger negatives are less . Correct order: (since is farthest left).      "
+},
+{
+  "id": "number-systems-problems-solutions-2-1",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-1",
+  "type": "Exercise",
+  "number": "9.3.1.1",
+  "title": "",
+  "body": "   .  .  .  .  .  .    "
+},
+{
+  "id": "number-systems-problems-solutions-2-2",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-2",
+  "type": "Exercise",
+  "number": "9.3.1.2",
+  "title": "",
+  "body": "   .  .  .  .  .  .    "
+},
+{
+  "id": "number-systems-problems-solutions-2-3",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-3",
+  "type": "Exercise",
+  "number": "9.3.1.3",
+  "title": "",
+  "body": "   .  .  .  .  .  .  .  .    "
+},
+{
+  "id": "number-systems-problems-solutions-2-4",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-4",
+  "type": "Exercise",
+  "number": "9.3.1.4",
+  "title": "",
+  "body": "  because 60 seconds = 1 minute (one “ten” in mixed radix); since 3600 seconds = 60 minutes = 1 hour.  (1 day, 2 h, 3 min, 4 s) in seconds: .   "
+},
+{
+  "id": "number-systems-problems-solutions-2-5",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-5",
+  "type": "Exercise",
+  "number": "9.3.1.5",
+  "title": "",
+  "body": "   .  and are invalid (digits exceed base). Among valid: .  .  .  .  .    "
+},
+{
+  "id": "number-systems-problems-solutions-2-6",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-6",
+  "type": "Exercise",
+  "number": "9.3.1.6",
+  "title": "",
+  "body": "   , , . Need with ⇒ any (e.g., ).  , , . Need , digits demand ⇒ (e.g., ).  , , . Need , digits demand ⇒ (e.g., ).  , , . Need , digits demand ⇒ works.  , , . Need , digits demand ⇒ (e.g., ).  , , . Need , digits demand ⇒ any (e.g., ).    "
+},
+{
+  "id": "number-systems-problems-solutions-2-7",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-7",
+  "type": "Exercise",
+  "number": "9.3.1.7",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "number-systems-problems-solutions-2-8",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-8",
+  "type": "Exercise",
+  "number": "9.3.1.8",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "number-systems-problems-solutions-2-9",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-9",
+  "type": "Exercise",
+  "number": "9.3.1.9",
+  "title": "",
+  "body": "  No, there is no zero, and place does not mean anything (as for any natural number .   "
+},
+{
+  "id": "number-systems-problems-solutions-2-10",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-10",
+  "type": "Exercise",
+  "number": "9.3.1.10",
+  "title": "",
+  "body": "  Interpretation (consistent mixed-radix): radices increase by 3 each level starting from 5, so weights are , , , , . Allowed digits: 1st: , 2nd: , 3rd: , 4th: , etc.     .  .  .  .      → .  → .  → .     Note. If one instead reads “4th place: up to ten 3rd places” literally (max digit 10), many numbers would become unrepresentable without the next place; the mixed-radix interpretation above ensures full coverage.   "
+},
+{
+  "id": "number-systems-problems-solutions-2-11",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-11",
+  "type": "Exercise",
+  "number": "9.3.1.11",
+  "title": "",
+  "body": "  No. Tally marks are not positional: the value does not depend on place, only on count. Thus they are not a place-value system (though they form a unary counting system).   "
+},
+{
+  "id": "number-systems-problems-solutions-2-12",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-12",
+  "type": "Exercise",
+  "number": "9.3.1.12",
+  "title": "",
+  "body": "   .  .  .  .  .  .    "
+},
+{
+  "id": "number-systems-problems-solutions-2-13",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-13",
+  "type": "Exercise",
+  "number": "9.3.1.13",
+  "title": "",
+  "body": "  Example system: “Dozens-and-sixes” mixed radix. Digits allowed: 0–Z with . Places (right→left): ones ( ), sixes ( ones), dozens ( sixes = ones), grosses ( dozens), etc. Examples:  means ones. (i.e., ) means . means . equals one six: . equals one dozen of sixes: .  Addition example: (i.e., in base-ten).   "
+},
+{
+  "id": "number-systems-problems-solutions-2-14",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-14",
+  "type": "Exercise",
+  "number": "9.3.1.14",
+  "title": "",
+  "body": "   .  .  .  .  ( ).  .    "
+},
+{
+  "id": "number-systems-problems-solutions-2-15",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-15",
+  "type": "Exercise",
+  "number": "9.3.1.15",
+  "title": "",
+  "body": "  With 10 fingers and each finger as one “digit”: base two counts to ; base three to ; base four to (assuming you can reliably distinguish 2 or 3 or 4 states per finger).   "
+},
+{
+  "id": "number-systems-problems-solutions-2-16",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#number-systems-problems-solutions-2-16",
+  "type": "Exercise",
+  "number": "9.3.1.16",
+  "title": "",
+  "body": "   Choose .  Choose .  Impossible as written since .  Impossible as written since .  Choose .  Choose .    "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-1",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-1",
+  "type": "Exercise",
+  "number": "9.3.2.1",
+  "title": "",
+  "body": "        "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-2",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-2",
+  "type": "Exercise",
+  "number": "9.3.2.2",
+  "title": "",
+  "body": "        "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-3",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-3",
+  "type": "Exercise",
+  "number": "9.3.2.3",
+  "title": "",
+  "body": "   (since ).  (since ).  (since ).    "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-4",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-4",
+  "type": "Exercise",
+  "number": "9.3.2.4",
+  "title": "",
+  "body": "   .  .  .    "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-5",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-5",
+  "type": "Exercise",
+  "number": "9.3.2.5",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-6",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-6",
+  "type": "Exercise",
+  "number": "9.3.2.6",
+  "title": "",
+  "body": "        "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-7",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-7",
+  "type": "Exercise",
+  "number": "9.3.2.7",
+  "title": "",
+  "body": "        "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-8",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-8",
+  "type": "Exercise",
+  "number": "9.3.2.8",
+  "title": "",
+  "body": "   Full buses: with remainder students (last bus has 11).  All buses full or empty: need buses.    "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-9",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-9",
+  "type": "Exercise",
+  "number": "9.3.2.9",
+  "title": "",
+  "body": "   .  .    "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-10",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-10",
+  "type": "Exercise",
+  "number": "9.3.2.10",
+  "title": "",
+  "body": "   .  .  .    "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-11",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-11",
+  "type": "Exercise",
+  "number": "9.3.2.11",
+  "title": "",
+  "body": "   Estimate ; exact .  Estimate ; exact .  Estimate ; exact .    "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-12",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-12",
+  "type": "Exercise",
+  "number": "9.3.2.12",
+  "title": "",
+  "body": "  , , .   "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-13",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-13",
+  "type": "Exercise",
+  "number": "9.3.2.13",
+  "title": "",
+  "body": "        "
+},
+{
+  "id": "arithmetic-operations-practice-solutions-2-14",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#arithmetic-operations-practice-solutions-2-14",
+  "type": "Exercise",
+  "number": "9.3.2.14",
+  "title": "",
+  "body": "        "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-1",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-1",
+  "type": "Exercise",
+  "number": "9.3.3.1",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-2",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-2",
+  "type": "Exercise",
+  "number": "9.3.3.2",
+  "title": "",
+  "body": "   Not closed (e.g., ).  Not closed (e.g., ).  Closed (product of rationals is rational).  Closed.    "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-3",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-3",
+  "type": "Exercise",
+  "number": "9.3.3.3",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-4",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-4",
+  "type": "Exercise",
+  "number": "9.3.3.4",
+  "title": "",
+  "body": "   .  .  .  .    "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-5",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-5",
+  "type": "Exercise",
+  "number": "9.3.3.5",
+  "title": "",
+  "body": "  Associative; Zero property; Distributive; Identity; Commutative.   "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-6",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-6",
+  "type": "Exercise",
+  "number": "9.3.3.6",
+  "title": "",
+  "body": "   .  .  .  .    "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-7",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-7",
+  "type": "Exercise",
+  "number": "9.3.3.7",
+  "title": "",
+  "body": "   (or ).  .  .  .    "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-8",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-8",
+  "type": "Exercise",
+  "number": "9.3.3.8",
+  "title": "",
+  "body": "   Identity: . Inverse of is .  Identity: . Inverse of is .  Identity: . No additive inverse of lies in .  Identity: . has no multiplicative inverse in .    "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-9",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-9",
+  "type": "Exercise",
+  "number": "9.3.3.9",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-10",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-10",
+  "type": "Exercise",
+  "number": "9.3.3.10",
+  "title": "",
+  "body": "   .  .  .  .    "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-11",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-11",
+  "type": "Exercise",
+  "number": "9.3.3.11",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-12",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-12",
+  "type": "Exercise",
+  "number": "9.3.3.12",
+  "title": "",
+  "body": "   .  .  .    "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-13",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-13",
+  "type": "Exercise",
+  "number": "9.3.3.13",
+  "title": "",
+  "body": "   .  .  .  .    "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-14",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-14",
+  "type": "Exercise",
+  "number": "9.3.3.14",
+  "title": "",
+  "body": "   True.  False (e.g., ).  True.  False (undefined).  True (for ).    "
+},
+{
+  "id": "properties-of-arithmetic-practice-solutions-2-15",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#properties-of-arithmetic-practice-solutions-2-15",
+  "type": "Exercise",
+  "number": "9.3.3.15",
+  "title": "",
+  "body": "   .  .  .  .    "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-1",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-1",
+  "type": "Exercise",
+  "number": "9.3.4.1",
+  "title": "",
+  "body": "   .  .  .    "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-2",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-2",
+  "type": "Exercise",
+  "number": "9.3.4.2",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-3",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-3",
+  "type": "Exercise",
+  "number": "9.3.4.3",
+  "title": "",
+  "body": "   .  .  .  .    "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-4",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-4",
+  "type": "Exercise",
+  "number": "9.3.4.4",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-5",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-5",
+  "type": "Exercise",
+  "number": "9.3.4.5",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-6",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-6",
+  "type": "Exercise",
+  "number": "9.3.4.6",
+  "title": "",
+  "body": "   .  .  .  .    "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-7",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-7",
+  "type": "Exercise",
+  "number": "9.3.4.7",
+  "title": "",
+  "body": "  Therefore, .   "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-8",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-8",
+  "type": "Exercise",
+  "number": "9.3.4.8",
+  "title": "",
+  "body": "  Fill-ins: , hence .   "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-9",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-9",
+  "type": "Exercise",
+  "number": "9.3.4.9",
+  "title": "",
+  "body": "  All equalities hold: , , .   "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-10",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-10",
+  "type": "Exercise",
+  "number": "9.3.4.10",
+  "title": "",
+  "body": "     not an integer     "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-11",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-11",
+  "type": "Exercise",
+  "number": "9.3.4.11",
+  "title": "",
+  "body": "   .  .  dollars per month (average loss).    "
+},
+{
+  "id": "integers-practice-tailored-solutions-2-12",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#integers-practice-tailored-solutions-2-12",
+  "type": "Exercise",
+  "number": "9.3.4.12",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-1",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-1",
+  "type": "Exercise",
+  "number": "9.3.5.1",
+  "title": "",
+  "body": "  Place matters. In , the contributes . In , it contributes as well, but the is so the whole value differs. In the digit is invalid (base two allows only 0 and 1). Thus the same glyph “8” can mean different things—or be illegal—depending on base.   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-2",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-2",
+  "type": "Exercise",
+  "number": "9.3.5.2",
+  "title": "",
+  "body": "  Blocks: in base five, a “long” is 5 ones. means 3 longs of longs (i.e., ), 0 longs, 2 ones → . means 3 longs and 2 ones → . Regrouping pictures cannot turn three 25-blocks into three 5-blocks.   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-3",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-3",
+  "type": "Exercise",
+  "number": "9.3.5.3",
+  "title": "",
+  "body": "  Dividing by 5 with remainders peels off the least-significant base-five digit: the remainder is how many ones remain after forming groups of 5; the quotient counts how many groups. Repeating with the quotient mirrors regrouping ones→longs→squares: each step counts how many blocks of the next place you can make, producing the same digits in reverse order.   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-4",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-4",
+  "type": "Exercise",
+  "number": "9.3.5.4",
+  "title": "",
+  "body": "  Agree: . On a number line, shifting both endpoints right by the same amount preserves the distance (difference). This works for adding the same number to both terms (or subtracting the same number), but not for arbitrary unequal changes.   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-5",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-5",
+  "type": "Exercise",
+  "number": "9.3.5.5",
+  "title": "",
+  "body": "  Both use distributivity: A expands . B uses . Commutativity\/associativity justify rearrangements; each yields .   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-6",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-6",
+  "type": "Exercise",
+  "number": "9.3.5.6",
+  "title": "",
+  "body": "  If is even, by associativity. If is odd, halving leaves a fraction (e.g., ), so in integer-only contexts you must adjust differently (e.g., double one factor and “almost” halve the other using distributivity).   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-7",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-7",
+  "type": "Exercise",
+  "number": "9.3.5.7",
+  "title": "",
+  "body": "  An identity leaves elements unchanged ( for addition; for multiplication). An inverse “undoes” an element: additive inverse of is ; of is ; of is . Multiplicative inverses within exist only for (e.g., has none in , while in its inverse is ).   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-8",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-8",
+  "type": "Exercise",
+  "number": "9.3.5.8",
+  "title": "",
+  "body": "  Partition a rectangle of height into widths and . The total area equals the sum of the two sub-rectangles . With two cuts, one vertical (at \/ ) and one horizontal (at = ), the big rectangle splits into four: .   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-9",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-9",
+  "type": "Exercise",
+  "number": "9.3.5.9",
+  "title": "",
+  "body": "  because repeated addition of zero gives zero (and by distributivity). Division would require a number with , impossible unless ; hence undefined.   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-10",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-10",
+  "type": "Exercise",
+  "number": "9.3.5.10",
+  "title": "",
+  "body": "  “Subtract a negative” means “add the opposite”: . On a number line, start at and move 9 to the right to reach .   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-11",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-11",
+  "type": "Exercise",
+  "number": "9.3.5.11",
+  "title": "",
+  "body": "  Distribute over : . Since , we have , so . Each step uses identity, distributive property, and additive inverse.   "
+},
+{
+  "id": "whole-numbers-explanatory-solutions-2-12",
+  "level": "2",
+  "url": "supplementary-exercises-solutions.html#whole-numbers-explanatory-solutions-2-12",
+  "type": "Exercise",
+  "number": "9.3.5.12",
+  "title": "",
+  "body": "  Ordering by absolute value ignores sign. On the number line, larger negatives are less . Correct order: (since is farthest left).   "
 },
 {
   "id": "backmatter-2",
