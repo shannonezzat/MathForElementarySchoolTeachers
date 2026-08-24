@@ -12,14 +12,14 @@
     <p>We're going to move on and start discussing decimals. Now, terminating adn repeating decimals really are fractions, and this section will help us understand why and how. We use decimal notation since the behaviour of decimal fractions is very similar to the behaviour of integers in our base ten number system.</p>
 
     
-        <p>A <term>decimal fraction</term> is a fraction where the denominator is a power of 10. More formally, a decimal fraction is a rational number <m>\frac{a}{b} \in \mathbb{R}</m> where <m>b=10^k</m> for some <m>k \in \mathbb{N}_0</m>. This means the denominators of these fractions are all multiples of 10, which makes them behave a lot like the way our place values to the left of the decimal point operate. In base 10, a <term>unit decimal fraction</term> has 1 as the numerator.</p>
+        <p>A <term>decimal fraction</term> is a fraction where the denominator is a power of 10. More formally, a decimal fraction is a rational number <m>\frac{a}{b} \in \mathbb{R}</m> where <m>b=10^k</m> for some <m>k \in \mathbb{N}</m>. This means the denominators of these fractions are all powers of 10, which makes them behave a lot like the way our place values to the left of the decimal point operate. In base 10, a <term>unit decimal fraction</term> has 1 as the numerator.</p>
 
             
   <p>
-    Decimal fractions are a way of expressing quantities that are smaller than a whole unit. In our base-ten number system, each place value to the right of the decimal point represents a fraction of the whole unit. The first digit after the decimal point represents tenths (1/10), the second digit represents hundredths (1/100), and so on.
+    Decimal fractions allow us to express quantities that are smaller than a whole unit in a way compatible with our usual arithmetic. In our base-ten number system, each place value to the right of the decimal point represents a fraction of the whole unit. The first digit after the decimal point represents tenths (1/10), the second digit represents hundredths (1/100), and so on. So the farther to the right a decimal place value is, the smaller quantity it represents.
   </p>
   <p>
-    An interesting aspect of decimal fractions is the similarity they share with whole numbers. We know that multiplying a whole number by 10 raises its place value by 1, such as multiplying 10 by <m>10^k</m> gives us <m>10^{k+1}</m>. In a similar manner, dividing a decimal fraction by 10 also shifts its place value to the left. For example, dividing <m>(1/10^)k</m> by 10 gives us <m>(1/10)^{k-1}</m>. This relationship holds true as we move along the decimal places and will allow us to perform arithmetic operations similarly to arithmetic with whole numbers.
+    An interesting aspect of decimal fractions is the similarity they share with whole numbers. We know that multiplying a whole number by 10 raises its place value by 1 and thus shifts its place value of its digits one place to the left, for example multiplying 10 by <m>10^k</m> gives us <m>10^{k+1}</m>, or <m>10 \times 100 = 1000 </m>. In a similar manner, dividing a decimal fraction by 10 also shifts its place value to the right. For example, dividing <m>(1/10^)k</m> by 10 gives us <m>(1/10)^{k-1}</m> so <m>10 \div 1000 = 100</m>. This relationship holds true as we move along the decimal places and will allow us to perform arithmetic operations similarly to arithmetic with whole numbers.
   </p>
 
 
