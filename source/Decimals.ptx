@@ -180,7 +180,7 @@
             Putting both results together, a rational number is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction.
         </p>
     </proof>
-    <p>Let's look at a non-example; 7/15. Since <m>15=3 \times 5</m> and 3 and 7 share no common factors, there is no way of "cancelling" the factor of 3 in the denominator. Thus there is nothing we can multiply both the numerator and denominator by so that both are still integers and the denominator does not have a factor of 3, and thus it isn't equivalent to a decimal fraction, which has denominators of the form <m>10^k=2^k5^k</m>.</p> 
+    <p>Let's look at a non-example; 7/15. Since <m>15=3 \times 5</m> and 7 shares to common factors with 3, there is no way of "cancelling" the factor of 3 in the denominator. Thus there is nothing we can multiply both the numerator and denominator by so that both are still integers and the denominator does not have a factor of 3, and thus it isn't equivalent to a decimal fraction, which has denominators of the form <m>10^k=2^k5^k</m>.</p> 
 </subsection>
 <subsection xml:id="repeating-decimals-long-division">
     <title>Expressing a Fraction as a Repeating Decimal Using Long Division</title>
@@ -336,32 +336,19 @@
         <ol>
             <li>
                 <p>
-                    Convert 0.5 to a fraction:
+                    Convert <m>0.{\overline{5}}</m> to a fraction:
                     <ol>
-                        <li>Let x = 0.5. Notice that this is a terminating decimal, not a repeating decimal. However, we can still use our method to convert it to a fraction.</li>
-                        <li>Since there's no repetend, we can say p = 0.</li>
-                        <li>Calculate (10^p)x - x = x - x = 0. In decimal form, this is 0.5 - 0.5 = 0.</li>
-                        <li>Solve for x: x = 0/1.</li>
-                        <li>Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</li>
-                        <li>Simplify by converting the fraction to lowest terms: x = 0.</li>
-                    </ol>
-                    So, the decimal 0.5 is equal to the fraction 1/2.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Convert 0.01<m>\overline{4}</m> to a fraction:
-                    <ol>
-                        <li>Let x = 0.01<m>\overline{4}</m>.</li>
+                        <li>Let <m>x =0.{\overline{5}}</m>. </li>
                         <li>The period of the repetend is 1, so p = 1.</li>
-                        <li>Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 0.014444... - 0.0144 = 0.0004.</li>
-                        <li>Solve for x: x = 0.0004/9.</li>
-                        <li>Convert the numerator and denominator to integers by multiplying both by 10000 (to clear four decimal places): x = 4/90000.</li>
-                        <li>Simplify by converting the fraction to lowest terms: x = 1/22500.</li>
+                        <li>Calculate <m>(10^p)x - x = 10x - x = 9x</m>. In decimal form, this is <m>5.5555\ldots - 0.5555\ldots = 5</m>. Thus <m>9x=5</m></li>
+                        <li>Solve for x: <m>x = 5/9</m>.</li>
+                        <li>Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).</li>
+                        <li>Simplify by converting the fraction to lowest terms, which is already is!</li>
                     </ol>
-                    So, the repeating decimal 0.01<m>\overline{4}</m> is equal to the fraction 1/22500.
+                    So, the decimal <m>0.{\overline{5}}</m> is equal to the fraction <m>5/9</m>.
                 </p>
             </li>
+           
             <li>
                 <p>
                     Convert 1.<m>\overline{6}</m> to a fraction:
