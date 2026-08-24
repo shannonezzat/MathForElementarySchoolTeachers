@@ -164,7 +164,7 @@
     <p>
         Now, let's prove that a rational number is equivalent to a terminating decimal* if and only if it is equivalent to a decimal fraction.
     </p>
-    <p>*Note: this is not quite correct, as we'll see later that decimals that have repeating 9s to the right are equivalent to terminating decimals. We will discuss this in more depth later. </p>
+    <p>*Note: this is hiding the fact that all terminating decimals have a (seldom used) repeating decimal representation, as we'll see later that decimals that have repeating 9s to the right are equivalent to terminating decimals. We will discuss this in more depth later. </p>
     <proof xml:id="proof-terminating-decimal">
         <title>Proof</title>
         <p>
