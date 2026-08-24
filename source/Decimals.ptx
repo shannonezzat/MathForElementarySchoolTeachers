@@ -111,10 +111,10 @@
         <example xml:id="ex_divide_decimals">
             <title>Dividing Decimals</title>
             <statement>
-                <p>Let's divide 3.24 by 0.618.</p>
+                <p>Let's divide 2.781 by 0.618.</p>
                 <p>
-            <me>3.24 \div 0.618 = 3240 \div 618 = 5.242</me>
-            GIVE A PIC OF THE ALGORITHM WITH EXPLANATION This works because we can think of decimals as decimal fractions. For instance, 3.24 can be thought of as 324/100 and 0.618 as 618/1000. When we divide these fractions, we multiply the dividend by the reciprocal of the divisor, which gives us the same result as our decimal division.</p>
+            <me>3.24 \div 0.618 = 2781 \div 618 = 4.5</me>
+            GIVE A PIC OF THE ALGORITHM WITH EXPLANATION This works because we can think of decimals as decimal fractions. For instance, 2.781 can be thought of as 2781/1000 and 0.618 as 618/1000. When we divide these fractions, we multiply the dividend by the reciprocal of the divisor, which gives us the same result as our decimal division.</p>
         </statement>
         </example>
     </subsection>
