@@ -127,8 +127,13 @@
     <title>Terminating and Repeating Decimals</title>
     <introduction>
     <p>
-        In this section, our goal is to understand the relationship between rational numbers and their decimal representations. Specifically, we aim to show that a rational number is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction. Conversely, a rational number is equivalent to a repeating decimal if and only if it is not equivalent to a decimal fraction. This understanding is crucial for elementary school mathematics teachers as it forms the basis for many mathematical operations and concepts.
+        In this section, our goal is to understand the relationship between rational numbers and their decimal representations. Specifically, we aim to show that a rational number is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction. This understanding is crucial for elementary school mathematics teachers as it forms the basis for many mathematical operations and concepts.
     </p>
+<exercise>
+<p> What is the converse of the statement above? Does this mean that a repeating decimal cannot be expressed as a terminating decimal?
+<\p>
+<hint> Do <m>0.5</m> and <m> 0.4\{\overline{9}} <\m> represent different numbers? If so, what is the size difference between them?</hint>
+</exercise>
     </introduction>
     <subsection xml:id="terminating-decimals">
     <title>Terminating Decimals</title>
