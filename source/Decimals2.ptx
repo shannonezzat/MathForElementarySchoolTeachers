@@ -1,1 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="decimals-and-percents">
+  <title>Decimals and Percents</title>
+
+  <section xml:id="sec-introduction-to-decimals">
+    <title>Introduction to Decimals</title>
+    <objectives xml:id="objectives-introduction-to-decimals">
+      <title>Decimals and Place Value</title>
+      <introduction>
+        <p>
+          Decimals use the same base-ten place-value system as whole numbers. In this section, we will:
+        </p>
+      </introduction>
+      <ol>
+        <li>interpret decimal places as fractions with denominators that are powers of 10</li>
+        <li>represent a decimal using expanded notation, decimal fractions, and pictures</li>
+        <li>explain how multiplying or dividing by 10 changes place value</li>
+        <li>compare decimals by using common place values</li>
+      </ol>
+      <conclusion>
+        <p>
+          By the end of the section, you will be able to move between several representations of the same decimal quantity.
+        </p>
+      </conclusion>
+    </objectives>
+
+    <subsection xml:id="subsec-decimal-fractions-place-value">
+      <title>Decimal Fractions and Place Value</title>
+      <p>
+        We are going to start by connecting decimals to ideas that are already familiar. A decimal such as <m>0.3</m> represents three tenths, while <m>0.03</m> represents three hundredths. The digit is the same, but its position changes its value.
+      </p>
+      <definition xml:id="def-decimal-fraction">
+        <statement>
+          <p>
+            A <term>decimal fraction</term> is a fraction of the form <m>\frac{a}{10^k}</m>, where <m>a</m> is an integer and <m>k</m> is a non-negative integer. A <term>unit decimal fraction</term> has numerator 1.
+          </p>
+        </statement>
+      </definition>
+      <p>
+        The places immediately to the right of the decimal point represent tenths, hundredths, thousandths, and so on. Ten units of one place combine to make one unit of the place immediately to the left:
+      </p>
+      <me>10\left(\frac{1}{100}\right)=\frac{1}{10}.</me>
+      <p>
+        Multiplying by 10 moves each digit one place to the left because every place value becomes ten times as large. Dividing by 10 moves each digit one place to the right because every place value becomes one tenth as large. For example,
+      </p>
+      <me>\frac{1}{10^k}\div 10=\frac{1}{10^{k+1}}.</me>
+      <example xml:id="example-decimal-fractions">
+        <statement>
+          <p>
+            The numbers <m>\frac{3}{10}</m>, <m>\frac{671}{1000}</m>, <m>-\frac{55}{1000000}</m>, and <m>\frac{372}{100}</m> are all decimal fractions. Notice that a decimal fraction may be negative or greater than 1.
+          </p>
+        </statement>
+      </example>
+      <figure xml:id="figure-place-value-32-329">
+        <caption>Place value in <m>32.329</m> and the exchange of ten hundredths for one tenth</caption>
+        <image source="assets/decimal-place-value-32-329.svg" width="95%">
+          <description>A place-value chart for 32.329 followed by a diagram showing that ten hundredths equal one tenth.</description>
+        </image>
+      </figure>
+      <assemblage xml:id="assemblage-decimal-expansions">
+        <title>Notes for a Deeper Understanding</title>
+        <p>
+          A decimal expansion is a way of writing a real number. Terminating and repeating decimal expansions represent rational numbers, but a nonterminating, nonrepeating decimal such as the decimal expansion of <m>\sqrt{2}</m> does not represent a fraction of integers. We will return to this distinction later in the chapter.
+        </p>
+      </assemblage>
+    </subsection>
+
+    <subsection xml:id="subsec-representing-decimals">
+      <title>Representing Decimals</title>
+      <p>
+        A decimal can be decomposed according to place value. For example,
+      </p>
+      <me>32.329=30+2+\frac{3}{10}+\frac{2}{100}+\frac{9}{1000}.</me>
+      <p>
+        The same number can also be represented using one denominator. Since the smallest displayed place is the thousandths place, we can write
+      </p>
+      <me>32.329=32+\frac{329}{1000}=\frac{32329}{1000}.</me>
+      <exercise xml:id="exercise-representing-decimals">
+        <statement>
+          <p>Write <m>7.046</m> in each of the following forms:</p>
+          <ol marker="a">
+            <li>expanded place-value notation</li>
+            <li>a whole number plus a proper decimal fraction</li>
+            <li>one decimal fraction</li>
+          </ol>
+        </statement>
+        <solution>
+          <ol marker="a">
+            <li><m>7+\frac{4}{100}+\frac{6}{1000}</m></li>
+            <li><m>7+\frac{46}{1000}</m></li>
+            <li><m>\frac{7046}{1000}</m></li>
+          </ol>
+        </solution>
+      </exercise>
+    </subsection>
+
+    <subsection xml:id="subsec-pictorial-representation-decimals">
+      <title>Pictorial Representation of Decimals</title>
+      <p>
+        A picture of a decimal depends on what we choose to represent one whole. In the next figure, the complete square is one whole. It is divided into 100 equal squares, so each small square represents <m>\frac{1}{100}</m>.
+      </p>
+      <figure xml:id="figure-hundred-grid-0-32">
+        <caption>Representing <m>0.32</m> on a hundred grid</caption>
+        <image source="assets/decimal-hundred-grid-0-32.svg" width="90%">
+          <description>A hundred grid with 32 squares shaded, representing 0.32.</description>
+        </image>
+      </figure>
+      <p>
+        The shaded region contains 32 hundredths. We can also view it as three complete tenths and two additional hundredths:
+      </p>
+      <me>0.32=\frac{32}{100}=\frac{3}{10}+\frac{2}{100}.</me>
+    </subsection>
+
+    <subsection xml:id="subsec-comparing-decimals">
+      <title>Comparing Decimals</title>
+      <p>
+        To compare decimals, it helps to express both numbers using the same smallest place value. Appending trailing zeros does not change a decimal's value, so <m>0.6=0.60</m>.
+      </p>
+      <example xml:id="example-comparing-decimals">
+        <statement>
+          <p>Compare <m>0.32</m> and <m>0.6</m>.</p>
+        </statement>
+        <solution>
+          <p>
+            We can write both numbers in hundredths:
+          </p>
+          <me>0.32=\frac{32}{100}\qquad\text{and}\qquad 0.6=0.60=\frac{60}{100}.</me>
+          <p>
+            Since <m>32&lt;60</m>, we have <m>0.32&lt;0.6</m>.
+          </p>
+        </solution>
+      </example>
+      <exercise xml:id="exercise-compare-decimals">
+        <statement>
+          <p>
+            A student says that <m>0.407&gt;0.42</m> because 407 is greater than 42. Explain the student's mistake and give the correct comparison.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The digits must be compared in matching place-value columns. Since <m>0.42=0.420</m> and <m>407&lt;420</m>, the correct comparison is <m>0.407&lt;0.42</m>.
+          </p>
+        </solution>
+      </exercise>
+    </subsection>
+  </section>
+
+  <section xml:id="sec-operations-with-decimals">
+    <title>Operations with Decimals</title>
+    <objectives xml:id="objectives-operations-with-decimals">
+      <title>Operating with Decimals</title>
+      <introduction>
+        <p>
+          Decimal algorithms are whole-number algorithms organized by place value. In this section, we will:
+        </p>
+      </introduction>
+      <ol>
+        <li>add and subtract decimals by aligning equal place values</li>
+        <li>connect regrouping with exchanges among base-ten units</li>
+        <li>explain the decimal-place rule for multiplication using decimal fractions</li>
+        <li>explain why multiplying both dividend and divisor by the same power of 10 preserves a quotient</li>
+      </ol>
+      <conclusion>
+        <p>
+          The goal is not only to carry out each algorithm, but also to explain why it gives the correct result.
+        </p>
+      </conclusion>
+    </objectives>
+
+    <subsection xml:id="subsec-add-subtract-decimals">
+      <title>Addition and Subtraction with Decimals</title>
+      <p>
+        When adding or subtracting, we combine quantities with the same place value. This is why the decimal points must be aligned. Writing a trailing zero can make the alignment easier to see without changing the value of a number.
+      </p>
+      <example xml:id="example-subtract-decimals">
+        <title>Subtracting Decimals</title>
+        <statement>
+          <p>Subtract <m>6.29</m> from <m>53.071</m>.</p>
+        </statement>
+        <solution>
+          <p>
+            First write <m>6.29</m> as <m>6.290</m> and align the decimal points.
+          </p>
+          <figure xml:id="figure-subtraction-align">
+            <caption>Align the decimal points and matching place values</caption>
+            <image source="assets/decimal-subtraction-by-hand-1-align.svg" width="88%">
+              <description>The decimal subtraction is written vertically with the decimal points aligned.</description>
+            </image>
+          </figure>
+          <p>
+            We cannot subtract 9 thousandths from 1 thousandth. Regroup across the zero, remembering that one tenth is ten hundredths and one hundredth is ten thousandths.
+          </p>
+          <figure xml:id="figure-subtraction-cross-zero">
+            <caption>Regroup across the zero</caption>
+            <image source="assets/decimal-subtraction-by-hand-2-cross-zero.svg" width="88%">
+              <description>The subtraction shows regrouping from tenths to hundredths and then to thousandths.</description>
+            </image>
+          </figure>
+          <p>
+            We also need to exchange one ten for ten ones.
+          </p>
+          <figure xml:id="figure-subtraction-regroup-ten">
+            <caption>Regroup one ten</caption>
+            <image source="assets/decimal-subtraction-by-hand-3-regroup-ten.svg" width="88%">
+              <description>The subtraction shows one ten regrouped as ten ones.</description>
+            </image>
+          </figure>
+          <figure xml:id="figure-subtraction-finish">
+            <caption>Complete the subtraction</caption>
+            <image source="assets/decimal-subtraction-by-hand-4-finish.svg" width="88%">
+              <description>The completed calculation gives 46.781.</description>
+            </image>
+          </figure>
+          <me>53.071-6.290=46.781.</me>
+        </solution>
+      </example>
+      <assemblage xml:id="assemblage-base-ten-subtraction">
+        <title>Notes for a Deeper Understanding</title>
+        <p>
+          Regrouping is an exchange of equal quantities, not a rule about crossing out digits. If a large base-ten cube represents 1, then a flat represents <m>0.1</m>, a rod represents <m>0.01</m>, and a small cube represents <m>0.001</m>. The next figure shows the same subtraction using these exchanges.
+        </p>
+        <figure xml:id="figure-subtraction-base-ten-blocks">
+          <caption>Decimal subtraction using base-ten blocks</caption>
+          <image source="assets/decimal-subtraction-base-ten-blocks.svg" width="98%">
+            <description>Base-ten blocks show the exchanges needed to subtract 6.290 from 53.071.</description>
+          </image>
+        </figure>
+      </assemblage>
+    </subsection>
+
+    <subsection xml:id="subsec-multiply-decimals">
+      <title>Multiplication with Decimals</title>
+      <p>
+        We can temporarily ignore the decimal points, multiply whole numbers, and then restore the correct place value. The decimal-place rule works because each factor can be written as an integer divided by a power of 10.
+      </p>
+      <example xml:id="example-multiply-decimals">
+        <title>Multiplying Decimals</title>
+        <statement>
+          <p>Multiply <m>53.071</m> by <m>6.29</m>.</p>
+        </statement>
+        <solution>
+          <figure xml:id="figure-multiplication-count-places">
+            <caption>Record the decimal places</caption>
+            <image source="assets/decimal-multiplication-by-hand-1-count-places.svg" width="88%">
+              <description>The two factors have five decimal places in total.</description>
+            </image>
+          </figure>
+          <figure xml:id="figure-multiplication-first-product">
+            <caption>Find the first partial product</caption>
+            <image source="assets/decimal-multiplication-by-hand-2-first-product.svg" width="88%">
+              <description>The first whole-number partial product is calculated.</description>
+            </image>
+          </figure>
+          <figure xml:id="figure-multiplication-partial-products">
+            <caption>Complete the partial products</caption>
+            <image source="assets/decimal-multiplication-by-hand-3-partial-products.svg" width="88%">
+              <description>All three partial products are written in aligned columns.</description>
+            </image>
+          </figure>
+          <figure xml:id="figure-multiplication-restore-decimal">
+            <caption>Add and restore the decimal point</caption>
+            <image source="assets/decimal-multiplication-by-hand-4-decimal-point.svg" width="88%">
+              <description>The partial products sum to 33381659 and the decimal point is restored to give 333.81659.</description>
+            </image>
+          </figure>
+          <me>53.071\times 6.29=333.81659.</me>
+          <p>
+            The fraction calculation explains why the answer has five decimal places.
+          </p>
+          <figure xml:id="figure-multiplication-decimal-fractions">
+            <caption>Why the decimal-place rule works</caption>
+            <image source="assets/decimal-multiplication-by-hand-5-fractions.svg" width="88%">
+              <description>The decimals are rewritten as 53071 over 1000 and 629 over 100 before multiplication.</description>
+            </image>
+          </figure>
+        </solution>
+      </example>
+    </subsection>
+
+    <subsection xml:id="subsec-divide-decimals">
+      <title>Division with Decimals</title>
+      <p>
+        To divide by a decimal, multiply both the dividend and divisor by the same power of 10 until the divisor is a whole number. Multiplying both numbers by the same nonzero number does not change their quotient.
+      </p>
+      <example xml:id="example-divide-decimals">
+        <title>Dividing Decimals</title>
+        <statement>
+          <p>Divide <m>2.781</m> by <m>0.618</m>.</p>
+        </statement>
+        <solution>
+          <figure xml:id="figure-division-make-whole">
+            <caption>Make the divisor a whole number</caption>
+            <image source="assets/decimal-division-by-hand-1-make-whole.svg" width="88%">
+              <description>Both numbers are multiplied by 1000, giving 2781 divided by 618.</description>
+            </image>
+          </figure>
+          <figure xml:id="figure-division-first-step">
+            <caption>Divide the whole-number part</caption>
+            <image source="assets/decimal-division-by-hand-2-first-step.svg" width="88%">
+              <description>Four times 618 is subtracted from 2781, leaving 309.</description>
+            </image>
+          </figure>
+          <figure xml:id="figure-division-finish">
+            <caption>Bring down a zero and finish</caption>
+            <image source="assets/decimal-division-by-hand-3-finish.svg" width="88%">
+              <description>The brought-down zero makes 3090; five times 618 is 3090, leaving remainder zero.</description>
+            </image>
+          </figure>
+          <me>2.781\div 0.618=2781\div 618=4.5.</me>
+          <p>
+            We can justify the same step using decimal fractions.
+          </p>
+          <figure xml:id="figure-division-decimal-fractions">
+            <caption>Why multiplying both numbers by 1000 works</caption>
+            <image source="assets/decimal-division-by-hand-4-fractions.svg" width="88%">
+              <description>The quotient of 2781 over 1000 and 618 over 1000 simplifies to 2781 over 618.</description>
+            </image>
+          </figure>
+        </solution>
+      </example>
+    </subsection>
+  </section>
+
+  <section xml:id="sec-terminating-repeating-decimals">
+    <title>Terminating and Repeating Decimals</title>
+    <objectives xml:id="objectives-terminating-repeating">
+      <title>Rational Numbers and Decimal Expansions</title>
+      <introduction>
+        <p>
+          Fractions do not all look the same when written as decimals. In this section, we will:
+        </p>
+      </introduction>
+      <ol>
+        <li>identify terminating and eventually repeating decimal expansions</li>
+        <li>predict termination from the denominator of a fraction in lowest terms</li>
+        <li>explain why long division must terminate or repeat</li>
+        <li>identify a preperiod, repetend, and period</li>
+        <li>convert repeating decimals to fractions</li>
+        <li>explain why some rational numbers have two decimal representations</li>
+      </ol>
+      <conclusion>
+        <p>
+          Together, these ideas show that a real number is rational exactly when its decimal expansion terminates or eventually repeats.
+        </p>
+      </conclusion>
+    </objectives>
+
+    <subsection xml:id="subsec-terminating-decimals">
+      <title>Terminating Decimals</title>
+      <definition xml:id="def-terminating-decimal">
+        <statement>
+          <p>
+            A <term>terminating decimal expansion</term> has only finitely many nonzero decimal digits. We usually write zeros after its final displayed digit, so <m>0.75=0.75000\ldots</m>.
+          </p>
+        </statement>
+      </definition>
+      <example xml:id="example-terminating-decimals">
+        <p>
+          Each of the following fractions has a terminating decimal expansion:
+        </p>
+        <ol>
+          <li><m>\frac12=\frac5{10}=0.5</m></li>
+          <li><m>\frac34=\frac{75}{100}=0.75</m></li>
+          <li><m>\frac78=\frac{875}{1000}=0.875</m></li>
+          <li><m>\frac3{15}=\frac15=\frac2{10}=0.2</m></li>
+        </ol>
+      </example>
+      <theorem xml:id="theorem-terminating-decimal-fraction">
+        <statement>
+          <p>
+            A rational number has a terminating decimal expansion if and only if it is equivalent to a decimal fraction.
+          </p>
+        </statement>
+        <proof>
+          <p>
+            Suppose a rational number has a terminating expansion with <m>k</m> digits after the decimal point. Removing the decimal point gives an integer <m>a</m>, and the original number is <m>\frac{a}{10^k}</m>. Thus it is a decimal fraction.
+          </p>
+          <p>
+            Conversely, suppose a rational number equals <m>\frac{a}{10^k}</m>. Dividing by <m>10^k</m> moves the decimal point in <m>a</m> exactly <m>k</m> places to the left, so the resulting expansion terminates.
+          </p>
+        </proof>
+      </theorem>
+      <assemblage xml:id="assemblage-denominator-test">
+        <title>Notes for a Deeper Understanding</title>
+        <p>
+          A useful version of the theorem looks at a fraction in lowest terms. The decimal expansion of <m>\frac ab</m>, with <m>b&gt;0</m>, terminates exactly when the only prime factors of <m>b</m> are 2 and 5. These are the prime factors of <m>10^k=2^k5^k</m>.
+        </p>
+        <p>
+          For example, <m>\frac7{15}</m> is already in lowest terms and <m>15=3\cdot5</m>. The factor 3 cannot cancel, so no equivalent fraction can have denominator <m>10^k</m>. Its decimal expansion therefore does not terminate.
+        </p>
+      </assemblage>
+      <exercise xml:id="exercise-termination-test">
+        <statement>
+          <p>
+            Without carrying out long division, determine which fractions have terminating decimal expansions: <m>\frac7{40}</m>, <m>\frac9{24}</m>, <m>\frac5{18}</m>, and <m>\frac{21}{70}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Reduce first. The denominators of <m>\frac7{40}</m>, <m>\frac9{24}=\frac38</m>, and <m>\frac{21}{70}=\frac3{10}</m> contain only factors 2 and 5, so these terminate. The fraction <m>\frac5{18}</m> is in lowest terms and its denominator contains a factor 3, so it does not terminate.
+          </p>
+        </solution>
+      </exercise>
+    </subsection>
+
+    <subsection xml:id="subsec-long-division-repeating">
+      <title>Why Long Division Terminates or Repeats</title>
+      <p>
+        Suppose we divide an integer <m>a</m> by a positive integer <m>b</m>. Every remainder is one of
+      </p>
+      <me>0,1,2,\ldots,b-1.</me>
+      <p>
+        If a remainder is 0, the decimal terminates. If 0 never occurs, then there are only <m>b-1</m> possible nonzero remainders. Eventually a remainder must occur for a second time. From that point onward, long division repeats exactly the same steps and therefore produces the same block of digits again.
+      </p>
+      <example xml:id="example-long-division-2-7">
+        <title>Expressing <m>\frac27</m> as a Repeating Decimal</title>
+        <p>
+          A remainder table makes the repeating cycle visible. At each step, multiply the current remainder by 10, choose the next quotient digit, and record the new remainder.
+        </p>
+        <tabular>
+          <row><cell>Current remainder</cell><cell>Number divided by 7</cell><cell>Next digit</cell><cell>New remainder</cell></row>
+          <row><cell><m>2</m></cell><cell><m>20</m></cell><cell><m>2</m></cell><cell><m>6</m></cell></row>
+          <row><cell><m>6</m></cell><cell><m>60</m></cell><cell><m>8</m></cell><cell><m>4</m></cell></row>
+          <row><cell><m>4</m></cell><cell><m>40</m></cell><cell><m>5</m></cell><cell><m>5</m></cell></row>
+          <row><cell><m>5</m></cell><cell><m>50</m></cell><cell><m>7</m></cell><cell><m>1</m></cell></row>
+          <row><cell><m>1</m></cell><cell><m>10</m></cell><cell><m>1</m></cell><cell><m>3</m></cell></row>
+          <row><cell><m>3</m></cell><cell><m>30</m></cell><cell><m>4</m></cell><cell><m>2</m></cell></row>
+        </tabular>
+        <p>
+          The remainder 2 has returned, so the same six steps repeat:
+        </p>
+        <me>\frac27=0.\overline{285714}.</me>
+      </example>
+      <example xml:id="example-long-division-6-13">
+        <title>Expressing <m>\frac6{13}</m> as a Repeating Decimal</title>
+        <tabular>
+          <row><cell>Current remainder</cell><cell>Number divided by 13</cell><cell>Next digit</cell><cell>New remainder</cell></row>
+          <row><cell><m>6</m></cell><cell><m>60</m></cell><cell><m>4</m></cell><cell><m>8</m></cell></row>
+          <row><cell><m>8</m></cell><cell><m>80</m></cell><cell><m>6</m></cell><cell><m>2</m></cell></row>
+          <row><cell><m>2</m></cell><cell><m>20</m></cell><cell><m>1</m></cell><cell><m>7</m></cell></row>
+          <row><cell><m>7</m></cell><cell><m>70</m></cell><cell><m>5</m></cell><cell><m>5</m></cell></row>
+          <row><cell><m>5</m></cell><cell><m>50</m></cell><cell><m>3</m></cell><cell><m>11</m></cell></row>
+          <row><cell><m>11</m></cell><cell><m>110</m></cell><cell><m>8</m></cell><cell><m>6</m></cell></row>
+        </tabular>
+        <p>
+          The remainder 6 has returned, so
+        </p>
+        <me>\frac6{13}=0.\overline{461538}.</me>
+      </example>
+    </subsection>
+
+    <subsection xml:id="subsec-repeating-decimals-rational">
+      <title>Representing Repeating Decimals as Rational Numbers</title>
+      <subsubsection xml:id="subsubsec-repeating-nines">
+        <title>Can a Repeating Decimal Equal 1?</title>
+        <p>
+          We know that <m>\frac13=0.333\ldots</m>. Add three copies of this equality. In every displayed decimal place, <m>3+3+3=9</m>.
+        </p>
+        <figure xml:id="figure-repeating-nines-addition">
+          <caption>Adding three copies of one third</caption>
+          <image source="assets/decimal-repeating-nines-by-addition.svg" width="92%">
+            <description>Three copies of 0.333 repeating add to 0.999 repeating, while three copies of one third add to one.</description>
+          </image>
+        </figure>
+        <p>
+          The same sum equals 1 in fraction notation:
+        </p>
+        <me>\frac13+\frac13+\frac13=1.</me>
+        <p>
+          Therefore, <m>0.\overline9=1</m>. The theorem about terminating decimals remains correct; the point is that decimal representations are not always unique. For example,
+        </p>
+        <me>0.5000\ldots=0.4999\ldots.</me>
+      </subsubsection>
+
+      <subsubsection xml:id="subsubsec-preperiod-repetend-period">
+        <title>Preperiod, Repetend, and Period</title>
+        <definition xml:id="def-preperiod-repetend-period">
+          <statement>
+            <p>
+              In the standard form of an eventually repeating decimal, the <term>preperiod</term> is the shortest initial string of decimal digits that does not repeat. The <term>repetend</term> is the shortest block of digits that then repeats indefinitely. The <term>period</term> is the number of digits in the repetend.
+            </p>
+          </statement>
+        </definition>
+        <example xml:id="example-preperiod-repetend-period">
+          <ol>
+            <li>
+              <p>
+                In <m>0.\overline3</m>, the preperiod is empty, the repetend is 3, and the period is 1.
+              </p>
+            </li>
+            <li>
+              <p>
+                In <m>0.00\overline{142857}</m>, the preperiod is 00, the repetend is 142857, and the period is 6.
+              </p>
+            </li>
+            <li>
+              <p>
+                The expressions <m>0.\overline{27}</m>, <m>0.\overline{2727}</m>, and <m>0.2\overline{72}</m> represent the same number. The first is the standard form because it uses the shortest preperiod and shortest repeating block.
+              </p>
+            </li>
+          </ol>
+        </example>
+      </subsubsection>
+
+      <subsubsection xml:id="subsubsec-convert-repeating-decimal">
+        <title>Converting a Repeating Decimal to a Fraction</title>
+        <p>
+          Multiplying a decimal by a power of 10 shifts its digits. We choose shifts that place identical repeating tails beneath one another; subtraction then removes those tails.
+        </p>
+        <example xml:id="example-convert-027">
+          <title>Converting <m>0.\overline{27}</m> to a Fraction</title>
+          <solution>
+            <p>Let <m>x=0.\overline{27}</m>. Since the repetend has two digits, multiply by 100:</p>
+            <me>100x=27.\overline{27}.</me>
+            <p>Subtract the original equation:</p>
+            <me>100x-x=27.\overline{27}-0.\overline{27}.</me>
+            <me>99x=27.</me>
+            <p>Therefore,</p>
+            <me>x=\frac{27}{99}=\frac3{11}.</me>
+          </solution>
+        </example>
+        <example xml:id="example-convert-eventually-repeating">
+          <title>Converting <m>0.01\overline4</m> to a Fraction</title>
+          <solution>
+            <p>
+              Let <m>x=0.014444\ldots</m>. Shift both numbers past the two-digit preperiod and then one additional place for the one-digit repetend:
+            </p>
+            <me>1000x=14.4444\ldots</me>
+            <me>100x=1.4444\ldots</me>
+            <p>Subtract so that the repeating tails cancel:</p>
+            <me>900x=13.</me>
+            <p>Thus,</p>
+            <me>x=\frac{13}{900}.</me>
+          </solution>
+        </example>
+        <assemblage xml:id="assemblage-general-repeating-conversion">
+          <title>Notes for a Deeper Understanding</title>
+          <p>
+            Suppose the preperiod has <m>q</m> digits and the repetend has <m>p</m> digits. Then <m>10^{p+q}x</m> and <m>10^qx</m> have identical repeating tails. Their difference is an integer, so
+          </p>
+          <me>(10^{p+q}-10^q)x=\text{an integer}.</me>
+          <p>
+            This proves that every eventually repeating decimal represents a rational number.
+          </p>
+        </assemblage>
+        <exercise xml:id="exercise-two-decimal-representations">
+          <statement>
+            <ol>
+              <li>Convert <m>0.24\overline9</m> to a fraction.</li>
+              <li>Give a terminating decimal representation of the same number.</li>
+              <li>Conjecture a second decimal representation of <m>0.3</m>.</li>
+            </ol>
+          </statement>
+          <solution>
+            <ol>
+              <li><m>0.24\overline9=\frac14</m>.</li>
+              <li><m>\frac14=0.25</m>.</li>
+              <li><m>0.3=0.2\overline9</m>.</li>
+            </ol>
+          </solution>
+        </exercise>
+      </subsubsection>
+    </subsection>
+  </section>
+  <section xml:id="sec-percent-and-change">
+    <title>Percent and Percent Change</title>
+    <objectives xml:id="objectives-percent-change">
+      <title>Percents and Changes in Percents</title>
+      <introduction>
+        <p>
+          Percents let us compare quantities using a common whole of 100. In this section, we will:
+        </p>
+      </introduction>
+      <ol>
+        <li>interpret a percent as a fraction with denominator 100</li>
+        <li>convert among fractions, decimals, and percents</li>
+        <li>use bar diagrams to find a part or a whole</li>
+        <li>calculate and interpret percent change</li>
+        <li>distinguish percent change from percentage-point change</li>
+      </ol>
+      <conclusion>
+        <p>
+          The meaning of the whole is essential: the same numerical comparison can answer different questions depending on its context.
+        </p>
+      </conclusion>
+    </objectives>
+
+    <subsection xml:id="subsec-introduction-to-percent">
+      <title>Introduction to Percent</title>
+      <definition xml:id="def-percent">
+        <statement>
+          <p>
+            A <term>percent</term> expresses a quantity in hundredths. The notation <m>r\%</m> means <m>\frac{r}{100}</m>.
+          </p>
+        </statement>
+      </definition>
+      <p>
+        For example,
+      </p>
+      <me>50\%=\frac{50}{100}=0.5=\frac12.</me>
+      <p>
+        To convert a fraction or decimal to a percent, multiply by <m>100\%</m>. Since <m>100\%=1</m>, this changes the representation without changing the value.
+      </p>
+      <example xml:id="example-fractions-to-percents">
+        <title>Converting Fractions to Percents</title>
+        <ol>
+          <li>
+            <p><m>\frac34=\frac{75}{100}=75\%</m>.</p>
+          </li>
+          <li>
+            <p><m>\frac3{20}=0.15=15\%</m>.</p>
+          </li>
+          <li>
+            <p><m>0.087=8.7\%</m>.</p>
+          </li>
+        </ol>
+      </example>
+      <assemblage xml:id="assemblage-ratio-context">
+        <title>Caution!</title>
+        <p>
+          A ratio written <m>3:4</m> can be interpreted as the quotient <m>\frac34</m>, but context still matters. If a class has 3 boys for every 4 girls, then boys are <m>\frac{3}{7}</m> of the class, not <m>\frac34</m>. Before converting a ratio to a percent, identify what quantity is being compared with what whole.
+        </p>
+      </assemblage>
+      <exercise xml:id="exercise-convert-percent-forms">
+        <statement>
+          <p>Express each quantity as a fraction in lowest terms, a decimal, and a percent:</p>
+          <ol marker="a">
+            <li><m>\frac58</m></li>
+            <li><m>0.36</m></li>
+            <li><m>125\%</m></li>
+          </ol>
+        </statement>
+        <solution>
+          <ol marker="a">
+            <li><m>\frac58=0.625=62.5\%</m></li>
+            <li><m>\frac9{25}=0.36=36\%</m></li>
+            <li><m>\frac54=1.25=125\%</m></li>
+          </ol>
+        </solution>
+      </exercise>
+    </subsection>
+
+    <subsection xml:id="subsec-visualizing-percents">
+      <title>Visualizing Percents with Bar Diagrams</title>
+      <p>
+        A bar diagram represents the whole by one bar and divides it into equal parts. We do not always need 100 tiny pieces. For example, 30% can be shown as three of ten equal pieces because each piece represents 10%.
+      </p>
+      <example xml:id="example-thirty-percent-class">
+        <title>Finding a Part</title>
+        <statement>
+          <p>If 30% of a class of 40 students are boys, how many boys are in the class?</p>
+        </statement>
+        <solution>
+          <figure xml:id="figure-percent-bar-thirty">
+            <caption>Thirty percent of 40 students</caption>
+            <image source="assets/percent-bar-30-of-40.svg" width="92%">
+              <description>A bar for 40 students is divided into ten groups of four; three groups are shaded.</description>
+            </image>
+          </figure>
+          <p>
+            Each tenth of the class contains 4 students. Thirty percent is three tenths, so
+          </p>
+          <me>3\times4=12.</me>
+          <p>There are 12 boys in the class.</p>
+        </solution>
+      </example>
+      <example xml:id="example-twenty-five-percent-whole">
+        <title>Finding the Whole</title>
+        <statement>
+          <p>Twenty-five percent of an amount is 50. What is the whole amount?</p>
+        </statement>
+        <solution>
+          <figure xml:id="figure-percent-bar-twenty-five">
+            <caption>If 25% is 50, then the whole has four equal parts of 50</caption>
+            <image source="assets/percent-bar-25-is-50.svg" width="92%">
+              <description>A bar is divided into four quarters, each worth 50, so the whole is 200.</description>
+            </image>
+          </figure>
+          <p>
+            Since <m>25\%=\frac14</m>, four equal parts make the whole:
+          </p>
+          <me>4\times50=200.</me>
+        </solution>
+      </example>
+    </subsection>
+
+    <subsection xml:id="subsec-percent-change">
+      <title>Percent Change</title>
+      <p>
+        A percent describes a part relative to a whole. A <term>percent change</term> compares the amount of change with the original value:
+      </p>
+      <me>\text{percent change}=\frac{\text{new value}-\text{original value}}{\text{original value}}\times100\%.</me>
+      <p>
+        A positive result indicates an increase and a negative result indicates a decrease. The original value belongs in the denominator because it is the reference quantity.
+      </p>
+      <example xml:id="example-percent-change-stock">
+        <title>An Increase</title>
+        <statement>
+          <p>A stock price increases from $50 to $75. What is the percent change?</p>
+        </statement>
+        <solution>
+          <me>\frac{75-50}{50}\times100\%=50\%.</me>
+          <p>The stock increased by 50% of its original price.</p>
+        </solution>
+      </example>
+      <example xml:id="example-percent-change-population">
+        <title>A Decrease</title>
+        <statement>
+          <p>A population decreases from 2000 to 1500. What is the percent change?</p>
+        </statement>
+        <solution>
+          <me>\frac{1500-2000}{2000}\times100\%=-25\%.</me>
+          <p>The percent change is <m>-25\%</m>, or equivalently, the population decreased by 25%.</p>
+        </solution>
+      </example>
+      <exercise xml:id="exercise-percent-change-direction">
+        <statement>
+          <p>
+            A price rises from $80 to $100 and later falls from $100 to $80. Are the percent increase and percent decrease equal? Explain.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            No. The increase is <m>\frac{20}{80}\times100\%=25\%</m>, while the decrease is <m>\frac{-20}{100}\times100\%=-20\%</m>. The numerical change is the same, but the original values used as references are different.
+          </p>
+        </solution>
+      </exercise>
+    </subsection>
+
+    <subsection xml:id="subsec-percentage-point-change">
+      <title>Percent Change and Percentage-Point Change</title>
+      <p>
+        When both the original and new values are themselves percents, there are two useful comparisons. <term>Percentage-point change</term> is the signed difference between the percentages. Percent change is the difference relative to the original percentage.
+      </p>
+      <example xml:id="example-interest-rate-change">
+        <title>From 2% to 5%</title>
+        <p>
+          An interest rate increases from 2% to 5%. The percentage-point change is
+        </p>
+        <me>5\%-2\%=3\text{ percentage points}.</me>
+        <p>
+          The relative percent change is
+        </p>
+        <me>\frac{5\%-2\%}{2\%}\times100\%=150\%.</me>
+        <p>
+          Both statements are correct, but they answer different questions.
+        </p>
+      </example>
+      <example xml:id="example-unemployment-change">
+        <title>From 8% to 6%</title>
+        <p>
+          If an unemployment rate decreases from 8% to 6%, the signed percentage-point change is
+        </p>
+        <me>6\%-8\%=-2\text{ percentage points}.</me>
+        <p>
+          We can also say that the rate decreased by 2 percentage points. Its relative percent change is
+        </p>
+        <me>\frac{6\%-8\%}{8\%}\times100\%=-25\%.</me>
+      </example>
+      <assemblage xml:id="assemblage-reporting-percent-changes">
+        <title>Notes for a Deeper Understanding</title>
+        <p>
+          Reports sometimes say that a rate “increased by 3%” when they mean “increased by 3 percentage points.” These statements can differ greatly. Always ask whether the change is an absolute difference between two percentages or a relative change from the original percentage.
+        </p>
+      </assemblage>
+    </subsection>
+  </section>
+  <section xml:id="sec-decimals-supplemental-exercises">
+    <title>Supplemental Exercises</title>
+
+    <subsection xml:id="exercises-decimal-place-value">
+      <title>Decimal Fractions and Place Value Questions</title>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>Write each number in expanded place-value notation.</p>
+            <ol marker="a">
+              <li><m>4.307</m></li>
+              <li><m>80.052</m></li>
+              <li><m>0.6004</m></li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>Write each decimal as one decimal fraction and then reduce the fraction to lowest terms.</p>
+            <ol marker="a">
+              <li><m>0.48</m></li>
+              <li><m>3.125</m></li>
+              <li><m>0.0075</m></li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>Write each quantity in decimal notation.</p>
+            <ol marker="a">
+              <li><m>5+\frac7{10}+\frac2{1000}</m></li>
+              <li><m>\frac{407}{100}</m></li>
+              <li>three ones, eight hundredths, and six thousandths</li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>Insert <m>&lt;</m>, <m>=</m>, or <m>&gt;</m> between each pair.</p>
+            <ol marker="a">
+              <li><m>0.7</m> and <m>0.67</m></li>
+              <li><m>2.040</m> and <m>2.04</m></li>
+              <li><m>5.009</m> and <m>5.09</m></li>
+              <li><m>0.3999</m> and <m>0.4</m></li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              A student says that appending a zero always makes a decimal ten times larger. Use place value to explain why <m>0.6=0.60</m>, but <m>0.6\times10=6</m>.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Suppose a base-ten flat represents one whole. What values are represented by a rod and a small cube? How would your answer change if a large cube represented one whole?
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Draw a hundred grid representing <m>0.47</m>. Explain two different ways to group the shaded squares using tenths and hundredths.
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsection>
+
+    <subsection xml:id="exercises-decimal-operations">
+      <title>Operations with Decimals Questions</title>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>Calculate each sum or difference. Show the place-value alignment.</p>
+            <ol marker="a">
+              <li><m>13.7+2.084</m></li>
+              <li><m>40.005-7.86</m></li>
+              <li><m>0.9-0.347</m></li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              A student writes <m>4.6+0.38=0.84</m> by aligning the final digits instead of the decimal points. Diagnose the error and correct the calculation.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>Calculate each product.</p>
+            <ol marker="a">
+              <li><m>3.7\times0.4</m></li>
+              <li><m>0.062\times1.5</m></li>
+              <li><m>12.03\times0.008</m></li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Explain the decimal-place rule for <m>2.35\times0.7</m> by rewriting both factors as decimal fractions. Your explanation should identify why the answer has three decimal places before any trailing zeros are removed.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>Calculate each quotient.</p>
+            <ol marker="a">
+              <li><m>4.32\div0.6</m></li>
+              <li><m>0.875\div0.25</m></li>
+              <li><m>12.6\div0.015</m></li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              A student changes <m>7.2\div0.03</m> into <m>720\div0.3</m>. Explain why the new quotient is not equal to the original quotient, and show the correct whole-number division problem.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Estimate each answer before calculating it exactly. Explain how your estimate helps detect a misplaced decimal point.
+            </p>
+            <ol marker="a">
+              <li><m>19.8\times3.04</m></li>
+              <li><m>48.6\div0.9</m></li>
+            </ol>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsection>
+
+    <subsection xml:id="exercises-terminating-repeating">
+      <title>Terminating and Repeating Decimal Questions</title>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
+              Without using a calculator, determine whether the standard decimal expansion of each fraction terminates or repeats. Reduce the fraction first when necessary.
+            </p>
+            <ol marker="a">
+              <li><m>\frac{11}{32}</m></li>
+              <li><m>\frac{14}{35}</m></li>
+              <li><m>\frac7{30}</m></li>
+              <li><m>\frac{18}{75}</m></li>
+              <li><m>\frac{13}{125}</m></li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Use long division or a remainder table to write <m>\frac5{12}</m> as an eventually repeating decimal. Identify its preperiod, repetend, and period.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Explain why the repeating block produced when dividing by a positive integer <m>b</m> can have period at most <m>b-1</m>. Under what circumstance might the period be shorter?
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>Convert each repeating decimal to a fraction in lowest terms.</p>
+            <ol marker="a">
+              <li><m>0.\overline6</m></li>
+              <li><m>0.\overline{18}</m></li>
+              <li><m>2.\overline7</m></li>
+              <li><m>0.2\overline3</m></li>
+              <li><m>-0.0\overline8</m></li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              A student tries to convert <m>0.5</m> using the repeating-decimal subtraction method and writes <m>10x-x=5.0-0.5</m>. Explain why this method is unnecessary here and convert <m>0.5</m> directly to a fraction.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Show algebraically that <m>0.12\overline9=0.13</m>. Then write a general statement describing which terminating decimals have a second representation ending in repeating nines.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Is <m>0.\overline{2727}</m> an incorrect way to represent <m>0.\overline{27}</m>? Explain the difference between a correct representation and the standard representation with the shortest repetend.
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsection>
+
+    <subsection xml:id="exercises-percent">
+      <title>Percent and Percent Change Questions</title>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>Convert among fractions, decimals, and percents.</p>
+            <ol marker="a">
+              <li><m>\frac7{20}</m> to a decimal and percent</li>
+              <li><m>0.045</m> to a fraction and percent</li>
+              <li><m>240\%</m> to a decimal and fraction</li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              A club has a ratio of 3 adult members to 5 youth members. What percent of the members are adults? Explain why the answer is not 60%.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>Use a bar diagram to solve each problem.</p>
+            <ol marker="a">
+              <li>Forty percent of 70 students walk to school. How many students is this?</li>
+              <li>Fifteen percent of an amount is 24. What is the whole amount?</li>
+            </ol>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              A jacket originally costs $160 and is discounted to $124. Find the signed percent change and describe it as a percent decrease.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              A town's population increases by 10% one year and decreases by 10% the next year. Is the final population equal to the original population? Use an original population of 1000 to justify your answer.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              A survey response rate rises from 40% to 52%. Find both the percentage-point change and the relative percent change.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              A news report says, “Support increased by 5%,” after a poll changes from 20% support to 25% support. Give the two plausible interpretations of the report and calculate the correct value for each.
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsection>
+
+    <subsection xml:id="exercises-decimals-critical-thinking">
+      <title>Explanatory and Critical Thinking Questions</title>
+      <exercises>
+        <exercise>
+          <statement>
+            <p>
+              A student describes decimal arithmetic as “moving the decimal point.” Explain what is actually changing when a number is multiplied by 10 and why the decimal point itself does not move within the place-value system.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Explain why aligning decimal points is essential for addition and subtraction but is not the rule used when setting up multiplication.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              A student argues that <m>0.999\ldots</m> must be less than 1 because every finite decimal <m>0.9</m>, <m>0.99</m>, <m>0.999</m>, and so on is less than 1. Identify the gap in this reasoning and give a valid justification that <m>0.999\ldots=1</m>.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Compare the statements “the rate decreased by 2 percentage points” and “the rate decreased by 25%.” Construct one example in which both statements correctly describe the same change.
+            </p>
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              Choose one algorithm from this chapter and design a short explanation suitable for an elementary-school student. Your explanation must include a picture or concrete model and must explain why the algorithm works.
+            </p>
+          </statement>
+        </exercise>
+      </exercises>
+    </subsection>
+  </section>
+</chapter>
 
