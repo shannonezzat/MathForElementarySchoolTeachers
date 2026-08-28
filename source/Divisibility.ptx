@@ -264,7 +264,7 @@
                         <me>
                             a+b = c(x+y)+r.
                         </me>
-                        Since <m>x+y \in \mathbb{N}</m> and <m>r \in \mathbb{N}</m> with <m>r \leq n-1</m>, we have written <m>a+b</m> in quotient-remainder form, and we know there is exactly one way to do this. And since <m>r \neq 0</m>, then <m>c \nmid a+b</m>. 
+                        Since <m>x+y \in \mathbb{N}</m> and <m>r \in \mathbb{N}</m> with <m>1 \leq r \leq c-1</m>, we have written <m>a+b</m> in quotient-remainder form, and we know there is exactly one way to do this. And since <m>r \neq 0</m>, then <m>c \nmid a+b</m>. 
                         
                     </p>
                 </proof>
@@ -291,7 +291,7 @@
                 <li>
                     <p>
                         <p>
-                            Can you find a value for <m>c</m> such that <m>a \nmid c</m> and also <m>a /mid b+c</m>? What about two values of <m>c</m>?
+                            Can you find a value for <m>c</m> such that <m>a \nmid c</m> and also <m>a \nmid b+c</m>? What about two values of <m>c</m>?
                         </p>
                     </p>
                 </li>
@@ -306,7 +306,7 @@
                 </li>
                 <li>
                     <p>
-                        Do the same thing for subtraction now. Pick different values besides <m>a=4</m> and <m>b=7</m> and find values for <m>c</m> where the sum is, and is not, divisible by <m>a</m>. Make a conjecture about when each case happens.
+                        Do the same thing for subtraction now. Pick different values besides <m>a=4</m> and <m>b=7</m> and find values for <m>c</m> where the difference is, and is not, divisible by <m>a</m>. Make a conjecture about when each case happens.
                     </p>
                 </li>
             </ol>
