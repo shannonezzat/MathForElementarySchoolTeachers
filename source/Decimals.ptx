@@ -19,7 +19,7 @@
     Decimal fractions allow us to express quantities that are smaller than a whole unit in a way compatible with our usual arithmetic. In our base-ten number system, each place value to the right of the decimal point represents a fraction of the whole unit. The first digit after the decimal point represents tenths (1/10), the second digit represents hundredths (1/100), and so on. So the farther to the right a decimal place value is, the smaller quantity it represents.
   </p>
   <p>
-    An interesting aspect of decimal fractions is the similarity they share with whole numbers. We know that multiplying a whole number by 10 raises its place value by 1 and thus shifts its place value of its digits one place to the left, for example multiplying 10 by <m>10^k</m> gives us <m>10^{k+1}</m>, or <m>10 \times 100 = 1000 </m>. In a similar manner, dividing a decimal fraction by 10 also shifts its place value to the right. For example, dividing <m>(1/10^)k</m> by 10 gives us <m>(1/10)^{k-1}</m> so <m>10 \div 1000 = 100</m>. This relationship holds true as we move along the decimal places and will allow us to perform arithmetic operations similarly to arithmetic with whole numbers.
+    An interesting aspect of decimal fractions is the similarity they share with whole numbers. We know that multiplying a whole number by 10 raises its place value by 1 and thus shifts its place value of its digits one place to the left, for example multiplying 10 by <m>10^k</m> gives us <m>10^{k+1}</m>, or <m>10 \times 100 = 1000 </m>. In a similar manner, dividing a decimal fraction by 10 also shifts its place value to the right. For example, dividing <m>(1/10)^k</m> by 10 gives us <m>(1/10)^{k-1}</m> so <m>10 \div 1000 = 100</m>. This relationship holds true as we move along the decimal places and will allow us to perform arithmetic operations similarly to arithmetic with whole numbers.
   </p>
 
 
@@ -185,10 +185,10 @@
 <subsection xml:id="repeating-decimals-long-division">
     <title>Expressing a Fraction as a Repeating Decimal Using Long Division</title>
     <p>
-        If a fraction is not equivalent to a decimal fraction, it can be expressed as a repeating decimal. One way to do this is by using long division. During this process, we may notice that we "run out" of non-zero remainders before the remainders must repeat, indicating a repeating decimal.
+        If a fraction is not equivalent to a decimal fraction, it can be expressed as a repeating decimal. One way to do this is by using long division. During this process, where we introduce place values with the digit 0 as we continue to the right, we may notice that we "run out" of non-zero remainders before the remainders must repeat, indicating a repeating decimal.
     </p>
-    <p>Why is this the case? Well, imagine you are dividing <m>a</m> by some non-zero integer <m>b</m>. There are only finitely many possible remainders: <m>\{0,1,2, \ldots, b-2, b-1 \}</m>.  </p>
-        <p>Now, we can convert a fraction a/b to its decimal representation by long division. If we do get a reminder of 0, then we know that the decimal is a terminating decimal. So imagine that a/b cannot be expressed as a terminating decimal. Then we will never see the remainder 0, and thus we only have <m>b-1</m> possible remainders when performing each partial division in the long division algorithm. Note that we can add as many zeros to the right (after the decimal and after all non-zero decimal digits); e.g. 20.201 = 20.2010000... Let's call these the <term>trailing zeroes.</term> </p>
+    <p>Why is this the case? Well, imagine you are dividing <m>a</m> by some positive integer <m>b</m>. There are only finitely many possible remainders: <m>\{0,1,2, \ldots, b-2, b-1 \}</m>.  </p>
+        <p>Now, we can convert a fraction a/b to its decimal representation by long division. If we do get a remainder of 0, then we know that the decimal is a terminating decimal. So imagine that a/b cannot be expressed as a terminating decimal. Then we will never see the remainder 0, and thus we only have <m>b-1</m> possible remainders when performing each partial division in the long division algorithm. Note that we can add as many zeros to the right (after the decimal and after all non-zero decimal digits); e.g. 20.201 = 20.2010000... Let's call these the <term>trailing zeroes.</term> </p>
     <p>Now when we get to using the place values of the trailing zeros, every time we "bring down" a digit from a new place value, that digit will be 0. If, at this point, we keep track of remainders, we note that we have at most <m>b-1</m> unique remainders before one must repeat. At the point of repetition, our "previous work" will repeat over and over again, since we will only end up in situations we have seen before and thus the digits of decimal representation of our fraction between the repeated remainders will repeat over and over again to the right. Thus, we know that if fraction is not equivalent to a terminating decimal, it must be a repeating decimal.</p>
     <example xml:id="example-long-division-2-7">
         <title>Example: Expressing 2/7 as a Repeating Decimal Using Long Division</title>
@@ -242,7 +242,7 @@
         <p>
             Therefore, 0.999... = 1.
         </p>
-        <p>Another way to look at this is to ask yourself "if <m>0.\overline{9} &lt; 1</m>, what would I add to <m>0.\overline{9}</m> to make it equal 1? Any positive number that you think of adding would be too big! </p>
+        <p>Another way to look at this is to ask yourself "if <m>0.\overline{9} &lt; 1</m>, what would I add to <m>0.\overline{9}</m> to make it equal 1? Any positive number that you think of adding would be too big!" </p>
     </subsubsection>
     <subsubsection xml:id="repetend-and-period">
         <title>Repetend and Period of a Repeated Decimal</title>
@@ -281,7 +281,7 @@
                     <li>
                         <p> In the repeating decimal 0.00<m>\overline{142857}</m>, the repetend starts in the thousandths place and is 142857, and the period is 6.   </p>
                         </li>
-                </ol>>
+                </ol>
                     
             </p>
         </example>
@@ -353,7 +353,7 @@
                 <p>
                     Convert 1.<m>\overline{6}</m> to a fraction:
                     <ol>
-                        <li>Let x = 1.<m>\overline{6}</m>. This is an improper fraction because the decimal is greater than 1.</li>
+                        <li>Let x = 1.<m>\overline{6}</m>. We know that the fractional representation will be an improper fraction because the decimal is greater than 1, and thus the numerator will be greater than the denominator.</li>
                         <li>The period of the repetend is 1, so p = 1.</li>
                         <li>Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 16.666... - 1.666... = 15.</li>
                         <li>Solve for x: x = 15/9.</li>
@@ -449,7 +449,7 @@
       <subsubsection xml:id="converting-fractions-to-percents">
         <title>Converting Fractions to Percents</title>
         <p>
-          To convert a fraction to a percent, first convert the fraction to a decimal and then multiply by 100. This two-step process involves dividing the numerator by the denominator to get a decimal, then scaling the decimal to a percentage. For example, to convert <m>\frac{1}{8}</m> to a percent: <me>\frac{1}{8} = 0.125 \\ 0.125 \times 100 = 12.5\%</me>. This conversion is important because it translates the fraction into a percentage, which is a more familiar and easily interpretable format for most people. This method is widely used in various fields such as finance, education, and health, where data is often presented in percent form for better clarity and impact.
+          To convert a fraction to a percent, first convert the fraction to a decimal and then multiply by 100 percent (remembering that since <m>100 \% = 1</m> we are simply multiplying by 1 and not changing the quantity. This two-step process involves dividing the numerator by the denominator to get a decimal, then scaling the decimal to a percentage. For example, to convert <m>\frac{1}{8}</m> to a percent: <me>\frac{1}{8} = 0.125 \\ 0.125 \times 100 = 12.5\%</me>. This conversion is important because it translates the fraction into a percentage, which is a more familiar and easily interpretable format for most people. This method is widely used in various fields such as finance, education, and health, where data is often presented in percent form for better clarity and impact.
         </p>
   
         <example xml:id="example-fractions-to-percents">
