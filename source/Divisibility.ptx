@@ -668,7 +668,7 @@
       </p>
       <example>
         <p>
-            A student wrote down the following ten digit number: <m>1,435,3k7,451</m>, where <m>k</m> is some digit that was too messy in their notes to make it out. However, the student does know that the number is divisible by 3 but not divisible by 9. What are the possible choices for the digit <m>k</m>?
+            A student wrote down the following ten digit number: <m>1,435,2k7,451</m>, where <m>k</m> is some digit that was too messy in their notes to make it out. However, the student does know that the number is divisible by 3 but not divisible by 9. What are the possible choices for the digit <m>k</m>?
         </p>
         <solution>
             <p>
@@ -736,9 +736,9 @@
                 </me>
                 Grouping the terms, we get:
                 <me>
-                  \underline{ABCDEF} = A \times 10^5 + B \times 10^4 + C \times 10^3 + D \times 10^2 + E \times 10 + F - (A - B + C - D + E - F)
+                  \underline{ABCDEF} = [A \times (10^5+1) + B \times (10^4-1) + C \times (10^3+1) + D \times (10^2-1) + E \times (10+1)] - (A - B + C - D + E - F)
                 </me>
-                The terms <m>A \times 10^5</m>, <m>B \times 10^4</m>, <m>C \times 10^3</m>, <m>D \times 10^2</m>, and <m>E \times 10</m> are all divisible by 11 due to the properties of powers of 10. Therefore, the divisibility of the number <m>\underline{ABCDEF}</m> by 11 depends solely on the alternating sum of its digits, <m>A - B + C - D + E - F</m>.
+                The terms in the square bracket are all divisible by 11 by the discussion above this theorem. Therefore, by Theorems 2 and 3, divisibility of the number <m>\underline{ABCDEF}</m> by 11 depends solely on the alternating sum of its digits, <m>A - B + C - D + E - F</m>. That is, <m>11 \mid A - B + C - D + E - F </m> if and only if <m>11 \mid \underline{ABCDEF}</m>.
               </p>
             </proof>
           </theorem>
@@ -791,7 +791,7 @@
         </ol>
     </exercise>
         <p>
-            In the above example you probably have seen that if <m>a</m> and <m>b</m> have no common factors, then <m>a \times b</m> is necessarily a factor of any number where both <m>a</m> and <m>b</m> are factors. Let's try and prove this.
+            In the above example you probably have seen that if <m>a</m> and <m>b</m> have no common factors, then <m>a \times b</m> is necessarily a factor of any number where both <m>a</m> and <m>b</m> are factors. Let's try and prove this.  
         </p>
         <p>
             <theorem xml:id="thm-CompoundDivisibility">
@@ -940,11 +940,11 @@
           To check if <m>3</m> divides <m>12345678901</m>, we sum its digits: <m>1+2+3+4+5+6+7+8+9+0+1 = 46</m>. Now, to check if <m>3</m> divides <m>46</m>, we sum its digits: <m>4+6 = 10</m>. Since 10 is not divisible by 3, neither is <m>12345678901</m>.
         </p>
       </example>
-      <nonexample>
+      <example>
         <p>
           For <m>9876543210</m>, the sum of its digits is <m>45</m>, which is divisible by 3. Therefore <m>9876543210</m> is indeed divisible by 3.
         </p>
-      </nonexample>
+      </example>
     </subsubsection>
   
     <subsubsection>
@@ -965,7 +965,7 @@
       <title>Divisibility by 11</title>
       <example>
         <p>
-          To check if <m>11</m> divides <m>1234567890123</m>, we alternate the sum and subtraction of its digits: <m>1-2+3-4+5-6+7-8+9-0+1-2+3 = 17</m>. Since 17 is not divisible by 11, neither is <m>1234567890123</m>.
+          To check if <m>11</m> divides <m>1234567890123</m>, we alternate the sum and subtraction of its digits: <m>1-2+3-4+5-6+7-8+9-0+1-2+3 = 7</m>. Since 7 is not divisible by 11, neither is <m>1234567890123</m>.
         </p>
       </example>
       <nonexample>
@@ -990,7 +990,7 @@
     <title>Prime Numbers</title>
     <introduction>
         <p>
-            Prime numbers are the multiplicative building blocks of all whole numbers. In fact, we will see that every whole number can be decomposed into a product of (maybe repeated) prime numbers in exactly one way. Let's define a prime number first:
+            Prime numbers are the multiplicative building blocks of all whole numbers. In fact, we will see that every whole number greater than 1 can be decomposed into a product of (maybe repeated) prime numbers in exactly one way. Let's define a prime number first:
         </p>
         <definition xml:id="def-PrimeNumber">
             <statement>
@@ -1087,14 +1087,14 @@
     <subsection xml:id="subsec-HowManyPrimeNumbersExist">
         <title>How Many Prime Numbers Exist</title>
         <p>
-            Looking at the sieve above, it looks like prime numbers get more "rare" the higher up we go. So a good question to ask is whether we eventually "run out" of prime numbers, or whether there are infinitely many. Let's explore this idea a little bit:
+            Looking at the sieve above, it looks like prime numbers get more "rare" the higher up we go. So a good question to ask is whether we eventually "run out" of prime numbers, or whether there are infinitely many. Let's explore this idea a little bit, and note that we use the fact that every whole number greater than 1 has at least one prime factor; we will justify this later in the chapter:
         </p>
         <p>
             First, we need a small result to help us out. In math, we call a small result that helps us justify a larger result a <term>lemma</term>.
             <lemma xml:id="lem-PrimePlus1">
                 <statement>
                     <p>
-                        Let <m>a_1,a_2 \ldots a_n \in \mathbb{N}</m> be <m>n</m> numbers, and let <m>a_* = a_1 \times a_2 \times \ldots \times a_n</m>. Then for each <m>a_i</m> from <m>a_1</m> to <m>a_n</m> we have that <m>a_i \nmid (a_*+1)</m>.
+                        Let <m>a_1,a_2 \ldots a_n \in \mathbb{N}</m> be <m>n</m> numbers where each <m>a_i \geq 2</m>, and let <m>a_* = a_1 \times a_2 \times \ldots \times a_n</m>. Then for each <m>a_i</m> from <m>a_1</m> to <m>a_n</m> we have that <m>a_i \nmid (a_*+1)</m>.
                     </p>
                 </statement>
                 <proof>
