@@ -14,14 +14,14 @@
             Divisibility is a fundamental concept in mathematics. It describes one type of fundamental relationship between two integers, as we can think of a factor of a number being a "building block" of the number it is a factor of. Note that in this chapter, we will predominately study divisibility properties of whole numbers, but these can be easily extended to integers. From now on, unless otherwise stated, any number that appears is a whole number; that is, for all numbers <m>n</m> in this chapter,<m>n \in \mathbb{N}_0</m>.</p>
             <definition xml:id="def-Divisibility">
                 <statement>
-                    <p> A number <m>a</m> is said to be <term>divisible by</term> another number <m>b</m> if there exists a number <m>c</m> such that <m>a = bc</m>. This is often expressed in various ways, such as "<m>b</m> is a factor of <m>a</m>", "<m>b</m> divides <m>a</m>", "<m>a</m> is a multiple of <m>b</m>", or "<m>a</m> is divisible by <m>b</m>". We say that <m>b</m> is a <term>proper factor</term> of <m>a</m> if <m>b \neq 1</m> and <m>b \neq a</m>.
+                    <p> A number <m>a</m> is said to be <term>divisible by</term> another number <m>b</m> if there exists a unique number <m>c</m> such that <m>a = bc</m>. This is often expressed in various ways, such as "<m>b</m> is a factor of <m>a</m>", "<m>b</m> divides <m>a</m>", "<m>a</m> is a multiple of <m>b</m>", or "<m>a</m> is divisible by <m>b</m>". We say that <m>b</m> is a <term>proper factor</term> of <m>a</m> if <m>b \neq 1</m> and <m>b \neq a</m>.
                     </p>
                 </statement>
             </definition>
         
         <example>
         <p> We know that <m>35=5 \times 7</m> , so we know that <m>5</m> divides <m>35</m>. We can also say <m>5</m> is a factor of <m>35</m>, <m>35</m> is a multiple of <m>5</m>, and <m>35</m> is divisible by <m>5</m>. These all express the same information. Additionally, <m>5</m> is a proper factor of <m>35</m> while <m>1</m> and <m>35</m> are not.</p>
-        <p> You've probably spotted that we can say the same things about <m>7</m> as we did about <m>35</m>. This idea gives us our first theorem, that we will state and prove more formally after we develop some notation for the concept of divisibility. </p>
+        <p> You've probably spotted that we can say the same things about <m>7</m> as we did about <m>5</m>. This idea gives us our first theorem, that we will state and prove more formally after we develop some notation for the concept of divisibility. </p>
         </example>
         <p>
             In mathematics, the "divides" symbol is represented as "|" and the "does not divide" symbol is represented as "∤". For example, if <m>b</m> divides <m>a</m>, we write it as <m>b | a</m>. If <m>b</m> does not divide <m>a</m>, we write it as <m>b ∤ a</m>.
@@ -38,7 +38,7 @@
             We can use the fact that <m>3 \mid 12</m> to show that <m>3 \mid n</m>. We need to show that <m>n = 3 \times (   )</m> for some natural number in the brackets. Since <m>12 \mid n</m> we know there is some number <m>c</m> such that <m>n = 12c</m>. But since <m>12 = 3 \times 4 </m> we can rewrite this as <me>n=12c=(3\times 4) c</me> <me>
                 =3\times (4c).
             </me>
-            Since <m>4,c \in \mathbb{N}</m> we know <m>4 \times c \in \mathbb{N}</m>, so we were able to express <m>n</m> as <m>3</m> times another natural number, so <m>3 \mid n</m>.
+            Since <m>4,c \in \mathbb{N}_0</m> we know <m>4 \times c \in \mathbb{N}_0</m>, so we were able to express <m>n</m> as <m>3</m> times another natural number, so <m>3 \mid n</m>.
 
         </p>
         <p>
@@ -101,7 +101,7 @@
         <theorem xml:id="thm-DivTrans">
             <statement>
                 <p>
-                    Let <m>a,b,c \in 'mathbb{N}.</m> If <m>a \mid b</m> and <m>b \mid c</m> then <m>a \mid c</m>.
+                    Let <m>a,b,c \in \mathbb{N}.</m> If <m>a \mid b</m> and <m>b \mid c</m> then <m>a \mid c</m>.
                 </p>
             </statement>
             <proof>
@@ -143,14 +143,14 @@
     <subsubsection xml:id="divisibility-properties">
         <title>Divisibility Properties of 0, 1, and a Number with Itself</title>
         <p>
-            There are some special cases when considering divisibility. Firstly, any number is divisible by 1. This is because for any number <m>a</m>, <m>a = 1 * a</m>. Secondly, 0 is divisible by any number (except for 0 itself). This is because for any number <m>b ≠ 0</m>, <m>0 = b * 0</m>. However, 0 is not divisible by itself, as there is no number <m>c</m> such that <m>0 = 0 * c</m>. Lastly, any number <m>a</m> is divisible by itself, as <m>a = a * 1</m>.
+            There are some special cases when considering divisibility. Firstly, any number is divisible by 1. This is because for any number <m>a</m>, <m>a = 1 * a</m>. Secondly, 0 is divisible by any number (except for 0 itself). This is because for any number <m>b \neq 0</m>, <m>0 = b * 0</m>. However, 0 is not divisible by itself, as there is no unique number <m>c</m> such that <m>0 = 0 * c</m>; for example, this would be true for <m>c=2</m> or <m> c=3 </m>. Lastly, any number <m>a</m> is divisible by itself, as <m>a = a * 1</m>.
         </p>
     </subsubsection>
 </subsection>
 <subsection xml:id="divisibility-theorems">
     <title>Divisibility Theorems</title>
     <p>
-        In this section, we will discuss three important theorems related to divisibility. Each theorem will be introduced with an example for better understanding.
+        In this section, we will discuss three important theorems related to divisibility. Each theorem will be introduced with an example for better understanding. Note that in this section, we will think of divisibility of integers instead of whole numbers.
     </p>
     
     <subsubsection xml:id="theorem1">
@@ -202,7 +202,7 @@
                 Let's consider <m>a = 10</m>, <m>b = 20</m>, and <m>c = 5</m>. Here, both <m>a</m> and <m>b</m> are divisible by <m>c</m>. Therefore, <m>a+b = 30</m> and <m>a-b = -10</m> are also divisible by <m>c</m>.
             </p>
         </example>
-        <p>Let's try and prove this. It's similar to Theorem 1, and in fact, Theorem 1 can be looked at as a repeated application of Theorem 2. Let's say we know that <m>a</m> is a factor of both <m>b</m> and <m>c</m>. Then we can express both <m>b</m> and <m>c</m> dots as a rectangle, with one of the dimensions being <m>a</m>, and the other we'll call <m>x</m> and <m>y</m>, respectively. Then in the addition case, we can "glue" the two rectangles together to make a rectangle with dimensions <m>a</m> and <m>b+c</m>. INSERT PIC OF THIS</p>
+        <p>Let's try and prove this. It's similar to Theorem 1, and in fact, Theorem 1 can be looked at as a repeated application of Theorem 2. Let's say we know that <m>a</m> is a factor of both <m>b</m> and <m>c</m>. Then we can express both <m>b</m> and <m>c</m> dots as a rectangle, with one of the dimensions being <m>a</m>, and the other we'll call <m>x</m> and <m>y</m>, respectively. Then in the addition case, we can "glue" the two rectangles together to make a rectangle with dimensions <m>a</m> and <m>x+y</m>. INSERT PIC OF THIS</p>
         <p><theorem xml:id="thm-thm2">
             <statement>
                 <p>
@@ -251,18 +251,18 @@
             <theorem xml:id="thm-thm3">
                 <statement>
                     <p>
-                        If a number <m>b</m> is divisible by <m>a</m> but a number <m>c</m> is not divisible by <m>a</m>, then <m>b+c</m> and <m>b-c</m> are not divisible by <m>c</m>. 
+                        If a number <m>a</m> is divisible by <m>c</m> but a number <m>b</m> is not divisible by <m>c</m>, then <m>a+b</m> and <m>a-b</m> are not divisible by <m>c</m>. 
                     </p>
                 </statement>
                 <proof>
                     <p>
-                        Again, we do the additive case, and leave the subtraction case to an exercise later. Let <m>a \mid b</m> and <m>a \nmid c</m>. This means that <m>b=ax</m> for some natural number <m>x</m>, and <m>c=ay+r</m>, where <m>y</m> is a natural number, and thinking about it as a remainder, <m>r</m> is a natural number such that <m>r \leq a-1</m>. We need to show that <m>a \nmid b+c</m>, so we need to show that <m>b+c</m> has a remainder. Adding both equations together, we get
+                        Again, we do the additive case, and leave the subtraction case to an exercise later. Let <m>c \mid a</m> and <m>c \nmid b</m>. This means that <m>a=cx</m> for some natural number <m>x</m>, and <m>b=cy+r</m>, where <m>y</m> is a natural number, and thinking about it as a remainder, <m>r</m> is a natural number such that <m>r \leq c-1</m>. We need to show that <m>c \nmid a+b</m>, so we need to show that <m>b+c</m> has a remainder. Adding both equations together, we get
                         <me>
-                            b+c = ax+ay+r.
+                            a+b = cx+cy+r.
                         </me>
-                        Factoring out an <m>a</m> from the first two terms on the RHS,
+                        Factoring out an <m>c</m> from the first two terms on the RHS,
                         <me>
-                            b+c = a(x+y)+r.
+                            a+b = c(x+y)+r.
                         </me>
                         Since <m>x+y \in \mathbb{N}</m> and <m>r \in \mathbb{N}</m> with <m>r \leq n-1</m>, we have written <m>b+c</m> in quotient-remainder form, and we know there is exactly one way to do this. And since <m>r \neq 0</m>, then <m>a \nmid b+c</m>. 
                         
