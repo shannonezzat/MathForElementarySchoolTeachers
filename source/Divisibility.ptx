@@ -1143,7 +1143,7 @@
                 </li>
                 <li>
                     <p>
-                        Let's do this again: now <m>a=2\times 3 \times 7 \times 43+1 = 1807</m>. You can check that <m>1807=13 \times 139</m> which are both prime, so we can add <m>13</m> and <m>39 </m> to our set: <m>A=\{2,3,7,13,39,43\}</m>.
+                        Let's do this again: now <m>a=2\times 3 \times 7 \times 43+1 = 1807</m>. You can check that <m>1807=13 \times 139</m> which are both prime, so we can add <m>13</m> and <m>139 </m> to our set: <m>A=\{2,3,7,13,139,43\}</m>.
                     </p>
                 </li>
                 <li>
@@ -1283,7 +1283,7 @@
                         </ol>  There are two cases here. We will do the first case, and leave the second case as an exercise for you.
                     </p>
                     <p>
-                       By the definition of a square root, we can write <me>n = (\sqrt{n})(\sqrt{n})</me>. Since we're assuming <m>a &gt; \sqrt{n}</m>, if we replace one of the <m>\sqrt{n}</m> in the first expression with <m>a</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &gt; a(\sqrt{n}) </me>. Similarly, we're also assuming <m>b &gt; \sqrt{n}</m>, if we replace the other <m>\sqrt{n}</m> in the new expression with <m>b</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &gt; a(\sqrt{n}) &gt; ab </me>. But we know that <m>n=ab</m> so we can replace the <m>ab</m> on the right hand side by <m>n</m>. So <me>n = (\sqrt{n})(\sqrt{n}) &gt; a(\sqrt{n}) &gt; ab = n.</me> So if we look at the (in)equation above, we have just showed that <m>n &gt; n</m>. Since this is never true, then there are no counterexamples to our original statement (at least in the first case).
+                       By the definition of a square root, we can write <me>n = (\sqrt{n})(\sqrt{n})</me>. Since we're assuming <m>a &gt; \sqrt{n}</m>, if we replace one of the <m>\sqrt{n}</m> in the first expression with <m>a</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) </me>. Similarly, we're also assuming <m>b &gt; \sqrt{n}</m>, if we replace the other <m>\sqrt{n}</m> in the new expression with <m>b</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &gt; ab </me>. But we know that <m>n=ab</m> so we can replace the <m>ab</m> on the right hand side by <m>n</m>. So <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &lt; ab = n.</me> So if we look at the (in)equation above, we have just showed that <m>n &lt; n</m>. Since this is never true, then there are no counterexamples to our original statement (at least in the first case).
 
                        <p>
                         The case where we assume that <m>a,b &lt; \sqrt{n}</m> is very similar, and is left as an exercise to you. See if you can modify the case above to be a proof for this case.
@@ -1316,7 +1316,7 @@
                         Similar to the previous proof, let's show this by contradiction. We'll pretend we have a counterexample (in fact the smallest counterexample), and show that something "breaks", so thus there must be no counterexamples. The contradiction we'll have is that even though we picked the smallest counterexample, we'll find one that's smaller.
                     </p>
                     <p>
-                        Let <m>n</m> be the smallest composite number (if-part true) that has no prime factors (then-part false). Since <m>n</m> is composite and has no prime factors, then <m>n=ab</m> for some composite numbers <m>a,b</m>. But all proper factors of a number are between <m>1</m> and <m>n</m> exclusive (that is <m>1 &lt; a,b &lt; n</m>). But since <m>n</m> has no prime factors, neither can <m>a</m> or <m>b</m>, since if <m>a=pc</m> for some prime number <m>c</m> then <m>n=ab=(pc)b=p(cb)</m>, and thus <m>p</m> is a factor of <m>n</m>. But this means that <m>a</m> is a smaller composite number than <m>n</m> with no prime factors, so <m>n</m> isn't the smallest counterexample, even though we picked it to be. This means that there is no smallest counterexample, and thus no counterexample to our statement. So <m>n</m> must have at least one prime factor.
+                        Let <m>n</m> be the smallest composite number (if-part true) that has no prime factors (then-part false). Since <m>n</m> is composite and has no prime factors, then <m>n=ab</m> for some composite numbers <m>a,b</m>. But all proper factors of a number are between <m>1</m> and <m>n</m> exclusive (that is <m>1 &lt; a,b &lt; n</m>). But since <m>n</m> has no prime factors, neither can <m>a</m> or <m>b</m>, since if <m>a=pc</m> for some prime number <m>p</m> then <m>n=ab=(pc)b=p(cb)</m>, and thus <m>p</m> is a factor of <m>n</m>. But this means that <m>a</m> is a smaller composite number than <m>n</m> with no prime factors, so <m>n</m> isn't the smallest counterexample, even though we picked it to be. This means that there is no smallest counterexample, and thus no counterexample to our statement. So <m>n</m> must have at least one prime factor.
                     </p>
                 </proof>
             </theorem>
@@ -1578,7 +1578,7 @@
                     Now let <m>n</m> be a composite number. There are two things to show here: first, that we can factor <m>n</m> into a product of primes (the <term>existence</term> of a prime factorization), and secondly, that there is only one way to do so (the <term>uniqueness</term> of the prime factorization). We will do these two parts separately.
                 </p>
                 <p>
-                    Existence: By <xref ref="thm-primefactorofcomposite"/> we know that <m>n</m> has at least one prime factor, let's call one of them <m>p</m>. So we can factor this out so <m>n=pc</m> for some number <m>c</m>. If <m>c</m> is itself prime, we are done. If it isn't, then <m>c</m> is composite and we can use <xref ref="thm-primefactorofcomposite"/> again. And we can repeat this process, which must end since <m>n</m> is a finite number and <m>c &lt; n</m>, until we have completely factored <m>n</m> into a product of primes. <xref ref="ex-PrimeFactorization"/> is an example of this part of the theorem.
+                    Existence: By <xref ref="thm-primefactorofcomposite"/> we know that <m>n</m> has at least one prime factor, let's call one of them <m>p</m>. So we can factor this out so <m>n=pc</m> for some number <m>c</m>. If <m>c</m> is itself prime, we are done. If it isn't, then <m>c</m> is composite and we can use <xref ref="thm-primefactorofcomposite"/> again. And we can repeat this process, which must end since <m>n</m> is a finite number and <m>1 \leq c &lt; n</m>, until we have completely factored <m>n</m> into a product of primes. <xref ref="ex-PrimeFactorization"/> is an example of this part of the theorem.
                 </p>
                 <p>
                     Uniqueness: we will show this by contradiction, like in some previous proofs in this section. If there are numbers with two distinct prime factorizations, there must be a smallest one. We'll show that if we pick the smallest one, we can find an even smaller number with two different prime factorizations, which is our contradiction.
@@ -1727,7 +1727,7 @@
         <theorem xml:id="thm-NumberOfFactors">
             <statement>
                 <p>
-                    Let <m>n \in \mathbb{N}</m> where <m>n</m> has a prime factorization of <m>n=p_1^{e_1}p_2^{e_2}\ldots p_k^{e_k}</m> for some primes <m>p_1, \ldots, p_k</m> and non-negative exponents <m>e_1, \ldots, e_k</m>. Then <m>n</m> has <m>(e_1+1) \times (e_2 +1) \times \ldots \times (e_k+1)</m> factors in total.
+                    Let <m>n \in \mathbb{N}</m> where <m>n</m> has a prime factorization of <m>n=p_1^{e_1}p_2^{e_2}\ldots p_k^{e_k}</m> for some primes <m>p_1, \ldots, p_k</m> and positive exponents <m>e_1, \ldots, e_k</m>. Then <m>n</m> has <m>(e_1+1) \times (e_2 +1) \times \ldots \times (e_k+1)</m> factors in total.
                 </p>
             </statement>
             <proof>
@@ -1795,7 +1795,7 @@
                         First, it's worth noting that by our divisibility test for <m>3</m> we know that <m>3 \nmid n</m>.
                     </p>
                     <p>
-                        We first notice that <m>n</m> ends in two zeros, so we know that <m>100 | n</m>. Since <m>100=2^2 \times 5^2</m> we can write <m>n=(2^2 \times 5^2)301,774</m>. We now look for more prime factors of <m>301,774.</m> Since <m>301,774</m> ends in an even digit, we know that <m>2 | 301,774</m> and by division we can determine that <m>301,174=2 \times 150,887. </m> So <m>n=(2^{2+1} \times 5^2) \times 150,887</m>.
+                        We first notice that <m>n</m> ends in two zeros, so we know that <m>100 | n</m>. Since <m>100=2^2 \times 5^2</m> we can write <m>n=(2^2 \times 5^2)301,774</m>. We now look for more prime factors of <m>301,774.</m> Since <m>301,774</m> ends in an even digit, we know that <m>2 | 301,774</m> and by division we can determine that <m>301,774=2 \times 150,887. </m> So <m>n=(2^{2+1} \times 5^2) \times 150,887</m>.
                     </p>
                     <p>
                         Next we may notice that <m>1-5+0-8+8-7=-11</m> so <m>11 | 150,887</m>. By division we see that <m>150887=11 \times 13717</m>. We then notice that <m>1-3+7-1+7=11</m> so <m>11 | 13717</m> and, again by division, <m>13717=11 \times  1247</m>. Putting this together we have <m>n =(2^3 \times 5^2 \times 11^2) \times 1247.</m>
@@ -1892,10 +1892,10 @@
         <subsubsection xml:id="problem1_gcd">
           <title>Problem 1: Distributing Items in Boxes</title>
           <p>
-            Consider an online shop that needs to send <m>72</m> shirts, <m>100</m> hats, and <m>144</m> bags to a supplier. The goal is to use the smallest number of boxes possible, with each box containing the exact same items. This is a typical problem where we need to find the greatest common divisor (GCD) of the numbers <m>72</m>, <m>100</m>, and <m>144</m>.
+            Consider an online shop that needs to send <m>72</m> shirts, <m>100</m> hats, and <m>144</m> bags to a supplier. The goal is to use the greatest number of boxes possible, with each box containing the exact same items. This is a typical problem where we need to find the greatest common divisor (GCD) of the numbers <m>72</m>, <m>100</m>, and <m>144</m>.
           </p>
           <p>
-            After calculating, we find that the GCD of these numbers is <m>4</m>. Therefore, we need <m>4</m> boxes. Each box will contain <m>72 \div 4 = 18</m> shirts, <m>100 \div 4 = 25</m> hats, and <m>144 \div 4 = 36</m> bags. This distribution ensures that each box has the same items and uses the minimum number of boxes possible.
+            After calculating, we find that the GCD of these numbers is <m>4</m>. Therefore, we need <m>4</m> boxes. Each box will contain <m>72 \div 4 = 18</m> shirts, <m>100 \div 4 = 25</m> hats, and <m>144 \div 4 = 36</m> bags. This distribution ensures that each box has the same items and uses the maximum number of boxes possible.
           </p>
         </subsubsection>
       
@@ -1914,7 +1914,7 @@
         <subsubsection xml:id="venn_diagrams_gcd_lcm">
           <title>Visualizing GCD and LCM with Venn Diagrams</title>
           <p>
-            GCD and LCM can also be visualized using Venn diagrams. For example, consider the numbers <m>180</m> and <m>144</m>. By placing the prime factors of these numbers in a Venn diagram, we can easily identify the GCD (intersection of the sets) and the LCM (union of the sets). This visual approach offers a clear and intuitive understanding of how these concepts interrelate.
+            GCD and LCM can also be visualized using Venn diagrams. For example, consider the numbers <m>180</m> and <m>144</m>. By placing the prime factors of these numbers in a Venn diagram (where we can repeat elements in each part of the diagram, we can easily identify the GCD (intersection of the sets) and the LCM (union of the sets). 
           </p>
         </subsubsection>
       </subsection>
@@ -2048,13 +2048,12 @@
                   <li><m>120932 = 78696 \times 1 + 42236</m></li>
                   <li><m>78696 = 42236 \times 1 + 36460</m></li>
                   <li><m>42236 = 36460 \times 1 + 5776</m></li>
-                  <li><m>36460 = 5776 \times 6 + 2324</m></li>
-                  <li><m>5776 = 2324 \times 2 + 1128</m></li>
-                  <li><m>2324 = 1128 \times 2 + 68</m></li>
-                  <li><m>1128 = 68 \times 16 + 40</m></li>
-                  <li><m>68 = 40 \times 1 + 28</m></li>
-                  <li><m>40 = 28 \times 1 + 12</m></li>
-                  <li><m>28 = 12 \times 2 + 4</m></li>
+                  <li><m>36460 = 5776 \times 6 + 1804</m></li>
+                  <li><m>5776 = 1804 \times 3 + 364</m></li>
+                  <li><m>1804 = 364 \times 4 + 348</m></li>
+                  <li><m>364 = 348 \times 1 + 16</m></li>
+                  <li><m>348 = 16 \times 21 + 12</m></li>
+                  <li><m>16 = 12 \times 1 + 4</m></li>
                   <li><m>12 = 4 \times 3</m> (remainder is zero)</li>
                 </list>
                 <p>
