@@ -264,7 +264,7 @@
                         <me>
                             a+b = c(x+y)+r.
                         </me>
-                        Since <m>x+y \in \mathbb{N}</m> and <m>r \in \mathbb{N}</m> with <m>r \leq n-1</m>, we have written <m>b+c</m> in quotient-remainder form, and we know there is exactly one way to do this. And since <m>r \neq 0</m>, then <m>a \nmid b+c</m>. 
+                        Since <m>x+y \in \mathbb{N}</m> and <m>r \in \mathbb{N}</m> with <m>r \leq n-1</m>, we have written <m>a+b</m> in quotient-remainder form, and we know there is exactly one way to do this. And since <m>r \neq 0</m>, then <m>c \nmid a+b</m>. 
                         
                     </p>
                 </proof>
