@@ -11,7 +11,7 @@
     <subsubsection xml:id="divisibility2">
         <title>Intro to Divisibility</title>
         <p>
-            Divisibility is a fundamental concept in mathematics. It describes one type of fundamental relationship between two integers, as we can think of a factor of a number being a "building block" of the number it is a factor of. Note that in this chapter, we will predominately study divisibility properties of whole numbers, but these can be easily extended to integers. From now on, unless otherwise stated, any number that appears is a whole number; that is, for all numbers <m>n</m> in this chapter,<m>n \in \mathbb{N}_0</m>.</p>
+            Divisibility is a fundamental concept in mathematics. It describes one type of fundamental relationship between two integers, as we can think of a factor of a number being a "building block" of the number it is a factor of. Note that in this chapter, we will predominantly study divisibility properties of whole numbers, but these can be easily extended to integers. From now on, unless otherwise stated, any number that appears is a whole number; that is, for all numbers <m>n</m> in this chapter,<m>n \in \mathbb{N}_0</m>.</p>
             <definition xml:id="def-Divisibility">
                 <statement>
                     <p> A number <m>a</m> is said to be <term>divisible by</term> another number <m>b</m> if there exists a unique number <m>c</m> such that <m>a = bc</m>. This is often expressed in various ways, such as "<m>b</m> is a factor of <m>a</m>", "<m>b</m> divides <m>a</m>", "<m>a</m> is a multiple of <m>b</m>", or "<m>a</m> is divisible by <m>b</m>". We say that <m>b</m> is a <term>proper factor</term> of <m>a</m> if <m>b \neq 1</m> and <m>b \neq a</m>.
@@ -24,7 +24,7 @@
         <p> You've probably spotted that we can say the same things about <m>7</m> as we did about <m>5</m>. This idea gives us our first theorem, that we will state and prove more formally after we develop some notation for the concept of divisibility. </p>
         </example>
         <p>
-            In mathematics, the "divides" symbol is represented as "|" and the "does not divide" symbol is represented as "∤". For example, if <m>b</m> divides <m>a</m>, we write it as <m>b | a</m>. If <m>b</m> does not divide <m>a</m>, we write it as <m>b ∤ a</m>.
+            In mathematics, the "divides" symbol is represented as <m> \mid </m> and the "does not divide" symbol is represented as <m> \nmid </m>. For example, if <m>b</m> is a factor of <m>a</m>, we write it as <m>b \mid a</m>. If <m>b</m> is not a factor of <m>a</m>, we write it as <m>b \nmid a</m>.
         </p>
         <p>
             Let's look at two examples. Consider the numbers 4 and 12. We can say that 4 divides 12, or in symbol form, <m>4 | 12</m>. This is because there exists an integer (3 in this case) such that <m>4 * 3 = 12</m>. Now consider the numbers 7 and 23. We can say that 7 does not divide 23, or in symbol form, <m>7 ∤ 23</m>. This is because there does not exist an integer such that <m>7 * c = 23</m>.
@@ -45,7 +45,7 @@
             INSERT PIC OF THIS DIVISIBILITY
         </p>
         <p>
-            Now that we've shown this, we can use it to help up study divisibility of many numbers. We'll do many rules in the next subsection, but if we look at the example at the beginning of this section, we see that this shows the following:
+            Now that we've shown this, we can use it to help us study divisibility of many numbers. We'll do many rules in the next subsection, but if we look at the example at the beginning of this section, we see that this shows the following:
         </p>
         <p>
             <theorem xml:id="thm-if12then3">
@@ -124,12 +124,12 @@
             For example, if our objects are sets, then <m>\in</m> is a relation between them. For example, let <m>A:=\{1,2\}, \quad B:=\{1,\{1,2\},3\}, \quad C:= \{1,2,3,4\}</m>. Under the relation <m>\in</m>, <m>A</m> is related to <m>B</m> since <m>A \in B</m>, but <m>A</m> is not related to <m>C</m> since <m>A \notin C</m>. Divisibility is also a relation. We can say that under divisibility <m>3</m> is related to <m>12</m> since <m>3 \mid 12</m> but <m>3</m> is not related to <m>10</m> since <m>3 \nmid 10</m>.
         </p>
         <p>
-            This "chain"-like property of relations is incredibly important in mathematics. In fact, it comes up so often that we decided to give it it's own name. In fact, we've talked about this property before; equality has it as well, as we've seen in PROPERTIES OF EQUALITY. We'll talk about it in more generality here.
+            This "chain"-like property of relations is incredibly important in mathematics. In fact, it comes up so often that we decided to give it its own name. In fact, we've talked about this property before; equality has it as well, as we've seen in PROPERTIES OF EQUALITY. We'll talk about it in more generality here.
         </p>
         <definition xml:id="def-transitivity">
             <statement>
                 <p>
-                   Let <m>\tilde</m> be some relationship (such as equality "=", or divisibility "\mid")  between objects (such as numbers). We say the relationship <m>\tilde</m> is <term>transitive</term> exactly when if th's true that, for objects <m>a,b,c</m>, if  <m>a \tilde b</m> and <m>b \tilde c</m> then <m>a \tilde c</m>.
+                   Let <m>\sim</m> be some relationship (such as equality "=", or divisibility "<m>\mid</m>")  between objects (such as numbers). We say the relationship <m>\sim</m> is <term>transitive</term> exactly when it is true that, for objects <m>a,b,c</m>, if  <m>a \tilde b</m> and <m>b \simc</m> then <m>a \tilde c</m>.
                 </p>
             </statement>
         </definition>
@@ -164,7 +164,7 @@
                 Let's consider <m>a = 6</m> and <m>b = 3</m>. Here, <m>a</m> is divisible by <m>b</m>. Now, if we take any natural number, say <m>n = 4</m>, then <m>a*n = 24</m> is also divisible by <m>b</m>.
             </p>
         </example>
-        <p>Lets try and prove this now. The idea is that if we know that <m>c</m> dots can be represented as a rectangle with dimensions <m>a</m> and <m>b</m>, then we can "glue" <m>n</m> of these  together to make a larger rectangle with dimensions <m>a</m> and <m>nb</m>. INSERT PIC OF THIS HERE</p>
+        <p>Let's try and prove this now. The idea is that if we know that <m>c</m> dots can be represented as a rectangle with dimensions <m>a</m> and <m>b</m>, then we can "glue" <m>n</m> of these  together to make a larger rectangle with dimensions <m>a</m> and <m>nb</m>. INSERT PIC OF THIS HERE</p>
         <p> <theorem xml:id="thm-thm1">
             <statement>
                 <p>
@@ -173,7 +173,7 @@
             </statement>
             <proof>
                 <p>
-                   Let's use the diagram above as a guide. Assuming the if-part is true, we assume <m>a \mid c</m>. This means that <m>c=ab</m> for some natural number <m>b</m>. We need to show that the then-part is true; that is, <m>nc=a(  )</m>, where the brackets contain some integer. Noting that the LHS of the second equation is the LHS of the first equation multiplied ny <m>n</m>, let's multiply the first equation by <m>n</m>: <me>
+                   Let's use the diagram above as a guide. Assuming the if-part is true, we assume <m>a \mid c</m>. This means that <m>c=ab</m> for some natural number <m>b</m>. We need to show that the then-part is true; that is, <m>nc=a(  )</m>, where the brackets contain some integer. Noting that the LHS of the second equation is the LHS of the first equation multiplied by <m>n</m>, let's multiply the first equation by <m>n</m>: <me>
                     
                   n \times (c) = n \times (ab).
                    
@@ -273,7 +273,7 @@
         </p>
     </subsubsection>
     <subsubsection xml:id="subsubsec-TheOtherCase">
-        <title>TheOtherCase</title>
+        <title>The Other Case</title>
         <p>
             If you look at the previous two theorems, you'll see that they cover when <m>a</m> divides both numbers <m>b</m> and <m>c</m>, and when <m>a</m> divides exactly one of these and not the other. A natural question we can ask is "what happens if <m>a</m> divides neither <m>b</m> nor <m>c</m>?"
         </p>
@@ -379,7 +379,7 @@
                 </statement>
                 <proof>
                     <p>
-                        Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>2 \mid 1000</m>, <m>2 \mid 100</m>, and <m>2 \mid 10</m>, so by <xref ref="theorem1"/> we know that <m>2 \mid A\times 1000,</m> <m>2 \mid B\times 100</m>, and <m>2 \mid C \times 10</m>. By <xref ref="theorem2"/> we know that <m>2 \mid (A\times 1000+B\times 100+C\times 10).\</m>. For ease, let's define <m>S:=A\times 1000+B\times 100+C\times 10</m>. Thus we can write <m>\underline{ABCD}=S+D</m>. 
+                        Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>2 \mid 1000</m>, <m>2 \mid 100</m>, and <m>2 \mid 10</m>, so by <xref ref="theorem1"/> we know that <m>2 \mid A\times 1000,</m> <m>2 \mid B\times 100</m>, and <m>2 \mid C \times 10</m>. By <xref ref="theorem2"/> we know that <m>2 \mid (A\times 1000+B\times 100+C\times 10).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100+C\times 10</m>. Thus we can write <m>\underline{ABCD}=S+D</m>. 
                     </p>
                     <p>
                         Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>2 \mid D</m> (P being true) then <m>2 \mid S+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>2 \nmid D</m> (P being false) then <m>2 \nmid S+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
@@ -420,7 +420,7 @@
             </statement>
             <proof>
                 <p>
-                    Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>4 \mid 1000</m> and <m>4 \mid 100</m>, so by <xref ref="theorem1"/> we know that <m>4 \mid A\times 1000,</m> and <m>4 \mid B\times 100</m>. By <xref ref="theorem2"/> we know that <m>4 \mid (A\times 1000+B\times 100).\</m>. For ease, let's define <m>S:=A\times 1000+B\times 100</m>. Thus we can write <m>\underline{ABCD}=S+(C\times 10+D)</m>. 
+                    Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>4 \mid 1000</m> and <m>4 \mid 100</m>, so by <xref ref="theorem1"/> we know that <m>4 \mid A\times 1000,</m> and <m>4 \mid B\times 100</m>. By <xref ref="theorem2"/> we know that <m>4 \mid (A\times 1000+B\times 100).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100</m>. Thus we can write <m>\underline{ABCD}=S+(C\times 10+D)</m>. 
                 </p>
                 <p>
                     Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
@@ -435,11 +435,11 @@
             Looking at the above rules, you may have started to notice a pattern emerging. We can view <m>2</m> as <m>2^1</m> and note that to check divisibility by 2 we only need to check whether the number formed by the last digit is divisible by 2. For <m>4=2^2</m>, we need to check if the number formed by the last *two* digits is divisible by <m>4</m>. Let's check if the pattern has a chance of holding for <m>8=2^3:</m>
         </p>
         <example>
-            <p>
+            
                 <p>
                     Consider the number 1232. The number formed by the last three digits is 232. We can check that <m>232 \div 8 = 29</m>, and <m>1232 \div 8 = 154</m>. So it looks like the expected rule holds, at least for this example. Indeed, since 232 is divisible by 8, 1232 is also divisible by 8.
                 </p> 
-            </p>
+            
         </example>
         <p>
             Here's a non-example too:
@@ -597,7 +597,7 @@
         </ol>
     </example>
     <p>
-        Now that we have developed our rule let's prove it for four-digit numbers. Like the other proofs in this section, this can be expanded to a proof for number with any amount of digits.
+        Now that we have developed our rule let's prove it for four-digit numbers. Like the other proofs in this section, this can be expanded to a proof for number with any number of digits.
     </p>
     <theorem xml:id="divisibility-3-9">
         <title>Divisibility Rules for 3 and 9</title>
@@ -703,7 +703,7 @@
             </li>
             <li>
                 <p>
-                    Make a conjecture about the patter of remainders of <m>10^k \div 11</m> for each <m>k \in \mathbb{N}_0</m>.
+                    Make a conjecture about the pattern of remainders of <m>10^k \div 11</m> for each <m>k \in \mathbb{N}_0</m>.
                 </p>
             </li>
             <li>
@@ -978,7 +978,7 @@
   </subsection>
   
 <subsection xml:id="subsec-MakingDivisibilityRules">
-    <title>MakingDivisibilityRules</title>
+    <title>Making Divisibility Rules</title>
     <p>
         MAKING A DIVISIBILITY RULE FOR ANY NUMBER USING TECHNIQUE FROM WIKIPEDIA.
     </p>
@@ -1041,7 +1041,7 @@
             INSERT UPDATED PIC
         </p>
         <p>
-            This process is very old, and in fact is called the <term>sieve of Eratosthenes</term>, after the Greek mathematician Eratosthenes of Cyrene, of whom this method is attributed to.
+            This process is very old, and in fact is called the <term>sieve of Eratosthenes</term>, after the Greek mathematician Eratosthenes of Cyrene, to whom this method is attributed.
         </p>
         <exercise>
             <p>
@@ -1079,9 +1079,8 @@
                 </li>
             </ol>
         </exercise>
-        <p>
-            SECTION ON OTHER SIEVES? ON ALGORITHMIC COMPLEXITY? ON SEGMENTED SIEVES?
-        </p>
+
+
 
     </subsection>
     <subsection xml:id="subsec-HowManyPrimeNumbersExist">
@@ -1224,8 +1223,9 @@
         <p>
             INSERT PIC OF A NUMBER LINE WITH EACH PAIR OF FACTORS OF 72 PLOTTED
         </p>
+
         <p>
-            It looks like the paris are approaching some point, let's call it <m>P</m> between 8 and 9, plotted above, and that there is always one number of the pair that's greater than <m>P</m>, and one that is less than <m>P</m>.  
+            It looks like the pairs are approaching some point, let's call it <m>P</m> between 8 and 9, plotted above, and that there is always one number of the pair that's greater than <m>P</m>, and one that is less than <m>P</m>.  
         </p>
         <p>
             Let's try the same process with another number, say <m>100</m>, and see if we can conjecture what this point <m>P</m> is mathematically:
@@ -1266,7 +1266,7 @@
                 </statement>
                 <proof>
                     <p>
-                        We are going to show this result is true using a <term>proof by contradiction</term>. As in part 3 of <xref ref="subsec-JustifyingConditionalStatements"/>, we are going to pretend that there is a counterexample to our conditional statement (that is, the only situation where <m>P \to Q</m> is false; when <m>P</m> is true and <m>Q</m> is false.) We will show that if we are in this case, then mathematics "breaks" and we end up with something that is never true. This means that there are no counterexamples to our statement, so it must always be true. In our case, we will end up with showing that <m>n &gt; n</m>, which is always false; of course, no number is strictly greater than itself!. The idea will be that if we multiply two number bigger than <m>\sqrt{n}</m> together, we must get a number bigger than <m>n</m>.
+                        We are going to show this result is true using a <term>proof by contradiction</term>. As in part 3 of <xref ref="subsec-JustifyingConditionalStatements"/>, we are going to pretend that there is a counterexample to our conditional statement (that is, the only situation where <m>P \to Q</m> is false; when <m>P</m> is true and <m>Q</m> is false.) We will show that if we are in this case, then mathematics "breaks" and we end up with something that is never true. This means that there are no counterexamples to our statement, so it must always be true. In our case, we will end up with showing that <m>n &gt; n</m>, which is always false; of course, no number is strictly greater than itself!. The idea will be that if we multiply two numbers bigger than <m>\sqrt{n}</m> together, we must get a number bigger than <m>n</m>.
                     </p>
                     <p>
                         Assuming that the if-part is true, let <m>n=ab</m> be a factorization of <m>n</m> into two factors, where <m>a \geq b</m>. Let's also assume that the then-part is false; that either both <ol>
@@ -1349,7 +1349,7 @@
         
         
         <assemblage xml:id="assemblage-TestForPrimality">
-            <title>Teat For Primality</title>
+            <title>Test For Primality</title>
             <p>
                 A number <m>n \in \mathbb{N}</m> where <m>n \geq 2</m> is prime exactly when it has no prime factors <m>p \leq \sqrt{n}</m>. We can test for primality using this following steps:
             </p>
@@ -1409,7 +1409,7 @@
             </p>
             <solution>
                 <p>
-                    We need to find the greatest prime less than or equal to <m>\sqrt{293}</m>. Without a calculator, we can bound <m>\sqrt{293}</m> between two consecutive primes, or put another way, bound <m>293</m> between two squares od primes.
+                    We need to find the greatest prime less than or equal to <m>\sqrt{293}</m>. Without a calculator, we can bound <m>\sqrt{293}</m> between two consecutive primes, or put another way, bound <m>293</m> between two squares of primes.
                 </p>
                 <p>
                     We know that <m>17^2=289</m> and <m>19^2=361</m> so <m>17 \leq \sqrt{293} \leq 19</m>, and our <m>p_*=17</m>
@@ -1427,7 +1427,7 @@
                     5: Since <m>5 \nmid 3</m>, we know <m>5 \nmid 293</m>.
                 </p>
                 <p>
-                    7: By division, we know that <m>293 \div 7 = 41R6</m>. Since we have a non-zero remainder, we know <m>7 /nmid 293</m>.
+                    7: By division, we know that <m>293 \div 7 = 41R6</m>. Since we have a non-zero remainder, we know <m>7 \nmid 293</m>.
                 </p>
                 <p>
                     11: Since <m>11 \nmid (2-9+3)</m>, we know <m>11 \nmid 293</m>.
@@ -1482,7 +1482,7 @@
                 For <m>72 = 2^3 3^2,</m> we have that <m>p_1 = 2, p_2 = 3</m> (and in this case there are <m>2</m> distinct primes in the prime factorization), <m>e_1=3</m> (how many of the prime <m>2</m> we have in our prime factorization), and <m>e_2=2</m>.
             </p>
             <p>
-                If <m>n=21000</m> then you can check that <m>21000=2^3 3 5^3 7</m>, so <m>p_1=2, p_2=3, p_3 = 5, p_4=7</m>, there are <m>4</m> distinct primes so <m>k=4,</m>, and <m>e_1=3, e_2=1, e_3=3, e_4=1.</m>
+                If <m>n=21000</m> then you can check that <m>21000=2^3 3 5^3 7</m>, so <m>p_1=2, p_2=3, p_3 = 5, p_4=7</m>, there are <m>4</m> distinct primes so <m>k=4</m>, and <m>e_1=3, e_2=1, e_3=3, e_4=1.</m>
             </p>
         </example>
         <p>
@@ -1493,7 +1493,7 @@
             <me>
                 72=4 \times 18 = (2\times 2) \times (2 \times 9) = (2\times 2) \times (2 \times (3 \times 3)) = (2\times 2 \times 2) \times (3 \times 3) = 2^3 3^2.
             </me>
-            We send up with the same prime factorization as the first example. Here is the tree diagram of this factorization: INSERT PIC OF TREE DIAGRAM
+            We end up with the same prime factorization as the first example. Here is the tree diagram of this factorization: INSERT PIC OF TREE DIAGRAM
         </p>
         <exercise>
             <p>
@@ -1585,7 +1585,7 @@
                 </p>
                 
                 <p>
-                    Let <m>n</m> be the smallest number to have have two different prime factorizations, say <m>n=p_1p_2\ldots p_s</m> and <m>n=q_1q_2\ldots q_t</m> where the <m>p</m>'s and <m>q</m>'s are (not necessarily distinct) primes, and let's say that <m>s \leq t</m>. We know that since <m>p_1 \mid n</m>, <m>p_1 \mid q_1q_2\ldots q_t</m> since <m>n=q_1q_2\ldots q_t</m>By Euclid's Lemma, <xref ref="lem-EuclidsLemma"/>, we know that <m>p_1 \mid q_i</m> for one of the primes <m>q_i</m>. But since <m>q_i</m> is prime, its only factors are <m>1</m> and <m>q_i</m>. Since <m>p_1 \neq 1</m>, since it is a prime as well, it must be that <m>p_1=q_i</m>. Now let's divide both sides by this common prime, remembering that <m>p_1=q_i</m>: <me>
+                    Let <m>n</m> be the smallest number to have two different prime factorizations, say <m>n=p_1p_2\ldots p_s</m> and <m>n=q_1q_2\ldots q_t</m> where the <m>p</m>'s and <m>q</m>'s are (not necessarily distinct) primes, and let's say that <m>s \leq t</m>. We know that since <m>p_1 \mid n</m>, <m>p_1 \mid q_1q_2\ldots q_t</m> since <m>n=q_1q_2\ldots q_t</m>By Euclid's Lemma, <xref ref="lem-EuclidsLemma"/>, we know that <m>p_1 \mid q_i</m> for one of the primes <m>q_i</m>. But since <m>q_i</m> is prime, its only factors are <m>1</m> and <m>q_i</m>. Since <m>p_1 \neq 1</m>, since it is a prime as well, it must be that <m>p_1=q_i</m>. Now let's divide both sides by this common prime, remembering that <m>p_1=q_i</m>: <me>
                         (n)\div p_1 = (p_1p_2p_3 \ldots p_s) \div p_1 = (q_1 q_2 \ldots q_{i-1}q_{i}q_{i+1} \ldots q_t) \div p_1
                     </me>
                     <me>
@@ -1781,7 +1781,7 @@
         <subsubsection xml:id="subsubsec-PuttingItAllTogether">
             <title>Putting It All Together</title>
             <p>
-                Let's work through one example that uses many of the techniques and idea that we've encountered so far.
+                Let's work through one example that uses many of the techniques and ideas that we've encountered so far.
             </p>
             <example>
                 <p>
@@ -1801,7 +1801,7 @@
                         Next we may notice that <m>1-5+0-8+8-7=-11</m> so <m>11 | 150,887</m>. By division we see that <m>150887=11 \times 13717</m>. We then notice that <m>1-3+7-1+7=11</m> so <m>11 | 13717</m> and, again by division, <m>13717=11 \times  1247</m>. Putting this together we have <m>n =(2^3 \times 5^2 \times 11^2) \times 1247.</m>
                     </p>
                     <p>
-                        We can check all of our divisibility tests and find that <m>1247</m> fails all of them. So by <xref ref="assemblage-TestForPrimality"/>we need to determine if <m>1247</m> has any prime factors great than 11. We note that <m>31^2 = 961</m> and <m>37^2 = 1369</m> and that <m>31</m> and <m>37</m> are consecutive primes so <m>31 &lt; \sqrt{1247} &lt; 37</m> so we need to check all prime numbers of size <m>31</m> and smaller. We've already checked <m>2,3,5,11</m> so we need to check <m>7,13,17,19,23,29,31</m> by trial division. 
+                        We can check all of our divisibility tests and find that <m>1247</m> fails all of them. So by <xref ref="assemblage-TestForPrimality"/>we need to determine if <m>1247</m> has any prime factors greater than 11. We note that <m>31^2 = 961</m> and <m>37^2 = 1369</m> and that <m>31</m> and <m>37</m> are consecutive primes so <m>31 &lt; \sqrt{1247} &lt; 37</m> so we need to check all prime numbers of size <m>31</m> and smaller. We've already checked <m>2,3,5,11</m> so we need to check <m>7,13,17,19,23,29,31</m> by trial division. 
                     </p>
                     <p>
                         Using this trial division, we see that <m>1247 \div 29=43</m>, so we know that <m>29</m> is a factor of <m>n</m>. And since <m>43</m> is also prime, we have decomposed <m>n</m> into its prime factorization: <m>n = 2^3 \times 5^2 \times 11^2 \times 29 \times 43</m>. Thus by <xref ref="thm-NumberOfFactors"/> we see that <m>n</m> has <m>(3+1)(2+1)(2+1)(1+1)(1+1)=144</m> total factors. Of these factors, <m>5</m> are prime, <m>1</m> is the number <m>1</m>, and <m>138</m> are composite.
