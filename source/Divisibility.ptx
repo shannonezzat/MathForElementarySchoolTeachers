@@ -1974,22 +1974,7 @@
             </proof>
             </theorem>
           
-            <!-- Proof of the Theorem -->
-            <proof xml:id="euclidean_algorithm_proof">
-              <title>Proof of the Euclidean Algorithm</title>
-              <p>
-                Let <m>d</m> be the greatest common divisor of <m>a</m> and <m>b</m>. By the quotient-remainder theorem, <m>a</m> can be expressed as <m>a = qb + r</m>, where <m>q</m> is the quotient and <m>r</m> is the remainder, and <m>0 \leq r &lt; b</m>.
-              </p>
-              <p>
-                Since <m>d</m> divides both <m>a</m> and <m>b</m>, it also divides <m>a - qb</m> (which is equal to <m>r</m>). Therefore, <m>d</m> divides <m>r</m>. Now, if there exists a larger common divisor of <m>b</m> and <m>r</m>, it would also divide <m>a</m> (since <m>a = qb + r</m>), contradicting the fact that <m>d</m> is the greatest common divisor of <m>a</m> and <m>b</m>. Hence, <m>d</m> is also the greatest common divisor of <m>b</m> and <m>r</m>.
-              </p>
-              <p>
-                Repeating this process iteratively, we reduce the problem to finding the GCD of smaller and smaller pairs of numbers, until the remainder <m>r</m> becomes zero. At that point, the GCD of the original pair <m>a</m> and <m>b</m> is the non-zero remainder from the previous division.
-              </p>
-              <p>
-                This completes the proof that the Euclidean Algorithm correctly computes the GCD of two positive integers.
-              </p>
-            </proof>
+            
           
           
         </subsubsection>
