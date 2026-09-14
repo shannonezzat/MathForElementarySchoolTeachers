@@ -39,7 +39,7 @@
 </p>
 
 <definition>
-<p>A <term> statement </term> is a sentence that is either always true or always false (but not both).</p>
+<p>A <term> statement </term> is a sentence that has exactly one truth value; True or False.</p>
 <example>
     <p>"Ottawa is the capital of Canada" is a true statement. </p> <p>"<m>4^2=10</m>" is a false statement.</p>
 </example>
@@ -79,7 +79,7 @@
           </li>
           <li>
               <p>
-                  We want statements to have exactly one truth value; either True(T) or False(F). If we know a sentence is a statement and it's not true, it must be false. The easiest way to think about this is by asking yourself "am I being lied to?" If the answer is no, then the statement is true (even if it doesn't really apply or make sense).  
+                  We want statements to have exactly one truth value; either True(T) or False(F). If we know a sentence with a well-defined truth value is a statement and it's not true, it must be false. The easiest way to think about this is by asking yourself "am I being lied to?" If the answer is no, then the statement is true (even if it doesn't really apply or make sense).  
               </p>
           </li>
       </ol>  
@@ -88,7 +88,7 @@
 
 <exercise xml:id="open-sentences-exercises">
   <p>
-    Answer the following questions about <term>open sentences</term>. Recall that an open sentence is a mathematical statement containing one or more variables that becomes either true or false when specific values are substituted for the variables.
+    Answer the following questions about <term>open sentences</term>. Recall that an open sentence is a mathematical sentence containing one or more variables that becomes either a true or false statement when specific values are substituted for the variables.
   </p>
   <ol>
     <li>
@@ -458,7 +458,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
             </li>
             <li>
                 <p>
-                    Other than vacuously true statements, if a universally quantified statement is true so is the "existentially" quantified version. For example, "all polygons have at least three sides" is true, so "some polygons have at least three sides" is true too! Remember, existential quantifiers only care of an object exists, not how many. 
+                    Other than vacuously true statements, if a universally quantified statement is true so is the "existentially" quantified version. For example, "all polygons have at least three sides" is true, so "some polygons have at least three sides" is true too! That is; if at least one object satisfies P then "All P are Q" being true means thatv "Some P are Q" is true as well. Remember, existential quantifiers only care of an object exists, not how many. 
                 </p>
             </li>
         </ol>
@@ -719,15 +719,16 @@ When we talk about mathematical ideas, we want to express how many objects they 
         <ol>
             <li>
                 <p>
-                  If <m>n</m> is an <term>even number</term> then <m>n=2k</m> for some whole number <m>k</m>.  
+                  A number <m>n</m> is an <term>even number</term> exactly when <m>n=2k</m> for some whole number <m>k</m>.  
                 </p>
             </li>
             <li>
                 <p>
-                  If <m>n</m> is an <term>odd number</term> then <m>n=2k+1</m> for some whole number <m>k</m>  
+                  A number <m>n</m> is an <term>odd number</term> exactly when <m>n=2k+1</m> for some whole number <m>k</m>.  
                 </p>
             </li>
         </ol> 
+
     </p>
     
     <assemblage xml:id="assemblage-EvenOdd">
@@ -994,7 +995,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 </p>
                 <p>
                     Consider <m>a+b</m>. By our assumption, <me>a+b=(2r+1)+(2s+1)</me>. We know how we need the expression to look, so we can use our creativity to get there: <me>
-                        (2r+1) +(2s+1) = 2r+2s+2 = 2(r+s+2)
+                        (2r+1) +(2s+1) = 2r+2s+2 = 2(r+s+1)
                     </me>
                     Since the expression in the brackets is the sum of integers, the bracket simplifies to an integer. So we've written <m>a+b</m> in the form we like and we are done.
                 </p>
@@ -1081,11 +1082,11 @@ When we talk about mathematical ideas, we want to express how many objects they 
 
 <example>
     <p>
-        Is the conditional statement "if <m>n</m> is a whole number then <m>n^2+n+11</m> is a prime number" always true? Remember, a prime number is a number divisible by exactly two numbers, 1 and itself.
+        Is the conditional statement "if <m>n</m> is a whole number then <m>n^2+n+11</m> is a prime number" always true? Remember, a prime number is a whole number divisible by exactly two whole numbers, 1 and itself.
     </p>
     <solution>
         <p>
-            It is not! However, it may take a while to find a counterexample. If we let <m>n=1,2, \dots, 9</m> we find that <m>n^2+n+11</m> is indeed prime. For example, if <m>n=6</m> then <m>6^2+6+11=53</m> and you can check that 53 is a prime number. However, when <m>n=10</m>, we have that <m>10^2+10+11=121</m> and <m>121=11 \times 11,</m> so <m>11</m> is not a prime number. 
+            It is not! However, it may take a while to find a counterexample. If we let <m>n=1,2, \dots, 9</m> we find that <m>n^2+n+11</m> is indeed prime. For example, if <m>n=6</m> then <m>6^2+6+11=53</m> and you can check that 53 is a prime number. However, when <m>n=10</m>, we have that <m>10^2+10+11=121</m> and <m>121=11 \times 11,</m> so <m>10^2+10+11</m> is not a prime number. 
         </p>
         
     </solution>
@@ -1157,7 +1158,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     </p>
     <solution>
         <p>
-            As of 2022, the counterexamples are Fredericton (Moncton and Saint John are larger), Quebec City (Montreal [among others] is larger), Regina (Saskatoon is larger), Edmonton (Calgary is larger), and British Columbia (Vancouver [among others] is larger).
+            As of 2022, the counterexamples are Fredericton (Moncton and Saint John are larger), Quebec City (Montreal [among others] is larger), Regina (Saskatoon is larger), Edmonton (Calgary is larger), and Victoria (Vancouver [among others] is larger).
         </p>
     </solution>
     <solution>
@@ -1265,7 +1266,7 @@ select all those cards, but only those cards, which you would have to turn over 
     </subsection>
 
     <subsection xml:id="subsec-CondExist">
-        <title>The Relationship Between Conditional and Existential Statements</title>
+        <title>The Relationship Between Conditional and Universal Statements</title>
         <p>
             If you think about it, conditional statements with a variable are actually universally quantified statements! There is an implied quantifier hidden in the conditional statement itself. For example, the conditional statement (with the domain of all animals )"if <m>c</m> is a cat then <m>c</m> is a mammal" is interpreted to mean "for all animals, if <m>c</m> is a cat then <m>c</m> is a mammal".
         </p>
@@ -1471,12 +1472,12 @@ select all those cards, but only those cards, which you would have to turn over 
             <ol>
                 <li>
                     <p>
-                        If T is a polygon with three sides, then T is a triangle.
+                        If T is a polygon with three sides, then T is a triangle (domain: polygona).
                     </p>
                 </li>
                 <li>
                     <p>
-                        If L is a whole number with a ones-digit of 2 or 4, then L is even. 
+                        If L is a whole number with a ones-digit of 2 or 4, then L is even (domain: whole numbers). 
                     </p>
                 </li>
             </ol>
@@ -1506,12 +1507,12 @@ select all those cards, but only those cards, which you would have to turn over 
                     </li>
                     <li>
                         <p>
-                            Converse: If L is an even whole number then its ones-digit is 2 or 4 (F; counterexample 12)
+                            Converse: If L is an even whole number then its ones-digit is 2 or 4 (F; counterexample 16)
                         </p>
                     </li>
                     <li>
                         <p>
-                            Inverse: If L is an whole number with a ones-digit other than 2 or 4 then it is odd. (F; counterexample 12)
+                            Inverse: If L is an whole number with a ones-digit other than 2 or 4 then it is odd. (F; counterexample 16)
                         </p>
                     </li>
                     <li>
@@ -1527,7 +1528,7 @@ select all those cards, but only those cards, which you would have to turn over 
     <subsection xml:id="subsec-BiconditionalSentences">
         <title>Biconditional Sentences</title>
         <p>
-            Look at the previous examples in <xref ref="Bicond1"/>. Notice in the first example, the original statement and its converse were true (and, it follows that the inverse and contrapositive are true too!). However, in the second, only the original statement was true. Let's view these as Venn diagrams: 
+            Look at the previous examples in <xref ref="Bicond1"/>. Notice in the first example, the original statement and its converse were true (and, it follows that the inverse and contrapositive are true too!). However, in the second, only the original statement and contrapositive were true. Let's view these as Venn diagrams: 
         </p>
         <p>
             <image source="Section2.7a.svg" >
@@ -2098,7 +2099,7 @@ select all those cards, but only those cards, which you would have to turn over 
                </solution>
                <solution>
                    <p>
-                       Since elements in a union need to satisfy  being a member of *either* A or B (or both), we have that <m>A \cup C = \{ \text{ all polygons that are triangles or have at most 5 sides.} \}</m>. However, triangles are polygons of at most 5 sides (they have three). Thus we have that <m>A \subseteq C</m> and thus we can express <m>A \cup C = \{ \text{ all polygons of at most 5 sides.} \}</m> and note <m>A \cup C = C</m>.
+                       Since elements in a union need to satisfy  being a member of *either* A or C (or both), we have that <m>A \cup C = \{ \text{ all polygons that are triangles or have at most 5 sides.} \}</m>. However, triangles are polygons of at most 5 sides (they have three). Thus we have that <m>A \subseteq C</m> and thus we can express <m>A \cup C = \{ \text{ all polygons of at most 5 sides.} \}</m> and note <m>A \cup C = C</m>.
 
                    </p>
                    <p>
@@ -2443,7 +2444,7 @@ select all those cards, but only those cards, which you would have to turn over 
           <li>{All Canadian provinces}</li>
           <li><m>∅</m></li>
           <li>{All prime numbers between 10 and 30}</li>
-          <li><m>{x ∈ ℚ ∣ |x| &lt; 4}</m></li>
+          <li><m>{x \in \mathbb{Z} ∣ |x| &lt; 4}</m></li>
           <li>{Three NHL teams}</li>
         </ol>
       </statement>
@@ -2485,7 +2486,7 @@ select all those cards, but only those cards, which you would have to turn over 
     
     <exercise>
       <statement>
-        <p>If <m>A - B = {x = 2n ∣ n ∈ ℕ₀}</m>, then for each of the following values of <m>A</m>, find <m>B</m>.</p>
+        <p>In the universe of integers, if <m>A - B = {x = 2n ∣ n ∈ ℕ₀}</m>, then for each of the following values of <m>A</m>, find <m>B</m> if possible.</p>
         <ol marker="a">
           <li><m>A = ℤ</m></li>
           <li><m>A = \mathbb{N}_0</m> …</li>
@@ -2500,7 +2501,7 @@ select all those cards, but only those cards, which you would have to turn over 
         <p>What is the cardinality of each of the following sets?</p>
         <ol marker="a">
           <li><m>\{corn, peas, carrots, potatoes, tomatoes, pumpkins\}</m></li>
-          <li><m>\{x ∣ x \text{ is a perfect square and } x ≤ 100\}</m></li>
+          <li><m>\{x \in \mathbb{N} ∣ x \text{ is a perfect square and } x ≤ 100\}</m></li>
           <li> <m>\{x \ | \ x \text{is a two digit natural number with no digit being 7 and } x \leq 100 \}</m> </li>
           <li><m>\{40, 45, 50, 55, \ldots, 375, 380, 385 \} </m></li>
         </ol>
