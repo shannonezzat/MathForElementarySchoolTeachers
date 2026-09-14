@@ -58,7 +58,7 @@
 <p>An <term> open sentence </term> is a sentence with a variable such that the sentence becomes a statement when you fill in a value into the variable.</p>
 <example>
     <p>
-        "<m>X^2 = 1</m>" is an open sentence. It is true when <m>x=1</m> or <m>x=-1</m> and false for any other numbers.
+        "<m>x^2 = 1</m>" is an open sentence. It is true when <m>x=1</m> or <m>x=-1</m> and false for any other numbers.
     </p>
     <p>
         "Winnipeg is the capital city of Canadian province P" is an open sentence. It is true when P = "Manitoba" and false for all other Canadian provinces.
@@ -744,7 +744,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                </li>
                <li>
                    <p>
-                       Even really just means "divisible by 2". We can (and will in subsequent chapters) extend this idea to express a number <m>n</m> being divisible by some other number <m>c</m> meaning <m>n=c \times k</m> for some whole number <m>k</m>. The idea of "odd" extends similarly, though you can have more than one part remaining. This is basically the idea of remainders when doing division.
+                       Even really just means "divisible by 2". We can (and will in subsequent chapters) extend this idea to express a number <m>n</m> being divisible by some other whole number <m>c</m> meaning <m>n=c \times k</m> for some whole number <m>k</m>. The idea of "odd" extends similarly, though you can have more than one part remaining. This is basically the idea of remainders when doing division.
                    </p>
                </li>
                <li>
@@ -784,7 +784,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
       introduce if–then, or conditional, statements: name the parts (P, Q) and write them in symbols with a clear domain
     </li>
     <li xml:id="obj-cond-truth">
-      decide when “if P then Q” is true or false (including vacuous truth) using a truth table or a quick counterexample
+      decide when “if P then Q” is true or false (including vacuous truth) using a truth tables, proofs, or a quick counterexample
     </li>
     <li xml:id="obj-cond-prove">
       prove conditionals three ways—direct, by contrapositive, or by contradiction
@@ -1005,7 +1005,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
         <p>
             As the hint says, it might be easiest to reword this as an if-then statement first. One way to do this is  
             <p>
-                If <m>a,b,c,d,e,f</m> are consecutive integers, then <m>a+b+c+d+e+f</m> is odd.
+                If <m>a,b,c,d,e,f</m> are consecutive integers (in that order), then <m>a+b+c+d+e+f</m> is odd.
             </p>
         </p>
         <p>
@@ -1173,7 +1173,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     </solution>
 </exercise>
 <example>
-    <p>A usual rule in most Canadian provinces is "If you are drinking alcohol then you must be at least 19 years old". Which of the following people may be violating this rule?</p>
+    <p>A usual rule in most Canadian provinces is "If you are drinking alcohol then you must be at least 19 years old". Which of the following people may be violating this rule (assume people are drinking at most one beverage)?</p>
     <ol>
         <li>
             <p>
@@ -1338,7 +1338,7 @@ select all those cards, but only those cards, which you would have to turn over 
                    Reworded: All fractions <m>\frac{a}{b}</m> with the numerator <m>a=1</m>  cannot be reduced.
                </p>
                <p>
-                   Diagram:
+                   Diagram: TO BE ADDED
                </p>
                <p>
                    Regions:
@@ -1366,7 +1366,7 @@ select all those cards, but only those cards, which you would have to turn over 
                    Reworded: All numbers with English names consisting of four letters is odd or less than eight.
                </p>
                <p>
-                   Diagram (this one is a little more complicated!):
+                   Diagram (this one is a little more complicated!): TO BE ADDED
                </p>
                <p>
                    Note that the three main regions can be broken down into subregions:
@@ -1676,7 +1676,7 @@ select all those cards, but only those cards, which you would have to turn over 
        <ol>
            <li>
                <p>
-                 Elements do not occur more than once in a set.  
+                 Elements do not occur more than once in a set; that is, repetition of an element in a set does not create another "copy" of it.  
                </p>
            </li>
            <li>
@@ -2171,7 +2171,7 @@ select all those cards, but only those cards, which you would have to turn over 
       <statement>
         <p>Which of the following are statements?</p>
         <ol marker="a">
-          <li>It rained yesterday.</li>
+          <li>It rained yesterday in Nova Scotia.</li>
           <li>All cars have engines.</li>
           <li>Did you see the game last night?</li>
           <li>All dogs go to Heaven.</li>
@@ -2328,7 +2328,7 @@ select all those cards, but only those cards, which you would have to turn over 
           <row><cell>F</cell><cell>F</cell><cell>F</cell><cell/></row>
         </tabular>
         <ol marker="a">
-          <li>How many rows would be required to construct a truth table for "P and Q or R or S"?</li>
+          <li>How many rows would be required to construct a truth table for "(P and Q) or (R or S)"?</li>
           <li>Construct a truth table for "(P or Q) and R."</li>
           <li>Is "(P or R) and Q" logically equivalent to "(P or Q) and R"? Why or why not?</li>
         </ol>
@@ -2386,7 +2386,7 @@ select all those cards, but only those cards, which you would have to turn over 
           <li>If <m>p</m> is prime, then <m>p^2</m> is odd.</li>
           <li>If <m>Q</m> is a polygon, then the sum of its interior angles is at least <m>360^\circ</m>.</li>
           <li>If person <m>A</m> speaks both official languages of Canada, then they are bilingual.</li>
-          <li>[intentionally left blank in original source]</li>
+          
         </ol>
       </statement>
     </exercise>
@@ -2404,17 +2404,13 @@ select all those cards, but only those cards, which you would have to turn over 
           <li>If the sky is clear at night, you can see the stars.</li>
           <li>You will excel academically if and only if you study diligently.</li>
           <li><m>2n</m> is even exactly when <m>n</m> is an integer.</li>
-          <li>If <m>x</m> is an integer, then there is exactly one solution to <m>x^4=1</m>.</li>
+          <li>If <m>x</m> is an integer, then <m>x^2</m> is as well.</li>
           <li>If an animal is a bird then it has feathers, and if an animal has feathers then it is a bird.</li>
         </ol>
       </statement>
     </exercise>
     
-    <exercise>
-      <statement>
-        <p>For each of the following statements, determine whether or not the given value of the variable is a counterexample. If not, find a value that is, and prove that it is a counterexample.</p>
-      </statement>
-    </exercise>
+   
     
   </exercises>
 </subsection>
