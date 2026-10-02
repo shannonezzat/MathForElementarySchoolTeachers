@@ -66,5 +66,11 @@
     ],
     "cSpell.ignoreWords": [
         "objs"
+    ],
+    "cSpell.languageSettings": [
+        {
+            "languageId": "pretext",
+            "ignoreRegExpList": []
+        }
     ]
 }

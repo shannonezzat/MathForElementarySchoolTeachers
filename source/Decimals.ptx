@@ -131,8 +131,8 @@
     </p>
 <exercise>
 <p> What is the converse of the statement above? Does this mean that a repeating decimal cannot be expressed as a terminating decimal?
-<\p>
-<hint> Do <m>0.5</m> and <m> 0.4\{\overline{9}} <\m> represent different numbers? If so, what is the size difference between them?</hint>
+</p>
+<hint> Do <m>0.5</m> and <m> 0.4\{\overline{9}} </m> represent different numbers? If so, what is the size difference between them?</hint>
 </exercise>
     </introduction>
     <subsection xml:id="terminating-decimals">
