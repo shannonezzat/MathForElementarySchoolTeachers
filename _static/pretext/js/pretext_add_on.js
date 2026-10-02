@@ -11,42 +11,17 @@
  *******************************************************************************
  */
 
-/*
-console.log("thisbrowser.userAgent", window.navigator.userAgent);
-*/
-
-var minivers = "0";
-if (typeof miniversion !== 'undefined') {
-  console.log("typeof miniversion", typeof miniversion, "dddd", typeof miniversion == 'undefined');
-  minivers = miniversion.toString();
-}
-console.log("               minivers", minivers);
-
-/* scrollbar width from https://stackoverflow.com/questions/13382516/getting-scroll-bar-width-using-javascript */
-function getScrollbarWidth() {
-    var outer = document.createElement("div");
-    outer.style.visibility = "hidden";
-    outer.style.width = "100px";
-    outer.style.msOverflowStyle = "scrollbar"; // needed for WinJS apps
-
-    document.body.appendChild(outer);
-
-    var widthNoScroll = outer.offsetWidth;
-    // force scrollbars
-    outer.style.overflow = "scroll";
-
-    // add innerdiv
-    var inner = document.createElement("div");
-    inner.style.width = "100%";
-    outer.appendChild(inner);
-
-    var widthWithScroll = inner.offsetWidth;
-
-    // remove divs
-    outer.parentNode.removeChild(outer);
-
-    return widthNoScroll - widthWithScroll;
-}
+// stub for i18next to future-proof the code. We don't actually use it for
+// anything right now, but it will be needed if we want to localize the
+// accessibility search status messages.
+window.i18next = window.i18next || {
+    t(key, params = {}) {
+        for (const param in params) {
+            key = key.replace(`{{${param}}}`, params[param]);
+        }
+        return key;
+    }
+};
 
 /*
   copy permalink address to clipboard
@@ -124,43 +99,6 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 window.addEventListener("load",function(event) {
-    $(".aside-like").click(function(){
-       $(this).toggleClass("front");
-    });
-/* if you click a knowl in an aside, the 'front' stays the
-   same because it toggles twice.  A more elegant solution is welcome */
-    $(".aside-like a").click(function(){
-       $(this).closest(".aside-like").toggleClass("front");
-    });
-
-/* temporary, so that aside-like knowls open in the body of the document */
-/* later the addafter will be inserted by PTX? */
-    $("a").each(function() {
-        if($(this).parents('.aside-like').length) {
-            $(this).attr("addafter", "#" + $(this).closest('.aside-like').attr('id') );
-            $(this).closest('.aside-like').attr("tabindex", "0");
-        }
-    });
-
-    /* click an image to magnify */
-    $('body').on('click','.image-box > img:not(.draw_on_me):not(.mag_popup), .sbspanel > img:not(.draw_on_me):not(.mag_popup), figure > img:not(.draw_on_me):not(.mag_popup), figure > div > img:not(.draw_on_me):not(.mag_popup)', function(){
-        var img_big = document.createElement('div');
-        img_big.setAttribute('style', 'background:#fff;');
-        img_big.setAttribute('class', 'mag_popup_container');
-        img_big.innerHTML = '<img src="' + $(this).attr("src") + '" style="width:100%" class="mag_popup"/>';
- // place_to_put_big_img = $(this).parents(".sbsrow, figure, li").last();
-        place_to_put_big_img = $(this).parents(".image-box, .sbsrow, figure, li, .cols2 article:nth-of-type(2n)").last();
-  // for .cols2, the even ones have to go inside the previous odd one
-        if (place_to_put_big_img.prop("tagName") == "ARTICLE") {
-           place_to_put_big_img = place_to_put_big_img.prev().children().first();
-        }
-        $(img_big).insertBefore(place_to_put_big_img);
-    });
-
-    /* click the big image to make it go away */
-    $('body').on('click','img.mag_popup', function(){
-        this.parentNode.remove();
-    });
 
     /* add ids to p that have none */
     p_no_id = document.querySelectorAll('.main p:not([id])');
@@ -305,100 +243,73 @@ function updateURLParameter(url, param, paramVal){
   return baseURL + "?" + newAdditionalURL + rows_txt;
 }
 
-function WWiframeReseed(iframe, seed) {
-  var this_problem = document.getElementsByName(iframe)[0];
-  var this_problem_url = this_problem.src;
-  if (seed === undefined){seed = Number(this_problem.getAttribute('data-seed')) + 80 + 84 + 88;}
-  this_problem.setAttribute('data-seed', seed);
-  this_problem_url = updateURLParameter(this_problem_url, "problemSeed", seed);
-  this_problem.src = this_problem_url;
-}
-
 function process_workspace() {
     console.log("processing workspace");
-// next does not work, because the cursor does back to the beginning
-// so:  need to handle the cursor
-//    the_text = document.activeElement.innerHTML;
-//    the_text = the_text.replace(/(^|\s)\$([^\$]+)\$(\s|$|[.,!?;:])/g, "\1\\(\2\\)\3")
-//    document.activeElement.innerHTML = the_text
     MathJax.typesetPromise();
 }
-/* for the GeoGebra calculator */
 
-function pretext_geogebra_calculator_onload() {
-    $("#calculator-toggle").focus();
-    var inputfield = $("input.gwt-SuggestBox.TextField")[0];
-    console.log("inputfield", inputfield);
-    inputfield.focus();
-}
 window.addEventListener("load",function(event) {
+    const calcDialogElement = document.getElementById('ptx-calculator-container');
+    const calcButtonElement = document.getElementById('ptx-calculator-toggle');
+    if (!calcDialogElement || !calcButtonElement) {
+        return;
+    }
+    const calcDialog = new PTXDialog(calcDialogElement, calcButtonElement, {"kind": "non-modal"});
 
-   /* scrolling on GG plot should scale, not move browser body */
-//     var scrollWidth = 15;  //currently correct for FF, Ch, and Saf, but would be better to calculate
-     var scrollWidth = getScrollbarWidth();
-     if ( (navigator.userAgent.match(/Mozilla/i) != null) ) {
-        // scrollWidth += 0.5
-     }
-     console.log("scrollWidth", scrollWidth);
-     calcoffsetR = 5;
-     calcoffsetB = 5;
-     $('body').on('mouseover','#geogebra-calculator canvas', function(){
-         $('body').css('overflow', 'hidden');
-         $('html').css('margin-right', '15px');
-         $('#calculator-container').css('right', (calcoffsetR+scrollWidth).toString() + 'px');
-         $('#calculator-container').css('bottom', (calcoffsetB+scrollWidth).toString() + 'px');
-     });
+    const focusCalcInput = function() {
+        const inputField = document.querySelector("#ptx-geogebra-calculator input.gwt-SuggestBox.TextField");
+        if (inputField) {
+            inputField.focus();
+        }
+    }
+    function initGeogebra() {
+        // Some paramaters are fixed here, others are set by publisher options in the HTML source
+        // and stored in ggbParams. Merge those here.
+        const fixedParams = {
+            showToolBar: true,
+            showAlgebraInput: true,
+            perspective: "G/A",
+            algebraInputPosition: "bottom",
+            appletOnLoad: focusCalcInput,
+            scaleContainerClass: "ptx-calculator-container",
+            allowUpscale: false,
+            autoHeight: false,
+        }
+        const generatedParams = (typeof ggbParams === "object" && ggbParams) ? ggbParams : {};
+        const params = {...generatedParams, ...fixedParams};
+        let applet = new GGBApplet(params, true);
+        applet.inject('ptx-geogebra-calculator');
+        return applet;
+    }
 
-     $('body').on('mouseout','#geogebra-calculator canvas', function(){
-         $('body').css('overflow', 'scroll')
-         $('html').css('margin-right', '0');
-         $('#calculator-container').css('right', calcoffsetR.toString() + 'px');
-         $('#calculator-container').css('bottom', calcoffsetB.toString() + 'px');
-     });
+    let applet;
+    calcButtonElement.addEventListener('click', function() {
+        if (calcDialog.dialog.open) {
+            let initialized = calcDialogElement.dataset.initialized || false;
+            if (!initialized) {
+                applet = initGeogebra();
+                calcDialogElement.dataset.initialized = true;
+            } else {
+                focusCalcInput();
+            }
+        }
+    });
 
-     $('body').on('click', '#calculator-toggle', function() {
-         if ($('#calculator-container').css('display') == 'none') {
-             $('#calculator-container').css('display', 'block');
-             $('#calculator-toggle').addClass('open');
-             $('#calculator-toggle').attr('title', 'Hide calculator');
-             $('#calculator-toggle').attr('aria-expanded', 'true');
-             create_calc_script = document.getElementById("create_ggb_calc");
-             if (!create_calc_script) {
-                 var ggbscript = document.createElement("script");
-                 ggbscript.id = "create_ggb_calc";
-                 ggbscript.innerHTML = "ggbApp.inject('geogebra-calculator')";
-                 document.body.appendChild(ggbscript);
-//                 setTimeout( function() {
-//                     $("#calculator-toggle").focus();
-//                     var inputfield = $("input.gwt-SuggestBox.TextField")[0];
-//                     console.log("inputfield", inputfield);
-//                     inputfield.focus();
-//                 }, 4000);
-             } else {
-                 pretext_geogebra_calculator_onload();
-//                 var inputfield = $("input.gwt-SuggestBox.TextField")[0];
-//                 console.log("inputfield", inputfield);
-//                 inputfield.focus();
-             }
-         } else {
-             $('#calculator-container').css('display', 'none');
-             $('#calculator-toggle').removeClass('open');
-             $('#calculator-toggle').attr('title', 'Show calculator');
-             $('#calculator-toggle').attr('aria-expanded', 'false');
-         }
-     });
+    //add resize observer for dialog
+    const resizeObserver = new ResizeObserver(entries => {
+        for (let entry of entries) {
+            if (entry.target === calcDialogElement && applet && applet.getAppletObject()) {
+                const width = entry.contentRect.width;
+                const height = entry.contentRect.height;
+                const topBarHeight = calcDialogElement.querySelector('.ptx-dialog-topbar').clientHeight || 0;
+                applet.getAppletObject().setSize(width, height - topBarHeight);
+                applet.getAppletObject().recalculateEnvironments();
+            }
+        }
+    });
+    resizeObserver.observe(calcDialogElement);
 });
 
-
-/*
-window.addEventListener("load",function(event) {
-//    setTimeout( function() {
-       console.log("changein play color");
-       $('figure > div.onclick > svg > path').attr('fill', '#0000aa');
-       $('path').attr('fill', '#0000aa')
-//    }, 5000)
-});
-*/
 
 window.addEventListener("load",function(event) {
     document.onkeyup = function(event)
@@ -408,9 +319,7 @@ window.addEventListener("load",function(event) {
         {
             case 13:  //CR
                  just_hit_escape = false;
-                 if($(document.activeElement).hasClass("aside-like")) {
-                    $(document.activeElement).toggleClass("front")
-                 } else if ($(document.activeElement).hasClass("workspace")) {
+                 if ($(document.activeElement).hasClass("workspace")) {
                     process_workspace()
                  }
             case 27: //esc
@@ -420,14 +329,6 @@ window.addEventListener("load",function(event) {
                     console.log("staying in the sage cell", parent_sage_cell, document.activeElement)
                     just_hit_escape = true;
                     setTimeout(function(){ just_hit_escape = false }, 1000);
-     //           console.log("parent_sage_cell", parent_sage_cell);
-     //           if ($(parent_sage_cell).hasClass('sagecell_editor')) {
-     //              console.log("I am trapped in a sage cell", $(document.activeElement).closest(".sagecell_editor"));
-     //              console.log($(document.activeElement));
-     //              var this_sage_cell = $(document.activeElement).closest(".sagecell_editor");
-     //              this_sage_cell.next().focus;
-     //           }
-     //           else
                 } else
                 if(knowl_focus_stack.length > 0 ) {
                    most_recently_opened = knowl_focus_stack.pop();
@@ -444,144 +345,6 @@ window.addEventListener("load",function(event) {
 },
 false);
 
-// a hack for hosted tracking
-
-window.addEventListener("load",function(event) {
-       if($('body').attr('id') == "judson-AATA") {
-           console.log("            found AATA");
-           console.log(" looking for id");
-           if (typeof eBookConfig !== 'undefined') {
-             if(eBookConfig['username']) {
-                aa_id = "run" + eBookConfig['username'];
-                ut_id = eBookConfig['username'];
-             console.log(" done looking for id", ut_id);
-var newscript = document.createElement('script');
-  newscript.type = 'text/javascript';
-  newscript.async = true;
-  newscript.src = 'https://pretextbook.org/js/' + '0.13' + '/' + 'trails' + '.js';
-  var allscripts = document.getElementsByTagName('script');
-  var s = allscripts[allscripts.length - 1];
-  console.log('s',s);
-  console.log("adding a script", newscript);
-  s.parentNode.insertBefore(newscript, s.nextSibling);
-  trail = true;
-             console.log(" done adding script");
-             } else {
-             console.log(" did not find username");
-             }
-           }  else {
-             console.log(" did not find eBookConfig")
-           }
-       }
-});
-
-function loadResource(type, file) {
-  /* type should be js or css */
-  if (typeof js_version === 'undefined') { js_version = '0.2' }
-  if (typeof css_version === 'undefined') { css_version = '0.6' }
-  var newresource, allresources, s;
-  var linktype = "script";
-  if (type == "css") { linktype = "link" }
-  newresource = document.createElement(linktype);
-
-  if (type == "css") {
-      newresource.type = 'text/css';
-      newresource.rel = 'stylesheet';
-      newresource.href = 'https://pretextbook.org/css/' + css_version + '/' + file + '.css';
-      newresource.href += '?minivers=' + minivers;
-  } else if (type == "js") {
-      newresource.type = 'text/javascript';
-//  newscript.async = true;
-      newresource.src = 'https://pretextbook.org/js/' + js_version + '/' + file + '.js';
-      newresource.src += '?minivers=' + minivers;
-  } else {
-      console.log("unknown resource type", type, "for", file);
-      return
-  }
-
-  allresources = document.getElementsByTagName(linktype);
-  s = allresources[allresources.length - 1];
-  console.log('s',s);
-  console.log("adding a resource", newresource);
-  s.parentNode.insertBefore(newresource, s.nextSibling);
-}
-
-
-window.addEventListener("load",function(event) {
-       if(false && $('body').attr('id') == "pretext-SA") {
-           console.log("            found DMOI");
-           if (typeof uname === "undefined") { uname = "" }
-           console.log("aaaa", uname, "  uname");
-           if(uname == "editor") {
-                loadResource('js', 'edit');
-           } else {
-                console.log("not enabling editing")
-           }
- /*       } else if ($('body').attr('id') == "pugetsound-SW") { */
-        } else if (false && window.location.href.includes("soundwriting.pugetsound")) {
-/* a bunch of temporary exploration for a Sound Writing survey */
-            console.log("please take our survey");
-            console.log(window.location.href);
-            console.log(window.location.href.includes("soundwriting.pugetsound"));
-
-            loadResource("js", "login");
-            loadResource("css", "features");
-            setTimeout( loadResource("js", "survey"), 1000);  /* I know: sloppy */
-
-  //      } else if ((typeof online_editable !== 'undefined') &&  online_editable) {
-        } else if (false && $('body').attr('id') == "pretext-SA") {
-            loadResource('css', 'features');
-            loadResource('js', 'login')
-            loadResource('js', 'edit');
-        } else {
-            var this_source_txt;
-            var source_url = window.location.href;
-            source_url = source_url.replace(/(#|\?).*/, "");
-            source_url = source_url.replace(/html$/, "ptx");
-            if (typeof sourceeditable !== 'undefined') {
-              fetch(source_url).then(
-                  function(u){ return u.text();}
-                ).then(
-                  function(text){
-                      this_source_txt = text;
-                      if (this_source_txt.includes("404 Not")) {
-                          console.log("Editing not enabled: source unavailable")
-                      } else {
-                        loadResource('css', 'features');
-                        loadResource('css', 'edit');
-                        loadResource('js', 'login')
-                        loadResource('js', 'edit');
-                      }
-                  }
-                );
-              } else {
-                   console.log("Source file unavailable: editing not possible")
-              }
-        }
-
-});
-
-// this is to open every knowl on a page
-// (this code is not actually used anywhere)
-window.addEventListener("load",function(event) {
-   if($('body').hasClass("braillesample")) {
-       var knowl_id_counterX = 0;
-       console.log("            found braillesample");
-       var all_knowls = $('[data-knowl]');
-       console.log("found", all_knowls.length, "knowls");
-       console.log("which are", all_knowls);
-       for (var j=1; j < all_knowls.length; ++j) {
-           console.log(j, "un-knowling", all_knowls[j]);
-           console.log("attr", $(all_knowls[j]).attr("data-knowl"));
-           $knowl = $(all_knowls[j]);
-           if(!$knowl.attr("data-knowl-uid")) {
-              $knowl.attr("data-knowl-uid", knowl_id_counterX);
-              knowl_id_counterX++;
-            }
-            knowl_click_handler($knowl);
-          // knowl_click_handler($(all_knowls[j]))
-       }
-}});
 
 // when the anchor is a knowl, open it
 window.addEventListener("load",function(event) {
@@ -611,316 +374,44 @@ window.addEventListener("load",function(event) {
    }
 });
 
-/* .onepage  worksheets  adjust workspace to fit printed page length */
-
-function scaleWorkspaceIn(obj, subobj, scale, tmporfinal) {
-    console.log("initial height", obj.clientHeight);
-    these_workspaces = subobj.querySelectorAll('.workspace');
-    if (obj != subobj) {
-        console.log("distinct subobj", obj, subobj);
-        console.log("these_workspaces", these_workspaces);
-        /* this is starting to look like a hack */
-        if (subobj.classList.contains("workspace")) {  //we were given one workspace
-            console.log("we were handed a workspace");
-            these_workspaces = [subobj]
-        }
-        console.log("now these_workspaces", these_workspaces);
-    }
-    for (var j=0; j<these_workspaces.length; ++j) {
-        this_work = these_workspaces[j];
-        this_proportion = this_work.getAttribute("data-space");
-        if (!this_proportion) { this_proportion = "1.00" }
-        this_proportion_number = parseFloat(this_proportion.slice(0, -2));
-        if (this_proportion.endsWith("in")) {
-            this_proportion_number *= 10.0;
-        } else if (this_proportion.endsWith("cm")) {
-            this_proportion_number *= 3.94;  /* 10/2.54 */
-        } else {
-            console.log("No units on workspace size:  interpreting as mm", this_work)
-            this_proportion_number = this_proportion * 40;
-        }
-        this_proportion_scaled = scale * this_proportion_number;
-        this_work.setAttribute('style', 'height: ' + this_proportion_scaled + 'px');
-        if (tmporfinal == "final" && scale < 11) {
-            this_work.classList.add("squashed")
-        } else {
-            this_work.classList.remove("squashed")
-        }
-        if (tmporfinal == "final" && scale > 13) {
-            console.log("showing extra space");
-            var this_proportion_scaledX = 12*this_proportion_number;
-            this_work.style.background = "linear-gradient( #eef 0px, #eef " + this_proportion_scaledX + "px, #eef " + this_proportion_scaledX + "px, #99f " + (this_proportion_scaledX + 5) + "px, #99f " + (this_proportion_scaledX + 5) + "px, #99f 100%)";
-        } else {
-             this_work.style.background = null;
-        }
-        if (tmporfinal == "final") {
-            var enclosingspace = this_work.parentElement.parentElement;
-            console.log("enclosingspace was", enclosingspace)
-            if (enclosingspace.tagName == "ARTICLE") {
-                enclosingspace = enclosingspace.parentElement;
-                console.log("enclosingspace is now", enclosingspace)
-            }
-            var enclosingspacebottom =  enclosingspace.getBoundingClientRect()["bottom"];
-            /* there should be an easier way to do this */
-            /* when the enclosing parent has padding, we want to ignore that */
-            enclosingspacepadding = parseFloat(getComputedStyle(enclosingspace)["padding-bottom"].slice(0, -2));
-            enclosingspacebottom = enclosingspacebottom - enclosingspacepadding;
-            console.log(enclosingspace, "enclosingspace padding-bottom", getComputedStyle(enclosingspace)["padding-bottom"]);
-            var lastsibling = enclosingspace.lastElementChild;
-            var lastworkspacebottom = lastsibling.getBoundingClientRect()["bottom"];
-            console.log("XX", this_work, "oo", enclosingspace, "pp", enclosingspacebottom, "xx", lastworkspacebottom, "diff", enclosingspacebottom - lastworkspacebottom);
-            if (enclosingspacebottom - lastworkspacebottom < 5) {
-                this_work.classList.add("tight")
-            } else {
-                this_work.classList.remove("tight")
-            }
-        }
-    }
-    return obj.clientHeight
-}
-
-function adjustWorkspace() {
-
-    console.log("adjusting workspace");
-    $(".workspace").attr("contenteditable", "true");
-    document.execCommand("defaultParagraphSeparator", false, "br");
-
-    var all_pages = document.querySelectorAll('body .worksheet .onepage');
-    var a = 14.0;
-    var b = 10.0;
-    var heightA, heightB, this_item;
-
-    var pagelayout = "letter";
-    if (document.body.classList.contains("a4")) { pagelayout = "a4" }
-
-    var pageheight = [];
-
-    for (var i = 0; i < all_pages.length; i++) {
-        /* for assigning page height later */
-        if (pagelayout == "a4") { pageheight.push(1100) }
-        else { pageheight.push(1030) }
-
-        this_item = all_pages[i];
-        if (i == 0) { this_item.classList.add("firstpage") }
-            /* not else if: could be one-page worksheet */
-        if (i == all_pages.length - 1) { this_item.classList.add("lastpage") }
-        console.log(this_item.getBoundingClientRect(), "ccc", this_item);
-        console.log(this_item.parentElement.getBoundingClientRect(), "ddd", this_item.parentElement);
-    }
-    for (var i = 0; i < all_pages.length; i++) {
-       this_item = all_pages[i];
-
-       /* not sure if this is the place to do it, but the first page might
-          have items before it, and the last page mught have items after it */
-       var worksheetData = this_item.parentElement.getBoundingClientRect();
-       var pageData = this_item.getBoundingClientRect();
-       console.log("worksheetData", worksheetData, "pageData", pageData);
-       var pageExtraHeight = 0;
-       if (this_item.classList.contains("firstpage")) {
-           console.log("this_item",this_item.getBoundingClientRect(),this_item.getBoundingClientRect()["y"]);
-           console.log("this_item parent",this_item.parentElement.getBoundingClientRect(),this_item.parentElement.getBoundingClientRect()["y"]);
-           pageExtraHeight += pageData["top"] - worksheetData["top"];  /* 45 for padding */
-       }
-       if (this_item.classList.contains("lastpage")) {
-           pageExtraHeight += worksheetData["bottom"] - pageData["bottom"];
-       }
-       pageheight[i] -= pageExtraHeight
-       console.log("worksheetData", worksheetData, "pageData", pageData);
-       console.log(i, "i", pageExtraHeight, "pageExtraHeight");
-
-       heightA = scaleWorkspaceIn(this_item, this_item, a, "tmp");
-       heightB = scaleWorkspaceIn(this_item, this_item, b, "tmp");
-       console.log("heights", heightA, " xx ", heightB, "oo", this_item);
-       console.log(i, "goal height", pageheight[i]);
-       /* a magicscale makes the output the height of the minimum specified input */
-       var magicscale = 12;
-
-       if (heightA != heightB) {
-         magicscale = (pageheight[i]*(a - b) + b*heightA - a*heightB)/(heightA - heightB);
-       }
-       console.log("magicscale", magicscale, "of", this_item);
-       scaleWorkspaceIn(this_item, this_item, magicscale, "final");
-       all_pages[i].setAttribute("style", 'height: ' + pageheight[i].toString() + 'px');
-
-       var this_height = this_item.clientHeight;
-       console.log(this_height, "ttt", this_item);
-       console.log(this_item.getBoundingClientRect(), "222ccc", this_item);
-       console.log(this_item.parentElement.getBoundingClientRect(), "222ddd", this_item.parentElement);
-
-
-       /* now go back and see if any of the squashed non-tight items can be expanded */
-       var these_squashed = this_item.querySelectorAll('.squashed:not(.tight)');
-       console.log("these_squashed", these_squashed);
-       console.log('are squashed by', magicscale);
-       for (var j=0; j < these_squashed.length; ++j) {
-           var this_q = these_squashed[j];
-           heightA = scaleWorkspaceIn(this_item, this_q, 12, "tmp");
-           console.log("heightA", heightA);
-           if (heightA <= this_height) {
-               scaleWorkspaceIn(this_item, this_q, 12, "final");
-           } else {
-               scaleWorkspaceIn(this_item, this_q, magicscale, "final");
-           }
-       }
-    }
-    console.log("finished adjusting workspace");
-}
-
-function urlattribute() {
-        var this_urlstub = window.location.hostname;
-        document.body.setAttribute("data-urlstub", this_urlstub);
-}
-
-window.addEventListener("load",function(event) {
-
-  if (document.body.classList.contains("worksheet")) {
-      console.log("begin adjusting workspace");
-
-      var born_hidden_knowls = document.querySelectorAll('article > a[data-knowl]');
-      console.log("born_hidden_knowls", born_hidden_knowls);
-      for (var j=0; j < born_hidden_knowls.length; ++j) {
-          born_hidden_knowls[j].click()
-      }
-  /* not the right way:  need to figure out what this needs to wait for */
-      window.setTimeout(adjustWorkspace, 1000);
-
-      window.setTimeout(urlattribute, 1500);
-  }
+// START Support for code-copy button functionality
+document.addEventListener("click", (ev) => {
+    const codeBox = ev.target.closest(".clipboardable");
+    if (!navigator.clipboard || !codeBox) return;
+    const button = ev.target.closest(".code-copy");
+    // Copy a clone with "unselectable" content removed (e.g. a console prompt),
+    // so the copied text matches what a manual selection would capture.
+    const pre = codeBox.querySelector("pre").cloneNode(true);
+    pre.querySelectorAll(".unselectable").forEach((el) => el.remove());
+    const preContent = pre.textContent;
+    navigator.clipboard.writeText(preContent);
+    button.classList.toggle("copied")
+    setTimeout(() => button.classList.toggle("copied"), 1000);
 });
 
-/*
-window.setInterval(function(){
-    console.log('$(":focus")', $(":focus"));
-}, 5000);
-*/
-
-
-//-----------------------------------------------------------------
-// Dark/Light mode swiching
-
-function isDarkMode() {
-    if (document.documentElement.dataset.darkmode === 'disabled')
-        return false;
-
-    const currentTheme = localStorage.getItem("theme");
-    if (currentTheme === "dark")
-        return true;
-    else if (currentTheme === "light")
-        return false;
-
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-}
-
-function setDarkMode(isDark) {
-    if(document.documentElement.dataset.darkmode === 'disabled')
-        return;
-
-    const parentHtml = document.documentElement;
-    const iframes = document.querySelectorAll("iframe[data-dark-mode-enabled]");
-
-    // Update the parent document
-    if (isDark) {
-        parentHtml.classList.add("dark-mode");
-    } else {
-        parentHtml.classList.remove("dark-mode");
-    }
-
-    // Sync each iframe's <html> class with the parent
-    for (const iframe of iframes) {
-        try {
-            const iframeHtml = iframe.contentWindow.document.documentElement;
-            if (isDark) {
-              iframeHtml.classList.add("dark-mode")
-            } else {
-              iframeHtml.classList.remove("dark-mode")
-            }
-        } catch (err) {
-            console.warn("Dark mode sync to iframe failed:", err);
-        }
-    }
-
-    const modeButton = document.getElementById("light-dark-button");
-    if (modeButton) {
-        modeButton.querySelector('.icon').innerText = isDark ? "light_mode" : "dark_mode";
-        modeButton.querySelector('.name').innerText = isDark ? "Light Mode" : "Dark Mode";
-    }
-}
-
-// Run this as soon as possible to avoid flicker
-setDarkMode(isDarkMode());
-
-// Rest of dark mode setup logic waits until after load
-window.addEventListener("DOMContentLoaded", function(event) {
-    // Rerun setDarkMode now that it can update buttons
-    const isDark = isDarkMode();
-    setDarkMode(isDark);
-
-    const modeButton = document.getElementById("light-dark-button");
-    modeButton.addEventListener("click", function() {
-        const wasDark = isDarkMode();
-        setDarkMode(!wasDark);
-        localStorage.setItem("theme", wasDark ? "light" : "dark");
-    });
-});
-
-// Share button and embed in LMS code
-window.addEventListener("DOMContentLoaded", function(event) {
-    const shareButton = document.getElementById("embed-button");
-    if (shareButton) {
-        const sharePopup = document.getElementById("embed-popup");
-        const embedCode = "<iframe src='" + window.location.href + "?embed' width='100%' height='1000px' frameborder='0'></iframe>";
-        const embedTextbox = document.getElementById("embed-code-textbox");
-        if (embedTextbox) {
-            embedTextbox.value = embedCode;
-        }
-        shareButton.addEventListener("click", function() {
-            sharePopup.classList.toggle("hidden");
-        });
-        const copyButton = document.getElementById("copy-embed-button");
-        if (copyButton) {
-            copyButton.addEventListener("click", function() {
-                const embedTextbox = document.getElementById("embed-code-textbox");
-                if (embedTextbox) {
-                    navigator.clipboard.writeText(embedCode).then(() => {
-                        console.log("Embed code copied to clipboard!");
-                    }).catch(err => {
-                        console.error("Failed to copy embed code: ", err);
-                    });
-                    //copyButton.innerHTML = "✓✓";
-                    // show confirmation for 2 seconds:
-                    copyButton.querySelector('.icon').innerText = "library_add_check";
-                    setTimeout(function() {
-                        copyButton.querySelector('.icon').innerText = "content_copy";
-                        sharePopup.classList.add("hidden");
-                    }, 450);
-                }
-            });
-        }
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".clipboardable");
+    for (el of elements) {
+        const div = document.createElement("div");
+        div.classList.add("clipboardable");
+        el.classList.remove("clipboardable");
+        el.replaceWith(div);
+        div.insertAdjacentElement("afterbegin", el);
+        div.insertAdjacentHTML("beforeend", `
+    <button class="code-copy" title="Copy code" role="button" aria-label="Copy code" >
+        <span class="copyicon material-symbols-outlined">content_copy</span>
+        <span class="checkmark material-symbols-outlined">check</span>
+    </button>
+            `.trim());
     }
 });
+// END Support for code-copy button functionality
 
-// Hide everything except the content when the URL has "embed" in it
-window.addEventListener("DOMContentLoaded", function(event) {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has("embed")) {
-        // Set dark mode based on value of param
-        if (urlParams.get("embed") === "dark") {
-            setDarkMode(true);
-        } else {
-            setDarkMode(false);
-        }
-        const elemsToHide = [
-            "ptx-navbar",
-            "ptx-masthead",
-            "ptx-page-footer",
-            "ptx-sidebar",
-            "ptx-content-footer"
-        ];
-        for (let id of elemsToHide) {
-            const elem = document.getElementById(id);
-            if (elem) {
-                elem.classList.add("hidden");
-            }
-        }
+
+window.addEventListener("DOMContentLoaded", () => {
+    const userDropdownButton = document.getElementById("ptx-user-dropdown-button");
+    const userDropdownContent = document.getElementById("ptx-user-dropdown-content");
+    if (userDropdownButton && userDropdownContent) {
+        new PTXDropdown(userDropdownContent, userDropdownButton);
     }
 });
