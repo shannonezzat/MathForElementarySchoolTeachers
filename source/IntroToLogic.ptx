@@ -15,7 +15,7 @@
     <li xml:id="LogicIntro">
       
      introduce the topic of logical statements </li>
-    <li> give precise meaning to common english words like "and", "or", "all", "some" "if", and "then"</li>
+    <li> give precise meaning to common english words like "and", "or", "all", "some", "if", and "then"</li>
     <li> determine exactly when logical statements are true (and when they are false) and how to show this</li>
     <li> introduce various related statements to "if-then" statements. 
         
@@ -46,7 +46,7 @@
 <example><title>Non-Examples</title>
 
 <p>
-    "What time is it?" is a sentence that is not a statement. It is simply a question and cannot be given a truth value of true or false. Similarly, "Go do you homework" is a command, and not a statement.</p>
+    "What time is it?" is a sentence that is not a statement. It is simply a question and cannot be given a truth value of true or false. Similarly, "Go do you homework." is a command, and not a statement.</p>
 </example>
 </definition>
 
@@ -132,7 +132,7 @@
       <li>
         <ol marker="a">
           <li>Open</li>
-          <li>Not open(true)</li>
+          <li>Not open (true)</li>
           <li>Open</li>
           <li>Not open (false)</li>
         </ol>
@@ -213,7 +213,7 @@
         </li>
         <li>
             <p>
-                I had neither a donair or pizza for dinner.
+                I had neither a donair nor pizza for dinner.
             </p>
         </li>
     </ol>
@@ -280,7 +280,7 @@
     If <m>P:=</m> "2 is a prime number" (which is true) then <m>\sim P = </m> "2 is not a prime number" (which is false).
 </example>
 <example>
-    <p>If <m>P = "x &lt; 5"</m> over the domain of counting numbers (which is true when <m>= 1,2,3,4</m> and false otherwise) then <m>\sim P = "x \geq 5"</m> (which is false when <m>x=1,2,3,4</m> and true otherwise). You could also write <m>\sim P</m> as <m>"x > 4"</m>, or in many other logically equivalent ways.
+    <p>If <m>P = "x &lt; 5"</m> over the domain of counting numbers (which is true when <m>x= 1,2,3,4</m> and false otherwise) then <m>\sim P = "x \geq 5"</m> (which is false when <m>x=1,2,3,4</m> and true otherwise). You could also write <m>\sim P</m> as <m>"x &gt; 4"</m>, or in many other logically equivalent ways.
 </p>
 </example>
 </definition>
@@ -382,7 +382,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
 </example>
 </definition>
 
-<p>You may have noticed that these quantified statements are a combination of a quantifier (universal or existential) and an open sentence, thought sometimes when written in English the variable can be hidden. For example, "there is an odd integer" can be reworded to "there is an integer <m>x</m> such that <m>x</m> is odd." </p>
+<p>You may have noticed that these quantified statements are a combination of a quantifier (universal or existential) and an open sentence, though sometimes when written in English the variable can be hidden. For example, "there is an odd integer" can be reworded to "there is an integer <m>x</m> such that <m>x</m> is odd." </p>
 
 <exercise>
     <p>
@@ -405,7 +405,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 </li>
                 <li>
                     <p>
-                        For all polygons <m>p</m>, <m>p</m> does not have exactly two sides (T)                       , , 
+                        For all polygons <m>p</m>, <m>p</m> does not have exactly two sides (T)                     
                     </p>
                 </li>
                 <li>
@@ -458,7 +458,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
             </li>
             <li>
                 <p>
-                    Other than vacuously true statements, if a universally quantified statement is true so is the "existentially" quantified version. For example, "all polygons have at least three sides" is true, so "some polygons have at least three sides" is true too! That is; if at least one object satisfies P then "All P are Q" being true means thatv "Some P are Q" is true as well. Remember, existential quantifiers only care of an object exists, not how many. 
+                    Other than vacuously true statements, if a universally quantified statement is true so is the "existentially" quantified version. For example, "all polygons have at least three sides" is true, so "some polygons have at least three sides" is true too! That is; if at least one object satisfies P then "All P are Q" being true means that "Some P are Q" is true as well. Remember, existential quantifiers only care if an object exists, not how many. 
                 </p>
             </li>
         </ol>
@@ -616,7 +616,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 </image>
             </p>
             <p>
-                Now, we want a circle to represent all objects that satisfy B (in out example, things that are grey). Note that there could be cats that are not grey, and grey things that are not cats, so we need to draw the diagram so that they only partially overlap. We also know that there is definitely at least one A that is B (cat that is grey) since the statement tells us so, therefore we can put a little dot in the intersection to represent that object (the grey cat).
+                Now, we want a circle to represent all objects that satisfy B (in our example, things that are grey). Note that there could be cats that are not grey, and grey things that are not cats, so we need to draw the diagram so that they only partially overlap. We also know that there is definitely at least one A that is B (cat that is grey) since the statement tells us so, therefore we can put a little dot in the intersection to represent that object (the grey cat).
             </p>
             <p>
                 <image source="Section1.4e.svg" width="50%">
@@ -641,7 +641,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 </image>
             </p>
             <p>
-                Or as intersecting circles with the intersection hatch out to indicate it is empty.
+                Or as intersecting circles with the intersection hatched out to indicate it is empty.
             </p>
 
             <image source="Checkpoint1.21b.svg" width="50%">
@@ -662,7 +662,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
         In the coming sections, we will be using even and odd numbers as examples of quantified and conditional statements. For example, we can say "All pairs of whole numbers <m>a,b</m> that are both odd have a sum <m>a+b</m> that is even and a product <m>a \times b</m> that is odd". 
     </p>
     <p>
-        To determine the truth values of these statements, it's not enough to only look at some examples, as we'll see in the upcoming section <xref ref="subsec-Counterexamples"/>. So we will have to learn to express the idea of even and odd numbers it terms of the property that makes them even and odd.
+        To determine the truth values of these statements, it's not enough to only look at some examples, as we'll see in the upcoming section <xref ref="subsec-Counterexamples"/>. So we will have to learn to express the idea of even and odd numbers in terms of the property that makes them even and odd.
     </p>
     <exercise>
        <p> How would you explain or show to someone that the number 12 is even? How about that 15 is odd? Can you extend these ideas to any even or odd number? </p>
@@ -673,7 +673,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
            <p>
             
             <image source="Checkpoint1.22a.svg" width="50%">
-                <description>2=2x6</description>
+                <description>12=2x6</description>
                 
             </image>
            </p>
@@ -684,13 +684,12 @@ When we talk about mathematical ideas, we want to express how many objects they 
                In general, the number of rows of 2 isn't particularly important to say that a number is even; it's the fact that we can group the number into *some amount* of rows of 2. Usually we'll express this as <m>k</m> rows of 2. So for an even whole number <m>n</m>, we know <m>n=2k</m> for some whole number <m>k</m>.
            </p>
            <p>
-            <figure xml:id="gtgtg">
-                <caption></caption>
+            
             
             <image source="Checkpoint1.22b.svg" width="50%">
                 <description>2k=2xk</description>
                 </image>
-            </figure>
+           
            </p>
            <p>
                To show 15 is odd, you probably drew a picture similar to this:
@@ -704,7 +703,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                Here we took the 15 dots and organized them into 7 rows of 2, but we had 1 dot remaining where we were unable to complete a full row of two. Hence, we can write <m>15=2 \times 7 + 1.</m>
             </p>
             <p>
-                Like for even numbers, the number of rows of 2 isn't particularly important to say that a number is odd; it's the fact that we can group the number into as many rows of 2 as possible, we always have 1 left over. Usually we'll express this as <m>k</m> rows of 2 + 1 remaining. So for a odd whole number <m>n</m>, we know <m>n=2k+1</m> for some whole number <m>k</m>.
+                Like for even numbers, the number of rows of 2 isn't particularly important to say that a number is odd; it's the fact that we can group the number into as many rows of 2 as possible, we always have 1 left over. Usually we'll express this as <m>k</m> rows of 2 + 1 remaining. So for an odd whole number <m>n</m>, we know <m>n=2k+1</m> for some whole number <m>k</m>.
             </p>
             <p>
                 In picture form:
@@ -809,7 +808,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     
     <introduction>
         <p>
-            One of the most important types of statements in mathematics is the <term>conditional statements</term> or, more colloquially, <term>if-then statement</term>. These statements are of the form "if P then Q". We call P the <term>condition</term> and Q the <term>conclusion</term> of the conditional statement, or simply the if-part and then-part. We want to know when these statements are true or false, so let's explore this now:
+            One of the most important types of statements in mathematics is the <term>conditional statement</term> or, more colloquially, <term>if-then statement</term>. These statements are of the form "if P then Q". We call P the <term>condition</term> and Q the <term>conclusion</term> of the conditional statement, or simply the if-part and then-part. We want to know when these statements are true or false, so let's explore this now:
         </p>
     </introduction>
 
@@ -1058,7 +1057,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 
             </p>
             <p>
-                Since the expression in brackets is integers multiplied and added together, it is an integer, and thus the sum is odd. We have finished our proof.
+                Since the expression in brackets are integers multiplied and added together,  the expression is an integer, and thus the sum is odd. We have finished our proof.
             </p>
             
 
@@ -1109,7 +1108,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
     <subsection xml:id="subsec-Counterexamples">
         <title>Counterexamples</title>
         <p>
-            When we were learning about conditional statements, we discussed when conditional statements were false. Remember, these are false exactly when the if-part true and the then-part is false. 
+            When we were learning about conditional statements, we discussed when conditional statements were false. Remember, these are false exactly when the if-part is true and the then-part is false. 
             <definition xml:id="def-Counterexample">
                 <statement>
                     <p>
@@ -1253,7 +1252,7 @@ select all those cards, but only those cards, which you would have to turn over 
           </ol>  
         </p>
         <p>
-            The cards that satisfy this are the D (the-if part is true) to see if there is a 3 on the other side, and the 9 (the then-part is false) to see if there is not a D on the other side. 
+            The cards that satisfy this are the D (the if-part is true) to see if there is a 3 on the other side, and the 9 (the then-part is false) to see if there is not a D on the other side. 
         </p>
         <p>
             Note the A and the 3 can not be counterexamples. There is no way for the if-part to be true and the then-part to be false.
@@ -1296,7 +1295,7 @@ select all those cards, but only those cards, which you would have to turn over 
                </li>
                <li>
                    <p>
-                       If <m>n</m> is a number whose English name has four letters, then <m>n</m> is odd or less than eight. (domain: all counting numbers). Make this diagram with three circles: all numbers with four letter in their name, all numbers less than eight, and all odd numbers.  
+                       If <m>n</m> is a number whose English name has four letters, then <m>n</m> is odd or less than eight. (domain: all counting numbers). Make this diagram with three circles: all numbers with four letters in their name, all numbers less than eight, and all odd numbers.  
                    </p>
                </li>
            </ol>
@@ -1363,7 +1362,7 @@ select all those cards, but only those cards, which you would have to turn over 
            </solution>
            <solution>
                <p>
-                   Reworded: All numbers with English names consisting of four letters is odd or less than eight.
+                   Reworded: All numbers with English names consisting of four letters are odd or less than eight.
                </p>
                <p>
                    Diagram (this one is a little more complicated!): TO BE ADDED
@@ -1434,7 +1433,7 @@ select all those cards, but only those cards, which you would have to turn over 
             <definition xml:id="def-ConvInvContra">
                 <statement>
                     <p>
-                        Let S="if P then Q" be a conditional statement for some P and Q. Then the conditional statement "if Q then P is the <term>converse</term>" of S, the conditional statement "if (not P) then (not Q)" is the <term>inverse</term> of S, and the conditional statement "if (not Q) then (not P)" is the <term>contrapositive</term> of S.
+                        Let S="if P then Q" be a conditional statement for some P and Q. Then the conditional statement "if Q then P" is the <term>converse</term>" of S, the conditional statement "if (not P) then (not Q)" is the <term>inverse</term> of S, and the conditional statement "if (not Q) then (not P)" is the <term>contrapositive</term> of S.
                     </p>
                 </statement>
             </definition>
@@ -1502,7 +1501,7 @@ select all those cards, but only those cards, which you would have to turn over 
                 <ol>
                     <li>
                         <p>
-                            Original: If L a whole number with a ones-digit of 2 or 4, then L is even. (T)
+                            Original: If L is a whole number with a ones-digit of 2 or 4, then L is even. (T)
                         </p>
                     </li>
                     <li>
@@ -1512,7 +1511,7 @@ select all those cards, but only those cards, which you would have to turn over 
                     </li>
                     <li>
                         <p>
-                            Inverse: If L is an whole number with a ones-digit other than 2 or 4 then it is odd. (F; counterexample 16)
+                            Inverse: If L is a whole number with a ones-digit other than 2 or 4 then it is odd. (F; counterexample 16)
                         </p>
                     </li>
                     <li>
@@ -1552,7 +1551,7 @@ select all those cards, but only those cards, which you would have to turn over 
             These situations are very special, and we can think of one part as just a "rewording" of the idea of the other part. Formally, we call statements where both the original statement and its converse are true <term>biconditional statements</term> and we write it as "P if and only if Q", which means "(if P then Q) *and* (if Q then P)". 
         </p>
         <p>
-            Let's look a a truth table of the biconditional statement:
+            Let's look at a truth table of the biconditional statement:
         </p>
         <p>
             <image source="Section2.72.svg">
@@ -1590,7 +1589,7 @@ select all those cards, but only those cards, which you would have to turn over 
             </solution>
         </exercise>
         <p>
-            When we want to prove the biconditional statement "P if and only if Q", we do it in two proofs: first, we prove "if P then Q"; second, we prove "if Q then P". Note that sometimes it's easier to use a logically equivalent form to prove a results (e.g. you can prove the inverse instead of the converse since they are logically equivalent).
+            When we want to prove the biconditional statement "P if and only if Q", we do it in two proofs: first, we prove "if P then Q"; second, we prove "if Q then P". Note that sometimes it's easier to use a logically equivalent form to prove a result (e.g. you can prove the inverse instead of the converse since they are logically equivalent).
         </p>
         <example>
             <p>Prove " a whole number <m>n</m> is even if and only if <m>n^2</m> is even."</p>
@@ -1617,7 +1616,7 @@ select all those cards, but only those cards, which you would have to turn over 
                     </li>
                 </ol>
                 <p>
-                    Since we showed that both the original statement and its inverse are true, we have showed the biconditional statement is true.
+                    Since we showed that both the original statement and its inverse are true, we have shown the biconditional statement is true.
                 </p>
             </solution>
         </example>
@@ -1666,7 +1665,7 @@ select all those cards, but only those cards, which you would have to turn over 
     
    <p> We often talk about collections of objects, like whole numbers, or integers, or polygons, or triangles. So far, we've dealt with these just with words but it was pretty repetitive and clumsy. It would be nice (and it is important!) if we had some rules for talking about collections of objects. </p>
    <p>
-       In this section, we do introduce our language for collections of objects and their members. We also look at how to combine collections and the relationship between our language for collections and logic.
+       In this section, we introduce our language for collections of objects and their members. We also look at how to combine collections and the relationship between our language for collections and logic.
    </p>
    <p>
    <definition xml:id="def-Set">
@@ -1717,7 +1716,7 @@ select all those cards, but only those cards, which you would have to turn over 
 
    <exercise>
        List all of the elements of these sets, which are initially given in a text description or in set builder notation:
-       \<ol>
+       <ol>
            <li>
                <p>
                    <m>A_1 = \{ \text{all prime numbers less than 11} \}</m>
@@ -1821,11 +1820,11 @@ select all those cards, but only those cards, which you would have to turn over 
            </li>
        </ol>
        <p>
-           Let's check if <m>B \subseteq A</m>. If we find one element that is in B but not in A, then <m>B \not \subseteq A.</m>. Note that <m>8 \in B</m> but <m>8 \not \in A</m>. We've found a counterexample to the definition of a subset, thus <m>B \not \subseteq A.</m>
+           Let's check if <m>B \subseteq A</m>. If we find one element that is in B but not in A, then <m>B \not \subseteq A.</m> Note that <m>8 \in B</m> but <m>8 \not \in A</m>. We've found a counterexample to the definition of a subset, thus <m>B \not \subseteq A.</m>
                
         </p>
         <p>
-            Is <m>C \subseteq A</m>? We can see that all of the element of C, that is 1,2,4, and 6, are also elements of A. Thus <m>C \subseteq A.</m>
+            Is <m>C \subseteq A</m>? We can see that all of the elements of C, that is 1,2,4, and 6, are also elements of A. Thus <m>C \subseteq A.</m>
         </p>
         <p>
             Is <m>D \subseteq A</m>? Yes! This is "vacuously true" as there is no counterexample to the definition of subset. Alternatively you can view it the following way: The statement <m>D  \not \subseteq A</m> is not true, as there is no element of D that is not an element of A. So if <m>D \not \subseteq A</m> is false, it must be that its negation <m>D \subseteq A</m> is true.
@@ -1979,7 +1978,7 @@ select all those cards, but only those cards, which you would have to turn over 
        <definition xml:id="def-SetDifference">
            <statement>
                <p>
-                   Let A and B be two sets. Then the <term>difference</term> of A and B, written <m>A - B</m> is the set of all elements that are in A but not in B. In set notation we write <m>A - B = \{ x \ | \ x \in A </m>> and <m>> x \not \in B\}.</m>
+                   Let A and B be two sets. Then the <term>difference</term> of A and B, written <m>A - B</m> is the set of all elements that are in A but not in B. In set notation we write <m>A - B = \{ x \ | \ x \in A </m> and <m> x \not \in B\}.</m>
                </p>
            </statement>
        </definition>
@@ -2018,7 +2017,7 @@ select all those cards, but only those cards, which you would have to turn over 
             Then <me>A \cup B = \{ 1,2,3,4,5,6,7,8\}, \ A \cap B = \{2,4,6\}, \ A - B = \{1,3,5,7\}, \ B - A = \{8\}, \ \sim A = \{8,9,10\} </me>
         </p>
         <p>
-            Here are some Venn diagram showing the sets above:
+            Here are some Venn diagrams showing the sets above:
         </p>
         <p>
             <image source="Example3.14.svg">
@@ -2426,7 +2425,7 @@ select all those cards, but only those cards, which you would have to turn over 
           <li>{a, b, c, d, e, f}</li>
           <li><m>{1, 2, 3, 5, 1, 4}</m></li>
           <li>{Cats, dogs, parrots, goldfish, snakes}</li>
-          <li><m>{x ∈ ℤ ∣ x \text{ is prime}}</m></li>
+          <li><m>\{x \in \mathbb{Z} | x \text{ is prime}\}</m></li>
           <li>{I want to go to the park.}</li>
         </ol>
       </statement>
@@ -2440,8 +2439,8 @@ select all those cards, but only those cards, which you would have to turn over 
           <li>{All Canadian provinces}</li>
           <li><m>∅</m></li>
           <li>{All prime numbers between 10 and 30}</li>
-          <li><m>{x \in \mathbb{Z} ∣ |x| &lt; 4}</m></li>
-          <li>{Three NHL teams}</li>
+          <li><m>\{x \in \mathbb{Z} ∣ |x| &lt; 4\}</m></li>
+          <li>{Canadian NHL teams}</li>
         </ol>
       </statement>
     </exercise>
@@ -2449,14 +2448,14 @@ select all those cards, but only those cards, which you would have to turn over 
     <exercise>
       <statement>
         <p>Using the following sets, write the resulting set of each of the set operations below:</p>
-        <p><m>A = {1, 2, 3, 7, 8}</m><br/>
-           <m>B = {4, 9, 1, 0}</m><br/>
-           <m>C = {1^4, 2^2, (7-2), 10}</m><br/>
-           <m>D = {6}</m></p>
+        <p><m>A = \{1, 2, 3, 7, 8\}</m><br/>
+           <m>B = \{4, 9, 1, 0\}</m><br/>
+           <m>C = \{1^4, 2^2, (7-2), 10\}</m><br/>
+           <m>D = \{6\}</m></p>
         <ol marker="a">
-          <li><m>A ∪ B</m></li>
-          <li><m>B ∩ C</m></li>
-          <li><m>A ∩ B ∩ C</m></li>
+          <li><m>A \cup B</m></li>
+          <li><m>B \cap C</m></li>
+          <li><m>A \cap B \cap C</m></li>
           <li><m>B - A</m></li>
         </ol>
       </statement>
@@ -2464,27 +2463,27 @@ select all those cards, but only those cards, which you would have to turn over 
     
     <exercise>
       <statement>
-        <p>Create a set with cardinality 20 in the universe <m>ℕ₀</m>.</p>
+        <p>Create a set with cardinality 20 in the universe <m>\mathbb{N}_0</m>.</p>
       </statement>
     </exercise>
     
     <exercise>
       <statement>
-        <p>Within the universe <m>ℤ</m>, find <m>∼ℕ</m>.</p>
+        <p>Within the universe <m>\mathbb{Z}</m>, find <m>\tilde\mathbb{N}</m>.</p>
       </statement>
     </exercise>
     
     <exercise>
       <statement>
-        <p>Prove that for any two sets <m>A, B</m>, <m>A ∩ B</m> is a subset of both <m>A</m> and <m>B</m>. Is the same true of <m>A ∪ B</m>? If so, prove it. If not, provide a counterexample.</p>
+        <p>Prove that for any two sets <m>A, B</m>, <m>A \cap B</m> is a subset of both <m>A</m> and <m>B</m>. Is the same true of <m>A \cup B</m>? If so, prove it. If not, provide a counterexample.</p>
       </statement>
     </exercise>
     
     <exercise>
       <statement>
-        <p>In the universe of integers, if <m>A - B = {x = 2n ∣ n ∈ ℕ₀}</m>, then for each of the following values of <m>A</m>, find <m>B</m> if possible.</p>
+        <p>In the universe of integers, if <m>A - B = \{n \in \mathbb{N}_0 | 2 = 2k \text{ for some } k \in \mathbb{N_0} \}</m>, then for each of the following values of <m>A</m>, find <m>B</m> if possible.</p>
         <ol marker="a">
-          <li><m>A = ℤ</m></li>
+          <li><m>A = \mathbb{Z}</m></li>
           <li><m>A = \mathbb{N}_0</m> …</li>
           <li><m>A = \mathbb{N}</m> …</li>
           <li><m>A = \mathbb{Q}</m> …</li>
@@ -2497,7 +2496,7 @@ select all those cards, but only those cards, which you would have to turn over 
         <p>What is the cardinality of each of the following sets?</p>
         <ol marker="a">
           <li><m>\{corn, peas, carrots, potatoes, tomatoes, pumpkins\}</m></li>
-          <li><m>\{x \in \mathbb{N} ∣ x \text{ is a perfect square and } x ≤ 100\}</m></li>
+          <li><m>\{x \in \mathbb{N} | x \text{ is a perfect square and } x ≤ 100\}</m></li>
           <li> <m>\{x \ | \ x \text{is a two digit natural number with no digit being 7 and } x \leq 100 \}</m> </li>
           <li><m>\{40, 45, 50, 55, \ldots, 375, 380, 385 \} </m></li>
         </ol>
