@@ -962,12 +962,7 @@
   <title>Equality Questions</title>
   <exercises>
   
-    <exercise>
-      <statement>
-        <p>Given the following equations, show <m>x=y</m>. For each step in the process, state the property of equality you are using.</p>
-        <p><m> \; </m></p>
-      </statement>
-    </exercise>
+    
     
     <exercise>
       <statement>
@@ -986,7 +981,7 @@
     
     <exercise>
   <statement>
-    <p>In the following process, label each step with the property of equality used to reach it.</p>
+    <p>In the following process, label each step with the property of equality or arithmetic rule used to reach it.</p>
     <p>
       <md>
         <mrow>d \amp = x - y + z</mrow>
@@ -1022,7 +1017,7 @@
     
     <exercise>
       <statement>
-        <p>Which properties (of reflexive, transitive, symmetric) hold for the following relations? Do they always hold, never hold, or only hold for some inputs?</p>
+        <p>Which properties (of reflexive, transitive, symmetric) hold for the following relations? Do they always hold, never hold, or only hold for some inputs? Show they always hold with a proof, or show a counterexample if they do not always hold.</p>
         <ol marker="a">
           <li><m>&lt;</m></li>
           <li><m>&gt;</m></li>
@@ -1047,13 +1042,13 @@
   <statement>
     <p>Determine whether each set equality is true or not.</p>
     <ol marker="a">
-      <li><m>\{a/b ∣ a,b ∈ ℤ, a&lt;b\} = \{x ∈ ℚ ∣ x&lt;1, \; |x|&lt;1\}</m></li>
-      <li><m>\{1,2,3\} ∪ \{3,4\} = \{1,2,3,4\}</m></li>
-      <li><m>(\{1,2,3\} ∩ \{2,3,4\}) ∪ \{5\} = \{2,3,5\}</m></li>
-      <li><m>\{x ∈ ℤ ∣ x \text{ is even}\} = \{2n ∣ n ∈ ℤ\}</m></li>
-      <li><m>\{x ∈ ℝ ∣ x^2 &lt; 4\} = \{-2,2\}</m></li>
-      <li><m>\{x ∈ ℤ ∣ x^2 \leq 9\} = \{-3,-2,-1,0,1,2,3\}</m></li>
-      <li><m>\{x ∈ ℕ ∣ x \text{ is prime and \} x&lt;10} = \{2,3,5,7\}</m></li>
+      <li><m>\{a/b | a,b \in \mathbb{Z}, a&lt;b, b\neq 0\} = \{x \in \mathbb{Q} | x&lt;1, \; |x|&lt;1\}</m></li>
+      <li><m>\{1,2,3\} \cup \{3,4\} = \{1,2,3,4\}</m></li>
+      <li><m>(\{1,2,3\} ∩ \{2,3,4\}) \cup \{5\} = \{2,3,5\}</m></li>
+      <li><m>\{x \in \mathbb{Z} | x \text{ is even}\} = \{2n | n \in \mathbb{Z}\}</m></li>
+      <li><m>\{x \in \mathbb{R} | x^2 &lt; 4\} = \{-2,2\}</m></li>
+      <li><m>\{x \in \mathbb{Z} | x^2 \leq 9\} = \{-3,-2,-1,0,1,2,3\}</m></li>
+      <li><m>\{x \in \mathbb{N}| x \text{ is prime and } x&lt;10\} = \{2,3,5,7\}</m></li>
     </ol>
   </statement>
 </exercise>
@@ -1075,7 +1070,7 @@
       illustrates this approach.
     </p>
 
-    <p><em>Example 1.</em> Consider the system <m>5x + 7y = 69</m>, <m>9x - 4y = 8</m>.
+    <p> Consider the system <m>5x + 7y = 69</m>, <m>9x - 4y = 8</m>.
       We first solve each equation for the same variable (here, <m>y</m>) to make graphing straightforward.
     </p>
 
@@ -1118,7 +1113,7 @@
 
     <exercise xml:id="ps-given-list">
       <statement>
-        <p>For Questions 1–4, use the following equations (with constants <m>a,b</m> and variables <m>x,y</m>):</p>
+        <p>For the following four questions, use the following equations (with constants <m>a,b,c </m> and variables <m>x,y</m>):</p>
         <p>
           <md>
             <mrow>x+4-2(3x-5) \amp = \dfrac{x+4}{3}</mrow>
@@ -1226,7 +1221,7 @@
         <ol marker="a">
           <li><m>3x + 2y = 20</m>, <m>8x + 7y = 65</m></li>
           <li><m>x - 7y + 74 = 18z</m>, <m>10x - 32y = 120</m></li>
-          <li><m>3xy + 12y = 10</m>, <m>12x - 3y = 90</m></li>
+          <li><m>3x + 12y = 10</m>, <m>12x - 3y = 90</m></li>
         </ol>
       </statement>
     </exercise>
