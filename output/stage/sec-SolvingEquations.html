@@ -207,10 +207,10 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active" id="ptx-toc-group-EquationsAndProblemSolving">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Equality.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Equality</span></a></div>
-<ul id="ptx-toc-group-sec-Equality" class="structural toc-item-list"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-Equality.html#subsec-IntroToEquality" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Intro To Equality</span></a></div>
-<ul id="ptx-toc-group-subsec-IntroToEquality" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Equality.html#subsec-PropertiesOfEquality" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Properties Of Equality</span></a></div></li></ul>
-</li></ul>
+<ul id="ptx-toc-group-sec-Equality" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Equality.html#subsec-IntroToEquality" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Intro To Equality</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Equality.html#subsec-PropertiesOfEquality" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Properties Of Equality</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-SolvingEquations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Solving Equations</span></a></div>
@@ -784,27 +784,26 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="sec-SolvingEquations-3">
 <div class="para" id="sec-SolvingEquations-3-1">In order to solve problems, it helps to be comfortable solving algebraic equations. In this section we will first talk about solving algebraic equations of a certain type (called linear equations), solving multiple linear equations at the same time, and then talking about some problem solving strategies that you can use to try and get a handle on a problem where the answer and/or approach isn’t immediately obvious.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-SolvingEquations-3-2">First, let’s give somewhat careful definitions of the objects we care about in equations, and the types of equations we wish to solve. For this section, all coefficients of variables will be integers (that is, positive or negative whole numbers) but some of the solutions to our equations may be rational numbers. In general, these techniques will work with any real numbers in most situations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-SolvingEquations-3-2">First, let’s give somewhat careful definitions of the objects we care about in equations, and the types of equations we wish to solve. For this section, all coefficients of variables will be integers (that is, positive or negative whole numbers along with zero) but some of the solutions to our equations may be rational numbers. In general, these techniques will work with any real numbers in most situations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-TermsEtc"><h2 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h2>
-<div class="para" id="def-TermsEtc-1-1">An <dfn class="terminology">expression</dfn> is a combination of mathematical symbols without a relational symbol (e.g. <span class="process-math">\(=, \leq\)</span>) symbol relating it to another combination of mathematical symbols. A <dfn class="terminology">term</dfn> is an expression that does not include a addition or subtraction operation (outside of necessary brackets).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-TermsEtc-1-1">An <dfn class="terminology">expression</dfn> is a combination of mathematical symbols without a relational symbol (e.g. <span class="process-math">\(=, \leq\)</span>) relating it to another combination of mathematical symbols. A <dfn class="terminology">term</dfn> is an expression that does not include an addition or subtraction operation (outside of necessary brackets).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="def-TermsEtc-1-2">A <dfn class="terminology">coefficient</dfn> of a term that includes a variable is the number that variable is multiplied by.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="def-TermsEtc-1-3">Terms only containing numbers are called <dfn class="terminology">constants.</dfn><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="def-TermsEtc-1-4"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="para" id="def-TermsEtc-1-5">An <dfn class="terminology">equation</dfn> is two equal expressions with an equal sign between them.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-TermsEtc-1-4">An <dfn class="terminology">equation</dfn> is two equal expressions with an equal sign between them, which asserts that both expressions are equal.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="def-TermsEtc-1-6">To <dfn class="terminology">solve</dfn> an equation for a variable <span class="process-math">\(x\)</span> means to perform arithmetic operations on both sides of the equation (while maintaining equality) so that the equation is now in the form <span class="process-math">\(x = \ldots\text{.}\)</span> Note that if there is only one variable, specifying the variable is usually omitted.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-TermsEtc-1-5">To <dfn class="terminology">solve</dfn> an equation for a variable <span class="process-math">\(x\)</span> means to perform arithmetic operations on both sides of the equation (while maintaining equality) so that the equation is now in the form <span class="process-math">\(x = \ldots\text{.}\)</span> Note that if there is only one variable, specifying the variable is usually omitted.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="def-TermsEtc-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="def-TermsEtc-2-1">Consider the equation <span class="process-math">\(3x+4= 5-6x\)</span> which is made of two expressions, <span class="process-math">\(3x+4\)</span> and <span class="process-math">\(5-6x\)</span> . In the term <span class="process-math">\(3x\)</span> on the left hand side (or LHS) of the coefficient is <span class="process-math">\(3\text{,}\)</span> and in the term <span class="process-math">\(-6x\)</span> on the right hand side (or RHS) of the equation the coefficient is <span class="process-math">\(-6\)</span> (here, we are viewing <span class="process-math">\(5-6x\)</span> as <span class="process-math">\(5+(-6)x\text{.}\)</span> We will be more precise about this later in the book.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-TermsEtc-2-1">Consider the equation <span class="process-math">\(3x+4= 5-6x\)</span> which is made of two expressions, <span class="process-math">\(3x+4\)</span> and <span class="process-math">\(5-6x\)</span> . In the term <span class="process-math">\(3x\)</span> on the left hand side (or LHS) the coefficient is <span class="process-math">\(3\text{,}\)</span> and in the term <span class="process-math">\(-6x\)</span> on the right hand side (or RHS) of the equation the coefficient is <span class="process-math">\(-6\)</span> (here, we are viewing <span class="process-math">\(5-6x\)</span> as <span class="process-math">\(5+(-6)x\text{.}\)</span> We will be more precise about this later in the book.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="def-TermsEtc-2-2">Sometimes we can have unknown coefficients even in terms with variables, but we specify that these are indeed coefficients. For example, we could have the expression <span class="process-math">\(ax+by\)</span> where we are thinking of <span class="process-math">\(x,y\)</span> as our variables and <span class="process-math">\(a,b \in \mathbb{N}\)</span> as our coefficients.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-TermsEtc-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -814,7 +813,7 @@ eBookConfig.enable_chatcodes =  false;
 <article class="definition definition-like" id="def-LinearEquation"><h2 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h2>
-<div class="para" id="def-LinearEquation-1-1">An equation over one (or more) variables is called a <dfn class="terminology">linear equation</dfn> exactly when every term of the equation has at most one variable in it, and that variable has an exponent of <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-LinearEquation-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-LinearEquation-1-1">An equation over one (or more) variables is called a <dfn class="terminology">linear equation</dfn> exactly when every term of the equation has at most one variable in it, that variable has an exponent of <span class="process-math">\(1\text{,}\)</span> and the only operations in the equation are addition, subtraction, and multiplication.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-LinearEquation-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="def-LinearEquation-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
@@ -823,7 +822,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="def-LinearEquation-2-1">
 <span class="process-math">\(3x+4 = 6x-7\)</span> is a linear equation since each term has (at most) one copy of <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-LinearEquation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="def-LinearEquation-2-2">Similarly, <span class="process-math">\(3x+4y=7\)</span> is another linear equation since both <span class="process-math">\(3x\)</span> and <span class="process-math">\(4y\)</span> have exactly one copy of <span class="process-math">\(x,y\)</span> in them, and <span class="process-math">\(7\)</span> has no <span class="process-math">\(x\)</span>’s or <span class="process-math">\(y\)</span>’s.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-LinearEquation-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-LinearEquation-2-2">Similarly, <span class="process-math">\(3x+4y=7\)</span> is another linear equation since both <span class="process-math">\(3x\)</span> and <span class="process-math">\(4y\)</span> have exactly one factor of <span class="process-math">\(x,y\)</span> in them, and <span class="process-math">\(7\)</span> has no <span class="process-math">\(x\)</span>’s or <span class="process-math">\(y\)</span>’s.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-LinearEquation-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="def-LinearEquation-2-3">Now a non-example: <span class="process-math">\(3xy-4x^2=6\)</span> is *not* a linear equation. Here there are two problems (note that just one is enough to disqualify it from being a linear equation): the first term has two variables in it, <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> Also the second term has two copies of <span class="process-math">\(x\)</span> multiplied together, since by the definition of exponents <span class="process-math">\(x^2 = x \times x.\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-LinearEquation-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -836,7 +835,7 @@ eBookConfig.enable_chatcodes =  false;
 </h2>
 <div class="para" id="subsec-SolvingOneEquation-2">Before we get into the idea of translating a "real world" problem into the language of mathematics, we’ll go over some very important skills to solve many of these problems, which is solving linear equations (or systems of equations). Let’s start with the simplest of cases: solving one equation with one variable.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-SolvingOneEquation-3">Let <span class="process-math">\(x\)</span> be the symbol for our variable, and let <span class="process-math">\(a,b,c,d \in \mathbb{Z}\)</span> be our coefficients. After collecting like terms, any linear equation can be written in the form <span class="process-math">\(ax+b=cx+d\text{.}\)</span> As long as <span class="process-math">\(a \neq c\)</span> we can follow these following steps (called an algorithm) to solve for our variable <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-SolvingOneEquation-3">Let <span class="process-math">\(x\)</span> be the symbol for our variable, and let <span class="process-math">\(a,b,c,d \in \mathbb{Z}\)</span> be our coefficients. After collecting like terms, any linear equation can be written in the form <span class="process-math">\(ax+b=cx+d\text{.}\)</span> As long as <span class="process-math">\(a \neq c\)</span> we can follow these  steps (called an algorithm) to solve for our variable <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ol class="decimal" id="subsec-SolvingOneEquation-4">
 <li id="subsec-SolvingOneEquation-4-1">
@@ -885,9 +884,10 @@ x = \dfrac{(d-b)}{(a-c)}.
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="subsec-SolvingOneEquation-6-1">What number can we substitute in for <span class="process-math">\(x\)</span> to solve the equation <span class="process-math">\(x+5=8\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-SolvingOneEquation-6-1-1">What number can we substitute in for <span class="process-math">\(x\)</span> to solve the equation <span class="process-math">\(x+5=8\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-SolvingOneEquation-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solutions">
+<details id="subsec-SolvingOneEquation-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="para logical" id="subsec-SolvingOneEquation-6-2-1">
 <div class="para">Let’s solve <span class="process-math">\(x+5=8\text{.}\)</span> The easiest way to view this is asking "what number can I add to 5 to get 8". We can formally solve for <span class="process-math">\(x\)</span> here by subtracting 5 from both sides:</div>
@@ -907,142 +907,155 @@ x+5-5=8-5
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Solution 2.2.5.1"><a tabindex="-1" href="#subsec-SolvingOneEquation-6-2" title="Copy heading and permalink for Solution 2.2.5.1" aria-label="Copy heading and permalink for Solution 2.2.5.1">🔗</a></div>
 </div></details>
-<div class="para" id="subsec-SolvingOneEquation-6-3">What number can we substitute in for <span class="process-math">\(a\)</span> to solve the equation <span class="process-math">\(7(a-4)=4-(4-3a)\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-SolvingOneEquation-6-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.5"><a tabindex="-1" href="#subsec-SolvingOneEquation-6" title="Copy heading and permalink for Example 2.2.5" aria-label="Copy heading and permalink for Example 2.2.5">🔗</a></div>
+</article></details>
+<details id="subsec-SolvingOneEquation-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="subsec-SolvingOneEquation-7-1-1">What number can we substitute in for <span class="process-math">\(a\)</span> to solve the equation <span class="process-math">\(7(a-4)=4-(4-3a)\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-SolvingOneEquation-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="subsec-SolvingOneEquation-6-4-1">
+<div class="para logical" id="subsec-SolvingOneEquation-7-2-1">
 <div class="para">We can solve <span class="process-math">\(7(a-4)=4-(4-3a)\)</span> by first expanding out the brackets and then combining like terms so that the equation is in the standard form given in the algorithm:</div>
-<div class="displaymath process-math" id="subsec-SolvingOneEquation-6-4-1-2">
+<div class="displaymath process-math" id="subsec-SolvingOneEquation-7-2-1-2">
 \begin{equation*}
 \rightarrow 7a-28 = 4-4+3a
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="subsec-SolvingOneEquation-6-4-1-3">
+<div class="displaymath process-math" id="subsec-SolvingOneEquation-7-2-1-3">
 \begin{equation*}
 \rightarrow 7a -28 = 3a.
 \end{equation*}
 </div>
 <div class="para">Noting that we can view the RHS of the equation as <span class="process-math">\(3a+0\text{,}\)</span> we can now use our algorithm above, giving us <span class="process-math">\(a = \dfrac{0-(-28)}{7-3} = \dfrac{28}{4} = 7.\)</span>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsec-SolvingOneEquation-6-4-2">
+<div class="para logical" id="subsec-SolvingOneEquation-7-2-2">
 <div class="para">We can check our answers by substituting our solution for the variable and making sure that equality holds. For the second equation we have</div>
-<div class="displaymath process-math" id="subsec-SolvingOneEquation-6-4-2-1">
+<div class="displaymath process-math" id="subsec-SolvingOneEquation-7-2-2-1">
 \begin{equation*}
 7(7-4) \mathop{=}\limits^? 4-(4-3(7))
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="subsec-SolvingOneEquation-6-4-2-2">
+<div class="displaymath process-math" id="subsec-SolvingOneEquation-7-2-2-2">
 \begin{equation*}
 \rightarrow 7(3) \mathop{=}\limits^? 4-(4-21)
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="subsec-SolvingOneEquation-6-4-2-3">
+<div class="displaymath process-math" id="subsec-SolvingOneEquation-7-2-2-3">
 \begin{equation*}
 \rightarrow 21 \mathop{=}\limits^? 4-(-17)
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="subsec-SolvingOneEquation-6-4-2-4">
+<div class="displaymath process-math" id="subsec-SolvingOneEquation-7-2-2-4">
 \begin{equation*}
 \rightarrow 21 = 21.
 \end{equation*}
 </div>
 <div class="para">Since we do indeed have equality our solution is correct.</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-6-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 2.2.5.2"><a tabindex="-1" href="#subsec-SolvingOneEquation-6-4" title="Copy heading and permalink for Solution 2.2.5.2" aria-label="Copy heading and permalink for Solution 2.2.5.2">🔗</a></div>
-</div></details><div class="autopermalink" aria-hidden="true" data-description="Example 2.2.5"><a tabindex="-1" href="#subsec-SolvingOneEquation-6" title="Copy heading and permalink for Example 2.2.5" aria-label="Copy heading and permalink for Example 2.2.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.2.6.1"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2" title="Copy heading and permalink for Solution 2.2.6.1" aria-label="Copy heading and permalink for Solution 2.2.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.6"><a tabindex="-1" href="#subsec-SolvingOneEquation-7" title="Copy heading and permalink for Example 2.2.6" aria-label="Copy heading and permalink for Example 2.2.6">🔗</a></div>
 </article></details>
-<details id="subsec-SolvingOneEquation-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<details id="subsec-SolvingOneEquation-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsec-SolvingOneEquation-7-1">Solve the following linear equations. Check your work by substituting your answer into the original equation and checking that equality holds.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="subsec-SolvingOneEquation-7-2">
-<ol class="decimal" id="subsec-SolvingOneEquation-7-2-1">
-<li id="subsec-SolvingOneEquation-7-2-1-1">
-<div class="para logical" id="subsec-SolvingOneEquation-7-2-1-1-1">
-<div class="displaymath process-math" id="subsec-SolvingOneEquation-7-2-1-1-1-1">
+<div class="para" id="subsec-SolvingOneEquation-8-1-1">Solve the following linear equations. Check your work by substituting your answer into the original equation and checking that equality holds.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="subsec-SolvingOneEquation-8-1-2">
+<ol class="decimal" id="subsec-SolvingOneEquation-8-1-2-1">
+<li id="subsec-SolvingOneEquation-8-1-2-1-1">
+<div class="para logical" id="subsec-SolvingOneEquation-8-1-2-1-1-1">
+<div class="displaymath process-math" id="subsec-SolvingOneEquation-8-1-2-1-1-1-1">
 \begin{equation*}
 7x=91
 \end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.6.1"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2-1-1" title="Copy heading and permalink for Item 2.2.6.1" aria-label="Copy heading and permalink for Item 2.2.6.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.7.1"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-1-2-1-1" title="Copy heading and permalink for Item 2.2.7.1" aria-label="Copy heading and permalink for Item 2.2.7.1">🔗</a></div>
 </li>
-<li id="subsec-SolvingOneEquation-7-2-1-2">
-<div class="para logical" id="subsec-SolvingOneEquation-7-2-1-2-1">
-<div class="displaymath process-math" id="subsec-SolvingOneEquation-7-2-1-2-1-1">
+<li id="subsec-SolvingOneEquation-8-1-2-1-2">
+<div class="para logical" id="subsec-SolvingOneEquation-8-1-2-1-2-1">
+<div class="displaymath process-math" id="subsec-SolvingOneEquation-8-1-2-1-2-1-1">
 \begin{equation*}
-5k-6=-79
+5k+6=-79
 \end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.6.2"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2-1-2" title="Copy heading and permalink for Item 2.2.6.2" aria-label="Copy heading and permalink for Item 2.2.6.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.7.2"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-1-2-1-2" title="Copy heading and permalink for Item 2.2.7.2" aria-label="Copy heading and permalink for Item 2.2.7.2">🔗</a></div>
 </li>
-<li id="subsec-SolvingOneEquation-7-2-1-3">
-<div class="para logical" id="subsec-SolvingOneEquation-7-2-1-3-1">
-<div class="displaymath process-math" id="subsec-SolvingOneEquation-7-2-1-3-1-1">
+<li id="subsec-SolvingOneEquation-8-1-2-1-3">
+<div class="para logical" id="subsec-SolvingOneEquation-8-1-2-1-3-1">
+<div class="displaymath process-math" id="subsec-SolvingOneEquation-8-1-2-1-3-1-1">
 \begin{equation*}
 -3y+1 = 7y-8
 \end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.6.3"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2-1-3" title="Copy heading and permalink for Item 2.2.6.3" aria-label="Copy heading and permalink for Item 2.2.6.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.7.3"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-1-2-1-3" title="Copy heading and permalink for Item 2.2.7.3" aria-label="Copy heading and permalink for Item 2.2.7.3">🔗</a></div>
 </li>
-<li id="subsec-SolvingOneEquation-7-2-1-4">
-<div class="para logical" id="subsec-SolvingOneEquation-7-2-1-4-1">
-<div class="displaymath process-math" id="subsec-SolvingOneEquation-7-2-1-4-1-1">
+<li id="subsec-SolvingOneEquation-8-1-2-1-4">
+<div class="para logical" id="subsec-SolvingOneEquation-8-1-2-1-4-1">
+<div class="displaymath process-math" id="subsec-SolvingOneEquation-8-1-2-1-4-1-1">
 \begin{equation*}
 4t+2(4-3t) = 2-6(t-1)+3t
 \end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.6.4"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2-1-4" title="Copy heading and permalink for Item 2.2.6.4" aria-label="Copy heading and permalink for Item 2.2.6.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.7.4"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-1-2-1-4" title="Copy heading and permalink for Item 2.2.7.4" aria-label="Copy heading and permalink for Item 2.2.7.4">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsec-SolvingOneEquation-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solutions">
+<details id="subsec-SolvingOneEquation-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="subsec-SolvingOneEquation-7-3-1">
-<ol class="decimal" id="subsec-SolvingOneEquation-7-3-1-1">
-<li id="subsec-SolvingOneEquation-7-3-1-1-1">
-<div class="para" id="subsec-SolvingOneEquation-7-3-1-1-1-1">
-<span class="process-math">\(\displaystyle x=13\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="subsec-SolvingOneEquation-8-2-1">
+<ol class="decimal" id="subsec-SolvingOneEquation-8-2-1-1">
+<li id="subsec-SolvingOneEquation-8-2-1-1-1">
+<div class="para" id="subsec-SolvingOneEquation-8-2-1-1-1-1">
+<span class="process-math">\(\displaystyle x=13\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.6.1"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-3-1-1-1" title="Copy heading and permalink for Item 2.2.6.1" aria-label="Copy heading and permalink for Item 2.2.6.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.7.1"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-2-1-1-1" title="Copy heading and permalink for Item 2.2.7.1" aria-label="Copy heading and permalink for Item 2.2.7.1">🔗</a></div>
 </li>
-<li id="subsec-SolvingOneEquation-7-3-1-1-2">
-<div class="para" id="subsec-SolvingOneEquation-7-3-1-1-2-1">
-<span class="process-math">\(\displaystyle x=-17\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-SolvingOneEquation-8-2-1-1-2">
+<div class="para" id="subsec-SolvingOneEquation-8-2-1-1-2-1">
+<span class="process-math">\(\displaystyle x=-17\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.6.2"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-3-1-1-2" title="Copy heading and permalink for Item 2.2.6.2" aria-label="Copy heading and permalink for Item 2.2.6.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.7.2"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-2-1-1-2" title="Copy heading and permalink for Item 2.2.7.2" aria-label="Copy heading and permalink for Item 2.2.7.2">🔗</a></div>
 </li>
-<li id="subsec-SolvingOneEquation-7-3-1-1-3">
-<div class="para" id="subsec-SolvingOneEquation-7-3-1-1-3-1">
-<span class="process-math">\(\displaystyle y=\dfrac{9}{10}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-3-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-SolvingOneEquation-8-2-1-1-3">
+<div class="para" id="subsec-SolvingOneEquation-8-2-1-1-3-1">
+<span class="process-math">\(\displaystyle y=\dfrac{9}{10}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.6.3"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-3-1-1-3" title="Copy heading and permalink for Item 2.2.6.3" aria-label="Copy heading and permalink for Item 2.2.6.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.7.3"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-2-1-1-3" title="Copy heading and permalink for Item 2.2.7.3" aria-label="Copy heading and permalink for Item 2.2.7.3">🔗</a></div>
 </li>
-<li id="subsec-SolvingOneEquation-7-3-1-1-4">
-<div class="para" id="subsec-SolvingOneEquation-7-3-1-1-4-1">
-<span class="process-math">\(\displaystyle t=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-3-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-SolvingOneEquation-8-2-1-1-4">
+<div class="para" id="subsec-SolvingOneEquation-8-2-1-1-4-1">
+<span class="process-math">\(\displaystyle t=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.6.4"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-3-1-1-4" title="Copy heading and permalink for Item 2.2.6.4" aria-label="Copy heading and permalink for Item 2.2.6.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.7.4"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-2-1-1-4" title="Copy heading and permalink for Item 2.2.7.4" aria-label="Copy heading and permalink for Item 2.2.7.4">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 2.2.6.1"><a tabindex="-1" href="#subsec-SolvingOneEquation-7-3" title="Copy heading and permalink for Solution 2.2.6.1" aria-label="Copy heading and permalink for Solution 2.2.6.1">🔗</a></div>
-</div></details><div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.6"><a tabindex="-1" href="#subsec-SolvingOneEquation-7" title="Copy heading and permalink for Checkpoint 2.2.6" aria-label="Copy heading and permalink for Checkpoint 2.2.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.2.7.1"><a tabindex="-1" href="#subsec-SolvingOneEquation-8-2" title="Copy heading and permalink for Solution 2.2.7.1" aria-label="Copy heading and permalink for Solution 2.2.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.7"><a tabindex="-1" href="#subsec-SolvingOneEquation-8" title="Copy heading and permalink for Checkpoint 2.2.7" aria-label="Copy heading and permalink for Checkpoint 2.2.7">🔗</a></div>
 </article></details><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.2.1: Solving One Equation"><a tabindex="-1" href="#subsec-SolvingOneEquation" title="Copy heading and permalink for Subsection 2.2.1: Solving One Equation" aria-label="Copy heading and permalink for Subsection 2.2.1: Solving One Equation">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-SystemsOfEquations">
@@ -1052,7 +1065,7 @@ x+5-5=8-5
 <div class="para" id="subsec-SystemsOfEquations-2">In many scenarios, we are given two (or more) relationships between two (or more) unknown quantities and we need to use these to find the unknown quantities that satisfy these relationships.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SystemsOfEquations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="ex-2var2eq" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="ex-2var2eq-1">A typical problem might look like this:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex-2var2eq-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1083,32 +1096,32 @@ x+5-5=8-5
 3(2.5)+2(4) = 15.5
 \end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.7"><a tabindex="-1" href="#ex-2var2eq" title="Copy heading and permalink for Example 2.2.7" aria-label="Copy heading and permalink for Example 2.2.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.8"><a tabindex="-1" href="#ex-2var2eq" title="Copy heading and permalink for Example 2.2.8" aria-label="Copy heading and permalink for Example 2.2.8">🔗</a></div>
 </article></details>
 <div class="para" id="subsec-SystemsOfEquations-4">In this section, we will learn some methods of solving problems like finding these quantities in the example above. Note that we will limit our study to situations with <span class="process-math">\(2\)</span> linear equations and <span class="process-math">\(2\)</span> variables (which we call "2 by 2 systems of equations") but these methods can be expanded to solve larger systems.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SystemsOfEquations-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-SystemsOfEquations-5">First of all, let’s define a system of equations. Note that unless otherwise stated, all equations are linear equations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-SystemsOfEquations-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="def-SystemOfEquations"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="def-SystemOfEquations-1-1">A <dfn class="terminology">system of equations</dfn> is a set of equations where equality holds in each of these simultaneously; that is, all equations are true at the same time.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-SystemOfEquations-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-SystemOfEquations-1-1">A <dfn class="terminology">system of equations</dfn> is a set of equations where equality holds in each of these simultaneously; that is, all equations are true at the same time. A <dfn class="terminology">solution</dfn> to a system of equations is values for each variable in the system that make each equation true simultaneously.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-SystemOfEquations-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="def-SystemOfEquations-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="def-SystemOfEquations-2-1">The two equations in the previous example are a system of equations. We know that two coffees and two pizza burgers coming to $9 is true, and we also know that similarly for the other equation. So both equations are true simultaneously.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-SystemOfEquations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="def-SystemOfEquations-2-1">The two equations in the previous example are a system of equations. We know that two coffees and one pizza burger coming to $9 is true, and we also know that similarly for the other equation. So both equations are true simultaneously.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#def-SystemOfEquations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.9"><a tabindex="-1" href="#def-SystemOfEquations-2" title="Copy heading and permalink for Example 2.2.9" aria-label="Copy heading and permalink for Example 2.2.9">🔗</a></div>
-</article></details><div class="autopermalink" aria-hidden="true" data-description="Definition 2.2.8"><a tabindex="-1" href="#def-SystemOfEquations" title="Copy heading and permalink for Definition 2.2.8" aria-label="Copy heading and permalink for Definition 2.2.8">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.10"><a tabindex="-1" href="#def-SystemOfEquations-2" title="Copy heading and permalink for Example 2.2.10" aria-label="Copy heading and permalink for Example 2.2.10">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Definition 2.2.9"><a tabindex="-1" href="#def-SystemOfEquations" title="Copy heading and permalink for Definition 2.2.9" aria-label="Copy heading and permalink for Definition 2.2.9">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.2.2: Intro to Systems Of Equations"><a tabindex="-1" href="#subsec-SystemsOfEquations" title="Copy heading and permalink for Subsection 2.2.2: Intro to Systems Of Equations" aria-label="Copy heading and permalink for Subsection 2.2.2: Intro to Systems Of Equations">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-Substitution">
 <h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Substitution</span>
 </h2>
-<div class="para" id="subsec-Substitution-2">We can use the ideas of equality to help us solve systems of equations. Remember from <a href="sec-Equality.html#def-PropertiesOfEquality" class="xref" data-knowl="./knowl/xref/def-PropertiesOfEquality.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.3">Definition 2.1.3</a>, when two expressions equal, we can substitute one for the other whenever it is convenient. The idea is that since we know how to solve one equation with one variable, so we want to convert a 2 by 2 system of equations into one equation with one variable via <dfn class="terminology">substitution.</dfn> Let’s look at <a href="sec-SolvingEquations.html#ex-2var2eq" class="xref" data-knowl="./knowl/xref/ex-2var2eq.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.7">Example 2.2.7</a> in the previous section:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Substitution-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Substitution-2">We can use the ideas of equality to help us solve systems of equations. Remember from <a href="sec-Equality.html#def-PropertiesOfEquality" class="xref" data-knowl="./knowl/xref/def-PropertiesOfEquality.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.3">Definition 2.1.3</a>, when two expressions equal, we can substitute one for the other whenever it is convenient. The idea is that since we know how to solve one equation with one variable, so we want to convert a 2 by 2 system of equations into one equation with one variable via <dfn class="terminology">substitution.</dfn> Let’s look at <a href="sec-SolvingEquations.html#ex-2var2eq" class="xref" data-knowl="./knowl/xref/ex-2var2eq.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.8">Example 2.2.8</a> in the previous section:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Substitution-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-Substitution-3"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Substitution-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
 <div class="para" id="subsec-Substitution-4">We have the system<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Substitution-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1162,12 +1175,12 @@ C = 2.5.
 \end{equation*}
 </div>
 <details id="subsec-Substitution-17" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-Substitution-17-1">Describe the steps in each line of the previous part of this example.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Substitution-17-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.10"><a tabindex="-1" href="#subsec-Substitution-17" title="Copy heading and permalink for Checkpoint 2.2.10" aria-label="Copy heading and permalink for Checkpoint 2.2.10">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.11"><a tabindex="-1" href="#subsec-Substitution-17" title="Copy heading and permalink for Checkpoint 2.2.11" aria-label="Copy heading and permalink for Checkpoint 2.2.11">🔗</a></div>
 </article></details>
 <div class="para" id="subsec-Substitution-18">Now that we know <span class="process-math">\(C = 2.5\)</span> we can substitute this in to either equation to solve for our other unknown, <span class="process-math">\(P.\)</span> We will substitute this into the first equation:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Substitution-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1187,12 +1200,12 @@ P = 4.
 \end{equation*}
 </div>
 <details id="subsec-Substitution-22" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-Substitution-22-1">Describe the steps in each line of the previous part of this example.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Substitution-22-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.11"><a tabindex="-1" href="#subsec-Substitution-22" title="Copy heading and permalink for Checkpoint 2.2.11" aria-label="Copy heading and permalink for Checkpoint 2.2.11">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.12"><a tabindex="-1" href="#subsec-Substitution-22" title="Copy heading and permalink for Checkpoint 2.2.12" aria-label="Copy heading and permalink for Checkpoint 2.2.12">🔗</a></div>
 </article></details>
 <div class="para" id="subsec-Substitution-23">Now that we have values for all of our variables, we have solved this system of equations. We can check our work by substituting both values into the other equation to make sure equality does indeed hold (as we want both equations to be true simultaneously.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Substitution-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1249,7 +1262,49 @@ P = 4.
 <div class="autopermalink" aria-hidden="true" data-description="Item 6"><a tabindex="-1" href="#subsec-Substitution-29-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" aria-hidden="true" data-description="Subsection 2.2.3: Substitution"><a tabindex="-1" href="#subsec-Substitution" title="Copy heading and permalink for Subsection 2.2.3: Substitution" aria-label="Copy heading and permalink for Subsection 2.2.3: Substitution">🔗</a></div>
+<details id="subsec-Substitution-30" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="subsec-Substitution-30-1">Solve the following systems of equations. Check your work to make sure the solution is correct:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Substitution-30-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-Substitution-30-2">
+<ol class="decimal" id="subsec-Substitution-30-2-1">
+<li id="subsec-Substitution-30-2-1-1">
+<div class="para" id="p-derived-subsec-Substitution-30-2-1-1">
+<div class="displaymath process-math" id="subsec-Substitution-30-2-1-1-1">
+\begin{equation*}
+5X-2Y = 15
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="subsec-Substitution-30-2-1-1-2">
+\begin{equation*}
+3X-Y=9
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.13.1"><a tabindex="-1" href="#subsec-Substitution-30-2-1-1" title="Copy heading and permalink for Item 2.2.13.1" aria-label="Copy heading and permalink for Item 2.2.13.1">🔗</a></div>
+</li>
+<li id="subsec-Substitution-30-2-1-2">
+<div class="para" id="p-derived-subsec-Substitution-30-2-1-2">
+<div class="displaymath process-math" id="subsec-Substitution-30-2-1-2-1">
+\begin{equation*}
+a-3b=7
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="subsec-Substitution-30-2-1-2-2">
+\begin{equation*}
+2a-5b = 12
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2.2.13.2"><a tabindex="-1" href="#subsec-Substitution-30-2-1-2" title="Copy heading and permalink for Item 2.2.13.2" aria-label="Copy heading and permalink for Item 2.2.13.2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Substitution-30-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.13"><a tabindex="-1" href="#subsec-Substitution-30" title="Copy heading and permalink for Checkpoint 2.2.13" aria-label="Copy heading and permalink for Checkpoint 2.2.13">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Subsection 2.2.3: Substitution"><a tabindex="-1" href="#subsec-Substitution" title="Copy heading and permalink for Subsection 2.2.3: Substitution" aria-label="Copy heading and permalink for Subsection 2.2.3: Substitution">🔗</a></div>
 </section>
 <section class="subsection" id="subsec-Elimination">
 <h2 class="heading hide-type">
@@ -1258,7 +1313,7 @@ P = 4.
 <div class="para" id="subsec-Elimination-2">There is another method for solving systems of equations that involves cleverly adding or subtracting multiples of one equation from another. We will explore why this method works, but first we will see the method in action:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="subsec-Elimination-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="subsec-Elimination-3-1">Let’s look at the same example as in the previous sections; that is, the system of equations<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1297,9 +1352,9 @@ P = 4.
 </div>
 <div class="para" id="subsec-Elimination-3-9">Now that we know <span class="process-math">\(C=2.5\)</span> we can substitute that in to either equation and solve for <span class="process-math">\(P\text{,}\)</span> similarly to the previous example. Thus we have <span class="process-math">\(P = 4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.12"><a tabindex="-1" href="#subsec-Elimination-3" title="Copy heading and permalink for Example 2.2.12" aria-label="Copy heading and permalink for Example 2.2.12">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.14"><a tabindex="-1" href="#subsec-Elimination-3" title="Copy heading and permalink for Example 2.2.14" aria-label="Copy heading and permalink for Example 2.2.14">🔗</a></div>
 </article></details>
-<div class="para" id="subsec-Elimination-4">As you can see, both methods give the same answer (which is a good thing, of course!). But why does this method work? We will give an example in the case of subtraction, but any operation will work. Note that in practice, addition and subtraction are the most useful in these scenarios.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Elimination-4">As you can see, both methods give the same answer (which is a good thing, of course!). But why does this method work? We will give an example in the case of subtraction, and we can show a similar argument for any other operation. Note that in practice, addition and subtraction are the most useful in these scenarios.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-Elimination-5">Imagine we had a system of two equations. We will call the left hand sides of the first and second equation <span class="process-math">\(L_1\)</span> and <span class="process-math">\(L_2\text{,}\)</span> respectively. Similarly, we will call the right hand sides <span class="process-math">\(R_1\)</span> and <span class="process-math">\(R_2\text{.}\)</span> (Note that in our previous example <span class="process-math">\(L_1 = 2C+P\)</span> and <span class="process-math">\(R_1 = 9\)</span>). We can view the system in general as<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1329,28 +1384,29 @@ L_1-L2 = R_1-L_2
 L_1 - L_2 = R_1 - R_2
 \end{equation*}
 </div>
+<div class="para">Now we can view our system as <span class="process-math">\(L_1=R_1,\)</span> and <span class="process-math">\(L_1-L_2 = R_1-R_2\text{,}\)</span> which will have the same solution(s) as our initial system.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="subsec-Elimination-10">Thus, we have subtracted Equation II from Equation I and showed that the idea of elimination makes sense.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="subsec-Elimination-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="subsec-Elimination-11-1">Use the above explanation as a guide to justify that if <span class="process-math">\(L_1 = R_1\)</span> and <span class="process-math">\(L_2 = R_2\)</span> then <span class="process-math">\(L_1 + L_2 = R_1 + R_2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-11-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.13"><a tabindex="-1" href="#subsec-Elimination-11" title="Copy heading and permalink for Checkpoint 2.2.13" aria-label="Copy heading and permalink for Checkpoint 2.2.13">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.15"><a tabindex="-1" href="#subsec-Elimination-11" title="Copy heading and permalink for Checkpoint 2.2.15" aria-label="Copy heading and permalink for Checkpoint 2.2.15">🔗</a></div>
 </article></details>
 <div class="para logical" id="subsec-Elimination-12">
 <div class="para">A few notes:</div>
 <ol class="decimal" id="subsec-Elimination-12-1">
 <li id="subsec-Elimination-12-1-1">
-<div class="para" id="subsec-Elimination-12-1-1-1">The method of elimination is more useful when you have larger systems of equations with more equations and/or more variables. In the <span class="process-math">\(2 \times 2\)</span> case, substitution is generally easy enough to do. However, it is good practice to be able to use the elimination method, as it is extremely more efficient and useful than substitution in these larger systems.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-12-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Elimination-12-1-1-1">The method of elimination is more useful when you have larger systems of equations with more equations and/or more variables. In the <span class="process-math">\(2 \times 2\)</span> case, substitution is generally easy enough to do. However, it is good practice to be able to use the elimination method, as it is often more efficient and useful than substitution in these larger systems.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-12-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#subsec-Elimination-12-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="subsec-Elimination-12-1-2">
-<div class="para" id="subsec-Elimination-12-1-2-1">You can eliminate any variable using any equation in your system that you want. It’s usually a good idea to choose a variable with small/easy-to-work-with coefficients, but if you choose another variable, you will still get the correct result.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-12-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Elimination-12-1-2-1">You can eliminate any variable using any equation in your system that you want. It’s usually a good idea to choose a variable with small/easy-to-work-with (non-zero) coefficients, but if you choose another variable, you will still get the correct result.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-12-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#subsec-Elimination-12-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
@@ -1363,7 +1419,7 @@ L_1 - L_2 = R_1 - R_2
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="subsec-Elimination-13" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="subsec-Elimination-13-1">Let’s solve the system<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1378,7 +1434,7 @@ L_1 - L_2 = R_1 - R_2
 4C - P = 5  
 \end{equation*}
 </div>
-<div class="para" id="subsec-Elimination-13-4">We will eliminate the variable <span class="process-math">\(P\text{.}\)</span>  Note that in Equation I the coefficient of <span class="process-math">\(P\)</span> is 3, and in Equation II it is -1.  We want to eliminate this variable, so we need to multiply our equation by a number so that the coefficients of <span class="process-math">\(P\)</span> in both equations are of opposite sign. To make them opposites, we can multiply Equation II by 3:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-13-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Elimination-13-4">We will eliminate the variable <span class="process-math">\(P\text{.}\)</span>  Note that in Equation I the coefficient of <span class="process-math">\(P\)</span> is 3, and in Equation II it is -1.  We want to eliminate this variable, so we need to multiply our equation by a number so that the coefficients of <span class="process-math">\(P\)</span> in both equations are equal in magnitude and of opposite sign. To make them opposites, we can multiply Equation II by 3:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-13-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="subsec-Elimination-13-5">
 \begin{equation*}
@@ -1397,7 +1453,7 @@ L_1 - L_2 = R_1 - R_2
 [I] + [3 \times II] → (2C + 3P) + (12C - 3P) = 13 + 15
 \end{equation*}
 </div>
-<div class="para" id="subsec-Elimination-13-9">Note that we need to add both the left hand sides<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-13-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-Elimination-13-9">Note that we need to add both the left hand sides and right hand sides together.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-13-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="subsec-Elimination-13-10">
 \begin{equation*}
@@ -1440,7 +1496,7 @@ L_1 - L_2 = R_1 - R_2
 </div>
 <div class="para" id="subsec-Elimination-13-19">Therefore, the solution is <span class="process-math">\((C,P) = (2,3)\text{.}\)</span>  Each step used only arithmetic operations on both sides of the equations and the fact that adding or subtracting equal quantities preserves equality—so the “elimination” of <span class="process-math">\(P\)</span> left us with a single-variable equation. We could have eliminated <span class="process-math">\(C\)</span> instead and we would, of course, find the same solution to this system.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-13-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.14"><a tabindex="-1" href="#subsec-Elimination-13" title="Copy heading and permalink for Example 2.2.14" aria-label="Copy heading and permalink for Example 2.2.14">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 2.2.16"><a tabindex="-1" href="#subsec-Elimination-13" title="Copy heading and permalink for Example 2.2.16" aria-label="Copy heading and permalink for Example 2.2.16">🔗</a></div>
 </article></details>
 <div class="para" id="subsec-Elimination-14">Elimination also works for systems that have three or more equations and variables. By combining equations to remove one variable at a time, you can reduce a large system to a single-variable equation and then "back-substitute" one equation at a time to find the remaining unknowns. Those techniques are very powerful for handling larger systems, but we will not go further here.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-Elimination-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1450,10 +1506,10 @@ L_1 - L_2 = R_1 - R_2
 <h2 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">How Many Solutions Does a System of Equations Have</span>
 </h2>
-<div class="para" id="sec-SolvingEquations-8-2">In systems of equations, there are three possibilities of the number of solutions there are; either the system has exactly one solution, exactly zero solutions, or infinitely many solutions. We’ve seen what happens when a system has exactly one solution, so we will now look at cases where there are either no or infinitely many solutions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-SolvingEquations-8-2">In systems of linear equations, there are three possibilities of the number of solutions there are; either the system has exactly one solution, exactly zero solutions, or infinitely many solutions. We’ve seen what happens when a system has exactly one solution, so we will now look at cases where there are either no or infinitely many solutions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="sec-SolvingEquations-8-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="sec-SolvingEquations-8-3-1">Consider the following system:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1489,26 +1545,26 @@ L_1 - L_2 = R_1 - R_2
 <div class="para">There is no way that <span class="process-math">\(2x-3y\)</span> can equal both 7 and -2 at the same time.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 2.2.15.1"><a tabindex="-1" href="#sec-SolvingEquations-8-3-5" title="Copy heading and permalink for Solution 2.2.15.1" aria-label="Copy heading and permalink for Solution 2.2.15.1">🔗</a></div>
-</div></details><div class="autopermalink" aria-hidden="true" data-description="Example 2.2.15"><a tabindex="-1" href="#sec-SolvingEquations-8-3" title="Copy heading and permalink for Example 2.2.15" aria-label="Copy heading and permalink for Example 2.2.15">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.2.17.1"><a tabindex="-1" href="#sec-SolvingEquations-8-3-5" title="Copy heading and permalink for Solution 2.2.17.1" aria-label="Copy heading and permalink for Solution 2.2.17.1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Example 2.2.17"><a tabindex="-1" href="#sec-SolvingEquations-8-3" title="Copy heading and permalink for Example 2.2.17" aria-label="Copy heading and permalink for Example 2.2.17">🔗</a></div>
 </article></details>
 <details id="sec-SolvingEquations-8-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="sec-SolvingEquations-8-4-1">Make two different systems of two equations with two variables that have no solutions. Try to solve them using both substitution and elimination to see what happens.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.16"><a tabindex="-1" href="#sec-SolvingEquations-8-4" title="Copy heading and permalink for Checkpoint 2.2.16" aria-label="Copy heading and permalink for Checkpoint 2.2.16">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.18"><a tabindex="-1" href="#sec-SolvingEquations-8-4" title="Copy heading and permalink for Checkpoint 2.2.18" aria-label="Copy heading and permalink for Checkpoint 2.2.18">🔗</a></div>
 </article></details>
 <details id="sec-SolvingEquations-8-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="sec-SolvingEquations-8-5-1">Consider the following system:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="sec-SolvingEquations-8-5-2">
 \begin{equation*}
-6a-b=1
+6a+b=1
 \end{equation*}
 </div>
 <div class="displaymath process-math" id="sec-SolvingEquations-8-5-3">
@@ -1522,7 +1578,7 @@ L_1 - L_2 = R_1 - R_2
 <div class="solution solution-like knowl__content">
 <div class="para" id="sec-SolvingEquations-8-5-5-1">Like the previous example, both variables are eliminated at the same time. However, unlike the example above, here we’re left with an equation that is always true, like <span class="process-math">\(0=0\)</span> or <span class="process-math">\(1=1\)</span> or something similar. This means that introducing the second equation did not reduce the number of solutions for this system. In fact, we’re free to choose one of <span class="process-math">\(a\)</span> or <span class="process-math">\(b\)</span> and then we can determine the other. For example if <span class="process-math">\(a=1\)</span> then you can check that <span class="process-math">\(b=-5\text{.}\)</span> So we have <dfn class="terminology">infinitely many</dfn> pairs of numbers that solve this system.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-SolvingEquations-8-5-5-2">Can you find three other pairs of numbers <span class="process-math">\((a,b)\)</span> that are solutions?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-5-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-SolvingEquations-8-5-5-2-1">Can you find three other pairs of numbers <span class="process-math">\((a,b)\)</span> that are solutions?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-SolvingEquations-8-5-5-3">
 <div class="para">In fact, you may have noticed that if we divided Equation II by 2 we obtain the system</div>
@@ -1539,19 +1595,19 @@ L_1 - L_2 = R_1 - R_2
 <div class="para">Of course, this is just two copies of the same equation!</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-5-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 2.2.17.1"><a tabindex="-1" href="#sec-SolvingEquations-8-5-5" title="Copy heading and permalink for Solution 2.2.17.1" aria-label="Copy heading and permalink for Solution 2.2.17.1">🔗</a></div>
-</div></details><div class="autopermalink" aria-hidden="true" data-description="Example 2.2.17"><a tabindex="-1" href="#sec-SolvingEquations-8-5" title="Copy heading and permalink for Example 2.2.17" aria-label="Copy heading and permalink for Example 2.2.17">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.2.19.1"><a tabindex="-1" href="#sec-SolvingEquations-8-5-5" title="Copy heading and permalink for Solution 2.2.19.1" aria-label="Copy heading and permalink for Solution 2.2.19.1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Example 2.2.19"><a tabindex="-1" href="#sec-SolvingEquations-8-5" title="Copy heading and permalink for Example 2.2.19" aria-label="Copy heading and permalink for Example 2.2.19">🔗</a></div>
 </article></details>
 <details id="sec-SolvingEquations-8-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="sec-SolvingEquations-8-6-1">Make two different systems of two equations with two variables that have infinitely many solutions. Try to solve them using both substitution and elimination to see what happens. Then find at least two different solutions for each system you made.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.18"><a tabindex="-1" href="#sec-SolvingEquations-8-6" title="Copy heading and permalink for Checkpoint 2.2.18" aria-label="Copy heading and permalink for Checkpoint 2.2.18">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 2.2.20"><a tabindex="-1" href="#sec-SolvingEquations-8-6" title="Copy heading and permalink for Checkpoint 2.2.20" aria-label="Copy heading and permalink for Checkpoint 2.2.20">🔗</a></div>
 </article></details>
 <div class="para logical" id="sec-SolvingEquations-8-7">
-<div class="para">Putting this all together, a 2x2 system of equations has:</div>
+<div class="para">Putting this all together, a 2x2 system of linear equations has:</div>
 <ol class="decimal" id="sec-SolvingEquations-8-7-1">
 <li id="sec-SolvingEquations-8-7-1-1">
 <div class="para" id="p-derived-sec-SolvingEquations-8-7-1-1">No solutions if, when solving the system, you obtain a "nonsense" equation without variables, for example <span class="process-math">\(0=1\text{.}\)</span>
@@ -1559,8 +1615,7 @@ L_1 - L_2 = R_1 - R_2
 <div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec-SolvingEquations-8-7-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li id="sec-SolvingEquations-8-7-1-2">
-<div class="para" id="p-derived-sec-SolvingEquations-8-7-1-2">Infinitely many solutions if, when solving the system, you obtain an  equation without variables that is always true, for example <span class="process-math">\(0=0\text{.}\)</span>
-</div>
+<div class="para" id="p-derived-sec-SolvingEquations-8-7-1-2">Infinitely many solutions if, when solving the system, you obtain an equation without variables that is always true, for example <span class="process-math">\(0=0\text{,}\)</span> with another equation still remaining.</div>
 <div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec-SolvingEquations-8-7-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 <li id="sec-SolvingEquations-8-7-1-3">
@@ -1570,9 +1625,9 @@ L_1 - L_2 = R_1 - R_2
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-SolvingEquations-8-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/RtxSKLEvWCk?&amp;modestbranding=1&amp;rel=0" id="sec-SolvingEquations-8-8"></iframe></div>
 <div class="autopermalink" aria-hidden="true" data-description="Subsection 2.2.5: How Many Solutions Does a System of Equations Have"><a tabindex="-1" href="#sec-SolvingEquations-8" title="Copy heading and permalink for Subsection 2.2.5: How Many Solutions Does a System of Equations Have" aria-label="Copy heading and permalink for Subsection 2.2.5: How Many Solutions Does a System of Equations Have">🔗</a></div>
-</section><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/RtxSKLEvWCk?&amp;modestbranding=1&amp;rel=0" id="sec-SolvingEquations-9"></iframe></div>
-<div class="autopermalink" aria-hidden="true" data-description="Section 2.2: Solving Equations"><a tabindex="-1" href="#sec-SolvingEquations" title="Copy heading and permalink for Section 2.2: Solving Equations" aria-label="Copy heading and permalink for Section 2.2: Solving Equations">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 2.2: Solving Equations"><a tabindex="-1" href="#sec-SolvingEquations" title="Copy heading and permalink for Section 2.2: Solving Equations" aria-label="Copy heading and permalink for Section 2.2: Solving Equations">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

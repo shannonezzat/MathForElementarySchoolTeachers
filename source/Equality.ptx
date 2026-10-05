@@ -415,7 +415,7 @@
            We could just memorize the formula above, but there are so many different situations that arise in mathematics that it isn't feasible to remember everything. However, if you have a strong knowledge of the ideas behind equality and arithmetic of equations, you can recreate this when the need arises. 
        </p>
        <example>
-       <statment> <p> What number can we substitute in for <m>x</m> to solve the equation <m>x+5=8</m>? </p> </statement>
+       <statement> <p> What number can we substitute in for <m>x</m> to solve the equation <m>x+5=8</m>? </p> </statement>
            <solution>
               <p> Let's solve <m>x+5=8</m>. The easiest way to view this is asking "what number can I add to 5 to get 8". We can formally solve for <m>x</m> here by subtracting 5 from both sides:
                <me>
