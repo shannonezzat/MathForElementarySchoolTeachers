@@ -30,7 +30,7 @@
             Is there a "best" algorithm for each arithmetic operation? Depending on what you care about (speed, efficiency, ease of understanding, consistency in all cases), a different algorithm can be "better" than others. Regarding understanding, the most understandable algorithm may differ from student to student, and from teacher to teacher. So it is a very hard (and in some cases impossible) task to exclusively recommend one algorithm over another.
         </p>
         <p>
-            It is important to study multiple algorithms for many reasons. First of all, understanding the details of an algorithm allows a teacher to explain how and why an algorithm works, as opposed to simply relying on some authoritative explanation like "follow these steps because they are the ones that work". Also, this understanding allows teachers to be able to find student's conceptual errors in arithmetic. Not only can they find mistakes, they can, along with discussions with the students, also determine the conceptual reasons behind these mistakes. Knowing the underpinnings of multiple algorithms allows a teacher to have many algorithmic tools in their toolbox. They can use their professional judgement for what is the most appropriate algorithm to use and/or teach depending on the needs of their students. </p>
+            It is important to study multiple algorithms for many reasons. First of all, understanding the details of an algorithm allows a teacher to explain how and why an algorithm works, as opposed to simply relying on some authoritative explanation like "follow these steps because they are the ones that work". Also, this understanding allows teachers to be able to identify student's conceptual errors in arithmetic. Not only can they find mistakes, they can, along with discussions with the students, also determine the conceptual reasons behind these mistakes. Knowing the underpinnings of multiple algorithms allows a teacher to have many algorithmic tools in their toolbox. They can use their professional judgement for what is the most appropriate algorithm to use and/or teach depending on the needs of their students. </p>
             
             <p>Also, studying multiple algorithms allows teachers the opportunity to understand arithmetic through many lenses, thus increasing their overall understanding of the operations themselves. It is relatively commonplace for curricula to suggest that students develop their own personal algorithms for arithmetic. Studying multiple algorithms gives a future teacher practice in evaluating and interpreting the algorithms that students are indeed discovering (and perhaps inventing) themselves.
         </p>
@@ -38,7 +38,7 @@
             Part of our study of these algorithms will involve being able to "picture" what is happening using blocks. Teachers could indeed use manipulatives so students can get a feel for the underpinnings of each algorithm that we will study. However, the author believes that students should not rely on the manipulatives to perform these algorithms. For many reasons, including speed and working with students towards the ideas of abstraction, being able to use the algorithms, while still being able to explain why they work as they do, is the best approach.  
         </p>
         <p>
-            Note that we will also learn how to use these algorithms to do arithmetic in other bases, as discussed in INSERT SECTION REFERENCE. Even though it may be unlikely that you will need to teach students how to do arithmetic in other bases, this will allow us to turn off our "muscle memory" of doing arithmetic in base ten, as we are so comfortable with many of these algorithms that it is incredibly difficult to this muscle memory off to think deeply about the algorithmic underpinnings. As an added bonus, we will get to experience, in a small way, the struggles that your future students will have when learning about performing arithmetic for the first time. 
+            Note that we will also learn how to use these algorithms to do arithmetic in other bases, as discussed in INSERT SECTION REFERENCE. Even though it may be unlikely that you will need to teach students how to do arithmetic in other bases, this will allow us to turn off our "muscle memory" of doing arithmetic in base ten, as we are so comfortable with many of these algorithms that it is incredibly difficult to turn this muscle memory off to think deeply about the algorithmic underpinnings. As an added bonus, we will get to experience, in a small way, the struggles that your future students will have when learning about performing arithmetic for the first time. 
         </p>
     </introduction>
     <section xml:id="sec-AdditionAlgorithms">
@@ -65,7 +65,7 @@
             
                        
             <p>
-                The vast majority of students who learn arithmetic in North America lean to add using the following algorithm. As it's so common, it usually gets named the <term>standard addition algorithm</term>. In short, starting from the smallest place value to the largest (that is, from right to left) we add the place values of our numbers separately, and regroup (or "carry") any groups of the next largest place value (so the place value directly to the left) as we go. 
+                The vast majority of students who learn arithmetic in North America learn to add using the following algorithm. As it's so common, it usually gets named the <term>standard addition algorithm</term>. In short, starting from the smallest place value to the largest (that is, from right to left) we add the place values of our numbers separately, and regroup (or "carry") any groups of the next largest place value (so the place value directly to the left) as we go. 
             </p>
             <p>
                 We can write this algorithmically (as a series of steps) as follows. Also note that these steps are written in language appropriate for university students, so teachers would have to adapt the wording appropriately for their audience of students:
@@ -103,7 +103,7 @@
                 </image>
             </p>
             <p>
-                First we add the ones place. Note tha we have <m>7+9 = 16</m> ones. We can regroup ten (10) of those to make one of the next place value, that is, one ten. We write that regrouping as a 1 above, and we are still left with 6 ones, so we can write that down:
+                First we add the ones place. Note that we have <m>7+9 = 16</m> ones. We can regroup ten (10) of those to make one of the next place value, that is, one ten. We write that regrouping as a 1 above, and we are still left with 6 ones, so we can write that down:
             </p>
             <p>
                 <image source="ArithmeticAlgorithms/447+629b.svg">
@@ -222,14 +222,14 @@
                    </image>
                </p>
                <p>
-                   Now we move on to add the longs place. We have <m>3_{seven}+4_{seven}+1_{seven}=10_{seven}</m>. Thus we regroup seven longs to make one square, adn we have one long left over. We write this down in our working:
+                   Now we move on to add the longs place. We have <m>3_{seven}+4_{seven}+1_{seven}=11_{seven}</m>. Thus we regroup seven longs to make one square, and we have one long left over. We write this down in our working:
                </p>
                <p>
                 <image source="ArithmeticAlgorithms/435+43c.svg">
                     <shortdescription>435+43 base 7 in blocks adding longs</shortdescription>
                    </image>
                </p>
-              <p> Finally we add the squares place. We have <m>4_{seven}+1_{seven}=5_{seven}</m> squares, nothing that the bottom addend has no squares. Thus we write this down:  </p>
+              <p> Finally we add the squares place. We have <m>4_{seven}+1_{seven}=5_{seven}</m> squares, noting that the bottom addend has no squares. Thus we write this down:  </p>
 
               
                   <p>
@@ -321,7 +321,7 @@
                        </li>
                        <li>
                            <p>
-                               <m>422_{five}+344_{five}+43_{five}+141_{five}</m> (you may have to regroup more that one grouping in some places)
+                               <m>422_{five}+344_{five}+43_{five}+141_{five}</m> (you may have to regroup more than one grouping in some places)
                            </p>
                        </li>
                    </ol>
@@ -332,19 +332,19 @@
             <title>Partial Sums</title>
             
         <p>
-            In the standard algorithm, we added our regrouping to the next place value as we went. Instead, we could add each place value separately without dealing with the regrouping and then the regroupings to each place value as our final step. This is called the <term>partial sum algorithm</term>, as you are finding the sums of each place value (these are the partial sums) and then adding these together to obtain the final answer. Let's take a look at an example, and in fact let's look at the same problem that we did previously with the standard addition algorithm:
+            In the standard algorithm, we added our regrouping to the next place value as we went. Instead, we could add each place value separately without dealing with the regrouping and then add the regroupings to each place value as our final step. This is called the <term>partial sum algorithm</term>, as you are finding the sums of each place value (these are the partial sums) and then adding these together to obtain the final answer. Let's take a look at an example, and in fact let's look at the same problem that we did previously with the standard addition algorithm:
         </p>
 <example>
     <p>
             Let's add <m>447+629</m> slowly and carefully using partial sums and visualize it using blocks.
         </p>
-
+<p>
         First we add our ones and find that we have <m>7+9=16</m> ones, noticing that we can regroup 10 ones into a long. 
-        <p>
+        
             <image source="ArithmeticAlgorithms/447+629bPartial.svg">
                 <shortdescription>447+629 in blocks adding ones using partial sums</shortdescription>
             </image>
-        </p>
+       
         
         Then, we add the tens and hundreds separately: <m>40+20=60</m> 
         <image source="ArithmeticAlgorithms/447+629cPartial.svg">
@@ -355,7 +355,7 @@
         <image source="ArithmeticAlgorithms/447+629dPartial.svg">
             <shortdescription>447+629 in blocks adding squares using partial sums</shortdescription>
         </image>
-
+</p>
        
 
         
@@ -371,11 +371,11 @@
             
         
         <p>
-            Let's now discuss the <term>same change</term> algorithm. To help us illustrate the idea (any why it's useful to know) we start with an example. Let's add <m>998+314</m> in our heads. Try doing this now.
+            Let's now discuss the <term>same change</term> algorithm. To help us illustrate the idea (and why it's useful to know) we start with an example. Let's add <m>998+314</m> in our heads. Try doing this now.
         </p>
 
         <p>
-            I'm sure that most people reading this book did not mentally perform the standard algorithm for this calculation. In fact, I can imagine that many people noticed that 998 was 2 smaller than 1000, so they added 2 to 1000 and, to "balance" out, they subtracted 2 from 314.
+            I'm sure that most people reading this book did not mentally perform the standard algorithm for this calculation. In fact, I can imagine that many people noticed that 998 was 2 smaller than 1000, so they added 2 to 998 to obtain 1000 and, to "balance" out, they subtracted 2 from 314.
             Step 1:
             <image source="ArithmeticAlgorithms/998+314a.svg">
                 <shortdescription>998+314 Same Change</shortdescription>
@@ -396,13 +396,13 @@
             In fact, you can use this idea to add any two numbers. </p>
 
         <p>
-            In general, we are using the fact that if <m>a,b, \in \mathbb{N}_0</m> we know that <m>a+b = (a+c)+(b-c)</m> since we can use associativity and commutativity to rearrange the RHS to <m>a+b+(c-c) = a+b+0 = a+b</m>. In fact, since this holds for *any* whole numbers <m>a,b,c</m> we can indeed use this idea to judiciously choose the <m>c</m> in the calculation to make our computation easier. 
+            In general, we are using the fact that if <m>a,b,c \in \mathbb{N}_0</m> we know that <m>a+b = (a+c)+(b-c)</m> since we can use associativity and commutativity to rearrange the RHS to <m>a+b+(c-c) = a+b+0 = a+b</m>. In fact, since this holds for *any* integers <m>a,b,c</m> we can indeed use this idea to judiciously choose the <m>c</m> in the calculation to make our computation easier. 
         </p>
         <p>
             In the first example we chose <m>c=2</m> so that our addition step in each place value was as easy as possible; adding 0 in fact does nothing. Thus, we turned our calculation into <m>(998+2)+(314-2) = 1000+312 = 1312.</m>
         </p>
         <p>
-            Note that this idea doesn't necessarily make the calculation easier and other than a few cases like the above, where one number is "close" to a round number, it's not very useful. However, we bring this up because there is a related algorithm for subtraction that is very useful!
+            Note that this idea doesn't necessarily make the calculation easier and other than a few cases like the above, where one number is "close" to a round number, it's not often useful. However, we bring this up because there is a related algorithm for subtraction that is very useful!
         </p>
         </subsection>
         <subsection xml:id="subsec-LatticeMethodAddition">
@@ -422,7 +422,7 @@
                 </image>
             </p>
             <p>
-                We now add each place value separately. Starting with the ones place we add <m>7+9=16</m> ones, which we regroup into <m>1</m> ten and <m>6</m> ones. We write this in the leftmost box.
+                We now add each place value separately. Starting with the ones place we add <m>7+9=16</m> ones, which we regroup into <m>1</m> ten and <m>6</m> ones. We write this in the rightmost box.
             </p>
             <p>
                 <image source="ArithmeticAlgorithms/447+629bLattice.svg">
@@ -430,7 +430,7 @@
                 </image>
             </p>
             <p>
-                We continue with the other two places similarly. Note that we do not need to regroup any tens, so we leave the hundreds section of that box blank (or we can put a <m>0</m> there). Thus are final partial sum should look like this:
+                We continue with the other two places similarly. Note that we do not need to regroup any tens, so we leave the hundreds section of that box blank (or we can put a <m>0</m> there). Thus our final partial sum should look like this:
             </p>
             <p>
                 <image source="ArithmeticAlgorithms/447+629cLattice.svg">
@@ -509,12 +509,12 @@
             </p>
 
             <p>
-                We'll need some notation to easily talk about subtraction. In the subtraction problem <m>a-b=c</m> we will call <m>a</m> and <m>b</m> the <term>top number</term> and <term>bottom number</term>, respectively, and we call <m>c</m> the <term>difference</term>.  Note that some (mostly antiquated) sources call the top number the subtrahend and the bottom number the minuend. We will avoid this archaic language, as it's rarely seen or used.
+                We'll need some notation to easily talk about subtraction. In the subtraction problem <m>a-b=c</m> we will call <m>a</m> and <m>b</m> the <term>top number</term> and <term>bottom number</term>, respectively, and we call <m>c</m> the <term>difference</term>.  Note that some (mostly antiquated) sources call the top number the minuend and the bottom number the subtrahend. We will largely avoid this archaic language, as it's rarely seen or used.
             </p>
         
         
         <p>
-            Standard Algorithm - Include Block Diagrams For All (reference: An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Textbooks and Cyphering Books
+            Notes for the author (ignore): Standard Algorithm - Include Block Diagrams For All (reference: An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Textbooks and Cyphering Books
  An Investigation of Subtraction Algorithms from the 18th and 19th Centuries
 An Investigation of Subtraction Algorithms from the 18th and 19th Centuries - Definitions and Algorithms 
 Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
@@ -529,7 +529,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
 
             
             <p>
-                Like the standard addition algorithm, let's list the steps for this algorithm too. Note that this is quite complicated compared to addition.
+                Like the standard addition algorithm, let's list the steps for this algorithm too. Note that this is quite complicated compared to addition. For now, assume that the top number is at least as large as the bottom number.
             </p>
 
             <ol>
@@ -547,7 +547,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     </li>
                     <li>
                         <p>
-                         If the top digit is smaller than the bottom digit, determine the first digit in the top number to the left of the current place that is non-zero. Decrease that place by 1, (if there are any) change the 0 digits between that digit and our current place to 9s (or whatever the largest digit in your base is, if you are subtracting in a non-ten base), and add 10 to the current top digit.
+                         If the top digit is smaller than the bottom digit, determine the first digit in the top number to the left of the current place that is non-zero. Decrease that place by 1, (if there are any) change the 0 digits between that digit and our current place to 9s (or whatever the largest digit in your base is, if you are subtracting in a non-ten base), and add 10 (whatever the base size is) to the current top digit.
                         </p>
                    
                     </li>
@@ -573,7 +573,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </image>
                 </p>
                 <p>
-                    Now let's subtract the rightmost place. Note that the top 2 is smaller than the bottom digit, so we must borrow. The the place directly to the left has a non-zero top digit, so we regroup 1 of this place (tens) to make 10 of our current place (ones) and thus decrease the digit in that place by 1. 
+                    Now let's subtract the rightmost place. Note that the top 2 is smaller than the bottom digit, so we must borrow. The place directly to the left has a non-zero top digit, so we regroup 1 of this place (tens) to make 10 of our current place (ones) and thus decrease the digit in that place by 1. 
 
                     <image source="ArithmeticAlgorithms/4052-2457b.svg">
                         <shortdescription>(for accessibility)</shortdescription>
@@ -605,7 +605,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                        </image>
                 </p>
                 <p>
-                    Now we have 14 tens and we do the subtraction in the tens column <m>14-5=9</m> . Similarly, the top number in the hundreds and thousands place is smaller so we do those subtractions as well: <m>9-4=5</m> and <m>3-2 = 1</m> respectively.
+                    Now we have 14 tens and we do the subtraction in the tens column <m>14-5=9</m> . Similarly, the top digit in the hundreds and thousands place is larger than in the bottom so we do those subtractions as well: <m>9-4=5</m> and <m>3-2 = 1</m> respectively.
                 </p>
                 <p>
                     <image source="ArithmeticAlgorithms/4052-2457f.svg">
@@ -786,7 +786,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
            
        
         <p>
-            This algorithm relies on two important concepts:
+            This algorithm relies on three important concepts:
         </p>
         <ol>
             <li>
@@ -810,7 +810,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
             The final concept says that if you add a quantity to the top number of a subtraction problem, you can add that quantity to the bottom number and not change the difference.
         </p>
         <p>
-            We will call a digit <m>d</m> the <term>same-change opposite digit</term>  of another digit <m>e</m> if and only if <m>d+e=10</m>. We will shorten this to <term>opposite digit</term> if there would be no confusion. For example, the opposite digit of <m>8</m> is <m>2</m> since <m>8+2=10</m>. Also note that <m>5</m> is its own opposite digit, since <m>5+5=10</m>. Note that this definition is applicable for other bases beside base ten too! 
+            We will call a digit <m>d</m> the <term>same-change opposite digit</term>  of another non-zero digit <m>e</m> if and only if <m>d+e=10</m>. We will shorten this to <term>opposite digit</term> if there would be no confusion. For example, the opposite digit of <m>8</m> is <m>2</m> since <m>8+2=10</m>. Also note that <m>5</m> is its own opposite digit, since <m>5+5=10</m>. Note that this definition is applicable for other bases beside base ten too! 
         </p>
         <p>
             The algorithm is as follows.
@@ -914,7 +914,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
             </li>
             <li>
                 <p>
-                    If the digit in the top number is less than the digit in the bottom number (including additional ones if one is there), add ten of that place to the top digit (signified by a 1) while adding an additional 1 to the place to the left in the bottom number. Then subtract the bottom number from the top number in that place. If the digit in the top number is greater than the digit in the bottom number, do the place subtraction without any borrowing.
+                    If the digit in the top number is less than the digit in the bottom number (including additional ones if one is there), add ten of that place to the top digit (signified by a 1) while adding an additional 1 to the place to the left in the bottom number. Then subtract the bottom number from the top number in that place. If the digit in the top number is greater than or equal to the digit in the bottom number, do the place subtraction without any borrowing.
                 </p>
             </li>
             <li>
@@ -932,7 +932,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </image>
                 </p>
           <p>
-              Starting with the ones place, we see that the digit <m>2</m> in the top number is less than the digit <m>7</m> in the bottom. So we "borrow" 10 ones, but unlike the standard subtraction algorithm we are "in debt" 1 ten to the bottom number. Thus, we have <m>(10+2)-7=12-7=5</m> ones in our difference. We mark this, and our additional debt of 1 ten, in our calculation: 
+              Starting with the ones place, we see that the digit <m>2</m> in the top number is less than the digit <m>7</m> in the bottom. So we "borrow" 10 ones, but unlike the standard subtraction algorithm we are "in debt" 1 ten to the bottom number. Thus, we have <m>(10+2)-7=12-7=5</m> ones in our difference. We mark this, and our additional debt of 1 ten, in our calculation. Note that adding ten ones to the top number and one ten to the bottom number increases both numbers by the same amount, so their difference is unchanged. The same reasoning applies to other place values and bases: 
           </p>
            <p>
                     
@@ -1115,7 +1115,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </image>
                 </p>
                 <p>
-                    Now, using distributivity, we calculate each partial product: since there are 3 terms in the first expanded form and 3 in the second, we will have <m>3 \times 2 = 6</m> partial products to calculate. We can start anywhere we like, but usually one starts by multiplying the bottom ones place by every place in the top number. Then, working right to left, we multiply the tens place by every place in the top number. 
+                    Now, using distributivity, we calculate each partial product: since there are 3 terms in the first expanded form and 2 in the second, we will have <m>3 \times 2 = 6</m> partial products to calculate. We can start anywhere we like, but usually one starts by multiplying the bottom ones place by every place in the top number. Then, working right to left, we multiply the tens place by every place in the top number. 
                     </p>
                     
                     <p>
@@ -1169,7 +1169,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
        <subsection xml:id="subsec-StandardMultiplicationAlgorithm">
            <title>Standard Multiplication Algorithm</title>
            <p>
-               The <term>standard multiplication algorithm</term> is, very likely, the method that you would have been taught how to multiply numbers in elementary school. It is very related to the partial products algorithm. The main difference is that we only expand one of our numbers, our "bottom number", into expanded form. For example, we would think of the multiplication <m>348 \times 97</m> as <m>348 \times (90 + 8)</m>. We can view this in our area model as only subdividing our rectangle in one direction:
+               The <term>standard multiplication algorithm</term> is, very likely, the method that you would have been taught how to multiply numbers in elementary school. It is very related to the partial products algorithm. The main difference is that we only expand one of our numbers, our "bottom number", into expanded form. For example, we would think of the multiplication <m>348 \times 97</m> as <m>348 \times (90 + 7)</m>. We can view this in our area model as only subdividing our rectangle in one direction:
            </p>
 
            <p>
@@ -1207,12 +1207,12 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 </li>
                 <li>
                     <p>
-                        Working from right to left, multiply the bottom digit by each digit in the top number, adding any regroupings from the previous multiplication if they exist. If the product is greater than 9, regroup the tens to the next place value by writing the number of tens over the digit to the left in the top number. Write down the ones digit of your calculation to the left of the previous digit you have written, if any exist.
+                        Working from right to left, multiply the bottom digit by each digit in the top number, adding any regroupings from the previous multiplication if they exist. If the product is greater than 9, regroup the tens to the next place value by writing the number of tens over the digit to the left in the top number. Write down the ones digit of your calculation to the left of the previous digit you have written, if any exist. After working with the leftmost digit of the top number, write any remaining carry to its left.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Once there are no more non-zero digits to the left in the top number, if there are non-zero digits to the left of your current digit in the bottom number, move one digit to the left in the bottom number and return to Step 2. If there are no non-zero numbers to the left, move on to the next step.  
+                        Once there are no more non-zero digits to the left in the top number, if there are non-zero digits to the left of your current digit in the bottom number, move one digit to the left in the bottom number and return to Step 2. If there are no non-zero numbers to the left, move on to the next step. Clear the carries before beginning the next partial-product row.
                     </p>
                 </li>
                 <li>
@@ -1226,7 +1226,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
             </p>
             <example>
                 <p>
-                    Let's multiply <m>348 \times 97</m>. First, we write the numbers lined up by place value, but we are thinking of the bottom number in expanded form: <m>(349) \times (90 + 7). </m> Pictorially, we can view this as breaking up a rectangle with side lengths <m>348</m> and <m>97</m> units into sub rectangles where the side length of <m>97</m> are the terms in the expanded form. 
+                    Let's multiply <m>348 \times 97</m>. First, we write the numbers lined up by place value, but we are thinking of the bottom number in expanded form: <m>(348) \times (90 + 7). </m> Pictorially, we can view this as breaking up a rectangle with side lengths <m>348</m> and <m>97</m> units into sub rectangles where the side length of <m>97</m> are the terms in the expanded form. 
                 </p>
                 <p>
                     
@@ -1281,7 +1281,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </image>
                 </p>
                 <p>
-                    Note that our first partial sum is the same as the <m>56+280+2100</m> in the partial sum algorithm, and similarly <m>31320 = 720 + 3600 + 27,000 </m>. We can see this relationship in the diagram too
+                    Note that our first partial product is the same as the <m>56+280+2100</m> in the partial product algorithm, and similarly <m>31320 = 720 + 3600 + 27,000 </m>. We can see this relationship in the diagram too
                 </p>
                 <p>
                     
@@ -1305,7 +1305,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
            </p>
 
            <p>
-               A quick reminder that in base twelve, we ony regroup when we have twelve of one place. We represent ten of a place by the symbol <m>A</m> and eleven of a place by the symbol <m>B</m>. Also, note that in this section we will assume all calculations are in base twelve, even if we do not note the base for each number; that is, for example, we'll write <m>3A \times 15</m> to mean <m>3A_{twelve} \times 15_{twelve}</m>. 
+               A quick reminder that in base twelve, we only regroup when we have twelve of one place. We represent ten of a place by the symbol <m>A</m> and eleven of a place by the symbol <m>B</m>. Also, note that in this section we will assume all calculations are in base twelve, even if we do not note the base for each number; that is, for example, we'll write <m>3A \times 15</m> to mean <m>3A_{twelve} \times 15_{twelve}</m>. 
            </p>
 
            <p>
@@ -1319,11 +1319,11 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                 </p>
            <p>
                By the property of multiplicative identity, we know that <m>1 \times 5 = 5</m> and we know that <m>2 \times 5 = 5 + 5 = A</m>, since we have ten ones (not enough to regroup). We can determine <m>3 \times 5</m> by adding <m>5</m> to <m>2 \times 5</m>. Thus we have <m>3 \times 5 = 2 \times 5 +5 = A+5 = 13</m>. We can input these into our times table in both the 5 row and 5 column since multiplication is commutative: <m>5 \times n = n \times 5</m> for any number <m>n</m>.
-           </p>
+          
           
                We can continue in the same way, using our skills for addition in base twelve, to finish the rest of the "<m>5</m> times table":
            
-           <p>
+           
                     
                    <image source="ArithmeticAlgorithms/base_twelve_multiplication_table_five_filled.svg">
                     <shortdescription>(for accessibility)</shortdescription>
@@ -1380,7 +1380,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </image>
                 </p>
                     <p>
-                        Next, we move on to the squares place (that is, the one-hundred-forty-fours place, or "twelve squared place"). We put a <m>0</m> in the two rightmost entries of that row and we multiply. Using a similar method to above we get that <m>6A0B \times 3 = 1862900</m>. You should check that you obtain the same answer as this!
+                        Next, we move on to the squares place (that is, the one-hundred-forty-fours place, or "twelve squared place"). We put a <m>0</m> in the two rightmost entries of that row and we multiply. Using a similar method to above we get that <m>6A0B \times 300 = 1862900</m>. You should check that you obtain the same answer as this!
                     </p>
                     <p>
                     
@@ -1413,7 +1413,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
            </p>
 
            <p>
-               The algorithm for Russian multiplication is as follows:
+               The algorithm for Russian multiplication (of two non-zero whole numbers) is as follows:
            </p>
            <ol>
                <li>
@@ -1478,7 +1478,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </image>
                 </p>
                <p>
-                   Now, we cross out all rows that contain an even number on the left. That are the rows with the left number being <m>48, 24, 12,</m> and <m>6</m>. This leaves the rows with the left number being <m>97, 3,</m> and <m>1</m>. 
+                   Now, we cross out all rows that contain an even number on the left. Those are the rows with the left number being <m>48, 24, 12,</m> and <m>6</m>. This leaves the rows with the left number being <m>97, 3,</m> and <m>1</m>. 
                </p>
               <p>
                     
@@ -1514,7 +1514,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </li>
                    <li>
                        <p>
-                           Now, let's try the calculation <m>9 \times 10</m>. In the second row, our left number is <m>4</m> since <m>9 \div 2 = 4.5</m> and we rounded down. Draw a diagram for both rows and describe how much is "missing" from the first row to the next. How does this relate to the calculation <m>8 \times 10</m>? Where is that number appear in your algorithm?
+                           Now, let's try the calculation <m>9 \times 10</m>. In the second row, our left number is <m>4</m> since <m>9 \div 2 = 4.5</m> and we rounded down. Draw a diagram for both rows and describe how much is "missing" from the first row to the next. How does this relate to the calculation <m>8 \times 10</m>? Where does that number appear in your algorithm?
                        </p>
                    </li>
                    <li>
@@ -1585,7 +1585,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                We just discussed four different methods for multiplying. Which one is better? Is one always better? In the author's opinion, there are pros and cons with each algorithm. We will discuss some of these now.
            </p>
            <subsubsection xml:id="subsubsec-PartialProductsAlgorithm">
-               <title>PartialProductsAlgorithm</title>
+               <title>Partial Products Algorithm</title>
                <p>
                    Pros:
                </p>
@@ -1706,7 +1706,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                     </li>
                     <li>
                         <p>
-                            The algorithm isn't easily adaptable to multiplying other objects (like polynomials)
+                            The compact notation can make the use of distributivity less visible.
                         </p>
                     </li>
                 </ol>
@@ -1755,7 +1755,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </li>
                    <li>
                        <p>
-                           It cannot be used to multiply other objects (like polynomials) 
+                           The algorithm does not directly provide a general procedure for multiplying two arbitrary polynomials. 
                        </p>
                    </li>
                    <li>
@@ -1802,7 +1802,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <subsection xml:id="subsec-LongDivision">
             <title>Long Division</title>
             <p>
-               Consider the division problem <m>a \div b</m> where <m>a,b \in \mathbb{N}.</m> The idea behind <term>long division</term> uses the partitive mode of division along with the idea of place value. Starting with the largest place value of the dividend <m>a</m>, we group as many of those place into <m>b</m> groups. Any of that place value remaining we ungroup into the next largest place value. 
+               Consider the division problem <m>a \div b</m> where <m>a,b \in \mathbb{N}.</m> The idea behind <term>long division</term> uses the partitive model of division along with the idea of place value. Starting with the largest place value of the dividend <m>a</m>, we group as many of those place into <m>b</m> groups. Any of that place value remaining we ungroup into the next largest place value. 
                
                A quick note: remember from the Quotient Remainder Theorem that remainders are always between <m>0</m> and <m>b-1</m> (inclusive) so we know each remainder in our calculation, which we will call a <term>place remainder</term>, must be within this range. 
                
@@ -1887,7 +1887,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </image>
                    </p>
                 <p>
-                    Finally, we can divide our <m>27</m> ones so that <m>6</m> are in each group of <m>4</m>. We write this in our quotient and since <m>27 \div 4 = 6R3</m> we have <m>3</m> ones remaining. Since we are at the ones place we are finished our calculation, and thus <m>587 \div 4 = 146R3</m>. Each group of <m>4</m> contains <m>146</m> with <m>3</m> ones unable to be grouped evenly.
+                    Finally, we can divide our <m>27</m> ones so that <m>6</m> are in each of the <m>4</m> groups. We write this in our quotient and since <m>27 \div 4 = 6R3</m> we have <m>3</m> ones remaining. Since we are at the ones place we are finished our calculation, and thus <m>587 \div 4 = 146R3</m>. Each group of <m>4</m> contains <m>146</m> with <m>3</m> ones unable to be grouped evenly.
                 </p>
                 <p>
                     
@@ -1911,7 +1911,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </image>
                    </p>
             <p>
-                Now, we know that we cannot group <m>9</m> hundreds evenly among <m>23</m> groups, so we ungroup these into tens, giving us <m>94</m> tens in total. We know that <m>23</m> is close to <m>20</m>, so we can use multiples of <m>20</m> as an estimation for the correct hundreds quotient. We know <m>4 \times 20 = 80</m> and <m>5 \times 20 = 100</m>, so let's see if we can put at most <m>4</m> tens evenly in each of our <m>23</m> groups: <m>4 \times 23 = 92</m> and <m>5 \times 23 = 115</m>, so <m>4</m> is the correct partial quotient. Subtracting, we find that we have a remainder of <m>6</m>.
+                Now, we know that we cannot group <m>9</m> hundreds evenly among <m>23</m> groups, so we ungroup these into tens, giving us <m>98</m> tens in total. We know that <m>23</m> is close to <m>20</m>, so we can use multiples of <m>20</m> as an estimation for the correct tens quotient. We know <m>4 \times 20 = 80</m> and <m>5 \times 20 = 100</m>, so let's see if we can put at most <m>4</m> tens evenly in each of our <m>23</m> groups: <m>4 \times 23 = 92</m> and <m>5 \times 23 = 115</m>, so <m>4</m> is the correct partial quotient. Subtracting, we find that we have a remainder of <m>6</m>.
             </p>
             <p>
                     
@@ -1950,7 +1950,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </image>
                    </p>
                <p>
-                   We write down our dividend and divisor in the appropriate locations. Now we perform the algorithm. We start at the <m>10^4_{twelve}</m> place (a long made of cubes) and ask "if we have 5 of this place, how many can be evenly divided among ten groups." We do not have enough to put any in the groups, so we put a zero in the quotient above this place (however, we don't need to explicitly write it since we do not write whole numbers starting with a zero). We have grouped <m>0 \times A = 0 </m> of this place, and have <m>5-0=0</m> remaining.
+                   We write down our dividend and divisor in the appropriate locations. Now we perform the algorithm. We start at the <m>10^4_{twelve}</m> place (a long made of cubes) and ask "if we have 5 of this place, how many can be evenly divided among ten groups." We do not have enough to put any in the groups, so we put a zero in the quotient above this place (however, we don't need to explicitly write it since we do not write whole numbers starting with a zero). We have grouped <m>0 \times A = 0 </m> of this place, and have <m>5-0=5</m> remaining.
                </p>
               <p>
                     
@@ -1977,7 +1977,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
                    </image>
                    </p>
                    <p>
-                       We ungroup these <m>8</m> squares to make ninety-six (or <m>80_{twelve}</m>) longs. Adding our original <m>8</m> longs we have <m>80+8==88</m> longs. Similarly to the previous places, we know <m>A \times A = 84</m> and <m>B \times A = 92</m> so we can evenly put <m>A</m> longs in each of our <m>A</m> groups, and we have <m>88-84=4</m> remaining.
+                       We ungroup these <m>8</m> squares to make ninety-six (or <m>80_{twelve}</m>) longs. Adding our original <m>8</m> longs we have <m>80+8=88</m> longs. Similarly to the previous places, we know <m>A \times A = 84</m> and <m>B \times A = 92</m> so we can evenly put <m>A</m> longs in each of our <m>A</m> groups, and we have <m>88-84=4</m> remaining.
                    </p>
                    <p>
                     
@@ -2207,7 +2207,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
     <!-- 4: Equal additions (complements) -->
     <exercise>
       <statement>
-        <p>Using the <em>equal additions</em> algorithm (adding a full base group to the subtrahend and minuend to avoid borrowing), perform each subtraction. Regroup appropriately for the base.</p>
+        <p>Using the <em>equal additions</em> algorithm, perform each subtraction. Regroup appropriately for the base.</p>
         <ol marker="a">
           <li><m>934_{ten} - 374_{ten}</m></li>
           <li><m>747_{ten} - 159_{ten}</m></li>
@@ -2416,10 +2416,10 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
     <!-- 11: Recover factors from partial products -->
     <exercise>
       <statement>
-        <p>Given the partial products from a standard-algorithm layout, determine the multiplicands.</p>
+        <p>Given the partial products from a standard-algorithm layout, determine the missing number that was multiplied.</p>
         <ol marker="a">
-          <li>Top row shows <m>831</m>. The three partial products written beneath are <m>600</m>, <m>18{,}000</m>, and <m>4{,}800{,}000</m> (shifted by place). What was the other factor?</li>
-          <li>Top row shows <m>456</m>. The partial products include <m>18</m>, <m>150</m>, <m>1200</m>, <m>120</m>, <m>1000</m>, <m>8000</m>, <m>60</m>, <m>5000</m>, <m>40{,}000</m> (each appropriately shifted). What was the other factor?</li>
+          <li>Top row shows <m>831</m>. The three partial products written beneath are <m>600</m>, <m>18000</m>, and <m>480000</m>. What was the other factor?</li>
+          <li>Top row shows <m>456</m>. The partial products include <m>18</m>, <m>150</m>, <m>1200</m>, <m>120</m>, <m>1000</m>, <m>8000</m>, <m>600</m>, <m>5000</m>, <m>40{,}000</m>. What was the other factor?</li>
           <li>Top row shows <m>139</m>. The partial products include <m>18</m>, <m>60</m>, <m>200</m>, <m>630</m>, <m>2100</m>, <m>7000</m>, <m>6300</m>, <m>21{,}000</m>, <m>70{,}000</m>. What was the other factor?</li>
         </ol>
       </statement>
@@ -2432,8 +2432,8 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <ol marker="a">
           <li>For <m>954 \times 211</m>, a student lists nine one-digit lines (4, 5, 9, 4, 5, 9, 8, 10, 18) and sums to get <m>72</m>. What place-value mistake is being made?</li>
           <li>For <m>761 \times 990</m>, a student treats <m>990</m> as <m>99</m> and forgets the trailing zero shift. Explain how place shifting should work and what the correct structure of partial products is.</li>
-          <li>For <m>750 \times 878</m>, the partial products mishandle multiples of <m>10</m> and <m>40</m>. Explain how to organize the computation so every tens/hundreds place is accounted for correctly.</li>
-          <li>For <m>634 \times 272</m>, a neatly organized set of shifted partial products leads to the correct total. State why this layout is valid (identify the properties used).</li>
+          
+          
         </ol>
       </statement>
     </exercise>
@@ -2502,7 +2502,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
     <!-- 5: Fair sharing & divisibility reasoning -->
     <exercise>
       <statement>
-        <p>Steve has <m>566</m> cookies and wants to share them fairly among six friends (equal whole-number amounts).</p>
+        <p>Steve has <m>566</m> cookies and wants to share them fairly among six friends (equal whole-number amounts with no cookies left over).</p>
         <ol marker="a">
           <li>How many whole cookies does each friend get, and how many are left over?</li>
           <li>Consider instead sharing between two people. Decide if this is possible <em>without</em> carrying out the full division, and explain your test.</li>
@@ -2531,17 +2531,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
   <title>Arithmetic Algorithms: Deeper Explanations</title>
   <exercises>
 
-    <!-- 1: Addition — why column addition works in any base -->
-    <exercise>
-      <statement>
-        <p>Explain why the standard <em>column addition</em> algorithm is correct in base <m>b\ge 2</m>.</p>
-        <ol marker="a">
-          <li>State precisely what a “carry” represents in base <m>b</m>, and why its value is always an integer between <m>0</m> and <m>b-1</m>.</li>
-          <li>Justify that adding the units column and writing the remainder “mod <m>b</m>” with a carry of <m>\left\lfloor \dfrac{\text{column sum}}{b}\right\rfloor</m> preserves the total value of the sum.</li>
-          <li>Connect the algorithm to <em>expanded form</em> (powers of <m>b</m>) showing equality of values before and after carrying.</li>
-        </ol>
-      </statement>
-    </exercise>
+   
 
     <!-- 2: Addition — standard vs partial sums -->
     <exercise>
@@ -2563,7 +2553,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <ol marker="a">
           <li>Prove algebraically that the difference is unchanged.</li>
           <li>Give a base-ten number line model and a base-eight blocks model to illustrate the invariant.</li>
-          <li>Discuss when same-change is especially helpful (e.g., making the subtrahend a round number such as <m>1000,\, 100_{eight},\, 1{,}00_{twelve}</m>).</li>
+          <li>Discuss when same-change is especially helpful (e.g., making the subtrahend a round number such as <m>1000_{ten},\, 100_{eight},\, 100_{twelve}</m>).</li>
         </ol>
       </statement>
     </exercise>
@@ -2571,11 +2561,11 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
     <!-- 4: Subtraction — equal additions/complements -->
     <exercise>
       <statement>
-        <p>Equal additions (a.k.a. complements) avoids borrowing by adding a full base unit to both minuend and subtrahend in a column.</p>
+        <p>Equal additions avoids borrowing by adding a full base unit to both minuend (top number) and to the next place value to the left in the subtrahend (bottom number).</p>
         <ol marker="a">
-          <li>Explain why adding <m>b</m> to one column of both numbers preserves the overall difference.</li>
-          <li>Describe the relationship between equal additions in base ten and the <m>9</m>’s complement method; generalize to base <m>b</m> and <m>(b-1)</m>’s complements.</li>
-          <li>Give a worked example in base twelve and narrate each invariant you are using.</li>
+          <li>Explain why this adding preserves the overall difference.</li>
+         
+          <li>Give a worked example in base twelve and explain each addition you are using.</li>
         </ol>
       </statement>
     </exercise>
@@ -2595,7 +2585,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
     <!-- 6: Multiplication — lattice addition/multiplication insight -->
     <exercise>
       <statement>
-        <p>Lattice methods reorganize partial products. Explain why lattice <em>addition</em> or <em>multiplication</em> produces the same result as the standard algorithm.</p>
+        <p>Lattice methods reorganize partial products. Explain why lattice <em>addition</em> or lattice <em>multiplication</em> (that is, writing the partial products in a lattice diagram like addition) produces the same result as the standard algorithm.</p>
         <ol marker="a">
           <li>Identify where each digit–digit product appears in the lattice and which place value it contributes to.</li>
           <li>Explain the diagonal carries as “collecting equal powers of <m>b</m>.”</li>
@@ -2606,7 +2596,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
     <!-- 7: Multiplication — Russian peasant correctness -->
     <exercise>
       <statement>
-        <p>Russian (peasant) multiplication repeatedly halves one factor and doubles the other, summing only rows with odd halves.</p>
+        <p>Russian (peasant) multiplication repeatedly halves one factor and doubles the other, summing only rows whose left entry is odd.</p>
         <ol marker="a">
           <li>Explain why <m>a\times b = \sum 2^k \cdot (\text{odd-part contribution})</m> corresponds to the binary expansion of one factor.</li>
           <li>Prove correctness by induction on the number of halving steps, or by writing <m>b</m> in base two.</li>
@@ -2621,7 +2611,12 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
         <p>Justify the <em>long division</em> algorithm in base <m>b</m>.</p>
         <ol marker="a">
           <li>State what each quotient digit represents and why choosing the largest digit that “fits” is a greedy but correct step.</li>
-          <li>Explain why the remainder at each stage is strictly smaller than the divisor (in base <m>b</m> units), ensuring termination.</li>
+          <li>Explain why the remainder at each stage is strictly smaller than the divisor (in base <m>b</m> units).</li>
+            <li>
+                <p>
+                    How does this guarantee that the long division algorithm will eventually terminate?
+                </p>
+            </li>
           <li>Relate the algorithm to writing the dividend as <m>q\cdot d + r</m> with <m>0\le r&lt;d</m> at each truncated place.</li>
         </ol>
       </statement>
@@ -2630,7 +2625,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
     <!-- 9: Division — short division and factoring the divisor -->
     <exercise>
       <statement>
-        <p>Short division often tacitly factors the divisor or performs mental carries.</p>
+        <p>Short division performs the same steps as long division but records less intermediate work. Factoring the divisor provides a separate strategy for simplifying some calculations.</p>
         <ol marker="a">
           <li>Explain how dividing by <m>25</m> can be transformed into multiplying by <m>4</m> and dividing by <m>100</m>, and why place value makes this efficient.</li>
           <li>Give an example where factoring the divisor into primes yields a faster mental computation than straight long division.</li>
@@ -2690,7 +2685,7 @@ Author(s): Nicole M. Wessman-Enzinger (Illinois State University))
       <statement>
         <p>Explain how to use estimation to catch algorithmic slips.</p>
         <ol marker="a">
-          <li>Give an upper and lower bound for <m>608\times 789</m> using one-digit rounding, and explain how such bounds can reveal place-shift errors.</li>
+          <li>Give an upper and lower bound for <m>608\times 789</m> using leading-digit rounding (rounding to the nearest 100), and explain how such bounds can reveal place-shift errors.</li>
           <li>Give a bound check for <m>67894\div 8</m> that would flag a misplaced quotient digit.</li>
         </ol>
       </statement>

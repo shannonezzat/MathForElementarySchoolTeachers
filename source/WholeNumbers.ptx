@@ -36,7 +36,7 @@
   
 
   <p>
-    Place value is a very important concept that allows us to write down very large (and very small) numbers in a small amount of space. If we didn't have the concept of place value, we would simply use the number of "ticks" we wanted to write down to represent that number. For example, if we wanted to write down "twenty" we would do something like the following:
+    Place value is a very important concept that allows us to write down very large (and very small) numbers in a small amount of space. If we didn't have the concept of place value, we could simply (but not usefully) use the number of "ticks" we wanted to write down to represent that number. For example, if we wanted to write down "twenty" we would do something like the following:
   </p>
   <p>
      <image source="WholeNumbers/20Ticks.svg">
@@ -147,7 +147,7 @@
     We group 10 hundreds to make one thousand: <m>10 \times 100=10^1 \times 10^2 = 10^{1+2} = 10^3 = 1000</m>. Similarly to a "long" and "square" we can view the thousand "cube" as a three dimensional object, with length, width, and depth. 
 </p>
 <p>
-    As we can really only think in three dimensions well (some mathematicians can visualize some higher dimensions, but not too many!), we can't think of a ten-thousand as a four-dimensional object. However, we can "reunitize" and think of the thousand as a new type of unit. Then, one ten-thousand <m>10 \times 1000=10 \times 10^3 = 10^4</m> can be visualized as a "long" made up of ten-thousands, a hundred-thousand <m>10^5</m> can be viewed as a square made up of ten ten-thousands. We "reunitize" again when we hit one million, and reunitize after every three places. This may be why we decided to express places in "name", "ten-name", and "hundred-name".
+    As we can really only think in three dimensions well (some mathematicians can visualize some higher dimensions, but not too many!), we can't think of a ten-thousand as a four-dimensional object. However, we can "reunitize" and think of the thousand as a new type of unit. Then, one ten-thousand <m>10 \times 1000=10 \times 10^3 = 10^4</m> can be visualized as a "long" made up of ten thousands, a hundred-thousand <m>10^5</m> can be viewed as a square made up of ten ten-thousands, or equivalently one hundred thousand cubes. We "reunitize" again when we hit one million, and reunitize after every three places. This may be why we decided to express places in "name", "ten-name", and "hundred-name".
 </p>
 <p>
     This idea of expressing a number in its places will be very helpful later on. For example we can write
@@ -164,7 +164,7 @@
 
 
 <p>
-    A good question is "is there anything special about regrouping in units of ten ?" or in the language of number systems "why do we use base ten?" The answer to this is no! We can indeed have a base of any counting number we like (say in base <m>b</m>) and then regroup once we have <m>b</m> of any place. 
+    A good question is "is there anything special about regrouping in units of ten ?" or in the language of number systems "why do we use base ten?" The answer to this is no! We can indeed have a base of any counting number we like (say in base <m>b</m>) and then regroup once we have <m>b</m> of any place. Note that <q>base one</q> is a little different than the others and not very useful so we usually require that <m>b \geq 2</m>.
 </p>
 <p>
     Let's try writing "thirteen" in a few different bases so that you get a feel for what is happening:
@@ -554,7 +554,7 @@
             </ol>
             <solution>
                 <p>
-                    You probably drew a diagram that shows either the set model of addition or the number line model, maybe something like the following if <m>a=7</m>:
+                    You probably drew a diagram that shows either the set model of addition or the number line model, maybe something like the following if <m>b=7</m>:
                 </p>
                 <p>
                     <image source="WholeNumbers/GreaterThanLine.svg">
@@ -576,7 +576,7 @@
                     The key thing to realize is that all that matters is the *existence* of a number, say <m>c</m>, such that <m>a=b+c</m>. Thus we can write this as a conditional statement:
                 </p>
                 <p>
-                    If <m>a &gt; b</m> then there is a <m>c \in \mathbb{N}</m> such that <m>a=b+c</m>.
+                    <m>a &gt; b</m> exactly when there is a <m>c \in \mathbb{N}</m> such that <m>a=b+c</m>.
                 </p>
             </solution>
                 
@@ -709,7 +709,7 @@
         <subsubsection xml:id="subsubsec-Exponents">
             <title>Exponents</title>
             <p>
-                MOVE SECTION TO AFTER PROPERTIES OF ARITHMETIC Just like how multiplication is a nice way of writing repeated addition, it's very useful to be able to have the idea of repeated multiplication. To write  <m>a \times a \times a \times  \ldots \times a</m>, where <m>a</m> is multiplied by itself <m>b</m> times, we write <m>a^b</m>, where we call <m>a</m> the <term>base</term> and <m>b</m> the <term>exponent.</term>
+                MOVE SECTION TO AFTER PROPERTIES OF ARITHMETIC Just like how multiplication is a nice way of writing repeated addition, it's very useful to be able to have the idea of repeated multiplication. To write  <m>a \times a \times a \times  \ldots \times a</m>, where <m>a</m> is a product of itself <m>b</m> times, we write <m>a^b</m>, where we call <m>a</m> the <term>base</term> and <m>b</m> the <term>exponent.</term>
             </p>
             <example>
                 <p>
@@ -718,7 +718,7 @@
                 
             </example>
             <p>
-                It's clear that for any whole number <m>a</m> we have <m>0^a=0</m>. Also, for any whole number <m>a</m> we say <m>a^1 = a</m> and if <m>a \neq 0</m> we say <m>a^0=1</m>. Note that we leave <m>0^0</m> undefined; as this causes a lot of trouble if we try and give this meaning. We will see why later. 
+                It's clear that for any positive whole number <m>a</m> we have <m>0^a=0</m>. Also, for any whole number <m>a</m> we say <m>a^1 = a</m> and if <m>a \neq 0</m> we say <m>a^0=1</m>. Note that we leave <m>0^0</m> undefined; as this causes a lot of trouble if we try and give this meaning. We will see why later. 
             </p>
             <p>
                 Let's try and come up with some rules for multiplying exponents. What if we wanted to multiply <m>3^2 \times 3^4? </m> We could write
@@ -765,7 +765,7 @@
        <definition xml:id="def-Division">
            <statement>
                <p>
-                   Let <m>a,b, q, r\in \mathbb{N}_0</m> with <m>b \neq 0</m>. Then we say that <m>a \div b = q \ R \ r</m> if and only if there are unique numbers <m>q</m> and <m>r</m>  where <m>a = q \times b+r</m> and <m>0 \leq r \leq (b-1)</m>. 
+                   Let <m>a,b\in \mathbb{N}_0</m> with <m>b \neq 0</m>. Then we say that <m>a \div b = q \ R \ r</m> if and only if there are unique numbers <m>q</m> and <m>r</m>  where <m>a = q \times b+r</m> and <m>0 \leq r \leq (b-1)</m>. 
                </p>
            </statement>
        </definition>
@@ -819,7 +819,7 @@
        <assemblage xml:id="assemblage-DivUnique">
            <title>Notes for Additional Understanding</title>
            <p>
-               It's intuitive that every division problem <m>a \div b</m> has one answer, that is one quotient <m>q</m> and remainder <m>r</m> that make the equation <m>a=qb+r</m> true. However, this is something that really needs to be proved before we can say it for sure. We will revisit this in the section where we talk about divisibility of numbers.
+               It's intuitive that every division problem of whole numbers <m>a \div b</m> has one answer, that is one quotient <m>q</m> and remainder <m>r</m> that make the equation <m>a=qb+r</m> true. However, this is something that really needs to be proved before we can say it for sure. We will revisit this in the section where we talk about divisibility of numbers.
            </p>
        </assemblage>
        </subsubsection>
@@ -862,12 +862,12 @@
             <ol>
                 <li>
                     <p>
-                        Perform operations inside of brackets (using the ordering we are listing) in the order they occur, left to right.
+                        Perform operations inside of brackets (using the ordering we are listing) in the order they occur, left to right. Note there might be brackets inside brackets, so in practice you would work from the innermost brackets outwards.
                     </p>
                 </li>
                 <li>
                     <p>
-                        Perform exponential and root operations in the order they occur, left to right.
+                        Perform exponential and root operations in the order they occur.
                     </p>
                 </li>
                 <li>
@@ -940,7 +940,7 @@
     <definition xml:id="def-Associativity">
         <statement>
             <p>
-               We say an operation <m>\square</m> is <term>associative</term> exactly when it's the case that when  <m>(a \square b) \square c =d</m> then <m>a (\square b \square c) =d</m>; that is, <m>(a \square b) \square c = a\square (b \square c)</m>  (grouping performing the operation doesn't matter). 
+               We say an operation <m>\square</m> is <term>associative</term> exactly when for all <m>a,b,c</m> in our set it's the case that when  <m>(a \square b) \square c =d</m> then <m>a (\square b \square c) =d</m>; that is, <m>(a \square b) \square c = a\square (b \square c)</m>  (grouping performing the operation doesn't matter). 
             </p>
         </statement>
         <example>
@@ -961,14 +961,14 @@
         </example>
             </definition>
                 <p>
-                   Using associativity and distributivity can help us do arithmetic more quickly and easily. For example, if we were to add <m>7+5+11+4+8+3,</m> we can look for pairs (or triples, etc) of numbers that sum to a multiple of ten. Using associativity and commutativity we can rearrange the above to 
+                   Using associativity and commutativity can help us do arithmetic more quickly and easily. For example, if we were to add <m>7+5+11+4+8+3,</m> we can look for pairs (or triples, etc) of numbers that sum to a multiple of ten. Using associativity and commutativity we can rearrange the above to 
                    <me>
                        7+5+11+4+8+3 = (7+3) + (11+5+4) + 8 = 10 +20 +8 = 38
                    </me>
                    
                </p>
                <p>
-                   Similarly for multiplication, we can look for number that multiply together to give a power of ten. This will make our multiplication much easier. For example, if we were to multiply <m>4 \times 7 \times 5 \times 15</m> we could use associativity and commutativity to rearrange to above to
+                   Similarly for multiplication, we can look for number that multiply together to give multiples of a power of ten. This will make our multiplication much easier. For example, if we were to multiply <m>4 \times 7 \times 5 \times 15</m> we could use associativity and commutativity to rearrange to above to
 
                 <me>
                    <m>4 \times 7 \times 5 \times 15 = (4 \times 5) \times 7 \times 15</m> 
@@ -1069,7 +1069,7 @@
             </p>
             <example>
                 <p>
-                    Let's look at <m>6 \times 8</m> again. We can break <m>8</m> into <m>2+4</m>, and <m>8</m> into <m>3+5</m>. Thus we can view <m>6 \times 8</m> as <m>(2+4) \times (3+5)</m>. Viewed as a chocolate bar as in the previous example:
+                    Let's look at <m>6 \times 8</m> again. We can break <m>6</m> into <m>2+4</m>, and <m>8</m> into <m>3+5</m>. Thus we can view <m>6 \times 8</m> as <m>(2+4) \times (3+5)</m>. Viewed as a chocolate bar as in the previous example:
                 </p>
                 <p>
                     <image source="WholeNumbers/(2+4)x(3+5)Rectangle.svg">
@@ -1089,7 +1089,7 @@
                 </p>
             </example>
             <example>
-                <p>Let's use the same idea to multiply <m>237 \times 841</m>. We can split each number in terms of its place values: <m>(200+30+7) \times (800 \times 40 \times 1)</m>. Using the same idea as the previous examples we can view this as
+                <p>Let's use the same idea to multiply <m>237 \times 841</m>. We can split each number in terms of its place values: <m>(200+30+7) \times (800 + 40 + 1)</m>. Using the same idea as the previous examples we can view this as
                     <me>
                         200 \times 800 + 200 \times 40 + 200 \times 1
                     </me>
@@ -1224,7 +1224,7 @@
            <theorem xml:id="thm-RelatedDivision">
                <statement>
                    <p>
-                       Let <m>a,b,c \in \mathbb{N}_0</m>. If<m>a \div b=c</m> (with a remainder of <m>0</m>) then <m>a \div c=b</m>.
+                       Let <m>a,b,c \in \mathbb{N}_0, and b,c &gt; 0 </m>. If<m>a \div b=c</m> (with a remainder of <m>0</m>) then <m>a \div c=b</m>.
                    </p>
                </statement>
                <proof>
@@ -1242,7 +1242,7 @@
 
            <exercise>
                <p>
-                   The previous theorem had the condition that we had a remainder of <m>0</m>. Show that this needs to be the case; that is, find a counterexample to: 
+                   The previous theorem had the condition that we had a remainder of <m>0</m>. Show that this need not hold with a non-zero remainder; that is, find a counterexample to: 
                </p>
 
                <p>
@@ -1282,7 +1282,7 @@
             Let <m>a</m> be a number and let's consider <m>a \times 0</m>, which is our unknown expression; this is what we need to solve for. Remember, we *cannot* simplify this. The key to this is trying to come up with a way of finding something equal to <m>a \times 0</m> and then using some algebra to solve for our unknown expression. 
         </p>
         <p>
-            One way of doing this is remembering the multiplicative identity and additive identity properties. Let's be very precise here, and make sure we label all of the properties we are using. By the multiplicative identity property we know <me> a \times 1 = a</me> and by the additive identity property we know <me> 1+0 = 1 </me>. Using substitution of equal expressions we can write <me>a \times (1+0) = 1 </me>. Now using distributivity we can say that <me> a \times 1 + a\times 0 = a</me>. Again, by multiplicative identity we can simplify this to <me>a + a\times 0 = a </me>. Finally, by arithmetic of equal expressions we can subtract <m>a</m> from both sides to have <m>a \times 0 = 0</m>.           
+            One way of doing this is remembering the multiplicative identity and additive identity properties. Let's be very precise here, and make sure we label all of the properties we are using. By the multiplicative identity property we know <me> a \times 1 = a</me> and by the additive identity property we know <me> 1+0 = 1 </me>. Using substitution of equal expressions we can write <me>a \times (1+0) = a </me>. Now using distributivity we can say that <me> a \times 1 + a\times 0 = a</me>. Again, by multiplicative identity we can simplify this to <me>a + a\times 0 = a </me>. Finally, by arithmetic of equal expressions we can subtract <m>a</m> from both sides to have <m>a \times 0 = 0</m>.           
         </p>
        
         
