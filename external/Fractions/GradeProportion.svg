@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+<title id="title">Weighted course grade: 85.4 percent</title>
+<desc id="desc">A bar represents 100 course percentage points, partitioned into weights of 20, 20, 20 and 40. Scores of 85, 72, 88 and 91 percent earn contributions of 17, 14.4, 17.6 and 36.4 percentage points respectively. Earned portions are blue and unearned portions hatched. The contributions sum to 85.4.</desc>
+<defs><pattern id="unearned" patternUnits="userSpaceOnUse" width="9" height="9"><rect width="9" height="9" fill="#fafafa"/><path d="M-2,2 L2,-2 M0,9 L9,0 M7,11 L11,7" stroke="#929a9e" stroke-width="0.8"/></pattern></defs>
+<rect width="1200" height="480" fill="white"/><g font-family="DejaVu Sans, sans-serif" fill="#25333a">
+<text x="600" y="36" font-size="24" font-weight="normal" text-anchor="middle">One whole bar = 100 course percentage points</text>
+<text x="184.0" y="85" font-size="23" font-weight="bold" text-anchor="middle">Assignments</text>
+<text x="184.0" y="115" font-size="20" font-weight="normal" text-anchor="middle">Weight: 20%</text>
+<g data-weight="20" data-score="85" data-contribution="17"><rect x="80" y="155" width="208.0" height="100" fill="url(#unearned)"/><rect x="80" y="155" width="176.8" height="100" fill="#aecbd8"/><line x1="256.8" y1="155" x2="256.8" y2="255" stroke="#647b86" stroke-width="1"/><rect x="80" y="155" width="208.0" height="100" fill="none" stroke="#25333a" stroke-width="2"/></g>
+<text x="168.4" y="215" font-size="27" font-weight="bold" text-anchor="middle">17</text>
+<text x="184.0" y="291" font-size="21" font-weight="normal" text-anchor="middle">Score: 85%</text>
+<text x="392.0" y="85" font-size="23" font-weight="bold" text-anchor="middle">Midterm 1</text>
+<text x="392.0" y="115" font-size="20" font-weight="normal" text-anchor="middle">Weight: 20%</text>
+<g data-weight="20" data-score="72" data-contribution="14.4"><rect x="288.0" y="155" width="208.0" height="100" fill="url(#unearned)"/><rect x="288.0" y="155" width="149.76000000000002" height="100" fill="#aecbd8"/><line x1="437.76" y1="155" x2="437.76" y2="255" stroke="#647b86" stroke-width="1"/><rect x="288.0" y="155" width="208.0" height="100" fill="none" stroke="#25333a" stroke-width="2"/></g>
+<text x="362.88" y="215" font-size="27" font-weight="bold" text-anchor="middle">14.4</text>
+<text x="392.0" y="291" font-size="21" font-weight="normal" text-anchor="middle">Score: 72%</text>
+<text x="600.0" y="85" font-size="23" font-weight="bold" text-anchor="middle">Midterm 2</text>
+<text x="600.0" y="115" font-size="20" font-weight="normal" text-anchor="middle">Weight: 20%</text>
+<g data-weight="20" data-score="88" data-contribution="17.6"><rect x="496.0" y="155" width="208.0" height="100" fill="url(#unearned)"/><rect x="496.0" y="155" width="183.04000000000002" height="100" fill="#aecbd8"/><line x1="679.04" y1="155" x2="679.04" y2="255" stroke="#647b86" stroke-width="1"/><rect x="496.0" y="155" width="208.0" height="100" fill="none" stroke="#25333a" stroke-width="2"/></g>
+<text x="587.52" y="215" font-size="27" font-weight="bold" text-anchor="middle">17.6</text>
+<text x="600.0" y="291" font-size="21" font-weight="normal" text-anchor="middle">Score: 88%</text>
+<text x="912.0" y="85" font-size="23" font-weight="bold" text-anchor="middle">Final exam</text>
+<text x="912.0" y="115" font-size="20" font-weight="normal" text-anchor="middle">Weight: 40%</text>
+<g data-weight="40" data-score="91" data-contribution="36.4"><rect x="704.0" y="155" width="416.0" height="100" fill="url(#unearned)"/><rect x="704.0" y="155" width="378.56" height="100" fill="#aecbd8"/><line x1="1082.56" y1="155" x2="1082.56" y2="255" stroke="#647b86" stroke-width="1"/><rect x="704.0" y="155" width="416.0" height="100" fill="none" stroke="#25333a" stroke-width="2"/></g>
+<text x="893.28" y="215" font-size="27" font-weight="bold" text-anchor="middle">36.4</text>
+<text x="912.0" y="291" font-size="21" font-weight="normal" text-anchor="middle">Score: 91%</text>
+<rect x="250" y="325" width="24" height="20" fill="#aecbd8" stroke="#25333a"/><rect x="737" y="325" width="24" height="20" fill="url(#unearned)" stroke="#25333a"/>
+<text x="486" y="342" font-size="20" font-weight="normal" text-anchor="middle">Earned course percentage points</text>
+<text x="857" y="342" font-size="20" font-weight="normal" text-anchor="middle">Unearned points</text>
+<text x="600" y="405" font-size="25" font-weight="normal" text-anchor="middle">17 + 14.4 + 17.6 + 36.4 = 85.4 percentage points</text>
+<text x="600" y="450" font-size="26" font-weight="bold" text-anchor="middle">Overall course grade: 85.4%</text>
+</g></svg>

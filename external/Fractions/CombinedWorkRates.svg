@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">Adding work completed in one hour</title><desc id="desc">Four identical bars each represent one job and contain twenty equal cells. A completes five cells, B four cells, and C two cells in one hour. Together they complete eleven of twenty cells per hour, so one job takes twenty elevenths of an hour.</desc>
+<defs>
+<pattern id="pa" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#c4dce6"/><path d="M-2 2 L2 -2 M0 10 L10 0 M8 12 L12 8" stroke="#648898" stroke-width="0.8"/></pattern>
+<pattern id="pb" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#edd6b7"/><circle cx="5" cy="5" r="1.2" fill="#96754a"/></pattern>
+<pattern id="pc" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#d1dfcb"/><path d="M0 5 H10" stroke="#6e8565" stroke-width="0.8"/></pattern>
+</defs><rect width="1200" height="680" fill="white"/><g font-family="DejaVu Sans, sans-serif" fill="#26353c">
+<text x="600" y="39" text-anchor="middle" font-size="29" font-weight="bold">Work completed in one hour</text>
+<text x="600" y="75" text-anchor="middle" font-size="21" font-weight="normal">Each complete bar represents the same one-job amount.</text>
+<text x="65" y="144" text-anchor="start" font-size="23" font-weight="bold">Person A</text>
+<text x="65" y="172" text-anchor="start" font-size="23" font-weight="normal">1/4 = 5/20</text>
+<rect x="345" y="122" width="175" height="54" fill="url(#pa)"/>
+<line x1="380" y1="122" x2="380" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="415" y1="122" x2="415" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="450" y1="122" x2="450" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="485" y1="122" x2="485" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="520" y1="122" x2="520" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="555" y1="122" x2="555" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="590" y1="122" x2="590" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="625" y1="122" x2="625" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="660" y1="122" x2="660" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="695" y1="122" x2="695" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="730" y1="122" x2="730" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="765" y1="122" x2="765" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="800" y1="122" x2="800" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="835" y1="122" x2="835" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="870" y1="122" x2="870" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="905" y1="122" x2="905" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="940" y1="122" x2="940" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="975" y1="122" x2="975" y2="176" stroke="#54636b" stroke-width="1"/>
+<line x1="1010" y1="122" x2="1010" y2="176" stroke="#54636b" stroke-width="1"/>
+<rect x="345" y="122" width="700" height="54" fill="none" stroke="#26353c" stroke-width="1.8"/>
+<text x="65" y="240" text-anchor="start" font-size="23" font-weight="bold">Person B</text>
+<text x="65" y="268" text-anchor="start" font-size="23" font-weight="normal">1/5 = 4/20</text>
+<rect x="345" y="218" width="140" height="54" fill="url(#pb)"/>
+<line x1="380" y1="218" x2="380" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="415" y1="218" x2="415" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="450" y1="218" x2="450" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="485" y1="218" x2="485" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="520" y1="218" x2="520" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="555" y1="218" x2="555" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="590" y1="218" x2="590" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="625" y1="218" x2="625" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="660" y1="218" x2="660" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="695" y1="218" x2="695" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="730" y1="218" x2="730" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="765" y1="218" x2="765" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="800" y1="218" x2="800" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="835" y1="218" x2="835" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="870" y1="218" x2="870" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="905" y1="218" x2="905" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="940" y1="218" x2="940" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="975" y1="218" x2="975" y2="272" stroke="#54636b" stroke-width="1"/>
+<line x1="1010" y1="218" x2="1010" y2="272" stroke="#54636b" stroke-width="1"/>
+<rect x="345" y="218" width="700" height="54" fill="none" stroke="#26353c" stroke-width="1.8"/>
+<text x="65" y="336" text-anchor="start" font-size="23" font-weight="bold">Person C</text>
+<text x="65" y="364" text-anchor="start" font-size="23" font-weight="normal">1/10 = 2/20</text>
+<rect x="345" y="314" width="70" height="54" fill="url(#pc)"/>
+<line x1="380" y1="314" x2="380" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="415" y1="314" x2="415" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="450" y1="314" x2="450" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="485" y1="314" x2="485" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="520" y1="314" x2="520" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="555" y1="314" x2="555" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="590" y1="314" x2="590" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="625" y1="314" x2="625" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="660" y1="314" x2="660" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="695" y1="314" x2="695" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="730" y1="314" x2="730" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="765" y1="314" x2="765" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="800" y1="314" x2="800" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="835" y1="314" x2="835" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="870" y1="314" x2="870" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="905" y1="314" x2="905" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="940" y1="314" x2="940" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="975" y1="314" x2="975" y2="368" stroke="#54636b" stroke-width="1"/>
+<line x1="1010" y1="314" x2="1010" y2="368" stroke="#54636b" stroke-width="1"/>
+<rect x="345" y="314" width="700" height="54" fill="none" stroke="#26353c" stroke-width="1.8"/>
+<line x1="65" y1="395" x2="1120" y2="395" stroke="#b5bdc1" stroke-width="1"/>
+<text x="65" y="444" text-anchor="start" font-size="23" font-weight="bold">Together</text>
+<text x="65" y="473" text-anchor="start" font-size="23" font-weight="normal">11/20 of a job</text>
+<rect x="345" y="425" width="175" height="54" fill="url(#pa)"/>
+<rect x="520" y="425" width="140" height="54" fill="url(#pb)"/>
+<rect x="660" y="425" width="70" height="54" fill="url(#pc)"/>
+<line x1="380" y1="425" x2="380" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="415" y1="425" x2="415" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="450" y1="425" x2="450" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="485" y1="425" x2="485" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="520" y1="425" x2="520" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="555" y1="425" x2="555" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="590" y1="425" x2="590" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="625" y1="425" x2="625" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="660" y1="425" x2="660" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="695" y1="425" x2="695" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="730" y1="425" x2="730" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="765" y1="425" x2="765" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="800" y1="425" x2="800" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="835" y1="425" x2="835" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="870" y1="425" x2="870" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="905" y1="425" x2="905" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="940" y1="425" x2="940" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="975" y1="425" x2="975" y2="479" stroke="#54636b" stroke-width="1"/>
+<line x1="1010" y1="425" x2="1010" y2="479" stroke="#54636b" stroke-width="1"/>
+<rect x="345" y="425" width="700" height="54" fill="none" stroke="#26353c" stroke-width="1.8"/>
+<text x="432.5" y="505" text-anchor="middle" font-size="18" font-weight="normal">A: 5</text>
+<text x="590" y="505" text-anchor="middle" font-size="18" font-weight="normal">B: 4</text>
+<text x="695" y="505" text-anchor="middle" font-size="18" font-weight="normal">C: 2</text>
+<text x="887.5" y="505" text-anchor="middle" font-size="18" font-weight="normal">9 cells remain</text>
+<text x="600" y="558" text-anchor="middle" font-size="25" font-weight="normal">Combined rate: 1/4 + 1/5 + 1/10 = 11/20 job per hour</text>
+<text x="600" y="606" text-anchor="middle" font-size="25" font-weight="bold">Time for one job: 1 ÷ (11/20) = 20/11 hours</text>
+<text x="600" y="650" text-anchor="middle" font-size="18" font-weight="normal">Assume constant individual rates that add when the people work together.</text>
+</g></svg>
