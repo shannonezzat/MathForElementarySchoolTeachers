@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="570" viewBox="0 0 1300 570" role="img" aria-labelledby="title desc"><title id="title">Thirteen apples in groups of four</title><desc id="desc">Thirteen apple symbols are arranged in four group outlines, each with space for four apples. Three groups are full. The fourth contains one apple and three empty dashed spaces. One apple is one quarter of a four-apple group, so thirteen divided by four equals three and one quarter.</desc><defs><g id="apple"><path d="M0 -19 C-15 -30 -31 -18 -29 2 C-27 22 -13 31 0 25 C13 31 27 22 29 2 C31 -18 15 -30 0 -19Z" fill="#c6d7c0" stroke="#314936" stroke-width="2"/><path d="M0 -19Q-2 -30 6 -36" fill="none" stroke="#314936" stroke-width="3"/></g></defs><rect width="1300" height="570" fill="white"/><g font-family="DejaVu Sans,sans-serif" fill="#243640">
+<text x="650" y="48" text-anchor="middle" font-size="32">Arrange 13 apples into groups of 4</text>
+<text x="650" y="92" text-anchor="middle" font-size="24">Each outlined group has room for 4 apples.</text>
+<rect x="65" y="135" width="270" height="220" rx="5" fill="white" stroke="#344b55" stroke-width="2.5"/>
+<use href="#apple" x="145" y="198"/>
+<use href="#apple" x="255" y="198"/>
+<use href="#apple" x="145" y="298"/>
+<use href="#apple" x="255" y="298"/>
+<text x="200" y="398" text-anchor="middle" font-size="25">1 full group</text>
+<rect x="365" y="135" width="270" height="220" rx="5" fill="white" stroke="#344b55" stroke-width="2.5"/>
+<use href="#apple" x="445" y="198"/>
+<use href="#apple" x="555" y="198"/>
+<use href="#apple" x="445" y="298"/>
+<use href="#apple" x="555" y="298"/>
+<text x="500" y="398" text-anchor="middle" font-size="25">1 full group</text>
+<rect x="665" y="135" width="270" height="220" rx="5" fill="white" stroke="#344b55" stroke-width="2.5"/>
+<use href="#apple" x="745" y="198"/>
+<use href="#apple" x="855" y="198"/>
+<use href="#apple" x="745" y="298"/>
+<use href="#apple" x="855" y="298"/>
+<text x="800" y="398" text-anchor="middle" font-size="25">1 full group</text>
+<rect x="965" y="135" width="270" height="220" rx="5" fill="white" stroke="#344b55" stroke-width="2.5"/>
+<use href="#apple" x="1045" y="198"/>
+<circle cx="1155" cy="198" r="31" fill="none" stroke="#8b969b" stroke-width="1.5" stroke-dasharray="5 5"/>
+<circle cx="1045" cy="298" r="31" fill="none" stroke="#8b969b" stroke-width="1.5" stroke-dasharray="5 5"/>
+<circle cx="1155" cy="298" r="31" fill="none" stroke="#8b969b" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="1100" y="398" text-anchor="middle" font-size="25">¼ of a group</text>
+<text x="650" y="457" text-anchor="middle" font-size="24">The remaining apple is 1 of the 4 apples needed for a full group.</text>
+<text x="650" y="522" text-anchor="middle" font-size="32">13 ÷ 4 = 3¼ groups</text>
+</g></svg>

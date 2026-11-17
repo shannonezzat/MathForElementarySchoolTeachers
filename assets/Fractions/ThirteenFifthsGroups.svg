@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="650" viewBox="0 0 1300 650" role="img" aria-labelledby="title desc"><title id="title">Thirteen fifths divided into groups of four fifths</title><desc id="desc">A whole is five equal cells. Thirteen fifths is thirteen cells, shown first as two wholes and three fifths. Regrouping those same thirteen cells into groups of four gives three complete groups and one of the four cells needed for a fourth group. Thus thirteen fifths divided by four fifths equals three and one quarter.</desc><defs><pattern id="h" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#52788b" stroke-width="1"/></pattern><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#243640"/></marker></defs><rect width="1300" height="650" fill="white"/><g font-family="DejaVu Sans,sans-serif" fill="#243640">
+<text x="650" y="44" font-size="30" text-anchor="middle">Divide 13/5 into groups with 4/5 in each group</text>
+<text x="650" y="86" font-size="23" text-anchor="middle">Every small cell represents 1/5 of the same-sized whole.</text>
+<rect x="130" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="130" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="190" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="190" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="250" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="250" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="310" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="310" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="370" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="370" y="130" width="60" height="60" fill="url(#h)"/>
+<path d="M130 205v12h300v-12" fill="none" stroke="#243640" stroke-width="2"/>
+<text x="280.0" y="248" font-size="23" text-anchor="middle">1 whole</text>
+<rect x="480" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="480" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="540" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="540" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="600" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="600" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="660" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="660" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="720" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="720" y="130" width="60" height="60" fill="url(#h)"/>
+<path d="M480 205v12h300v-12" fill="none" stroke="#243640" stroke-width="2"/>
+<text x="630.0" y="248" font-size="23" text-anchor="middle">1 whole</text>
+<rect x="830" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="830" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="890" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="890" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="950" y="130" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="950" y="130" width="60" height="60" fill="url(#h)"/>
+<rect x="1010" y="130" width="60" height="60" fill="white" stroke="#617580" stroke-dasharray="5 4"/>
+<rect x="1070" y="130" width="60" height="60" fill="white" stroke="#617580" stroke-dasharray="5 4"/>
+<path d="M830 205v12h300v-12" fill="none" stroke="#243640" stroke-width="2"/>
+<text x="980.0" y="248" font-size="23" text-anchor="middle">1 whole</text>
+<text x="650" y="285" font-size="25" text-anchor="middle">Amount available: 13 fifths</text>
+<path d="M650 305V350" stroke="#243640" stroke-width="2" marker-end="url(#a)"/>
+<rect x="100" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="100" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="160" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="160" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="220" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="220" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="280" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="280" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="100" y="380" width="240" height="60" fill="none" stroke="#243640" stroke-width="3"/>
+<path d="M100 453v12h240v-12" fill="none" stroke="#243640" stroke-width="2"/>
+<text x="220.0" y="496" font-size="23" text-anchor="middle">1 group</text>
+<rect x="400" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="400" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="460" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="460" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="520" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="520" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="580" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="580" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="400" y="380" width="240" height="60" fill="none" stroke="#243640" stroke-width="3"/>
+<path d="M400 453v12h240v-12" fill="none" stroke="#243640" stroke-width="2"/>
+<text x="520.0" y="496" font-size="23" text-anchor="middle">1 group</text>
+<rect x="700" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="700" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="760" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="760" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="820" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="820" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="880" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="880" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="700" y="380" width="240" height="60" fill="none" stroke="#243640" stroke-width="3"/>
+<path d="M700 453v12h240v-12" fill="none" stroke="#243640" stroke-width="2"/>
+<text x="820.0" y="496" font-size="23" text-anchor="middle">1 group</text>
+<rect x="1000" y="380" width="60" height="60" fill="#e5eef2" stroke="#617580"/>
+<rect x="1000" y="380" width="60" height="60" fill="url(#h)"/>
+<rect x="1060" y="380" width="60" height="60" fill="white" stroke="#617580" stroke-dasharray="5 4"/>
+<rect x="1120" y="380" width="60" height="60" fill="white" stroke="#617580" stroke-dasharray="5 4"/>
+<rect x="1180" y="380" width="60" height="60" fill="white" stroke="#617580" stroke-dasharray="5 4"/>
+<rect x="1000" y="380" width="240" height="60" fill="none" stroke="#243640" stroke-width="3"/>
+<path d="M1000 453v12h240v-12" fill="none" stroke="#243640" stroke-width="2"/>
+<text x="1120.0" y="496" font-size="23" text-anchor="middle">¼ of a group filled</text>
+<text x="650" y="545" font-size="25" text-anchor="middle">Each complete group holds 4 fifths.</text>
+<text x="650" y="603" font-size="31" text-anchor="middle">13/5 ÷ 4/5 = 13 ÷ 4 = 3¼</text>
+</g></svg>

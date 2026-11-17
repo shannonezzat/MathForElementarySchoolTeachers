@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="700" viewBox="0 0 1500 700" role="img" aria-labelledby="title desc">
+<title id="title">A recipe in the ratio two to five</title>
+<desc id="desc">Four complete recipe groups each contain two cups of concentrate and five cups of water. A final group is one fifth as large: two fifths of a cup of concentrate and one cup of water. All rectangles use the same area per cup. Together these give eight and two fifths cups of concentrate and twenty-one cups of water.</desc>
+<defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M-2 2L2 -2M0 8L8 0M6 10L10 6" stroke="#66899b" stroke-width="1"/></pattern></defs>
+<rect width="1500" height="700" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#243640">
+<text x="750" y="48" text-anchor="middle" font-size="30" font-weight="bold">Every recipe group has concentrate : water = 2 : 5</text>
+<text x="750" y="89" text-anchor="middle" font-size="22">Each full small rectangle represents 1 cup.</text>
+<text x="36" y="232" text-anchor="start" font-size="23" font-weight="bold">Concentrate</text>
+<text x="36" y="387" text-anchor="start" font-size="23" font-weight="bold">Water</text>
+<rect x="246" y="125" width="222" height="370" fill="#fff" stroke="#a7b1b6" stroke-width="1"/>
+<text x="357" y="160" text-anchor="middle" font-size="22" font-weight="bold">Group 1</text>
+<rect x="260" y="200" width="38" height="50" fill="#e3af73" stroke="#34474f" stroke-width="2"/>
+<rect x="300" y="200" width="38" height="50" fill="#e3af73" stroke="#34474f" stroke-width="2"/>
+<rect x="260" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="260" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="300" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="300" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="340" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="340" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="380" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="380" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="420" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="420" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<text x="357" y="290" text-anchor="middle" font-size="23" font-weight="bold">2 cups</text>
+<text x="357" y="450" text-anchor="middle" font-size="23" font-weight="bold">5 cups</text>
+<rect x="486" y="125" width="222" height="370" fill="#fff" stroke="#a7b1b6" stroke-width="1"/>
+<text x="597" y="160" text-anchor="middle" font-size="22" font-weight="bold">Group 2</text>
+<rect x="500" y="200" width="38" height="50" fill="#e3af73" stroke="#34474f" stroke-width="2"/>
+<rect x="540" y="200" width="38" height="50" fill="#e3af73" stroke="#34474f" stroke-width="2"/>
+<rect x="500" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="500" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="540" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="540" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="580" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="580" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="620" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="620" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="660" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="660" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<text x="597" y="290" text-anchor="middle" font-size="23" font-weight="bold">2 cups</text>
+<text x="597" y="450" text-anchor="middle" font-size="23" font-weight="bold">5 cups</text>
+<rect x="726" y="125" width="222" height="370" fill="#fff" stroke="#a7b1b6" stroke-width="1"/>
+<text x="837" y="160" text-anchor="middle" font-size="22" font-weight="bold">Group 3</text>
+<rect x="740" y="200" width="38" height="50" fill="#e3af73" stroke="#34474f" stroke-width="2"/>
+<rect x="780" y="200" width="38" height="50" fill="#e3af73" stroke="#34474f" stroke-width="2"/>
+<rect x="740" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="740" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="780" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="780" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="820" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="820" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="860" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="860" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="900" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="900" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<text x="837" y="290" text-anchor="middle" font-size="23" font-weight="bold">2 cups</text>
+<text x="837" y="450" text-anchor="middle" font-size="23" font-weight="bold">5 cups</text>
+<rect x="966" y="125" width="222" height="370" fill="#fff" stroke="#a7b1b6" stroke-width="1"/>
+<text x="1077" y="160" text-anchor="middle" font-size="22" font-weight="bold">Group 4</text>
+<rect x="980" y="200" width="38" height="50" fill="#e3af73" stroke="#34474f" stroke-width="2"/>
+<rect x="1020" y="200" width="38" height="50" fill="#e3af73" stroke="#34474f" stroke-width="2"/>
+<rect x="980" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="980" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="1020" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="1020" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="1060" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="1060" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="1100" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="1100" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<rect x="1140" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="1140" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<text x="1077" y="290" text-anchor="middle" font-size="23" font-weight="bold">2 cups</text>
+<text x="1077" y="450" text-anchor="middle" font-size="23" font-weight="bold">5 cups</text>
+<rect x="1206" y="125" width="222" height="370" fill="#fff" stroke="#a7b1b6" stroke-width="1"/>
+<text x="1317" y="160" text-anchor="middle" font-size="22" font-weight="bold">⅕ of a group</text>
+<rect x="1220" y="200" width="38" height="50" fill="white" stroke="#34474f" stroke-width="2"/>
+<rect x="1220" y="200" width="7.6" height="50" fill="#e3af73" stroke="#34474f" stroke-width="0"/>
+<path d="M1227.6 200L1227.6 250" stroke="#34474f" stroke-width="1.5"/>
+<path d="M1235.2 200L1235.2 250" stroke="#34474f" stroke-width="1.5"/>
+<path d="M1242.8 200L1242.8 250" stroke="#34474f" stroke-width="1.5"/>
+<path d="M1250.4 200L1250.4 250" stroke="#34474f" stroke-width="1.5"/>
+<rect x="1220" y="200" width="38" height="50" fill="none" stroke="#34474f" stroke-width="2"/>
+<rect x="1260" y="200" width="38" height="50" fill="white" stroke="#34474f" stroke-width="2"/>
+<rect x="1260" y="200" width="7.6" height="50" fill="#e3af73" stroke="#34474f" stroke-width="0"/>
+<path d="M1267.6 200L1267.6 250" stroke="#34474f" stroke-width="1.5"/>
+<path d="M1275.2 200L1275.2 250" stroke="#34474f" stroke-width="1.5"/>
+<path d="M1282.8 200L1282.8 250" stroke="#34474f" stroke-width="1.5"/>
+<path d="M1290.4 200L1290.4 250" stroke="#34474f" stroke-width="1.5"/>
+<rect x="1260" y="200" width="38" height="50" fill="none" stroke="#34474f" stroke-width="2"/>
+<rect x="1220" y="355" width="38" height="50" fill="#edf4f7" stroke="#34474f" stroke-width="2"/>
+<rect x="1220" y="355" width="38" height="50" fill="url(#hatch)" stroke="#34474f" stroke-width="2"/>
+<text x="1317" y="290" text-anchor="middle" font-size="21" font-weight="bold">⅕ + ⅕ = ⅖ cup</text>
+<text x="1317" y="450" text-anchor="middle" font-size="23" font-weight="bold">1 cup</text>
+<text x="750" y="548" text-anchor="middle" font-size="25" font-weight="bold">Each group keeps the same 2 : 5 ratio.</text>
+<text x="750" y="603" text-anchor="middle" font-size="25">Water: 5 + 5 + 5 + 5 + 1 = 21 cups</text>
+<text x="750" y="652" text-anchor="middle" font-size="25">Concentrate: 2 + 2 + 2 + 2 + ⅖ = 8 ⅖ cups</text>
+</g></svg>

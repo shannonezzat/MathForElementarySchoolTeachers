@@ -168,7 +168,7 @@
       </exercise>
       <exercise>
         <p>
-          How do we know that there are at most two square roots? Prove by contradiction that this is impossible. Then modify your proof to show that there are at most two <m>n</m>th powers for an even natural number <m>n</m>.
+          How do we know that there are at most two square roots? Prove by contradiction that having more than two impossible. Then modify your proof to show that there are at most two <m>n</m>th roots for an even natural number <m>n</m>.
         </p>
         <hint>
           
