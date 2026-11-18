@@ -527,7 +527,7 @@
             </p>
             <figure xml:id="fig-half-of-three">
   <caption>Taking half of each of three wholes gives three halves.</caption>
-  <image source="HalfOfThree.svg" width="85%">
+  <image source="Fractions/HalfOfThree.svg" width="85%">
     <description>
       Three equal rectangles sit side by side. A single horizontal line
       passes through the middle of all three, and the top half of each
