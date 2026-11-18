@@ -525,6 +525,18 @@
             <p>
                 If we take three units and split everything in half and take one half from each whole, we essentially have three halves, or <m>\dfrac{3}{2}</m>.  
             </p>
+            <figure xml:id="fig-half-of-three">
+  <caption>Taking half of each of three wholes gives three halves.</caption>
+  <image source="HalfOfThree.svg" width="85%">
+    <description>
+      Three equal rectangles sit side by side. A single horizontal line
+      passes through the middle of all three, and the top half of each
+      rectangle is shaded. Below, two shaded halves form one whole
+      rectangle. The third shaded half fills the top half of a second
+      rectangle, giving one and a half wholes altogether.
+    </description>
+  </image>
+</figure>
         </solution>
     </example>
     
@@ -538,6 +550,19 @@
             <p>
                 If we take two thirds and divide them in half and keep one half of each two-third, we get <m>\dfrac{1}{3}</m>. Therefore, half of <m>\dfrac{2}{3}</m> is <m>\dfrac{1}{3}</m>.
             </p>
+            <figure xml:id="fig-half-of-two-thirds">
+  <caption>Half of <m>\frac{2}{3}</m> is <m>\frac{1}{3}</m> of the whole.</caption>
+  <image source="Fractions/HalfOfTwoThirds.svg" width="100%">
+    <description>
+      Three identical rectangles show the steps from left to right.
+      In the first, two of three equal columns are shaded.
+      In the second, a horizontal line divides the shaded region
+      into two equal halves. In the third, the upper half of the
+      shaded region is hatched. It covers two of the six equal
+      cells, or one third of the whole rectangle.
+    </description>
+  </image>
+</figure>
         </solution>
     </example>
     

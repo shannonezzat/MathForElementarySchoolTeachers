@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="440" viewBox="0 0 840 440" role="img" aria-labelledby="t d">
+<title id="t">Half of three wholes</title>
+<desc id="d">Three identical rectangles touch side by side. One horizontal cut bisects all three. The top half of each rectangle is hatched. Below, two of those halves are stacked to form a whole, with one half left over.</desc>
+<defs><pattern id="h" width="9" height="9" patternUnits="userSpaceOnUse"><rect width="9" height="9" fill="#dbe7ed"/><path d="M0 9L9 0" stroke="#537589" stroke-width="1.4"/></pattern></defs>
+<rect width="840" height="440" fill="white"/>
+<g font-family="DejaVu Sans,sans-serif" fill="#233641" text-anchor="middle">
+<text x="420" y="42" font-size="27">Take the top half of each whole.</text>
+<rect x="150" y="70" width="540" height="48" fill="url(#h)"/>
+<g fill="none" stroke="#344b55" stroke-width="2.4"><rect x="150" y="70" width="540" height="96"/><path d="M330 70v96M510 70v96"/><path d="M150 118H690" stroke-width="3"/></g>
+<path d="M420 182v30m-6 -7 6 7 6 -7" fill="none" stroke="#344b55" stroke-width="2"/>
+<text x="420" y="246" font-size="24">Regroup the three halves.</text>
+<rect x="225" y="271" width="180" height="96" fill="url(#h)"/><rect x="435" y="271" width="180" height="48" fill="url(#h)"/>
+<g fill="none" stroke="#344b55" stroke-width="2.4"><rect x="225" y="271" width="180" height="96"/><rect x="435" y="271" width="180" height="96"/><path d="M225 319h180M435 319h180"/></g>
+<text x="420" y="418" font-size="30">½ × 3 = 3/2 = 1½</text></g></svg>
