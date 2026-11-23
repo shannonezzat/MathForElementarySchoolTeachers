@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="395" viewBox="0 0 1140 395" role="img" aria-labelledby="title desc">
+  <title id="title">First step of 2781 divided by 618</title>
+  <desc id="desc">Long division shows 618 into 2781. Four times 618 is 2472, which is subtracted from 2781, leaving remainder 309. No decimal-place step is shown yet.</desc>
+  <rect width="1140" height="395" fill="white"/>
+  <g fill="#243640" font-family="DejaVu Sans, sans-serif">
+    <text x="90" y="65" font-size="25" font-weight="600">Divide the whole-number part</text>
+    <g font-family="DejaVu Sans Mono, monospace" font-size="35" text-anchor="middle">
+      <text x="575" y="130" fill="#326f89" font-weight="600">4</text>
+
+      <text x="277" y="207">6</text><text x="320" y="207">1</text><text x="363" y="207">8</text>
+      <text x="446" y="207">2</text><text x="489" y="207">7</text><text x="532" y="207">8</text><text x="575" y="207">1</text>
+
+      <text x="411" y="264" fill="#326f89">−</text><text x="446" y="264" fill="#326f89">2</text><text x="489" y="264" fill="#326f89">4</text><text x="532" y="264" fill="#326f89">7</text><text x="575" y="264" fill="#326f89">2</text>
+      <text x="489" y="328" font-weight="600">3</text><text x="532" y="328" font-weight="600">0</text><text x="575" y="328" font-weight="600">9</text>
+    </g>
+    <g stroke="#344b55" stroke-width="2.5" fill="none">
+      <path d="M416 164 Q392 187 416 211 L416 167 L680 167"/>
+      <line x1="434" y1="281" x2="598" y2="281"/>
+    </g>
+    <g font-size="22">
+      <text x="765" y="258" fill="#526f7d">4 × 618 = 2472</text>
+      <text x="765" y="328">remainder 309</text>
+    </g>
+  </g>
+</svg>

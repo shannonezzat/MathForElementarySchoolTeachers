@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">An interest rate rising from 2 percent to 5 percent</title>
+  <desc id="desc">A magnified zero-to-five-percent scale compares an original interest rate of 2 percent with a new rate of 5 percent. The new bar contains the original 2 percentage points in blue and the additional 3 percentage points in orange. The change is 3 percentage points, or a 150 percent increase relative to the original 2 percent rate.</desc>
+  <rect width="1200" height="650" fill="white"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#243640">
+    <text x="70" y="79" font-size="31" font-weight="600">An interest rate changes from 2% to 5%</text>
+    <text x="70" y="128" font-size="20">Magnified rate scale: 0% to 5%</text>
+
+    <!-- One scale for both rates: 156 SVG units per percentage point. -->
+    <line x1="250" y1="189" x2="1030" y2="189" stroke="#344b55" stroke-width="2.5"/>
+    <g stroke="#344b55" stroke-width="2">
+      <line x1="250" y1="183" x2="250" y2="197"/>
+      <line x1="406" y1="183" x2="406" y2="197"/>
+      <line x1="562" y1="183" x2="562" y2="197"/>
+      <line x1="718" y1="183" x2="718" y2="197"/>
+      <line x1="874" y1="183" x2="874" y2="197"/>
+      <line x1="1030" y1="183" x2="1030" y2="197"/>
+    </g>
+    <g font-size="20" text-anchor="middle">
+      <text x="250" y="171">0%</text><text x="406" y="171">1%</text>
+      <text x="562" y="171">2%</text><text x="718" y="171">3%</text>
+      <text x="874" y="171">4%</text><text x="1030" y="171">5%</text>
+    </g>
+
+    <text x="70" y="264" font-size="23">Original rate</text>
+    <text x="70" y="349" font-size="23">New rate</text>
+    <rect x="250" y="230" width="780" height="47" fill="#f5f7f8" stroke="#344b55" stroke-width="1.5"/>
+    <rect x="250" y="230" width="312" height="47" fill="#aecbd8" stroke="#344b55" stroke-width="1.5"/>
+    <text x="578" y="262" font-size="23" font-weight="600">2%</text>
+
+    <rect x="250" y="315" width="312" height="47" fill="#aecbd8" stroke="#344b55" stroke-width="1.5"/>
+    <rect x="562" y="315" width="468" height="47" fill="#e3af73" stroke="#344b55" stroke-width="1.5"/>
+    <text x="1047" y="347" font-size="23" font-weight="600">5%</text>
+    <text x="406" y="346" font-size="19" text-anchor="middle">original 2%</text>
+    <text x="796" y="346" font-size="19" text-anchor="middle">added 3 points</text>
+
+    <path d="M562 389 V407 H1030 V389" fill="none" stroke="#a16d3a" stroke-width="2.5"/>
+    <text x="796" y="440" font-size="22" text-anchor="middle" font-weight="600">Difference: 3 percentage points</text>
+
+    <line x1="70" y1="483" x2="1130" y2="483" stroke="#d8e1e5" stroke-width="2"/>
+    <text x="70" y="532" font-size="23">Percentage-point change:</text>
+    <text x="476" y="532" font-size="23" font-weight="600">5% − 2% = 3 percentage points</text>
+    <text x="70" y="592" font-size="23">Relative change:</text>
+    <text x="476" y="592" font-size="23" font-weight="600">(5% − 2%) ÷ 2% = 150%</text>
+    <text x="796" y="622" font-size="17" text-anchor="middle">The original 2% rate is the reference for relative change.</text>
+  </g>
+</svg>

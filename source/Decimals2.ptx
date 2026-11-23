@@ -52,12 +52,7 @@
           </p>
         </statement>
       </example>
-      <figure xml:id="figure-place-value-32-329">
-        <caption>Place value in <m>32.329</m> and the exchange of ten hundredths for one tenth</caption>
-        <image source="assets/decimal-place-value-32-329.svg" width="95%">
-          <description>A place-value chart for 32.329 followed by a diagram showing that ten hundredths equal one tenth.</description>
-        </image>
-      </figure>
+     
       <assemblage xml:id="assemblage-decimal-expansions">
         <title>Notes for a Deeper Understanding</title>
         <p>
@@ -101,11 +96,11 @@
         A picture of a decimal depends on what we choose to represent one whole. In the next figure, the complete square is one whole. It is divided into 100 equal squares, so each small square represents <m>\frac{1}{100}</m>.
       </p>
       <figure xml:id="figure-hundred-grid-0-32">
-        <caption>Representing <m>0.32</m> on a hundred grid</caption>
-        <image source="assets/decimal-hundred-grid-0-32.svg" width="90%">
-          <description>A hundred grid with 32 squares shaded, representing 0.32.</description>
-        </image>
-      </figure>
+  <caption>Representing <m>0.32</m> on a hundred grid</caption>
+  <image source="Decimals/DecimalHundredGrid032.svg" width="90%">
+    <description>A ten-by-ten grid represents one whole. Three full columns and two additional squares are shaded, showing 32 hundredths.</description>
+  </image>
+</figure>
       <p>
         The shaded region contains 32 hundredths. We can also view it as three complete tenths and two additional hundredths:
       </p>
@@ -179,53 +174,32 @@
           <p>Subtract <m>6.29</m> from <m>53.071</m>.</p>
         </statement>
         <solution>
-          <p>
-            First write <m>6.29</m> as <m>6.290</m> and align the decimal points.
-          </p>
-          <figure xml:id="figure-subtraction-align">
-            <caption>Align the decimal points and matching place values</caption>
-            <image source="assets/decimal-subtraction-by-hand-1-align.svg" width="88%">
-              <description>The decimal subtraction is written vertically with the decimal points aligned.</description>
-            </image>
-          </figure>
-          <p>
-            We cannot subtract 9 thousandths from 1 thousandth. Regroup across the zero, remembering that one tenth is ten hundredths and one hundredth is ten thousandths.
-          </p>
-          <figure xml:id="figure-subtraction-cross-zero">
-            <caption>Regroup across the zero</caption>
-            <image source="assets/decimal-subtraction-by-hand-2-cross-zero.svg" width="88%">
-              <description>The subtraction shows regrouping from tenths to hundredths and then to thousandths.</description>
-            </image>
-          </figure>
-          <p>
-            We also need to exchange one ten for ten ones.
-          </p>
-          <figure xml:id="figure-subtraction-regroup-ten">
-            <caption>Regroup one ten</caption>
-            <image source="assets/decimal-subtraction-by-hand-3-regroup-ten.svg" width="88%">
-              <description>The subtraction shows one ten regrouped as ten ones.</description>
-            </image>
-          </figure>
-          <figure xml:id="figure-subtraction-finish">
-            <caption>Complete the subtraction</caption>
-            <image source="assets/decimal-subtraction-by-hand-4-finish.svg" width="88%">
-              <description>The completed calculation gives 46.781.</description>
-            </image>
-          </figure>
-          <me>53.071-6.290=46.781.</me>
-        </solution>
+  <p>
+    Write <m>6.29</m> as <m>6.290</m> and align the decimal points so that matching place values are in the same column.
+  </p>
+  <p>
+    To subtract 9 hundredths from 7 hundredths, exchange one one for ten tenths, then one tenth for ten hundredths. This leaves 2 ones, 9 tenths, and 17 hundredths. We still need to subtract 6 ones, so exchange one ten for ten ones. We now have 4 tens and 12 ones.
+  </p>
+  <figure xml:id="figure-subtraction-finish">
+    <caption>Complete the subtraction</caption>
+    <image source="Decimals/DecimalSubtractionFinish.svg" width="88%">
+      <description>The aligned subtraction shows the exchanges and gives 46.781.</description>
+    </image>
+  </figure>
+  <me>53.071-6.290=46.781.</me>
+</solution>
       </example>
       <assemblage xml:id="assemblage-base-ten-subtraction">
         <title>Notes for a Deeper Understanding</title>
         <p>
           Regrouping is an exchange of equal quantities, not a rule about crossing out digits. If a large base-ten cube represents 1, then a flat represents <m>0.1</m>, a rod represents <m>0.01</m>, and a small cube represents <m>0.001</m>. The next figure shows the same subtraction using these exchanges.
         </p>
-        <figure xml:id="figure-subtraction-base-ten-blocks">
-          <caption>Decimal subtraction using base-ten blocks</caption>
-          <image source="assets/decimal-subtraction-base-ten-blocks.svg" width="98%">
-            <description>Base-ten blocks show the exchanges needed to subtract 6.290 from 53.071.</description>
-          </image>
-        </figure>
+       <figure xml:id="figure-subtraction-base-ten-blocks">
+  <caption>Base-ten exchanges and standard subtraction</caption>
+  <image source="Decimals/DecimalSubtractionBaseTenBlocks.svg" width="98%">
+    <description>The exchanges for 53.071 minus 6.290 are shown in a base-ten table beside the corresponding standard column subtraction. Both give 46.781.</description>
+  </image>
+</figure>
       </assemblage>
     </subsection>
 
@@ -240,40 +214,29 @@
           <p>Multiply <m>53.071</m> by <m>6.29</m>.</p>
         </statement>
         <solution>
-          <figure xml:id="figure-multiplication-count-places">
-            <caption>Record the decimal places</caption>
-            <image source="assets/decimal-multiplication-by-hand-1-count-places.svg" width="88%">
-              <description>The two factors have five decimal places in total.</description>
-            </image>
-          </figure>
-          <figure xml:id="figure-multiplication-first-product">
-            <caption>Find the first partial product</caption>
-            <image source="assets/decimal-multiplication-by-hand-2-first-product.svg" width="88%">
-              <description>The first whole-number partial product is calculated.</description>
-            </image>
-          </figure>
+          
           <figure xml:id="figure-multiplication-partial-products">
-            <caption>Complete the partial products</caption>
-            <image source="assets/decimal-multiplication-by-hand-3-partial-products.svg" width="88%">
-              <description>All three partial products are written in aligned columns.</description>
-            </image>
-          </figure>
+  <caption>Complete the partial products</caption>
+  <image source="Decimals/DecimalMultiplicationPartialProducts.svg" width="88%">
+    <description>The partial products of 53071 times 629 are 477639 from 9 ones, 1061420 from 2 tens, and 31842600 from 6 hundreds. They are aligned by place value but have not yet been added.</description>
+  </image>
+</figure>
           <figure xml:id="figure-multiplication-restore-decimal">
-            <caption>Add and restore the decimal point</caption>
-            <image source="assets/decimal-multiplication-by-hand-4-decimal-point.svg" width="88%">
-              <description>The partial products sum to 33381659 and the decimal point is restored to give 333.81659.</description>
-            </image>
-          </figure>
+  <caption>Add and restore the decimal point</caption>
+  <image source="Decimals/DecimalMultiplicationRestorePoint.svg" width="88%">
+    <description>The partial products add to 33381659. Since 53.071 has three decimal places and 6.29 has two, the final line places the point five digits from the right to give 333.81659.</description>
+  </image>
+</figure>
           <me>53.071\times 6.29=333.81659.</me>
           <p>
             The fraction calculation explains why the answer has five decimal places.
           </p>
           <figure xml:id="figure-multiplication-decimal-fractions">
-            <caption>Why the decimal-place rule works</caption>
-            <image source="assets/decimal-multiplication-by-hand-5-fractions.svg" width="88%">
-              <description>The decimals are rewritten as 53071 over 1000 and 629 over 100 before multiplication.</description>
-            </image>
-          </figure>
+  <caption>Why the decimal-place rule works</caption>
+  <image source="Decimals/DecimalMultiplicationFractions.svg" width="88%">
+    <description>53.071 is 53071 over 1000, and 6.29 is 629 over 100. Multiplying gives 33381659 over 100000, or 333.81659. The three and two decimal places combine to give five.</description>
+  </image>
+</figure>
         </solution>
       </example>
     </subsection>
@@ -289,34 +252,34 @@
           <p>Divide <m>2.781</m> by <m>0.618</m>.</p>
         </statement>
         <solution>
-          <figure xml:id="figure-division-make-whole">
-            <caption>Make the divisor a whole number</caption>
-            <image source="assets/decimal-division-by-hand-1-make-whole.svg" width="88%">
-              <description>Both numbers are multiplied by 1000, giving 2781 divided by 618.</description>
-            </image>
-          </figure>
+         <figure xml:id="figure-division-make-whole">
+  <caption>Make the divisor a whole number</caption>
+  <image source="Decimals/DecimalDivisionMakeWhole.svg" width="88%">
+    <description>The fraction 2.781 over 0.618 is multiplied by 1000 over 1000. Multiplying its numerator and denominator by 1000 gives the equivalent fraction 2781 over 618.</description>
+  </image>
+</figure>
           <figure xml:id="figure-division-first-step">
-            <caption>Divide the whole-number part</caption>
-            <image source="assets/decimal-division-by-hand-2-first-step.svg" width="88%">
-              <description>Four times 618 is subtracted from 2781, leaving 309.</description>
-            </image>
-          </figure>
+  <caption>Divide the whole-number part</caption>
+  <image source="Decimals/DecimalDivisionFirstStep.svg" width="88%">
+    <description>Long division of 2781 by 618: four times 618 is 2472. Subtracting 2472 from 2781 leaves a remainder of 309.</description>
+  </image>
+</figure>
           <figure xml:id="figure-division-finish">
-            <caption>Bring down a zero and finish</caption>
-            <image source="assets/decimal-division-by-hand-3-finish.svg" width="88%">
-              <description>The brought-down zero makes 3090; five times 618 is 3090, leaving remainder zero.</description>
-            </image>
-          </figure>
+  <caption>Bring down a zero and finish</caption>
+  <image source="Decimals/DecimalDivisionFinish.svg" width="88%">
+    <description>Long division of 2781 by 618: after subtracting 2472, the remainder is 309. Bringing down a zero gives 3090; subtracting five times 618 leaves remainder zero and gives quotient 4.5.</description>
+  </image>
+</figure>
           <me>2.781\div 0.618=2781\div 618=4.5.</me>
           <p>
             We can justify the same step using decimal fractions.
           </p>
           <figure xml:id="figure-division-decimal-fractions">
-            <caption>Why multiplying both numbers by 1000 works</caption>
-            <image source="assets/decimal-division-by-hand-4-fractions.svg" width="88%">
-              <description>The quotient of 2781 over 1000 and 618 over 1000 simplifies to 2781 over 618.</description>
-            </image>
-          </figure>
+  <caption>Why multiplying both numbers by 1000 works</caption>
+  <image source="Decimals/DecimalDivisionThousandths.svg" width="88%">
+    <description>The quotient of 2.781 and 0.618 is written using fractions with denominator 1000. Multiplication by 1000 is shown separately for each number, producing the equivalent quotient 2781 over 618.</description>
+  </image>
+</figure>
         </solution>
       </example>
     </subsection>
@@ -458,11 +421,11 @@
           We know that <m>\frac13=0.333\ldots</m>. Add three copies of this equality. In every displayed decimal place, <m>3+3+3=9</m>.
         </p>
         <figure xml:id="figure-repeating-nines-addition">
-          <caption>Adding three copies of one third</caption>
-          <image source="assets/decimal-repeating-nines-by-addition.svg" width="92%">
-            <description>Three copies of 0.333 repeating add to 0.999 repeating, while three copies of one third add to one.</description>
-          </image>
-        </figure>
+  <caption>Adding three copies of one third in fraction and decimal notation</caption>
+  <image source="Decimals/ThreeThirdsRepeatingNines.svg" width="92%">
+    <description>Three equal thirds sum to one. Their repeating decimal forms sum to 0.999 repeating, showing that 0.999 repeating equals one.</description>
+  </image>
+</figure>
         <p>
           The same sum equals 1 in fraction notation:
         </p>
@@ -653,11 +616,15 @@
         </statement>
         <solution>
           <figure xml:id="figure-percent-bar-thirty">
-            <caption>Thirty percent of 40 students</caption>
-            <image source="assets/percent-bar-30-of-40.svg" width="92%">
-              <description>A bar for 40 students is divided into ten groups of four; three groups are shaded.</description>
-            </image>
-          </figure>
+  <caption>Thirty percent of 40 students</caption>
+  <image source="Decimals/PercentBar30Of40.svg" width="92%">
+    <description>
+      A bar for 40 students is divided into ten equal parts.
+      Three parts are shaded to represent 30%; the number of
+      students in those parts is left unknown.
+    </description>
+  </image>
+</figure>
           <p>
             Each tenth of the class contains 4 students. Thirty percent is three tenths, so
           </p>
@@ -672,11 +639,14 @@
         </statement>
         <solution>
           <figure xml:id="figure-percent-bar-twenty-five">
-            <caption>If 25% is 50, then the whole has four equal parts of 50</caption>
-            <image source="assets/percent-bar-25-is-50.svg" width="92%">
-              <description>A bar is divided into four quarters, each worth 50, so the whole is 200.</description>
-            </image>
-          </figure>
+  <caption>Finding the whole when 25% is 50</caption>
+  <image source="Decimals/PercentBar25Is50.svg" width="92%">
+    <description>
+      A bar is divided into four equal parts. One part is labelled
+      25% and 50; the value of the whole is unknown.
+    </description>
+  </image>
+</figure>
           <p>
             Since <m>25\%=\frac14</m>, four equal parts make the whole:
           </p>
@@ -746,6 +716,15 @@
         <p>
           Both statements are correct, but they answer different questions.
         </p>
+        <figure xml:id="figure-interest-rate-percentage-points">
+  <caption>Percentage-point change and relative percent change</caption>
+  <image source="Decimals/InterestRatePercentagePoints.svg" width="92%">
+    <description>
+      An interest rate rises from 2% to 5%. The difference is 3 percentage
+      points, which is a 150% increase relative to the original 2% rate.
+    </description>
+  </image>
+</figure>
       </example>
       <example xml:id="example-unemployment-change">
         <title>From 8% to 6%</title>
