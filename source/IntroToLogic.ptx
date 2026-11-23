@@ -593,7 +593,7 @@ When we talk about mathematical ideas, we want to express how many objects they 
                 For universally quantified statements (e.g., "All A are B" or as a concrete example "All cats are mammals") we want a circle representing all objects that satisfy condition A (all cats in our example).
             </p>
             <p>
-                <image source="Section1.4b.svg" width="50%">
+                <image source="Section1-4b" width="50%">
                     <description>Second Image</description>
                 </image>
             </p>
