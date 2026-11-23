@@ -19,7 +19,7 @@
     Decimal fractions allow us to express quantities that are smaller than a whole unit in a way compatible with our usual arithmetic. In our base-ten number system, each place value to the right of the decimal point represents a fraction of the whole unit. The first digit after the decimal point represents tenths (1/10), the second digit represents hundredths (1/100), and so on. So the farther to the right a decimal place value is, the smaller quantity it represents.
   </p>
   <p>
-    An interesting aspect of decimal fractions is the similarity they share with whole numbers. We know that multiplying a whole number by 10 raises its place value by 1 and thus shifts its place value of its digits one place to the left, for example multiplying 10 by <m>10^k</m> gives us <m>10^{k+1}</m>, or <m>10 \times 100 = 1000 </m>. In a similar manner, dividing a decimal fraction by 10 also shifts its place value to the right. For example, dividing <m>(1/10)^k</m> by 10 gives us <m>(1/10)^{k-1}</m> so <m>10 \div 1000 = 100</m>. This relationship holds true as we move along the decimal places and will allow us to perform arithmetic operations similarly to arithmetic with whole numbers.
+    An interesting aspect of decimal fractions is the similarity they share with whole numbers. We know that multiplying a whole number by 10 raises its place value by 1 and thus shifts its place value of its digits one place to the left, for example multiplying 10 by <m>10^k</m> gives us <m>10^{k+1}</m>, or <m>10 \times 100 = 1000 </m>. In a similar manner, dividing a decimal fraction by 10 also shifts its place value to the right. For example, dividing <m>(1/10)^k</m> by 10 gives us <m>(1/10)^{k-1}</m> so <m>10 \div 1000 = 0.01</m>. This relationship holds true as we move along the decimal places and will allow us to perform arithmetic operations similarly to arithmetic with whole numbers.
   </p>
 
 
@@ -113,7 +113,7 @@
             <statement>
                 <p>Let's divide 2.781 by 0.618.</p>
                 <p>
-            <me>3.24 \div 0.618 = 2781 \div 618 = 4.5</me>
+            <me>2.781 \div 0.618 = 2781 \div 618 = 4.5</me>
             GIVE A PIC OF THE ALGORITHM WITH EXPLANATION This works because we can think of decimals as decimal fractions. For instance, 2.781 can be thought of as 2781/1000 and 0.618 as 618/1000. When we divide these fractions, we multiply the dividend by the reciprocal of the divisor, which gives us the same result as our decimal division.</p>
         </statement>
         </example>
@@ -427,7 +427,7 @@
       <subsubsection xml:id="converting-ratios-to-percents">
         <title>Converting Ratios to Percents</title>
         <p>
-          To convert a ratio to a percent, multiply the ratio by 100. This conversion process involves scaling the ratio to a common base of 100, making it easier to understand and compare. For example, the ratio 3:4 can be converted to a percent as follows: <me>\frac{3}{4} \times 100 = 75\%</me>. This means that 3 out of 4 parts is the same as 75 out of 100 parts, which is a more intuitive way to grasp the proportion. This method is particularly useful in various practical scenarios such as interpreting statistical data, comparing success rates, or even understanding sports statistics.
+          To convert a ratio to a percent, multiply the ratio by 100. This conversion process involves scaling the ratio to a common base of 100, making it easier to understand and compare. For example, the ratio 3:4 can be converted to a percent as follows: <me>\frac{3}{4} \times 100\% = 75\%</me>. This means that 3 out of 4 parts is the same as 75 out of 100 parts, which is a more intuitive way to grasp the proportion. This method is particularly useful in various practical scenarios such as interpreting statistical data, comparing success rates, or even understanding sports statistics.
         </p>
   
         <example xml:id="example-ratios-to-percents">
@@ -437,7 +437,7 @@
           </p>
           <solution>
             <me>
-            \frac{2}{5} \times 100 = 40\%
+            \frac{2}{5} \times 100\% = 40\%
             </me>
             <p>
               Thus, the ratio 2:5 is equivalent to 40%, meaning 2 parts out of 5 is the same as 40 parts out of 100. This method of conversion is essential in comparing ratios in a standardized format that is widely understood.
@@ -449,7 +449,7 @@
       <subsubsection xml:id="converting-fractions-to-percents">
         <title>Converting Fractions to Percents</title>
         <p>
-          To convert a fraction to a percent, first convert the fraction to a decimal and then multiply by 100 percent (remembering that since <m>100 \% = 1</m> we are simply multiplying by 1 and not changing the quantity. This two-step process involves dividing the numerator by the denominator to get a decimal, then scaling the decimal to a percentage. For example, to convert <m>\frac{1}{8}</m> to a percent: <me>\frac{1}{8} = 0.125 \\ 0.125 \times 100 = 12.5\%</me>. This conversion is important because it translates the fraction into a percentage, which is a more familiar and easily interpretable format for most people. This method is widely used in various fields such as finance, education, and health, where data is often presented in percent form for better clarity and impact.
+          To convert a fraction to a percent, first convert the fraction to a decimal and then multiply by 100 percent (remembering that since <m>100 \% = 1</m> we are simply multiplying by 1 and not changing the quantity. This two-step process involves dividing the numerator by the denominator to get a decimal, then scaling the decimal to a percentage. For example, to convert <m>\frac{1}{8}</m> to a percent: <me>\frac{1}{8} = 0.125 \\ 0.125 \times 100\% = 12.5\%</me>. This conversion is important because it translates the fraction into a percentage, which is a more familiar and easily interpretable format for most people. This method is widely used in various fields such as finance, education, and health, where data is often presented in percent form for better clarity and impact.
         </p>
   
         <example xml:id="example-fractions-to-percents">
@@ -460,7 +460,7 @@
           <solution>
             <me>
             \frac{3}{20} = 0.15 \\
-            0.15 \times 100 = 15\%
+            0.15 \times 100\% = 15\%
             </me>
             <p>
               Therefore, the fraction <m>\frac{3}{20}</m> is equivalent to 15%. This method highlights the ease with which we can understand fractions in a percent format, facilitating better communication and comprehension of data in everyday contexts.

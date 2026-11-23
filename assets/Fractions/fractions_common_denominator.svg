@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Equivalent fractions in thirtieths</title>
+<desc id="desc">Four equal rectangles. Five of six vertical strips are shaded in the top left. Adding five rows gives twenty-five shaded cells out of thirty in the top right. Three of ten strips are shaded in the bottom left. Adding three rows gives nine shaded cells out of thirty in the bottom right. Shaded areas do not change.</desc>
+<defs><pattern id="hatch" patternUnits="userSpaceOnUse" width="12" height="12"><path d="M-3,3 L3,-3 M0,12 L12,0 M9,15 L15,9" fill="none" stroke="#688b98" stroke-width="0.65"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#39464a"/></marker></defs>
+<rect width="1200" height="650" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#20292d">
+<g data-columns="6" data-rows="1" data-shaded-cells="5">
+<rect x="60" y="105" width="300.0" height="150" fill="#dce9ee"/>
+<rect x="60" y="105" width="300.0" height="150" fill="url(#hatch)"/>
+<line x1="120.0" y1="105" x2="120.0" y2="255" stroke="#303b40" stroke-width="2"/>
+<line x1="180.0" y1="105" x2="180.0" y2="255" stroke="#303b40" stroke-width="2"/>
+<line x1="240.0" y1="105" x2="240.0" y2="255" stroke="#303b40" stroke-width="2"/>
+<line x1="300.0" y1="105" x2="300.0" y2="255" stroke="#303b40" stroke-width="2"/>
+<line x1="360.0" y1="105" x2="360.0" y2="255" stroke="#303b40" stroke-width="2"/>
+<rect x="60" y="105" width="360" height="150" fill="none" stroke="#20292d" stroke-width="2.2"/></g>
+<g data-columns="6" data-rows="5" data-shaded-cells="25">
+<rect x="780" y="105" width="300.0" height="150" fill="#dce9ee"/>
+<rect x="780" y="105" width="300.0" height="150" fill="url(#hatch)"/>
+<line x1="780" y1="135.0" x2="1140" y2="135.0" stroke="#64757c" stroke-width="1"/>
+<line x1="780" y1="165.0" x2="1140" y2="165.0" stroke="#64757c" stroke-width="1"/>
+<line x1="780" y1="195.0" x2="1140" y2="195.0" stroke="#64757c" stroke-width="1"/>
+<line x1="780" y1="225.0" x2="1140" y2="225.0" stroke="#64757c" stroke-width="1"/>
+<line x1="840.0" y1="105" x2="840.0" y2="255" stroke="#303b40" stroke-width="2"/>
+<line x1="900.0" y1="105" x2="900.0" y2="255" stroke="#303b40" stroke-width="2"/>
+<line x1="960.0" y1="105" x2="960.0" y2="255" stroke="#303b40" stroke-width="2"/>
+<line x1="1020.0" y1="105" x2="1020.0" y2="255" stroke="#303b40" stroke-width="2"/>
+<line x1="1080.0" y1="105" x2="1080.0" y2="255" stroke="#303b40" stroke-width="2"/>
+<rect x="780" y="105" width="360" height="150" fill="none" stroke="#20292d" stroke-width="2.2"/></g>
+<text x="240" y="37" text-anchor="middle" font-size="29">5</text>
+<line x1="211" y1="47" x2="269" y2="47" stroke="#20292d" stroke-width="1.5"/>
+<text x="240" y="79" text-anchor="middle" font-size="29">6</text>
+<text x="960" y="37" text-anchor="middle" font-size="29">25</text>
+<line x1="931" y1="47" x2="989" y2="47" stroke="#20292d" stroke-width="1.5"/>
+<text x="960" y="79" text-anchor="middle" font-size="29">30</text>
+<text x="600" y="148" text-anchor="middle" font-size="21">Divide each sixth</text>
+<text x="600" y="177" text-anchor="middle" font-size="21">into 5 equal parts.</text>
+<line x1="453" y1="203" x2="747" y2="203" stroke="#39464a" stroke-width="1.7" marker-end="url(#arrow)"/>
+<g data-columns="10" data-rows="1" data-shaded-cells="3">
+<rect x="60" y="380" width="108.0" height="150" fill="#dce9ee"/>
+<rect x="60" y="380" width="108.0" height="150" fill="url(#hatch)"/>
+<line x1="96.0" y1="380" x2="96.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="132.0" y1="380" x2="132.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="168.0" y1="380" x2="168.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="204.0" y1="380" x2="204.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="240.0" y1="380" x2="240.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="276.0" y1="380" x2="276.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="312.0" y1="380" x2="312.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="348.0" y1="380" x2="348.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="384.0" y1="380" x2="384.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<rect x="60" y="380" width="360" height="150" fill="none" stroke="#20292d" stroke-width="2.2"/></g>
+<g data-columns="10" data-rows="3" data-shaded-cells="9">
+<rect x="780" y="380" width="108.0" height="150" fill="#dce9ee"/>
+<rect x="780" y="380" width="108.0" height="150" fill="url(#hatch)"/>
+<line x1="780" y1="430.0" x2="1140" y2="430.0" stroke="#64757c" stroke-width="1"/>
+<line x1="780" y1="480.0" x2="1140" y2="480.0" stroke="#64757c" stroke-width="1"/>
+<line x1="816.0" y1="380" x2="816.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="852.0" y1="380" x2="852.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="888.0" y1="380" x2="888.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="924.0" y1="380" x2="924.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="960.0" y1="380" x2="960.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="996.0" y1="380" x2="996.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="1032.0" y1="380" x2="1032.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="1068.0" y1="380" x2="1068.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<line x1="1104.0" y1="380" x2="1104.0" y2="530" stroke="#303b40" stroke-width="2"/>
+<rect x="780" y="380" width="360" height="150" fill="none" stroke="#20292d" stroke-width="2.2"/></g>
+<text x="240" y="312" text-anchor="middle" font-size="29">3</text>
+<line x1="211" y1="322" x2="269" y2="322" stroke="#20292d" stroke-width="1.5"/>
+<text x="240" y="354" text-anchor="middle" font-size="29">10</text>
+<text x="960" y="312" text-anchor="middle" font-size="29">9</text>
+<line x1="931" y1="322" x2="989" y2="322" stroke="#20292d" stroke-width="1.5"/>
+<text x="960" y="354" text-anchor="middle" font-size="29">30</text>
+<text x="600" y="423" text-anchor="middle" font-size="21">Divide each tenth</text>
+<text x="600" y="452" text-anchor="middle" font-size="21">into 3 equal parts.</text>
+<line x1="453" y1="478" x2="747" y2="478" stroke="#39464a" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="600" y="596" text-anchor="middle" font-size="23">The shaded amounts stay the same.</text>
+<text x="600" y="630" text-anchor="middle" font-size="23">Each small cell is 1/30 of a whole.</text>
+</g></svg>
