@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="610" viewBox="0 0 1300 610" role="img" aria-labelledby="title desc">
+  <title id="title">Add partial products and restore the decimal point</title>
+  <desc id="desc">The whole-number multiplication 53071 times 629 has partial products 477639, 1061420, and 31842600. They add to the whole-number product 33381659. Below that, the final line of the multiplication places a decimal point five digits from the right, obtaining 333.81659. The original factors have three and two decimal places.</desc>
+  <rect width="1300" height="610" fill="white"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#243640">
+    <text x="82" y="56" font-size="25" font-weight="600">Add the partial products</text>
+    <g font-family="DejaVu Sans Mono, monospace" font-size="34" text-anchor="middle">
+      <text x="506" y="138">5</text><text x="548" y="138">3</text><text x="590" y="138">0</text><text x="632" y="138">7</text><text x="674" y="138">1</text>
+      <text x="548" y="190">×</text><text x="590" y="190">6</text><text x="632" y="190">2</text><text x="674" y="190">9</text>
+
+      <text x="464" y="262">4</text><text x="506" y="262">7</text><text x="548" y="262">7</text><text x="590" y="262">6</text><text x="632" y="262">3</text><text x="674" y="262">9</text>
+      <text x="422" y="312">1</text><text x="464" y="312">0</text><text x="506" y="312">6</text><text x="548" y="312">1</text><text x="590" y="312">4</text><text x="632" y="312">2</text><text x="674" y="312">0</text>
+      <text x="380" y="362">3</text><text x="422" y="362">1</text><text x="464" y="362">8</text><text x="506" y="362">4</text><text x="548" y="362">2</text><text x="590" y="362">6</text><text x="632" y="362">0</text><text x="674" y="362">0</text>
+
+      <text x="380" y="431">3</text><text x="422" y="431">3</text><text x="464" y="431">3</text><text x="506" y="431">8</text><text x="548" y="431">1</text><text x="590" y="431">6</text><text x="632" y="431">5</text><text x="674" y="431">9</text>
+      <g font-weight="600">
+        <text x="380" y="516">3</text><text x="422" y="516">3</text><text x="464" y="516">3</text><text x="485" y="516" fill="#326f89">.</text><text x="506" y="516">8</text><text x="548" y="516">1</text><text x="590" y="516">6</text><text x="632" y="516">5</text><text x="674" y="516">9</text>
+      </g>
+    </g>
+    <g stroke="#344b55" stroke-width="2.5">
+      <line x1="466" y1="210" x2="695" y2="210"/>
+      <line x1="356" y1="381" x2="698" y2="381"/>
+    </g>
+
+    <line x1="745" y1="90" x2="745" y2="440" stroke="#d8e1e5" stroke-width="2"/>
+    <g font-size="22">
+      <text x="795" y="157">3 decimal places in 53.071</text>
+      <text x="795" y="204">+ 2 decimal places in 6.29</text>
+      <line x1="795" y1="219" x2="1086" y2="219" stroke="#344b55" stroke-width="2"/>
+      <text x="795" y="258" font-weight="600">5 decimal places in the product</text>
+    </g>
+    <line x1="485" y1="451" x2="485" y2="477" stroke="#7995a3" stroke-width="2"/>
+    <path d="M485 483 L478 472 M485 483 L492 472" stroke="#7995a3" stroke-width="2" fill="none"/>
+    <text x="527" y="567" font-size="21" fill="#526f7d" text-anchor="middle">Place the point before the last five digits.</text>
+  </g>
+</svg>

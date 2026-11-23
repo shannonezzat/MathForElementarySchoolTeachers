@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img" aria-labelledby="title desc">
+  <title id="title">Finding 30 percent of a class of 40</title>
+  <desc id="desc">One bar represents a class of 40 students and is divided into ten equal parts. The first three parts are shaded to show 30 percent of the class. A question mark asks how many students are in the shaded part. The figure does not display the answer.</desc>
+  <rect width="1100" height="390" fill="white"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#243640">
+    <text x="130" y="85" font-size="24">Each section represents one tenth of the class.</text>
+    <g stroke="#344b55" stroke-width="2">
+      <rect x="130" y="135" width="90" height="86" fill="#aecbd8"/>
+      <rect x="220" y="135" width="90" height="86" fill="#aecbd8"/>
+      <rect x="310" y="135" width="90" height="86" fill="#aecbd8"/>
+      <rect x="400" y="135" width="90" height="86" fill="#edf4f7"/>
+      <rect x="490" y="135" width="90" height="86" fill="#edf4f7"/>
+      <rect x="580" y="135" width="90" height="86" fill="#edf4f7"/>
+      <rect x="670" y="135" width="90" height="86" fill="#edf4f7"/>
+      <rect x="760" y="135" width="90" height="86" fill="#edf4f7"/>
+      <rect x="850" y="135" width="90" height="86" fill="#edf4f7"/>
+      <rect x="940" y="135" width="90" height="86" fill="#edf4f7"/>
+    </g>
+    <path d="M130 235 V251 H400 V235" fill="none" stroke="#537589" stroke-width="2.5"/>
+    <text x="265" y="286" font-size="23" text-anchor="middle">30% = ? students</text>
+    <path d="M130 303 V320 H1030 V303" fill="none" stroke="#344b55" stroke-width="2.5"/>
+    <text x="580" y="361" font-size="26" font-weight="600" text-anchor="middle">100% = 40 students</text>
+  </g>
+</svg>

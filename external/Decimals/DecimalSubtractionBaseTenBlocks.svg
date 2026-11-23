@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1780" height="735" viewBox="0 0 1780 735">
+  <rect width="1780" height="735" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#253843">
+    <text x="70" y="55" font-size="28" font-weight="700">Exchange equal quantities before subtracting</text>
+    <g stroke="#405966" stroke-width="1.5">
+      <path d="M125 105 H172 V151 H125 Z" fill="#b5d0dc"/>
+      <path d="M125 105 L136 93 H183 L172 105 Z" fill="#d6e8ed"/>
+      <path d="M172 105 L183 93 V140 L172 151 Z" fill="#93baca"/>
+    </g>
+    <text x="196" y="133" font-size="33">=</text>
+    <rect x="232" y="105" width="16" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="252" y="105" width="16" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="272" y="105" width="16" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="292" y="105" width="16" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="312" y="105" width="16" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="332" y="105" width="16" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="352" y="105" width="16" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="372" y="105" width="16" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="392" y="105" width="16" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="412" y="105" width="16" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+    <text x="186" y="183" font-size="22">1 cube = 10 flats</text>
+    <rect x="729" y="105" width="29" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+    <text x="786" y="133" font-size="33">=</text>
+    <rect x="835" y="105" width="8" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="850" y="105" width="8" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="865" y="105" width="8" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="880" y="105" width="8" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="895" y="105" width="8" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="910" y="105" width="8" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="925" y="105" width="8" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="940" y="105" width="8" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="955" y="105" width="8" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+<rect x="970" y="105" width="8" height="34" fill="#b5d0dc" stroke="#405966" stroke-width="1.5"/>
+    <text x="777" y="183" font-size="22">1 flat = 10 rods</text>
+    <text x="70" y="223" font-size="21" fill="#557282">A ten is a group of 10 unit cubes.</text>
+    <g font-size="19" fill="#557282" text-anchor="middle">
+      <text x="405" y="263">Tens (10 cubes)</text>
+      <text x="565" y="263">Cubes (1)</text>
+      <text x="725" y="263">Flats (0.1)</text>
+      <text x="885" y="263">Rods (0.01)</text>
+      <text x="1095" y="263">Small cubes (0.001)</text>
+    </g>
+    <path d="M60 282 H1215" stroke="#cfdde3" stroke-width="2"/>
+<path d="M60 343 H1215" stroke="#dbe4e8" stroke-width="2"/>
+<path d="M60 404 H1215" stroke="#dbe4e8" stroke-width="2"/>
+<path d="M60 465 H1215" stroke="#dbe4e8" stroke-width="2"/>
+<path d="M60 526 H1215" stroke="#dbe4e8" stroke-width="2"/>
+<path d="M60 587 H1215" stroke="#dbe4e8" stroke-width="2"/>
+<path d="M60 648 H1215" stroke="#cfdde3" stroke-width="2"/>
+    <text x="70" y="325" font-size="22" >Start: 53.071</text>
+<text x="405" y="325" text-anchor="middle" font-size="29"  fill="#253843">5</text>
+<text x="565" y="325" text-anchor="middle" font-size="29"  fill="#253843">3</text>
+<text x="725" y="325" text-anchor="middle" font-size="29"  fill="#253843">0</text>
+<text x="885" y="325" text-anchor="middle" font-size="29"  fill="#253843">7</text>
+<text x="1095" y="325" text-anchor="middle" font-size="29"  fill="#253843">1</text>
+<text x="70" y="386" font-size="22" >Exchange 1 ten</text>
+<text x="405" y="386" text-anchor="middle" font-size="29"  fill="#31728d">4</text>
+<text x="565" y="386" text-anchor="middle" font-size="29"  fill="#31728d">13</text>
+<text x="725" y="386" text-anchor="middle" font-size="29"  fill="#253843">0</text>
+<text x="885" y="386" text-anchor="middle" font-size="29"  fill="#253843">7</text>
+<text x="1095" y="386" text-anchor="middle" font-size="29"  fill="#253843">1</text>
+<text x="70" y="447" font-size="22" >Exchange 1 cube</text>
+<text x="405" y="447" text-anchor="middle" font-size="29"  fill="#253843">4</text>
+<text x="565" y="447" text-anchor="middle" font-size="29"  fill="#31728d">12</text>
+<text x="725" y="447" text-anchor="middle" font-size="29"  fill="#31728d">10</text>
+<text x="885" y="447" text-anchor="middle" font-size="29"  fill="#253843">7</text>
+<text x="1095" y="447" text-anchor="middle" font-size="29"  fill="#253843">1</text>
+<text x="70" y="508" font-size="22" >Exchange 1 flat</text>
+<text x="405" y="508" text-anchor="middle" font-size="29"  fill="#253843">4</text>
+<text x="565" y="508" text-anchor="middle" font-size="29"  fill="#253843">12</text>
+<text x="725" y="508" text-anchor="middle" font-size="29"  fill="#31728d">9</text>
+<text x="885" y="508" text-anchor="middle" font-size="29"  fill="#31728d">17</text>
+<text x="1095" y="508" text-anchor="middle" font-size="29"  fill="#253843">1</text>
+<text x="70" y="569" font-size="22" >Subtract 6.290</text>
+<text x="405" y="569" text-anchor="middle" font-size="29"  fill="#253843">− 0</text>
+<text x="565" y="569" text-anchor="middle" font-size="29"  fill="#253843">− 6</text>
+<text x="725" y="569" text-anchor="middle" font-size="29"  fill="#253843">− 2</text>
+<text x="885" y="569" text-anchor="middle" font-size="29"  fill="#253843">− 9</text>
+<text x="1095" y="569" text-anchor="middle" font-size="29"  fill="#253843">− 0</text>
+<text x="70" y="630" font-size="22" font-weight="700">Remain</text>
+<text x="405" y="630" text-anchor="middle" font-size="29" font-weight="700" fill="#253843">4</text>
+<text x="565" y="630" text-anchor="middle" font-size="29" font-weight="700" fill="#253843">6</text>
+<text x="725" y="630" text-anchor="middle" font-size="29" font-weight="700" fill="#253843">7</text>
+<text x="885" y="630" text-anchor="middle" font-size="29" font-weight="700" fill="#253843">8</text>
+<text x="1095" y="630" text-anchor="middle" font-size="29" font-weight="700" fill="#253843">1</text>
+    <text x="310" y="701" font-size="23" font-weight="700">4 tens + 6 cubes + 7 flats + 8 rods + 1 small cube = 46.781</text>
+    <path d="M1250 75 V690" stroke="#d1e0e6" stroke-width="2"/>
+    <text x="1287" y="109" font-size="27" font-weight="700">Standard subtraction</text>
+    <text x="1287" y="181" font-size="21" fill="#557282">The same exchanges in columns:</text>
+    <g font-size="18" fill="#557282" text-anchor="middle">
+      <text x="1350" y="269">10</text>
+      <text x="1420" y="269">1</text>
+      <text x="1530" y="269">0.1</text>
+      <text x="1600" y="269">0.01</text>
+      <text x="1690" y="269">0.001</text>
+    </g>
+    <text x="1287" y="310" font-size="18" fill="#31728d">After exchanging:</text>
+    <g font-size="25" fill="#31728d" text-anchor="middle" font-weight="700">
+      <text x="1350" y="342">4</text>
+      <text x="1420" y="342">12</text>
+      <text x="1530" y="342">9</text>
+      <text x="1600" y="342">17</text>
+    </g>
+    <g font-size="46" text-anchor="middle">
+      <text x="1350" y="402">5</text>
+      <text x="1420" y="402">3</text>
+      <text x="1475" y="402">.</text>
+      <text x="1530" y="402">0</text>
+      <text x="1600" y="402">7</text>
+      <text x="1690" y="402">1</text>
+      <text x="1300" y="478">−</text>
+      <text x="1420" y="478">6</text>
+      <text x="1475" y="478">.</text>
+      <text x="1530" y="478">2</text>
+      <text x="1600" y="478">9</text>
+      <text x="1690" y="478">0</text>
+    </g>
+    <g stroke="#31728d" stroke-width="2" opacity=".9">
+      <path d="M1336 370 L1365 394"/>
+      <path d="M1405 370 L1435 394"/>
+      <path d="M1515 370 L1545 394"/>
+      <path d="M1585 370 L1615 394"/>
+    </g>
+    <path d="M1287 503 H1727" stroke="#253843" stroke-width="2.5"/>
+    <g font-size="48" text-anchor="middle" font-weight="700">
+      <text x="1350" y="565">4</text>
+      <text x="1420" y="565">6</text>
+      <text x="1475" y="565">.</text>
+      <text x="1530" y="565">7</text>
+      <text x="1600" y="565">8</text>
+      <text x="1690" y="565">1</text>
+    </g>
+    <text x="1287" y="642" font-size="20" fill="#557282">53.071 − 6.290 = 46.781</text>
+  </g>
+</svg>

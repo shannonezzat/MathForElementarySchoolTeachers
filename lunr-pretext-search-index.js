@@ -4915,292 +4915,688 @@ var ptx_lunr_docs = [
   "body": "  (Complex fractions) Explain a clear strategy for simplifying that avoids arithmetic mistakes. Justify why your strategy works and describe how you would check your final answer for reasonableness.   "
 },
 {
-  "id": "decimals",
+  "id": "sec-introduction-to-decimals",
   "level": "1",
-  "url": "decimals.html",
+  "url": "sec-introduction-to-decimals.html",
   "type": "Section",
   "number": "6.1",
   "title": "Introduction to Decimals",
-  "body": " Introduction to Decimals   Decimal Fractions   Decimal Fractions and Their Relationship to Whole Numbers  We're going to move on and start discussing decimals. Now, terminating adn repeating decimals really are fractions, and this section will help us understand why and how. We use decimal notation since the behaviour of decimal fractions is very similar to the behaviour of integers in our base ten number system.  A decimal fraction is a fraction where the denominator is a power of 10. More formally, a decimal fraction is a rational number where for some . This means the denominators of these fractions are all powers of 10, which makes them behave a lot like the way our place values to the left of the decimal point operate. In base 10, a unit decimal fraction has 1 as the numerator.  Decimal fractions allow us to express quantities that are smaller than a whole unit in a way compatible with our usual arithmetic. In our base-ten number system, each place value to the right of the decimal point represents a fraction of the whole unit. The first digit after the decimal point represents tenths (1\/10), the second digit represents hundredths (1\/100), and so on. So the farther to the right a decimal place value is, the smaller quantity it represents.  An interesting aspect of decimal fractions is the similarity they share with whole numbers. We know that multiplying a whole number by 10 raises its place value by 1 and thus shifts its place value of its digits one place to the left, for example multiplying 10 by gives us , or . In a similar manner, dividing a decimal fraction by 10 also shifts its place value to the right. For example, dividing by 10 gives us so . This relationship holds true as we move along the decimal places and will allow us to perform arithmetic operations similarly to arithmetic with whole numbers.    Examples of decimal fractions are 3\/10, 671\/1000, -55\/1000000, and 372\/100.    When we add up ten unit decimal fractions, we get a unit fraction of the next largest kind. If we add up ten hundredths, we get one tenth.     Representation of Decimals  Decimals are fractions in disguise. Let's look at the number 32.329. This can be written as 32 + 3\/10 + 2\/100 + 9\/1000, but it can also be written in many other forms using decimal fractions.    Write 32.329 as a decimal fraction in ways other than the above.    32.329 can be written as 32329\/1000, using the denominator of the smallest decimal place in our number.  We can also write 32.329 writing the non-decimal part as a whole number and the decimal part using the smallest decimal place value: 32+329\/1000.      Pictorial Representation of Decimals  We can also represent decimals pictorially. Let's consider the decimal 0.32.    Comparing Decimals  To compare decimals, make them have a common denominator. This can be done by ensuring they have the same number of places to the right of the decimal point, and then comparing as normal.    Compare 0.32 and 0.6.    0.32 is 32 hundredths, and 0.6 can be written as 0.60, which represents 60 hundredths. Therefore, 0.60 is larger than 0.32.     "
+  "body": " Introduction to Decimals   Decimals and Place Value   We have already used place value to understand whole numbers. What changes when we continue that pattern to the right of the ones place? In this section, we will:    interpret decimal places as fractions with denominators that are powers of 10  represent a decimal using expanded notation, decimal fractions, and pictures  explain how multiplying or dividing by 10 changes place value  compare decimals by using common place values    We will use fractions, expanded form, and pictures to describe the same decimal quantity.     Decimal Fractions and Place Value  In a whole number, the position of a digit tells us whether we have ones, tens, hundreds, and so on. The same idea continues to the right of the decimal point. For example, is three tenths, while is three hundredths. Both use the digit 3, but they represent different quantities.    A decimal fraction is a fraction of the form , where is an integer and is a nonnegative integer. A unit decimal fraction is a decimal fraction with numerator 1.    Just as ten ones make one ten, ten hundredths make one tenth. The places to the right of the decimal point are tenths, hundredths, thousandths, and so on. In particular,   What happens when we multiply a decimal by 10? Each digit has ten times its previous value, so it occupies the place immediately to the left. Dividing by 10 has the opposite effect: each digit occupies the place immediately to the right. The decimal point stays fixed as a marker between the ones and tenths places. For example,     The fractions , , , and are all decimal fractions. A decimal fraction can be negative or greater than 1; its denominator is what gives it this name.     Notes for a Deeper Understanding  A decimal expansion is a way of writing a real number. Terminating and repeating expansions represent rational numbers. A nonterminating, nonrepeating expansion, such as that of , does not represent a fraction of integers. We will examine this distinction later in the chapter.     Representing Decimals  We can describe a decimal by adding the values of its digits. For instance, the digits in give us   We can also collect the fractional part into thousandths, since thousandths are the smallest place shown. This gives another representation of the same number:     Write in each of these forms:   expanded place-value notation  a whole number plus a proper decimal fraction  one decimal fraction                    Pictorial Representation of Decimals  Before drawing a decimal, we must decide what the picture represents as one whole. In the following grid, the entire square is one whole. Its 100 equal small squares are therefore hundredths, with each small square representing .   Representing on a hundred grid   A ten-by-ten grid represents one whole. Three full columns and two additional squares are shaded, showing 32 hundredths.    There are 32 shaded squares. We can count them as 32 hundredths, or regroup 30 of them as three tenths and leave two hundredths:     Comparing Decimals  The digits in two decimals must be compared in matching places. If it helps, we can write both quantities using the same smallest place value. Adding a trailing zero changes the written numeral but not the value: .    Compare and .    Write both numbers as hundredths:   Now we are comparing the same units. Since , we have .      A student says that because 407 is greater than 42. Explain the student's mistake and give the correct comparison.    The student has compared digit strings without checking their place values. Write as . Then thousandths, so .     "
 },
 {
-  "id": "decimal-fractions-2-3",
+  "id": "objectives-introduction-to-decimals",
   "level": "2",
-  "url": "decimals.html#decimal-fractions-2-3",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "decimal fraction unit decimal fraction "
+  "url": "sec-introduction-to-decimals.html#objectives-introduction-to-decimals",
+  "type": "Objectives",
+  "number": "6.1",
+  "title": "Decimals and Place Value",
+  "body": " Decimals and Place Value   We have already used place value to understand whole numbers. What changes when we continue that pattern to the right of the ones place? In this section, we will:    interpret decimal places as fractions with denominators that are powers of 10  represent a decimal using expanded notation, decimal fractions, and pictures  explain how multiplying or dividing by 10 changes place value  compare decimals by using common place values    We will use fractions, expanded form, and pictures to describe the same decimal quantity.   "
 },
 {
-  "id": "decimal-fraction-example1",
+  "id": "def-decimal-fraction",
   "level": "2",
-  "url": "decimals.html#decimal-fraction-example1",
-  "type": "Example",
+  "url": "sec-introduction-to-decimals.html#def-decimal-fraction",
+  "type": "Definition",
   "number": "6.1.1",
   "title": "",
-  "body": "  Examples of decimal fractions are 3\/10, 671\/1000, -55\/1000000, and 372\/100.   "
+  "body": "  A decimal fraction is a fraction of the form , where is an integer and is a nonnegative integer. A unit decimal fraction is a decimal fraction with numerator 1.   "
 },
 {
-  "id": "decimal-representation-example1",
+  "id": "example-decimal-fractions",
   "level": "2",
-  "url": "decimals.html#decimal-representation-example1",
+  "url": "sec-introduction-to-decimals.html#example-decimal-fractions",
   "type": "Example",
   "number": "6.1.2",
   "title": "",
-  "body": "  Write 32.329 as a decimal fraction in ways other than the above.    32.329 can be written as 32329\/1000, using the denominator of the smallest decimal place in our number.  We can also write 32.329 writing the non-decimal part as a whole number and the decimal part using the smallest decimal place value: 32+329\/1000.   "
+  "body": "  The fractions , , , and are all decimal fractions. A decimal fraction can be negative or greater than 1; its denominator is what gives it this name.   "
 },
 {
-  "id": "comparing-decimals-example1",
+  "id": "exercise-representing-decimals",
   "level": "2",
-  "url": "decimals.html#comparing-decimals-example1",
-  "type": "Example",
+  "url": "sec-introduction-to-decimals.html#exercise-representing-decimals",
+  "type": "Checkpoint",
   "number": "6.1.3",
   "title": "",
-  "body": "  Compare 0.32 and 0.6.    0.32 is 32 hundredths, and 0.6 can be written as 0.60, which represents 60 hundredths. Therefore, 0.60 is larger than 0.32.   "
+  "body": "  Write in each of these forms:   expanded place-value notation  a whole number plus a proper decimal fraction  one decimal fraction                 "
 },
 {
-  "id": "sec_operations_with_decimals",
+  "id": "figure-hundred-grid-0-32",
+  "level": "2",
+  "url": "sec-introduction-to-decimals.html#figure-hundred-grid-0-32",
+  "type": "Figure",
+  "number": "6.1.4",
+  "title": "",
+  "body": " Representing on a hundred grid   A ten-by-ten grid represents one whole. Three full columns and two additional squares are shaded, showing 32 hundredths.   "
+},
+{
+  "id": "example-comparing-decimals",
+  "level": "2",
+  "url": "sec-introduction-to-decimals.html#example-comparing-decimals",
+  "type": "Example",
+  "number": "6.1.5",
+  "title": "",
+  "body": "  Compare and .    Write both numbers as hundredths:   Now we are comparing the same units. Since , we have .   "
+},
+{
+  "id": "exercise-compare-decimals",
+  "level": "2",
+  "url": "sec-introduction-to-decimals.html#exercise-compare-decimals",
+  "type": "Checkpoint",
+  "number": "6.1.6",
+  "title": "",
+  "body": "  A student says that because 407 is greater than 42. Explain the student's mistake and give the correct comparison.    The student has compared digit strings without checking their place values. Write as . Then thousandths, so .   "
+},
+{
+  "id": "sec-operations-with-decimals",
   "level": "1",
-  "url": "sec_operations_with_decimals.html",
+  "url": "sec-operations-with-decimals.html",
   "type": "Section",
   "number": "6.2",
   "title": "Operations with Decimals",
-  "body": " Operations with Decimals   In this section, we will explore the four basic operations with decimals: addition, subtraction, multiplication, and division. We will not only practice these operations but also understand why they work the way they do.    Addition and Subtraction with Decimals  Adding and subtracting decimals is straightforward because decimal fractions behave the same as place value. The key is to line up your place values (digits) and add or subtract right to left, carrying to the next place if necessary.   Subtracting Decimals   Let's subtract 6.29 from 53.071.   GIVE A PIC OF THE ALGORITHM WITH EXPLANATION The process is the same as adding and subtracting whole numbers, but with the added step of aligning the decimal points.      Multiplication with Decimals  When multiplying decimals, we first multiply as if there were no decimals. Then, we count the number of decimal places in both numbers and add them. This sum is the number of decimal places in our answer.   Multiplying Decimals   Let's multiply 53.071 by 6.29.   GIVE A PIC OF THE ALGORITHM WITH EXPLANATION The reason this works is because we can think of decimals as decimal fractions. For instance, 53.071 can be thought of as 53071\/1000 and 6.29 as 629\/100. When we multiply these fractions, we multiply the numerators (53071 * 629) and the denominators (1000 * 100), which gives us the same result as our decimal multiplication.      Division with Decimals  When dividing decimals, we move the decimal place the same number of places in the dividend and divisor so that the divisor is a whole number. Then, we perform the division as if there were no decimals.   Dividing Decimals   Let's divide 2.781 by 0.618.   GIVE A PIC OF THE ALGORITHM WITH EXPLANATION This works because we can think of decimals as decimal fractions. For instance, 2.781 can be thought of as 2781\/1000 and 0.618 as 618\/1000. When we divide these fractions, we multiply the dividend by the reciprocal of the divisor, which gives us the same result as our decimal division.     "
+  "body": " Operations with Decimals   Operating with Decimals   The algorithms we used for whole numbers still depend on place value when the numbers have decimal parts. In this section, we will:    add and subtract decimals by aligning equal place values  connect regrouping with exchanges among base-ten units  explain the decimal-place rule for multiplication using decimal fractions  explain why multiplying both dividend and divisor by the same power of 10 preserves a quotient    For each operation, we want to carry out the calculation and explain what makes the steps valid.     Addition and Subtraction with Decimals  When we add or subtract, we combine or compare quantities of the same size: ones with ones, tenths with tenths, and so forth. Aligning the decimal points puts those places in the same columns. We may write a trailing zero to make a missing place visible without changing the number.   Subtracting Decimals   Subtract from .    Write as and line up matching place values.  We have 7 hundredths but need to subtract 9 hundredths, and there are no tenths to exchange. Exchange one of the 3 ones for ten tenths; then exchange one tenth for ten hundredths. We now have 2 ones, 9 tenths, and 17 hundredths. Since we still need to subtract 6 ones, exchange one ten for ten ones. This leaves 4 tens and 12 ones, as shown in the calculation.   Complete the subtraction   The aligned subtraction shows the exchanges and gives 46.781.        Notes for a Deeper Understanding  The crossed-out digits record exchanges of equal quantities. If a large base-ten cube represents 1, then a flat represents , a rod represents , and a small cube represents . The next figure counts those pieces through the same subtraction, alongside the column calculation.   Base-ten exchanges and standard subtraction   The exchanges for 53.071 minus 6.290 are shown in a base-ten table beside the corresponding standard column subtraction. Both give 46.781.       Multiplication with Decimals  With whole numbers, the partial products show how multiplication distributes over place value. We can use that same calculation for decimals, provided we keep track of the sizes of the units in the factors. Let's see why the decimal point ends up where it does.   Multiplying Decimals   Multiply by .    First calculate the whole-number product . The three partial-product rows come from multiplying by 9 ones, 2 tens, and 6 hundreds.   Complete the partial products   The partial products of 53071 times 629 are 477639 from 9 ones, 1061420 from 2 tens, and 31842600 from 6 hundreds. They are aligned by place value but have not yet been added.    Now add the partial products. The whole-number product is . We still need to determine the value of each digit in the decimal product.   Add and restore the decimal point   The partial products add to 33381659. Since 53.071 has three decimal places and 6.29 has two, the final line places the point five digits from the right to give 333.81659.     We can check the placement using decimal fractions. This explains why three decimal places in the first factor and two in the second give five in the product.   Why the decimal-place rule works   53.071 is 53071 over 1000, and 6.29 is 629 over 100. Multiplying gives 33381659 over 100000, or 333.81659. The three and two decimal places combine to give five.        Division with Decimals  How can we divide by a decimal using the whole-number division we already know? Multiply both numbers in the quotient by the same power of 10, choosing a power that makes the divisor a whole number. This changes the units used to express both numbers, but it does not change the quotient.   Dividing Decimals   Divide by .    The divisor has three decimal places, so use to rewrite the quotient with whole numbers.   Make the divisor a whole number   The fraction 2.781 over 0.618 is multiplied by 1000 over 1000. Multiplying its numerator and denominator by 1000 gives the equivalent fraction 2781 over 618.    We can now divide by . First find how many whole groups of 618 fit into 2781.   Divide the whole-number part   Long division of 2781 by 618: four times 618 is 2472. Subtracting 2472 from 2781 leaves a remainder of 309.    After taking four groups, 309 remains. Write as and continue the division into tenths.   Bring down a zero and finish   Long division of 2781 by 618: after subtracting 2472, the remainder is 309. Bringing down a zero gives 3090; subtracting five times 618 leaves remainder zero and gives quotient 4.5.     We can also see why this step works by writing both decimals in thousandths. The units in the numerator and denominator then cancel.   Why multiplying both numbers by 1000 works   The quotient of 2.781 and 0.618 is written using fractions with denominator 1000. Multiplication by 1000 is shown separately for each number, producing the equivalent quotient 2781 over 618.       "
 },
 {
-  "id": "ex_subtract_decimals",
+  "id": "objectives-operations-with-decimals",
   "level": "2",
-  "url": "sec_operations_with_decimals.html#ex_subtract_decimals",
+  "url": "sec-operations-with-decimals.html#objectives-operations-with-decimals",
+  "type": "Objectives",
+  "number": "6.2",
+  "title": "Operating with Decimals",
+  "body": " Operating with Decimals   The algorithms we used for whole numbers still depend on place value when the numbers have decimal parts. In this section, we will:    add and subtract decimals by aligning equal place values  connect regrouping with exchanges among base-ten units  explain the decimal-place rule for multiplication using decimal fractions  explain why multiplying both dividend and divisor by the same power of 10 preserves a quotient    For each operation, we want to carry out the calculation and explain what makes the steps valid.   "
+},
+{
+  "id": "example-subtract-decimals",
+  "level": "2",
+  "url": "sec-operations-with-decimals.html#example-subtract-decimals",
   "type": "Example",
   "number": "6.2.1",
   "title": "Subtracting Decimals.",
-  "body": " Subtracting Decimals   Let's subtract 6.29 from 53.071.   GIVE A PIC OF THE ALGORITHM WITH EXPLANATION The process is the same as adding and subtracting whole numbers, but with the added step of aligning the decimal points.   "
+  "body": " Subtracting Decimals   Subtract from .    Write as and line up matching place values.  We have 7 hundredths but need to subtract 9 hundredths, and there are no tenths to exchange. Exchange one of the 3 ones for ten tenths; then exchange one tenth for ten hundredths. We now have 2 ones, 9 tenths, and 17 hundredths. Since we still need to subtract 6 ones, exchange one ten for ten ones. This leaves 4 tens and 12 ones, as shown in the calculation.   Complete the subtraction   The aligned subtraction shows the exchanges and gives 46.781.      "
 },
 {
-  "id": "ex_multiply_decimals",
+  "id": "figure-subtraction-base-ten-blocks",
   "level": "2",
-  "url": "sec_operations_with_decimals.html#ex_multiply_decimals",
-  "type": "Example",
-  "number": "6.2.2",
-  "title": "Multiplying Decimals.",
-  "body": " Multiplying Decimals   Let's multiply 53.071 by 6.29.   GIVE A PIC OF THE ALGORITHM WITH EXPLANATION The reason this works is because we can think of decimals as decimal fractions. For instance, 53.071 can be thought of as 53071\/1000 and 6.29 as 629\/100. When we multiply these fractions, we multiply the numerators (53071 * 629) and the denominators (1000 * 100), which gives us the same result as our decimal multiplication.   "
-},
-{
-  "id": "ex_divide_decimals",
-  "level": "2",
-  "url": "sec_operations_with_decimals.html#ex_divide_decimals",
-  "type": "Example",
+  "url": "sec-operations-with-decimals.html#figure-subtraction-base-ten-blocks",
+  "type": "Figure",
   "number": "6.2.3",
-  "title": "Dividing Decimals.",
-  "body": " Dividing Decimals   Let's divide 2.781 by 0.618.   GIVE A PIC OF THE ALGORITHM WITH EXPLANATION This works because we can think of decimals as decimal fractions. For instance, 2.781 can be thought of as 2781\/1000 and 0.618 as 618\/1000. When we divide these fractions, we multiply the dividend by the reciprocal of the divisor, which gives us the same result as our decimal division.   "
+  "title": "",
+  "body": " Base-ten exchanges and standard subtraction   The exchanges for 53.071 minus 6.290 are shown in a base-ten table beside the corresponding standard column subtraction. Both give 46.781.   "
 },
 {
-  "id": "terminating-repeating-decimals",
+  "id": "example-multiply-decimals",
+  "level": "2",
+  "url": "sec-operations-with-decimals.html#example-multiply-decimals",
+  "type": "Example",
+  "number": "6.2.4",
+  "title": "Multiplying Decimals.",
+  "body": " Multiplying Decimals   Multiply by .    First calculate the whole-number product . The three partial-product rows come from multiplying by 9 ones, 2 tens, and 6 hundreds.   Complete the partial products   The partial products of 53071 times 629 are 477639 from 9 ones, 1061420 from 2 tens, and 31842600 from 6 hundreds. They are aligned by place value but have not yet been added.    Now add the partial products. The whole-number product is . We still need to determine the value of each digit in the decimal product.   Add and restore the decimal point   The partial products add to 33381659. Since 53.071 has three decimal places and 6.29 has two, the final line places the point five digits from the right to give 333.81659.     We can check the placement using decimal fractions. This explains why three decimal places in the first factor and two in the second give five in the product.   Why the decimal-place rule works   53.071 is 53071 over 1000, and 6.29 is 629 over 100. Multiplying gives 33381659 over 100000, or 333.81659. The three and two decimal places combine to give five.     "
+},
+{
+  "id": "example-divide-decimals",
+  "level": "2",
+  "url": "sec-operations-with-decimals.html#example-divide-decimals",
+  "type": "Example",
+  "number": "6.2.8",
+  "title": "Dividing Decimals.",
+  "body": " Dividing Decimals   Divide by .    The divisor has three decimal places, so use to rewrite the quotient with whole numbers.   Make the divisor a whole number   The fraction 2.781 over 0.618 is multiplied by 1000 over 1000. Multiplying its numerator and denominator by 1000 gives the equivalent fraction 2781 over 618.    We can now divide by . First find how many whole groups of 618 fit into 2781.   Divide the whole-number part   Long division of 2781 by 618: four times 618 is 2472. Subtracting 2472 from 2781 leaves a remainder of 309.    After taking four groups, 309 remains. Write as and continue the division into tenths.   Bring down a zero and finish   Long division of 2781 by 618: after subtracting 2472, the remainder is 309. Bringing down a zero gives 3090; subtracting five times 618 leaves remainder zero and gives quotient 4.5.     We can also see why this step works by writing both decimals in thousandths. The units in the numerator and denominator then cancel.   Why multiplying both numbers by 1000 works   The quotient of 2.781 and 0.618 is written using fractions with denominator 1000. Multiplication by 1000 is shown separately for each number, producing the equivalent quotient 2781 over 618.     "
+},
+{
+  "id": "sec-terminating-repeating-decimals",
   "level": "1",
-  "url": "terminating-repeating-decimals.html",
+  "url": "sec-terminating-repeating-decimals.html",
   "type": "Section",
   "number": "6.3",
   "title": "Terminating and Repeating Decimals",
-  "body": " Terminating and Repeating Decimals   In this section, our goal is to understand the relationship between rational numbers and their decimal representations. Specifically, we aim to show that a rational number is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction. This understanding is crucial for elementary school mathematics teachers as it forms the basis for many mathematical operations and concepts.   What is the converse of the statement above? Does this mean that a repeating decimal cannot be expressed as a terminating decimal?  Do and represent different numbers? If so, what is the size difference between them?     Terminating Decimals  A terminating decimal is a decimal number that has a finite number of digits. In other words, it is a decimal that ends or \"terminates\". It can be expressed as a fraction where the denominator is a power of 10.   Examples of Terminating Decimals  Here are some examples of fractions that are equivalent to terminating decimals:  1\/2 = 0.5: Here, we can say that 1\/2 is equivalent to the fraction 5\/10.  3\/4 = 0.75: When we divide 3 by 4, we get 0.75, which is a terminating decimal.  7\/8 = 0.875: Dividing 7 by 8 gives us 0.875, another terminating decimal.  3\/15 = 0.2: Even though 15 is not a power of 10, it is equivalent to a fraction that is; the fraction 3\/15 simplifies to 1\/5, and this is equivalent to the decimal fraction 20\/100, and thus a terminating decimal.    And here are examples of how to write a terminating decimal as a fraction:  0.5 = 5\/10 = 1\/2: Here, we express 0.5 as the fraction 5\/10, which simplifies to 1\/2.  0.75 = 75\/100 = 3\/4: We can express 0.75 as the fraction 75\/100, which simplifies to 3\/4.  0.875 = 875\/1000 = 7\/8: The decimal 0.875 can be expressed as the fraction 875\/1000, which simplifies to 7\/8.  0.2 = 2\/10 = 1\/5: The decimal 0.2 can be expressed as the fraction 2\/10, which simplifies to 1\/5.     Now, let's prove that a rational number is equivalent to a terminating decimal* if and only if it is equivalent to a decimal fraction.  *Note: this is hiding the fact that all terminating decimals have a (seldom used) repeating decimal representation, as we'll see later that decimals that have repeating 9s to the right are equivalent to terminating decimals. We will discuss this in more depth later.   Proof  Since this is an \"if and only if\" statement in the form , we have to prove two results, and . Let's denote a rational number as a\/b, where a and b are integers and b ≠ 0. We want to show that a\/b is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction.  Suppose a\/b is equivalent to a terminating decimal. Then, by definition of a terminating decimal, a\/b can be written as a decimal with a finite number of digits. This means that a\/b can be expressed as a decimal fraction, because a decimal fraction is a fraction where the denominator is a power of 10, and any terminating decimal can be expressed in this form.  Conversely, suppose a\/b is equivalent to a decimal fraction. Then a\/b can be expressed as a decimal with a finite number of digits, because a decimal fraction is a fraction where the denominator is a power of 10, and any fraction with a denominator that is a power of 10 can be expressed as a terminating decimal. Therefore, a\/b is equivalent to a terminating decimal.  Putting both results together, a rational number is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction.   Let's look at a non-example; 7\/15. Since and 7 shares to common factors with 3, there is no way of \"cancelling\" the factor of 3 in the denominator. Thus there is nothing we can multiply both the numerator and denominator by so that both are still integers and the denominator does not have a factor of 3, and thus it isn't equivalent to a decimal fraction, which has denominators of the form .    Expressing a Fraction as a Repeating Decimal Using Long Division  If a fraction is not equivalent to a decimal fraction, it can be expressed as a repeating decimal. One way to do this is by using long division. During this process, where we introduce place values with the digit 0 as we continue to the right, we may notice that we \"run out\" of non-zero remainders before the remainders must repeat, indicating a repeating decimal.  Why is this the case? Well, imagine you are dividing by some positive integer . There are only finitely many possible remainders: .  Now, we can convert a fraction a\/b to its decimal representation by long division. If we do get a remainder of 0, then we know that the decimal is a terminating decimal. So imagine that a\/b cannot be expressed as a terminating decimal. Then we will never see the remainder 0, and thus we only have possible remainders when performing each partial division in the long division algorithm. Note that we can add as many zeros to the right (after the decimal and after all non-zero decimal digits); e.g. 20.201 = 20.2010000... Let's call these the trailing zeroes.   Now when we get to using the place values of the trailing zeros, every time we \"bring down\" a digit from a new place value, that digit will be 0. If, at this point, we keep track of remainders, we note that we have at most unique remainders before one must repeat. At the point of repetition, our \"previous work\" will repeat over and over again, since we will only end up in situations we have seen before and thus the digits of decimal representation of our fraction between the repeated remainders will repeat over and over again to the right. Thus, we know that if fraction is not equivalent to a terminating decimal, it must be a repeating decimal.   Example: Expressing 2\/7 as a Repeating Decimal Using Long Division  Let's express the fraction 2\/7 as a repeating decimal using long division.  Divide 2 by 7. Since 2 is less than 7, we add a decimal point and a zero to the right of 2, making it 20.  Now, divide 20 by 7. The result is 2 with a remainder of 6.  Add another zero to the right of the remainder, making it 60.  Divide 60 by 7. The result is 8 with a remainder of 4.  Repeat this process. Each time, we add a zero to the right of the remainder and divide by 7.  Eventually, we notice that the remainders start to repeat (and must repeat, since there are only a finite number of remainders), indicating a repeating decimal.  So, 2\/7 = 0. .    Example: Expressing 6\/13 as a Repeating Decimal Using Long Division  Let's express the fraction 6\/13 as a repeating decimal using long division.  Divide 6 by 13. Since 6 is less than 13, we add a decimal point and a zero to the right of 6, making it 60.  Now, divide 60 by 13. The result is 4 with a remainder of 8.  Add another zero to the right of the remainder, making it 80.  Divide 80 by 13. The result is 6 with a remainder of 2.  Repeat this process. Each time, we add a zero to the right of the remainder and divide by 13.  Eventually, we notice that the remainders start to repeat, indicating a repeating decimal.  So, 6\/13 = 0. .     Representing All Repeating Decimals as Rational Numbers   In this subsection, we will show that all repeating decimals can be represented by rational numbers. We will start by demonstrating that 0.9999... = 1 using decimal and fraction notation. Then, we will define the repetend and period of a repeated decimal and provide examples.    Can Repeating Decimals Equal 1?  Let's consider the sum of 1\/3 + 1\/3 + 1\/3 in decimal notation and fraction notation.  In decimal notation, 1\/3 is equivalent to 0.333..., so the sum is 0.333... + 0.333... + 0.333... = 0.999.... ADD PIC OF THIS ADDITION  In fraction notation, the sum is 1\/3 + 1\/3 + 1\/3 = 1.  Therefore, 0.999... = 1.  Another way to look at this is to ask yourself \"if , what would I add to to make it equal 1? Any positive number that you think of adding would be too big!\"    Repetend and Period of a Repeated Decimal  The repetend of a repeating decimal is the first instance of the shortest group of digits that repeat indefinitely. It's important to note that the repetend is the smallest repeating unit in the decimal expansion. The period of a repeating decimal is the number of digits in the repetend.   Examples of Non-Repetends  Here are some examples of non-repetends in repeating decimals:   In the repeating decimal 0. , the number 142857 is the repetend. The number 142 is not a repetend because it is not the shortest group of repeating digits.    In the repeating decimal 0. , the number 27 is the repetend. The number 2727 is not the repetend because it is not the shortest group of repeating digits. The number 72 is not the repetend since it is not the first instance of repeating digits. So we would not write or        Examples of Repetend and Period  Here are two examples of identifying the repetend and period of a repeating decimal:   In the repeating decimal 0. , the repetend is 3 and the period is 1.    In the repeating decimal 0.00 , the repetend starts in the thousandths place and is 142857, and the period is 6.        Converting a Repeating Decimal to a Fraction  To convert a repeating decimal to a fraction, we can use the following algorithm:  Let x be the number in decimal form.  Let p be the period of the repetend.  Calculate (10^p)x - x in repeated decimal form.  Solve for x.  Convert any numerators and denominators to integers by multiplying both by the appropriate power of 10 to clear decimal places.  Simplify by converting the fraction to lowest terms.     Example: Converting a Repeating Decimal to a Fraction  Let's convert the repeating decimal 0. to a fraction using the above algorithm:  Let x = 0. .  The period of the repetend is 1, so p = 1.  Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 3.333... - 0.333... = 3.  Solve for x: x = 3\/9. This is the equation we get when we equate the decimal form and the fraction form.  Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).  Simplify by converting the fraction to lowest terms: x = 1\/3.  So, the repeating decimal 0. is equal to the fraction 1\/3.  Let's convert another repeating decimal, 0. , to a fraction:  Let x = 0. .  The period of the repetend is 2, so p = 2.  Calculate (10^p)x - x = 100x - x = 99x. In decimal form, this is 27.2727... - 0.2727... = 27.  Solve for x: x = 27\/99.  Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).  Simplify by converting the fraction to lowest terms: x = 3\/11.  So, the repeating decimal 0. is equal to the fraction 3\/11.    More Examples of Converting Repeating Decimals to Fractions  Let's convert more repeating decimals to fractions using the algorithm we discussed earlier:     Convert to a fraction:  Let .  The period of the repetend is 1, so p = 1.  Calculate . In decimal form, this is . Thus  Solve for x: .  Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).  Simplify by converting the fraction to lowest terms, which is already is!  So, the decimal is equal to the fraction .    Convert 1. to a fraction:  Let x = 1. . We know that the fractional representation will be an improper fraction because the decimal is greater than 1, and thus the numerator will be greater than the denominator.  The period of the repetend is 1, so p = 1.  Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 16.666... - 1.666... = 15.  Solve for x: x = 15\/9.  Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).  Simplify by converting the fraction to lowest terms: x = 5\/3.  So, the repeating decimal 1. is equal to the fraction 5\/3.    Convert -0. to a fraction:  Let x = -0. . This is a negative number.  The period of the repetend is 1, so p = 1.  Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is -8.888... - (-0.888...) = -8.  Solve for x: x = -8\/9.  Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).  Simplify by converting the fraction to lowest terms: x = -8\/9.  So, the repeating decimal -0. is equal to the fraction -8\/9.      A natural question is if a number has two or more different ways of expressing it using decimals. Let's explore this in the next example.     Consider the decimal number . Using the procedure above, determine the fraction represented by this decimal. Do you know of another way of expressing this fraction using decimals?    Using the example above as a guide, conjecture a second decimal expression for the fraction . Then check that this is correct.    Using the ideas above, make a conjecture about when two decimal expressions represent the same fraction. Do your best to prove\/justify why this is the case.          "
+  "body": " Terminating and Repeating Decimals   Rational Numbers and Decimal Expansions   What happens when we use division to write a fraction as a decimal? Some expansions end, while others repeat. In this section, we will:    identify terminating and eventually repeating decimal expansions  predict termination from the denominator of a fraction in lowest terms  explain why long division must terminate or repeat  identify a preperiod, repetend, and period  convert repeating decimals to fractions  explain why some rational numbers have two decimal representations    These ideas will let us see why a real number is rational exactly when its decimal expansion terminates or eventually repeats.     Terminating Decimals  We know that . Some other fractions can also be written with a last nonzero decimal digit. What do those fractions have in common?    A terminating decimal expansion has only finitely many nonzero digits. We can write zeros after the last nonzero digit without changing its value; for example, .     In each example, we can find an equivalent fraction whose denominator is a power of 10:                 Notice that each fraction above can be expressed with a denominator of , , or . This observation gives a general test.    A rational number has a terminating decimal expansion if and only if it is equivalent to a decimal fraction.    Suppose a rational number has a terminating expansion with digits after the decimal point. Remove the decimal point to obtain an integer . The original number is , so it is equivalent to a decimal fraction.  Conversely, suppose the number is . Dividing the integer by gives a decimal with no nonzero digits beyond the th decimal place. Thus its expansion terminates.     Notes for a Deeper Understanding  There is another way to use this theorem. First write in lowest terms with . Its decimal expansion terminates exactly when every prime factor of is 2 or 5, since .  For example, is in lowest terms and . The factor 3 cannot disappear when we write an equivalent fraction, so the denominator cannot become a power of 10. The expansion does not terminate.     Without carrying out long division, determine which fractions have terminating decimal expansions: , , , and .    Reduce the fractions first. The denominators of , , and have no prime factors other than 2 or 5. They terminate. The denominator of contains a factor of 3, so its expansion does not terminate.      Why Long Division Terminates or Repeats  Why must a fraction's decimal expansion either end or repeat? When we divide an integer by a positive integer , each step leaves one of the following remainders:   A remainder of 0 ends the division. Otherwise, the remainder is one of only nonzero possibilities. If we continue long enough, one of them must return. The next digit depends entirely on the current remainder and the divisor, so a repeated remainder forces the same digits to follow again.   Expressing as a Repeating Decimal  A remainder table lets us see the cycle in . At each step, multiply the current remainder by 10, divide by 7 to obtain the next decimal digit, and record the new remainder.    Current remainder  Number divided by 7  Next digit  New remainder                                                                                        We have returned to the remainder 2, with which we started. The same six steps will now repeat:     Expressing as a Repeating Decimal    Current remainder  Number divided by 13  Next digit  New remainder                                                                                        Here the remainder 6 returns after six steps. Thus      Representing Repeating Decimals as Rational Numbers   Can a Repeating Decimal Equal 1?  Can a decimal made entirely of nines after the point equal 1? We already know . Add three copies of this equality. Each decimal place in the sum contains .   Adding three copies of one third in fraction and decimal notation   Three equal thirds sum to one. Their repeating decimal forms sum to 0.999 repeating, showing that 0.999 repeating equals one.    Now look at the same sum as fractions:   These are two representations of the same sum, so . A number can therefore have more than one decimal representation. For example,     Preperiod, Repetend, and Period    In a standard form of an eventually repeating decimal expansion, the preperiod is the shortest initial string of digits before the repeating pattern begins. The repetend is the shortest block that repeats indefinitely after it, and the period is the number of digits in that block.       In , the repeating pattern starts immediately. The preperiod is empty, the repetend is 3, and the period is 1.    In , the preperiod is 00, the repetend is 142857, and the period is 6.    The expressions , , and all represent the same number. The first uses no preperiod and the shortest repeating block, so it is the standard form.       Converting a Repeating Decimal to a Fraction  We can use place value to turn a repeating decimal into a fraction. Multiplying by a suitable power of 10 places two copies of the repeating tail beneath each other. When we subtract, those tails cancel.   Converting to a Fraction   Let . The repeating block has two digits, so multiply by 100:   Now subtract the original equation. The repeating tails are identical:    Consequently,      Converting to a Fraction   Let . The first two decimal digits do not repeat. Multiply by 100 to move past them, and by a further 10 to align the one-digit repeating block:    Subtract these two equations to cancel the repeating tails:   Therefore,      Notes for a Deeper Understanding  The same reasoning works in general. Suppose a decimal has a preperiod of digits followed by a repetend of digits. The repeating tails of and agree. Subtracting gives an integer:   We can divide by the nonzero integer . Thus every eventually repeating decimal is rational.      Convert to a fraction.  Give a terminating decimal representation of the same number.  Conjecture a second decimal representation of .       .   .   .       "
 },
 {
-  "id": "terminating-repeating-decimals-2-2",
+  "id": "objectives-terminating-repeating",
   "level": "2",
-  "url": "terminating-repeating-decimals.html#terminating-repeating-decimals-2-2",
-  "type": "Checkpoint",
-  "number": "",
-  "title": "",
-  "body": " What is the converse of the statement above? Does this mean that a repeating decimal cannot be expressed as a terminating decimal?  Do and represent different numbers? If so, what is the size difference between them?  "
+  "url": "sec-terminating-repeating-decimals.html#objectives-terminating-repeating",
+  "type": "Objectives",
+  "number": "6.3",
+  "title": "Rational Numbers and Decimal Expansions",
+  "body": " Rational Numbers and Decimal Expansions   What happens when we use division to write a fraction as a decimal? Some expansions end, while others repeat. In this section, we will:    identify terminating and eventually repeating decimal expansions  predict termination from the denominator of a fraction in lowest terms  explain why long division must terminate or repeat  identify a preperiod, repetend, and period  convert repeating decimals to fractions  explain why some rational numbers have two decimal representations    These ideas will let us see why a real number is rational exactly when its decimal expansion terminates or eventually repeats.   "
 },
 {
-  "id": "terminating-decimals-2",
+  "id": "def-terminating-decimal",
   "level": "2",
-  "url": "terminating-repeating-decimals.html#terminating-decimals-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "terminating decimal "
-},
-{
-  "id": "example-terminating-decimal",
-  "level": "2",
-  "url": "terminating-repeating-decimals.html#example-terminating-decimal",
-  "type": "Example",
+  "url": "sec-terminating-repeating-decimals.html#def-terminating-decimal",
+  "type": "Definition",
   "number": "6.3.1",
-  "title": "Examples of Terminating Decimals.",
-  "body": " Examples of Terminating Decimals  Here are some examples of fractions that are equivalent to terminating decimals:  1\/2 = 0.5: Here, we can say that 1\/2 is equivalent to the fraction 5\/10.  3\/4 = 0.75: When we divide 3 by 4, we get 0.75, which is a terminating decimal.  7\/8 = 0.875: Dividing 7 by 8 gives us 0.875, another terminating decimal.  3\/15 = 0.2: Even though 15 is not a power of 10, it is equivalent to a fraction that is; the fraction 3\/15 simplifies to 1\/5, and this is equivalent to the decimal fraction 20\/100, and thus a terminating decimal.    And here are examples of how to write a terminating decimal as a fraction:  0.5 = 5\/10 = 1\/2: Here, we express 0.5 as the fraction 5\/10, which simplifies to 1\/2.  0.75 = 75\/100 = 3\/4: We can express 0.75 as the fraction 75\/100, which simplifies to 3\/4.  0.875 = 875\/1000 = 7\/8: The decimal 0.875 can be expressed as the fraction 875\/1000, which simplifies to 7\/8.  0.2 = 2\/10 = 1\/5: The decimal 0.2 can be expressed as the fraction 2\/10, which simplifies to 1\/5.    "
-},
-{
-  "id": "proof-terminating-decimal",
-  "level": "2",
-  "url": "terminating-repeating-decimals.html#proof-terminating-decimal",
-  "type": "Proof",
-  "number": "6.3.1.1",
-  "title": "Proof.",
-  "body": " Proof  Since this is an \"if and only if\" statement in the form , we have to prove two results, and . Let's denote a rational number as a\/b, where a and b are integers and b ≠ 0. We want to show that a\/b is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction.  Suppose a\/b is equivalent to a terminating decimal. Then, by definition of a terminating decimal, a\/b can be written as a decimal with a finite number of digits. This means that a\/b can be expressed as a decimal fraction, because a decimal fraction is a fraction where the denominator is a power of 10, and any terminating decimal can be expressed in this form.  Conversely, suppose a\/b is equivalent to a decimal fraction. Then a\/b can be expressed as a decimal with a finite number of digits, because a decimal fraction is a fraction where the denominator is a power of 10, and any fraction with a denominator that is a power of 10 can be expressed as a terminating decimal. Therefore, a\/b is equivalent to a terminating decimal.  Putting both results together, a rational number is equivalent to a terminating decimal if and only if it is equivalent to a decimal fraction.  "
-},
-{
-  "id": "repeating-decimals-long-division-4",
-  "level": "2",
-  "url": "terminating-repeating-decimals.html#repeating-decimals-long-division-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
   "title": "",
-  "body": "trailing zeroes. "
+  "body": "  A terminating decimal expansion has only finitely many nonzero digits. We can write zeros after the last nonzero digit without changing its value; for example, .   "
+},
+{
+  "id": "example-terminating-decimals",
+  "level": "2",
+  "url": "sec-terminating-repeating-decimals.html#example-terminating-decimals",
+  "type": "Example",
+  "number": "6.3.2",
+  "title": "",
+  "body": " In each example, we can find an equivalent fraction whose denominator is a power of 10:                "
+},
+{
+  "id": "theorem-terminating-decimal-fraction",
+  "level": "2",
+  "url": "sec-terminating-repeating-decimals.html#theorem-terminating-decimal-fraction",
+  "type": "Theorem",
+  "number": "6.3.3",
+  "title": "",
+  "body": "  A rational number has a terminating decimal expansion if and only if it is equivalent to a decimal fraction.    Suppose a rational number has a terminating expansion with digits after the decimal point. Remove the decimal point to obtain an integer . The original number is , so it is equivalent to a decimal fraction.  Conversely, suppose the number is . Dividing the integer by gives a decimal with no nonzero digits beyond the th decimal place. Thus its expansion terminates.   "
+},
+{
+  "id": "exercise-termination-test",
+  "level": "2",
+  "url": "sec-terminating-repeating-decimals.html#exercise-termination-test",
+  "type": "Checkpoint",
+  "number": "6.3.4",
+  "title": "",
+  "body": "  Without carrying out long division, determine which fractions have terminating decimal expansions: , , , and .    Reduce the fractions first. The denominators of , , and have no prime factors other than 2 or 5. They terminate. The denominator of contains a factor of 3, so its expansion does not terminate.   "
 },
 {
   "id": "example-long-division-2-7",
   "level": "2",
-  "url": "terminating-repeating-decimals.html#example-long-division-2-7",
+  "url": "sec-terminating-repeating-decimals.html#example-long-division-2-7",
   "type": "Example",
-  "number": "6.3.2",
-  "title": "Example: Expressing 2\/7 as a Repeating Decimal Using Long Division.",
-  "body": " Example: Expressing 2\/7 as a Repeating Decimal Using Long Division  Let's express the fraction 2\/7 as a repeating decimal using long division.  Divide 2 by 7. Since 2 is less than 7, we add a decimal point and a zero to the right of 2, making it 20.  Now, divide 20 by 7. The result is 2 with a remainder of 6.  Add another zero to the right of the remainder, making it 60.  Divide 60 by 7. The result is 8 with a remainder of 4.  Repeat this process. Each time, we add a zero to the right of the remainder and divide by 7.  Eventually, we notice that the remainders start to repeat (and must repeat, since there are only a finite number of remainders), indicating a repeating decimal.  So, 2\/7 = 0. .  "
+  "number": "6.3.5",
+  "title": "Expressing <span class=\"process-math\">\\(\\frac27\\)<\/span> as a Repeating Decimal.",
+  "body": " Expressing as a Repeating Decimal  A remainder table lets us see the cycle in . At each step, multiply the current remainder by 10, divide by 7 to obtain the next decimal digit, and record the new remainder.    Current remainder  Number divided by 7  Next digit  New remainder                                                                                        We have returned to the remainder 2, with which we started. The same six steps will now repeat:   "
 },
 {
   "id": "example-long-division-6-13",
   "level": "2",
-  "url": "terminating-repeating-decimals.html#example-long-division-6-13",
-  "type": "Example",
-  "number": "6.3.3",
-  "title": "Example: Expressing 6\/13 as a Repeating Decimal Using Long Division.",
-  "body": " Example: Expressing 6\/13 as a Repeating Decimal Using Long Division  Let's express the fraction 6\/13 as a repeating decimal using long division.  Divide 6 by 13. Since 6 is less than 13, we add a decimal point and a zero to the right of 6, making it 60.  Now, divide 60 by 13. The result is 4 with a remainder of 8.  Add another zero to the right of the remainder, making it 80.  Divide 80 by 13. The result is 6 with a remainder of 2.  Repeat this process. Each time, we add a zero to the right of the remainder and divide by 13.  Eventually, we notice that the remainders start to repeat, indicating a repeating decimal.  So, 6\/13 = 0. .  "
-},
-{
-  "id": "repetend-and-period-2",
-  "level": "2",
-  "url": "terminating-repeating-decimals.html#repetend-and-period-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "repetend period "
-},
-{
-  "id": "example-non-repetends",
-  "level": "2",
-  "url": "terminating-repeating-decimals.html#example-non-repetends",
-  "type": "Example",
-  "number": "6.3.4",
-  "title": "Examples of Non-Repetends.",
-  "body": " Examples of Non-Repetends  Here are some examples of non-repetends in repeating decimals:   In the repeating decimal 0. , the number 142857 is the repetend. The number 142 is not a repetend because it is not the shortest group of repeating digits.    In the repeating decimal 0. , the number 27 is the repetend. The number 2727 is not the repetend because it is not the shortest group of repeating digits. The number 72 is not the repetend since it is not the first instance of repeating digits. So we would not write or      "
-},
-{
-  "id": "example-repetend-and-period",
-  "level": "2",
-  "url": "terminating-repeating-decimals.html#example-repetend-and-period",
-  "type": "Example",
-  "number": "6.3.5",
-  "title": "Examples of Repetend and Period.",
-  "body": " Examples of Repetend and Period  Here are two examples of identifying the repetend and period of a repeating decimal:   In the repeating decimal 0. , the repetend is 3 and the period is 1.    In the repeating decimal 0.00 , the repetend starts in the thousandths place and is 142857, and the period is 6.     "
-},
-{
-  "id": "example-converting-repeating-decimal-to-fraction",
-  "level": "2",
-  "url": "terminating-repeating-decimals.html#example-converting-repeating-decimal-to-fraction",
+  "url": "sec-terminating-repeating-decimals.html#example-long-division-6-13",
   "type": "Example",
   "number": "6.3.6",
-  "title": "Example: Converting a Repeating Decimal to a Fraction.",
-  "body": " Example: Converting a Repeating Decimal to a Fraction  Let's convert the repeating decimal 0. to a fraction using the above algorithm:  Let x = 0. .  The period of the repetend is 1, so p = 1.  Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 3.333... - 0.333... = 3.  Solve for x: x = 3\/9. This is the equation we get when we equate the decimal form and the fraction form.  Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).  Simplify by converting the fraction to lowest terms: x = 1\/3.  So, the repeating decimal 0. is equal to the fraction 1\/3.  Let's convert another repeating decimal, 0. , to a fraction:  Let x = 0. .  The period of the repetend is 2, so p = 2.  Calculate (10^p)x - x = 100x - x = 99x. In decimal form, this is 27.2727... - 0.2727... = 27.  Solve for x: x = 27\/99.  Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).  Simplify by converting the fraction to lowest terms: x = 3\/11.  So, the repeating decimal 0. is equal to the fraction 3\/11.  "
+  "title": "Expressing <span class=\"process-math\">\\(\\frac6{13}\\)<\/span> as a Repeating Decimal.",
+  "body": " Expressing as a Repeating Decimal    Current remainder  Number divided by 13  Next digit  New remainder                                                                                        Here the remainder 6 returns after six steps. Thus   "
 },
 {
-  "id": "example-more-conversions",
+  "id": "figure-repeating-nines-addition",
   "level": "2",
-  "url": "terminating-repeating-decimals.html#example-more-conversions",
-  "type": "Example",
+  "url": "sec-terminating-repeating-decimals.html#figure-repeating-nines-addition",
+  "type": "Figure",
   "number": "6.3.7",
-  "title": "More Examples of Converting Repeating Decimals to Fractions.",
-  "body": " More Examples of Converting Repeating Decimals to Fractions  Let's convert more repeating decimals to fractions using the algorithm we discussed earlier:     Convert to a fraction:  Let .  The period of the repetend is 1, so p = 1.  Calculate . In decimal form, this is . Thus  Solve for x: .  Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).  Simplify by converting the fraction to lowest terms, which is already is!  So, the decimal is equal to the fraction .    Convert 1. to a fraction:  Let x = 1. . We know that the fractional representation will be an improper fraction because the decimal is greater than 1, and thus the numerator will be greater than the denominator.  The period of the repetend is 1, so p = 1.  Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is 16.666... - 1.666... = 15.  Solve for x: x = 15\/9.  Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).  Simplify by converting the fraction to lowest terms: x = 5\/3.  So, the repeating decimal 1. is equal to the fraction 5\/3.    Convert -0. to a fraction:  Let x = -0. . This is a negative number.  The period of the repetend is 1, so p = 1.  Calculate (10^p)x - x = 10x - x = 9x. In decimal form, this is -8.888... - (-0.888...) = -8.  Solve for x: x = -8\/9.  Convert the numerator and denominator to integers by multiplying both by 1 (no need to clear decimal places in this case).  Simplify by converting the fraction to lowest terms: x = -8\/9.  So, the repeating decimal -0. is equal to the fraction -8\/9.     "
+  "title": "",
+  "body": " Adding three copies of one third in fraction and decimal notation   Three equal thirds sum to one. Their repeating decimal forms sum to 0.999 repeating, showing that 0.999 repeating equals one.   "
 },
 {
-  "id": "converting-repeating-decimal-to-fraction-6",
+  "id": "def-preperiod-repetend-period",
   "level": "2",
-  "url": "terminating-repeating-decimals.html#converting-repeating-decimal-to-fraction-6",
-  "type": "Example",
+  "url": "sec-terminating-repeating-decimals.html#def-preperiod-repetend-period",
+  "type": "Definition",
   "number": "6.3.8",
   "title": "",
-  "body": "   Consider the decimal number . Using the procedure above, determine the fraction represented by this decimal. Do you know of another way of expressing this fraction using decimals?    Using the example above as a guide, conjecture a second decimal expression for the fraction . Then check that this is correct.    Using the ideas above, make a conjecture about when two decimal expressions represent the same fraction. Do your best to prove\/justify why this is the case.       "
+  "body": "  In a standard form of an eventually repeating decimal expansion, the preperiod is the shortest initial string of digits before the repeating pattern begins. The repetend is the shortest block that repeats indefinitely after it, and the period is the number of digits in that block.   "
 },
 {
-  "id": "percent-and-percent-change",
+  "id": "example-preperiod-repetend-period",
+  "level": "2",
+  "url": "sec-terminating-repeating-decimals.html#example-preperiod-repetend-period",
+  "type": "Example",
+  "number": "6.3.9",
+  "title": "",
+  "body": "   In , the repeating pattern starts immediately. The preperiod is empty, the repetend is 3, and the period is 1.    In , the preperiod is 00, the repetend is 142857, and the period is 6.    The expressions , , and all represent the same number. The first uses no preperiod and the shortest repeating block, so it is the standard form.    "
+},
+{
+  "id": "example-convert-027",
+  "level": "2",
+  "url": "sec-terminating-repeating-decimals.html#example-convert-027",
+  "type": "Example",
+  "number": "6.3.10",
+  "title": "Converting <span class=\"process-math\">\\(0.\\overline{27}\\)<\/span> to a Fraction.",
+  "body": " Converting to a Fraction   Let . The repeating block has two digits, so multiply by 100:   Now subtract the original equation. The repeating tails are identical:    Consequently,    "
+},
+{
+  "id": "example-convert-eventually-repeating",
+  "level": "2",
+  "url": "sec-terminating-repeating-decimals.html#example-convert-eventually-repeating",
+  "type": "Example",
+  "number": "6.3.11",
+  "title": "Converting <span class=\"process-math\">\\(0.01\\overline4\\)<\/span> to a Fraction.",
+  "body": " Converting to a Fraction   Let . The first two decimal digits do not repeat. Multiply by 100 to move past them, and by a further 10 to align the one-digit repeating block:    Subtract these two equations to cancel the repeating tails:   Therefore,    "
+},
+{
+  "id": "exercise-two-decimal-representations",
+  "level": "2",
+  "url": "sec-terminating-repeating-decimals.html#exercise-two-decimal-representations",
+  "type": "Checkpoint",
+  "number": "6.3.12",
+  "title": "",
+  "body": "   Convert to a fraction.  Give a terminating decimal representation of the same number.  Conjecture a second decimal representation of .       .   .   .    "
+},
+{
+  "id": "sec-percent-and-change",
   "level": "1",
-  "url": "percent-and-percent-change.html",
+  "url": "sec-percent-and-change.html",
   "type": "Section",
   "number": "6.4",
   "title": "Percent and Percent Change",
-  "body": " Percent and Percent Change  Understanding percent and percent change is crucial in various aspects of mathematics, finance, and everyday life. This section will explain what percent is, how to work with percents in different contexts, and how to distinguish between percent change and percentage point change. Whether you are calculating discounts during a sale, analyzing statistical data, or understanding financial growth, a firm grasp of these concepts is essential. By the end of this section, you will be equipped with the skills to handle a variety of problems involving percents and their changes.   Introduction to Percent  A percent is a way of expressing a number as a fraction of 100. The word \"percent\" comes from the Latin \"per centum,\" which means \"by the hundred.\" This means that percents are inherently tied to the concept of fractions and ratios. For instance, 50% is equivalent to or . In practical terms, this means that 50% represents half of a given quantity. Understanding percents as fractions helps in visualizing parts of a whole, making it easier to compare and analyze data. Similarly, percents can also be viewed as ratios, where 50% means 50 parts out of 100 parts. This ratio perspective is particularly useful in fields like statistics and probability, where relationships between quantities are often examined.   Converting Ratios to Percents  To convert a ratio to a percent, multiply the ratio by 100. This conversion process involves scaling the ratio to a common base of 100, making it easier to understand and compare. For example, the ratio 3:4 can be converted to a percent as follows: . This means that 3 out of 4 parts is the same as 75 out of 100 parts, which is a more intuitive way to grasp the proportion. This method is particularly useful in various practical scenarios such as interpreting statistical data, comparing success rates, or even understanding sports statistics.   Example: Ratios to Percents  Convert the ratio 2:5 to a percent. This requires us to scale the given ratio to a base of 100 to find an equivalent percent value.    Thus, the ratio 2:5 is equivalent to 40%, meaning 2 parts out of 5 is the same as 40 parts out of 100. This method of conversion is essential in comparing ratios in a standardized format that is widely understood.      Converting Fractions to Percents  To convert a fraction to a percent, first convert the fraction to a decimal and then multiply by 100 percent (remembering that since we are simply multiplying by 1 and not changing the quantity. This two-step process involves dividing the numerator by the denominator to get a decimal, then scaling the decimal to a percentage. For example, to convert to a percent: . This conversion is important because it translates the fraction into a percentage, which is a more familiar and easily interpretable format for most people. This method is widely used in various fields such as finance, education, and health, where data is often presented in percent form for better clarity and impact.   Example: Fractions to Percents  Convert the fraction to a percent. This involves converting the fraction to a decimal and then scaling it to a percent.    Therefore, the fraction is equivalent to 15%. This method highlights the ease with which we can understand fractions in a percent format, facilitating better communication and comprehension of data in everyday contexts.       Visualizing Percents Using a Bar Diagram  A bar diagram is a useful tool for visualizing percents. By representing the whole as a bar divided into 100 equal parts, we can easily see how a certain percentage compares to the whole. This visual representation makes it easier to grasp the concept of percents and their relative sizes. Bar diagrams are particularly effective in educational settings, where visual aids can enhance understanding. They also find use in data presentation, where complex numerical information can be made more accessible and engaging through visual means. By translating numerical data into visual forms, bar diagrams help bridge the gap between abstract concepts and tangible understanding.   Example: Using a Bar Diagram  If 30% of a class of 40 students are boys, how many boys are in the class? This problem involves using a bar diagram to visualize the percentage and determine the actual number of boys.   Using a bar diagram, we represent the whole class of 40 students as a bar divided into 100 parts. Each part represents 0.4 students (since 40 students \/ 100 parts = 0.4 students per part). By identifying 30% of the bar, we can determine the number of boys.   Therefore, there are 12 boys in the class. This example shows how bar diagrams can be used to break down and solve percentage problems, making the data more comprehensible and easier to work with.     Example: Using a Bar Diagram  25% of a certain amount is 50. What is the whole amount? This problem uses a bar diagram to visualize the percentage and back-calculate to find the total amount.   Using a bar diagram, we know that 25% corresponds to 50. We need to find the total amount (100%). By understanding that 25% is one-quarter of the total, we can determine the whole by scaling up from the given percentage.   Thus, the whole amount is 200. This example illustrates how bar diagrams can simplify complex percentage calculations by providing a clear visual framework for solving the problem.      Percent vs. Percent Change  Percent represents a part of a whole, while percent change represents the degree of change over time. Percent change is calculated by taking the difference between the new value and the old value, dividing by the old value, and then multiplying by 100. Understanding the difference between percent and percent change is critical in contexts such as financial analysis, where it's important to distinguish between the portion of a whole and the rate of change over a period. Percent change provides insights into trends, growth rates, and the relative impact of changes in values, which is essential for making informed decisions.   Example: Percent Change  A stock price increases from $50 to $75. What is the percent change? This problem involves calculating the relative change in value to understand the growth of the stock price.    Therefore, the percent change is 50%. This example highlights how percent change provides a clear measure of growth, indicating that the stock price increased by half its original value.     Example: Percent Change  A population decreases from 2000 to 1500. What is the percent change? This problem requires calculating the relative change to understand the decrease in population.    Therefore, the percent change is -25%. This negative value indicates a decrease in the population. This example demonstrates how percent change can effectively communicate both increases and decreases in values, providing a clear picture of how quantities evolve over time.      Percent Change vs. Percentage Point Change  Percent change and percentage point change are different concepts that are often confused. Percent change measures the relative change between two values as a percentage of the original value. It is useful for understanding the proportional increase or decrease. On the other hand, percentage point change measures the absolute change between two percentages. This is particularly important in fields such as economics and public policy, where the distinction between relative and absolute changes can have significant implications. Understanding the difference helps in accurately interpreting data and making informed decisions based on the nature of the change.   Example: Percentage Point Change  The interest rate increases from 2% to 5%. What is the percentage point change? This problem involves calculating the absolute change in the interest rate.    Therefore, the percentage point change is 3 percentage points. This example highlights the importance of distinguishing between percent change and percentage point change, as the latter measures the direct difference between percentages, providing a straightforward understanding of shifts in rates.     Example: Percentage Point Change  The unemployment rate decreases from 8% to 6%. What is the percentage point change? This problem requires calculating the absolute change in the unemployment rate.    Therefore, the percentage point change is 2 percentage points. This example demonstrates how percentage point change provides a clear measure of absolute differences in rates, which is essential for accurately interpreting economic indicators and other statistical data.     "
+  "body": " Percent and Percent Change   Percents and Changes in Percents   Percents give us a common way to compare quantities, but we still need to know which quantity represents the whole. In this section, we will:    interpret a percent as a fraction with denominator 100  convert among fractions, decimals, and percents  use bar diagrams to find a part or a whole  calculate and interpret percent change  distinguish percent change from percentage-point change    We will keep track of the whole or reference amount whenever we interpret a percent.     Introduction to Percent  Fractions let us compare a quantity with a chosen whole. For example, means one of two equal parts of that whole. A percent expresses the same kind of comparison using hundredths.    A percent expresses a quantity in hundredths of a chosen whole. The notation means .    For instance,   To express a fraction or decimal as a percent, we can multiply it by . Since , the value stays the same while its form changes.   Converting Fractions to Percents     .     .     .      Caution!  A ratio written can give the quotient , but we must still identify what is being compared. If a class has 3 boys for every 4 girls, there are 7 students in each corresponding group. The boys are of the class, while compares boys with girls. State the whole before converting either comparison to a percent.     Express each quantity as a fraction in lowest terms, a decimal, and a percent:                              Visualizing Percents with Bar Diagrams  A bar can stand for one whole and be divided into equal pieces. We need not draw 100 pieces to show a percent. Since each tenth is 10%, three of ten pieces represent 30%. The question is what those pieces represent in a particular problem.   Finding a Part   If 30% of a class of 40 students are boys, how many boys are in the class?     Thirty percent of 40 students   A bar for 40 students is divided into ten equal parts. Three parts are shaded to represent 30%; the number of students in those parts is left unknown.    The bar has ten equal parts, so each part of a 40-student class represents 4 students. Three parts are shaded; therefore,   So 12 students in the class are boys.     Finding the Whole   Twenty-five percent of an amount is 50. What is the whole amount?     Finding the whole when 25% is 50   A bar is divided into four equal parts. One part is labelled 25% and 50; the value of the whole is unknown.    One of the four equal parts is 50. Since , four such parts make the whole:       Percent Change  A change of 20 can be large or small depending on the starting amount. For a nonzero original value, we compare the change with that original value using percent change :   The original value is the reference amount, so it belongs in the denominator. A positive answer indicates an increase, while a negative answer indicates a decrease.   An Increase   A stock price increases from $50 to $75. What is the percent change?     The increase is 50% of the original $50 price.     A Decrease   A population decreases from 2000 to 1500. What is the percent change?     The signed percent change is . In words, the population decreased by 25% of its original size.      A price rises from $80 to $100 and later falls from $100 to $80. Are the percent increase and percent decrease equal? Explain.    The increase is . On the return trip, the decrease is . Both changes have magnitude 20, but they are compared with different original prices.      Percent Change and Percentage-Point Change  When the quantities being compared are already percents, two different comparisons are possible. The signed difference is a percentage-point change . We can also compare that difference with the original percent to find a relative percent change.   From 2% to 5%  Suppose an interest rate rises from 2% to 5%. Subtract the two rates to find the percentage-point change:   If we compare the difference with the original rate of 2%, the relative percent change is   The increase is 3 percentage points, and it is 150% of the original rate. Both statements describe the same change with different reference quantities.   Percentage-point change and relative percent change   An interest rate rises from 2% to 5%. The difference is 3 percentage points, which is a 150% increase relative to the original 2% rate.      From 8% to 6%  Suppose instead that an unemployment rate falls from 8% to 6%. Its signed percentage-point change is   In words, it fell by 2 percentage points. Relative to its original rate of 8%, the change is     Notes for a Deeper Understanding  A report that says a rate “increased by 3%” may be describing a difference of 3 percentage points or an increase equal to 3% of the original rate. These can be very different changes. When interpreting a report, look for its reference quantity.    "
 },
 {
-  "id": "example-ratios-to-percents",
+  "id": "objectives-percent-change",
   "level": "2",
-  "url": "percent-and-percent-change.html#example-ratios-to-percents",
-  "type": "Example",
+  "url": "sec-percent-and-change.html#objectives-percent-change",
+  "type": "Objectives",
+  "number": "6.4",
+  "title": "Percents and Changes in Percents",
+  "body": " Percents and Changes in Percents   Percents give us a common way to compare quantities, but we still need to know which quantity represents the whole. In this section, we will:    interpret a percent as a fraction with denominator 100  convert among fractions, decimals, and percents  use bar diagrams to find a part or a whole  calculate and interpret percent change  distinguish percent change from percentage-point change    We will keep track of the whole or reference amount whenever we interpret a percent.   "
+},
+{
+  "id": "def-percent",
+  "level": "2",
+  "url": "sec-percent-and-change.html#def-percent",
+  "type": "Definition",
   "number": "6.4.1",
-  "title": "Example: Ratios to Percents.",
-  "body": " Example: Ratios to Percents  Convert the ratio 2:5 to a percent. This requires us to scale the given ratio to a base of 100 to find an equivalent percent value.    Thus, the ratio 2:5 is equivalent to 40%, meaning 2 parts out of 5 is the same as 40 parts out of 100. This method of conversion is essential in comparing ratios in a standardized format that is widely understood.   "
+  "title": "",
+  "body": "  A percent expresses a quantity in hundredths of a chosen whole. The notation means .   "
 },
 {
   "id": "example-fractions-to-percents",
   "level": "2",
-  "url": "percent-and-percent-change.html#example-fractions-to-percents",
+  "url": "sec-percent-and-change.html#example-fractions-to-percents",
   "type": "Example",
   "number": "6.4.2",
-  "title": "Example: Fractions to Percents.",
-  "body": " Example: Fractions to Percents  Convert the fraction to a percent. This involves converting the fraction to a decimal and then scaling it to a percent.    Therefore, the fraction is equivalent to 15%. This method highlights the ease with which we can understand fractions in a percent format, facilitating better communication and comprehension of data in everyday contexts.   "
+  "title": "Converting Fractions to Percents.",
+  "body": " Converting Fractions to Percents     .     .     .    "
 },
 {
-  "id": "bar-diagram-example-1",
+  "id": "exercise-convert-percent-forms",
   "level": "2",
-  "url": "percent-and-percent-change.html#bar-diagram-example-1",
-  "type": "Example",
+  "url": "sec-percent-and-change.html#exercise-convert-percent-forms",
+  "type": "Checkpoint",
   "number": "6.4.3",
-  "title": "Example: Using a Bar Diagram.",
-  "body": " Example: Using a Bar Diagram  If 30% of a class of 40 students are boys, how many boys are in the class? This problem involves using a bar diagram to visualize the percentage and determine the actual number of boys.   Using a bar diagram, we represent the whole class of 40 students as a bar divided into 100 parts. Each part represents 0.4 students (since 40 students \/ 100 parts = 0.4 students per part). By identifying 30% of the bar, we can determine the number of boys.   Therefore, there are 12 boys in the class. This example shows how bar diagrams can be used to break down and solve percentage problems, making the data more comprehensible and easier to work with.   "
+  "title": "",
+  "body": "  Express each quantity as a fraction in lowest terms, a decimal, and a percent:                           "
 },
 {
-  "id": "bar-diagram-example-2",
+  "id": "example-thirty-percent-class",
   "level": "2",
-  "url": "percent-and-percent-change.html#bar-diagram-example-2",
+  "url": "sec-percent-and-change.html#example-thirty-percent-class",
   "type": "Example",
   "number": "6.4.4",
-  "title": "Example: Using a Bar Diagram.",
-  "body": " Example: Using a Bar Diagram  25% of a certain amount is 50. What is the whole amount? This problem uses a bar diagram to visualize the percentage and back-calculate to find the total amount.   Using a bar diagram, we know that 25% corresponds to 50. We need to find the total amount (100%). By understanding that 25% is one-quarter of the total, we can determine the whole by scaling up from the given percentage.   Thus, the whole amount is 200. This example illustrates how bar diagrams can simplify complex percentage calculations by providing a clear visual framework for solving the problem.   "
+  "title": "Finding a Part.",
+  "body": " Finding a Part   If 30% of a class of 40 students are boys, how many boys are in the class?     Thirty percent of 40 students   A bar for 40 students is divided into ten equal parts. Three parts are shaded to represent 30%; the number of students in those parts is left unknown.    The bar has ten equal parts, so each part of a 40-student class represents 4 students. Three parts are shaded; therefore,   So 12 students in the class are boys.   "
 },
 {
-  "id": "percent-change-example-1",
+  "id": "example-twenty-five-percent-whole",
   "level": "2",
-  "url": "percent-and-percent-change.html#percent-change-example-1",
-  "type": "Example",
-  "number": "6.4.5",
-  "title": "Example: Percent Change.",
-  "body": " Example: Percent Change  A stock price increases from $50 to $75. What is the percent change? This problem involves calculating the relative change in value to understand the growth of the stock price.    Therefore, the percent change is 50%. This example highlights how percent change provides a clear measure of growth, indicating that the stock price increased by half its original value.   "
-},
-{
-  "id": "percent-change-example-2",
-  "level": "2",
-  "url": "percent-and-percent-change.html#percent-change-example-2",
+  "url": "sec-percent-and-change.html#example-twenty-five-percent-whole",
   "type": "Example",
   "number": "6.4.6",
-  "title": "Example: Percent Change.",
-  "body": " Example: Percent Change  A population decreases from 2000 to 1500. What is the percent change? This problem requires calculating the relative change to understand the decrease in population.    Therefore, the percent change is -25%. This negative value indicates a decrease in the population. This example demonstrates how percent change can effectively communicate both increases and decreases in values, providing a clear picture of how quantities evolve over time.   "
+  "title": "Finding the Whole.",
+  "body": " Finding the Whole   Twenty-five percent of an amount is 50. What is the whole amount?     Finding the whole when 25% is 50   A bar is divided into four equal parts. One part is labelled 25% and 50; the value of the whole is unknown.    One of the four equal parts is 50. Since , four such parts make the whole:    "
 },
 {
-  "id": "percentage-point-change-example-1",
+  "id": "subsec-percent-change-2",
   "level": "2",
-  "url": "percent-and-percent-change.html#percentage-point-change-example-1",
-  "type": "Example",
-  "number": "6.4.7",
-  "title": "Example: Percentage Point Change.",
-  "body": " Example: Percentage Point Change  The interest rate increases from 2% to 5%. What is the percentage point change? This problem involves calculating the absolute change in the interest rate.    Therefore, the percentage point change is 3 percentage points. This example highlights the importance of distinguishing between percent change and percentage point change, as the latter measures the direct difference between percentages, providing a straightforward understanding of shifts in rates.   "
+  "url": "sec-percent-and-change.html#subsec-percent-change-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "percent change "
 },
 {
-  "id": "percentage-point-change-example-2",
+  "id": "example-percent-change-stock",
   "level": "2",
-  "url": "percent-and-percent-change.html#percentage-point-change-example-2",
+  "url": "sec-percent-and-change.html#example-percent-change-stock",
   "type": "Example",
   "number": "6.4.8",
-  "title": "Example: Percentage Point Change.",
-  "body": " Example: Percentage Point Change  The unemployment rate decreases from 8% to 6%. What is the percentage point change? This problem requires calculating the absolute change in the unemployment rate.    Therefore, the percentage point change is 2 percentage points. This example demonstrates how percentage point change provides a clear measure of absolute differences in rates, which is essential for accurately interpreting economic indicators and other statistical data.   "
+  "title": "An Increase.",
+  "body": " An Increase   A stock price increases from $50 to $75. What is the percent change?     The increase is 50% of the original $50 price.   "
+},
+{
+  "id": "example-percent-change-population",
+  "level": "2",
+  "url": "sec-percent-and-change.html#example-percent-change-population",
+  "type": "Example",
+  "number": "6.4.9",
+  "title": "A Decrease.",
+  "body": " A Decrease   A population decreases from 2000 to 1500. What is the percent change?     The signed percent change is . In words, the population decreased by 25% of its original size.   "
+},
+{
+  "id": "exercise-percent-change-direction",
+  "level": "2",
+  "url": "sec-percent-and-change.html#exercise-percent-change-direction",
+  "type": "Checkpoint",
+  "number": "6.4.10",
+  "title": "",
+  "body": "  A price rises from $80 to $100 and later falls from $100 to $80. Are the percent increase and percent decrease equal? Explain.    The increase is . On the return trip, the decrease is . Both changes have magnitude 20, but they are compared with different original prices.   "
+},
+{
+  "id": "subsec-percentage-point-change-2",
+  "level": "2",
+  "url": "sec-percent-and-change.html#subsec-percentage-point-change-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "percentage-point change "
+},
+{
+  "id": "example-interest-rate-change",
+  "level": "2",
+  "url": "sec-percent-and-change.html#example-interest-rate-change",
+  "type": "Example",
+  "number": "6.4.11",
+  "title": "From 2% to 5%.",
+  "body": " From 2% to 5%  Suppose an interest rate rises from 2% to 5%. Subtract the two rates to find the percentage-point change:   If we compare the difference with the original rate of 2%, the relative percent change is   The increase is 3 percentage points, and it is 150% of the original rate. Both statements describe the same change with different reference quantities.   Percentage-point change and relative percent change   An interest rate rises from 2% to 5%. The difference is 3 percentage points, which is a 150% increase relative to the original 2% rate.    "
+},
+{
+  "id": "example-unemployment-change",
+  "level": "2",
+  "url": "sec-percent-and-change.html#example-unemployment-change",
+  "type": "Example",
+  "number": "6.4.13",
+  "title": "From 8% to 6%.",
+  "body": " From 8% to 6%  Suppose instead that an unemployment rate falls from 8% to 6%. Its signed percentage-point change is   In words, it fell by 2 percentage points. Relative to its original rate of 8%, the change is   "
+},
+{
+  "id": "sec-decimals-supplemental-exercises",
+  "level": "1",
+  "url": "sec-decimals-supplemental-exercises.html",
+  "type": "Section",
+  "number": "6.5",
+  "title": "Supplementary Exercises",
+  "body": " Supplementary Exercises   Decimal Fractions and Place Value Questions     Write each number in expanded place-value notation.                 Write each decimal as one decimal fraction and then reduce the fraction to lowest terms.                 Write each quantity in decimal notation.         three ones, eight hundredths, and six thousandths       Insert , , or between each pair.    and    and    and    and        A student says that appending a zero always makes a decimal ten times larger. Use place value to explain why , but .      Suppose a base-ten flat represents one whole. What values are represented by a rod and a small cube? How would your answer change if a large cube represented one whole?      Draw a hundred grid representing . Explain two different ways to group the shaded squares using tenths and hundredths.       Operations with Decimals Questions     Calculate each sum or difference. Show the place-value alignment.                 A student writes by aligning the final digits instead of the decimal points. Diagnose the error and correct the calculation.      Calculate each product.                 Explain the decimal-place rule for by rewriting both factors as decimal fractions. Your explanation should identify why the answer has three decimal places before any trailing zeros are removed.      Calculate each quotient.                 A student changes into . Explain why the new quotient is not equal to the original quotient, and show the correct whole-number division problem.      Estimate each answer before calculating it exactly. Explain how your estimate helps detect a misplaced decimal point.               Terminating and Repeating Decimal Questions     Without using a calculator, determine whether the standard decimal expansion of each fraction terminates or repeats. Reduce the fraction first when necessary.                       Use long division or a remainder table to write as an eventually repeating decimal. Identify its preperiod, repetend, and period.      Suppose division by a positive integer produces a repeating decimal. Explain why its shortest repeating block has at most digits. When could it have fewer?      Convert each repeating decimal to a fraction in lowest terms.                       A student tries to convert using the repeating-decimal subtraction method and writes . Explain why this method is unnecessary here and convert directly to a fraction.      Show algebraically that . Then write a general statement describing which terminating decimals have a second representation ending in repeating nines.      Is an incorrect way to represent ? Explain the difference between a correct representation and the standard representation with the shortest repetend.       Percent and Percent Change Questions     Convert among fractions, decimals, and percents.    to a decimal and percent   to a fraction and percent   to a decimal and fraction       A club has a ratio of 3 adult members to 5 youth members. What percent of the members are adults? Explain why the answer is not 60%.      Use a bar diagram to solve each problem.   Forty percent of 70 students walk to school. How many students is this?  Fifteen percent of an amount is 24. What is the whole amount?       A jacket originally costs $160 and is discounted to $124. Find the signed percent change and describe it as a percent decrease.      A town's population increases by 10% one year and decreases by 10% the next year. Is the final population equal to the original population? Use an original population of 1000 to justify your answer.      A survey response rate rises from 40% to 52%. Find both the percentage-point change and the relative percent change.      A news report says, “Support increased by 5%,” after a poll changes from 20% support to 25% support. Give the two plausible interpretations of the report and calculate the correct value for each.       Explanatory and Critical Thinking Questions     A student describes decimal arithmetic as “moving the decimal point.” Explain what is actually changing when a number is multiplied by 10 and why the decimal point itself does not move within the place-value system.      Explain why aligning decimal points is essential for addition and subtraction but is not the rule used when setting up multiplication.      A student argues that must be less than 1 because every finite decimal , , , and so on is less than 1. Identify the gap in this reasoning and give a valid justification that .      Compare the statements “the rate decreased by 2 percentage points” and “the rate decreased by 25%.” Construct one example in which both statements correctly describe the same change.      Choose one algorithm from this chapter and design a short explanation suitable for an elementary-school student. Your explanation must include a picture or concrete model and must explain why the algorithm works.      "
+},
+{
+  "id": "exercises-decimal-place-value-2-1",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-place-value-2-1",
+  "type": "Exercise",
+  "number": "6.5.1.1",
+  "title": "",
+  "body": "  Write each number in expanded place-value notation.              "
+},
+{
+  "id": "exercises-decimal-place-value-2-2",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-place-value-2-2",
+  "type": "Exercise",
+  "number": "6.5.1.2",
+  "title": "",
+  "body": "  Write each decimal as one decimal fraction and then reduce the fraction to lowest terms.              "
+},
+{
+  "id": "exercises-decimal-place-value-2-3",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-place-value-2-3",
+  "type": "Exercise",
+  "number": "6.5.1.3",
+  "title": "",
+  "body": "  Write each quantity in decimal notation.         three ones, eight hundredths, and six thousandths    "
+},
+{
+  "id": "exercises-decimal-place-value-2-4",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-place-value-2-4",
+  "type": "Exercise",
+  "number": "6.5.1.4",
+  "title": "",
+  "body": "  Insert , , or between each pair.    and    and    and    and     "
+},
+{
+  "id": "exercises-decimal-place-value-2-5",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-place-value-2-5",
+  "type": "Exercise",
+  "number": "6.5.1.5",
+  "title": "",
+  "body": "  A student says that appending a zero always makes a decimal ten times larger. Use place value to explain why , but .   "
+},
+{
+  "id": "exercises-decimal-place-value-2-6",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-place-value-2-6",
+  "type": "Exercise",
+  "number": "6.5.1.6",
+  "title": "",
+  "body": "  Suppose a base-ten flat represents one whole. What values are represented by a rod and a small cube? How would your answer change if a large cube represented one whole?   "
+},
+{
+  "id": "exercises-decimal-place-value-2-7",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-place-value-2-7",
+  "type": "Exercise",
+  "number": "6.5.1.7",
+  "title": "",
+  "body": "  Draw a hundred grid representing . Explain two different ways to group the shaded squares using tenths and hundredths.   "
+},
+{
+  "id": "exercises-decimal-operations-2-1",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-operations-2-1",
+  "type": "Exercise",
+  "number": "6.5.2.1",
+  "title": "",
+  "body": "  Calculate each sum or difference. Show the place-value alignment.              "
+},
+{
+  "id": "exercises-decimal-operations-2-2",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-operations-2-2",
+  "type": "Exercise",
+  "number": "6.5.2.2",
+  "title": "",
+  "body": "  A student writes by aligning the final digits instead of the decimal points. Diagnose the error and correct the calculation.   "
+},
+{
+  "id": "exercises-decimal-operations-2-3",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-operations-2-3",
+  "type": "Exercise",
+  "number": "6.5.2.3",
+  "title": "",
+  "body": "  Calculate each product.              "
+},
+{
+  "id": "exercises-decimal-operations-2-4",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-operations-2-4",
+  "type": "Exercise",
+  "number": "6.5.2.4",
+  "title": "",
+  "body": "  Explain the decimal-place rule for by rewriting both factors as decimal fractions. Your explanation should identify why the answer has three decimal places before any trailing zeros are removed.   "
+},
+{
+  "id": "exercises-decimal-operations-2-5",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-operations-2-5",
+  "type": "Exercise",
+  "number": "6.5.2.5",
+  "title": "",
+  "body": "  Calculate each quotient.              "
+},
+{
+  "id": "exercises-decimal-operations-2-6",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-operations-2-6",
+  "type": "Exercise",
+  "number": "6.5.2.6",
+  "title": "",
+  "body": "  A student changes into . Explain why the new quotient is not equal to the original quotient, and show the correct whole-number division problem.   "
+},
+{
+  "id": "exercises-decimal-operations-2-7",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimal-operations-2-7",
+  "type": "Exercise",
+  "number": "6.5.2.7",
+  "title": "",
+  "body": "  Estimate each answer before calculating it exactly. Explain how your estimate helps detect a misplaced decimal point.           "
+},
+{
+  "id": "exercises-terminating-repeating-2-1",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-terminating-repeating-2-1",
+  "type": "Exercise",
+  "number": "6.5.3.1",
+  "title": "",
+  "body": "  Without using a calculator, determine whether the standard decimal expansion of each fraction terminates or repeats. Reduce the fraction first when necessary.                    "
+},
+{
+  "id": "exercises-terminating-repeating-2-2",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-terminating-repeating-2-2",
+  "type": "Exercise",
+  "number": "6.5.3.2",
+  "title": "",
+  "body": "  Use long division or a remainder table to write as an eventually repeating decimal. Identify its preperiod, repetend, and period.   "
+},
+{
+  "id": "exercises-terminating-repeating-2-3",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-terminating-repeating-2-3",
+  "type": "Exercise",
+  "number": "6.5.3.3",
+  "title": "",
+  "body": "  Suppose division by a positive integer produces a repeating decimal. Explain why its shortest repeating block has at most digits. When could it have fewer?   "
+},
+{
+  "id": "exercises-terminating-repeating-2-4",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-terminating-repeating-2-4",
+  "type": "Exercise",
+  "number": "6.5.3.4",
+  "title": "",
+  "body": "  Convert each repeating decimal to a fraction in lowest terms.                    "
+},
+{
+  "id": "exercises-terminating-repeating-2-5",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-terminating-repeating-2-5",
+  "type": "Exercise",
+  "number": "6.5.3.5",
+  "title": "",
+  "body": "  A student tries to convert using the repeating-decimal subtraction method and writes . Explain why this method is unnecessary here and convert directly to a fraction.   "
+},
+{
+  "id": "exercises-terminating-repeating-2-6",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-terminating-repeating-2-6",
+  "type": "Exercise",
+  "number": "6.5.3.6",
+  "title": "",
+  "body": "  Show algebraically that . Then write a general statement describing which terminating decimals have a second representation ending in repeating nines.   "
+},
+{
+  "id": "exercises-terminating-repeating-2-7",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-terminating-repeating-2-7",
+  "type": "Exercise",
+  "number": "6.5.3.7",
+  "title": "",
+  "body": "  Is an incorrect way to represent ? Explain the difference between a correct representation and the standard representation with the shortest repetend.   "
+},
+{
+  "id": "exercises-percent-2-1",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-percent-2-1",
+  "type": "Exercise",
+  "number": "6.5.4.1",
+  "title": "",
+  "body": "  Convert among fractions, decimals, and percents.    to a decimal and percent   to a fraction and percent   to a decimal and fraction    "
+},
+{
+  "id": "exercises-percent-2-2",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-percent-2-2",
+  "type": "Exercise",
+  "number": "6.5.4.2",
+  "title": "",
+  "body": "  A club has a ratio of 3 adult members to 5 youth members. What percent of the members are adults? Explain why the answer is not 60%.   "
+},
+{
+  "id": "exercises-percent-2-3",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-percent-2-3",
+  "type": "Exercise",
+  "number": "6.5.4.3",
+  "title": "",
+  "body": "  Use a bar diagram to solve each problem.   Forty percent of 70 students walk to school. How many students is this?  Fifteen percent of an amount is 24. What is the whole amount?    "
+},
+{
+  "id": "exercises-percent-2-4",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-percent-2-4",
+  "type": "Exercise",
+  "number": "6.5.4.4",
+  "title": "",
+  "body": "  A jacket originally costs $160 and is discounted to $124. Find the signed percent change and describe it as a percent decrease.   "
+},
+{
+  "id": "exercises-percent-2-5",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-percent-2-5",
+  "type": "Exercise",
+  "number": "6.5.4.5",
+  "title": "",
+  "body": "  A town's population increases by 10% one year and decreases by 10% the next year. Is the final population equal to the original population? Use an original population of 1000 to justify your answer.   "
+},
+{
+  "id": "exercises-percent-2-6",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-percent-2-6",
+  "type": "Exercise",
+  "number": "6.5.4.6",
+  "title": "",
+  "body": "  A survey response rate rises from 40% to 52%. Find both the percentage-point change and the relative percent change.   "
+},
+{
+  "id": "exercises-percent-2-7",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-percent-2-7",
+  "type": "Exercise",
+  "number": "6.5.4.7",
+  "title": "",
+  "body": "  A news report says, “Support increased by 5%,” after a poll changes from 20% support to 25% support. Give the two plausible interpretations of the report and calculate the correct value for each.   "
+},
+{
+  "id": "exercises-decimals-critical-thinking-2-1",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimals-critical-thinking-2-1",
+  "type": "Exercise",
+  "number": "6.5.5.1",
+  "title": "",
+  "body": "  A student describes decimal arithmetic as “moving the decimal point.” Explain what is actually changing when a number is multiplied by 10 and why the decimal point itself does not move within the place-value system.   "
+},
+{
+  "id": "exercises-decimals-critical-thinking-2-2",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimals-critical-thinking-2-2",
+  "type": "Exercise",
+  "number": "6.5.5.2",
+  "title": "",
+  "body": "  Explain why aligning decimal points is essential for addition and subtraction but is not the rule used when setting up multiplication.   "
+},
+{
+  "id": "exercises-decimals-critical-thinking-2-3",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimals-critical-thinking-2-3",
+  "type": "Exercise",
+  "number": "6.5.5.3",
+  "title": "",
+  "body": "  A student argues that must be less than 1 because every finite decimal , , , and so on is less than 1. Identify the gap in this reasoning and give a valid justification that .   "
+},
+{
+  "id": "exercises-decimals-critical-thinking-2-4",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimals-critical-thinking-2-4",
+  "type": "Exercise",
+  "number": "6.5.5.4",
+  "title": "",
+  "body": "  Compare the statements “the rate decreased by 2 percentage points” and “the rate decreased by 25%.” Construct one example in which both statements correctly describe the same change.   "
+},
+{
+  "id": "exercises-decimals-critical-thinking-2-5",
+  "level": "2",
+  "url": "sec-decimals-supplemental-exercises.html#exercises-decimals-critical-thinking-2-5",
+  "type": "Exercise",
+  "number": "6.5.5.5",
+  "title": "",
+  "body": "  Choose one algorithm from this chapter and design a short explanation suitable for an elementary-school student. Your explanation must include a picture or concrete model and must explain why the algorithm works.   "
 },
 {
   "id": "sec-IntroductoryConcepts",

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="380" viewBox="0 0 1100 380" role="img" aria-labelledby="title desc">
+  <title id="title">Finding an unknown whole when 25 percent is 50</title>
+  <desc id="desc">A bar for an unknown whole is divided into four equal parts. Only the first quarter is marked as the given 25 percent, worth 50. The other three quarters have no value displayed, and the entire bar is labelled 100 percent equals an unknown amount.</desc>
+  <rect width="1100" height="380" fill="white"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#243640">
+    <text x="235" y="112" font-size="23" text-anchor="middle">25%</text>
+
+    <rect x="130" y="135" width="210" height="85" fill="#aecbd8" stroke="#344b55" stroke-width="2"/>
+    <rect x="340" y="135" width="210" height="85" fill="#edf4f7" stroke="#344b55" stroke-width="2"/>
+    <rect x="550" y="135" width="210" height="85" fill="#edf4f7" stroke="#344b55" stroke-width="2"/>
+    <rect x="760" y="135" width="210" height="85" fill="#edf4f7" stroke="#344b55" stroke-width="2"/>
+    <text x="235" y="190" font-size="31" font-weight="600" text-anchor="middle">50</text>
+    <path d="M130 235 V252 H340 V235" fill="none" stroke="#537589" stroke-width="2.5"/>
+    <text x="235" y="283" font-size="19" text-anchor="middle">given</text>
+    <path d="M130 288 V305 H970 V288" fill="none" stroke="#344b55" stroke-width="2.5"/>
+    <text x="550" y="347" font-size="27" font-weight="600" text-anchor="middle">100% = ?</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="385" viewBox="0 0 1480 385" role="img" aria-labelledby="title desc">
+  <title id="title">Equivalent fractions for decimal division</title>
+  <desc id="desc">Two point seven eight one over zero point six one eight, multiplied by the fraction one thousand over one thousand, equals two point seven eight one times one thousand over zero point six one eight times one thousand, which equals two thousand seven hundred eighty-one over six hundred eighteen. The quotient is not calculated.</desc>
+  <rect width="1480" height="385" fill="white"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#243640">
+    <text x="85" y="62" font-size="26" font-weight="600">Make an equivalent fraction with a whole-number divisor</text>
+
+    <g text-anchor="middle" font-size="34">
+      <text x="170" y="169">2.781</text>
+      <line x1="98" y1="193" x2="242" y2="193" stroke="#344b55" stroke-width="2.6"/>
+      <text x="170" y="249">0.618</text>
+      <text x="308" y="207">×</text>
+
+      <text x="408" y="169" fill="#326f89">1000</text>
+      <line x1="346" y1="193" x2="470" y2="193" stroke="#326f89" stroke-width="2.6"/>
+      <text x="408" y="249" fill="#326f89">1000</text>
+
+      <text x="535" y="207">=</text>
+      <text x="802" y="169">2.781 × 1000</text>
+      <line x1="612" y1="193" x2="992" y2="193" stroke="#344b55" stroke-width="2.6"/>
+      <text x="802" y="249">0.618 × 1000</text>
+
+      <text x="1052" y="207">=</text>
+      <text x="1215" y="169">2781</text>
+      <line x1="1145" y1="193" x2="1285" y2="193" stroke="#344b55" stroke-width="2.6"/>
+      <text x="1215" y="249">618</text>
+    </g>
+
+    <line x1="85" y1="300" x2="1395" y2="300" stroke="#d8e1e5" stroke-width="2"/>
+    <text x="740" y="345" font-size="23" text-anchor="middle">1000/1000 = 1, so the quotient has not changed.</text>
+  </g>
+</svg>

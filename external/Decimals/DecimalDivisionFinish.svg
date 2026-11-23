@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="540" viewBox="0 0 1140 540" role="img" aria-labelledby="title desc">
+  <title id="title">Finishing 2781 divided by 618</title>
+  <desc id="desc">Long division shows 618 into 2781.0. Four times 618 is 2472, leaving 309. The zero after the decimal point is brought down to form 3090. Five times 618 is 3090, leaving remainder zero. The quotient above is 4.5.</desc>
+  <rect width="1140" height="540" fill="white"/>
+  <g fill="#243640" font-family="DejaVu Sans, sans-serif">
+    <text x="90" y="65" font-size="25" font-weight="600">Bring down the zero to continue</text>
+    <g font-family="DejaVu Sans Mono, monospace" font-size="35" text-anchor="middle">
+      <text x="575" y="130">4</text>
+      <text x="609" y="130">.</text>
+      <text x="653" y="130" fill="#326f89" font-weight="600">5</text>
+
+      <text x="277" y="207">6</text><text x="320" y="207">1</text><text x="363" y="207">8</text>
+      <text x="446" y="207">2</text><text x="489" y="207">7</text><text x="532" y="207">8</text><text x="575" y="207">1</text><text x="609" y="207">.</text><text x="653" y="207" fill="#326f89">0</text>
+
+      <text x="411" y="264">−</text><text x="446" y="264">2</text><text x="489" y="264">4</text><text x="532" y="264">7</text><text x="575" y="264">2</text>
+      <text x="489" y="328">3</text><text x="532" y="328">0</text><text x="575" y="328">9</text><text x="653" y="328" fill="#326f89" font-weight="600">0</text>
+      <text x="454" y="397" fill="#326f89">−</text><text x="489" y="397" fill="#326f89">3</text><text x="532" y="397" fill="#326f89">0</text><text x="575" y="397" fill="#326f89">9</text><text x="653" y="397" fill="#326f89">0</text>
+      <text x="653" y="467" font-weight="600">0</text>
+    </g>
+    <g stroke="#344b55" stroke-width="2.5" fill="none">
+      <path d="M416 164 Q392 187 416 211 L416 167 L680 167"/>
+      <line x1="434" y1="281" x2="598" y2="281"/>
+      <line x1="478" y1="414" x2="674" y2="414"/>
+    </g>
+    <g stroke="#7995a3" stroke-width="2.2" fill="none">
+      <path d="M705 213 C721 255 721 293 691 318"/>
+      <path d="M691 318 L697 305 M691 318 L706 315"/>
+    </g>
+    <g font-size="22">
+      <text x="765" y="267" fill="#526f7d">bring down 0</text>
+      <text x="765" y="385">5 × 618 = 3090</text>
+      <text x="765" y="464">remainder 0</text>
+    </g>
+  </g>
+</svg>

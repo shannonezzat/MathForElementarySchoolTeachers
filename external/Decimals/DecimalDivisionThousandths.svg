@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="435" viewBox="0 0 1280 435" role="img" aria-labelledby="title desc">
+  <title id="title">Why scaling both decimals by 1000 preserves their quotient</title>
+  <desc id="desc">The quotient 2.781 over 0.618 is written as the quotient of 2781 over 1000 and 618 over 1000. Separate arrows marked times 1000 take the upper fraction to 2781 and the lower fraction to 618, giving the equivalent quotient 2781 over 618.</desc>
+  <rect width="1280" height="435" fill="white"/>
+  <g font-family="DejaVu Sans, sans-serif" fill="#243640">
+    <text x="88" y="67" font-size="26" font-weight="600">The same quotient in three forms</text>
+
+    <g font-size="21" text-anchor="middle">
+      <text x="185" y="123">Decimals</text>
+      <text x="633" y="123">Decimal fractions</text>
+      <text x="1065" y="123">Whole numbers</text>
+    </g>
+
+    <g text-anchor="middle" font-size="34">
+      <text x="185" y="252">2.781</text>
+      <line x1="117" y1="276" x2="253" y2="276" stroke="#344b55" stroke-width="2.5"/>
+      <text x="185" y="321">0.618</text>
+    </g>
+
+    <g stroke="#7995a3" stroke-width="2.5" fill="none">
+      <line x1="315" y1="278" x2="398" y2="278"/>
+      <path d="M398 278 L387 271 M398 278 L387 285"/>
+    </g>
+    <text x="356" y="206" font-size="18" text-anchor="middle">write both</text>
+    <text x="356" y="230" font-size="18" text-anchor="middle">in thousandths</text>
+
+    <g text-anchor="middle" font-size="30">
+      <text x="633" y="190">2781</text>
+      <line x1="578" y1="210" x2="688" y2="210" stroke="#344b55" stroke-width="2"/>
+      <text x="633" y="244">1000</text>
+      <line x1="537" y1="278" x2="729" y2="278" stroke="#344b55" stroke-width="2.8"/>
+      <text x="633" y="323">618</text>
+      <line x1="578" y1="341" x2="688" y2="341" stroke="#344b55" stroke-width="2"/>
+      <text x="633" y="374">1000</text>
+    </g>
+
+    <g stroke="#7995a3" stroke-width="2.5" fill="none">
+      <line x1="737" y1="207" x2="918" y2="236"/>
+      <path d="M918 236 L908 227 M918 236 L905 241"/>
+      <line x1="737" y1="347" x2="918" y2="318"/>
+      <path d="M918 318 L905 313 M918 318 L908 327"/>
+    </g>
+    <g font-size="21" text-anchor="middle" fill="#526f7d">
+      <text x="826" y="186">× 1000</text>
+      <text x="826" y="374">× 1000</text>
+    </g>
+
+    <g text-anchor="middle" font-size="34">
+      <text x="1010" y="252">2781</text>
+      <line x1="939" y1="278" x2="1081" y2="278" stroke="#344b55" stroke-width="2.5"/>
+      <text x="1010" y="323">618</text>
+    </g>
+  </g>
+</svg>
