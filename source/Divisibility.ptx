@@ -2105,7 +2105,7 @@
           <p>
             To begin with, let's review some essential principles:
           </p>
-          <list>
+          <ol>
             <li>
               The GCD of any counting number <m>n</m> and <m>0</m> is <m>n</m> itself, as every number is a divisor of zero.
             </li>
@@ -2115,7 +2115,7 @@
             <li>
               The GCD of <m>a</m> and <m>b</m> is the same as the GCD of <m>b</m> and the remainder <m>r</m>.
             </li>
-          </list>
+          </ol>
           <p>
             These principles reduce the problem of finding the GCD of two large numbers to a series of simpler calculations.
           </p>
