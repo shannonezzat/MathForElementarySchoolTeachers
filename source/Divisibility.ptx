@@ -11,7 +11,7 @@
     <subsubsection xml:id="divisibility2">
         <title>Intro to Divisibility</title>
         <p>
-            Divisibility is a fundamental concept in mathematics. It describes one type of fundamental relationship between two integers, as we can think of a factor of a number being a "building block" of the number it is a factor of. Note that in this chapter, we will predominantly study divisibility properties of whole numbers, but these can be easily extended to integers. From now on, unless otherwise stated, any number that appears is a whole number; that is, for all numbers <m>n</m> in this chapter,<m>n \in \mathbb{N}_0</m>.</p>
+            Divisibility is a fundamental concept in mathematics. It describes one type of fundamental relationship between two integers, as we can think of a factor of a number being a "building block" of the number it is a factor of. Note that in this chapter, we will predominantly study divisibility properties of integers.</p>
             <definition xml:id="def-Divisibility">
                 <statement>
                     <p> A number <m>a</m> is said to be <term>divisible by</term> another number <m>b</m> if there exists a unique number <m>c</m> such that <m>a = bc</m>. This is often expressed in various ways, such as "<m>b</m> is a factor of <m>a</m>", "<m>b</m> divides <m>a</m>", "<m>a</m> is a multiple of <m>b</m>", or "<m>a</m> is divisible by <m>b</m>". We say that <m>b</m> is a <term>proper factor</term> of <m>a</m> if <m>b \neq 1</m> and <m>b \neq a</m>.
@@ -33,12 +33,12 @@
     </subsubsection>
     <subsubsection xml:id="subsubsec-TransitivityAndDivisibility">
         <title>Transitivity And Divisibility</title>
-        <p>We know that <m>3 \mid 12</m> since <m>12 =3 \times 4.</m> If there is another number <m>n</m> for which we know <m>12 \mid n</m>, do we need to check whether <m>3 \mid n</m>?</p>
+        <p>We know that <m>3 \mid 12</m> since <m>12 =3 \times 4.</m> If there is another integer <m>n</m> for which we know <m>12 \mid n</m>, do we need to check whether <m>3 \mid n</m>?</p>
         <p>
-            We can use the fact that <m>3 \mid 12</m> to show that <m>3 \mid n</m>. We need to show that <m>n = 3 \times (   )</m> for some natural number in the brackets. Since <m>12 \mid n</m> we know there is some number <m>c</m> such that <m>n = 12c</m>. But since <m>12 = 3 \times 4 </m> we can rewrite this as <me>n=12c=(3\times 4) c</me> <me>
+            We can use the fact that <m>3 \mid 12</m> to show that <m>3 \mid n</m>. We need to show that <m>n = 3 \times (   )</m> for some integer in the brackets. Since <m>12 \mid n</m> we know there is some number <m>c</m> such that <m>n = 12c</m>. But since <m>12 = 3 \times 4 </m> we can rewrite this as <me>n=12c=(3\times 4) c</me> <me>
                 =3\times (4c).
             </me>
-            Since <m>4,c \in \mathbb{N}_0</m> we know <m>4 \times c \in \mathbb{N}_0</m>, so we were able to express <m>n</m> as <m>3</m> times another natural number, so <m>3 \mid n</m>.
+            Since <m>4,c \in \mathbb{N}_0</m> we know <m>4 \times c \in \mathbb{N}_0</m>, so we were able to express <m>n</m> as <m>3</m> times another integer, so <m>3 \mid n</m>.
 
         </p>
         <p>
@@ -129,7 +129,7 @@
         <definition xml:id="def-transitivity">
             <statement>
                 <p>
-                   Let <m>\sim</m> be some relationship (such as equality "=", or divisibility "<m>\mid</m>")  between objects (such as numbers). We say the relationship <m>\sim</m> is <term>transitive</term> exactly when it is true that, for objects <m>a,b,c</m>, if  <m>a \tilde b</m> and <m>b \simc</m> then <m>a \tilde c</m>.
+                   Let <m>\sim</m> be some relationship (such as equality "=", or divisibility "<m>\mid</m>")  between objects (such as numbers). We say the relationship <m>\sim</m> is <term>transitive</term> exactly when it is true that, for objects <m>a,b,c</m>, if  <m>a \sim b</m> and <m>b \sim</m> then <m>a \sim c</m>.
                 </p>
             </statement>
         </definition>
@@ -143,14 +143,34 @@
     <subsubsection xml:id="divisibility-properties">
         <title>Divisibility Properties of 0, 1, and a Number with Itself</title>
         <p>
-            There are some special cases when considering divisibility. Firstly, any number is divisible by 1. This is because for any number <m>a</m>, <m>a = 1 * a</m>. Secondly, 0 is divisible by any number (except for 0 itself). This is because for any number <m>b \neq 0</m>, <m>0 = b * 0</m>. However, 0 is not divisible by itself, as there is no unique number <m>c</m> such that <m>0 = 0 * c</m>; for example, this would be true for <m>c=2</m> or <m> c=3 </m>. Lastly, any number <m>a</m> is divisible by itself, as <m>a = a * 1</m>.
+            There are some special cases when considering divisibility. Firstly, any number is divisible by 1. This is because for any number <m>a</m>, <m>a = 1 * a</m>. Secondly, 0 is divisible by any number (except for 0 itself). This is because for any number <m>b \neq 0</m>, <m>0 = b * 0</m>. However, 0 is not divisible by itself, as there is no unique number <m>c</m> such that <m>0 = 0 * c</m>; for example, this would be true for <m>c=2</m> or <m> c=3 </m>. Lastly, any number <m>a \neq 0</m> is divisible by itself, as <m>a = a * 1</m>.
+        </p>
+        <p>
+            In summary:
+            <ol>
+                <li>
+                    <p>
+                        <m>a \mid 0</m> for non-zero <m>a</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>a \mid a</m> for non-zero <m>a</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m> 0 \nmid 0</m>.
+                    </p>
+                </li>
+            </ol>
         </p>
     </subsubsection>
 </subsection>
 <subsection xml:id="divisibility-theorems">
     <title>Divisibility Theorems</title>
     <p>
-        In this section, we will discuss three important theorems related to divisibility. Each theorem will be introduced with an example for better understanding. Note that in this section, we will think of divisibility of integers instead of whole numbers.
+        In this section, we will discuss three important theorems related to divisibility. Each theorem will be introduced with an example for better understanding. Note that in this section, we will think of divisibility of integers instead of whole numbers, so any instance of the word <q>number</q> will (usually) mean an integer.
     </p>
     
     <subsubsection xml:id="theorem1">
@@ -219,7 +239,7 @@
                     <me>
                         b+c=a(x+y).
                     </me>
-                    Since <m>x,y \in \mathbb{N}</m> we know their sum <m>x+y \in \mathbb{N}</m> too. Thus we have shown the then-part must be true and the theorem is proved.
+                    Since <m>x,y \in \mathbb{N}</m> we know their sum <m>x+y \in \mathbb{N}</m> too. Thus we have shown the then-part must be true and the theorem (for addition only) is proved.
                     
                 </p>
             </proof>
@@ -382,7 +402,7 @@
                         Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>2 \mid 1000</m>, <m>2 \mid 100</m>, and <m>2 \mid 10</m>, so by <xref ref="theorem1"/> we know that <m>2 \mid A\times 1000,</m> <m>2 \mid B\times 100</m>, and <m>2 \mid C \times 10</m>. By <xref ref="theorem2"/> we know that <m>2 \mid (A\times 1000+B\times 100+C\times 10).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100+C\times 10</m>. Thus we can write <m>\underline{ABCD}=S+D</m>. 
                     </p>
                     <p>
-                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>2 \mid D</m> (P being true) then <m>2 \mid S+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>2 \nmid D</m> (P being false) then <m>2 \nmid S+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 2<q> and Q is <q>the number is divisible by 2</q>. By <xref ref="theorem2"/> we know that if <m>2 \mid D</m> (P being true) then <m>2 \mid S+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>2 \nmid D</m> (P being false) then <m>2 \nmid S+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                     </p>
                 </proof>
             </theorem>
@@ -423,7 +443,7 @@
                     Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>4 \mid 1000</m> and <m>4 \mid 100</m>, so by <xref ref="theorem1"/> we know that <m>4 \mid A\times 1000,</m> and <m>4 \mid B\times 100</m>. By <xref ref="theorem2"/> we know that <m>4 \mid (A\times 1000+B\times 100).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100</m>. Thus we can write <m>\underline{ABCD}=S+(C\times 10+D)</m>. 
                 </p>
                 <p>
-                    Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                    Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 4<q> and Q is <q>the number is divisible by 4</q>. By <xref ref="theorem2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                 </p>
             </proof>
         </theorem>
@@ -463,7 +483,7 @@
                         Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>8 \mid 1000</m>, so by <xref ref="theorem1"/> we know that <m>8 \mid A\times 1000</m>. For ease, let's define <m>S:=A\times 1000</m>. Thus we can write <m>\underline{ABCD}=S+B\times 100+C\times 10+D</m>. 
                     </p>
                     <p>
-                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>. By <xref ref="theorem2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m> where P is <q>the last digit is divisible by 8<q> and Q is <q>the number is divisible by 8</q>. By <xref ref="theorem2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                     </p>
                 </proof>
             </theorem>
@@ -995,7 +1015,7 @@
         <definition xml:id="def-PrimeNumber">
             <statement>
                 <p>
-                    A <term>prime number</term> is a whole number that has exactly two factors; namely <m>1</m> and itself. If a natural number <m>n</m> is not prime, and not <m>1</m>, we say that <m>n</m> is <term>composite</term>.
+                    A <term>prime number</term> is a natural number that has exactly two factors; namely <m>1</m> and itself. If a natural number <m>n</m> is not prime, and not <m>1</m>, we say that <m>n</m> is <term>composite</term>. Note that <m>0</m> and <m>1</m> are neither prime nor composite.
                 </p>
             </statement>
         </definition>
@@ -1266,7 +1286,7 @@
                 </statement>
                 <proof>
                     <p>
-                        We are going to show this result is true using a <term>proof by contradiction</term>. As in part 3 of <xref ref="subsec-JustifyingConditionalStatements"/>, we are going to pretend that there is a counterexample to our conditional statement (that is, the only situation where <m>P \to Q</m> is false; when <m>P</m> is true and <m>Q</m> is false.) We will show that if we are in this case, then mathematics "breaks" and we end up with something that is never true. This means that there are no counterexamples to our statement, so it must always be true. In our case, we will end up with showing that <m>n &gt; n</m>, which is always false; of course, no number is strictly greater than itself!. The idea will be that if we multiply two numbers bigger than <m>\sqrt{n}</m> together, we must get a number bigger than <m>n</m>.
+                        We are going to show this result is true using a <term>proof by contradiction</term>. As in part 3 of <xref ref="subsec-JustifyingConditionalStatements"/>, we are going to pretend that there is a counterexample to our conditional statement (that is, the only situation where <m>P \to Q</m> is false; when <m>P</m> is true and <m>Q</m> is false.) We will show that if we are in this case, then mathematics "breaks" and we end up with something that is never true. This means that there are no counterexamples to our statement, so it must always be true. In our case, we will end up with showing that <m>n &lt; n</m>, which is always false; of course, no number is strictly less than itself!. The idea will be that if we multiply two numbers bigger than <m>\sqrt{n}</m> together, we must get a number bigger than <m>n</m>.
                     </p>
                     <p>
                         Assuming that the if-part is true, let <m>n=ab</m> be a factorization of <m>n</m> into two factors, where <m>a \geq b</m>. Let's also assume that the then-part is false; that either both <ol>
@@ -1283,7 +1303,7 @@
                         </ol>  There are two cases here. We will do the first case, and leave the second case as an exercise for you.
                     </p>
                     <p>
-                       By the definition of a square root, we can write <me>n = (\sqrt{n})(\sqrt{n})</me>. Since we're assuming <m>a &gt; \sqrt{n}</m>, if we replace one of the <m>\sqrt{n}</m> in the first expression with <m>a</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) </me>. Similarly, we're also assuming <m>b &gt; \sqrt{n}</m>, if we replace the other <m>\sqrt{n}</m> in the new expression with <m>b</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &gt; ab </me>. But we know that <m>n=ab</m> so we can replace the <m>ab</m> on the right hand side by <m>n</m>. So <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &lt; ab = n.</me> So if we look at the (in)equation above, we have just showed that <m>n &lt; n</m>. Since this is never true, then there are no counterexamples to our original statement (at least in the first case).
+                       By the definition of a square root, we can write <me>n = (\sqrt{n})(\sqrt{n})</me>. Since we're assuming <m>a &gt; \sqrt{n}</m>, if we replace one of the <m>\sqrt{n}</m> in the first expression with <m>a</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) </me>. Similarly, we're also assuming <m>b &gt; \sqrt{n}</m>, if we replace the other <m>\sqrt{n}</m> in the new expression with <m>b</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &lt; ab </me>. But we know that <m>n=ab</m> so we can replace the <m>ab</m> on the right hand side by <m>n</m>. So <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &lt; ab = n.</me> So if we look at the (in)equation above, we have just showed that <m>n &lt; n</m>. Since this is never true, then there are no counterexamples to our original statement (at least in the first case).
 
                        <p>
                         The case where we assume that <m>a,b &lt; \sqrt{n}</m> is very similar, and is left as an exercise to you. See if you can modify the case above to be a proof for this case.
@@ -1302,7 +1322,7 @@
             We can use the idea above to help us, somewhat efficiently, determine if a number is composite. Indeed, if <m>n</m> is a composite number, it must have a pair of factors <m>1 &lt; a,b &lt; n</m> (and say that <m>a \geq b</m>) where <m>n=ab</m>, and by <xref ref="lem-FactorizationSquareRoot"/> it must be that <m>b \leq \sqrt{n}</m>; that is, every pair of factors of <m>n</m> has one of the factors that is no bigger than <m>\sqrt{n}</m>. So we can only worry about these factors, since the larger factors are paired with a smaller one.
         </p>
         <p>
-            We can do even better than checking if all numbers less than <m>\sqrt{n}</m> are factors of <m>n</m>. We'll show that you only need to check whether the prime numbers less than <m>\sqrt{n}</m> are factors of <m>n</m>. First, we show that every composite number has at least one prime factor, and then we will show that the smallest non-unit (that is, not 1) factor of <m>n</m> is indeed a prime number.
+            We can do even better than checking if all numbers less than or equal to <m>\sqrt{n}</m> are factors of <m>n</m>. We'll show that you only need to check whether the prime numbers less than or equal to <m>\sqrt{n}</m> are factors of <m>n</m>. First, we show that every composite number has at least one prime factor, and then we will show that the smallest non-unit (that is, not 1) factor of <m>n</m> is indeed a prime number.
         </p>
         <p>
             <theorem xml:id="thm-primefactorofcomposite">
@@ -1354,7 +1374,7 @@
                 A number <m>n \in \mathbb{N}</m> where <m>n \geq 2</m> is prime exactly when it has no prime factors <m>p \leq \sqrt{n}</m>. We can test for primality using this following steps:
             </p>
                     <p>
-                        1. Determine the largest prime number <m>p_* \leq \sqrt{n}</m>.
+                        1. Determine the largest prime number <m>p_* \leq \sqrt{n}</m>. If there are none, <m>n</m> is prime.
                     </p>
                 
                     <p>
@@ -1472,7 +1492,7 @@
         <definition xml:id="def-PrimeFactoriZation">
             <statement>
                 <p>
-                    A <term>prime factorization</term> of a number <m>n \in \mathbb{N}</m> is a factorization of <m>n</m> in the form <m>n = p_1^{e_1}p_2^{e_2} \ldots p_k^{e_k}</m> where the <m>p_1, \ldots, p_k</m> are distinct prime numbers in increasing order, there are <m>k</m> distinct primes, and the <m>e_1, \ldots, e_k </m> are the (natural number) exponents of these primes.
+                    A <term>prime factorization</term> of a number <m>n \in \mathbb{N}, n \geq 2</m> is a factorization of <m>n</m> in the form <m>n = p_1^{e_1}p_2^{e_2} \ldots p_k^{e_k}</m> where the <m>p_1, \ldots, p_k</m> are distinct prime numbers in increasing order, there are <m>k</m> distinct primes, and the <m>e_1, \ldots, e_k </m> are the (natural number) exponents of these primes.
                 </p>
             </statement>
 
@@ -1591,7 +1611,7 @@
                     <me>
                         \rightarrow n\div p_1 = p_2p_3 \ldots p_s = q_1 q_2 \ldots q_{i-1}q_{i+1} \ldots q_t.
                     </me>
-                    Since <m>p_1 &gt; 1</m> it's clear that <m>n &gt; (n \div p_1)</m>. But the equation above is two different prime factorizations for <m>n \div p_1</m>, so <m>n</m> was not the smallest number with two different prime factorizations. So this is a contradiction, which means that our original statement is true.
+                    Since <m>p_1 &gt; 1</m> it's clear that <m>n &gt; (n \div p_1)</m>. But the equation above is two different prime factorizations for <m>n \div p_1</m> (if we cancelled a common prime, there's no way that the lists are equal now), so <m>n</m> was not the smallest number with two different prime factorizations. So this is a contradiction, which means that our original statement is true.
                     
                 </p>
                 
@@ -1601,7 +1621,7 @@
             
         </p>
         <p>
-            This is a very special idea. It means that every natural number is built from prime numbers, and is built in exactly one way. So we can study properties of factors of numbers by studying their prime factorization. We will do so in upcoming sections.
+            This is a very special idea. It means that every natural number (aside from 1) is built from prime numbers, and is built in exactly one way. So we can study properties of factors of numbers by studying their prime factorization. We will do so in upcoming sections.
         </p>
         
         
@@ -1732,7 +1752,7 @@
             </statement>
             <proof>
                 <p>
-                    If <m>a</m> is a factor of <m>n</m>, then <m>a</m> can be written as a subset of the prime factorization of <m>n</m>. Thus, for each prime <m>p_i</m>, we can have <m>0, 1, 2 \ldots e_i</m> copies of <m>p_i</m> in our factor, for a total of <m>e_i+1</m> choices. Since we have to make a choice for each different prime, and each choice is independent of other choices (that is, choosing the number of copies of one prime does not affect the number of choices for another prime), we can multiply these numbers of choices for each prime to determine the number of factors in total.
+                    If <m>a</m> is a factor of <m>n</m>, then <m>a</m> can be written as a factor of the prime factorization of <m>n</m>, which means <m>a=p_1^{f_1}p_2^{f_2}\ldots p_k^{f_k}</m> where <m>0 \leq f_i \leq e_i</m>. Thus, for each prime <m>p_i</m>, we can have <m>0, 1, 2 \ldots e_i</m> copies of <m>p_i</m> in our factor, for a total of <m>e_i+1</m> choices. Since we have to make a choice for each different prime, and each choice is independent of other choices (that is, choosing the number of copies of one prime does not affect the number of choices for another prime), we can multiply these numbers of choices for each prime to determine the number of factors in total.
                 </p>
             </proof>
         </theorem>
@@ -1747,7 +1767,7 @@
                     </li>
                     <li>
                         <p>
-                            How many prime factors does <m>n</m> have?
+                            How many distinct prime factors does <m>n</m> have?
                         </p>
                     </li>
                     <li>
@@ -1766,7 +1786,7 @@
                     </li>
                     <li>
                         <p>
-                            Since we were given the prime factorization of <m>n</m> we can simply read off the prime factors: <m>2,3,7,</m> and <m>11</m>. So <m>n</m> has <m>4</m> prime factors.
+                            Since we were given the prime factorization of <m>n</m> we can simply read off the prime factors: <m>2,3,7,</m> and <m>11</m>. So <m>n</m> has <m>4</m> distinct prime factors.
                         </p>
                     </li>
                     <li>
@@ -1953,7 +1973,7 @@
                   Given two positive integers <m>a</m> and <m>b</m> (without loss of generality, assume <m>a \geq b</m>), the greatest common divisor (GCD) of <m>a</m> and <m>b</m> can be computed using the following iterative process:
                 </p>
                 <p>
-                  Divide <m>a</m> by <m>b</m> to get a quotient <m>q</m> and a remainder <m>r</m>, where <m>0 \leq r &lt; b</m>. Then, the GCD of <m>a</m> and <m>b</m> is the same as the GCD of <m>b</m> and <m>r</m>. Continue this process, replacing <m>a</m> with <m>b</m> and <m>b</m> with <m>r</m>, until <m>r</m> is zero. The GCD is the non-zero remainder from the previous step.
+                  Divide <m>a</m> by <m>b</m> to get a quotient <m>q</m> and a remainder <m>r</m>, where <m>0 \leq r &lt; b</m>. Then, the GCD of <m>a</m> and <m>b</m> is the same as the GCD of <m>b</m> and <m>r</m>. Continue this process, replacing <m>a</m> with <m>b</m> and <m>b</m> with <m>r</m>, until <m>r</m> is zero. The GCD is the last non-zero divisor, which is the last non-zero remainder from the previous step when this makes sense.
                 </p>
               </statement>
               <proof>
