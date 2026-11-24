@@ -1747,48 +1747,65 @@
         <example>
             <p>Let's look again at <m>n=144</m>. Using our method from <xref ref="thm-primefactorofcomposite"/> we can write <m>n</m> as a product of primes: <m>144=2^4 \times 3^2</m>. Now let's list the factors again, but also write their prime factorization:</p> 
 
-            <ol>
-                <li>
-                    <p>
-                        1 and 144 <m>(2^0 \times 3^0)(2^4 \times 3^2)</m>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        2 and 72 <m>(2^1 \times 3^0)(2^3 \times 3^2)</m>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        3 and 48 <m>(2^0 \times 3^1)(2^4 \times 3^1)</m>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        4 and 36 <m>(2^2 \times 3^0)(2^2 \times 3^2)</m>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        6 and 24 <m>(2^1 \times 3^1)(2^3 \times 3^1)</m>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        8 and 18 <m>(2^3 \times 3^0)(2^1 \times 3^2)</m>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        9 and 16 <m>(2^0 \times 3^2)(2^4 \times 3^0)</m>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        12 and 12 <m>(2^2 \times 3^1)(2^2 \times 3^1)</m>
-                    </p>
-                </li>
-            </ol>
+            <table xml:id="table-factor-pairs-144">
+  <title>Factor pairs of 144</title>
+  <tabular>
+    <row header="yes">
+      <cell>Factor</cell>
+      <cell>Prime factorization</cell>
+      <cell>Paired factor</cell>
+      <cell>Prime factorization</cell>
+    </row>
+    <row>
+      <cell><m>1</m></cell>
+      <cell><m>2^0 \times 3^0</m></cell>
+      <cell><m>144</m></cell>
+      <cell><m>2^4 \times 3^2</m></cell>
+    </row>
+    <row>
+      <cell><m>2</m></cell>
+      <cell><m>2^1 \times 3^0</m></cell>
+      <cell><m>72</m></cell>
+      <cell><m>2^3 \times 3^2</m></cell>
+    </row>
+    <row>
+      <cell><m>3</m></cell>
+      <cell><m>2^0 \times 3^1</m></cell>
+      <cell><m>48</m></cell>
+      <cell><m>2^4 \times 3^1</m></cell>
+    </row>
+    <row>
+      <cell><m>4</m></cell>
+      <cell><m>2^2 \times 3^0</m></cell>
+      <cell><m>36</m></cell>
+      <cell><m>2^2 \times 3^2</m></cell>
+    </row>
+    <row>
+      <cell><m>6</m></cell>
+      <cell><m>2^1 \times 3^1</m></cell>
+      <cell><m>24</m></cell>
+      <cell><m>2^3 \times 3^1</m></cell>
+    </row>
+    <row>
+      <cell><m>8</m></cell>
+      <cell><m>2^3 \times 3^0</m></cell>
+      <cell><m>18</m></cell>
+      <cell><m>2^1 \times 3^2</m></cell>
+    </row>
+    <row>
+      <cell><m>9</m></cell>
+      <cell><m>2^0 \times 3^2</m></cell>
+      <cell><m>16</m></cell>
+      <cell><m>2^4 \times 3^0</m></cell>
+    </row>
+    <row>
+      <cell><m>12</m></cell>
+      <cell><m>2^2 \times 3^1</m></cell>
+      <cell><m>12</m></cell>
+      <cell><m>2^2 \times 3^1</m></cell>
+    </row>
+  </tabular>
+</table>
             <p>
                 Note that if <m>a \mid n</m>, then <m>a</m> must either be <m>1</m>, or a product of some of the <m>2</m>'s and <m>3</m>'s that are in the prime factorization of <m>144</m>, since we can think about grouping the primes in the prime factorization to make a pair of factors.
             </p>
@@ -1885,7 +1902,8 @@
                         We can check all of our divisibility tests and find that <m>1247</m> fails all of them. So by <xref ref="assemblage-TestForPrimality"/>we need to determine if <m>1247</m> has any prime factors greater than 11. We note that <m>31^2 = 961</m> and <m>37^2 = 1369</m> and that <m>31</m> and <m>37</m> are consecutive primes so <m>31 &lt; \sqrt{1247} &lt; 37</m> so we need to check all prime numbers of size <m>31</m> and smaller. We've already checked <m>2,3,5,11</m> so we need to check <m>7,13,17,19,23,29,31</m> by trial division. 
                     </p>
                     <p>
-                        Using this trial division, we see that <m>1247 \div 29=43</m>, so we know that <m>29</m> is a factor of <m>n</m>. And since <m>43</m> is also prime, we have decomposed <m>n</m> into its prime factorization: <m>n = 2^3 \times 5^2 \times 11^2 \times 29 \times 43</m>. Thus by <xref ref="thm-NumberOfFactors"/> we see that <m>n</m> has <m>(3+1)(2+1)(2+1)(1+1)(1+1)=144</m> total factors. Of these factors, <m>5</m> are prime, <m>1</m> is the number <m>1</m>, and <m>138</m> are composite.
+                        Using this trial division, we see that <m>1247 \div 29=43</m>, so we know that <m>29</m> is a factor of <m>n</m>. And since <m>43</m> is also prime (we can use <xref ref="assemblage-TestForPrimality"/> to check whether
+                        <m>43</m> is prime), we have decomposed <m>n</m> into its prime factorization: <m>n =  2^3 \times 5^2 \times 11^2 \times 29 \times 43</m>. Thus by <xref ref="thm-NumberOfFactors"/> we see that <m>n</m> has <m>(3+1)(2+1)(2+1)(1+1)(1+1)=144</m> total factors. Of these factors, <m>5</m> are prime, <m>1</m> is the number <m>1</m>, and <m>138</m> are composite.
                     </p>
                 </solution>
             </example>
@@ -1893,76 +1911,153 @@
         
     </subsection>
     <subsection xml:id="gcd_lcm_intro">
-        <title>Greatest Common Divisor and Least Common Multiple</title>
-        <subsubsection xml:id="understanding_gcd_lcm">
-          <title>Unraveling the Concepts</title>
-          <p>
-            When exploring the properties of numbers, particularly sets of natural numbers, the concept of the <em>Greatest Common Divisor (GCD)</em>, also known as the <em>Greatest Common Factor (GCF)</em>, is an important idea. The GCD of a set of numbers is essentially the largest factor that divides each number in the set without leaving a remainder.
-          </p>
-          <subsection xml:id="gcd_prime_factorization">
-            <title>Understanding GCD Through Prime Factorization</title>
-            <p>
-              To understand the GCD, we can use the idea of prime factorizations to help us. Let's consider an example to elucidate this process: finding the GCD of 42, 294, and 132. We begin by determining the prime factorization of each number. For instance, the prime factorization of these numbers would be:
-            </p>
-            <ol>
-              <li><p> <m> 42 = 2 \times 3 \times 7 </m></p></li>
-              <li><p> <m>294 = 2 \times 3 \times 7^2</m></p></li>
-              <li><p> <m>132 = 2^2 \times 3 \times 11</m></p></li>
-            </ol>
-            <p>
-                If <m>d</m> is the GCD of our three numbers, then we know that <m>d \mid 42, \ d \mid 294, </m> and <m>d \mid 132</m>. So we must be able to make <m>d</m> by grouping prime factors of our three numbers in each number. For example, we know that <m>2 \mid d</m> since <m>2</m> is a factor or each of our numbers, and similarly for <m>3</m>. However, we know that <m>7 \nmid d</m> since <m>7</m> is not a prime factor of <m>132</m>. It follows that the smallest number of each prime factor will be factors of <m>d</m>.
-            </p>
-            <p>
-              In these factorizations, we identify the common prime factors and consider the lowest power (exponent) of these primes present in each number. For our example, the common primes are 2 and 3, and the lowest powers for these are <m>2^1</m> and <m>3^1</m>, respectively. Thus, the GCD is <m>2 \times 3 = 6</m> and we can write <m>\text{GCD}(42,294,132)=6</m>.  This can be verified as:
-            </p>
-            <ol>
-              <li><p> <m> 42 = 6 \times 7  = (2 \times 3) \times 7</m></p></li>
-              <li><p> <m>294 = 6 \times 49 = (2 \times 3) \times 7^2</m></p></li>
-              <li><p> <m>132 = 6 \times 22 = (2 \times 3) \times 2 \times 11</m></p></li>
-            </ol>
-            <p>
-                Note that there are no common factors of the remaining factors of each number. That is, <m>\text{GCD}(7,49,22)=1</m>.
-            </p>
-          </subsection>
-          <subsection xml:id="lcm_concept">
-            <title>Least Common Multiple (LCM)</title>
-            <p>
-              The concept of the <em>Least Common Multiple (LCM)</em> is somewhat the inverse of the GCD. It represents the smallest number that is a multiple of every number in a set. To find the LCM, we again turn to prime factorization.
-            </p>
-            <subsection xml:id="lcm_example">
-                <title>Exploring LCM with an Example</title>
-            <p>
-                Using the same set of numbers (42, 294, and 132), we want a number <m>m</m> such that <m>42 \mid m, \ 294 \mid m</m>, and <m>132 \mid m</m>. So we need that the prime factorization of each number appears in the prime factorization of <m>m</m>. We can try and "build" <m>m</m>:  We know that since <m>42  = 2 \times 3 \times 7</m>, it must be that <m>m = 2 \times 3 \times 7 \times k</m>, where <m>k</m> is the prime factors of the remaining numbers (294 and 132 so far; we'll redefine <m>k</m> as we go), since <m>m</m> must be a multiple of <m>42</m>. </p>
+  <title>Greatest Common Divisor and Least Common Multiple</title>
 
-            <p>
-                Now, <m>m</m> must also be a multiple of <m>294</m> so we can include the minimum prime factors in <m>m</m> so that <m>m</m> is a multiple of both <m>42</m> and <m>294</m> (so we need to keep all the prime factors of <m>42</m> in the prime factorization of <m>m</m>). We note that we need another <m>7</m>, so we can say that <m>m=2 \times 3 \times 7^2 \times k</m>. 
-            </p>
-            <p>
-                Finally, we note that we need to include the prime factors of <m>132</m> in <m>m</m> as well. We note we already have a <m>2</m> and <m>3</m>, but still need to include another <m>2</m> and an <m>11</m>. So we must include these in our prime factorization. So <m>m=2^2 \times 3 \times 7^2 \times 11</m>. 
-            </p>
-            <p>
-                We note that we needed to include the *maximum* number of each prime factor in each of our numbers.
-            </p>
-            
-              <p>
-                Using the same set of numbers (42, 294, and 132), we determine the LCM by looking for the highest power (exponent) of each prime factor present in the factorizations of these numbers. In our example:
-              </p>
-              <ol>
-                <li>The maximum exponent for 2 is 2 (from 132)</li>
-                <li>The maximum exponent for 3 is 1 (common in all)</li>
-                <li>The maximum exponent for 7 is 2 (from 294)</li>
-                <li>The maximum exponent for 11 is 1 (from 132)</li>
-              </ol>
-              <p>
-                Thus, the LCM is calculated as <m>2^2 \times 3 \times 7^2 \times 11</m> which when expanded, gives us the LCM.
-              </p>
-            </subsection>
-            <p>
-              Understanding GCD and LCM is not just an academic exercise. These concepts are crucial in various mathematical operations, such as simplifying fractions (GCD) and finding common denominators (LCM). Moreover, they form a foundational understanding for more advanced mathematical concepts.
-            </p>
-          </subsection>
-        </subsubsection>
-      </subsection>
+  <p>
+    Prime factorization can help us answer two related questions. What is
+    the largest number that is a factor of several numbers? And what is
+    the smallest positive number that has all of them as factors?
+    Let's explore these questions using <m>42</m>, <m>294</m>, and
+    <m>132</m>.
+  </p>
+
+  <p>
+    Their prime factorizations are
+    <me>
+      \begin{aligned}
+      42  &amp;= 2 \times 3 \times 7,\\
+      294 &amp;= 2 \times 3 \times 7^2,\\
+      132 &amp;= 2^2 \times 3 \times 11.
+      \end{aligned}
+    </me>
+  </p>
+
+  <exercise xml:id="understanding_gcd_lcm">
+    <p>
+      Use these factorizations to investigate the following questions
+      before reading on.
+    </p>
+    <ol>
+      <li>
+        <p>
+          Which prime numbers are factors of all three numbers? How
+          many copies of each of these primes could a common factor
+          contain?
+        </p>
+      </li>
+      <li>
+        <p>
+          What do you think is the greatest common factor of the three
+          numbers? How could you show that no larger common factor
+          exists?
+        </p>
+      </li>
+      <li>
+        <p>
+          Suppose <m>m</m> is a multiple of all three numbers. Which
+          prime factors must appear in <m>m</m>, and how many copies of
+          each are needed?
+        </p>
+      </li>
+      <li>
+        <p>
+          What do you think is the least positive common multiple?
+          How could you show that every other common multiple is at
+          least as large?
+        </p>
+      </li>
+    </ol>
+  </exercise>
+
+  <subsubsection xml:id="gcd_prime_factorization">
+    <title>Greatest Common Divisor</title>
+
+    <p>
+      The <term>greatest common divisor</term>, or <term>GCD</term>, of
+      several positive integers is the largest positive integer that
+      divides every one of them. It is also called the
+      <term>greatest common factor</term>, or <term>GCF</term>.
+    </p>
+
+    <p>
+      Look again at the factorizations of <m>42</m>, <m>294</m>, and
+      <m>132</m>. All three have a factor of <m>2</m> and a factor of
+      <m>3</m>. They do not all have a factor of <m>7</m> or
+      <m>11</m>. Also, we cannot use two copies of <m>2</m>, since
+      <m>42</m> and <m>294</m> each have only one. So the largest
+      common factor we can make is <m>2 \times 3=6</m>.
+    </p>
+
+    <p>
+      We can check that <m>6</m> divides all three numbers:
+      <me>
+        \begin{aligned}
+        42  &amp;= 6 \times 7,\\
+        294 &amp;= 6 \times 49,\\
+        132 &amp;= 6 \times 22.
+        \end{aligned}
+      </me>
+      Why is it the <em>greatest</em> common factor? Any common factor
+      can use only primes shared by all three numbers, and no more
+      copies of a prime than any one of the numbers contains. Thus
+      every common factor divides <m>6</m>. We write
+      <m>\text{GCD}(42,294,132)=6</m>.
+    </p>
+  </subsubsection>
+
+  <subsubsection xml:id="lcm_concept">
+    <title>Least Common Multiple</title>
+
+    <p>
+      The <term>least common multiple</term>, or <term>LCM</term>, of
+      several positive integers is the smallest positive integer that
+      is a multiple of every one of them. This time, we need
+      <em>enough</em> copies of each prime to include the prime
+      factorization of every number.
+    </p>
+
+    <example xml:id="lcm_example">
+      <p>
+        Let's build a common multiple of <m>42</m>, <m>294</m>, and
+        <m>132</m>, adding prime factors only when we need them.
+      </p>
+
+      <p>
+        We can start with <m>42=2 \times 3 \times 7</m>. To make
+        our number a multiple of <m>294=2 \times 3 \times 7^2</m>,
+        we need one more <m>7</m>. We now have
+        <m>2 \times 3 \times 7^2=294</m>.
+      </p>
+
+      <p>
+        To make this a multiple of <m>132=2^2 \times 3 \times 11</m>,
+        we need one more <m>2</m> and one <m>11</m>. This gives
+        <me>
+          2^2 \times 3 \times 7^2 \times 11=6468.
+        </me>
+      </p>
+
+      <p>
+        This is a common multiple: <m>6468=42 \times 154</m>,
+        <m>6468=294 \times 22</m>, and
+        <m>6468=132 \times 49</m>. It is also the <em>least</em>
+        positive common multiple. Any common multiple must contain
+        at least two copies of <m>2</m>, one <m>3</m>, two copies
+        of <m>7</m>, and one <m>11</m>. Therefore <m>6468</m>
+        divides every common multiple, and we write
+        <m>\text{LCM}(42,294,132)=6468</m>.
+      </p>
+    </example>
+
+    <p>
+      The same reasoning works for other positive integers. To find
+      their GCD from their prime factorizations, use the
+      <em>smallest</em> exponent of each prime; count its exponent as
+      <m>0</m> in a number where it does not appear. To find their
+      LCM, use the <em>largest</em> exponent of each prime.
+    </p>
+  </subsubsection>
+</subsection>
       <subsection xml:id="word_problems_gcd_lcm">
         <title>Word Problems: GCD and LCM in Practice</title>
         <p>
@@ -1976,7 +2071,7 @@
             Consider an online shop that needs to send <m>72</m> shirts, <m>100</m> hats, and <m>144</m> bags to a supplier. The goal is to use the greatest number of boxes possible, with each box containing the exact same items. This is a typical problem where we need to find the greatest common divisor (GCD) of the numbers <m>72</m>, <m>100</m>, and <m>144</m>.
           </p>
           <p>
-            After calculating, we find that the GCD of these numbers is <m>4</m>. Therefore, we need <m>4</m> boxes. Each box will contain <m>72 \div 4 = 18</m> shirts, <m>100 \div 4 = 25</m> hats, and <m>144 \div 4 = 36</m> bags. This distribution ensures that each box has the same items and uses the maximum number of boxes possible.
+            After calculating (try this yourself!), we find that the GCD of these numbers is <m>4</m>. Therefore, we need <m>4</m> boxes. Each box will contain <m>72 \div 4 = 18</m> shirts, <m>100 \div 4 = 25</m> hats, and <m>144 \div 4 = 36</m> bags. This distribution ensures that each box has the same items and uses the maximum number of boxes possible.
           </p>
         </subsubsection>
       
@@ -1987,7 +2082,7 @@
             Imagine owning a burger restaurant that requires patties, buns, and cheese slices for its burgers. Patties come in boxes of <m>36</m>, buns in bags of <m>50</m>, and cheese slices in packs of <m>60</m>. The objective is to purchase these ingredients in such quantities that there are no leftovers, and the number of burgers made is as small as possible.
           </p>
           <p>
-            This scenario calls for finding the least common multiple (LCM) of <m>36</m>, <m>50</m>, and <m>60</m>. Calculating this, we find the LCM to be <m>900</m>. Consequently, to make <m>900</m> burgers without leftovers, we need <m>900 \div 36 = 25</m> boxes of patties, <m>900 \div 50 = 18</m> bags of buns, and <m>900 \div 60 = 15</m> packs of cheese slices. This is the least number of burgers we can make without any ingredient left over.
+            This scenario calls for finding the least common multiple (LCM) of <m>36</m>, <m>50</m>, and <m>60</m>. Calculating this (try this yourself!), we find the LCM to be <m>900</m>. Consequently, to make <m>900</m> burgers without leftovers, we need <m>900 \div 36 = 25</m> boxes of patties, <m>900 \div 50 = 18</m> bags of buns, and <m>900 \div 60 = 15</m> packs of cheese slices. This is the least number of burgers we can make without any ingredient left over.
           </p>
         </subsubsection>
       
@@ -1995,7 +2090,7 @@
         <subsubsection xml:id="venn_diagrams_gcd_lcm">
           <title>Visualizing GCD and LCM with Venn Diagrams</title>
           <p>
-            GCD and LCM can also be visualized using Venn diagrams. For example, consider the numbers <m>180</m> and <m>144</m>. By placing the prime factors of these numbers in a Venn diagram (where we can repeat elements in each part of the diagram, we can easily identify the GCD (intersection of the sets) and the LCM (union of the sets). 
+            GCD and LCM can also be visualized using Venn-like diagrams, where we are allowed to repeat elements in each part of the diagram. For example, consider the numbers <m>180</m> and <m>144</m>. By placing the prime factors of these numbers in a Venn-like diagram , we can easily identify the GCD (intersection of the sets) and the LCM (union of the sets). 
           </p>
         </subsubsection>
       </subsection>
@@ -2071,13 +2166,13 @@
           <p>
             In our example, we proceed as follows:
           </p>
-          <list>
-            <li><m>9478 = 2716 \times 3 + 1330</m></li>
-            <li><m>2716 = 1330 \times 2 + 56</m></li>
-            <li><m>1330 = 56 \times 23 + 42</m></li>
-            <li><m>56 = 42 \times 1 + 14</m></li>
-            <li><m>42 = 14 \times 3</m> (remainder is zero)</li>
-          </list>
+          <ol>
+  <li><p><m>9478 = 2716 \times 3 + 1330</m></p></li>
+  <li><p><m>2716 = 1330 \times 2 + 56</m></p></li>
+  <li><p><m>1330 = 56 \times 23 + 42</m></p></li>
+  <li><p><m>56 = 42 \times 1 + 14</m></p></li>
+  <li><p><m>42 = 14 \times 3</m>, so the remainder is <m>0</m>.</p></li>
+</ol>
           <p>
             Hence, the GCD of <m>2716</m> and <m>9478</m> is <m>14</m>.
           </p>
@@ -2110,18 +2205,18 @@
                 <p>
                   We use the Euclidean Algorithm to find the GCD of <m>78696</m> and <m>120932</m>:
                 </p>
-                <list>
-                  <li><m>120932 = 78696 \times 1 + 42236</m></li>
-                  <li><m>78696 = 42236 \times 1 + 36460</m></li>
-                  <li><m>42236 = 36460 \times 1 + 5776</m></li>
-                  <li><m>36460 = 5776 \times 6 + 1804</m></li>
-                  <li><m>5776 = 1804 \times 3 + 364</m></li>
-                  <li><m>1804 = 364 \times 4 + 348</m></li>
-                  <li><m>364 = 348 \times 1 + 16</m></li>
-                  <li><m>348 = 16 \times 21 + 12</m></li>
-                  <li><m>16 = 12 \times 1 + 4</m></li>
-                  <li><m>12 = 4 \times 3</m> (remainder is zero)</li>
-                </list>
+                <ol>
+  <li><p><m>120932 = 78696 \times 1 + 42236</m></p></li>
+  <li><p><m>78696 = 42236 \times 1 + 36460</m></p></li>
+  <li><p><m>42236 = 36460 \times 1 + 5776</m></p></li>
+  <li><p><m>36460 = 5776 \times 6 + 1804</m></p></li>
+  <li><p><m>5776 = 1804 \times 3 + 364</m></p></li>
+  <li><p><m>1804 = 364 \times 4 + 348</m></p></li>
+  <li><p><m>364 = 348 \times 1 + 16</m></p></li>
+  <li><p><m>348 = 16 \times 21 + 12</m></p></li>
+  <li><p><m>16 = 12 \times 1 + 4</m></p></li>
+  <li><p><m>12 = 4 \times 3</m>, so the remainder is <m>0</m>.</p></li>
+</ol>
                 <p>
                   The GCD is <m>4</m>. Simplify the fraction by dividing both the numerator and denominator by <m>4</m>:
                 </p>
