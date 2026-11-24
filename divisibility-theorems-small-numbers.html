@@ -625,16 +625,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_lcm_intro" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Greatest Common Divisor and Least Common Multiple</span></a></div>
-<ul id="ptx-toc-group-gcd_lcm_intro" class="structural toc-item-list"><li class="toc-item toc-subsubsection">
-<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#understanding_gcd_lcm" class="internal"><span class="codenumber">7.4.3.1</span> <span class="title">Unraveling the Concepts</span></a></div>
-<ul id="ptx-toc-group-understanding_gcd_lcm" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_prime_factorization" class="internal"><span class="title">Understanding GCD Through Prime Factorization</span></a></div></li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_concept" class="internal"><span class="title">Least Common Multiple (LCM)</span></a></div>
-<ul id="ptx-toc-group-lcm_concept" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_example" class="internal"><span class="title">Exploring LCM with an Example</span></a></div></li></ul>
-</li>
+<ul id="ptx-toc-group-gcd_lcm_intro" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#gcd_prime_factorization" class="internal"><span class="codenumber">7.4.3.1</span> <span class="title">Greatest Common Divisor</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#lcm_concept" class="internal"><span class="codenumber">7.4.3.2</span> <span class="title">Least Common Multiple</span></a></div></li>
 </ul>
-</li></ul>
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-FactorsAndMultiples.html#word_problems_gcd_lcm" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Word Problems: GCD and LCM in Practice</span></a></div>
@@ -1257,48 +1251,53 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" aria-hidden="true" data-description="Proof 7.2.26.1"><a tabindex="-1" href="#thm-CompoundDivisibility-2" title="Copy heading and permalink for Proof 7.2.26.1" aria-label="Copy heading and permalink for Proof 7.2.26.1">🔗</a></div>
 </article></details><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-7">To show that combining divisibility rules for numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> doesn’t work if <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> have a common factor, let’s try and develop a counterexample for each choice of two numbers with a common factor.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="assemblage assemblage-like" id="subsubsec-WhenCompoundDivisibilityRulesWork-7"><h4 class="heading"><span class="title">Notes for Additional Understanding.</span></h4>
+<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-7-2">The step from <span class="process-math">\(b \mid ar\)</span> to <span class="process-math">\(b \mid r\)</span> uses the fact that <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> have no common factor greater than <span class="process-math">\(1\text{.}\)</span> Here is a sketch of why it works. Apply the Euclidean algorithm to <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> (see <a href="sec-FactorsAndMultiples.html#euclidean_algorithm_theorem_statement" class="xref" data-knowl="./knowl/xref/euclidean_algorithm_theorem_statement.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7.4.17: Euclidean Algorithm">Theorem 7.4.17</a>). Its last nonzero remainder is <span class="process-math">\(1\text{.}\)</span> We know that <span class="process-math">\(b\)</span> divides both <span class="process-math">\(ar\)</span> and <span class="process-math">\(br\text{.}\)</span> Each new remainder is a difference of multiples of the preceding two numbers, so <span class="process-math">\(b\)</span> also divides that remainder multiplied by <span class="process-math">\(r\text{.}\)</span> Following this to the final remainder gives <span class="process-math">\(b \mid 1r\text{,}\)</span> as required.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="subsubsec-WhenCompoundDivisibilityRulesWork-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Summary: Notes for Additional Understanding"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-7" title="Copy heading and permalink for Summary: Notes for Additional Understanding" aria-label="Copy heading and permalink for Summary: Notes for Additional Understanding">🔗</a></div>
+</article>
+<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-8">To show that combining divisibility rules for numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> doesn’t work if <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> have a common factor, let’s try and develop a counterexample for each choice of two numbers with a common factor.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsubsec-WhenCompoundDivisibilityRulesWork-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-8-1">For the following pairs of numbers, find the smallest number <span class="process-math">\(n\)</span> where <span class="process-math">\(a \mid n\)</span> and <span class="process-math">\(b \mid n\)</span> but <span class="process-math">\(ab \nmid n\text{.}\)</span> What is the largest common factor of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-9-1">For the following pairs of numbers, find the smallest number <span class="process-math">\(n\)</span> where <span class="process-math">\(a \mid n\)</span> and <span class="process-math">\(b \mid n\)</span> but <span class="process-math">\(ab \nmid n\text{.}\)</span> What is the largest common factor of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2">
-<ol class="decimal" id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1">
-<li id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-1">
-<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-1-1">
-<span class="process-math">\(a=2\)</span> and <span class="process-math">\(b=4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2">
+<ol class="decimal" id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1">
+<li id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-1">
+<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-1-1">
+<span class="process-math">\(a=2\)</span> and <span class="process-math">\(b=4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 7.2.27.1"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-1" title="Copy heading and permalink for Item 7.2.27.1" aria-label="Copy heading and permalink for Item 7.2.27.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 7.2.27.1"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-1" title="Copy heading and permalink for Item 7.2.27.1" aria-label="Copy heading and permalink for Item 7.2.27.1">🔗</a></div>
 </li>
-<li id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-2">
-<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-2-1">
-<span class="process-math">\(a=6\)</span> and <span class="process-math">\(b=4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-2">
+<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-2-1">
+<span class="process-math">\(a=6\)</span> and <span class="process-math">\(b=4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 7.2.27.2"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-2" title="Copy heading and permalink for Item 7.2.27.2" aria-label="Copy heading and permalink for Item 7.2.27.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 7.2.27.2"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-2" title="Copy heading and permalink for Item 7.2.27.2" aria-label="Copy heading and permalink for Item 7.2.27.2">🔗</a></div>
 </li>
-<li id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-3">
-<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-3-1">
-<span class="process-math">\(a=10\)</span> and <span class="process-math">\(b=15\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-3">
+<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-3-1">
+<span class="process-math">\(a=10\)</span> and <span class="process-math">\(b=15\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 7.2.27.3"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-3" title="Copy heading and permalink for Item 7.2.27.3" aria-label="Copy heading and permalink for Item 7.2.27.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 7.2.27.3"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-3" title="Copy heading and permalink for Item 7.2.27.3" aria-label="Copy heading and permalink for Item 7.2.27.3">🔗</a></div>
 </li>
-<li id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-4">
-<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-4-1">Do you notice a way of determining the smallest counterexample using the numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> and their greatest common factor?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-4">
+<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-4-1">Do you notice a way of determining the smallest counterexample using the numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> and their greatest common factor?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 7.2.27.4"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-4" title="Copy heading and permalink for Item 7.2.27.4" aria-label="Copy heading and permalink for Item 7.2.27.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 7.2.27.4"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-4" title="Copy heading and permalink for Item 7.2.27.4" aria-label="Copy heading and permalink for Item 7.2.27.4">🔗</a></div>
 </li>
-<li id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-5">
-<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-5-1">Try and prove that your method above works in general.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-5">
+<div class="para" id="subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-5-1">Try and prove that your method above works in general.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Item 7.2.27.5"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2-1-5" title="Copy heading and permalink for Item 7.2.27.5" aria-label="Copy heading and permalink for Item 7.2.27.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 7.2.27.5"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2-1-5" title="Copy heading and permalink for Item 7.2.27.5" aria-label="Copy heading and permalink for Item 7.2.27.5">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 7.2.27"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-8" title="Copy heading and permalink for Checkpoint 7.2.27" aria-label="Copy heading and permalink for Checkpoint 7.2.27">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 7.2.27"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork-9" title="Copy heading and permalink for Checkpoint 7.2.27" aria-label="Copy heading and permalink for Checkpoint 7.2.27">🔗</a></div>
 </article></details><div class="autopermalink" aria-hidden="true" data-description="Subsubsection 7.2.6.1: When Compound Divisibility Rules Work"><a tabindex="-1" href="#subsubsec-WhenCompoundDivisibilityRulesWork" title="Copy heading and permalink for Subsubsection 7.2.6.1: When Compound Divisibility Rules Work" aria-label="Copy heading and permalink for Subsubsection 7.2.6.1: When Compound Divisibility Rules Work">🔗</a></div>
 </section>
 <section class="subsubsection" id="subsubsec-SomeCommonCompoundDivisibilityRules">
