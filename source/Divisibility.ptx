@@ -129,7 +129,7 @@
         <definition xml:id="def-transitivity">
             <statement>
                 <p>
-                   Let <m>\sim</m> be some relationship (such as equality "=", or divisibility "<m>\mid</m>")  between objects (such as numbers). We say the relationship <m>\sim</m> is <term>transitive</term> exactly when it is true that, for objects <m>a,b,c</m>, if  <m>a \sim b</m> and <m>b \sim</m> then <m>a \sim c</m>.
+                   Let <m>\sim</m> be some relationship (such as equality "=", or divisibility "<m>\mid</m>")  between objects (such as numbers). We say the relationship <m>\sim</m> is <term>transitive</term> exactly when it is true that, for objects <m>a,b,c</m>, if  <m>a \sim b</m> and <m>b \sim c</m> then <m>a \sim c</m>.
                 </p>
             </statement>
         </definition>
@@ -276,7 +276,7 @@
                 </statement>
                 <proof>
                     <p>
-                        Again, we do the additive case, and leave the subtraction case to an exercise later. Let <m>c \mid a</m> and <m>c \nmid b</m>. This means that <m>a=cx</m> for some natural number <m>x</m>, and <m>b=cy+r</m>, where <m>y</m> is a natural number, and thinking about it as a remainder, <m>r</m> is a natural number such that <m>r \leq c-1</m>. We need to show that <m>c \nmid a+b</m>, so we need to show that <m>b+c</m> has a remainder. Adding both equations together, we get
+                        Again, we do the additive case, and leave the subtraction case to an exercise later. Let <m>c \mid a</m> and <m>c \nmid b</m>. This means that <m>a=cx</m> for some natural number <m>x</m>, and <m>b=cy+r</m>, where <m>y</m> is a natural number, and thinking about it as a remainder, <m>r</m> is a natural number such that <m>r \leq c-1</m>. We need to show that <m>c \nmid a+b</m>, so we need to show that <m>a+b</m> has a remainder. Adding both equations together, we get
                         <me>
                             a+b = cx+cy+r.
                         </me>
@@ -402,7 +402,7 @@
                         Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>2 \mid 1000</m>, <m>2 \mid 100</m>, and <m>2 \mid 10</m>, so by <xref ref="theorem1"/> we know that <m>2 \mid A\times 1000,</m> <m>2 \mid B\times 100</m>, and <m>2 \mid C \times 10</m>. By <xref ref="theorem2"/> we know that <m>2 \mid (A\times 1000+B\times 100+C\times 10).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100+C\times 10</m>. Thus we can write <m>\underline{ABCD}=S+D</m>. 
                     </p>
                     <p>
-                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 2<q> and Q is <q>the number is divisible by 2</q>. By <xref ref="theorem2"/> we know that if <m>2 \mid D</m> (P being true) then <m>2 \mid S+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>2 \nmid D</m> (P being false) then <m>2 \nmid S+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 2</q> and Q is <q>the number is divisible by 2</q>. By <xref ref="theorem2"/> we know that if <m>2 \mid D</m> (P being true) then <m>2 \mid S+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>2 \nmid D</m> (P being false) then <m>2 \nmid S+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                     </p>
                 </proof>
             </theorem>
@@ -443,7 +443,7 @@
                     Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>4 \mid 1000</m> and <m>4 \mid 100</m>, so by <xref ref="theorem1"/> we know that <m>4 \mid A\times 1000,</m> and <m>4 \mid B\times 100</m>. By <xref ref="theorem2"/> we know that <m>4 \mid (A\times 1000+B\times 100).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100</m>. Thus we can write <m>\underline{ABCD}=S+(C\times 10+D)</m>. 
                 </p>
                 <p>
-                    Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 4<q> and Q is <q>the number is divisible by 4</q>. By <xref ref="theorem2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                    Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 4</q> and Q is <q>the number is divisible by 4</q>. By <xref ref="theorem2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                 </p>
             </proof>
         </theorem>
@@ -483,7 +483,7 @@
                         Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>8 \mid 1000</m>, so by <xref ref="theorem1"/> we know that <m>8 \mid A\times 1000</m>. For ease, let's define <m>S:=A\times 1000</m>. Thus we can write <m>\underline{ABCD}=S+B\times 100+C\times 10+D</m>. 
                     </p>
                     <p>
-                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m> where P is <q>the last digit is divisible by 8<q> and Q is <q>the number is divisible by 8</q>. By <xref ref="theorem2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m> where P is <q>the last digit is divisible by 8</q> and Q is <q>the number is divisible by 8</q>. By <xref ref="theorem2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                     </p>
                 </proof>
             </theorem>
@@ -835,6 +835,21 @@
             </theorem>
             
         </p>
+        <assemblage>
+  <title>Notes for Additional Understanding</title>
+  <p>
+    The step from <m>b \mid ar</m> to <m>b \mid r</m> uses the fact that
+    <m>a</m> and <m>b</m> have no common factor greater than <m>1</m>.
+    Here is a sketch of why it works. Apply the Euclidean algorithm to
+    <m>a</m> and <m>b</m> (see
+    <xref ref="euclidean_algorithm_theorem_statement"/>). Its last
+    nonzero remainder is <m>1</m>. We know that <m>b</m> divides both
+    <m>ar</m> and <m>br</m>. Each new remainder is a difference of
+    multiples of the preceding two numbers, so <m>b</m> also divides
+    that remainder multiplied by <m>r</m>. Following this to the final
+    remainder gives <m>b \mid 1r</m>, as required.
+  </p>
+</assemblage>
         <p>
             To show that combining divisibility rules for numbers <m>a</m> and <m>b</m> doesn't work if <m>a</m> and <m>b</m> have a common factor, let's try and develop a counterexample for each choice of two numbers with a common factor.
         </p>
@@ -1554,7 +1569,7 @@
             </p>
         </example>
         <p>
-            Before we get to this theorem, we will need a small lemma. This lemma was originally proved by the ancient Greek mathematician Euclid and is usually named after him. The proof of this lemma uses some techniques from later in this section, so we will prove it later.
+            Before we get to this theorem, we will need a small lemma. This lemma was originally proved by the ancient Greek mathematician Euclid and is usually named after him. 
             <lemma xml:id="lem-EuclidsLemma">
                 <title>Euclid's Lemma</title>
                 
@@ -1564,6 +1579,52 @@
                        Let <m>a_1,a_2, \ldots, a_k \in \mathbb{N}</m> and <m>p</m> be a prime number. If <m>p</m> divides the product of our <m>a</m>'s; that is, <m>p \mid a_1a_2 \ldots a_k</m> then <m>p | a_i</m> for some <m>1 \leq i \leq k</m>. 
                     </p>
                 </statement>
+                <proof>
+  <p>
+    Let's first prove the result for a product of two numbers. Suppose that
+    <m>p \mid ab</m>, where <m>p</m> is prime. If <m>p \mid a</m>, we are
+    done. So let's assume that <m>p \nmid a</m> and show that
+    <m>p \mid b</m>.
+  </p>
+  <p>
+    Divide <m>a</m> by <m>p</m>, writing
+    <m>a=qp+r</m>, where <m>0 &lt; r &lt; p</m>. The remainder cannot be
+    <m>0</m>, since we assumed that <m>p \nmid a</m>. Multiplying by
+    <m>b</m> gives <m>ab=qpb+rb</m>. We know that <m>p</m> divides both
+    <m>ab</m> and <m>qpb</m>, so it also divides their difference
+    <m>rb</m>.
+  </p>
+  <p>
+    Now divide <m>p</m> by <m>r</m>, then divide <m>r</m> by the new
+    remainder, and continue in the same way. We can carry the divisibility
+    statement along at every step. If <m>x=qy+z</m> and <m>p</m> divides
+    both <m>xb</m> and <m>yb</m>, then <m>p</m> also divides
+    <m>zb=xb-q(yb)</m>. Thus <m>p</m> divides each remainder multiplied
+    by <m>b</m>.
+  </p>
+  <p>
+    The positive remainders get smaller at each step, so the process must
+    end. Let <m>d</m> be the last nonzero remainder. Working backwards
+    through the divisions shows that <m>d</m> divides both <m>p</m> and
+    <m>r</m>. Since <m>p</m> is prime, its only positive factors are
+    <m>1</m> and <m>p</m>. But <m>d \leq r &lt; p</m>, so <m>d</m>
+    cannot be <m>p</m>. Therefore <m>d=1</m>.
+  </p>
+  <p>
+    We showed that <m>p</m> divides every remainder multiplied by
+    <m>b</m>. In particular, <m>p \mid db</m>. Since <m>d=1</m>,
+    this says <m>p \mid b</m>. So, if a prime divides <m>ab</m>, it
+    divides <m>a</m> or <m>b</m>.
+  </p>
+  <p>
+    Finally, suppose <m>p \mid a_1a_2\cdots a_k</m>. Apply the
+    two-factor result to <m>a_1</m> and <m>a_2\cdots a_k</m>. Either
+    <m>p \mid a_1</m>, or <m>p</m> divides the product of the remaining
+    factors. In the second case, apply the same result again. Continuing
+    in this way shows that <m>p</m> divides at least one of the
+    <m>a_i</m>.
+  </p>
+</proof>
             </lemma>
             <p>
                 Here's an example showing how the theorem above works:
@@ -2028,7 +2089,7 @@
             Let's explore another example: finding the GCD of <m>785</m> and <m>554</m> using the Euclidean Algorithm.
           </p>
           <p>
-            Following the same process, we calculate the GCD of these numbers to be <m>1</m>. This means that the numbers are coprime, since they have no common prime factors.
+            Following the same process, we calculate the GCD of these numbers to be <m>1</m> (try this yourself!!). This means that the numbers are coprime, since they have no common prime factors.
           </p>
 
           <p>
