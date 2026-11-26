@@ -27,7 +27,7 @@
             In mathematics, the "divides" symbol is represented as <m> \mid </m> and the "does not divide" symbol is represented as <m> \nmid </m>. For example, if <m>b</m> is a factor of <m>a</m>, we write it as <m>b \mid a</m>. If <m>b</m> is not a factor of <m>a</m>, we write it as <m>b \nmid a</m>.
         </p>
         <p>
-            Let's look at two examples. Consider the numbers 4 and 12. We can say that 4 divides 12, or in symbol form, <m>4 | 12</m>. This is because there exists an integer (3 in this case) such that <m>4 * 3 = 12</m>. Now consider the numbers 7 and 23. We can say that 7 does not divide 23, or in symbol form, <m>7 ∤ 23</m>. This is because there does not exist an integer such that <m>7 * c = 23</m>.
+            Let's look at two examples. Consider the numbers 4 and 12. We can say that 4 divides 12, or in symbol form, <m>4 | 12</m>. This is because there exists an integer (3 in this case) such that <m>4 \times 3 = 12</m>. Now consider the numbers 7 and 23. We can say that 7 does not divide 23, or in symbol form, <m>7 ∤ 23</m>. This is because there does not exist an integer such that <m>7 \times c = 23</m>.
         </p>
         
     </subsubsection>
@@ -47,7 +47,7 @@
         <p>
             Now that we've shown this, we can use it to help us study divisibility of many numbers. We'll do many rules in the next subsection, but if we look at the example at the beginning of this section, we see that this shows the following:
         </p>
-        <p>
+        
             <theorem xml:id="thm-if12then3">
                 <statement>
                     <p>
@@ -116,7 +116,7 @@
         
         
                        
-        </p>
+       
         <p>
             We will talk about <term>relation</term> between two objects, like numbers, or polygons, or sets, or other things. Basically a relation between two objects is any statement involving two objects that is either TRUE or FALSE.
         </p>
@@ -143,7 +143,7 @@
     <subsubsection xml:id="divisibility-properties">
         <title>Divisibility Properties of 0, 1, and a Number with Itself</title>
         <p>
-            There are some special cases when considering divisibility. Firstly, any number is divisible by 1. This is because for any number <m>a</m>, <m>a = 1 * a</m>. Secondly, 0 is divisible by any number (except for 0 itself). This is because for any number <m>b \neq 0</m>, <m>0 = b * 0</m>. However, 0 is not divisible by itself, as there is no unique number <m>c</m> such that <m>0 = 0 * c</m>; for example, this would be true for <m>c=2</m> or <m> c=3 </m>. Lastly, any number <m>a \neq 0</m> is divisible by itself, as <m>a = a * 1</m>.
+            There are some special cases when considering divisibility. Firstly, any number is divisible by 1. This is because for any number <m>a</m>, <m>a = 1 \times a</m>. Secondly, 0 is divisible by any number (except for 0 itself). This is because for any number <m>b \neq 0</m>, <m>0 = b \times 0</m>. However, 0 is not divisible by itself, as there is no unique number <m>c</m> such that <m>0 = 0 \times c</m>; for example, this would be true for <m>c=2</m> or <m> c=3 </m>. Lastly, any number <m>a \neq 0</m> is divisible by itself, as <m>a = a \times 1</m>.
         </p>
         <p>
             In summary:
@@ -176,12 +176,12 @@
     <subsubsection xml:id="theorem1">
         <title>Theorem 1</title>
         <p>
-            If a number <m>a</m> is divisible by <m>b</m>, then <m>a*n</m> is divisible by <m>b</m> for any natural number <m>n</m>.
+            If a number <m>a</m> is divisible by <m>b</m>, then <m>an</m> is divisible by <m>b</m> for any natural number <m>n</m>.
         </p>
         <example xml:id="example-theorem1">
             <title>Example for Theorem 1</title>
             <p>
-                Let's consider <m>a = 6</m> and <m>b = 3</m>. Here, <m>a</m> is divisible by <m>b</m>. Now, if we take any natural number, say <m>n = 4</m>, then <m>a*n = 24</m> is also divisible by <m>b</m>.
+                Let's consider <m>a = 6</m> and <m>b = 3</m>. Here, <m>a</m> is divisible by <m>b</m>. Now, if we take any natural number, say <m>n = 4</m>, then <m>an = 24</m> is also divisible by <m>b</m>.
             </p>
         </example>
         <p>Let's try and prove this now. The idea is that if we know that <m>c</m> dots can be represented as a rectangle with dimensions <m>a</m> and <m>b</m>, then we can "glue" <m>n</m> of these  together to make a larger rectangle with dimensions <m>a</m> and <m>nb</m>. INSERT PIC OF THIS HERE</p>
@@ -222,7 +222,7 @@
                 Let's consider <m>a = 10</m>, <m>b = 20</m>, and <m>c = 5</m>. Here, both <m>a</m> and <m>b</m> are divisible by <m>c</m>. Therefore, <m>a+b = 30</m> and <m>a-b = -10</m> are also divisible by <m>c</m>.
             </p>
         </example>
-        <p>Let's try and prove this. It's similar to Theorem 1, and in fact, Theorem 1 can be looked at as a repeated application of Theorem 2. Let's say we know that <m>a</m> is a factor of both <m>b</m> and <m>c</m>. Then we can express both <m>b</m> and <m>c</m> dots as a rectangle, with one of the dimensions being <m>a</m>, and the other we'll call <m>x</m> and <m>y</m>, respectively. Then in the addition case, we can "glue" the two rectangles together to make a rectangle with dimensions <m>a</m> and <m>x+y</m>. INSERT PIC OF THIS</p>
+        <p>Let's try and prove this. It's similar to Theorem 1, and in fact, Theorem 1 can be looked at as a repeated application of Theorem 2. Let's say we know that <m>a</m> is a factor of both <m>b</m> and <m>c</m>. Then we can express both <m>b</m> and <m>c</m> dots as a rectangle, with one of the dimensions being <m>a</m>, and the other we'll call <m>x</m> and <m>y</m>, respectively; that is, <m>b</m> is a rectangle with <m>ax</m> dots and <m>c</m> is a rectangle with <m>ay</m> dots. Then in the addition case, we can "glue" the two rectangles together to make a rectangle with dimensions <m>a</m> and <m>x+y</m>, so <m>b+c</m> is a rectangle with <m>a(x+y</m> dots.). INSERT PIC OF THIS</p>
         <p><theorem xml:id="thm-thm2">
             <statement>
                 <p>
@@ -346,7 +346,7 @@
         In this section, we will introduce and prove the divisibility theorems for numbers 2 through 11, with the exception of 7. Each theorem will be introduced with an example, and then we will prove them for four-digit numbers. While we will focus on four-digit numbers for simplicity, it's important to note that these proofs can be extended to numbers of any number of digits.
     </p>
     <p>
-        To facilitate our discussion, we will use underline notation in LaTeX to indicate a number by its place value digits. For example, a four-digit number <m>ABCD</m> can be represented as <m>\underline{ABCD} = A \times 1000 + B \times 100 + C \times 10 + D</m>. This notation will allow us to break down the number into its constituent parts and analyze its divisibility properties. Since we are using variables to represent unknown digits, we need this new notation, since if we write <m>ABCD</m> this usually means <m>A \times B \times C \times D</m>. However, if we write actual digits like <m>1234</m> without an underline, we still mean <m>1000+200+30+4</m>.
+        To facilitate our discussion, we will use underline notation in LaTeX to indicate a number by its place value digits, in a similar way we think of <m>1234 = 1\times 1000 + 2\times 100+3\times 10+4</m>. For example, a four-digit number <m>ABCD</m> can be represented as <m>\underline{ABCD} = A \times 1000 + B \times 100 + C \times 10 + D</m>. This notation will allow us to break down the number into its constituent parts and analyze its divisibility properties. Since we are using variables to represent unknown digits, we need this new notation, since if we write <m>ABCD</m> this usually means <m>A \times B \times C \times D</m>. However, if we write actual digits like <m>1234</m> without an underline, we still mean <m>1000+200+30+4</m>.
     </p>
     <p>
         In essence, the idea of divisibility rules is to turn a question about divisibility of a large number into a question about divisibility of a smaller number. In some cases, that number will have a fixed number of digits, and in other cases the number of digits won't be fixed, but it will be a smaller number.
@@ -399,10 +399,10 @@
                 </statement>
                 <proof>
                     <p>
-                        Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>2 \mid 1000</m>, <m>2 \mid 100</m>, and <m>2 \mid 10</m>, so by <xref ref="theorem1"/> we know that <m>2 \mid A\times 1000,</m> <m>2 \mid B\times 100</m>, and <m>2 \mid C \times 10</m>. By <xref ref="theorem2"/> we know that <m>2 \mid (A\times 1000+B\times 100+C\times 10).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100+C\times 10</m>. Thus we can write <m>\underline{ABCD}=S+D</m>. 
+                        Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>2 \mid 1000</m>, <m>2 \mid 100</m>, and <m>2 \mid 10</m>, so by <xref ref="thm-thm1"/> we know that <m>2 \mid A\times 1000,</m> <m>2 \mid B\times 100</m>, and <m>2 \mid C \times 10</m>. By <xref ref="thm-thm2"/> we know that <m>2 \mid (A\times 1000+B\times 100+C\times 10).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100+C\times 10</m>. Thus we can write <m>\underline{ABCD}=S+D</m>. 
                     </p>
                     <p>
-                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 2</q> and Q is <q>the number is divisible by 2</q>. By <xref ref="theorem2"/> we know that if <m>2 \mid D</m> (P being true) then <m>2 \mid S+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>2 \nmid D</m> (P being false) then <m>2 \nmid S+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 2</q> and Q is <q>the number is divisible by 2</q>. By <xref ref="thm-thm2"/> we know that if <m>2 \mid D</m> (P being true) then <m>2 \mid S+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="thm-thm3"/> if <m>2 \nmid D</m> (P being false) then <m>2 \nmid S+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                     </p>
                 </proof>
             </theorem>
@@ -440,10 +440,10 @@
             </statement>
             <proof>
                 <p>
-                    Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>4 \mid 1000</m> and <m>4 \mid 100</m>, so by <xref ref="theorem1"/> we know that <m>4 \mid A\times 1000,</m> and <m>4 \mid B\times 100</m>. By <xref ref="theorem2"/> we know that <m>4 \mid (A\times 1000+B\times 100).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100</m>. Thus we can write <m>\underline{ABCD}=S+(C\times 10+D)</m>. 
+                    Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>4 \mid 1000</m> and <m>4 \mid 100</m>, so by <xref ref="thm-thm1"/> we know that <m>4 \mid A\times 1000,</m> and <m>4 \mid B\times 100</m>. By <xref ref="thm-thm2"/> we know that <m>4 \mid (A\times 1000+B\times 100).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100</m>. Thus we can write <m>\underline{ABCD}=S+(C\times 10+D)</m>. 
                 </p>
                 <p>
-                    Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 4</q> and Q is <q>the number is divisible by 4</q>. By <xref ref="theorem2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                    Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 4</q> and Q is <q>the number is divisible by 4</q>. By <xref ref="thm-thm2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="thm-thm3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                 </p>
             </proof>
         </theorem>
@@ -452,7 +452,7 @@
     <subsubsection xml:id="divisibility-rule-8">
         <title>Divisibility Rule for 8</title>
         <p>
-            Looking at the above rules, you may have started to notice a pattern emerging. We can view <m>2</m> as <m>2^1</m> and note that to check divisibility by 2 we only need to check whether the number formed by the last digit is divisible by 2. For <m>4=2^2</m>, we need to check if the number formed by the last *two* digits is divisible by <m>4</m>. Let's check if the pattern has a chance of holding for <m>8=2^3:</m>
+            Looking at the above rules, you may have started to notice a pattern emerging. We can view <m>2</m> as <m>2^1</m> and note that to check divisibility by 2 we only need to check whether the number formed by the last digit is divisible by 2. For <m>4=2^2</m>, we need to check if the number formed by the last <em>two</em> digits is divisible by <m>4</m>. Let's check if the pattern has a chance of holding for <m>8=2^3:</m>
         </p>
         <example>
             
@@ -480,10 +480,10 @@
                 </statement>
                 <proof>
                     <p>
-                        Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>8 \mid 1000</m>, so by <xref ref="theorem1"/> we know that <m>8 \mid A\times 1000</m>. For ease, let's define <m>S:=A\times 1000</m>. Thus we can write <m>\underline{ABCD}=S+B\times 100+C\times 10+D</m>. 
+                        Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>8 \mid 1000</m>, so by <xref ref="thm-thm1"/> we know that <m>8 \mid A\times 1000</m>. For ease, let's define <m>S:=A\times 1000</m>. Thus we can write <m>\underline{ABCD}=S+B\times 100+C\times 10+D</m>. 
                     </p>
                     <p>
-                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m> where P is <q>the last digit is divisible by 8</q> and Q is <q>the number is divisible by 8</q>. By <xref ref="theorem2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="theorem3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m> where P is <q>the last digit is divisible by 8</q> and Q is <q>the number is divisible by 8</q>. By <xref ref="thm-thm2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="thm-thm3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                     </p>
                 </proof>
             </theorem>
@@ -506,7 +506,7 @@
             <ol>
                 <li>
                     <p>
-                        What is the largest power of <m>2</m> that is a factor of <m>10^3</m>? What about <m>10^7</m>? What about <m>10^k</m> for some number <m>k</m>? Try factoring <m>10^k</m> into its prime factors.
+                        What is the largest power of <m>2</m> that is a factor of <m>10^3</m>? What about <m>10^7</m>? What about <m>10^k</m> for some number <m>k</m>? 
                     </p>
                 </li>
                 <li>
@@ -734,7 +734,7 @@
         </ol>
     </exercise>
     <p>
-        Hopefully the exercise above gives you some intuition about what a divisibility rule for 11 will require. Note that there powers of 10, and therefore place values, fall into two groups; a remainder of 1 when <m>k</m> is even, and a remainder of 10 (or a "remainder" of -1) when <m>k</m> is odd. So when <m>k</m> is even, <m>11 \mid (10^k-1)</m>, and when <m>k</m> is odd <m>11 \mid (10^k+1)</m>. So we can express powers of 10 as numbers "close to" numbers divisible by 11, plus or minus 1. This is the key for this rule. Let's prove this now for six-digit numbers, just so we get a feel for the pattern that is happening. 
+        Hopefully the exercise above gives you some intuition about what a divisibility rule for 11 will require. Note that the powers of 10, and therefore place values, fall into two groups; a remainder of 1 when <m>k</m> is even, and a remainder of 10 (or a "remainder" of -1, as a remainder of 10 is the same as having a one less than a full group of 11) when <m>k</m> is odd. So when <m>k</m> is even, <m>11 \mid (10^k-1)</m>, and when <m>k</m> is odd <m>11 \mid (10^k+1)</m>. So we can express powers of 10 as numbers "close to" numbers divisible by 11, plus or minus 1. This is the key for this rule. Let's prove this now for six-digit numbers, just so we get a feel for the pattern that is happening. 
     </p>
     <p>
         <theorem xml:id="DivBy11">
@@ -783,7 +783,7 @@
         <ol>
             <li>
                 <p>
-                    Let's start to think about numbers divisible by both, noting that <m>6=2 \times 3</m>. Using a calculator if you wish, write down around 10 or 20 examples of numbers with both 2 and 3 as factors (can you think about how to easily make these?). Are these numbers also divisible by 6? Check! 
+                    Let's start to think about numbers divisible by both, noting that <m>6=2 \times 3</m>. Using a calculator if you wish, write down around 10 or 15 examples of numbers with both 2 and 3 as factors (can you think about how to easily make these?). Are these numbers also divisible by 6? Check! 
                 </p>
             </li>
             <li>
@@ -811,7 +811,7 @@
         </ol>
     </exercise>
         <p>
-            In the above example you probably have seen that if <m>a</m> and <m>b</m> have no common factors, then <m>a \times b</m> is necessarily a factor of any number where both <m>a</m> and <m>b</m> are factors. Let's try and prove this.  
+            In the above example you probably have seen that if <m>a</m> and <m>b</m> have no common proper factors, then <m>a \times b</m> is necessarily a factor of any number where both <m>a</m> and <m>b</m> are factors. Let's try and prove this.  
         </p>
         <p>
             <theorem xml:id="thm-CompoundDivisibility">
@@ -989,11 +989,11 @@
           To check if <m>9</m> divides <m>123456789012</m>, we sum its digits: <m>1+2+3+4+5+6+7+8+9+0+1+2 = 48</m>. Now, to check if <m>9</m> divides <m>48</m>, we sum its digits: <m>4+8 = 12</m>. Finally, summing the digits of 12 gives <m>3</m>, which is not divisible by 9. Thus, <m>123456789012</m> is not divisible by 9.
         </p>
       </example>
-      <nonexample>
+      <example>
         <p>
           For <m>98765432109</m>, the sum of its digits is <m>54</m>, which is divisible by 9. Therefore <m>98765432109</m> is indeed divisible by 9.
         </p>
-      </nonexample>
+      </example>
     </subsubsection>
   
     <subsubsection>
@@ -1012,12 +1012,7 @@
   
   </subsection>
   
-<subsection xml:id="subsec-MakingDivisibilityRules">
-    <title>Making Divisibility Rules</title>
-    <p>
-        MAKING A DIVISIBILITY RULE FOR ANY NUMBER USING TECHNIQUE FROM WIKIPEDIA.
-    </p>
-</subsection>
+
 
 
 </section>
@@ -1080,7 +1075,7 @@
         </p>
         <exercise>
             <p>
-                We found a list of prime numbers less than 100. Let's see if we notice some patterns about primes by doing the same for numbers less than, say, 500.
+                We found a list of prime numbers up to 100. Let's see if we notice some patterns about primes by doing the same for numbers up to, say, 500.
             </p>
             <ol>
                 <li>
@@ -1124,7 +1119,7 @@
             Looking at the sieve above, it looks like prime numbers get more "rare" the higher up we go. So a good question to ask is whether we eventually "run out" of prime numbers, or whether there are infinitely many. Let's explore this idea a little bit, and note that we use the fact that every whole number greater than 1 has at least one prime factor; we will justify this later in the chapter:
         </p>
         <p>
-            First, we need a small result to help us out. In math, we call a small result that helps us justify a larger result a <term>lemma</term>.
+            First, we need a small result to help us out. In math, we call a small result that helps us justify a larger result a <term>lemma</term>. </p>
             <lemma xml:id="lem-PrimePlus1">
                 <statement>
                     <p>
@@ -1146,7 +1141,7 @@
                     </p>
                 </proof>
             </lemma> 
-        </p>
+        
         <example>
             <p>
               <ol>
@@ -1292,7 +1287,7 @@
         <p>
             From the exercise above, factoring any number <m>n</m> into two factors, it looks like our factorizations approach the positive square root of <m>n</m> (usually written <m>\sqrt{n}</m>). In a later section we will explore square roots, and other roots, in more detail. The key observation here is that in any pair of factors of <m>n</m>, one factor is always greater than or equal to <m>\sqrt{n}</m> and the other factor is less than or equal to <m>\sqrt{n}</m>. Let's write this as a lemma:
         </p>
-        <p>
+        
             <lemma xml:id="lem-FactorizationSquareRoot">
                 <statement>
                     <p>
@@ -1304,7 +1299,7 @@
                         We are going to show this result is true using a <term>proof by contradiction</term>. As in part 3 of <xref ref="subsec-JustifyingConditionalStatements"/>, we are going to pretend that there is a counterexample to our conditional statement (that is, the only situation where <m>P \to Q</m> is false; when <m>P</m> is true and <m>Q</m> is false.) We will show that if we are in this case, then mathematics "breaks" and we end up with something that is never true. This means that there are no counterexamples to our statement, so it must always be true. In our case, we will end up with showing that <m>n &lt; n</m>, which is always false; of course, no number is strictly less than itself!. The idea will be that if we multiply two numbers bigger than <m>\sqrt{n}</m> together, we must get a number bigger than <m>n</m>.
                     </p>
                     <p>
-                        Assuming that the if-part is true, let <m>n=ab</m> be a factorization of <m>n</m> into two factors, where <m>a \geq b</m>. Let's also assume that the then-part is false; that either both <ol>
+                        Assuming that the if-part is true, let <m>n=ab</m> be a factorization of <m>n</m> into two factors, where <m>a \geq b</m>. Let's also assume that the then-part is false; that either both </p> <ol>
                             <li>
                                 <p>
                                     <m>a,b &gt; \sqrt{n}</m> or
@@ -1315,7 +1310,7 @@
                                     <m>a,b &lt; \sqrt{n}</m>.
                                 </p>
                             </li>
-                        </ol>  There are two cases here. We will do the first case, and leave the second case as an exercise for you.
+                        </ol>  <p> There are two cases here. We will do the first case, and leave the second case as an exercise for you.
                     </p>
                     <p>
                        By the definition of a square root, we can write <me>n = (\sqrt{n})(\sqrt{n})</me>. Since we're assuming <m>a &gt; \sqrt{n}</m>, if we replace one of the <m>\sqrt{n}</m> in the first expression with <m>a</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) </me>. Similarly, we're also assuming <m>b &gt; \sqrt{n}</m>, if we replace the other <m>\sqrt{n}</m> in the new expression with <m>b</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &lt; ab </me>. But we know that <m>n=ab</m> so we can replace the <m>ab</m> on the right hand side by <m>n</m>. So <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &lt; ab = n.</me> So if we look at the (in)equation above, we have just showed that <m>n &lt; n</m>. Since this is never true, then there are no counterexamples to our original statement (at least in the first case).
@@ -1332,7 +1327,7 @@
                     
                 </proof>
             </lemma>
-        </p>
+        
         <p>
             We can use the idea above to help us, somewhat efficiently, determine if a number is composite. Indeed, if <m>n</m> is a composite number, it must have a pair of factors <m>1 &lt; a,b &lt; n</m> (and say that <m>a \geq b</m>) where <m>n=ab</m>, and by <xref ref="lem-FactorizationSquareRoot"/> it must be that <m>b \leq \sqrt{n}</m>; that is, every pair of factors of <m>n</m> has one of the factors that is no bigger than <m>\sqrt{n}</m>. So we can only worry about these factors, since the larger factors are paired with a smaller one.
         </p>
@@ -1358,7 +1353,7 @@
             
         </p>
         <p>
-            To show that the smallest factor of <m>n</m> is always a prime number, we do a very similar argument. We'll leave it as an exercise, but we state the theorem.
+            To show that the smallest factor of <m>n</m> is always a prime number, we do a very similar argument. We'll leave it as an exercise, but we state the theorem. </p>
 
             <theorem xml:id="thm-SmallestFactorIsPrime">
                 <statement>
@@ -1377,9 +1372,9 @@
                 </proof>
             </theorem>
             
-        </p>
+        
         <p>
-            Putting this all together, we know that if a number <m>n</m> is composite then there is a prime number <m>p \leq \sqrt{n}</m> such that <m>p \mid n.</m> So to check that <m>n</m> is composite, all we need to do is check if each prime number up to <m>\sqrt{n}</m> is a factor of <m>n</m>. It's more common to talk about testing if a number *isn't* composite, so we will phrase the test below in that language:
+            Putting this all together, we know that if a number <m>n</m> is composite then there is a prime number <m>p \leq \sqrt{n}</m> such that <m>p \mid n.</m> So to check that <m>n</m> is composite, all we need to do is check if each prime number up to <m>\sqrt{n}</m> is a factor of <m>n</m>. It's more common to talk about testing if a number <em>isn't</em> composite, so we will phrase the test below in that language:
         </p>
         
         
@@ -1544,7 +1539,7 @@
             </p>
         </exercise>
         <p>
-            It looks like our conjecture may be true, and in fact it is. We will show that every number has exactly one prime factorization, so we can indeed talk about *the* prime factorization of <m>n</m>. 
+            It looks like our conjecture may be true, and in fact it is. We will show that every number has exactly one prime factorization, so we can indeed talk about <em>the</em> prime factorization of <m>n</m>. 
         </p>
         <p>
             The idea of showing a prime factorization always exists is by using <xref ref="thm-primefactorofcomposite"/>. We'll factor out a prime at each step, and then keep going with the remaining composite factor until we have factored <m>n</m> completely into a product of primes.
@@ -1560,7 +1555,7 @@
                 We now continue with <m>15</m> which is composite. We easily see that <m>5</m> is a prime factor: <me>
                     60 = 2 \times (2 \times (3 \times 5)).
                 </me>
-                Since <m>5</m> is already prime, there is nothing more to factor; we can regroup to make it easier to read. <me>
+                Since <m>3</m> and <m>5</m> are prime, there is nothing more to factor; we can regroup to make it easier to read. <me>
                     60 = 2^2 \times 3 \times 5.
                 </me>
             
@@ -1570,13 +1565,14 @@
         </example>
         <p>
             Before we get to this theorem, we will need a small lemma. This lemma was originally proved by the ancient Greek mathematician Euclid and is usually named after him. 
+        </p>
             <lemma xml:id="lem-EuclidsLemma">
                 <title>Euclid's Lemma</title>
                 
                 
                 <statement>
                     <p>
-                       Let <m>a_1,a_2, \ldots, a_k \in \mathbb{N}</m> and <m>p</m> be a prime number. If <m>p</m> divides the product of our <m>a</m>'s; that is, <m>p \mid a_1a_2 \ldots a_k</m> then <m>p | a_i</m> for some <m>1 \leq i \leq k</m>. 
+                       Let <m>a_1,a_2, \ldots, a_k \in \mathbb{N}</m> and <m>p</m> be a prime number. If <m>p</m> divides the product of our <m>a</m>'s; that is, <m>p \mid a_1a_2 \ldots a_k</m> then <m>p \mid a_i</m> for some <m>1 \leq i \leq k</m>. 
                     </p>
                 </statement>
                 <proof>
@@ -1631,15 +1627,15 @@
             </p>
             <example>
                 <p>
-                    Suppose <m>a \in \mathbb{N}</m> and we know that <m>7 | (15\times 36 \times a)</m>. By <xref ref="lem-EuclidsLemma"/> we know that at least one of <m> 7 \mid 15 </m>, <m>7 \mid 36,</m> or <m>7 \mid a</m> is true. Since we know both of the first two divisibility statements are false, it must be that <m>7 \mid a</m>.
+                    Suppose <m>a \in \mathbb{N}</m> and we know that <m>7 \mid (15\times 36 \times a)</m>. By <xref ref="lem-EuclidsLemma"/> we know that at least one of <m> 7 \mid 15 </m>, <m>7 \mid 36,</m> or <m>7 \mid a</m> is true. Since we know both of the first two divisibility statements are false, it must be that <m>7 \mid a</m>.
                 </p>
             </example>
             
-        </p>
+        
         <p>
             The theorem we are about to prove is so important and special, it is given a name to reflect this fact.
         </p>
-        <p>
+        
            <theorem xml:id="thm-PrimeFactorization">
             <title>Fundamental Theorem of Arithmetic</title>
             
@@ -1680,7 +1676,7 @@
             
            </theorem>
             
-        </p>
+        
         <p>
             This is a very special idea. It means that every natural number (aside from 1) is built from prime numbers, and is built in exactly one way. So we can study properties of factors of numbers by studying their prime factorization. We will do so in upcoming sections.
         </p>
@@ -2103,7 +2099,7 @@
         <subsubsection xml:id="euclidean_algorithm_basics">
           <title>Basic Principles</title>
           <p>
-            To begin with, let's review some essential principles:
+            To begin with, let's review some key principles:
           </p>
           <ol>
             <li>
