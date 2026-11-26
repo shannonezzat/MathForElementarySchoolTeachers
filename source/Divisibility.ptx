@@ -61,43 +61,61 @@
         <p>
             Let's try and show that this pattern always holds. The next exercise walks you through a proof of this fact. 
         </p>
-        <p>
+        
             <exercise>
-                <p>
-                    Let's show that if we have three numbers <m>a,b,c \in \mathbb{N}</m> and we know that <m>a \mid b</m> and <m>b \mid c</m> then <m>a \mid c</m> as well.
-                </p>
-                <ol>
-                    <li>
-                        <p>
-                            How can we write <m>a \mid b</m> as an equation? You might want to introduce a new variable in it. Do something similar with <m>b \mid c</m>. <hint>
-                                <p>
-                                    A common mistake is to use the same variable to represent different quantities. Make sure you're using a different new symbol in both equations. 
-                                </p>
-                            </hint>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            We want to show that <m>a \mid c</m>. Write this as an equation.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Assuming the two equations in the first part are true, we need to use the two equations above, plus some other mathematical rules, to show that the equation in the previous part must be true. Think if you can come up with a way of doing this. <hint>
-                                <p>
-                                    Think about substituting one equation into the other. Also, you'll need to use the idea of associativity of multiplication.
-                                </p>
-                            </hint>
-                        </p>
-                    </li>
-                </ol>
-            </exercise>
-        </p>
+  <introduction>
+    <p>
+      Let's show that if <m>a,b,c \in \mathbb{N}</m>, and we know that
+      <m>a \mid b</m> and <m>b \mid c</m>, then <m>a \mid c</m> as well.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        How can we write <m>a \mid b</m> as an equation? You might
+        want to introduce a new variable. Do the same for
+        <m>b \mid c</m>.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        A common mistake is to use the same variable for different
+        quantities. Use a different new symbol in each equation.
+      </p>
+    </hint>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        We want to show that <m>a \mid c</m>. Write this as an equation.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Use the two equations from the first part to show that the
+        equation from the second part must be true. What mathematical
+        rules do you need?
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Try substituting one equation into the other. You will also
+        need the associative property of multiplication.
+      </p>
+    </hint>
+  </task>
+</exercise>
+        
         <p>
             The following diagram shows the idea in the previous exercise: INSERT PIC HERE
         </p>
         <p>
-            This is a very useful result we've proved in the previous exercise. Let's state it as a theorem, so that we can refer to it later on:
+            This is a very useful result we've proved in the previous exercise. Let's state it as a theorem, so that we can refer to it later on: </p>
         <theorem xml:id="thm-DivTrans">
             <statement>
                 <p>
@@ -111,7 +129,7 @@
             </proof>
         </theorem>
         
-        </p>
+        
 
         
         
@@ -169,10 +187,13 @@
 </subsection>
 <subsection xml:id="divisibility-theorems">
     <title>Divisibility Theorems</title>
+    <introduction>
+        
+    
     <p>
         In this section, we will discuss three important theorems related to divisibility. Each theorem will be introduced with an example for better understanding. Note that in this section, we will think of divisibility of integers instead of whole numbers, so any instance of the word <q>number</q> will (usually) mean an integer.
     </p>
-    
+    </introduction>
     <subsubsection xml:id="theorem1">
         <title>Theorem 1</title>
         <p>
@@ -185,7 +206,7 @@
             </p>
         </example>
         <p>Let's try and prove this now. The idea is that if we know that <m>c</m> dots can be represented as a rectangle with dimensions <m>a</m> and <m>b</m>, then we can "glue" <m>n</m> of these  together to make a larger rectangle with dimensions <m>a</m> and <m>nb</m>. INSERT PIC OF THIS HERE</p>
-        <p> <theorem xml:id="thm-thm1">
+         <theorem xml:id="thm-thm1">
             <statement>
                 <p>
                     If a number <m>c</m> is divisible by <m>a</m>, then <m>nc</m> is divisible by <m>a</m> for any natural number <m>n</m>.
@@ -208,7 +229,7 @@
                 </p>
             </proof>
         </theorem>
-          </p>
+          
     </subsubsection>
     
     <subsubsection xml:id="theorem2">
@@ -223,7 +244,7 @@
             </p>
         </example>
         <p>Let's try and prove this. It's similar to Theorem 1, and in fact, Theorem 1 can be looked at as a repeated application of Theorem 2. Let's say we know that <m>a</m> is a factor of both <m>b</m> and <m>c</m>. Then we can express both <m>b</m> and <m>c</m> dots as a rectangle, with one of the dimensions being <m>a</m>, and the other we'll call <m>x</m> and <m>y</m>, respectively; that is, <m>b</m> is a rectangle with <m>ax</m> dots and <m>c</m> is a rectangle with <m>ay</m> dots. Then in the addition case, we can "glue" the two rectangles together to make a rectangle with dimensions <m>a</m> and <m>x+y</m>, so <m>b+c</m> is a rectangle with <m>a(x+y</m> dots.). INSERT PIC OF THIS</p>
-        <p><theorem xml:id="thm-thm2">
+        <theorem xml:id="thm-thm2">
             <statement>
                 <p>
                     If a number <m>b</m> is divisible by <m>a</m> and a number <m>c</m> is divisible by <m>a</m>, and say that <m>b \geq c</m>, then <m>b+c</m> and <m>b-c</m> are also divisible by <m>a</m>.  
@@ -244,7 +265,7 @@
                 </p>
             </proof>
         </theorem>
-        </p>
+        
     </subsubsection>
     
     <subsubsection xml:id="theorem3">
@@ -267,7 +288,7 @@
         <p>
           It looks like when you "glue" the two rectangle-like objects together, the remainder that doesn't make a full row in the non-divisible number is still there when the objects are added. This is essentially the entire idea.  
         </p>
-        <p>
+        
             <theorem xml:id="thm-thm3">
                 <statement>
                     <p>
@@ -290,7 +311,7 @@
                 </proof>
             </theorem>
             
-        </p>
+        
     </subsubsection>
     <subsubsection xml:id="subsubsec-TheOtherCase">
         <title>The Other Case</title>
@@ -298,39 +319,49 @@
             If you look at the previous two theorems, you'll see that they cover when <m>a</m> divides both numbers <m>b</m> and <m>c</m>, and when <m>a</m> divides exactly one of these and not the other. A natural question we can ask is "what happens if <m>a</m> divides neither <m>b</m> nor <m>c</m>?"
         </p>
         <exercise>
-            <p>
-                Let's explore and see if we can develop examples for both scenarios. Let's let <m>a=4</m> and <m>b=7</m>. Clearly <m>4 \nmid 7</m>. 
-            </p>
-            <ol>
-                <li>
-                    <p>
-                        Can you find a value for <m>c</m> such that <m>a \nmid c</m> but <m>a \mid b+c</m>? What about two values of <m>c</m>?
-                    </p>
-                    
-                </li>
-                <li>
-                    <p>
-                        <p>
-                            Can you find a value for <m>c</m> such that <m>a \nmid c</m> and also <m>a \nmid b+c</m>? What about two values of <m>c</m>?
-                        </p>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Using the examples that you developed above, can you make a conjecture about when <m>a</m> divides the sum and when <m>a</m> does not? <hint>
-                            <p>
-                                Think about what is happening with the remainders and their sum.
-                            </p>
-                        </hint>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Do the same thing for subtraction now. Pick different values besides <m>a=4</m> and <m>b=7</m> and find values for <m>c</m> where the difference is, and is not, divisible by <m>a</m>. Make a conjecture about when each case happens.
-                    </p>
-                </li>
-            </ol>
-        </exercise>
+  <introduction>
+    <p>
+      Let's explore and see if we can develop examples for both scenarios. Let's let <m>a=4</m> and <m>b=7</m>. Clearly <m>4 \nmid 7</m>.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Can you find a value for <m>c</m> such that <m>a \nmid c</m> but <m>a \mid b+c</m>? What about two values of <m>c</m>?
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Can you find a value for <m>c</m> such that <m>a \nmid c</m> and also <m>a \nmid b+c</m>? What about two values of <m>c</m>?
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Using the examples that you developed above, can you make a conjecture about when <m>a</m> divides the sum and when <m>a</m> does not?
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Think about what is happening with the remainders and their sum.
+      </p>
+    </hint>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Do the same thing for subtraction now. Pick different values besides <m>a=4</m> and <m>b=7</m> and find values for <m>c</m> where the difference is, and is not, divisible by <m>a</m>. Make a conjecture about when each case happens.
+      </p>
+    </statement>
+  </task>
+</exercise>
         
     </subsubsection>
 </subsection>
@@ -355,9 +386,11 @@
 </subsection>
 <subsection xml:id="divisibility-rule-2-4-8">
     <title>Divisibility Rules for 2, 4, and 8</title>
+    <introduction>
     <p>
         In number theory, divisibility rules are simple methods to determine whether one number is divisible by another without performing the division. This section will focus on the divisibility rules for 2, 4, and 8.
     </p>
+    </introduction>
     <subsubsection xml:id="divisibility-rule-2">
         <title>Divisibility Rule for 2</title>
         <p>
@@ -390,7 +423,7 @@
         <p>
             Let's now prove this rule for four-digit numbers, using the notation mentioned in the introduction. We will rely on the divisibility theorems in the previous section to justify why this rule is true.
         </p>
-        <p>
+        
             <theorem xml:id="thm-DivBy2">
                 <statement>
                     <p>
@@ -407,7 +440,7 @@
                 </proof>
             </theorem>
             
-        </p>
+        
     </subsubsection>
     <subsubsection xml:id="divisibility-rule-4">
         <title>Divisibility Rule for 4</title>
@@ -443,7 +476,7 @@
                     Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>4 \mid 1000</m> and <m>4 \mid 100</m>, so by <xref ref="thm-thm1"/> we know that <m>4 \mid A\times 1000,</m> and <m>4 \mid B\times 100</m>. By <xref ref="thm-thm2"/> we know that <m>4 \mid (A\times 1000+B\times 100).</m>. For ease, let's define <m>S:=A\times 1000+B\times 100</m>. Thus we can write <m>\underline{ABCD}=S+(C\times 10+D)</m>. 
                 </p>
                 <p>
-                    Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last digit is divisible by 4</q> and Q is <q>the number is divisible by 4</q>. By <xref ref="thm-thm2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="thm-thm3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                    Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m>, where P is <q>the last two digits are divisible by 4</q> and Q is <q>the number is divisible by 4</q>. By <xref ref="thm-thm2"/> we know that if <m>4 \mid (C\times 10+D)</m> (P being true) then <m>4 \mid S+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="thm-thm3"/> if <m>4 \nmid (C\times 10+D)</m> (P being false) then <m>4 \nmid S+(C\times 10+D)</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                 </p>
             </proof>
         </theorem>
@@ -471,7 +504,7 @@
             </p>
         </example>
 
-        <p>
+        
             <theorem xml:id="thm-DivBy8">
                 <statement>
                     <p>
@@ -483,17 +516,14 @@
                         Consider the four-digit number <m>\underline{ABCD}=A\times 1000+B\times 100+C\times 10+D</m>. We know that <m>8 \mid 1000</m>, so by <xref ref="thm-thm1"/> we know that <m>8 \mid A\times 1000</m>. For ease, let's define <m>S:=A\times 1000</m>. Thus we can write <m>\underline{ABCD}=S+B\times 100+C\times 10+D</m>. 
                     </p>
                     <p>
-                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m> where P is <q>the last digit is divisible by 8</q> and Q is <q>the number is divisible by 8</q>. By <xref ref="thm-thm2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="thm-thm3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
+                        Now with that setup we can start proving <m>P \to Q</m> and <m>\sim P \to \sim Q</m> where P is <q>the last three digits are divisible by 8</q> and Q is <q>the number is divisible by 8</q>. By <xref ref="thm-thm2"/> we know that if <m>8 \mid B\times 100+C\times 10+D</m> (P being true) then <m>8 \mid S+B\times 100+C\times 10+D</m>, so Q is true. So we have that <m>P \to Q</m> is always true. By <xref ref="thm-thm3"/> if <m>8 \nmid B\times 100+C\times 10+D</m> (P being false) then <m>8 \nmid S+B\times 100+C\times 10+D</m>, so Q is false. So we have that <m>\sim P \to \sim Q</m> is always true. INSERT PIC OF THIS PROOF
                     </p>
                 </proof>
             </theorem>
             
-        </p> 
+        
             
-        <example xml:id="example-divisibility-8">
-            <title>Example</title>
-            
-        </example>
+        
         
     </subsubsection>
     <subsubsection xml:id="subsubsec-DivisibilityRuleforHigherPowersof2">
@@ -502,7 +532,7 @@
             You can see that there seems to be a pattern emerging here. A good question is to see if we can figure out why this pattern holds. Let's walk through this in an exercise:
         </p>
         <exercise>
-            
+            <p>
             <ol>
                 <li>
                     <p>
@@ -536,6 +566,7 @@
                     </p>
                 </li>
             </ol>
+            </p>
         </exercise>
         
     </subsubsection>
@@ -545,7 +576,7 @@
     <p>
         The divisibility rule for 5 is also incredibly well known. Most people reading this should know that you only need to check whether the last digit of the number is either 5 or 0. However, like the divisibility rule for 2, it will be more advantageous to think the rule as the last digit being divisible by <m>5</m>. Note that the rule for divisibility by 2 relies on the fact that <m>10=2\times5</m>, since all multiples of <m>10</m>, including powers of <m>10</m>, are also divisible by <m>2</m>. Since <m>10=2 \times 5,</m> the exact same idea should work for <m>5</m> as well as <m>2</m>. In fact, we should be able to write down the exact same argument for divisibility by 5 as divisibility by 2, with all the 2's replaced by 5:
     </p>
-    <p>
+    
         <theorem xml:id="thm-DivBy5">
             <statement>
                 <p>
@@ -558,7 +589,7 @@
             </proof>
         </theorem>
         
-    </p>
+    
     <example>
         <p>
          Consider the number <m>3456</m>. Since <m>5 \nmid 6</m>, we know that <m>5 \nmid 3456</m>. You can check this using long division or a calculator.   
@@ -586,7 +617,7 @@
     <example>
         <p>
             In this example we will develop an intuition for a divisibility rule for <m>3</m> and <m>9</m>.
-        </p>
+        
         <ol>
             <li>
                 <p>
@@ -615,6 +646,7 @@
             </li>
             
         </ol>
+        </p>
     </example>
     <p>
         Now that we have developed our rule let's prove it for four-digit numbers. Like the other proofs in this section, this can be expanded to a proof for number with any number of digits.
@@ -687,9 +719,11 @@
         With smaller examples like the above, it might be difficult to see why these rules are very useful and powerful. Let's look at another, more difficult example:
       </p>
       <example>
+      <statement>
         <p>
             A student wrote down the following ten digit number: <m>1,435,2k7,451</m>, where <m>k</m> is some digit that was too messy in their notes to make it out. However, the student does know that the number is divisible by 3 but not divisible by 9. What are the possible choices for the digit <m>k</m>?
         </p>
+        </statement>
         <solution>
             <p>
                 This would be a very hard problem using long division, and even using a calculator naively would require ten different trials, one for each digit. However, we can use the divisibility rules above to help us out.
@@ -710,6 +744,7 @@
         There is a nice divisibility rule for 11 that is similar to the divisibility rules for 3 and 9. The key of the divisibility rule for 3 and 9 was that for any <m>k \in \mathbb{N}_0</m>, it's true that <m>10^k \div 3</m> has a remainder of <m>1</m>. Let's explore dividing powers of <m>10</m> by <m>11</m> to see if we notice any patterns.
     </p>
     <exercise>
+    <p>
         <ol>
             <li>
                 <p>
@@ -732,11 +767,12 @@
                 </p>
             </li>
         </ol>
+        </p>
     </exercise>
     <p>
         Hopefully the exercise above gives you some intuition about what a divisibility rule for 11 will require. Note that the powers of 10, and therefore place values, fall into two groups; a remainder of 1 when <m>k</m> is even, and a remainder of 10 (or a "remainder" of -1, as a remainder of 10 is the same as having a one less than a full group of 11) when <m>k</m> is odd. So when <m>k</m> is even, <m>11 \mid (10^k-1)</m>, and when <m>k</m> is odd <m>11 \mid (10^k+1)</m>. So we can express powers of 10 as numbers "close to" numbers divisible by 11, plus or minus 1. This is the key for this rule. Let's prove this now for six-digit numbers, just so we get a feel for the pattern that is happening. 
     </p>
-    <p>
+    
         <theorem xml:id="DivBy11">
             <title>Divisibility Rule for 11</title>
             <statement>
@@ -764,7 +800,7 @@
           </theorem>
           
         
-    </p>
+    
 </subsection>
 <subsection xml:id="subsec-CompoundDivisibilityRules">
     <title>Compound Divisibility Rules</title>
@@ -780,6 +816,7 @@
        Does the converse of this hold as well? That is if we know <m>a \mid n</m> and <m>b \mid n</m> then do we know that <m>k \mid n</m>? Let's explore with some examples and see if we can determine the conditions when we can indeed combine divisibility rules to make a new divisibility rule.
     </p>
     <exercise>
+    <p>
         <ol>
             <li>
                 <p>
@@ -809,11 +846,12 @@
                 </p>
             </li>
         </ol>
+        </p>
     </exercise>
         <p>
             In the above example you probably have seen that if <m>a</m> and <m>b</m> have no common proper factors, then <m>a \times b</m> is necessarily a factor of any number where both <m>a</m> and <m>b</m> are factors. Let's try and prove this.  
         </p>
-        <p>
+        
             <theorem xml:id="thm-CompoundDivisibility">
                 <statement>
                     <p>
@@ -834,7 +872,7 @@
                 </proof>
             </theorem>
             
-        </p>
+        
         <assemblage>
   <title>Notes for Additional Understanding</title>
   <p>
@@ -856,7 +894,7 @@
         <exercise>
             <p>
                 For the following pairs of numbers, find the smallest number <m>n</m> where <m>a \mid n</m> and <m>b \mid n</m> but <m>ab \nmid n</m>. What is the largest common factor of <m>a</m> and <m>b</m>.
-            </p>
+            
             <ol>
                 <li>
                     <p>
@@ -884,6 +922,7 @@
                     </p>
                 </li>
             </ol>
+            </p>
         </exercise>
         
         
@@ -896,59 +935,46 @@
         From the subsection above, we know that as long as two numbers share no common factors, we can indeed combine their divisibility rules to determine if a number is divisible by their product. Let's list a few of these for small numbers, and give an example and non example for each.
     </p>
     
+    <p>
+    <em>Combined Divisibility Rules for Co-prime Numbers</em>
+</p>
+<p>
     <ol>
-        <title>Combined Divisibility Rules for Co-prime Numbers</title>
-        
-        
         <li>
-          <p>
-            Rule for Divisibility by 6: A number is divisible by 6 if it is divisible by both 2 and 3.
-          </p>
-          <example>
             <p>
-              12 is divisible by 6 because it is even (divisible by 2) and the sum of its digits (1 + 2 = 3) is divisible by 3.
+                Rule for Divisibility by 6: A number is divisible by 6 if it is divisible by both 2 and 3.
             </p>
-          </example>
-          <example>
             <p>
-              14 is not divisible by 6 because while it is even (divisible by 2), the sum of its digits (1 + 4 = 5) is not divisible by 3.
+                12 is divisible by 6 because it is even (divisible by 2) and the sum of its digits (1 + 2 = 3) is divisible by 3.
             </p>
-          </example>
+            <p>
+                14 is not divisible by 6 because while it is even (divisible by 2), the sum of its digits (1 + 4 = 5) is not divisible by 3.
+            </p>
         </li>
-      
         <li>
-          <p>
-            Rule for Divisibility by 10: A number is divisible by 10 if its last digit is 0; that is, it is divisible by 2 and divisible by 5.
-          </p>
-          <example>
             <p>
-              150 is divisible by 10 because its last digit is 0.
+                Rule for Divisibility by 10: A number is divisible by 10 if its last digit is 0; that is, it is divisible by 2 and divisible by 5.
             </p>
-          </example>
-          <example>
             <p>
-              153 is not divisible by 10 because its last digit is 3, not 0.
+                150 is divisible by 10 because its last digit is 0.
             </p>
-          </example>
+            <p>
+                153 is not divisible by 10 because its last digit is 3, not 0.
+            </p>
         </li>
-      
         <li>
-          <p>
-            Rule for Divisibility by 15: A number is divisible by 15 if it is divisible by both 3 and 5.
-          </p>
-          <example>
             <p>
-              30 is divisible by 15 because the sum of its digits (3 + 0 = 3) is divisible by 3 and its last digit is 0 or 5 (indicating divisibility by 5).
+                Rule for Divisibility by 15: A number is divisible by 15 if it is divisible by both 3 and 5.
             </p>
-          </example>
-          <example>
             <p>
-              35 is not divisible by 15 because while its last digit is 5 (indicating divisibility by 5), the sum of its digits (3 + 5 = 8) is not divisible by 3.
+                30 is divisible by 15 because the sum of its digits (3 + 0 = 3) is divisible by 3 and its last digit is 0 or 5 (indicating divisibility by 5).
             </p>
-          </example>
+            <p>
+                35 is not divisible by 15 because while its last digit is 5 (indicating divisibility by 5), the sum of its digits (3 + 5 = 8) is not divisible by 3.
+            </p>
         </li>
-      
-      </ol>
+    </ol>
+</p>
       
         
         
@@ -962,12 +988,12 @@
       <p>
         Sometimes, to determine if a number is divisible by another, we can use an iterative approach. This means applying the divisibility rule repeatedly until we get a number that we can easily determine its divisibility. This method is particularly useful for large numbers and for certain divisibility rules like those for 3, 9, and 11, which turn the problem of checking divisibility of a large number into checking divisibility of a smaller number. 
       </p>
-    </introduction>
+    
   
     <p>
       Let's explore this iterative method with examples and non-examples for divisibility by 3, 9, and 11.
     </p>
-  
+  </introduction>
     <subsubsection>
       <title>Divisibility by 3</title>
       <example>
@@ -1003,11 +1029,11 @@
           To check if <m>11</m> divides <m>1234567890123</m>, we alternate the sum and subtraction of its digits: <m>1-2+3-4+5-6+7-8+9-0+1-2+3 = 7</m>. Since 7 is not divisible by 11, neither is <m>1234567890123</m>.
         </p>
       </example>
-      <nonexample>
+      <example>
         <p>
           For <m>9090909090909090909090909040</m>, the alternating sum is <m>121</m>, and the alternating sum of <m>121</m> is <m>0</m>. Therefore <m>9090909090909090909090909040</m> is divisible by 11. 
         </p>
-      </nonexample>
+      </example>
     </subsubsection>
   
   </subsection>
@@ -1074,41 +1100,52 @@
             This process is very old, and in fact is called the <term>sieve of Eratosthenes</term>, after the Greek mathematician Eratosthenes of Cyrene, to whom this method is attributed.
         </p>
         <exercise>
+    <introduction>
+        <p>
+            We found a list of prime numbers up to 100. Let's see if we notice some patterns about primes by doing the same for numbers up to, say, 500.
+        </p>
+    </introduction>
+    <task>
+        <statement>
             <p>
-                We found a list of prime numbers up to 100. Let's see if we notice some patterns about primes by doing the same for numbers up to, say, 500.
+                Make a table of all numbers up to 500. You can probably search one online and print it off if that makes it easier.
             </p>
-            <ol>
-                <li>
-                    <p>
-                        Make a table of all numbers up to 500. You can probably search one online and print it off if that makes it easier.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Perform the sieve as above. It will take a bit longer, but it will be the exact same process.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        What can you say about the amount of smaller prime numbers compared to the number of larger (at least closer to 500) prime numbers? Why do you think this is the case? 
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        On the same chart, highlight all multiples of 6. What can you say about how prime numbers relate to multiples of 6? Formulate your conjectures in terms of remainders.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Try and prove the conjecture you made in the previous part. <hint>
-                            <p>
-                                Show that prime numbers cannot have other remainder than the ones that you conjectured. Remember, if you can find a factor of your numbers that isn't <m>1</m> or itself, then the number isn't prime.
-                            </p>
-                        </hint>
-                    </p>
-                </li>
-            </ol>
-        </exercise>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Perform the sieve as above. It will take a bit longer, but it will be the exact same process.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What can you say about the amount of smaller prime numbers compared to the number of larger (at least closer to 500) prime numbers? Why do you think this is the case?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                On the same chart, highlight all multiples of 6. What can you say about how prime numbers relate to multiples of 6? Formulate your conjectures in terms of remainders.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Try and prove the conjecture you made in the previous part.
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Show that prime numbers cannot have other remainder than the ones that you conjectured. Remember, if you can find a factor of your numbers that isn't <m>1</m> or itself, then the number isn't prime.
+            </p>
+        </hint>
+    </task>
+</exercise>
 
 
 
@@ -1120,27 +1157,36 @@
         </p>
         <p>
             First, we need a small result to help us out. In math, we call a small result that helps us justify a larger result a <term>lemma</term>. </p>
-            <lemma xml:id="lem-PrimePlus1">
-                <statement>
-                    <p>
-                        Let <m>a_1,a_2 \ldots a_n \in \mathbb{N}</m> be <m>n</m> numbers where each <m>a_i \geq 2</m>, and let <m>a_* = a_1 \times a_2 \times \ldots \times a_n</m>. Then for each <m>a_i</m> from <m>a_1</m> to <m>a_n</m> we have that <m>a_i \nmid (a_*+1)</m>.
-                    </p>
-                </statement>
-                <proof>
-                    <p>
-                        Left as an exercise. <hint>
-                            <p>
-                                Can you show that each remainder is some number that is not <m>0</m>?
-                            </p>
-                        </hint>
-                        <hint>
-                            <p>
-                                Each division gives you the remainder of <m>1</m>.
-                            </p>
-                        </hint>
-                    </p>
-                </proof>
-            </lemma> 
+           <lemma xml:id="lem-PrimePlus1">
+    <statement>
+        <p>
+            Let <m>a_1,a_2 \ldots a_n \in \mathbb{N}</m> be <m>n</m> numbers where each <m>a_i \geq 2</m>, and let <m>a_* = a_1 \times a_2 \times \ldots \times a_n</m>. Then for each <m>a_i</m> from <m>a_1</m> to <m>a_n</m> we have that <m>a_i \nmid (a_*+1)</m>.
+        </p>
+    </statement>
+    <proof>
+        <p>
+            Left as an exercise.
+        </p>
+    </proof>
+</lemma>
+
+<exercise>
+    <statement>
+        <p>
+            Prove the preceding lemma.
+        </p>
+    </statement>
+    <hint>
+        <p>
+            Can you show that each remainder is some number that is not <m>0</m>?
+        </p>
+    </hint>
+    <hint>
+        <p>
+            Each division gives you the remainder of <m>1</m>.
+        </p>
+    </hint>
+</exercise>
         
         <example>
             <p>
@@ -1191,7 +1237,7 @@
             </p>
         </example>
         <p>
-            This exercise shows such an important result, that there are infinitely many prime numbers, that we should state this as a theorem:
+            This exercise shows such an important result, that there are infinitely many prime numbers, that we should state this as a theorem:</p>
             <theorem xml:id="thm-InfinitelyManyPrimes">
                 <statement>
                     <p>
@@ -1205,21 +1251,23 @@
                 </proof>
             </theorem>
             
-        </p>
+        
         <p>
             Some good questions come out of the previous exercise: first, will this list eventually include all prime numbers?  Secondly, if we have a large number (like <m>1807</m> or even bigger,) how can we determine if this number has any prime factors? The second question we will answer in the next subsection of this section.
         </p>
         <exercise>
+        <statement>
+
             <p>
                 Show that the number <m>5</m> will never appear in the set <m>A</m> as defined in the previous exercise. 
             </p>
-            <p>
+        </statement>
                 <hint>
                     <p>
                         Think about what the last digit must be in <m>a_*</m> to be divisible by 5, and the possible last digits that you attain in the process above.
                     </p>
                 </hint>
-            </p>
+            
         </exercise>
     </subsection>
     
@@ -1261,6 +1309,7 @@
             Let's try the same process with another number, say <m>100</m>, and see if we can conjecture what this point <m>P</m> is mathematically:
         </p>
         <exercise>
+        <p>
             <ol>
                 <li>
                     <p>
@@ -1283,6 +1332,7 @@
                     </p>
                 </li>
             </ol>
+            </p>
         </exercise>
         <p>
             From the exercise above, factoring any number <m>n</m> into two factors, it looks like our factorizations approach the positive square root of <m>n</m> (usually written <m>\sqrt{n}</m>). In a later section we will explore square roots, and other roots, in more detail. The key observation here is that in any pair of factors of <m>n</m>, one factor is always greater than or equal to <m>\sqrt{n}</m> and the other factor is less than or equal to <m>\sqrt{n}</m>. Let's write this as a lemma:
@@ -1299,7 +1349,7 @@
                         We are going to show this result is true using a <term>proof by contradiction</term>. As in part 3 of <xref ref="subsec-JustifyingConditionalStatements"/>, we are going to pretend that there is a counterexample to our conditional statement (that is, the only situation where <m>P \to Q</m> is false; when <m>P</m> is true and <m>Q</m> is false.) We will show that if we are in this case, then mathematics "breaks" and we end up with something that is never true. This means that there are no counterexamples to our statement, so it must always be true. In our case, we will end up with showing that <m>n &lt; n</m>, which is always false; of course, no number is strictly less than itself!. The idea will be that if we multiply two numbers bigger than <m>\sqrt{n}</m> together, we must get a number bigger than <m>n</m>.
                     </p>
                     <p>
-                        Assuming that the if-part is true, let <m>n=ab</m> be a factorization of <m>n</m> into two factors, where <m>a \geq b</m>. Let's also assume that the then-part is false; that either both </p> <ol>
+                        Assuming that the if-part is true, let <m>n=ab</m> be a factorization of <m>n</m> into two factors, where <m>a \geq b</m>. Let's also assume that the then-part is false; that either both  <ol>
                             <li>
                                 <p>
                                     <m>a,b &gt; \sqrt{n}</m> or
@@ -1310,10 +1360,10 @@
                                     <m>a,b &lt; \sqrt{n}</m>.
                                 </p>
                             </li>
-                        </ol>  <p> There are two cases here. We will do the first case, and leave the second case as an exercise for you.
+                        </ol>   There are two cases here. We will do the first case, and leave the second case as an exercise for you.
                     </p>
                     <p>
-                       By the definition of a square root, we can write <me>n = (\sqrt{n})(\sqrt{n})</me>. Since we're assuming <m>a &gt; \sqrt{n}</m>, if we replace one of the <m>\sqrt{n}</m> in the first expression with <m>a</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) </me>. Similarly, we're also assuming <m>b &gt; \sqrt{n}</m>, if we replace the other <m>\sqrt{n}</m> in the new expression with <m>b</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &lt; ab </me>. But we know that <m>n=ab</m> so we can replace the <m>ab</m> on the right hand side by <m>n</m>. So <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &lt; ab = n.</me> So if we look at the (in)equation above, we have just showed that <m>n &lt; n</m>. Since this is never true, then there are no counterexamples to our original statement (at least in the first case).
+                       By the definition of a square root, we can write <me>n = (\sqrt{n})(\sqrt{n})</me>. Since we're assuming <m>a &gt; \sqrt{n}</m>, if we replace one of the <m>\sqrt{n}</m> in the first expression with <m>a</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) </me>. Similarly, we're also assuming <m>b &gt; \sqrt{n}</m>, if we replace the other <m>\sqrt{n}</m> in the new expression with <m>b</m> we will obtain a larger product, so <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &lt; ab </me>. But we know that <m>n=ab</m> so we can replace the <m>ab</m> on the right hand side by <m>n</m>. So <me>n = (\sqrt{n})(\sqrt{n}) &lt; a(\sqrt{n}) &lt; ab = n.</me> So if we look at the (in)equation above, we have just showed that <m>n &lt; n</m>. Since this is never true, then there are no counterexamples to our original statement (at least in the first case). </p>
 
                        <p>
                         The case where we assume that <m>a,b &lt; \sqrt{n}</m> is very similar, and is left as an exercise to you. See if you can modify the case above to be a proof for this case.
@@ -1323,7 +1373,7 @@
                        </p>
 
                         
-                    </p>
+                    
                     
                 </proof>
             </lemma>
@@ -1334,7 +1384,7 @@
         <p>
             We can do even better than checking if all numbers less than or equal to <m>\sqrt{n}</m> are factors of <m>n</m>. We'll show that you only need to check whether the prime numbers less than or equal to <m>\sqrt{n}</m> are factors of <m>n</m>. First, we show that every composite number has at least one prime factor, and then we will show that the smallest non-unit (that is, not 1) factor of <m>n</m> is indeed a prime number.
         </p>
-        <p>
+        
             <theorem xml:id="thm-primefactorofcomposite">
                 <statement>
                     <p>
@@ -1351,26 +1401,35 @@
                 </proof>
             </theorem>
             
-        </p>
+       
         <p>
             To show that the smallest factor of <m>n</m> is always a prime number, we do a very similar argument. We'll leave it as an exercise, but we state the theorem. </p>
 
             <theorem xml:id="thm-SmallestFactorIsPrime">
-                <statement>
-                    <p>
-                        If <m>n</m> is composite, then the smallest proper factor of <m>n</m> is a prime number.
-                    </p>
-                </statement>
-                <proof>
-                    <p>
-                        Left as an exercise. <hint>
-                            <p>
-                                If the smallest factor of <m>n</m> was composite, could you find an even smaller factor of <m>n</m>? 
-                            </p>
-                        </hint>
-                    </p>
-                </proof>
-            </theorem>
+    <statement>
+        <p>
+            If <m>n</m> is composite, then the smallest proper factor of <m>n</m> is a prime number.
+        </p>
+    </statement>
+    <proof>
+        <p>
+            Left as an exercise.
+        </p>
+    </proof>
+</theorem>
+
+<exercise>
+    <statement>
+        <p>
+            Prove the preceding theorem.
+        </p>
+    </statement>
+    <hint>
+        <p>
+            If the smallest factor of <m>n</m> was composite, could you find an even smaller factor of <m>n</m>?
+        </p>
+    </hint>
+</exercise>
             
         
         <p>
@@ -1400,9 +1459,11 @@
             Let's see this test in action.
         </p>
         <example>
+        <statement>
             <p>
                 Determine if the number <m>403</m> is prime.
             </p>
+        </statement>
             <solution>
                 <p>
                     First, we find the largest prime <m>p_* \leq \sqrt{n}</m>. If we have access to a calculator, we know that <m>\sqrt{403} \approx 20</m>. But if we do not, we can square primes and "sandwich" 403 between these squares. We know that <m>19^2=361</m> and the subsequent prime <m>23^2=529</m>. So this means that <m>19 \leq \sqrt{403} \leq 23</m>, and <m>19</m> is the largest prime that is less than or equal to <m>\sqrt{403}</m>.
@@ -1434,9 +1495,11 @@
             </solution>
         </example>
         <example>
+        <statement>
             <p>
                 Determine if <m>293</m> is prime.
             </p>
+        </statement>
             <solution>
                 <p>
                     We need to find the greatest prime less than or equal to <m>\sqrt{293}</m>. Without a calculator, we can bound <m>\sqrt{293}</m> between two consecutive primes, or put another way, bound <m>293</m> between two squares of primes.
@@ -1516,7 +1579,7 @@
             </p>
         </example>
         <p>
-            We can make a tree diagram to show this factorization into primes: INSERT PIC OF TREE DIAGRAM
+            We can make a tree diagram to show this factorization into primes. Let's do it for 72: INSERT PIC OF TREE DIAGRAM
         </p>
         <p>
             There are many different factorizations of <m>72</m> into two different factors, so let's see what happens if we try starting with another one:
@@ -1686,6 +1749,7 @@
 
     <subsection xml:id="subsec-HowManyFactorsDoesANumberHave">
         <title>How Many Factors Does A Number Have?</title>
+        <introduction>
         <p>
             We know that all factors of numbers come in pairs, as if <m>a \mid n</m>, then <m>n=ab</m> for some other (possibly the same as <m>a</m>) factor <m>b</m>. We can also use the fact that one of the factors of <m>n</m> must be at most <m>\sqrt{n}</m>. So we can determine if each number <m>a \leq \sqrt{n}</m> is a factor, and we can get the other factor "for free".
         </p>
@@ -1831,6 +1895,7 @@
             </proof>
         </theorem>
         <example>
+        <statement>
             <p>
                 Let <m>n=2^5 \times 3^3 \times 7 \times 11^2.</m>
                 <ol>
@@ -1851,7 +1916,9 @@
                     </li>
                 </ol>
             </p>
+            </statement>
             <solution>
+                <p>
                 <ol>
                     <li>
                         <p>
@@ -1869,18 +1936,21 @@
                         </p>
                     </li>
                 </ol>
-                
+                </p>
             </solution>
         </example>
+        </introduction>
         <subsubsection xml:id="subsubsec-PuttingItAllTogether">
             <title>Putting It All Together</title>
             <p>
                 Let's work through one example that uses many of the techniques and ideas that we've encountered so far.
             </p>
             <example>
+            <statement>
                 <p>
                    Determine the total number of factors of the number <m>n=30,177,400</m>. 
                 </p>
+            </statement>
                 <solution>
                     <p>
                         Since we don't have the prime factorization of <m>n</m> we need to factor it completely into its prime factorization. There are many ways of doing this, but we can use our divisibility tests to determine some small factors, and then once our divisibility tests fail, we can use trial division to determine other prime factors. 
@@ -1908,7 +1978,7 @@
     </subsection>
     <subsection xml:id="gcd_lcm_intro">
   <title>Greatest Common Divisor and Least Common Multiple</title>
-
+<introduction>
   <p>
     Prime factorization can help us answer two related questions. What is
     the largest number that is a factor of several numbers? And what is
@@ -1932,7 +2002,7 @@
     <p>
       Use these factorizations to investigate the following questions
       before reading on.
-    </p>
+    
     <ol>
       <li>
         <p>
@@ -1963,8 +2033,9 @@
         </p>
       </li>
     </ol>
+    </p>
   </exercise>
-
+</introduction>
   <subsubsection xml:id="gcd_prime_factorization">
     <title>Greatest Common Divisor</title>
 
@@ -2056,10 +2127,11 @@
 </subsection>
       <subsection xml:id="word_problems_gcd_lcm">
         <title>Word Problems: GCD and LCM in Practice</title>
+        <introduction>
         <p>
           Let's delve into some practical word problems to see how the concepts of GCD and LCM are applied in real-life scenarios.
         </p>
-      
+      </introduction>
         <!-- Problem 1 -->
         <subsubsection xml:id="problem1_gcd">
           <title>Problem 1: Distributing Items in Boxes</title>
@@ -2092,15 +2164,16 @@
       </subsection>
       <subsection xml:id="euclidean_algorithm">
         <title>Understanding the Euclidean Algorithm</title>
+        <introduction>
         <p>
           The Euclidean Algorithm offers a systematic approach to finding the greatest common divisor (GCD) of two numbers, especially when their prime factorizations are complex or cumbersome. This algorithm is named after the ancient Greek mathematician Euclid.
         </p>
-      
+      </introduction>
         <subsubsection xml:id="euclidean_algorithm_basics">
           <title>Basic Principles</title>
           <p>
             To begin with, let's review some key principles:
-          </p>
+          
           <ol>
             <li>
               The GCD of any counting number <m>n</m> and <m>0</m> is <m>n</m> itself, as every number is a divisor of zero.
@@ -2112,6 +2185,7 @@
               The GCD of <m>a</m> and <m>b</m> is the same as the GCD of <m>b</m> and the remainder <m>r</m>.
             </li>
           </ol>
+          </p>
           <p>
             These principles reduce the problem of finding the GCD of two large numbers to a series of simpler calculations.
           </p>
@@ -2161,7 +2235,7 @@
           </p>
           <p>
             In our example, we proceed as follows:
-          </p>
+          
           <ol>
   <li><p><m>9478 = 2716 \times 3 + 1330</m></p></li>
   <li><p><m>2716 = 1330 \times 2 + 56</m></p></li>
@@ -2169,7 +2243,7 @@
   <li><p><m>56 = 42 \times 1 + 14</m></p></li>
   <li><p><m>42 = 14 \times 3</m>, so the remainder is <m>0</m>.</p></li>
 </ol>
-          <p>
+          
             Hence, the GCD of <m>2716</m> and <m>9478</m> is <m>14</m>.
           </p>
         </subsubsection>
@@ -2200,7 +2274,7 @@
               <solution>
                 <p>
                   We use the Euclidean Algorithm to find the GCD of <m>78696</m> and <m>120932</m>:
-                </p>
+                
                 <ol>
   <li><p><m>120932 = 78696 \times 1 + 42236</m></p></li>
   <li><p><m>78696 = 42236 \times 1 + 36460</m></p></li>
@@ -2213,7 +2287,7 @@
   <li><p><m>16 = 12 \times 1 + 4</m></p></li>
   <li><p><m>12 = 4 \times 3</m>, so the remainder is <m>0</m>.</p></li>
 </ol>
-                <p>
+                
                   The GCD is <m>4</m>. Simplify the fraction by dividing both the numerator and denominator by <m>4</m>:
                 </p>
                 <p>
