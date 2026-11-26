@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1430" height="930" viewBox="0 0 1430 930" role="img" aria-labelledby="title desc">
+  <title id="title">Prime factor copies of 180 and 144 in overlapping regions</title>
+  <desc id="desc">The overlap holds two copies of 2 and two copies of 3. The 180-only region holds a 5. The 144-only region holds two more copies of 2. The shared copies multiply to the GCD 36; all tokens together multiply to the LCM 720.</desc>
+  <rect width="1430" height="930" fill="#ffffff"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif" fill="#203842">
+    <text x="80" y="68" font-size="39" font-weight="600">Prime factors of 180 and 144</text>
+    <text x="80" y="112" font-size="23" fill="#49626c">Each token is one copy of a prime factor.</text>
+  </g>
+
+  <circle cx="500" cy="440" r="265" fill="#d9eaf0" fill-opacity="0.85"/>
+  <circle cx="840" cy="440" r="265" fill="#f5ead1" fill-opacity="0.78"/>
+  <g fill="none" stroke="#31535f" stroke-width="3.2">
+    <circle cx="500" cy="440" r="265"/>
+    <circle cx="840" cy="440" r="265"/>
+  </g>
+
+  <g font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" fill="#203842">
+    <text x="260" y="154">180 = 2² × 3² × 5</text>
+    <text x="885" y="154">144 = 2⁴ × 3²</text>
+  </g>
+  <text x="670" y="284" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" fill="#3c5963">shared</text>
+
+  <g fill="#ffffff" stroke="#365965" stroke-width="2.8">
+    <circle cx="345" cy="440" r="47"/>
+    <circle cx="625" cy="390" r="38"/>
+    <circle cx="715" cy="390" r="38"/>
+    <circle cx="625" cy="482" r="38"/>
+    <circle cx="715" cy="482" r="38"/>
+    <circle cx="995" cy="390" r="43"/>
+    <circle cx="995" cy="482" r="43"/>
+  </g>
+  <g text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="600" fill="#203842">
+    <text x="345" y="452">5</text>
+    <text x="625" y="402">2</text>
+    <text x="715" y="402">2</text>
+    <text x="625" y="494">3</text>
+    <text x="715" y="494">3</text>
+    <text x="995" y="402">2</text>
+    <text x="995" y="494">2</text>
+  </g>
+
+  <line x1="100" y1="748" x2="1330" y2="748" stroke="#bfd0d4" stroke-width="2"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif" fill="#203842">
+    <text x="115" y="800" font-size="26" font-weight="600">Shared copies:</text>
+    <text x="360" y="800" font-size="27">2 × 2 × 3 × 3 = 36 = GCD(180, 144)</text>
+    <text x="115" y="861" font-size="26" font-weight="600">All tokens:</text>
+    <text x="360" y="861" font-size="27">2 × 2 × 2 × 2 × 3 × 3 × 5 = 720 = LCM(180, 144)</text>
+  </g>
+</svg>

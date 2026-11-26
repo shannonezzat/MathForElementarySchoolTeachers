@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1130" height="1080" viewBox="0 0 1130 1080" role="img" aria-labelledby="title desc">
+<title id="title">Grouping 10, 100, and 1000 into groups of 11</title>
+<desc id="desc">The first panel shows 10 dots in an eleven-place group, with one empty position: 10 leaves remainder 10 on division by 11 and is one short of a full group. The second panel shows nine complete groups of eleven dots, which make 99, and one extra dot: 100 leaves remainder 1 on division by 11. The third panel shows 90 complete groups of 11 plus 10 remaining dots, one place short of an additional group of 11: 1000 equals 90 times 11 plus 10, or 91 times 11 minus 1.</desc>
+<rect width="1130" height="1080" fill="white"/>
+<text x="65" y="57" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="650" fill="#203842">How can a remainder of 10 be “one short”?</text>
+<text x="65" y="99" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#48636d">Look at groups of 11 when dividing powers of 10.</text>
+<rect x="65" y="135" width="1000" height="205" rx="14" fill="#f8fbfa" stroke="#adc4ca" stroke-width="2"/>
+<text x="95" y="181" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="650" fill="#203842">10 = 11 − 1</text>
+<rect x="95" y="213" width="402" height="93" rx="12" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2.2"/>
+<circle cx="128" cy="259" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="161" cy="259" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="194" cy="259" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="227" cy="259" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="260" cy="259" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="293" cy="259" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="326" cy="259" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="359" cy="259" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="392" cy="259" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="425" cy="259" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="458" cy="259" r="10" fill="white" stroke="#b56b66" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="543" y="249" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" fill="#203842">10 dots, with one place empty</text>
+<text x="543" y="285" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#48636d">Remainder 10; one short of 11</text>
+<rect x="65" y="363" width="1000" height="365" rx="14" fill="#fcfaf8" stroke="#adc4ca" stroke-width="2"/>
+<text x="95" y="408" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="650" fill="#203842">100 = 9 × 11 + 1</text>
+<rect x="96" y="433" width="170" height="72" rx="10" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2"/>
+<circle cx="122" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="146" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="170" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="194" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="218" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="242" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="134" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="158" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="182" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="206" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="230" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<rect x="297" y="433" width="170" height="72" rx="10" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2"/>
+<circle cx="323" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="347" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="371" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="395" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="419" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="443" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="335" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="359" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="383" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="407" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="431" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<rect x="498" y="433" width="170" height="72" rx="10" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2"/>
+<circle cx="524" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="548" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="572" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="596" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="620" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="644" cy="456" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="536" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="560" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="584" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="608" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="632" cy="483" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<rect x="96" y="526" width="170" height="72" rx="10" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2"/>
+<circle cx="122" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="146" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="170" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="194" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="218" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="242" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="134" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="158" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="182" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="206" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="230" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<rect x="297" y="526" width="170" height="72" rx="10" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2"/>
+<circle cx="323" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="347" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="371" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="395" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="419" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="443" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="335" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="359" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="383" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="407" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="431" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<rect x="498" y="526" width="170" height="72" rx="10" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2"/>
+<circle cx="524" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="548" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="572" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="596" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="620" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="644" cy="549" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="536" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="560" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="584" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="608" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="632" cy="576" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<rect x="96" y="619" width="170" height="72" rx="10" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2"/>
+<circle cx="122" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="146" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="170" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="194" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="218" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="242" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="134" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="158" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="182" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="206" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="230" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<rect x="297" y="619" width="170" height="72" rx="10" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2"/>
+<circle cx="323" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="347" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="371" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="395" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="419" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="443" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="335" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="359" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="383" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="407" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="431" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<rect x="498" y="619" width="170" height="72" rx="10" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2"/>
+<circle cx="524" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="548" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="572" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="596" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="620" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="644" cy="642" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="536" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="560" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="584" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="608" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="632" cy="669" r="7" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+
+<text x="770" y="469" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="650" fill="#203842">9 complete groups</text>
+<text x="770" y="500" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#48636d">9 × 11 = 99 dots</text>
+<rect x="768" y="533" width="210" height="102" rx="12" fill="#fff" stroke="#b5cbd0" stroke-width="2"/>
+<circle cx="817" cy="583" r="11" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<text x="846" y="591" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#203842">1 left over</text>
+<text x="770" y="684" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#48636d">Remainder 1</text>
+<rect x="65" y="752" width="1000" height="282" rx="14" fill="#f8fbfa" stroke="#adc4ca" stroke-width="2"/>
+<text x="95" y="795" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="650" fill="#203842">1000 = 90 × 11 + 10 = 91 × 11 − 1</text>
+<text x="95" y="844" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#48636d">90 complete groups of 11</text>
+<text x="610" y="844" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#48636d">10 left over</text>
+<rect x="95" y="870" width="195" height="93" rx="12" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2.2"/>
+<circle cx="119" cy="898" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="148" cy="898" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="177" cy="898" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="206" cy="898" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="235" cy="898" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="264" cy="898" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="134" cy="936" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="163" cy="936" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="192" cy="936" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="221" cy="936" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="250" cy="936" r="8" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<text x="319" y="926" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="650" fill="#203842">× 90</text>
+<text x="474" y="926" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="650" fill="#203842">+</text>
+<rect x="610" y="870" width="400" height="93" rx="12" fill="#f7fbfa" stroke="#aac5c6" stroke-width="2.2"/>
+<circle cx="643" cy="916" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="676" cy="916" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="709" cy="916" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="742" cy="916" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="775" cy="916" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="808" cy="916" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="841" cy="916" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="874" cy="916" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="907" cy="916" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="940" cy="916" r="10" fill="#65a7a1" stroke="#365965" stroke-width="2"/>
+<circle cx="973" cy="916" r="10" fill="white" stroke="#b56b66" stroke-width="2" stroke-dasharray="4 3"/>
+<text x="95" y="1006" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#48636d">One more dot would make 91 complete groups of 11.</text>
+</svg>
