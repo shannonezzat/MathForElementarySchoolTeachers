@@ -1586,8 +1586,23 @@
             <me>
                 72=4 \times 18 = (2\times 2) \times (2 \times 9) = (2\times 2) \times (2 \times (3 \times 3)) = (2\times 2 \times 2) \times (3 \times 3) = 2^3 3^2.
             </me>
-            We end up with the same prime factorization as the first example. Here is the tree diagram of this factorization: INSERT PIC OF TREE DIAGRAM
+            We end up with the same prime factorization as the first example. Here is the tree diagram of this factorization: 
         </p>
+        <figure xml:id="fig-factor-tree-72-four-eighteen">
+    <caption>
+        A factor tree for 72 beginning with 4 and 18.
+    </caption>
+    <image source="Divisibility/FactorTree72From4And18" width="100%">
+        <description>
+            <p>
+                The tree splits 72 into 4 and 18. The 4 splits into 2 and 2.
+                The 18 splits into 2 and 9, and the 9 splits into 3 and 3.
+                The prime leaves are 2, 2, 2, 3, and 3, giving
+                72 = 2 cubed times 3 squared.
+            </p>
+        </description>
+    </image>
+</figure>
         <exercise>
             <p>
                 Try determining the prime factorization of <m>72</m> starting with other factorizations. What do you notice?
@@ -1875,6 +1890,21 @@
             <p>
                 Since we have 5 choices for the number of <m>2</m>'s and 3 choices for the number of <m>3</m>'s, we have <m>5 \times 3 = 15</m> total factors of <m>144=2^4 \times 3^2</m>.
             </p>
+            <figure xml:id="fig-factors-of-144-grid">
+    <caption>
+        Counting the factors of 144 by choosing powers of 2 and 3.
+    </caption>
+    <image source="Divisibility/DivisorsOf144ExponentGrid" width="100%">
+        <description>
+            <p>
+                A grid lists all 15 factors of 144. Its five columns represent
+                choosing 0 through 4 copies of 2, and its three rows represent
+                choosing 0 through 2 copies of 3. The highlighted cell shows
+                that choosing three 2s and one 3 gives 24.
+            </p>
+        </description>
+    </image>
+</figure>
             
                 
 
@@ -2123,6 +2153,22 @@
       <m>0</m> in a number where it does not appear. To find their
       LCM, use the <em>largest</em> exponent of each prime.
     </p>
+    <figure xml:id="fig-gcd-lcm-prime-copies">
+    <caption>
+        Comparing copies of prime factors to find the GCD and LCM of 42, 294, and 132.
+    </caption>
+    <image source="Divisibility/GCDLCMPrimeCopiesThreeNumbers" width="100%">
+        <description>
+            <p>
+                The prime-factor copies of 42, 294, and 132 are aligned in columns.
+                Each number contains the green 2 and 3 shown in the GCD row, giving
+                a GCD of 6. The LCM row contains every prime-factor copy needed by
+                any of the three numbers: two 2s, one 3, two 7s, and one 11. Their
+                product is 6468.
+            </p>
+        </description>
+    </image>
+</figure>
   </subsubsection>
 </subsection>
       <subsection xml:id="word_problems_gcd_lcm">
@@ -2160,6 +2206,18 @@
           <p>
             GCD and LCM can also be visualized using Venn-like diagrams, where we are allowed to repeat elements in each part of the diagram. For example, consider the numbers <m>180</m> and <m>144</m>. By placing the prime factors of these numbers in a Venn-like diagram , we can easily identify the GCD (intersection of the sets) and the LCM (union of the sets). 
           </p>
+          <figure xml:id="fig-GCDLCMPrimeFactorVenn">
+    <caption>
+        Matching copies of the prime factors of <m>180</m> and <m>144</m> to find their GCD and LCM.
+    </caption>
+    <image source="Divisibility/GCDLCMPrimeFactorVenn" width="100%">
+        <description>
+            <p>
+                Two overlapping regions represent the prime factorizations of 180 and 144. The overlap contains two copies of 2 and two copies of 3. The 180-only region contains a 5, while the 144-only region contains two more copies of 2. The factors in the overlap multiply to the GCD, 36. All the factors shown multiply to the LCM, 720.
+            </p>
+        </description>
+    </image>
+</figure>
         </subsubsection>
       </subsection>
       <subsection xml:id="euclidean_algorithm">
@@ -2186,6 +2244,18 @@
             </li>
           </ol>
           </p>
+          <figure xml:id="fig-EuclideanAlgorithmSmallRectangle">
+    <caption>
+        Cutting squares from a 30-by-18 rectangle illustrates the successive remainders in the Euclidean algorithm.
+    </caption>
+    <image source="Divisibility/EuclideanAlgorithmSmallRectangle" width="100%">
+        <description>
+            <p>
+                A 30-by-18 rectangle is cut into an 18-by-18 square, a 12-by-12 square, and two 6-by-6 squares. Since 30 equals 18 plus 12, any common divisor of 30 and 18 divides 12. Conversely, any common divisor of 18 and 12 divides 30. Repeating this reasoning gives a greatest common divisor of 6.
+            </p>
+        </description>
+    </image>
+</figure>
           <p>
             These principles reduce the problem of finding the GCD of two large numbers to a series of simpler calculations.
           </p>

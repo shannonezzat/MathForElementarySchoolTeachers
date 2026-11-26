@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="870" viewBox="0 0 1720 870" role="img" aria-labelledby="title desc">
+  <title id="title">Cutting squares from a 30 by 18 rectangle</title>
+  <desc id="desc">A 30 by 18 rectangle is cut into squares of side lengths 18, 12, and 6. The first cut gives 30 equals 18 plus 12. A divisor common to 30 and 18 divides the remainder 12; conversely a divisor common to 18 and 12 divides their sum 30. Repeating the argument leads to a greatest common divisor of 6.</desc>
+  <rect width="1720" height="870" fill="#fff"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif" fill="#203842">
+    <text x="105" y="72" font-size="39" font-weight="600">Why the Euclidean algorithm preserves the GCD</text>
+    <text x="105" y="120" font-size="24" fill="#4b6570">Start with a rectangle whose side lengths are 30 and 18.</text>
+  </g>
+
+  <!-- Exact proportional geometry: 24 SVG units per numerical unit. -->
+  <rect x="145" y="245" width="432" height="432" fill="#dcecf0"/>
+  <rect x="577" y="245" width="288" height="288" fill="#f0e5d0"/>
+  <rect x="577" y="533" width="144" height="144" fill="#e5ecdc"/>
+  <rect x="721" y="533" width="144" height="144" fill="#e5ecdc"/>
+
+  <!-- A quiet six-unit grid lets readers see the common measuring length. -->
+  <g stroke="#72909b" stroke-width="1.6" stroke-dasharray="6 7" opacity="0.65">
+    <path d="M289 245v432 M433 245v432 M721 245v432 M145 389h720 M145 533h432"/>
+  </g>
+  <g stroke="#294954" stroke-width="3.5" fill="none">
+    <rect x="145" y="245" width="720" height="432"/>
+    <path d="M577 245v432 M577 533h288 M721 533v144"/>
+  </g>
+
+  <g font-family="DejaVu Sans, Arial, sans-serif" fill="#203842" text-anchor="middle" font-size="26" font-weight="600">
+    <rect x="285" y="445" width="152" height="42" rx="5" fill="#fff" opacity="0.88"/>
+    <text x="361" y="475">18 × 18</text>
+    <rect x="650" y="369" width="142" height="42" rx="5" fill="#fff" opacity="0.88"/>
+    <text x="721" y="399">12 × 12</text>
+    <rect x="584" y="585" width="130" height="38" rx="5" fill="#fff" opacity="0.9"/>
+    <text x="649" y="613" font-size="21">6 × 6</text>
+    <rect x="728" y="585" width="130" height="38" rx="5" fill="#fff" opacity="0.9"/>
+    <text x="793" y="613" font-size="21">6 × 6</text>
+  </g>
+
+  <g stroke="#486875" stroke-width="2.2" fill="none" stroke-linecap="round">
+    <path d="M145 190v-12h720v12 M145 216v12h432v-12 M577 216v12h288v-12"/>
+    <path d="M120 245h-12v432h12"/>
+  </g>
+  <g font-family="DejaVu Sans, Arial, sans-serif" fill="#365965" text-anchor="middle" font-size="23">
+    <text x="505" y="164">30</text>
+    <text x="361" y="212">18</text>
+    <text x="721" y="212">12</text>
+    <text x="84" y="470">18</text>
+  </g>
+
+  <g font-family="DejaVu Sans, Arial, sans-serif" fill="#203842">
+    <text x="940" y="248" font-size="27" font-weight="600">Why does the first cut preserve the GCD?</text>
+    <text x="940" y="303" font-size="27">30 = 18 + 12</text>
+    <rect x="930" y="329" width="700" height="126" rx="10" fill="#edf4f5" stroke="#8aa7af" stroke-width="2"/>
+    <text x="955" y="374" font-size="24">If a number d divides both 30 and 18,</text>
+    <text x="955" y="414" font-size="24">it divides the leftover 30 − 18 = 12.</text>
+    <rect x="930" y="473" width="700" height="126" rx="10" fill="#f9f2df" stroke="#b7a16a" stroke-width="2"/>
+    <text x="955" y="518" font-size="24">If d divides both 18 and 12,</text>
+    <text x="955" y="558" font-size="24">it divides their sum 18 + 12 = 30.</text>
+    <text x="940" y="655" font-size="23" font-weight="600">The two pairs have exactly the same common divisors.</text>
+    <text x="940" y="713" font-size="22">Repeat with 18 = 12 + 6 and 12 = 2 × 6 + 0.</text>
+    <text x="940" y="775" font-size="25" font-weight="600">GCD(30, 18) = GCD(18, 12) = GCD(12, 6) = 6</text>
+  </g>
+</svg>

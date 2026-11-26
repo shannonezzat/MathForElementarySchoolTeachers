@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1050" viewBox="0 0 1520 1050" role="img" aria-labelledby="title desc">
+<title id="title">Prime factor copies for the GCD and LCM of 42, 294, and 132</title>
+<desc id="desc">Aligned factor-copy circles show 42 with 2, 3, 7; 294 with 2, 3, 7, 7; and 132 with 2, 2, 3, 11. The common 2 and 3 circles are green in each number and in the GCD row. All circles appearing in any number reappear in their corresponding positions in the LCM row. Therefore GCD 6 and LCM 6468.</desc>
+<rect width="1520" height="1050" fill="#ffffff"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203842">
+<text x="95" y="67" font-size="39" font-weight="600">Which prime factors do we need?</text>
+<text x="95" y="112" font-size="23" fill="#48636d">Compare the prime factors of 42, 294, and 132 one prime at a time.</text>
+</g>
+<rect x="92" y="159" width="1350" height="674" rx="9" fill="#ffffff" stroke="#adc4ca" stroke-width="2.5"/>
+<rect x="93" y="160" width="1348" height="80" rx="8" fill="#eaf2f4"/>
+<rect x="93" y="600" width="1348" height="120" fill="#eef5f2"/>
+<rect x="93" y="721" width="1348" height="111" fill="#faf2df"/>
+<g stroke="#c5d4d8" stroke-width="1.6">
+<path d="M360 159v674 M620 159v674 M880 159v674 M1140 159v674"/>
+<path d="M92 240h1350 M92 360h1350 M92 470h1350 M92 580h1350 M92 600h1350 M92 720h1350"/>
+</g>
+<g font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#203842" text-anchor="middle">
+<text x="226" y="209">Number</text>
+<text x="490" y="209">prime 2</text>
+<text x="750" y="209">prime 3</text>
+<text x="1010" y="209">prime 7</text>
+<text x="1270" y="209">prime 11</text>
+</g>
+<text x="125" y="296" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#203842">42</text>
+<text x="125" y="330" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" fill="#4c6570">2 × 3 × 7</text>
+<circle cx="450" cy="305" r="34" fill="#cce8dd" stroke="#365965" stroke-width="2.5"/>
+<text x="450" y="315" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">2</text>
+<circle cx="740" cy="305" r="34" fill="#cce8dd" stroke="#365965" stroke-width="2.5"/>
+<text x="740" y="315" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">3</text>
+<circle cx="970" cy="305" r="34" fill="#f8e2a9" stroke="#365965" stroke-width="2.5"/>
+<text x="970" y="315" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">7</text>
+<text x="1285" y="313" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" fill="#657980">0 copies</text>
+<text x="125" y="406" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#203842">294</text>
+<text x="125" y="440" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" fill="#4c6570">2 × 3 × 7²</text>
+<circle cx="450" cy="415" r="34" fill="#cce8dd" stroke="#365965" stroke-width="2.5"/>
+<text x="450" y="425" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">2</text>
+<circle cx="740" cy="415" r="34" fill="#cce8dd" stroke="#365965" stroke-width="2.5"/>
+<text x="740" y="425" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">3</text>
+<circle cx="970" cy="415" r="34" fill="#f8e2a9" stroke="#365965" stroke-width="2.5"/>
+<text x="970" y="425" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">7</text>
+<circle cx="1050" cy="415" r="34" fill="#f8e2a9" stroke="#365965" stroke-width="2.5"/>
+<text x="1050" y="425" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">7</text>
+<text x="1285" y="423" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" fill="#657980">0 copies</text>
+<text x="125" y="516" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#203842">132</text>
+<text x="125" y="550" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" fill="#4c6570">2² × 3 × 11</text>
+<circle cx="450" cy="525" r="34" fill="#cce8dd" stroke="#365965" stroke-width="2.5"/>
+<text x="450" y="535" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">2</text>
+<circle cx="530" cy="525" r="34" fill="#f8e2a9" stroke="#365965" stroke-width="2.5"/>
+<text x="530" y="535" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">2</text>
+<circle cx="740" cy="525" r="34" fill="#cce8dd" stroke="#365965" stroke-width="2.5"/>
+<text x="740" y="535" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">3</text>
+<text x="1025" y="533" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" fill="#657980">0 copies</text>
+<circle cx="1260" cy="525" r="34" fill="#f8e2a9" stroke="#365965" stroke-width="2.5"/>
+<text x="1260" y="535" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">11</text>
+<text x="125" y="651" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#203842">GCD</text>
+<text x="125" y="685" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" fill="#4c6570">fewest copies</text>
+<circle cx="450" cy="660" r="34" fill="#cce8dd" stroke="#365965" stroke-width="2.5"/>
+<text x="450" y="670" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">2</text>
+<circle cx="740" cy="660" r="34" fill="#cce8dd" stroke="#365965" stroke-width="2.5"/>
+<text x="740" y="670" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">3</text>
+<text x="1025" y="668" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" fill="#657980">0 copies</text>
+<text x="1285" y="668" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" fill="#657980">0 copies</text>
+<text x="125" y="776" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#203842">LCM</text>
+<text x="125" y="810" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" fill="#4c6570">most copies</text>
+<circle cx="450" cy="785" r="34" fill="#cce8dd" stroke="#365965" stroke-width="2.5"/>
+<text x="450" y="795" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">2</text>
+<circle cx="530" cy="785" r="34" fill="#f8e2a9" stroke="#365965" stroke-width="2.5"/>
+<text x="530" y="795" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">2</text>
+<circle cx="740" cy="785" r="34" fill="#cce8dd" stroke="#365965" stroke-width="2.5"/>
+<text x="740" y="795" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">3</text>
+<circle cx="970" cy="785" r="34" fill="#f8e2a9" stroke="#365965" stroke-width="2.5"/>
+<text x="970" y="795" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">7</text>
+<circle cx="1050" cy="785" r="34" fill="#f8e2a9" stroke="#365965" stroke-width="2.5"/>
+<text x="1050" y="795" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">7</text>
+<circle cx="1260" cy="785" r="34" fill="#f8e2a9" stroke="#365965" stroke-width="2.5"/>
+<text x="1260" y="795" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#203842">11</text>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203842" font-size="27">
+<text x="110" y="892"><tspan font-weight="600">GCD:</tspan> 2 × 3 = 6</text>
+<text x="110" y="944"><tspan font-weight="600">LCM:</tspan> 2² × 3 × 7² × 11 = 6468</text>
+</g>
+<path d="M95 973 H1425" stroke="#c5d4d8" stroke-width="1.6"/><circle cx="124" cy="1008" r="17" fill="#cce8dd" stroke="#365965" stroke-width="2"/><text x="157" y="1017" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" fill="#203842">A copy shared by all three numbers</text><circle cx="758" cy="1008" r="17" fill="#f8e2a9" stroke="#365965" stroke-width="2"/><text x="791" y="1017" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" fill="#203842">An additional copy found in at least one number</text></svg>
