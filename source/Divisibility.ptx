@@ -674,7 +674,12 @@
             </me>
             The terms <m>a \times 999</m>, <m>b \times 99</m>, and <m>c \times 9</m> are all divisible by <m>3</m> and <m>9</m> since <m>999</m>, <m>99</m>, and <m>9</m> are divisible by both <m>3</m> and <m>9</m>. Therefore, the divisibility of the number <m>\underline{abcd}</m> by <m>3</m> or <m>9</m> depends solely on the sum of its digits, <m>a + b + c + d</m>.
           </p>
+          <figure>
+    <caption>Splitting each place value into a multiple of 9 and single units shows why the digit sum tests divisibility by 3 and 9.</caption>
+    <image source="Divisibility/DigitSumDivisibility3And9" width="100%"/>
+</figure>
         </proof>
+
       </theorem>
       <p>
         Let's look at a few small examples to make sure we know how the rules work.
@@ -768,6 +773,10 @@
             </li>
         </ol>
         </p>
+        <figure>
+    <caption>Grouping powers of 10 by 11: a remainder of 10 is one short of another complete group.</caption>
+    <image source="Divisibility/ElevenRemaindersGrouping" width="100%"/>
+</figure>
     </exercise>
     <p>
         Hopefully the exercise above gives you some intuition about what a divisibility rule for 11 will require. Note that the powers of 10, and therefore place values, fall into two groups; a remainder of 1 when <m>k</m> is even, and a remainder of 10 (or a "remainder" of -1, as a remainder of 10 is the same as having a one less than a full group of 11) when <m>k</m> is odd. So when <m>k</m> is even, <m>11 \mid (10^k-1)</m>, and when <m>k</m> is odd <m>11 \mid (10^k+1)</m>. So we can express powers of 10 as numbers "close to" numbers divisible by 11, plus or minus 1. This is the key for this rule. Let's prove this now for six-digit numbers, just so we get a feel for the pattern that is happening. 
@@ -1075,27 +1084,41 @@
         <p>
             Let's list all numbers up to 100, and we'll cross off any numbers that we determine are not prime (so are composite, or the number <m>1</m>).
         </p>
-        <p>
-            INSERT PIC OF NUMBERS FROM 1 TO 100
-        </p>
+        <figure>
+    <caption>The numbers from 1 to 100 before beginning the sieve.</caption>
+    <image source="Divisibility/Sieve100Blank" width="100%"/>
+</figure>
         <p>
             We'll cross off <m>1</m> since we know that it doesn't have exactly two factors; its only factor is itself. So now we know that the next largest number, <m>2</m>, must be prime since it has <m>1</m> and itself as a factor, and there are no other numbers smaller than <m>2</m>. So we circle <m>2</m> and cross off all numbers that have <m>2</m> as a factor.
         </p>
-        <p>
-            INSERT UPDATED PIC
-        </p>
+        <figure>
+    <caption>The sieve after circling 2 and crossing off 1 and the other multiples of 2.</caption>
+    <image source="Divisibility/Sieve100After2" width="100%"/>
+</figure>
         <p>
             Now we can go to the smallest number that remains, <m>3</m>, and circle that since it must be prime; 2 is not a factor and there are no smaller prime numbers. Like before we circle <m>3</m> and cross off all other multiples of <m>3</m>:
         </p>
-        <p>
-            INSERT UPDATED PIC
-        </p>
+       <figure>
+    <caption>The sieve after circling 2 and 3 and crossing off their other multiples.</caption>
+    <image source="Divisibility/Sieve100After3" width="100%"/>
+</figure>
         <p>
             We can continue this process until all numbers are either circled or crossed off. Before looking below, try this yourself and check that you get the same list of primes as below:
         </p>
-        <p>
-            INSERT UPDATED PIC
-        </p>
+       <figure xml:id="fig-sieve-100-complete">
+    <caption>
+        The completed sieve for the numbers from 1 to 100.
+    </caption>
+    <image source="Divisibility/Sieve100Complete" width="100%">
+        <description>
+            <p>
+                A grid lists the numbers from 1 to 100. The 25 prime numbers
+                are circled. The number 1 and every composite number are
+                crossed off. The circled numbers are the primes below 100.
+            </p>
+        </description>
+    </image>
+</figure>
         <p>
             This process is very old, and in fact is called the <term>sieve of Eratosthenes</term>, after the Greek mathematician Eratosthenes of Cyrene, to whom this method is attributed.
         </p>
@@ -1298,9 +1321,21 @@
         <p>
             Later, we will be very careful and learn how to check that these are all of the possible ways of factoring 72 into two numbers. But it is not too hard to check in this case (do you see how to do this?) Let's plot these pairs on a number line to see if we notice something:
         </p>
-        <p>
-            INSERT PIC OF A NUMBER LINE WITH EACH PAIR OF FACTORS OF 72 PLOTTED
-        </p>
+        <figure xml:id="fig-factor-pairs-72-number-line">
+    <caption>
+        Factor pairs of 72 on a number line.
+    </caption>
+    <image source="Divisibility/FactorPairs72NumberLine" width="100%">
+        <description>
+            <p>
+                Six segments connect the factor pairs 1 and 72, 2 and 36,
+                3 and 24, 4 and 18, 6 and 12, and 8 and 9 on the same
+                number scale. Each segment crosses the point P. A close-up
+                shows that P lies between 8 and 9.
+            </p>
+        </description>
+    </image>
+</figure>
 
         <p>
             It looks like the pairs are approaching some point, let's call it <m>P</m> between 8 and 9, plotted above, and that there is always one number of the pair that's greater than <m>P</m>, and one that is less than <m>P</m>.  
@@ -1579,8 +1614,23 @@
             </p>
         </example>
         <p>
-            We can make a tree diagram to show this factorization into primes. Let's do it for 72: INSERT PIC OF TREE DIAGRAM
+            We can make a tree diagram to show this factorization into primes. Let's do it for 72: 
         </p>
+        <figure xml:id="fig-factor-tree-72-six-twelve">
+    <caption>
+        A factor tree for 72 beginning with 6 and 12.
+    </caption>
+    <image source="Divisibility/FactorTree72From6And12" width="100%">
+        <description>
+            <p>
+                The tree splits 72 into 6 and 12. The 6 splits into 2 and 3.
+                The 12 splits into 3 and 4, and the 4 splits into 2 and 2.
+                The prime leaves are three 2s and two 3s, giving
+                72 = 2 cubed times 3 squared.
+            </p>
+        </description>
+    </image>
+</figure>
         <p>
             There are many different factorizations of <m>72</m> into two different factors, so let's see what happens if we try starting with another one:
             <me>

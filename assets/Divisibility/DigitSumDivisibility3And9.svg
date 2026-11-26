@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1130" height="780" viewBox="0 0 1130 780" role="img" aria-labelledby="title desc">
+<title id="title">Why the digit sum tests divisibility by 3 and 9</title>
+<desc id="desc">The place values in 3456 are split into multiples of nine and single units: 3 times 1000 equals 3 times 999 plus 3; 4 times 100 equals 4 times 99 plus 4; 5 times 10 equals 5 times 9 plus 5; and 6 equals 0 plus 6. The multiples-of-nine parts total 3438. The leftover units total 3 plus 4 plus 5 plus 6 equals 18, illustrated as two groups of nine dots. Thus 3456 is divisible by 9 and by 3.</desc>
+<rect width="1130" height="780" fill="white"/>
+<text x="65" y="58" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="650" fill="#203842">Why does the sum of the digits work?</text>
+<text x="65" y="101" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#48636d">For 3456, split each place value into a multiple of 9 and single units.</text>
+<rect x="65" y="145" width="1000" height="397" rx="14" fill="#fff" stroke="#adc4ca" stroke-width="2"/>
+<rect x="67" y="147" width="996" height="63" rx="12" fill="#edf5f3"/>
+<path d="M345 147 V542" stroke="#d5e3e5" stroke-width="1.8"/>
+<path d="M715 147 V542" stroke="#d5e3e5" stroke-width="1.8"/>
+<path d="M66 211 H1064" stroke="#d5e3e5" stroke-width="1.8"/>
+<path d="M66 293 H1064" stroke="#d5e3e5" stroke-width="1.8"/>
+<path d="M66 375 H1064" stroke="#d5e3e5" stroke-width="1.8"/>
+<path d="M66 457 H1064" stroke="#d5e3e5" stroke-width="1.8"/>
+<text x="90" y="187" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="650" fill="#203842">Place value</text>
+<text x="370" y="187" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="650" fill="#203842">Part divisible by 9</text>
+<text x="737" y="187" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="650" fill="#203842">Single units left over</text>
+<text x="90" y="260" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="600" fill="#203842">3 × 1000</text>
+<text x="370" y="260" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" fill="#203842">3 × 999</text>
+<circle cx="759" cy="251" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="790" cy="251" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="821" cy="251" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<text x="1015" y="260" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="650" fill="#365965">3</text>
+<text x="90" y="342" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="600" fill="#203842">4 × 100</text>
+<text x="370" y="342" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" fill="#203842">4 × 99</text>
+<circle cx="759" cy="333" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="790" cy="333" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="821" cy="333" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="852" cy="333" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<text x="1015" y="342" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="650" fill="#365965">4</text>
+<text x="90" y="424" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="600" fill="#203842">5 × 10</text>
+<text x="370" y="424" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" fill="#203842">5 × 9</text>
+<circle cx="759" cy="415" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="790" cy="415" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="821" cy="415" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="852" cy="415" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="883" cy="415" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<text x="1015" y="424" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="650" fill="#365965">5</text>
+<text x="90" y="506" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="600" fill="#203842">6 × 1</text>
+<text x="370" y="506" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" fill="#203842">0</text>
+<circle cx="759" cy="497" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="790" cy="497" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="821" cy="497" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="852" cy="497" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="883" cy="497" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="914" cy="497" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<text x="1015" y="506" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="650" fill="#365965">6</text>
+<path d="M814 554 V579" stroke="#6b9697" stroke-width="2.5"/>
+<path d="M805 573 L814 583 L823 573" fill="none" stroke="#6b9697" stroke-width="2.5"/>
+<text x="65" y="609" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="650" fill="#203842">3 + 4 + 5 + 6 = 18 = 2 × 9</text>
+<text x="65" y="646" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#48636d">The single units form two groups of 9:</text>
+<rect x="670" y="592" width="116" height="116" rx="12" fill="#f7fbfa" stroke="#adc4ca" stroke-width="2"/>
+<circle cx="699" cy="616" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="728" cy="616" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="757" cy="616" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="699" cy="645" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="728" cy="645" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="757" cy="645" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="699" cy="674" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="728" cy="674" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="757" cy="674" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<rect x="837" y="592" width="116" height="116" rx="12" fill="#f7fbfa" stroke="#adc4ca" stroke-width="2"/>
+<circle cx="866" cy="616" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="895" cy="616" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="924" cy="616" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="866" cy="645" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="895" cy="645" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="924" cy="645" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="866" cy="674" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="895" cy="674" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<circle cx="924" cy="674" r="8" fill="#69aaa3" stroke="#365965" stroke-width="1.7"/>
+<text x="814" y="664" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="650" fill="#203842" text-anchor="middle">+</text>
+<text x="65" y="741" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#365965">All the other parts are also divisible by 9, so 3456 is divisible by 9 and by 3.</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="690" viewBox="0 0 1180 690" role="img" aria-labelledby="title desc">
+<title id="title">Factor tree for 72 starting with 4 times 18</title>
+<desc id="desc">A tree splits 72 into 4 and 18. The 4 splits into 2 and 2. The 18 splits into 2 and 9, and 9 splits into 3 and 3. The prime leaves are 2, 2, 2, 3, and 3, so 72 equals 2 cubed times 3 squared.</desc>
+<rect width="1180" height="690" fill="#fff"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#203842">
+<text x="65" y="59" font-size="37" font-weight="650">Another factor tree for 72</text>
+<text x="65" y="101" font-size="23" fill="#48636d">Start with 72 = 4 × 18, then keep factoring composite numbers.</text>
+</g>
+<g stroke="#8aa8b1" stroke-width="3.5" stroke-linecap="round">
+<path d="M570 160 L300 275"/>
+<path d="M570 160 L830 275"/>
+<path d="M300 275 L185 395"/>
+<path d="M300 275 L415 395"/>
+<path d="M830 275 L680 395"/>
+<path d="M830 275 L980 395"/>
+<path d="M980 395 L875 515"/>
+<path d="M980 395 L1080 515"/>
+</g>
+<circle cx="570" cy="160" r="43" fill="#fff" stroke="#54717a" stroke-width="3"/>
+<text x="570" y="172" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="650" fill="#203842">72</text>
+<circle cx="300" cy="275" r="43" fill="#fff" stroke="#54717a" stroke-width="3"/>
+<text x="300" y="287" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="650" fill="#203842">4</text>
+<circle cx="830" cy="275" r="43" fill="#fff" stroke="#54717a" stroke-width="3"/>
+<text x="830" y="287" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="650" fill="#203842">18</text>
+<circle cx="185" cy="395" r="43" fill="#d4ebe1" stroke="#365965" stroke-width="3"/>
+<text x="185" y="407" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="650" fill="#203842">2</text>
+<circle cx="415" cy="395" r="43" fill="#d4ebe1" stroke="#365965" stroke-width="3"/>
+<text x="415" y="407" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="650" fill="#203842">2</text>
+<circle cx="680" cy="395" r="43" fill="#d4ebe1" stroke="#365965" stroke-width="3"/>
+<text x="680" y="407" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="650" fill="#203842">2</text>
+<circle cx="980" cy="395" r="43" fill="#fff" stroke="#54717a" stroke-width="3"/>
+<text x="980" y="407" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="650" fill="#203842">9</text>
+<circle cx="875" cy="515" r="43" fill="#f6e3b2" stroke="#826623" stroke-width="3"/>
+<text x="875" y="527" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="650" fill="#203842">3</text>
+<circle cx="1080" cy="515" r="43" fill="#f6e3b2" stroke="#826623" stroke-width="3"/>
+<text x="1080" y="527" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="35" font-weight="650" fill="#203842">3</text>
+<path d="M65 572 H1115" stroke="#c5d4d8" stroke-width="1.5"/>
+<text x="65" y="620" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" fill="#203842"><tspan font-weight="650">Prime leaves:</tspan> 2 × 2 × 2 × 3 × 3 = 2³ × 3²</text>
+<g font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#4c6570">
+<circle cx="80" cy="658" r="11" fill="#d4ebe1" stroke="#365965" stroke-width="1.5"/>
+<circle cx="109" cy="658" r="11" fill="#f6e3b2" stroke="#826623" stroke-width="1.5"/>
+<text x="136" y="664">Shaded circles are prime numbers.</text>
+</g></svg>
